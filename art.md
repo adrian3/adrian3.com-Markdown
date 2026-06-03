@@ -110,8 +110,8 @@ a.art {
 <hr />
 
 <h2 id="free-postcard-art">Free Postcard Art</h2>
-<a href="postcards/"><img class="case-study-image" src="postcards/thermal-thumb.jpg"></a>
-<p>I enjoy mailing art to people. I’ve sent over 300 pieces so far. You can see them in the <a href="postcards/">postcard section</a> of this site. If you want to get on my mailing list, reach out.</p>
+<a href="/postcards.html"><img class="case-study-image" src="https://adrian3.com/galleries/postcards/thermal-thumb.jpg"></a>
+<p>I enjoy mailing art to people. I’ve sent over 300 pieces so far. You can see them in the <a href="/postcards.html">postcard section</a> of this site. If you want to get on my mailing list, reach out.</p>
 <hr />
 
 <h2 id="camera-graffiti">Baby Powder Graffiti</h2>
