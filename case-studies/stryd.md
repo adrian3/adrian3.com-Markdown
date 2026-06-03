@@ -1,6 +1,7 @@
 <!---
 title: Stryd App and Website Design
 published: true
+unlisted: true
 --->
 
 <style type="text/css">

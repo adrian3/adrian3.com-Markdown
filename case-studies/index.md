@@ -1,3 +1,7 @@
+<!---
+title: Case Studies
+unlisted: true
+--->
 
 <style type="text/css">
 img.case-study-image {

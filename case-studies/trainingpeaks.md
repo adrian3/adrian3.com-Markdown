@@ -1,6 +1,7 @@
 <!---
 title: TrainingPeaks Coach Marketplace Case Study
 published: true
+unlisted: true
 --->
 
 <style type="text/css">
