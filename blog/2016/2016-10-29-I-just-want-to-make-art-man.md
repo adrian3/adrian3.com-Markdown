@@ -18,7 +18,7 @@ layout:
 
 So there’s a chance I was wrong last week. Maybe I was too optimistic.
 
-My nostalgic love letter to my first design class described how professors open our eyes to an invisible world, [a secret language that lives just beneath the consciousness of all but a select group of design practitioners](Writing/2016/2016-10-22-The-Designers-Invisible-Skill-Set.php).
+My nostalgic love letter to my first design class described how professors open our eyes to an invisible world, [a secret language that lives just beneath the consciousness of all but a select group of design practitioners](/blog/2016/2016-10-22-The-Designers-Invisible-Skill-Set.html).
 
 The problem is I was describing _my_ design education and not necessarily a _normal_ design education.
 
@@ -26,7 +26,7 @@ Is it naive for me to believe that all or even most design professionals had thi
 
 Your first experience with design was probably a grade school book report. The assignment was daunting, a multi-page paper typed out one tedious keyboard peck at a time.
 
-This assignment actually looks more like a design lesson than [the two square exercise](Writing/2016/2016-10-22-The-Designers-Invisible-Skill-Set.php) I described last week. Doesn’t it? This is a communication challenge not some seemingly random shape arrangement game.
+This assignment actually looks more like a design lesson than [the two square exercise](/blog/2016/2016-10-22-The-Designers-Invisible-Skill-Set.html) I described last week. Doesn’t it? This is a communication challenge not some seemingly random shape arrangement game.
 
 Three paragraphs into the assignment and you became bored. You start to mess around with the word processor’s settings.
 
@@ -92,7 +92,7 @@ _The product is garbage?_  “The data doesn’t support that hypothesis.”
 
 What’s the role of the designer again? Don’t ask me. I just want to create art, man. And yet how can we sit on the sidelines and pretend designers aren’t to blame when we look around and see ugliness everywhere? If we don’t fix it who will?
 
-But here’s the thing about the interpretation of reality I wrote about today. Whether you view yourself as a helpless stylist or a trusted creative partner isn’t up to me. You have your own [pattern recognition machine](Writing/2016/2016-09-17-Becoming-Bobblehead-Buddha.php) that let’s you decide how involved you want to be in making the world better.
+But here’s the thing about the interpretation of reality I wrote about today. Whether you view yourself as a helpless stylist or a trusted creative partner isn’t up to me. You have your own [pattern recognition machine](/blog/2016/2016-09-17-Becoming-Bobblehead-Buddha.html) that let’s you decide how involved you want to be in making the world better.
 
 I hope you reject the stylist role. We need more designers.
 

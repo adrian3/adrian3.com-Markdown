@@ -27,7 +27,7 @@ So, this week I found myself knee deep in the unsexy part of my job. I was clean
 
 And yet, I was enjoying it. There is something therapeutic about reducing a page’s markup to its bare essentials. I asked myself why? Why wasn’t I looking for shortcuts to bypass this tedious task?
 
-As I was organizing CSS and deleting divs I was also watching the reactions to my posts about “Designer Hell” ([part 1](Writing/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.php) and [part 2](Writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php)). The line that got highlighted and shared the most was this:
+As I was organizing CSS and deleting divs I was also watching the reactions to my posts about “Designer Hell” ([part 1](/blog/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.html) and [part 2](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html)). The line that got highlighted and shared the most was this:
 
 > “Cataclysms are rarely masterminded conspiracies, they tend to be cascading apocalypses of apathy.”
 
@@ -99,7 +99,7 @@ Designers wrongly believe our responsibility is creating the big pictures. The r
 
 The best work you do may never be noticed. Whether it is well-formatted HTML, the perfect alignment of a chip on a motherboard, or the correct logo on the base of a toothbrush, this work is crucial. It may exist in obscurity, a job well done but never appreciated. That’s okay. You can sleep well knowing that it’s there. This is how we defeat the apathy apocalypse: _by caring._
 
-Part 4: [Stop Dribbbling, Get a Design Education at Costco](Writing/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.php)
+Part 4: [Stop Dribbbling, Get a Design Education at Costco](/blog/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.html)
 
 * * *
 

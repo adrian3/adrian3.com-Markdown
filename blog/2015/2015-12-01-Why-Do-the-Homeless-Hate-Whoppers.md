@@ -55,5 +55,5 @@ _* Quarter pound measurement based on pre-cooked patty weight._
 
 ![](/images/dropbox_public/images/Why-Do-the-Homeless-Hate-Whoppers4.png)
 
-Thanks for reading. If you liked this I would point you [to this post as a diving off point for getting into my writing](Writing/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php). _Stay creative._
+Thanks for reading. If you liked this I would point you [to this post as a diving off point for getting into my writing](/blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html). _Stay creative._
 

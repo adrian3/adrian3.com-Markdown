@@ -41,7 +41,7 @@ One is invisibility. If it can’t be put in a box, it just doesn’t exist for 
 
 The second alternative is discomfort. When forced to interact with something they can’t define some people rebel. This is the “I just don’t get art/religion/math” response.
 
-The third response is change. If you are lucky, your work will recalibrate someone’s pattern recognition machine. [That’s what next week’s post is all about](Writing/2016/2016-09-10-Recalibrating-Your-Pattern-Recognition-Machine.php), and it is the first step to changing the world.
+The third response is change. If you are lucky, your work will recalibrate someone’s pattern recognition machine. [That’s what next week’s post is all about](/blog/2016/2016-09-10-Recalibrating-Your-Pattern-Recognition-Machine.html), and it is the first step to changing the world.
 
 * * *
 

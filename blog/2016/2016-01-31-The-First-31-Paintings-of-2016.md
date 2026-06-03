@@ -11,7 +11,7 @@ layout:
 
 # The First 31 Paintings of 2016
 
-Going to try something different today. Rather than sermons related to [Art of the Living Dead](Writing/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php) I am going to show you some _actual art_. Since January 1, I have been posting one piece of art a day on [Instagram (@ade3)](https://www.instagram.com/ade3/). I also have a [Tumblr](http://ade3.tumblr.com) going as of today. Follow me if you want to keep up with this ongoing project.
+Going to try something different today. Rather than sermons related to [Art of the Living Dead](/blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html) I am going to show you some _actual art_. Since January 1, I have been posting one piece of art a day on [Instagram (@ade3)](https://www.instagram.com/ade3/). I also have a [Tumblr](http://ade3.tumblr.com) going as of today. Follow me if you want to keep up with this ongoing project.
 
 When it comes to art, fewer words are usually better so I will let you browse the art before I get too wordy. _If you want the back story, scroll to the end..._
 
@@ -201,7 +201,7 @@ I like the idea of an insect finding a tiny entrance into a framed piece of art.
 
 * * *
 
-UPDATE: [Month 2 of artwork can be found here.](Writing/2016/2016-02-29-My-Second-Month-of-Paintings.php)
+UPDATE: [Month 2 of artwork can be found here.](/blog/2016/2016-02-29-My-Second-Month-of-Paintings.html)
 
 * * *
 

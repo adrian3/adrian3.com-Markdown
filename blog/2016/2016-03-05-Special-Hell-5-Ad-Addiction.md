@@ -15,7 +15,7 @@ layout:
 
 * * *
 
-Today I am going to tell you the story of how I used my web design skills to steal from little old ladies and feed my ad-diction. This is part five of my [Special Hell for Designers Like Me](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613?source=your-stories)series. Check out [part 1](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613?source=your-stories), [2](Writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php), [3](Writing/2016/2016-02-06-Death-by-Toothbrush.php), and [4](Writing/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.php) if you missed them. Today let’s start with a video clip where, unlike my story, a little old lady gets the last word.
+Today I am going to tell you the story of how I used my web design skills to steal from little old ladies and feed my ad-diction. This is part five of my [Special Hell for Designers Like Me](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613?source=your-stories)series. Check out [part 1](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613?source=your-stories), [2](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html), [3](/blog/2016/2016-02-06-Death-by-Toothbrush.html), and [4](/blog/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.html) if you missed them. Today let’s start with a video clip where, unlike my story, a little old lady gets the last word.
 
 <div class="flex-video">
   <iframe width="420" height="315" src="https://youtube.com/embed/ppSUnOB4DZw" allowfullscreen style="border:0"></iframe>
@@ -73,9 +73,9 @@ I disconnected the tube and I have been clean for a while now. It feels good. No
 
 * * *
 
-Part 6: [The Dymaxion Man](Writing/2016/2016-03-26-Special-Hell-6-Dymaxion-Man.php)
+Part 6: [The Dymaxion Man](/blog/2016/2016-03-26-Special-Hell-6-Dymaxion-Man.html)
 
 * * *
 
-Thanks for reading. If this is your first encounter with my crazy thoughts, there are at least [25 more strange ideas](Writing/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php) that might get you hooked on my writing. Big thanks for recommending and sharing my posts. I do my best to reciprocate your follows ([@ade3](http://twitter.com/ade3)) and tweets. _Stay creative._
+Thanks for reading. If this is your first encounter with my crazy thoughts, there are at least [25 more strange ideas](/blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html) that might get you hooked on my writing. Big thanks for recommending and sharing my posts. I do my best to reciprocate your follows ([@ade3](http://twitter.com/ade3)) and tweets. _Stay creative._
 

@@ -49,7 +49,7 @@ End of project wand-waving by a designer never results in clarity. Instead, you 
 
 To people unfamiliar with design thinking, our job might look like a checklist of software proficiency. The app skills and pixel-pushing is just the final step in a quest for clarity, however.
 
-The first step towards clarity is to be involved in the project from the beginning as a trusted member of the team. That might mean [leaving your agency job and becoming an in-house designer](Writing/2013/2013-11-03-Five-Things-I-Learned-After-I-Left-the-Marketing-Agency-World.php). It might mean leaving your design silo and sitting with the engineers. You need to be in the middle of the action, whereever the decisions are being made. Things don’t get easier from there, however.
+The first step towards clarity is to be involved in the project from the beginning as a trusted member of the team. That might mean [leaving your agency job and becoming an in-house designer](/blog/2013/2013-11-03-Five-Things-I-Learned-After-I-Left-the-Marketing-Agency-World.html). It might mean leaving your design silo and sitting with the engineers. You need to be in the middle of the action, whereever the decisions are being made. Things don’t get easier from there, however.
 
 In his book [Forget all the rules you ever learned about graphic design](http://www.amazon.com/Forget-Rules-Learned-Graphic-Design/dp/0823018636), the design legend [Bob Gill](http://www.bobgilletc.com) suggests that,
 
@@ -61,7 +61,7 @@ Often designers don’t have much say in the words selected for our work. Occasi
 
 > “Some people have a way with words. Others not have way.” – Steve Martin
 
-You might think that the words aren’t your responsibility. That’s apathy talking and it is the first step on [the pathway to designer hell](Writing/2016/2016-02-06-Death-by-Toothbrush.php). No, words _are_ your job. Do whatever you can to start with interesting words. Write them yourself if you have to.
+You might think that the words aren’t your responsibility. That’s apathy talking and it is the first step on [the pathway to designer hell](/blog/2016/2016-02-06-Death-by-Toothbrush.html). No, words _are_ your job. Do whatever you can to start with interesting words. Write them yourself if you have to.
 
 Where do interesting words come from? Is it a special skill reserved for copywriters or articulate product managers? No. Here’s the most important thing you need to know about writing:
 

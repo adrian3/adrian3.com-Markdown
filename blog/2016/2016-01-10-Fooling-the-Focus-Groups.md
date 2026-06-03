@@ -88,9 +88,9 @@ If the population of craftsmen gets replaced by conmen, branding is no longer a 
 * * *
 
 Thanks for reading. If this post pushed your buttons, here are a few of my other crazy ideas: 
-  * [Why do the homeless hate Whoppers?](Writing/2015/2015-12-01-Why-Do-the-Homeless-Hate-Whoppers.php)
-  * [Affordable Idealism](Writing/2015/2015-12-30-Affordable-Idealism.php)
-  * [In the future everyone will be creative for fifteen minutes.](Writing/2015/2015-10-01-In-the-future-everyone-will-be-creative-for-fifteen-minutes.php)
+  * [Why do the homeless hate Whoppers?](/blog/2015/2015-12-01-Why-Do-the-Homeless-Hate-Whoppers.html)
+  * [Affordable Idealism](/blog/2015/2015-12-30-Affordable-Idealism.html)
+  * [In the future everyone will be creative for fifteen minutes.](/blog/2015/2015-10-01-In-the-future-everyone-will-be-creative-for-fifteen-minutes.html)
 
 <div class="flex-video">
   <iframe width="420" height="315" src="https://youtube.com/embed/SKL254Y_jtc" allowfullscreen style="border:0"></iframe>

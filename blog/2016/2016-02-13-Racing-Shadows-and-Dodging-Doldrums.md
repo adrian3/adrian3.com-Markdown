@@ -45,7 +45,7 @@ Today’s run comes to an end and I am exhausted but renewed. That boy never _re
 Thanks for reading. If you are new to my words, consider giving me a follow, recommendation, or tweet [@ade3][4]. _Stay creative._
 
 
-[1]:	Writing/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.php
+[1]:	/blog/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.html
 [2]:	https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7?source=your-stories
 [3]:	http://www.youtube.com/watch?v=aMTElj6b-vM
 [4]:	https://twitter.com/ade3

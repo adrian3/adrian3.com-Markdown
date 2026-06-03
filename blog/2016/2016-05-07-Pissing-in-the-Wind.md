@@ -67,7 +67,7 @@ If you go to all the trouble of conducting a formal study just to discredit mode
 
 > “The results of this study suggest that in locations where hygiene and cross-infection considerations are paramount, such as healthcare settings and the food industry, the choice of hand-drying method should be considered carefully.”
 
-[Oatmeal](Writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php). And this garbage gets published in serious scientific journals? No normal human has the patience to wade through a mind- numbing study like this. It takes a journalist, in this case [Beth Mole](https://twitter.com/BethMarieMole), to sift through the academic jargon and pull out a Twitter-ready headline for Ars Technica. The oatmeal gets inflated into this:
+[Oatmeal](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). And this garbage gets published in serious scientific journals? No normal human has the patience to wade through a mind- numbing study like this. It takes a journalist, in this case [Beth Mole](https://twitter.com/BethMarieMole), to sift through the academic jargon and pull out a Twitter-ready headline for Ars Technica. The oatmeal gets inflated into this:
 
 > “[Using a Dyson hand dryer is like setting off a viral bomb in a bathroom](http://arstechnica.com/science/2016/04/dyson-dryers-hurl-60x-more-viruses-most-at-kid-face-height-than-other-dryers/)”
 
@@ -103,5 +103,5 @@ In other news, [Dyson just launched a new product](https://www.youtube.com/watch
 
 Thanks for reading, and thanks to Medium for giving me a place to publicly relieve myself. If some on my idea virus got on you, try clicking the heart button for inoculation. I try to infect as many people as possible with my weekly posts. You should follow me. _Stay creative._
 
-_A Special Hell for Designers_ continues in part 10 where I tell you about [Font Blocking, Invisible Words, and Flames of Shame](Writing/2016/2016-07-09-Font-Blocking-Invisible-Words-and-Flames-of-Shame.php).
+_A Special Hell for Designers_ continues in part 10 where I tell you about [Font Blocking, Invisible Words, and Flames of Shame](/blog/2016/2016-07-09-Font-Blocking-Invisible-Words-and-Flames-of-Shame.html).
 

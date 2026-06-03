@@ -35,7 +35,7 @@ Beneath the surface of this technology is not the romantic nuts and bolts of Pir
 
 Yesterday a single person’s skull could contain all the knowledge necessary to keep a motorcycle in good maintenance. Today every object we touch is an impenetrable black box. Understanding even a fraction of the complexity inside everyday objects requires a lifetime of study.
 
-As technology advanced, knowledge got spread out across disciplines, divvied up between specialists who know only their tiny slice of expertise. We ended up with experts who can’t work outside their silos. Designers can’t be expected to write code. Engineers aren’t expected to have aesthetic taste. Managers aren’t expected to actually build things. “[That’s not my job.](Writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php)”
+As technology advanced, knowledge got spread out across disciplines, divvied up between specialists who know only their tiny slice of expertise. We ended up with experts who can’t work outside their silos. Designers can’t be expected to write code. Engineers aren’t expected to have aesthetic taste. Managers aren’t expected to actually build things. “[That’s not my job.](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html)”
 
 Design knowledge is fractured across many pockets of specialization. The UX designer sticks to what he knows best, incapable and afraid to tread next door into the domain of UI expert. Print designers avoid web design. You can forge a career designing logos without ever glancing outside your micro discipline. And ask a designer to give input on the words he is applying his frosting too? Forget about it, the actual meaning of the final product is the responsibility of yet another specialist.
 

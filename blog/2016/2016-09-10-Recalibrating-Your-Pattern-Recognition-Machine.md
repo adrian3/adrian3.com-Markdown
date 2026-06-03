@@ -13,7 +13,7 @@ layout:
 
 * * *
 
-[Last week](Writing/2016/2016-09-04-The-Pattern-Recognition-Machine.php) I warned you that if you create something authentic, your masterpiece, it will most likely be ignored or attacked by people who have nothing to compare your creation to. People have to put things in mental boxes in order to evaluate things. It’s human nature, or what I call the pattern recognition machine.
+[Last week](/blog/2016/2016-09-04-The-Pattern-Recognition-Machine.html) I warned you that if you create something authentic, your masterpiece, it will most likely be ignored or attacked by people who have nothing to compare your creation to. People have to put things in mental boxes in order to evaluate things. It’s human nature, or what I call the pattern recognition machine.
 
 I suggested that if your work is going to be change the world you will have to recalibrate the pattern recognition machine. What a bunch of bologna, right? What does that even mean? Let’s deconstruct that concept a bit more…
 
@@ -41,7 +41,7 @@ and
 
 Do you see it? This is the red Nissan in the sea of zombie-mobiles. Reticular activation. Depending on how your brain has been primed, you will embrace one of these statements and reject the other.
 
-Let’s get back to the subject of your masterpiece. _I have good news. _Recalibrating the pattern recognition machine is not as hard as converting a Trump hater or supporter. You have already taken the first step by simply acknowledging the machine exists. I will tell you more [next week in part 3.](Writing/2016/2016-09-17-Becoming-Bobblehead-Buddha.php)
+Let’s get back to the subject of your masterpiece. _I have good news. _Recalibrating the pattern recognition machine is not as hard as converting a Trump hater or supporter. You have already taken the first step by simply acknowledging the machine exists. I will tell you more [next week in part 3.](/blog/2016/2016-09-17-Becoming-Bobblehead-Buddha.html)
 
 You won’t want to miss my next story, because you are starting to imagine how much data you have already lost due to your pre-conscious filter. How could life be different if you could control that filter? The easiest way to avoid missing my next post is to follow me on [Twitter (@ade3)](https://twitter.com/ade3). _Stay creative._
 

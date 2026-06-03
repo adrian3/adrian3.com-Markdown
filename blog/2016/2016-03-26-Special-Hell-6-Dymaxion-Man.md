@@ -97,19 +97,19 @@ It is this toxic attitude that, more than anything else, has pushed designers to
 
 _Designers have a specific job. You do your job and let the experts do the real work._
 
-Instead of turning the world, we accept roles as skilled combover artists. This is what I mean when I say, “[there is a special hell for designers_](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613).” We traded Earth’s rudder for tubes of lipstick. Our apathy isn’t harmless. It might result in [toxic homes sent to disaster victims](Writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php). It could result in [death by toothbrush](Writing/2016/2016-02-06-Death-by-Toothbrush.php). It could result in [ad-diction](Writing/2016/2016-03-05-Special-Hell-5-Ad-Addiction.php). Best case scenario, your work doesn’t matter and the only impact of your apathy is more [oatmeal](Writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php). Shame on us.
+Instead of turning the world, we accept roles as skilled combover artists. This is what I mean when I say, “[there is a special hell for designers_](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613).” We traded Earth’s rudder for tubes of lipstick. Our apathy isn’t harmless. It might result in [toxic homes sent to disaster victims](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html). It could result in [death by toothbrush](/blog/2016/2016-02-06-Death-by-Toothbrush.html). It could result in [ad-diction](/blog/2016/2016-03-05-Special-Hell-5-Ad-Addiction.html). Best case scenario, your work doesn’t matter and the only impact of your apathy is more [oatmeal](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). Shame on us.
 
 Listen to how Bucky connects his failures to society’s misconception about the role of a designer:
 
 > Of course, our failures are a consequence of many factors, but possibly one of the most important is the fact that society operates on the theory that specialization is the key to success, not realizing that specialization precludes comprehensive thinking.
 
-There it is. Design has become the job of specialists. _Everything_ has become the job of specialists and instead of turning the Earth we contribute to stagnation. This is the reason we drive [zombie-mobiles](https://medium.com/swlh/the-zombie-mobile-b03932ac971d) instead of dymaxions. It is the reason [Adobe makes 59 flavors of design software](Writing/2016/2016-03-12-The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant.php).
+There it is. Design has become the job of specialists. _Everything_ has become the job of specialists and instead of turning the Earth we contribute to stagnation. This is the reason we drive [zombie-mobiles](https://medium.com/swlh/the-zombie-mobile-b03932ac971d) instead of dymaxions. It is the reason [Adobe makes 59 flavors of design software](/blog/2016/2016-03-12-The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant.html).
 
 Bucky would be appalled to see how the design profession has evolved into an assortment of design specialists. How many different job titles have you had in your career? Today we quibble over the differences between the disciplines of UI and UX, but if Bucky were still alive he would be preaching to us the virtues of being curious generalists. He said,
 
 > “Specialization has bred feelings of isolation, futility, and confusion in individuals… It has also resulted in the individual’s leaving responsibility for thinking and social action to others… Specialization breeds biases that ultimately aggregate as international and ideological discord, which in turn leads to war…
 
-The antidote to specialization is curiosity. As a generalist you are free from the dogma, politics, and static knowledge that handcuffs progress. Last week I wrote about the [talent stack](Writing/2016/2016-03-19-Whats-Your-Talent-Stack.php). This is the same thing. You don’t have to be the best in the world at one thing. By creating a system of complimentary skills you can become more than the sum of your parts. You can be the tiny rudder that turns the Earth. Put down the lipstick and take control of the ship.
+The antidote to specialization is curiosity. As a generalist you are free from the dogma, politics, and static knowledge that handcuffs progress. Last week I wrote about the [talent stack](/blog/2016/2016-03-19-Whats-Your-Talent-Stack.html). This is the same thing. You don’t have to be the best in the world at one thing. By creating a system of complimentary skills you can become more than the sum of your parts. You can be the tiny rudder that turns the Earth. Put down the lipstick and take control of the ship.
 
 Bucky loved the metaphor that our planet was a spaceship. He wrote [the operating manual](http://www.amazon.com/Operating-Manual-Spaceship-Buckminster-Fuller/dp/3037781262/ref=sr_1_1?ie=UTF8&qid=1459030310&sr=8-1&keywords=Operating+Manual+for+Spaceship+Earth). This concept says that Earth comes equipped with the supplies to sustain life. As the crew of the ship we must work together for the greater good. I am a sucker for idealism that generates these kind of utopic ideas. It is the friendly flip side of [my zombie metaphor](https://medium.com/@ade3/armageddon-143a2c57d32f#.70lcemiuz).
 
@@ -125,7 +125,7 @@ I started this story with the question, “Do you believe in design?” I ask th
 
 * * *
 
-Part 7: [Stasis Crackers](Writing/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.php)
+Part 7: [Stasis Crackers](/blog/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.html)
 
 * * *
 Thanks for reading. If this story resonated with you please help my idea viruses spread by sharing it on [Twitter](https://twitter.com/ade3) or poking the little heart icon below. Oh, and if you think Bucky was a crackpot, you should probably stay away from [my book](http://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871). _Stay creative._

@@ -15,7 +15,7 @@ layout:
 
 * * *
 
-It’s been a while since [my last confession](Writing/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.php) in the [Special Hell for Designers Like Me](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613) series. The time has come to come clean on another atrocity.
+It’s been a while since [my last confession](/blog/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.html) in the [Special Hell for Designers Like Me](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613) series. The time has come to come clean on another atrocity.
 
 You never know when you will be confronted by a test of character. There will come a moment when you are forced to choose. Do you stick to your beliefs, or do you fold under the pressure and sacrifice your very identity?
 
@@ -63,7 +63,7 @@ Seeing what to him looked like Times New Roman on my screen and having heard eno
 
 I never saw his final presentation. I can only assume that he went back to his huge office and typed “flaming font” into his browser. I imagine him giggling with glee when he found exactly what he was looking for. I wonder if he was surprised when his big presentation ended not with the crescendo of flaming glory he was hoping for but with the plop that millions of yawning PowerPoint attendees endure daily.
 
-With countless exotic fonts only a click away, it is hard for most people to understand why designers are so passionate about fonts that lack visual flair. Our job is often perceived as decorators with the assumption that our role is to apply [frosting](Writing/2015/2015-02-22-Curiosity-plus-obsession-plus-clarity-equals-quality.php) to other people’s [oatmeal](Writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php). Some designers accept this model, building their careers by further reinforcing the perception that we are merely combover artists.
+With countless exotic fonts only a click away, it is hard for most people to understand why designers are so passionate about fonts that lack visual flair. Our job is often perceived as decorators with the assumption that our role is to apply [frosting](/blog/2015/2015-02-22-Curiosity-plus-obsession-plus-clarity-equals-quality.html) to other people’s [oatmeal](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). Some designers accept this model, building their careers by further reinforcing the perception that we are merely combover artists.
 
 But most of us understand that if you find yourself searching for the perfect font, you are almost certainly focusing on the wrong thing. Fonts don’t make words interesting. _Compelling words are inherently interesting._ We strive to make the font invisible because if you find the right words you can let the font fade into the background where it belongs.
 
@@ -71,5 +71,5 @@ The world doesn’t need another junky PowerPoint. We need leaders whose words m
 
 Thanks for reading. If this post lit your fire, fan the flames by sharing it on Twitter. I write combustible words like this weekly, so follow me if you don’t already. _Stay creative._
 
-_A Special Hell for Designers_ is continued in part 11 where I tell you about [My First Golden Combover](Writing/2016/2016-08-13-My-First-Golden-Combover.php).
+_A Special Hell for Designers_ is continued in part 11 where I tell you about [My First Golden Combover](/blog/2016/2016-08-13-My-First-Golden-Combover.html).
 

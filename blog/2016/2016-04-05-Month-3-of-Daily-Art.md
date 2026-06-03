@@ -15,9 +15,9 @@ layout:
 
 Since January 1, I have been posting one piece of art a day on [Instagram (@ade3)](https://www.instagram.com/ade3/) and [Tumblr](http://ade3.tumblr.com). Follow me if you want to keep up with this ongoing project. I will let the art speak for itself, but if you want the back story, scroll to the bottom. And if you missed my first 2 posts you might want to start with these two links below.
 
-[The first 31 paintings of 2016](Writing/2016/2016-01-31-The-First-31-Paintings-of-2016.php)
+[The first 31 paintings of 2016](/blog/2016/2016-01-31-The-First-31-Paintings-of-2016.html)
 
-[My second month of paintings](Writing/2016/2016-02-29-My-Second-Month-of-Paintings.php)
+[My second month of paintings](/blog/2016/2016-02-29-My-Second-Month-of-Paintings.html)
 
 * * *
 

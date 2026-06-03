@@ -52,9 +52,9 @@ Our work only benefited from the unorthodox environment. After sculpting a life-
 So what do you do if you find yourself working in an office environment where play is not welcome? Before you just jump in and start shooting your co- workers with Nerf guns, consider starting smaller. Play is just one of the four “[Ingredients of Creativity](https://medium.com/@ade3/ingredients-of-creativity-9f94cee9b3c0).” The others are space, time, and trust. My advice is to focus on the other three first. Play comes naturally when you have established trust, carved out sufficient time, and fought for the space your ideas require.
 
 Thanks for reading. If you enjoyed this one, check out some of my other popular posts:  
-- [Brainstorming Advice from a Long Lost Isaac Asimov Letter](Writing/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.php)  
-- [Art of the Living Dead](Writing/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php)  
-- [What Work Sounds Like](Writing/2015/2015-10-26-The-Horrific-Symphony.php)
+- [Brainstorming Advice from a Long Lost Isaac Asimov Letter](/blog/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.html)  
+- [Art of the Living Dead](/blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html)  
+- [What Work Sounds Like](/blog/2015/2015-10-26-The-Horrific-Symphony.html)
 
 *Stay creative.*
 

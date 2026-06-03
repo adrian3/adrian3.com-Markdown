@@ -37,7 +37,7 @@ _Ghosts?_ I ain’t afraid of no ghost. (Sorry, I ran out of [Star Wars referenc
 
 You can live your entire life grinding mysteries into dust. Many people die old, rich, and fat following that formula. There is another path, however. You don’t have to dissolve dreams, you can transcend your computer brain.
 
-[Last week](Writing/2016/2016-09-04-The-Pattern-Recognition-Machine.php) I talked about the 99% of data that your mind filters out before it reaches your consciousness. Our pattern recognition filter selects the “important” things and discards the rest without us realizing it. We are literally unaware of the things that our mind blocks from our attention.
+[Last week](/blog/2016/2016-09-04-The-Pattern-Recognition-Machine.html) I talked about the 99% of data that your mind filters out before it reaches your consciousness. Our pattern recognition filter selects the “important” things and discards the rest without us realizing it. We are literally unaware of the things that our mind blocks from our attention.
 
 Imagine you are driving down a highway. Information is zooming past you in all directions. There is no way to process it all. Somewhere among the chaos is a kernel of information, an egg that could hatch into a world-changing idea.
 
@@ -61,5 +61,5 @@ Real education leads to more questions, not more answers. Actual study (going be
 
 When we realize that at any moment we are only absorbing a tiny slice of the world, an amazing things happens. We transform from preprogrammed machines into creative beings.
 
-Thanks for letting my idea bugs explode on your mental windshield today. [This series is continued in part 4, here.](Writing/2016/2016-09-24-Science-is-all-in-your-head.php) I write stories like this every week, so consider [following me @ade3](https://twitter.com/ade3). _Stay creative._
+Thanks for letting my idea bugs explode on your mental windshield today. [This series is continued in part 4, here.](/blog/2016/2016-09-24-Science-is-all-in-your-head.html) I write stories like this every week, so consider [following me @ade3](https://twitter.com/ade3). _Stay creative._
 

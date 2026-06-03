@@ -17,7 +17,7 @@ layout:
 
 * * *
 
-Last year I wrote about [an update to my Ghost-O-Meter app that removed Google Analytics.](Writing/2015/2015-10-11-A-confession-from-Ghost-O-Meters-creator.php) That post was written to my users, but now I want to talk to my fellow creators. I want you to consider unplugging your data vacuums. It sounds crazy, but stick with me.
+Last year I wrote about [an update to my Ghost-O-Meter app that removed Google Analytics.](/blog/2015/2015-10-11-A-confession-from-Ghost-O-Meters-creator.html) That post was written to my users, but now I want to talk to my fellow creators. I want you to consider unplugging your data vacuums. It sounds crazy, but stick with me.
 
 I know you care about your users. Part of the reason you add analytics to your app is precisely _because you care_. You want to know how they use your app. You want to uncover areas for improvement. We crave validation of our decisions. Your business depends on revenue and you want to optimize, optimize, optimize. _I get that._
 

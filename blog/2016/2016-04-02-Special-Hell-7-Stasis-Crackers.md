@@ -109,5 +109,5 @@ Strangely, I think Mrs. Hackbarth did the right thing. Today, they would probabl
 
 * * *
 
-Thanks for reading. This was part 7 of my “[Special Hell for Designers](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.tk248hnfp)” series. Part 8 is about [telepathy blockers](Writing/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.php). I try to post a story each week, so consider following me here or on [Twitter](https://twitter.com/ade3) if my words resonate with you. _Stay creative._
+Thanks for reading. This was part 7 of my “[Special Hell for Designers](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.tk248hnfp)” series. Part 8 is about [telepathy blockers](/blog/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.html). I try to post a story each week, so consider following me here or on [Twitter](https://twitter.com/ade3) if my words resonate with you. _Stay creative._
 

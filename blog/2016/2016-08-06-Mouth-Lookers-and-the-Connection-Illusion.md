@@ -59,13 +59,13 @@ You leave a meeting thinking you are in alignment, but in the follow-up you disc
 
 Your original work is rejected because someone can’t recognize your skill.
 
-You realize you have been [reading the data wrong](Writing/2016/2016-06-18-I-Am-Data-Drivel.php).
+You realize you have been [reading the data wrong](/blog/2016/2016-06-18-I-Am-Data-Drivel.html).
 
-You uncover one of the [3 lies someone tells every ten minutes](Writing/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.php).
+You uncover one of the [3 lies someone tells every ten minutes](/blog/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.html).
 
-Disconnection. When it happens you can [feel the energy drain out of you](Writing/2016/2016-07-02-Boosters-and-Drainers.php).
+Disconnection. When it happens you can [feel the energy drain out of you](/blog/2016/2016-07-02-Boosters-and-Drainers.html).
 
-If you aren’t careful these moments can become [doom loop triggers](Writing/2016/2016-05-21-Doom-Loop-Triggers.php). You might decide to end a friendship. Maybe you quit your job. You might compromise your work to satisfy opposing opinions.
+If you aren’t careful these moments can become [doom loop triggers](/blog/2016/2016-05-21-Doom-Loop-Triggers.html). You might decide to end a friendship. Maybe you quit your job. You might compromise your work to satisfy opposing opinions.
 
 Or perhaps you have the humility to accept that you are weird, that you are faking being normal most of the time. Disconnection isn’t the problem, it is just that real connection is extremely rare. Don’t stop searching for it.
 

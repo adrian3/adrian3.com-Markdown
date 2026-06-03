@@ -25,7 +25,7 @@ Getting mad at your boss or Stan is wasted effort. Your best option is to do som
 
 This is where things get risky. When you break from the standard oatmeal recipe the only thing that is guaranteed is that you will break something. You are either going to break-through or break-down.
 
-The scary part is that it is difficult to know if your first batch of non-oatmeal is going to be great or just a new kind of mush. The first cycle of a [doom loop](Writing/2016/2016-05-21-Doom-Loop-Triggers.php) is hard to distinguish from the first turn of a [flywheel](Writing/2016/2016-05-28-The-Flywheel-Formula.php). How do you de-risk the first loop?
+The scary part is that it is difficult to know if your first batch of non-oatmeal is going to be great or just a new kind of mush. The first cycle of a [doom loop](/blog/2016/2016-05-21-Doom-Loop-Triggers.html) is hard to distinguish from the first turn of a [flywheel](/blog/2016/2016-05-28-The-Flywheel-Formula.html). How do you de-risk the first loop?
 
 Breakthrough success and catastrophic failure seem random at first, but they are more systematic than they appear. I once worked for a company that went out of business. We all knew that the company was doomed long before the meltdown. We recognized the doom loop even if we couldn’t stop the impending collapse. That’s because the failure wan’t random, _doom loops are systems._
 

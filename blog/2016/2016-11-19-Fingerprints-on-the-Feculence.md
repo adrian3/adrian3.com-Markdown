@@ -82,27 +82,27 @@ This is part 13 in my ongoing series called, _A Special Hell for Designers Like 
 
 1. [Scratching the Surface.](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613?source=linkShare-f82ce6c25013-1481400462)
 
-2. [Got a brand problem? Put a bird on it.](Writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php)
+2. [Got a brand problem? Put a bird on it.](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html)
 
-3. [Death by Toothbrush](Writing/2016/2016-02-06-Death-by-Toothbrush.php)
+3. [Death by Toothbrush](/blog/2016/2016-02-06-Death-by-Toothbrush.html)
 
-4. [Stop Dribbbling, Get a Design Education at Costco](Writing/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.php)
+4. [Stop Dribbbling, Get a Design Education at Costco](/blog/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.html)
 
-5. [Ad-diction](Writing/2016/2016-03-05-Special-Hell-5-Ad-Addiction.php)
+5. [Ad-diction](/blog/2016/2016-03-05-Special-Hell-5-Ad-Addiction.html)
 
 6. [The Dymaxion Man](https://uxdesign.cc/special-hell-6-dymaxion-man-13a3cb1023aa#.j6qoba4kc)
 
-7. [Stasis Crackers](Writing/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.php)
+7. [Stasis Crackers](/blog/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.html)
 
-8. [Telepathy Blockers](Writing/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.php)
+8. [Telepathy Blockers](/blog/2016/2016-04-11-Special-Hell-8-Telepathy-Blockers.html)
 
-9. [Pissing in the Wind](Writing/2016/2016-05-07-Pissing-in-the-Wind.php)
+9. [Pissing in the Wind](/blog/2016/2016-05-07-Pissing-in-the-Wind.html)
 
-10. [Font Blocking, Invisible Words, and Flames of Shame](Writing/2016/2016-07-09-Font-Blocking-Invisible-Words-and-Flames-of-Shame.php)
+10. [Font Blocking, Invisible Words, and Flames of Shame](/blog/2016/2016-07-09-Font-Blocking-Invisible-Words-and-Flames-of-Shame.html)
 
-11. [My First Golden Combover](Writing/2016/2016-08-13-My-First-Golden-Combover.php)
+11. [My First Golden Combover](/blog/2016/2016-08-13-My-First-Golden-Combover.html)
 
-12. [Color theory scams](Writing/2016/2016-10-15-Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With-Color.php)
+12. [Color theory scams](/blog/2016/2016-10-15-Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With-Color.html)
 
 * * *
 

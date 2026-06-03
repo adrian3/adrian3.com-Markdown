@@ -55,4 +55,4 @@ No, we don’t exist in a world where creativity is demanded of each of us. Inst
 
 Yes, we believe in heroes who can transcend the system that boxes us in. We still cheer when, once in a while, an artist does the impossible and we are able witness a creation so great it manages to slip the surly bonds of earth to touch the face of God. That’s where I want to live.
 
-_Hey, thanks for reading._ If you enjoyed this post you might enjoy [Brainstorming Advice from Isaac Asimov](Writing/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.php) or my [Art of the Living Dead](https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7) writing. *Stay creative.*
+_Hey, thanks for reading._ If you enjoyed this post you might enjoy [Brainstorming Advice from Isaac Asimov](/blog/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.html) or my [Art of the Living Dead](https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7) writing. *Stay creative.*

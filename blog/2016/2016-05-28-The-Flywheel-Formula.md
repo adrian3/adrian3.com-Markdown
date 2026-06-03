@@ -17,7 +17,7 @@ If my boys would let you slice open one of their monster truck toys to find the 
 
 Do you know anyone like that, the type of person that seems unsinkable? No matter what life throws at them they persevere. Every blow makes them stronger, they always come out on top, and they make it look so easy.
 
-Last week I wrote about [doom loop triggers](Writing/2016/2016-05-21-Doom-Loop-Triggers.php), the tiny things that can derail our lives and send us into a tailspin. The problem is that our productivity is based on a brittle equation that looks like this:
+Last week I wrote about [doom loop triggers](/blog/2016/2016-05-21-Doom-Loop-Triggers.html), the tiny things that can derail our lives and send us into a tailspin. The problem is that our productivity is based on a brittle equation that looks like this:
 
 > Output = (Energy x Skills)/Time
 

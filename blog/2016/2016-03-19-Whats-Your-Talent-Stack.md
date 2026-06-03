@@ -39,7 +39,7 @@ Politics aside, the concept of a talent stack might be a better framework for ev
 
 #### How can you recognize a talent stack?
 
-As you evaluate a candidate, pay attention to the things you are measuring. Are you simply marking boxes on a checklist of skills? [Last week I talked about the “fooled by tools” phenomena that results in 59 ridiculous flavors of design software.](Writing/2016/2016-03-12-The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant.php) Software skills are not a talent stack.
+As you evaluate a candidate, pay attention to the things you are measuring. Are you simply marking boxes on a checklist of skills? [Last week I talked about the “fooled by tools” phenomena that results in 59 ridiculous flavors of design software.](/blog/2016/2016-03-12-The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant.html) Software skills are not a talent stack.
 
 Job titles are also misleading. If you find yourself debating the differences between a UX designer and an interaction designer you will probably miss the talent stack. Job titles aren’t part of the stack.
 
@@ -67,7 +67,7 @@ If we all have the same list of skills the only way to stand out is to group you
 
 6\. Persuasion skills (an aspiring student)
 
-You can see that I am nothing special taken one skill at a time. But as a system it explains how in addition to my day job I can [publish a book](Writing/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php), [create a handful of apps](https://itunes.apple.com/us/artist/adrian3/id395435271), [run four marathons](http://www.strava.com/athletes/442364), and [produce daily artwork](http://ade3.tumblr.com).
+You can see that I am nothing special taken one skill at a time. But as a system it explains how in addition to my day job I can [publish a book](/blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html), [create a handful of apps](https://itunes.apple.com/us/artist/adrian3/id395435271), [run four marathons](http://www.strava.com/athletes/442364), and [produce daily artwork](http://ade3.tumblr.com).
 
 Understanding your talent stack gives you a story to go with your checklist of skills. Not only does that make you more interesting, it also equips your interviewers to evaluate you more accurately.
 

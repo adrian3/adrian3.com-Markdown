@@ -41,12 +41,12 @@ This more than anything is the difference between art and the ordinary. If you r
 Thanks for reading. Every week I present an idea for you tap on. If the sound of this one rang true, consider following me. _Stay creative._
 
 
-[1]:	Writing/2016/2016-10-01-The-Best-Lawn-in-the-Entire-Post-Apocalypse.php
+[1]:	/blog/2016/2016-10-01-The-Best-Lawn-in-the-Entire-Post-Apocalypse.html
 [2]:	https://www.youtube.com/watch?v=sAeXskZHC2o
 [3]:	https://www.youtube.com/watch?v=V9-ltPsbw9g
 [4]:	http://www.npr.org/2016/09/23/495193882/blue-man-group-tiny-desk-concert
 [5]:	http://www.core77.com/posts/56687/The-Singing-Rocks-of-Pinuccio-Sciola
-[6]:	Writing/2016/2016-04-23-Fatal-Side-Effects-of-Specialization.php
+[6]:	/blog/2016/2016-04-23-Fatal-Side-Effects-of-Specialization.html
 [7]:	https://medium.com/@ade3/the-moon-rocket-man-c9d463b8a861#.xmju4ttyq
 
 [image-1]:	/images/dropbox_public/images/Make-Your-Stone-Sing.png

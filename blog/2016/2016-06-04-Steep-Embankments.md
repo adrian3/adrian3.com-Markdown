@@ -67,5 +67,5 @@ I don’t need to beat you over the head with the moral of the story. It is hard
 Thanks for reading. I write gory tales like this each week, so you should follow me. _Stay creative._
 
 
-[1]:	Writing/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.php
-[2]:	Writing/2016/2016-05-21-Doom-Loop-Triggers.php
+[1]:	/blog/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.html
+[2]:	/blog/2016/2016-05-21-Doom-Loop-Triggers.html

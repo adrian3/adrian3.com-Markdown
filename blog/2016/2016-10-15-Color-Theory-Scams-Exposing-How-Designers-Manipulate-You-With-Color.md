@@ -82,5 +82,5 @@ And that, my friends, is how you manipulate people with color. In case you misse
 
 Thanks for reading. I write stories like this every week, so follow me if you don’t want to miss my next one. _Stay creative._
 
-_A Special Hell for Designers_ continues in part 13 where I tell you about the [Fingerprints on the Feculence](Writing/2016/2016-11-19-Fingerprints-on-the-Feculence.php).
+_A Special Hell for Designers_ continues in part 13 where I tell you about the [Fingerprints on the Feculence](/blog/2016/2016-11-19-Fingerprints-on-the-Feculence.html).
 

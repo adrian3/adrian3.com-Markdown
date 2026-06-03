@@ -17,7 +17,7 @@ layout:
 
 * * *
 
-You keep hearing me talk about [oatmeal](writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php) and [zombies](https://medium.com/swlh/the-zombie-mobile-b03932ac971d#.4wbb1jvtc). In case you think I am pointing fingers from my ivory tower, today I want to confess my own contribution to this mess.
+You keep hearing me talk about [oatmeal](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html) and [zombies](https://medium.com/swlh/the-zombie-mobile-b03932ac971d#.4wbb1jvtc). In case you think I am pointing fingers from my ivory tower, today I want to confess my own contribution to this mess.
 
 _(Disclaimer: Trashing your clients and former employer is bad form, even after a decade of silence. That’s not my intention. The people I worked with and for in the story that follows were not zombies. We were [passionate insiders trying to make a difference in a zombie industry](https://medium.com/@ade3/inside-or-out-767884695959#.b2ju355wg).)_
 
@@ -93,5 +93,5 @@ I had no idea. What I learned next made me question everything. Were my magic tr
 
 Today’s post was about the surface layer, the tricks of the trade that by themselves seem harmless. Next week I am going to talk about what happens when you start asking questions. That’s where my path to hell gets paved. _Stay creative._
 
-[Part 2: Got a Brand Problem? Put a Bird on it.](writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php)
+[Part 2: Got a Brand Problem? Put a Bird on it.](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html)
 

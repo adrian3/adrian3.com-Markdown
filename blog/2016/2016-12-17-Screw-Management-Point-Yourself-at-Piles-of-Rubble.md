@@ -39,7 +39,7 @@ As for me, I would rather be the one in the mud, hauling the waste, and fixing t
 Thanks for reading. They don't pay me to write this stuff and I don't charge to read my weekly excursions into the rubble. If you like my hustle, consider giving me a follow. *Stay creative.*
 
 
-[1]:	Writing/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.php
-[2]:	Writing/2013/2013-11-03-Five-Things-I-Learned-After-I-Left-the-Marketing-Agency-World.php
+[1]:	/blog/2016/2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.html
+[2]:	/blog/2013/2013-11-03-Five-Things-I-Learned-After-I-Left-the-Marketing-Agency-World.html
 
 [image-1]:	/images/dropbox_public/images/Wheelbarrow.jpeg

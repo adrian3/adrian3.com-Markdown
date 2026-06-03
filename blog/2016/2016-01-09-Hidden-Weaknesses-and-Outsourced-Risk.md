@@ -61,9 +61,9 @@ If you are stubborn enough to stick with the “I’d rather do it myself” app
 I still have a long way to go, but finally I have cobbled together enough skills to be able to be shipping work that I am proud of. [My apps][2] get better with each release. [My writing][3] improves with each [crazy idea][4] I release into the wild. Sure, there are some duds, but I would never have gotten this far without pretending I knew what I was doing.
 
 
-[1]:	Writing/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.php
+[1]:	/blog/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.html
 [2]:	https://itunes.apple.com/us/developer/adrian3/id395435271?iPhoneSoftwarePage=1#iPhoneSoftwarePage
 [3]:	https://medium.com/@ade3
-[4]:	Writing/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php
+[4]:	/blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html
 
 [image-1]:	/images/dropbox_public/images/Hidden-Weaknesses-and-Outsourced-Risk.gif

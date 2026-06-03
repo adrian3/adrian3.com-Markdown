@@ -15,13 +15,13 @@ layout:
 
 * * *
 
-Life hackers look for shortcuts. Tips for curing your hangover have their place but there is only so much hacking you can do before your life devolves into a chaotic mess. I prefer the idea of building a personal system. If done right, a system can produce [a flywheel effect](Writing/2016/2016-05-28-The-Flywheel-Formula.php) that leads to breakthrough. We can be greater than the sum of our skills and we can achieve more than we are capable of. _That’s my theory anyway._
+Life hackers look for shortcuts. Tips for curing your hangover have their place but there is only so much hacking you can do before your life devolves into a chaotic mess. I prefer the idea of building a personal system. If done right, a system can produce [a flywheel effect](/blog/2016/2016-05-28-The-Flywheel-Formula.html) that leads to breakthrough. We can be greater than the sum of our skills and we can achieve more than we are capable of. _That’s my theory anyway._
 
 Personal energy comes from a rechargeable battery that gets drained and refilled daily. We wake up tired, fuel with caffeine, and are lucky to make it through the afternoon before the battery dies completely. Evenings are spent relaxing, unplugging from the main power source. When we collapse into sleep our batteries try to get back to full power. The cycle repeats until we are as dead as a used up Duracell.
 
 <img src="/images/dropbox_public/images/Boosters-and-Drainers.gif" alt="Diagram 2: Your Daily Routine" class="caption">
 
-The daily recharge cycle works alright for [oatmeal people](Writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php). But not you. You’re striving for breakthrough so you are going to need full energy at all times. Without maximum energy your flywheel will turn into a [doom loop](Writing/2016/2016-05-21-Doom-Loop-Triggers.php). So is inexhaustible energy possible?
+The daily recharge cycle works alright for [oatmeal people](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). But not you. You’re striving for breakthrough so you are going to need full energy at all times. Without maximum energy your flywheel will turn into a [doom loop](/blog/2016/2016-05-21-Doom-Loop-Triggers.html). So is inexhaustible energy possible?
 
 <img src="/images/dropbox_public/images/Boosters-and-Drainers2.gif" alt="Diagram 3: The Doom Loop" class="caption">
 

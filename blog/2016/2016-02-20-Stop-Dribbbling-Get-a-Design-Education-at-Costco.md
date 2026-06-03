@@ -51,9 +51,9 @@ In hindsight it is easy to recognize how lucky I was to have a design mentor bef
 
 * * *
 
-[Part 5: Ad-Diction](Writing/2016/2016-03-05-Special-Hell-5-Ad-Addiction.php)
+[Part 5: Ad-Diction](/blog/2016/2016-03-05-Special-Hell-5-Ad-Addiction.html)
 
 * * *
 
-Thanks for reading. If you missed [part 1](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.xpgexsg0n), [2](Writing/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.php), or [3](Writing/2016/2016-02-06-Death-by-Toothbrush.php) of my _Designer Hell_ series check them out. As always, your ♥s, shares, and follows are the highlight of my day. _Stay Creative._
+Thanks for reading. If you missed [part 1](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.xpgexsg0n), [2](/blog/2016/2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html), or [3](/blog/2016/2016-02-06-Death-by-Toothbrush.html) of my _Designer Hell_ series check them out. As always, your ♥s, shares, and follows are the highlight of my day. _Stay Creative._
 

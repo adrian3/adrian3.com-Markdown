@@ -116,10 +116,10 @@ It occurs to me now that I am wrapping up this post that my designer/developer e
 
 Thanks for reading. Here are a few other of my crazy ideas that you might enjoy:
 
-1. [Why the business of building websites generates so much garbage](Writing/2015/2015-02-22-Curiosity-plus-obsession-plus-clarity-equals-quality.php)  
-2. [In the future everyone will be creative for fifteen minutes](Writing/2015/2015-10-01-In-the-future-everyone-will-be-creative-for-fifteen-minutes.php)  
-3. [The untold story of how a small team of innovators almost fundamentally changed government](Writing/2013/2013-12-01-The-Heroes-Behind-Healthcare-Dot-Gov.php)  
-4. [Brainstorming advice from a long lost Isaac Asimov letter](Writing/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.php)
+1. [Why the business of building websites generates so much garbage](/blog/2015/2015-02-22-Curiosity-plus-obsession-plus-clarity-equals-quality.html)  
+2. [In the future everyone will be creative for fifteen minutes](/blog/2015/2015-10-01-In-the-future-everyone-will-be-creative-for-fifteen-minutes.html)  
+3. [The untold story of how a small team of innovators almost fundamentally changed government](/blog/2013/2013-12-01-The-Heroes-Behind-Healthcare-Dot-Gov.html)  
+4. [Brainstorming advice from a long lost Isaac Asimov letter](/blog/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.html)
 
 _Stay creative._
 

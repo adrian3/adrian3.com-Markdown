@@ -25,7 +25,7 @@ Cracks me up. Anyway, it’ll make more sense later. Now then, _on to hell..._
 
 * * *
 
-[My first post about designer hell](Writing/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.php) showed how the tricks of the design trade have a fundamental potential for deception. On the surface, the degree of sin inherent in these illusions is debatable. To really dance with the devil you have to ask questions. Let’s start with this one:
+[My first post about designer hell](/blog/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.html) showed how the tricks of the design trade have a fundamental potential for deception. On the surface, the degree of sin inherent in these illusions is debatable. To really dance with the devil you have to ask questions. Let’s start with this one:
 
 > Why weren’t there any logos on the thousands of RVs that were sent to the victims of hurricane Katrina?
 
@@ -89,7 +89,7 @@ As designers we are eager to believe the myths we create. When we learn our clie
 
 I have created many logos in my career. I could walk away from these logos and point at the skill of my designs and say, “I did my job.” The reality is that my designs aren’t artifacts of great brands. They are careful illusions, little lies that distort the truth of the companies they represent. _Guilty again._
 
-I often [write critically about branding](https://medium.com/@ade3/shortcut-addiction-9e7e8c622371?source=your-stories). At its best, a brand is a representation of integrity. We proudly mark the things we make and stand behind our products. Brands rarely achieve this ideal, however. Instead, companies copy their competitors [pushing industries toward commodification](Writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php). When branding is removed from a product, whether it is an RV [or a Chevy](Writing/2016/2016-01-10-Fooling-the-Focus-Groups.php), the artifacts of integrity must still remain. If they don’t, branding isn’t a helpful tool, but a decoy that pollutes our world with deception.
+I often [write critically about branding](https://medium.com/@ade3/shortcut-addiction-9e7e8c622371?source=your-stories). At its best, a brand is a representation of integrity. We proudly mark the things we make and stand behind our products. Brands rarely achieve this ideal, however. Instead, companies copy their competitors [pushing industries toward commodification](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). When branding is removed from a product, whether it is an RV [or a Chevy](/blog/2016/2016-01-10-Fooling-the-Focus-Groups.html), the artifacts of integrity must still remain. If they don’t, branding isn’t a helpful tool, but a decoy that pollutes our world with deception.
 
 Designers love branding projects because it is a chance to reshape perceptions. But if you have to hire an advertising agency to tell you what makes your company different, your problems won’t go away with the arrival of a new logo. _Sorry._
 
@@ -97,5 +97,5 @@ Even if we did have the integrity to notice the lies we spin, or the harmful lac
 
 So am I going to hell? The thing about salvation is it ultimately isn’t up to us. A higher power has the final say. All we can do is try our best to be honest in our work. Perhaps even for a flawed designer like myself, damnation can be prevented. _Stay creative._
 
-[Part 3: Death by Toothbrush](Writing/2016/2016-02-06-Death-by-Toothbrush.php)
+[Part 3: Death by Toothbrush](/blog/2016/2016-02-06-Death-by-Toothbrush.html)
 

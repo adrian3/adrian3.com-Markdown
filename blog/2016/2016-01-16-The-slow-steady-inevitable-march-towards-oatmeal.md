@@ -63,5 +63,5 @@ Thanks for reading. If this is the first time you have come across my crazy idea
 
 3\. Then ask yourself if [Art of the Living Dead](http://www.amazon.com/Art-Living-Dead-Adrian-Hanft-ebook/dp/B00Q2ACW2G) is worth $7.99 and your full attention.
 
-Stay tuned for [my next story where I confess how I contributed to the commoditization dystopia and **why I am going to hell for it.**](Writing/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.php)  _Stay creative._
+Stay tuned for [my next story where I confess how I contributed to the commoditization dystopia and **why I am going to hell for it.**](/blog/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.html)  _Stay creative._
 

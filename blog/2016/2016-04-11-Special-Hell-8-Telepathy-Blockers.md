@@ -53,7 +53,7 @@ As a child you conform to the will of the mind-readers. Adolescence involves lea
 
 Manipulators occupy the peak of the pyramid and like kings of the food chain these predators have the ability to manipulate our thinking because they understand our thoughts better than we do. Most people are vaguely aware of their existence, but doubt the power these manipulator have over their minds. We all want to believe we are independent thinkers, but the reality is we rarely see the invisible hand pulling the strings in our skulls. Let me give you an example…
 
-I could pick on politicians, [advertisers](Writing/2016/2016-03-05-Special-Hell-5-Ad-Addiction.php), lawyers, [Trump](Writing/2016/2016-03-19-Whats-Your-Talent-Stack.php), salesman, [SEO scum](https://medium.com/@ade3/zombie-economics-e61fd99b5c4d#.spo0e55es), or some other professional field of manipulation. But since this series is about [the special place in hell for designers](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.tk248hnfp), that’s where I will point my thumb.
+I could pick on politicians, [advertisers](/blog/2016/2016-03-05-Special-Hell-5-Ad-Addiction.html), lawyers, [Trump](/blog/2016/2016-03-19-Whats-Your-Talent-Stack.html), salesman, [SEO scum](https://medium.com/@ade3/zombie-economics-e61fd99b5c4d#.spo0e55es), or some other professional field of manipulation. But since this series is about [the special place in hell for designers](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.tk248hnfp), that’s where I will point my thumb.
 
 Designers may not realize it, but our training equips us with an arsenal of manipulative tools that influence people beyond the realm of ordinary awareness. Like a telepath, our skill invisibly interacts with other people’s minds.
 
@@ -77,13 +77,13 @@ One result of our manipulative design powers are cultural artifacts otherwise kn
 
 And when it comes down to it there isn’t a single printed object that hasn’t been influenced by the manipulative skills of a designer. Every website, advertisement, and app contains some designer’s fingerprint. Pick your propaganda, it is a safe bet it was produced by a designer.
 
-Don’t mistake my observations as a condemnation of our profession, however. The purpose of my post is to encourage us to admit the immense power designers wield. We are not passive helpers in systems beyond our control. We hold the keys. Too often, the mantra of our profession is the unspoken words, “That’s not my job.” Instead of [taking Earth’s rudder](Writing/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.php), we let ourselves become the tools of less honorable manipulators. Manipulation doesn’t have to be negative, however, and if anyone can use this power for good it is designers.
+Don’t mistake my observations as a condemnation of our profession, however. The purpose of my post is to encourage us to admit the immense power designers wield. We are not passive helpers in systems beyond our control. We hold the keys. Too often, the mantra of our profession is the unspoken words, “That’s not my job.” Instead of [taking Earth’s rudder](/blog/2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.html), we let ourselves become the tools of less honorable manipulators. Manipulation doesn’t have to be negative, however, and if anyone can use this power for good it is designers.
 
 You can be like Zoltar, selling your soul for quarters, or you can embrace your telepathic prowess and design a better world. Use your skills, change minds, and claim your spot at the top of the pyramid.
 
 * * *
 
-Thanks for reading. If you think this story was manipulative, I should warn you about [my book](http://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871). Still, you might want to consider following me to keep up with my weekly brainwashing attempts. Last week I wrote about [Stasis Crackers](Writing/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.php). _Mmmm, stasis._ 
+Thanks for reading. If you think this story was manipulative, I should warn you about [my book](http://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871). Still, you might want to consider following me to keep up with my weekly brainwashing attempts. Last week I wrote about [Stasis Crackers](/blog/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.html). _Mmmm, stasis._ 
 
-Oh, and this series of “Special Hell for Designers” stories is continued in part 9 where I talk about [Pissing in the Wind.](Writing/2016/2016-05-07-Pissing-in-the-Wind.php) *Stay creative.*
+Oh, and this series of “Special Hell for Designers” stories is continued in part 9 where I talk about [Pissing in the Wind.](/blog/2016/2016-05-07-Pissing-in-the-Wind.html) *Stay creative.*
 

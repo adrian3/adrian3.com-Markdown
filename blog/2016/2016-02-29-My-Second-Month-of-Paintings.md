@@ -18,7 +18,7 @@ layout:
 Since January 1, I have been posting one piece of art a day on [Instagram (@ade3)](https://www.instagram.com/ade3/) and [Tumblr](http://ade3.tumblr.com). Follow me if you want to keep up with this ongoing project. I will let the art speak for itself, but if you want the back story, scroll to the end. And if you missed my first post you might want to start there.
 
 **[Month 1 of Daily Art](https://medium.com/p/7542a1bb7e75)**  
-**[Month 3 of Daily Art](Writing/2016/2016-04-05-Month-3-of-Daily-Art.php)**
+**[Month 3 of Daily Art](/blog/2016/2016-04-05-Month-3-of-Daily-Art.html)**
 
 * * *
 
@@ -146,7 +146,7 @@ Day 60
 
 ### The Back Story…
 
-As I explained in [my first post](Writing/2016/2016-01-31-The-First-31-Paintings-of-2016.php), the goal of my painting-a-day project is to develop some themes from the chaotic archives of unfinished work in my basement studio.
+As I explained in [my first post](/blog/2016/2016-01-31-The-First-31-Paintings-of-2016.html), the goal of my painting-a-day project is to develop some themes from the chaotic archives of unfinished work in my basement studio.
 
 The first theme for February was skulls. I found a series of line drawings of skulls that I did some time around 1999 and I wanted to mash them up with my collage/textural technique. I was nervous that these would dip too deeply into trite territory, but I think I managed to put a new spin on an overused symbol. Watch for more skull art from me later this year.
 
@@ -161,7 +161,7 @@ The second theme of the month was remixing imagery from the promotion of my seni
 
 To raise interest in my ary show I went around our campus screen printing my posters directly on the buildings. It was basically graffiti, and in hindsight I was probably lucky I didn’t get in more trouble. I was asked to remove the paint from the buildings and get official approval before promoting my show any further.
 
-Once I removed the graffiti I set out to print some less controversial posters. Instead of printing on white paper, I used an assortment of wallpaper as the base layer of my prints. The design of my poster contained cropped images of the source imagery used in my paintings. You might recognize the lilies and spider flower from [last month](Writing/2016/2016-01-31-The-First-31-Paintings-of-2016.php).
+Once I removed the graffiti I set out to print some less controversial posters. Instead of printing on white paper, I used an assortment of wallpaper as the base layer of my prints. The design of my poster contained cropped images of the source imagery used in my paintings. You might recognize the lilies and spider flower from [last month](/blog/2016/2016-01-31-The-First-31-Paintings-of-2016.html).
 
 The other promotion for my show was invitations. I created 100 small pieces of art in my collage/painting style. I printed the invitation on semi-transparent vellum paper and folded it over the individually numbered pieces of art. Here is a short video showing what the result looked like.
 

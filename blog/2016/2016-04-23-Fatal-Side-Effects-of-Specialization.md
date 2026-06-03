@@ -19,13 +19,13 @@ layout:
 
 > “Specialization has bred feelings of _isolation_, _futility_, and _confusion_ in individuals… Specialization breeds _biases_ that ultimately aggregate as international and ideological discord, which in turn leads to _war._” — Buckminster Fuller
 
-When I wrote about [the Dymaxion Man](Writing/2016/2016-03-26-Special-Hell-6-Dymaxion-Man.php) a few weeks ago I referenced a quote by Buckminster Fuller where he says that specialization leads to isolation, futility, confusion, bias, and ultimately war. These words have rattled in my skull since I read them, especially the challenging idea that _specialization leads to war._
+When I wrote about [the Dymaxion Man](/blog/2016/2016-03-26-Special-Hell-6-Dymaxion-Man.html) a few weeks ago I referenced a quote by Buckminster Fuller where he says that specialization leads to isolation, futility, confusion, bias, and ultimately war. These words have rattled in my skull since I read them, especially the challenging idea that _specialization leads to war._
 
 Can that really be true?
 
 I am not qualified to talk about the capital “W” type of war, but I have worked in enough companies to have witnessed plenty of the lowercase “w” wars. I bet you have too. We can all swap stories about hostile takeovers, company restructuring, firing squads, internal politics, the rise of egomaniacal leaders, and even the occasional revolution. We fight wars each day at work, but could specialization be the cause?
 
-First, what is the opposite of specialization? My instincts thought the antonym was generalization. But that doesn’t seem right. We don’t need more general knowledge, more generic solutions, or more [oatmeal](Writing/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.php). I need a word that speaks to transcending the silos of specialization. A word more like _polymath_.
+First, what is the opposite of specialization? My instincts thought the antonym was generalization. But that doesn’t seem right. We don’t need more general knowledge, more generic solutions, or more [oatmeal](/blog/2016/2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). I need a word that speaks to transcending the silos of specialization. A word more like _polymath_.
 
 > **Polymath:** A person whose expertise spans a significant number of different subject areas. Such a person is known to draw on complex bodies of knowledge to solve specific problems.
 
@@ -60,7 +60,7 @@ Does this word game match up to your reality?
 
 As I reflect on my professional career, I clearly see these specialist/polymath patterns. The most productive periods came when I was a member of teams with diverse general knowledge. None of us were concerned with titles. We weren’t the best in the world at one discipline, but we brought unique knowledge and experiences that were embraced by the group. We didn’t really know what we were doing, we weren’t following a pattern, and we weren’t striving for consensus. The words “community, capable, clarity, and impartiality” all fit. And yes, this progress felt _peaceful_.
 
-Likewise, the periods of my career that were most ineffective ([stasis crackers](Writing/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.php)) were marked by the domination of specialists. Progress was stalled because of tall silos that despite the lip service, failed to function beyond the walls of their own expertise. Everyone thought they knew the answers, and fought their teammates to do things the “right” way. The words, “isolation, futility, confusion, and bias” all fit. And yes, this stagnation felt like _war_.
+Likewise, the periods of my career that were most ineffective ([stasis crackers](/blog/2016/2016-04-02-Special-Hell-7-Stasis-Crackers.html)) were marked by the domination of specialists. Progress was stalled because of tall silos that despite the lip service, failed to function beyond the walls of their own expertise. Everyone thought they knew the answers, and fought their teammates to do things the “right” way. The words, “isolation, futility, confusion, and bias” all fit. And yes, this stagnation felt like _war_.
 
 It is easy to fall into the trap of specialization. I tend to default to a belief that design can solve all problems rather than leave my silo. I get frustrated and intimidated when I search for answers that are outside of my comfort zone. But I also know that when I do invest the effort to gain new knowledge it always pays off.
 
