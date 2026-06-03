@@ -100,7 +100,7 @@ a.writing {
   <li><a href="#made-by-ade">Newsletter</a></li>
   <li><a href="https://ade3.medium.com/">Medium</a></li>
   <li><a href="#best-of">Essays (Best Of)</a></li>
-  <li><a href="archive.php">Blog Archive</a></li>
+  <li><a href="archive.html">Blog Archive</a></li>
 </ul>
 </div>
 <div class="content">
