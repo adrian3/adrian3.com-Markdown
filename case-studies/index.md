@@ -17,11 +17,11 @@ img.case-study-image {
 </style>
 
 # Case Studies
-<a href="opentext.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/opentext.jpg"></a>
-<a href="nutrien.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/nutrien.jpg"></a>
-<a href="trainingpeaks.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/trainingpeaks.jpg"></a>
-<a href="athlinks.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/athlinks.jpg"></a>
-<a href="stryd.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/stryd.jpg"></a>
-<a href="run-the-edge.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/run-the-edge.jpg"></a>
-<a href="runcoach.php"><img class="case-study-image" src="http://adrian3.com/images/case-studies/runcoach.jpg"></a>
+<a href="opentext.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/opentext.jpg"></a>
+<a href="nutrien.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/nutrien.jpg"></a>
+<a href="trainingpeaks.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/trainingpeaks.jpg"></a>
+<a href="athlinks.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/athlinks.jpg"></a>
+<a href="stryd.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/stryd.jpg"></a>
+<a href="run-the-edge.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/run-the-edge.jpg"></a>
+<a href="runcoach.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/runcoach.jpg"></a>
 

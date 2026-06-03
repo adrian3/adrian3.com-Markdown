@@ -153,7 +153,7 @@ function getPosts() {
       var row = "<li><a href='"+posts[i].fileName+"'>"+posts[i].title+"</a></li>";
       $('.posts').append(row);
       if (i==9) {
-      $('.posts').append('<p><a href="archive.php">View all</a></p>');
+      $('.posts').append('<p><a href="archive.html">View all</a></p>');
       }
     }
   });

@@ -129,7 +129,7 @@ The soundtrack for the year for me was everything by Radiohead. Specifically, th
 
 That wraps up 2020 for me. Happy New Year, and thanks for reading! _Stay creative._
 
-[1]:	https://adrian3.com/blog/2020/2020-01-02-My-2019-Year-in-Review.php
+[1]:	https://adrian3.com/blog/2020/2020-01-02-My-2019-Year-in-Review.html
 [2]:	https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803/ref=sr_1_11?dchild=1&keywords=user+zero&qid=1609451031&sr=8-11
 [3]:	[https://link.medium.com/LyfPjgQLbcb]
 [4]:	https://onezero.medium.com/how-to-use-your-airpod-pros-to-trigger-flow-900057f95dbe

@@ -80,9 +80,9 @@ a.art {
 <hr style="clear:right;" />
 
 <h2 id="infestation">Infestation Insect Prints</h2>
-<a href="infestation.php"><img src="infestation/infestation-thumb.jpg"></a>
+<a href="infestation.html"><img src="infestation/infestation-thumb.jpg"></a>
 <p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
-<button><a href="infestation.php" class="button">View Project</a></button>
+<button><a href="infestation.html" class="button">View Project</a></button>
 <hr />
 
 <h2 id="graffiti">Graffiti Animation</h2>
@@ -130,7 +130,7 @@ a.art {
 
 <h2 id="illustrations">Illustrations</h2>
 <a href="galleries/illustrations/"><img class="case-study-image" src="galleries/illustrations/illustration12.jpeg"></a>
-<p>I draw all the illustrations in <a href="writing.php">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="galleries/illustrations/">this gallery.</a></p>
+<p>I draw all the illustrations in <a href="writing.html">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="galleries/illustrations/">this gallery.</a></p>
 <hr />
 
 <h2 id="pottery">Pottery</h2>
@@ -155,7 +155,7 @@ a.art {
 <hr />
 
 <h2 id="art-shows">Art Shows</h2>
-<a href="Art%20Shows.php"><img class="case-study-image" src="images/art-section/spider-flower.jpg"></a>
-<p>I've done a handful of art shows over the years. Here is a list of <a href="Art%20Shows.php">Shows and Exhibitions</a> I have participated in.<br />
+<a href="Art%20Shows.html"><img class="case-study-image" src="images/art-section/spider-flower.jpg"></a>
+<p>I've done a handful of art shows over the years. Here is a list of <a href="Art%20Shows.html">Shows and Exhibitions</a> I have participated in.<br />
 </p>
 </div>

@@ -15,7 +15,7 @@ layout:
 Norfolk Art Center  
 Norfolk, Nebraska  
 September 1 – October 27, 2016  
-[Artist Statement](2016%20Layers:%20Recent%20Work%20By%20the%20Hanft%20Family.php)
+[Artist Statement](2016%20Layers:%20Recent%20Work%20By%20the%20Hanft%20Family.html)
 
 ---
 
@@ -24,7 +24,7 @@ September 1 – October 27, 2016
 The Marani Gallery  
 University of Northern Colorado  
 November 3- December 3, 2010  
-[Artist Statement](2010%20Pre-Consumer%20Artifacts%20Artist%20Statement.php)
+[Artist Statement](2010%20Pre-Consumer%20Artifacts%20Artist%20Statement.html)
 
 ---
 
@@ -33,7 +33,7 @@ November 3- December 3, 2010
 Hastings College Art Gallery  
 Hastings, Nebraska  
 January 7-14, 2007  
-[Artist Statement](2007%20Portraits%20of%20Christ%20Artist%20Statement.php)
+[Artist Statement](2007%20Portraits%20of%20Christ%20Artist%20Statement.html)
 
 ---
 
@@ -42,7 +42,7 @@ January 7-14, 2007
 Hastings College Art Gallery  
 Hastings, Nebraska  
 November 7-19, 2004  
-[Artist Statement](2004%20Recent%20Works%20on%20Paper%20Artist%20Statement.php)
+[Artist Statement](2004%20Recent%20Works%20on%20Paper%20Artist%20Statement.html)
 
 ---
 
@@ -52,7 +52,7 @@ Senior Exhibition
 Marxhausen Art Gallery  
 Concorida University, Seward, Nebraska  
 March 25-April 6, 2001  
-[Aritst Statement](2001%20Senior%20Show%20Artist%20Statement.php) | [Critical Feedback](2001%20Senior%20Show%20Critical%20Feedback.php)
+[Aritst Statement](2001%20Senior%20Show%20Artist%20Statement.html) | [Critical Feedback](2001%20Senior%20Show%20Critical%20Feedback.html)
 
 ---
 

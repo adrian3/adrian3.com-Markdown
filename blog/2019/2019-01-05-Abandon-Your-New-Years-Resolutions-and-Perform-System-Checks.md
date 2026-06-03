@@ -79,6 +79,6 @@ Thanks for reading. I wish you the best in the new year and hope these ideas hel
 [2]:	https://link.medium.com/Ol0YzMtweT
 [3]:	https://link.medium.com/AnSkd8FqfT
 [4]:	http://adrian3.com/galleries/camera-drawings/
-[5]:	http://adrian3.com/Art%20Shows.php
+[5]:	/Art%20Shows.html
 [6]:	https://link.medium.com/h1b24L7VeT
 [7]:	https://tread1st.com

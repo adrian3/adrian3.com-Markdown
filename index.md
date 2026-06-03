@@ -67,7 +67,7 @@ header {
 </style>
 
 ## Hi, I'm Ade.
-<p><img src="images/Adrian-Hanft5.jpg" class="about-me">I'm a creator from Colorado who writes <a href="/writing.php">books, letters, and essays</a>. I document my art experiments on <a href="https://www.instagram.com/ade3/">Instagram</a>. Experiments you ask? I make things like <a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">enormous cameras made of coffee stirrers.</a> And I've sent <a href="postcards/">hundreds of art postcards</a> to my friends. I also enjoy <a href="reading.php">reading good books</a>, and <a href="http://tread1st.com/Ade3/training">running long distances</a>. Thanks for checking out my website, let's <a href="https://linktr.ee/hanft">follow each other on the socials</a>.</p>
+<p><img src="images/Adrian-Hanft5.jpg" class="about-me">I'm a creator from Colorado who writes <a href="/writing.html">books, letters, and essays</a>. I document my art experiments on <a href="https://www.instagram.com/ade3/">Instagram</a>. Experiments you ask? I make things like <a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">enormous cameras made of coffee stirrers.</a> And I've sent <a href="postcards/">hundreds of art postcards</a> to my friends. I also enjoy <a href="reading.html">reading good books</a>, and <a href="http://tread1st.com/Ade3/training">running long distances</a>. Thanks for checking out my website, let's <a href="https://linktr.ee/hanft">follow each other on the socials</a>.</p>
 
 <p>I write a newsletter called <a href="https://ade3.substack.com/about">Made by Ade</a> where you can get a taste of my twisted blend of technology critique, storytelling, and ideas for maintaining your creative energy. I want to add you to my distribution list.</p>
 
@@ -84,7 +84,7 @@ header {
 <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="images/art-section/ghost-o-meter.jpg"></a>
 <a href="http://tread1st.com/boston.html"><img class="case-study-image" src="images/art-section/boston-marathon-data.jpg"></a> 
 <a href="galleries/pinecones/"><img class="case-study-image" src="images/art-section/pinecone.jpg"></a>
-<a href="Art%20Shows.php"><img class="case-study-image" src="images/art-section/spider-flower.jpg"></a>
+<a href="Art%20Shows.html"><img class="case-study-image" src="images/art-section/spider-flower.jpg"></a>
 <a href="galleries/pottery/"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
 <a href="postcards"><img class="case-study-image" src="images/art-section/postcard.jpg"></a>
 <a href="galleries/camera-drawings/"><img class="case-study-image" src="images/art-section/cameras.jpg"></a>
@@ -114,28 +114,11 @@ header {
 - [The Heroes Behind Healthcare.gov][15]
 
 ### Recent:
-<ul class="posts"></ul>
+<recent-posts>
 
 ---
 
 Thanks for stopping by. Be sure to follow me on <a href="https://twitter.com/ade3">Twitter</a>, <a href="http://instagram.com/ade3">Instagram</a>, <a href="http://www.strava.com/athletes/442364">Strava</a>, <a href="http://www.linkedin.com/in/adrianhanft">LinkedIn</a>, and <a href="https://github.com/adrian3">Github</a>.
-
-<script type="text/javascript">
-var posts = "";
-function getPosts() {
-  $.getJSON('posts.json', function(data) {
-    posts = data.posts;
-    for (var i = 0; i < 10; i++) {
-      var row = "<li><a href='"+posts[i].fileName+"'>"+posts[i].title+"</a></li>";
-      $('.posts').append(row);
-      if (i==9) {
-      $('.posts').append('<p><a href="archive.php">View all</a></p>');
-      }
-    }
-  });
-}
-getPosts();
-</script>
 
 [1]:	https://medium.com/swlh/the-zombie-mobile-b03932ac971d
 [2]:	https://medium.com/@ade3/evidence-that-steve-jobs-was-aware-of-his-reality-distortion-field-49e4eacf8306
