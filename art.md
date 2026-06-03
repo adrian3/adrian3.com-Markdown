@@ -80,7 +80,7 @@ a.art {
 <hr style="clear:right;" />
 
 <h2 id="infestation">Infestation Insect Prints</h2>
-<a href="infestation.html"><img src="infestation/infestation-thumb.jpg"></a>
+<a href="infestation.html"><img src="galleries/infestation/infestation-thumb.jpg"></a>
 <p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
 <button><a href="infestation.html" class="button">View Project</a></button>
 <hr />
@@ -90,8 +90,8 @@ a.art {
 <p>I create an animation loop made of 15 frames or so. Each frame becomes a sticker that finds a home in the urban landscape. I take a photo of the graffiti and string the photos back into an animation. You can watch the videos on this <a href="https://www.youtube.com/playlist?list=PLX3XH99XPcfcEYm2kWxHRfbswGhUIrSCE">Graffiti Animation YouTube playlist</a></p>
 
 <h2 id="inner-demons">Inner Demons</h2>
-<a href="postcards/inner-demons/"><img src="images/inner-demons.jpg"></a>
-<p>I called this series "Inner Demons" because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="postcards/inner-demons/">this gallery</a>.</p>
+<a href="galleries/inner-demons/"><img src="images/inner-demons.jpg"></a>
+<p>I called this series "Inner Demons" because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="galleries/inner-demons/">this gallery</a>.</p>
 <hr />
 
 <h2 id="money-maker">Money Printer Camera</h2>
