@@ -19,7 +19,7 @@ header {
 }
 </style>
 
-<img src="../images/case-studies/stryd-header.jpg" style="margin: 0; width: 100vw;">
+<img src="../images/case-studies/stryd-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 # Evolving Stryd's Website and App
 ### A Case Study by Adrian Hanft
@@ -54,7 +54,7 @@ The holy grail for a tool like Stryd is to be so in tune with a runner's body th
 <img src="stryd-images/injury-prevention.jpg" style="margin: 0; width: 100vw;">
 <p class="caption">Injury Prediction Technology</p>
 
-<hr>
+<divider>
 
 ## Part 2: App Design
 
@@ -81,6 +81,6 @@ Finally, a note about my tools. I designed the app in Sketch. I used InVision to
 <img src="stryd-images/app-screens2.jpg" style="margin: 0; width: 100vw;">
 <p class="caption">App Screens</p>
 
----
+<divider>
 
 Thank you for taking the time to read this case study. I hope that my enthusiasm for design and commitment to my craft comes through. If you have any questions I welcome the opportunity to talk more. You can contact me at designer@adrianhanft.com.

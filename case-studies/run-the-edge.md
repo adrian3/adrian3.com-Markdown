@@ -19,7 +19,7 @@ header {
 }
 </style>
 
-<img src="../images/case-studies/run-the-edge-header.jpg" style="margin: 0; width: 100vw;">
+<img src="../images/case-studies/run-the-edge-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 # Run The Edge App Redesign
 ### A Case Study by Adrian Hanft
@@ -31,7 +31,7 @@ The energy and passion for running shared by the Run The Edge team is inspiring 
 
 The enthusiasm runners share for Run The Edge begins with two ambitious questions. Can you run 2,018 miles in 2018? Can you run the equivalent of running across the United States? These challenges, Run The Year and Amerithon respectively, are the main products Run The Edge offers. Runners who accept the challenge are supported by a system of maps, medals, stickers, rewards, and social incentives. 
 
-* * *
+<divider>
 
 ## Part 1: Run The Edge Login Consolidation
 The first thing I wanted to address with the redesign was a branding question. As Amerithon and Run the Year grew in popularity over the years the companies brand hierarchy had lost clarity.  
@@ -51,7 +51,7 @@ The designs above shows the login and account management screens that users woul
 
 Here, at the global Run the Edge level, is where each user's profile lives. This is also where you manage the friends you follow, send messages, and where you access your account settings.
 
-* * *
+<divider>
 
 ## Part 2: The Interactive United States Map
 Each challenge has its own dashboard. A pitfall I wanted to escape in the design of Run the Edge's dashboards was avoiding data paralysis. While charts, graphs, and statistics were a requirement of the dashboard I didn't want the dashboard to feel like analytics software. I wanted to capture the enthusiasm users felt when they first accepted the challenge to run across the USA or to run 2,018 miles. 
@@ -67,7 +67,7 @@ The route across the US is dotted with points that mark milestones. Each milesto
 
 As you can see from the animation above, I used the map element as a progress bar when the page loaded. I created the animations from SVGs and javascript.
 
-* * *
+<divider>
 
 ## Part 3: Design Guide, Component Library, and HTML Prototypes
 In addition to designing the new Run The Edge app, I also helped build HTML components for the app. This rapidly sped up the development process because I was in perfect sync with the developer who took my components and wired them up to live code. It also helped me make decisions on the fly rather than delaying progress when the ambition of my designs comes in contact with the constraints of code. 
@@ -82,7 +82,7 @@ Because HTML components are so easy to use, it makes it easy to build HTML proto
 <img src="run-the-edge-images/additional-screens.jpg" style="margin: 0; width: 100vw;">
 <p class="caption">Components Used Across Run The Edge Apps</p>
 
-* * *
+<divider>
 
 ## Part 4: A Successful Launch and Next Steps
 When Amerithon launched on July 4, 2018 it quickly became the most successful challenge in the company's history. 

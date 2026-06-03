@@ -22,9 +22,9 @@ img {
 }
 </style>
 
-<img src="nutrien-images/0.case-study-title.jpg" style="margin: 0; width: 100vw;">
+<img src="nutrien-images/0.case-study-title.jpg" style="margin:  -1.5rem 0 1rem 0; width: 100vw;">
 
-<h3 style="margin-top: 0;">Introduction</h3>
+### Introduction
 
 As Senior UX Designer/Manager for Nutrien Ag Solutions, I led a group of 12 UX designers and researchers as we modernized the tools used by Nutrien’s sales force of more than 20,000 crop consultants. In this case study I will describe how I used design thinking to solve thorny problems in agriculture. This document is organized as follows:
 
@@ -45,7 +45,7 @@ Nutrien has over 1,700 locations around the world. Each region has unique terrai
 
 Having access to crop consultants was incredibly valuable as we reimagined the ag sales experience. I traveled into the field to see facilities in action. I sat in offices listening to sales calls. I road along with crop consultants and observed how they got their job done from their trucks. I listened to their frustrations and gathered ideas. I used this research to craft stories that I brought back to the teams. These stories, often accompanied by drawings and photographs took on a life of their own, getting used in quarterly planning events, executive summaries, story mapping exercises, and were referenced in conversations as teams strove to deliver a product that made our target persona’s job easier.
 
-***
+<divider>
 
 ## 2. Prototyping: 
 ### Developing a More Meaningful Employee Dashboard
@@ -54,7 +54,7 @@ The name of the product we were building was called the "Employee Experience Hub
 
 <img src="nutrien-images/2.evolution-of-exh.jpg" style="margin: 25px; width: 100vw;">
 
-***
+<divider>
 
 ## 3. Equipping the Sales Force
 ### Identifying Sales Opportunities
@@ -71,7 +71,7 @@ The financial situation for each farmer is unique and a big part of the crop con
 
 <img src="nutrien-images/3b.calculators.jpg" style="margin: 25px; width: 100vw;">
 
-***
+<divider>
 
 ## 4. Improving the Pre-Sales Process
 ### Selecting the Right Product and Delivering the Best Price
@@ -84,7 +84,7 @@ We also experimented with different organization patterns that better mapped to 
 
 <img src="nutrien-images/4b.testing-organization-patterns.jpg" style="margin: 25px; width: 100vw;">
 
-***
+<divider>
 
 ## 5. Placing Orders
 ### Reducing Errors by Understanding Complex Systems
@@ -95,7 +95,7 @@ After a crop consultant submits an order, a complex fulfillment process begins. 
 
 By understanding the real-world connections between the submission form and the facility that fulfills the order we were able to reduce the amount of errors and tedious corrections made after an error was placed.
 
-***
+<divider>
 
 ## Conclusion
 

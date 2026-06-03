@@ -23,7 +23,7 @@ img {
 }
 </style>
 
-<img src="opentext-images/opscope-header.jpg" style="margin: 0; width: 100vw;">
+<img src="opentext-images/opscope-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 <h3 style="margin-top: 0;">A Case Study by Ade Hanft</h3>
 
@@ -56,7 +56,7 @@ My testing at OpenText World identified several areas where users struggled with
 
 Next I want to describe my approach to the product design of OpScope.
 
-***
+<divider>
 
 ## Part 2: Product Design
 ### From Prototype to Wireframes, to Prototype, to Launch
@@ -85,7 +85,7 @@ It was important that the user could navigate from the main screen down to the p
 
 Our product has launched with a core set of functionality and the next step is to expand to more advanced use cases and workflows. Next, I will conclude this case study by describing how our product is designed to evolve in future iterations.
 
-***
+<divider>
 
 ## Part 3: Driving Innovation
 ### Designing for a future of AI/ML, VR, and 3D
@@ -100,7 +100,7 @@ As part of an internal hackathon week, our team imagined what our product would 
 
 Like so many companies, OpenText is embracing artificial intelligence and working to leverage machine learning and large language models in our products. Sometimes lost among the excitement of AI/ML potential is the UX challenges that these new technologies present. As I work with our data scientists I find myself talking about trust as the primary driver of good UX in products that leverage AI/ML/LLMs. For example, ML can be used to detect anomalies but when that anomaly is presented to a user, how will that person be able to understand why it is anomalous? Often the reason is opaque because the algorithms that flagged it are based on models that aren't easily parsed into human language. The user ends up having to fact-check the AI/ML because the user can't trust the results yet. There are similar UX challenges with the ChatGPT implementations. I've found that there is real skepticism with users as they are chatting with an AI. The promise of AI/ML/LLMs is that they will reduce the work of humans but if we aren't careful we will actually increase the work of users because now they have to fact-check and babysit a not-yet-fully-developed AI. This is an unsolved problem, and a UX opportunity that I look forward to solving as AI changes our world. 
 
-***
+<divider>
 
 ## Conclusion
 

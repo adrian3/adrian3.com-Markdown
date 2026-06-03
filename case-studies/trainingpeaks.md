@@ -1,6 +1,5 @@
 <!---
 title: TrainingPeaks Coach Marketplace Case Study
-date: November 24, 2016
 published: true
 --->
 
@@ -20,7 +19,7 @@ header {
 }
 </style>
 
-<img src="../images/case-studies/trainingpeaks-header.jpg" style="margin: 0; width: 100vw;">
+<img src="../images/case-studies/trainingpeaks-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 # The TrainingPeaks Coach Marketplace
 ### A case study from the design portfolio of Adrian Hanft
@@ -33,7 +32,7 @@ Coaches are the key to the TrainingPeaks ecosystem. Could we do a better job of 
 ## Solution
 We built a system that showcased coaches making it easier for athletes to contact, hire, and learn about the coaches from within our products. This “coach marketplace” included a searchable coach database, personalized coach profiles, hiring functionality, certification integration, a training plan store, and a curated coach matching service.
 
----
+<divider>
 
 #### Intro
 ## Product Development at TrainingPeaks
@@ -57,7 +56,7 @@ Major initiatives at TrainingPeaks are assigned a product owner. This role can b
 
 The real world is messy and the reality of this project is not as pristine as this list suggests. However, this case study is loosely built around these 5 bullet points and I hope that by the end you will see how a flexible commitment to these principles resulted in a great product that continued to get better through iteration.
 
----
+<divider>
 
 #### Part 1
 ## Research and Planning
@@ -78,7 +77,7 @@ Once the initiative officially received a green light I helped create a scoping 
 <img src="../galleries/design/1%20trainingpeaks%202014-2016/case%20study/4 team timelines.jpg" style="margin: 0; width: 100vw;">
 <p class="caption">The product owner helps define project scope and estimates timelines for competing initiatives.</p>
 
----
+<divider>
 
 #### Part 2
 ## Design and Development
@@ -164,7 +163,7 @@ It was very important to our team that any new page added to our website would l
 
 The final responsive design is powered by the Foundation framework. I had previous experience with Bootstrap, but input from the developers on my team persuaded me to step out of my comfort zone and learn a new system.
 
----
+<divider>
 
 #### Part 3
 ## User Experience
@@ -197,7 +196,7 @@ Another limitation of the old search feature was that each result in the list lo
 
 UX tends to be thought of as a designer’s role, but I want to point out a major contribution to the experience that our developers provided. They relentlessly optimized our database and built our API so that the results can be shown in microseconds. This allowed me to remove the “submit” button because we are able to refresh the results as quickly as the athletes can change the controls. Users end up doing more searches because there are no loading bars or page refreshes to slow them down.
 
----
+<divider>
 
 #### Part 4
 ## User Testing and Iteration
@@ -224,7 +223,7 @@ When it came time to add hiring capabilities, we already had a fully functional 
 
 TrainingPeaks continues to iterate on the coach marketplace. The next phase focused on a training plan store that dovetailed perfectly with the new marketplace.
 
----
+<divider>
 
 #### Part 5
 ## Rollout, Launch, and Measuring Results
@@ -250,6 +249,6 @@ This data is important to us, but it also has value to the coach. Our roadmap in
 ### Celebration
 After major product releases, our team celebrated with a trip to the brewery near the office. We enjoyed a beer while watching the stats as users start using our creation. It is extremely rewarding to sit with co-workers and share the success of a major team effort.
 
----
+<divider>
 
 Thank you for taking the time to read this case study. I hope that my enthusiasm for design and commitment to my craft comes through. If you have any questions I welcome the opportunity to talk more.

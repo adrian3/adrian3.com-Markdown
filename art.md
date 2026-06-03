@@ -102,6 +102,7 @@ a.art {
 <h2 id="digital-polaroid">Polaroid Receipt Camera</h2>
 <img src="images/polaroid-receipt-printer.jpg">
 <p>I made a digital Polaroid camera that combines a receipt printer with a Raspberry Pi. To build it I took an old Polaroid Minute Maker camera, stripped out its guts, and replaced the innards with a digital camera, an e-ink display, a receipt printer, and an SNES controller to operate the camera. You can read about the <a href="https://ade3.medium.com/how-to-build-a-digital-polaroid-camera-e1140d7a05b8">digital receipt printer polaroid camera here</a>.</p>
+<hr />
 
 <h2 id="coffee-stirrer-camera">Coffee Stirrer Camera</h2>
 <a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010"><img class="case-study-image" src="images/coffee-stirrer-camera.jpg"></a>
@@ -136,7 +137,6 @@ a.art {
 <h2 id="pottery">Pottery</h2>
  <a href="galleries/pottery/"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
  <p>It's been a few years but I was a prolific potter in college. It helped me make some extra money but more importantly it was a relaxing stress reliever. You can view some of my pots in this <a href="galleries/pottery/">pottery gallery</a>.</p>
-
 <hr />
 
 <h2 id="book-shelf-photos">Book Shelf Photos</h2>
