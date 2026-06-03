@@ -83,15 +83,15 @@ header {
 <p><a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010"><img class="case-study-image" src="images/art-section/self-portrait.jpg"></a>
 <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="images/art-section/ghost-o-meter.jpg"></a>
 <a href="http://tread1st.com/boston.html"><img class="case-study-image" src="images/art-section/boston-marathon-data.jpg"></a> 
-<a href="galleries/pinecones/"><img class="case-study-image" src="images/art-section/pinecone.jpg"></a>
+<a href="/gallery-pages/pinecones.html"><img class="case-study-image" src="images/art-section/pinecone.jpg"></a>
 <a href="Art%20Shows.html"><img class="case-study-image" src="images/art-section/spider-flower.jpg"></a>
-<a href="galleries/pottery/"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
+<a href="/gallery-pages/pottery.html"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
 <a href="postcards"><img class="case-study-image" src="images/art-section/postcard.jpg"></a>
-<a href="galleries/camera-drawings/"><img class="case-study-image" src="images/art-section/cameras.jpg"></a>
-<a href="galleries/camera-graffiti/"><img class="case-study-image" src="images/art-section/camera-graffiti.jpg"></a>
-<a href="galleries/bookshelves/"><img class="case-study-image" src="galleries/bookshelves/bookshelf3.jpeg"></a>
-<a href="galleries/illustrations/"><img class="case-study-image" src="galleries/illustrations/illustration12.jpeg"></a>
-<a href="galleries/2019%20art/"><img class="case-study-image" src="galleries/2019%20art/1-matchbook-monday.jpg"></a>
+<a href="/gallery-pages/camera-drawings.html"><img class="case-study-image" src="images/art-section/cameras.jpg"></a>
+<a href="/gallery-pages/camera-graffiti.html"><img class="case-study-image" src="images/art-section/camera-graffiti.jpg"></a>
+<a href="/gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/galleries/bookshelves/bookshelf3.jpeg"></a>
+<a href="/gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/galleries/illustrations/illustration12.jpeg"></a>
+<a href="/gallery-pages/2019-art.html"><img class="case-study-image" src="https://adrian3.com/galleries/2019%20art/1-matchbook-monday.jpg"></a>
 </p>
 
 ---

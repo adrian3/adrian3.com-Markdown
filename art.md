@@ -90,8 +90,8 @@ a.art {
 <p>I create an animation loop made of 15 frames or so. Each frame becomes a sticker that finds a home in the urban landscape. I take a photo of the graffiti and string the photos back into an animation. You can watch the videos on this <a href="https://www.youtube.com/playlist?list=PLX3XH99XPcfcEYm2kWxHRfbswGhUIrSCE">Graffiti Animation YouTube playlist</a></p>
 
 <h2 id="inner-demons">Inner Demons</h2>
-<a href="galleries/inner-demons/"><img src="images/inner-demons.jpg"></a>
-<p>I called this series "Inner Demons" because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="galleries/inner-demons/">this gallery</a>.</p>
+<a href="/gallery-pages/inner-demons.html"><img src="images/inner-demons.jpg"></a>
+<p>I called this series "Inner Demons" because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="/gallery-pages/inner-demons.html">this gallery</a>.</p>
 <hr />
 
 <h2 id="money-maker">Money Printer Camera</h2>
@@ -115,8 +115,8 @@ a.art {
 <hr />
 
 <h2 id="camera-graffiti">Baby Powder Graffiti</h2>
-<a href="galleries/camera-graffiti/"><img class="case-study-image" src="images/art-section/camera-graffiti.jpg"></a>
-<p>For this project I used baby powder and other non-destructive techniques to create graffiti. I love the idea of artwork that doesn't last long. It's there one moment and gone the next. You can view a <a href="galleries/camera-graffiti/">gallery of this art here</a>.</p>
+<a href="/gallery-pages/camera-graffiti.html"><img class="case-study-image" src="images/art-section/camera-graffiti.jpg"></a>
+<p>For this project I used baby powder and other non-destructive techniques to create graffiti. I love the idea of artwork that doesn't last long. It's there one moment and gone the next. You can view a <a href="/gallery-pages/camera-graffiti.html">gallery of this art here</a>.</p>
 <hr />
 
 <h2 id="lego-camera">Lego Pinhole Camera</h2>
@@ -125,28 +125,28 @@ a.art {
 <hr />
 
 <h2 id="camera-drawing-animation">Camera Drawing Animation</h2>
-<a href="galleries/camera-drawings/"><img class="case-study-image" src="images/art-section/cameras.jpg"></a>
-<p>I created software that recorded my pencil as I drew dozens of <a href="galleries/camera-drawings/">Cameras from my collection</a>. By replaying my pencil's movement I was able to create animations of the cameras being redrawn. In the first iteration of my software I created <a href="galleries/star-wars-drawings/">drawings of my favorite Star Wars characters.</a></p>
+<a href="/gallery-pages/camera-drawings.html"><img class="case-study-image" src="images/art-section/cameras.jpg"></a>
+<p>I created software that recorded my pencil as I drew dozens of <a href="/gallery-pages/camera-drawings.html">Cameras from my collection</a>. By replaying my pencil's movement I was able to create animations of the cameras being redrawn. In the first iteration of my software I created <a href="/gallery-pages/star-wars-drawings.html">drawings of my favorite Star Wars characters.</a></p>
 <hr />
 
 <h2 id="illustrations">Illustrations</h2>
-<a href="galleries/illustrations/"><img class="case-study-image" src="galleries/illustrations/illustration12.jpeg"></a>
-<p>I draw all the illustrations in <a href="writing.html">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="galleries/illustrations/">this gallery.</a></p>
+<a href="/gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/galleries/illustrations/illustration12.jpeg"></a>
+<p>I draw all the illustrations in <a href="writing.html">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="/gallery-pages/illustrations.html">this gallery.</a></p>
 <hr />
 
 <h2 id="pottery">Pottery</h2>
- <a href="galleries/pottery/"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
- <p>It's been a few years but I was a prolific potter in college. It helped me make some extra money but more importantly it was a relaxing stress reliever. You can view some of my pots in this <a href="galleries/pottery/">pottery gallery</a>.</p>
+ <a href="/gallery-pages/pottery.html"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
+ <p>It's been a few years but I was a prolific potter in college. It helped me make some extra money but more importantly it was a relaxing stress reliever. You can view some of my pots in this <a href="/gallery-pages/pottery.html">pottery gallery</a>.</p>
 <hr />
 
 <h2 id="book-shelf-photos">Book Shelf Photos</h2>
-<a href="galleries/bookshelves/"><img class="case-study-image" src="galleries/bookshelves/bookshelf3.jpeg"></a>
-<p>This is a <a href="galleries/bookshelves/">gallery of photos of my book shelves</a>. I love to read and I love to collect toys and trinkets. It makes my home office a fun place to work and makes for a nice backdrop on video calls.</p>
+<a href="/gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/galleries/bookshelves/bookshelf3.jpeg"></a>
+<p>This is a <a href="/gallery-pages/bookshelves.html">gallery of photos of my book shelves</a>. I love to read and I love to collect toys and trinkets. It makes my home office a fun place to work and makes for a nice backdrop on video calls.</p>
 <hr />
 
 <h2 id="pine-cones">Pine Cones</h2>
-<a href="galleries/pinecones/"><img class="case-study-image" src="images/art-section/pinecone.jpg"></a>
-<p>I love the shape of pinecones. I capture their sillouettes using sun prints and then remix the shapes with stencils and different photographic techniques. Here is a <a href="galleries/pinecones/">pine cone gallery</a> showing the results of this work.</p>
+<a href="/gallery-pages/pinecones.html"><img class="case-study-image" src="images/art-section/pinecone.jpg"></a>
+<p>I love the shape of pinecones. I capture their sillouettes using sun prints and then remix the shapes with stencils and different photographic techniques. Here is a <a href="/gallery-pages/pinecones.html">pine cone gallery</a> showing the results of this work.</p>
 <hr />
 
 <h2 id="ghost-o-meter">Ghost-O-Meter</h2>
