@@ -104,7 +104,7 @@ a.writing {
 </ul>
 </div>
 <div class="content">
-<h1 style="margin:100px 0 15px 0;" id="user-zero">User Zero</h1>
+<h1 style="margin:0 0 15px 0;" id="user-zero">User Zero</h1>
 <p><a href="https://www.amazon.com/dp/1735835803"><img src="images/user-zero/user-zero-cover-background2-1800x600.jpg"></a></p>
 <p>My new book, <em><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803">User Zero</a></em> is out now! It starts by questioning the obvious, a tool as basic as your humble hammer, only to realize things are not as simple as they seem. As we retrace the evolution of our gadgets you’ll notice we’ve gotten a little bit stupider with each iteration. From pinball to pixels, playgrounds to Powerpoints, bicycles to Beetles, Coke bottles to cockpits – I’ll take you on a tour of the invisible side of technology that, I’ll warn you ahead of time, picks fights with some sacred cows. </p>
 <img class="userzero" src="images/user-zero/User-Zero-Cover.png">

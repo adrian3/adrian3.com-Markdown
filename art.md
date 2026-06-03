@@ -73,7 +73,7 @@ a.art {
 </ul>
 </div>
 <div class="content">
-<h4 style="margin:100px 0 15px 0;">My philosophy on art...</h4>
+<h4 style="margin:0 0 15px 0;">My philosophy on art...</h4>
 <p>Beauty is hiding in plain sight waiting to be discovered. That's what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my <a href="http://instagram.com/ade3">Ade3 Instagram account</a>.</p>  
 
 <!-- {{prevNextLinks}} -->
