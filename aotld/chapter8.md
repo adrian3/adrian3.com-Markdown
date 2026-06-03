@@ -62,4 +62,4 @@ We all do this and the result is a hyper-realistic world that isn't real. It is 
 
 As we navigate the zombie apocalypse we have to be careful of aiming for utopia. In movies we have the luxury of being able to identify zombies by their grotesque bodies. In our apocalypse, the enemy isn't a disfigured monster, and the heroes aren't flawless, unbroken vessels. Victory won't come from indulging in violent abolition of flaws, the journey requires patiently filling the cracks of failure with the gold of authentic work. As we get better at assigning value to things that are truly authentic, perhaps we can break our addiction to the shortcuts that cause us to misvalue objects in the first place.  
 
-[Chapter 9. Shortcut Addiction](chapter9.php)  
+[Chapter 9. Shortcut Addiction](chapter9.html)  

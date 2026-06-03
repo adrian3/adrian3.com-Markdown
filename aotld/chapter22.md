@@ -64,4 +64,4 @@ Does humanity have the ability to receive revolutionary ideas with anything othe
 
 How many revolutionaries have we missed because humanity's collective scorn downed their creative ambition? If humanity's bias causes us to attack heroes like Goddard, to embarrass heroes like Langley, and to dilute the lessons of the Wright brothers, how can we possible expect to reverse armageddon? We tend to think of mankind's progress as a steady march forward from knuckle-dragging fool to enlightened savant. Could this optimism be another example of survivorship bias? A better metaphor might be a missile. Our progress is a rocket hurdling through space with little more input than a map scribbled on the back of a napkin as guidance. We are navigating the cosmos with blind faith in what amounts to little more than a compass and candlelight, oblivious to whether our ship is heading up or down. When we see the ground hurling towards us, we curse the map, sound the alarm, and frantically try to pull the nose upward.  
 
-[Chapter 23. Origins of Inspiration](chapter23.php)  
+[Chapter 23. Origins of Inspiration](chapter23.html)  

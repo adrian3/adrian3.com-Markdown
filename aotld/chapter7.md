@@ -95,4 +95,4 @@ Exaggerated as this chapter is, the cynicism represented by Ethan's rampage migh
 
 On the worst of days, when doing your job tests your sanity, when doing the right thing feels like anarchy, when every step is a step closer to your breaking point, these moments define us. Heroes aren't birthed in Jello molds of frictionless ceremony, they are forged in the furnaces of grinding opposition. Battling zombies is less like a first-person shooter game and more like a cerebral game of chess. 
 
-[Chapter 8. Zugzwang and Kintsugi](chapter8.php)  
+[Chapter 8. Zugzwang and Kintsugi](chapter8.html)  

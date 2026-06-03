@@ -59,4 +59,4 @@ The usual subtext of zombie apocalypse stories is that civilization is inherentl
 
 The alternative to shortcuts is expertise. If you are going to become an expert, you need to be aware of the real value of things. There aren't any shortcuts. Strive to be a master. Commit to knowing even the tiniest detail of your craft inside and out. Know exactly what you know as well as what you don't know. Don't ever fake knowledge on a subject that you are fuzzy about. Dig deeper, work harder, and never stop learning. If you can truly attain mastery, making the wrong decision is no longer a risk because while everyone else is blinded by their incomplete knowledge you will be able to avoid mistakes.  
 
-[Chapter 10. The Taste of Zombies](chapter10.php)  
+[Chapter 10. The Taste of Zombies](chapter10.html)  

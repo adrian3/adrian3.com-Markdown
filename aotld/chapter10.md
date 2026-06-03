@@ -87,4 +87,4 @@ Forget about style. If you are legitimately focused on the future you are by def
 
 We all want to be a part of something bigger, but what if everything that is bigger is a zombie institution? What are we losing when we sacrifice our artistic integrity for the comforts of a steady paycheck? If we find ourselves in the valley of the zombies, questioning our careers, and looking for the courage to change the course of our lives, the only place where we will find refuge is in our work. We must transform our doubt into energy that we invest in improving our skills. This investment will eventually pay off in the form of new career opportunities.       
 
-[Chapter 11. The Threat of Creativity](chapter11.php)  
+[Chapter 11. The Threat of Creativity](chapter11.html)  

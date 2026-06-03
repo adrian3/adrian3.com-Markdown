@@ -88,4 +88,4 @@ Art isn't the only place where humans comfort themselves by lumping things into 
 
 Professionals have difficulty transcending their job categories. When conversations stray beyond the literal, the artist will see the terrified bewilderment of a teenager in the face of co-workers. Like school children, the zombie employee prefers the cubicle comfort of measurable activities over the uncharted territory that artistic ideas represent. They swim away from uncertainty, but you swim toward it because that is the only place where art can exist. If you survive swimming against the current, eventually you arrive on the island of uncertainty alone, exhausted, and wishing there was someone, anyone, who could understand your achievement. This is the journey of the artist. The next chapter retraces the steps of the historical artists who shaped our understanding of what it means to be and artist. What if art history got a few things wrong?  
 
-[Chapter 5. The Historical Conquest of Art](chapter5.php)  
+[Chapter 5. The Historical Conquest of Art](chapter5.html)  

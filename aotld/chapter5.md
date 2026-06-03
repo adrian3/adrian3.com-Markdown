@@ -182,4 +182,4 @@ Postmodernism has degraded art into near irrelevance, and perhaps that is for th
 
 With this, we part ways with art history, and enter today's zombie environment. As we survey the landscape, the ghastly artifacts require some investigation. In the next chapter we scrutinize some of man's absurd inventions. It’s time to wake up, art history class is over.  
 
-[Chapter 6. Artifacts of Thought](chapter6.php)  
+[Chapter 6. Artifacts of Thought](chapter6.html)  

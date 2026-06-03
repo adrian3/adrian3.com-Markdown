@@ -100,4 +100,4 @@ Creativity is not selfish, it's not a luxury item reserved for people with extra
 
 If you really want to love your neighbor, sit down and get to work. Dedicate yourself completely to the hard work of making the world better. Cure cancer, compose your symphony, hack Ikea, or write software. You have a job to do and you can't let anything stop you. Forgive yourself. Give yourself permission to fail. If we can defeat our inner zombie, the doors of opportunity open to us.  
 
-[Chapter 13. Zombies Don’t Cry](chapter13.php)  
+[Chapter 13. Zombies Don’t Cry](chapter13.html)  

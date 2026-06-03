@@ -57,4 +57,4 @@ In the following chapters I will explain why it is so hard to create meaningful 
 
 Protect your brain, my friend. We are about to embark on an adventure of horrific proportions.    
 
-[Chapter 2. Armageddon](chapter2.php)  
+[Chapter 2. Armageddon](chapter2.html)  

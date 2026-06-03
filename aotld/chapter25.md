@@ -56,4 +56,4 @@ In the rare moments of victory, savor the tranquility with your fellow survivors
 
 As the camera slowly zooms out, a dark smoldering world is revealed. While there may be peace tonight, the sun will rise again tomorrow casting light on the devastated world. The battle never ends, and tomorrow the artist will fight on.  
 
-[Epilogue](chapter26.php)  
+[Epilogue](chapter26.html)  

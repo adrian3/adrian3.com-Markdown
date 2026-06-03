@@ -98,4 +98,4 @@ There are only two directions that you can go in the wind tunnel; you either get
 
 If you _aren't_ feeling wind resistance then you might be going the wrong direction in the wind tunnel. Savor the feeling of the wind on your skin. Your heroes faced the same winds and overcame similar objections. Eventually, the headwinds produced lift and launched their work skyward.  
 
-[Chapter 17. Inside or Out](chapter17.php)  
+[Chapter 17. Inside or Out](chapter17.html)  

@@ -98,4 +98,4 @@ The four ingredients of creativity sound simple, but they are rare. Instead of a
 
 This infertile climate is compounded by our culture that teaches us to pursue a good education, wealth, and fame. If we are honest with ourselves, rather than change the world, instead we crave fame, fortune, and credentials. Even if we combine the ingredients of creativity and overcome the cultural myths surrounding success, the shape that emerges from this sketch of a creative human is not particularly attractive. If exaggerated, he looks poor, uneducated, and unpopular. He is a loner who spends all his _time_ obsessed with his craft, rarely interacting with people outside his close, _trusted_ friends. Few are invited into his creative _space,_ so outsiders conclude that he is wasting his time goofing off _(playing)_ with crazy ideas. The next chapter profiles a man who matches this profile pretty well. His name is Robert Goddard and he is the father of modern rocketry.  
 
-[Chapter 22. The Moon Rocket Man](chapter22.php)  
+[Chapter 22. The Moon Rocket Man](chapter22.html)  

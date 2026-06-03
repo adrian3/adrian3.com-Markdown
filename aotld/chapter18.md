@@ -56,4 +56,4 @@ The problem with the current state of affairs is not a shortage of designers. Th
 
 Outsiders lack the ability to invoke change, despite their passion. Insiders, despite their talent, fail to change institutions from within. How do we resurrect a zombie culture that seems so incapable of change? Next we will go back in time, to the origins of human flight to study the artists who invented the airplane. Could the cure for the zombie apocalypse be an overlooked lesson of the past?  
 
-[Chapter 19. Zombies in Flight](chapter19.php)  
+[Chapter 19. Zombies in Flight](chapter19.html)  

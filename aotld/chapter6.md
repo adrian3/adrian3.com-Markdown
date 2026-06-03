@@ -75,4 +75,4 @@ We find ourselves balancing seemingly contradictory values. We reject anything t
 
 If we allow cynicism to dominate our worldview, the result is anger, hatred, and eventually violence. The next chapter explores these emotions and we will take a journey into the domain of the professional where we will answer the question, "Could violence be the solution?"  
 
-[Chapter 7. Infestation and Eradication](chapter7.php)  
+[Chapter 7. Infestation and Eradication](chapter7.html)  

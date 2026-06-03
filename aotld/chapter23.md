@@ -84,4 +84,4 @@ If you don't commit to your art all your work will be in vain. Without convictio
 
 > "Profess no belief without conviction. To conform, means often death; to non-conform in this is often life, often life eternal."   
 
-[Chapter 24. Success, Turbulence and Implosion](chapter24.php)  
+[Chapter 24. Success, Turbulence and Implosion](chapter24.html)  

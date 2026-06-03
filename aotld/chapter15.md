@@ -132,4 +132,4 @@ It is easy to get discouraged by the proliferation of imitation art, but we can'
 
 The economic landscape is full of advertising swindlers, influence manipulators, infrastructure trolls, and spammers. We need to be careful about letting zombies into our new economy. We need to protect our art and we need to protect our audience's attention from the tactics of zombies. We can't fall victim to the shortcuts. We must resist the urge to trade our audience’s attention for quick cash.   
 
-[Chapter 16. The Zombie-mobile](chapter16.php)  
+[Chapter 16. The Zombie-mobile](chapter16.html)  

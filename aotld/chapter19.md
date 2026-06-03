@@ -87,4 +87,4 @@ When the Wright brothers' plane took flight on December 17, 1903, they were not 
 
 The shallow fairy tale we have been taught about the Wright brothers is the result of nostalgia and the repeated misunderstanding of what it takes to be successful. The Wrights aren't a rags-to-riches tale. They aren't an "against all odds" story, the underdog theme dissolves under scrutiny. The untold story of Samuel Langley is further evidence that the lessons of the past are elusive. What are we missing? The next chapter is about survivorship bias, a phenomenon that will will shed further light on the lessons we should have learned from Langley and the Wright brothers.  
 
-[Chapter 20. Bullet Holes of Honor](chapter20.php)  
+[Chapter 20. Bullet Holes of Honor](chapter20.html)  

@@ -48,4 +48,4 @@ This book has plenty to say about doing meaningful work, but unfortunately I hav
 
 The hope is not in a fairy tale ending, but in finding joy in the journey. The meaningful work we do is an end of itself. Our work defines us, and it is this effort towards excellence that we must embrace, protect, and cherish because if we don't our legacy will not be the death of a hero, but the limping march of a lifeless being, unable to change his world, hostile to change, tragically impotent, and staggering eternally towards irrelevance.  
 
-[Chapter 25. Post Apocalypse](chapter25.php)  
+[Chapter 25. Post Apocalypse](chapter25.html)  

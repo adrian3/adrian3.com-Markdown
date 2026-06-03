@@ -22,4 +22,4 @@ _Art of the Living Dead_ was inspired by a strange mixture of ambition, professi
 
 As the world degenerates arounds us, victory is far from certain. In the moments before armageddon the oncoming transformation is unknowable. Are we on the verge of upward ascent, or teetering on the edge of calamity? Some sneer at dreamers, denying the need for reform. Others ignore the warnings, certain that nothing will ever change. As we enter the unknown, the appropriate response is not apathy, cynicism, or denial. All we can do is humbly acknowledge that we have absolutely no idea what is possible. As you indulge my zombie metaphor in the following chapters, I thank you for your time, and I hope you take my encouragement to heart. _You can save the world._ Why? Because you care. 
 
-[Chapter 1. Why Zombies?](chapter1.php)  
+[Chapter 1. Why Zombies?](chapter1.html)  

@@ -52,4 +52,4 @@ Our young hero is fighting the same battle as all of us. Our inner zombie tells 
 
 The zombie apocalypse is a war fought on two fronts. The first is the countless mindless creatures that oppose our best work. Like a parent erasing crayon marks where they don't belong, the external zombies will never support our artistic vision. The second front is a battle against our own inner zombie, the voice in our head that sabotages our best intentions and frightens our creative ambition. Victory requires winning on both fronts. Before we can fight, however, first we need to have a better definition of art.  
 
-[Chapter 4. Learning the Unteachable](chapter4.php)  
+[Chapter 4. Learning the Unteachable](chapter4.html)  

@@ -102,4 +102,4 @@ Take a moment to look at your experience clock for the skill that you most want 
 
 Art isn't magic. It's the hardest work you will ever do. It will take more time to master than any reasonable person (or zombie) would invest. The economics of your decision to invest 10,000 hours into your craft won't make sense to outsiders. In the next chapter we analyze the zombie economy and observe the complex relationship between art and commerce.  
 
-[Chapter 15. Zombie Economics](chapter15.php)  
+[Chapter 15. Zombie Economics](chapter15.html)  

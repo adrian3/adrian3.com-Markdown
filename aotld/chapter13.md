@@ -72,4 +72,4 @@ Zombies will tell you that raising your voice is arrogant, self-serving, or triv
 
 The human voice is our most potent weapon in the battle against zombies. The only thing that can stifle your voice is for you to not participate. Find your voice and use it with emotion, passion, and conviction. Raise your voice because you believe in your words and you want to make a difference. Your voice will travel far because the authenticity of your words aren't burdened by outside influences.  
 
-[Chapter 14. Magic and the Illusion of Talent](chapter14.php)  
+[Chapter 14. Magic and the Illusion of Talent](chapter14.html)  

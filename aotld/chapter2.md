@@ -75,4 +75,4 @@ If humanity is going to survive we need heroes. We need artists. We need ideas a
 
 Taking this book to heart can't stop the onslaught of mindless attackers. The odds are stacked against you, but the world needs you. We need your art to survive.  
 
-[Chapter 3. The Birth of a Zombie](chapter3.php)   
+[Chapter 3. The Birth of a Zombie](chapter3.html)   

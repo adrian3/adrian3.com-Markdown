@@ -42,4 +42,4 @@ There isn't a magical place where all brilliant ideas are recognized and beautif
 
 Once you decide to risk your reputation in support of an idea, it will be much easier gain support. When you carry the risk on your shoulders it helps the hesitant observers to get onboard because they know they can point at you when things get tough. That is okay. Your attitude needs to be, "Blame me, but don't worry. I will not let the project fail. I will do whatever it takes to get it done, whether you support me or not." The only way to do good work is to champion the big ideas yourself. Don't expect your work to be embraced. Fight for it.  
 
-[Chapter 12. Impostor Syndrome](chapter12.php)  
+[Chapter 12. Impostor Syndrome](chapter12.html)  

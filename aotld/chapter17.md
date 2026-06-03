@@ -75,4 +75,4 @@ If you look at the insider map you will see a white circle connected to Developm
 
 There isn't a happy ending for Health Sherpa or Development Seed. While both companies epitomize artistic contribution, the impact of their efforts is small. This is discouraging because most of us are fighting similar battles either as skilled insiders or passionate outsiders. Next we will take a look at another case study, zooming in even further, this time on another zombie institution, American Airlines.  
 
-[Chapter 18. Zombie Airlines](chapter18.php)  
+[Chapter 18. Zombie Airlines](chapter18.html)  

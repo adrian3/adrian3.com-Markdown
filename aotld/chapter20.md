@@ -81,4 +81,4 @@ Acknowledging survivorship bias changes how we tell stories and reconcile histor
 
 If fame, fortune, and a good education are decoys, what are the real ingredients of success? That is the subject of the next chapter.  
 
-[Chapter 21. Ingredients of Creativity](chapter21.php)  
+[Chapter 21. Ingredients of Creativity](chapter21.html)  
