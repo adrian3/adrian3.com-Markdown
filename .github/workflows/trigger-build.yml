@@ -1,0 +1,23 @@
+name: Trigger Generator Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger build in generator repo
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GENERATOR_REPO_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'adrian3',
+              repo: 'adrian3.github.com',
+              workflow_id: 'deploy.yml',
+              ref: 'main',
+            });
+            console.log('Build triggered on adrian3/adrian3.github.com');
