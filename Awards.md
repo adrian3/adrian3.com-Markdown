@@ -125,8 +125,7 @@ July 2005
 
 ---
 
-<img src="galleries/awards and honors/
-how conference partner.jpg" style="float: right; max-width: 33%;">
+<img src="galleries/awards and honors/how conference partner.jpg" style="float: right; max-width: 33%;">
 **HOW Conference partner**  
 Live blogging from the 2005 HOW Conference  
 

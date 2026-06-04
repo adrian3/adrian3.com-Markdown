@@ -95,4 +95,4 @@ An abundance of space, time, trust, and play can’t guarantee success, if you l
 
 * * *
 
-Thanks for reading. Be sure to check out [Part 2 of this post where Asimov talks about Fame, Fortune, and Creative Breakthrough](Writing/2015-01-26-Asimov-on-Fame-Fortune-and-Creative-Breakthrough.php), the false ingredients that can poison a well-intentioned creative environment.
+Thanks for reading. Be sure to check out [Part 2 of this post where Asimov talks about Fame, Fortune, and Creative Breakthrough](blog/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.html), the false ingredients that can poison a well-intentioned creative environment.

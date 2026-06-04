@@ -65,5 +65,5 @@ _“I am not a monster, I just have my ideas.”_
 
 * * *
 
-_Hey, thanks for reading._ If you enjoyed this post you might like [In the future everyone will be creative for 15 minutes](Writing/2015-10-01-In-the-future-everyone-will-be-creative-for-fifteen-minutes.php) or my [Art of the Living Dead](https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7) series. *Stay creative.*
+_Hey, thanks for reading._ If you enjoyed this post you might like [In the future everyone will be creative for 15 minutes](blog/2015/2015-10-01-In-the-future-everyone-will-be-creative-for-fifteen-minutes.html) or my [Art of the Living Dead](https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7) series. *Stay creative.*
 

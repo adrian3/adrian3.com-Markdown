@@ -17,7 +17,7 @@ layout:
 
 * * *
 
-In my [last post](Writing/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.php) I used a long lost [letter from Isaac Asimov](http://www.technologyreview.com/view/531911/isaac-asimov-asks-how-do-people-get-new-ideas/) to talk about brainstorming and outline what I consider the five ingredients for creativity. I ended the post with a promise to follow up with the flip side of the equation, the things that prevent us from having a creative breakthrough.
+In my [last post](blog/2015/2015-01-19-Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.html) I used a long lost [letter from Isaac Asimov](http://www.technologyreview.com/view/531911/isaac-asimov-asks-how-do-people-get-new-ideas/) to talk about brainstorming and outline what I consider the five ingredients for creativity. I ended the post with a promise to follow up with the flip side of the equation, the things that prevent us from having a creative breakthrough.
 
 This isn’t so much about the tiny oppositions to creativity as it is about some giant myths that send so many of us down the wrong path. Nobody ever comes right out and says this, but most of us have the following formula scribbled on our mental road map for living a successful life:
 

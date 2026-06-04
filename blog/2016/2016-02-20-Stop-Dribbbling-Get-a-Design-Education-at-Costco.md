@@ -47,11 +47,11 @@ Paul knew something I didn’t. It doesn’t matter where you work, Costco, Pent
 
 In hindsight it is easy to recognize how lucky I was to have a design mentor before I even had a design job. Of course at the time, I hated my job. Costco seemed world’s away from my design ambitions. When I finally landed a graphic design job I was ecstatic. I worked my last two weeks, cut the going-away cake, and said goodbye to Paul. _Little did I know [the zombie apocalypse](https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7#.1llsndo53) I was about to enter…_
 
-<img src="/images/dropbox_public/images/Stop-Dribbbling-Get-a-Design-Education-at Costco4.jpeg" alt="My last day on the job. Goodbye Costco, hello design career." class="caption">
+<img src="/images/dropbox_public/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco4.jpeg" alt="My last day on the job. Goodbye Costco, hello design career." class="caption">
 
 * * *
 
-[Part 5: Ad-Diction](/blog/2016/2016-03-05-Special-Hell-5-Ad-Addiction.html)
+[Part 5: Ad-Diction](/blog/2016/2016-03-05-Special-Hell-5-Ad-Addiction.html) s
 
 * * *
 

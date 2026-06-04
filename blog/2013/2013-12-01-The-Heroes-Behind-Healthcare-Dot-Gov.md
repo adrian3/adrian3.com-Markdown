@@ -48,5 +48,5 @@ They don’t share their code. They are not active members of the open source co
 
 Development Seed has not been involved in healthcare.gov since CGI Federal and QSSI took over the project. Under strange circumstances [the Github repository was taken offline](http://www.theverge.com/2013/10/18/4852720/why-the-government-unpublished-the-source-code-for-healthcare-gov-github), essentially putting a curtain in front of the transparent frontend work. While the health insurance fiasco will be going on for years the story that won’t get told is how a small team of talented insiders came so close to fundamentally changing the world’s largest zombie institution.
 
-If you want to read more, check out my book _[Art of the Living Dead](Writing/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.php)_.
+If you want to read more, check out my book _[Art of the Living Dead](blog/2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html)_.
 
