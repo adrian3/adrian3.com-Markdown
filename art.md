@@ -81,7 +81,7 @@ a.art {
 
 <h2 id="infestation">Infestation Insect Prints</h2>
 <a href="infestation.html"><img src="galleries/infestation/infestation-thumb.jpg"></a>
-<p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
+<p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href=“https://etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
 <button><a href="infestation.html" class="button">View Project</a></button>
 <hr />
 

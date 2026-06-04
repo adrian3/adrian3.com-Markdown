@@ -143,23 +143,7 @@ a.writing {
 <li><a href="https://medium.com/@ade3/the-heroes-behind-healthcare-gov-e8c670f743fd">The Heroes Behind Healthcare.gov</a></li>
 </ul>
 <h2 id="blog">From the Blog:</h2>
-<ul class="posts"></ul>
-<script type="text/javascript">
-var posts = "";
-function getPosts() {
-  $.getJSON('posts.json', function(data) {
-    posts = data.posts;
-    for (var i = 0; i < 10; i++) {
-      var row = "<li><a href='"+posts[i].fileName+"'>"+posts[i].title+"</a></li>";
-      $('.posts').append(row);
-      if (i==9) {
-      $('.posts').append('<p><a href="archive.html">View all</a></p>');
-      }
-    }
-  });
-}
-getPosts();
-</script>
+<recent-posts>
 
 </div>
 <!-- {{prevNextLinks}} -->

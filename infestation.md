@@ -37,5 +37,4 @@ a.art {
 
 <p>This project has two parts. First, there are the 3 editions of insect prints, ideal for framing and decorating your home. Second is an interactive art project that you can participate in as part of the Infestation community. </p>
 
-<p><a href="https://adrian3.com/galleries/infestation/gallery/
-">Click here to view the prints from the Infestation.</a></p>
+<p><a href="gallery-pages/infestation/gallery/index.html">Click here to view the prints from the Infestation.</a></p>

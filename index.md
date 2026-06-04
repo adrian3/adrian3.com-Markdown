@@ -86,7 +86,7 @@ header {
 <a href="/gallery-pages/pinecones.html"><img class="case-study-image" src="images/art-section/pinecone.jpg"></a>
 <a href="Art%20Shows.html"><img class="case-study-image" src="images/art-section/spider-flower.jpg"></a>
 <a href="/gallery-pages/pottery.html"><img class="case-study-image" src="images/art-section/pottery.jpg"></a>
-<a href="postcards"><img class="case-study-image" src="images/art-section/postcard.jpg"></a>
+<a href="postcards.html"><img class="case-study-image" src="images/art-section/postcard.jpg"></a>
 <a href="/gallery-pages/camera-drawings.html"><img class="case-study-image" src="images/art-section/cameras.jpg"></a>
 <a href="/gallery-pages/camera-graffiti.html"><img class="case-study-image" src="images/art-section/camera-graffiti.jpg"></a>
 <a href="/gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/galleries/bookshelves/bookshelf3.jpeg"></a>
