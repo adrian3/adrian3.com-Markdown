@@ -29,12 +29,12 @@ This project uses a split-repo workflow so content changes and site deployment c
 ## Useful Commands
 
 ```bash
-git push content main
-git push deploy main:staging
+./scripts/publish-content.sh
+./scripts/publish-deploy.sh
 ```
 
-Use the first command to publish markdown/content changes.
-Use the second command only after a build has been verified and you want the deploy repo to pick up the new site on a staging branch.
+Use `publish-content.sh` to publish markdown/content changes from `source/` to the content repo.
+Use `publish-deploy.sh` only after a build has been verified and you want the deploy repo to pick up the new site on a staging branch.
 
 ## Guardrails
 
