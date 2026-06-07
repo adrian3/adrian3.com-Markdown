@@ -9,6 +9,8 @@ This project uses a split-repo workflow so content changes and site deployment c
 - `adrian3.com-Markdown` is the content mirror for markdown-only work.
 - `adrian3.github.com` is the deploy/publish repo.
 - `admin/Ade-s-design-system` stays as a separate submodule for the shared baseline and tokens.
+- `content` is the Git remote for `adrian3.com-Markdown`.
+- `deploy` is the Git remote for `adrian3.github.com`.
 
 ## Safe Workflow
 
@@ -17,6 +19,22 @@ This project uses a split-repo workflow so content changes and site deployment c
 3. Mirror markdown changes to `adrian3.com-Markdown`.
 4. Mirror built output to `adrian3.github.com` on a staging branch.
 5. Flip the live branch only when the replacement site is ready.
+
+## Suggested Branch Convention
+
+- This repo: `main`
+- Markdown repo: `main`
+- Deploy repo: `staging` for pre-launch work, then the existing live branch when you are ready to switch
+
+## Useful Commands
+
+```bash
+git push content main
+git push deploy main:staging
+```
+
+Use the first command to publish markdown/content changes.
+Use the second command only after a build has been verified and you want the deploy repo to pick up the new site on a staging branch.
 
 ## Guardrails
 
