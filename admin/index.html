@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown Template Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Vollkorn:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    *:not(dialog) { margin: 0; }
+
+    :root {
+      color-scheme: light;
+      --primary: #cc3300;
+      --primary-focus: #a32900;
+      --canvas: #ffffff;
+      --parchment: #fafafa;
+      --ink: #1d1d1f;
+      --muted: #555555;
+      --muted-soft: #7a7a7a;
+      --hairline: #e0e0e0;
+      --divider: #f0f0f0;
+      --radius: 4px;
+      --font-display: "Vollkorn", Georgia, serif;
+      --font-ui: "Montserrat", Arial, sans-serif;
+    }
+
+    html { font-size: 100%; }
+
+    body {
+      min-height: 100vh;
+      background: var(--parchment);
+      color: var(--ink);
+      font-family: var(--font-ui);
+      font-size: 0.875rem;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .shell {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1px;
+      background: var(--hairline);
+    }
+
+    /* ── Panels ── */
+    .panel {
+      background: var(--canvas);
+      padding: 1.5rem;
+    }
+
+    .panel + .panel {
+      border-top: 0;
+    }
+
+    /* ── Hero strip ── */
+    .hero-copy {
+      display: grid;
+      gap: 1rem;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    /* ── Actions ── */
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button, .button {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 44px;
+      border-radius: var(--radius);
+      padding: 0 1.375rem;
+      font-family: var(--font-ui);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: background 100ms ease, color 100ms ease, border-color 100ms ease;
+    }
+
+    button:active, .button:active { transform: scale(0.97); }
+
+    button:focus-visible, .button:focus-visible, a:focus-visible, input:focus-visible {
+      outline: 2px solid var(--primary-focus);
+      outline-offset: 2px;
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .button-primary:hover { background: var(--primary-focus); border-color: var(--primary-focus); }
+
+    .button-secondary {
+      background: var(--canvas);
+      color: var(--ink);
+      border-color: var(--hairline);
+    }
+
+    .button-secondary:hover { border-color: #c0c0c0; }
+
+    /* ── Stats ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--hairline);
+      padding: 0;
+    }
+
+    .stat {
+      background: var(--parchment);
+      padding: 1.25rem 1.5rem;
+    }
+
+    .stat .label {
+      display: block;
+      color: var(--muted-soft);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .stat strong {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ── Section ── */
+    .section {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    h3 {
+      font-family: var(--font-ui);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-soft);
+    }
+
+    /* ── Catalog ── */
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--hairline);
+    }
+
+    .catalog-group {
+      background: var(--parchment);
+      padding: 1.25rem;
+      display: grid;
+      gap: 0.75rem;
+      align-content: start;
+    }
+
+    .catalog-group--wide {
+      grid-column: span 2;
+    }
+
+    .catalog-group ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 4px;
+    }
+
+    .catalog-group li {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      word-break: break-word;
+    }
+
+    .catalog-group li strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .catalog-pairs {
+      display: grid;
+      gap: 6px;
+    }
+
+    .catalog-pair--header {
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--hairline);
+      color: var(--muted-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.72rem;
+    }
+
+    .catalog-pair {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: start;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    .catalog-pair__key,
+    .catalog-pair__value {
+      min-width: 0;
+      word-break: break-word;
+    }
+
+    .catalog-pair__key {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .catalog-pair__value a {
+      color: inherit;
+    }
+
+    .catalog-subgroup {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .catalog-subgroup + .catalog-subgroup {
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--hairline);
+    }
+
+    .catalog-subgroup h4 {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-soft);
+    }
+
+    /* ── Settings form ── */
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--muted-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    input {
+      appearance: none;
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius);
+      padding: 0.6875rem 0.875rem;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: var(--font-ui);
+      font-size: 0.875rem;
+      line-height: 1.2;
+    }
+
+    input:focus-visible {
+      outline: 2px solid var(--primary-focus);
+      outline-offset: 2px;
+      border-color: var(--primary-focus);
+    }
+
+    /* ── Utility text ── */
+    .status {
+      color: var(--muted-soft);
+      font-size: 0.8125rem;
+    }
+
+    .hint {
+      font-size: 0.8125rem;
+      color: var(--muted-soft);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 700px) {
+      .field-grid, .stats, .catalog { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="panel hero-copy">
+      <h1>Markdown Template Engine</h1>
+      <div class="actions">
+        <button class="button-primary" id="buildButton">Build site</button>
+      </div>
+      <div class="status" id="status">Loading project data...</div>
+    </section>
+    <section class="panel stats" id="stats">
+      <div class="stat">
+        <span class="label">Generated pages</span>
+        <strong id="pageCount">0</strong>
+      </div>
+      <div class="stat">
+        <span class="label">Preview URL</span>
+        <strong><a id="previewUrlText" href="#" target="_blank" rel="noreferrer">preview</a></strong>
+      </div>
+      <div class="stat">
+        <span class="label">On your network</span>
+        <strong><a id="networkUrlText" href="#" target="_blank" rel="noreferrer">—</a></strong>
+      </div>
+    </section>
+    <section class="panel section">
+      <div class="catalog">
+        <div class="catalog-group">
+          <h3>Variables</h3>
+          <div class="catalog-pairs" id="variablesList"></div>
+        </div>
+        <div class="catalog-group">
+          <h3>Frontmatter</h3>
+          <div class="catalog-subgroup">
+            <h4>System keys</h4>
+            <ul id="frontmatterSystemKeysList"></ul>
+          </div>
+          <div class="catalog-subgroup">
+            <h4>User-defined keys</h4>
+            <ul id="frontmatterUserKeysList"></ul>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Components</h3>
+          <div class="catalog-pairs" id="componentsList"></div>
+        </div>
+        <div class="catalog-group">
+          <h3>Templates</h3>
+          <ul id="templatesList"></ul>
+        </div>
+        <div class="catalog-group catalog-group--wide">
+          <h3>Pages</h3>
+          <div class="catalog-pairs" id="pagesList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    const previewPort = Number(window.location.port || "3002") + 1;
+    const previewOrigin = `${window.location.protocol}//${window.location.hostname}:${previewPort}`;
+
+    const status = document.getElementById("status");
+    const pageCount = document.getElementById("pageCount");
+    const buildButton = document.getElementById("buildButton");
+    const previewUrlText = document.getElementById("previewUrlText");
+    const networkUrlText = document.getElementById("networkUrlText");
+    const templatesList = document.getElementById("templatesList");
+    const componentsList = document.getElementById("componentsList");
+    const pagesList = document.getElementById("pagesList");
+    const variablesList = document.getElementById("variablesList");
+    const frontmatterSystemKeysList = document.getElementById("frontmatterSystemKeysList");
+    const frontmatterUserKeysList = document.getElementById("frontmatterUserKeysList");
+
+    function setStatus(message) {
+      status.textContent = message;
+    }
+
+    async function request(path, options = {}) {
+      const response = await fetch(path, {
+        headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+        ...options,
+      });
+      const text = await response.text();
+      let data = text;
+      try { data = text ? JSON.parse(text) : {}; } catch {}
+      if (!response.ok) {
+        throw new Error(data.error || response.statusText);
+      }
+      return data;
+    }
+
+    function updateStats(posts) {
+      pageCount.textContent = String(posts?.posts?.length ?? 0);
+    }
+
+    function renderCategoryList(listNode, items) {
+      listNode.innerHTML = "";
+      if (!items.length) {
+        const li = document.createElement("li");
+        li.textContent = "None";
+        listNode.appendChild(li);
+        return;
+      }
+
+      for (const item of items) {
+        const li = document.createElement("li");
+        if (typeof item === "string") {
+          li.textContent = item.replace(/^(components|templates|pages)\//, "");
+        } else {
+          const strong = document.createElement("strong");
+          strong.textContent = item.shortcode;
+          li.appendChild(strong);
+          li.appendChild(document.createTextNode(` = ${item.value}`));
+        }
+        listNode.appendChild(li);
+      }
+    }
+
+    function renderPairList(listNode, items, keyField, valueField) {
+      listNode.innerHTML = "";
+      if (!items.length) {
+        const row = document.createElement("div");
+        row.className = "catalog-pair";
+        const key = document.createElement("div");
+        key.className = "catalog-pair__key";
+        key.textContent = "None";
+        row.appendChild(key);
+        listNode.appendChild(row);
+        return;
+      }
+
+      for (const item of items) {
+        const row = document.createElement("div");
+        row.className = "catalog-pair";
+
+        const key = document.createElement("div");
+        key.className = "catalog-pair__key";
+        key.textContent = String(item?.[keyField] ?? "");
+
+        const value = document.createElement("div");
+        value.className = "catalog-pair__value";
+        value.textContent = String(item?.[valueField] ?? "");
+
+        row.appendChild(key);
+        row.appendChild(value);
+        listNode.appendChild(row);
+      }
+    }
+
+    function renderPairTable(listNode, items, columns, options = {}) {
+      listNode.innerHTML = "";
+
+      const header = document.createElement("div");
+      header.className = "catalog-pair catalog-pair--header";
+      for (const column of columns) {
+        const cell = document.createElement("div");
+        cell.className = column.className || "";
+        cell.textContent = column.label;
+        header.appendChild(cell);
+      }
+      listNode.appendChild(header);
+
+      if (!items.length) {
+        const row = document.createElement("div");
+        row.className = "catalog-pair";
+        const key = document.createElement("div");
+        key.className = "catalog-pair__key";
+        key.textContent = "None";
+        row.appendChild(key);
+        listNode.appendChild(row);
+        return;
+      }
+
+      for (const item of items) {
+        const row = document.createElement("div");
+        row.className = "catalog-pair";
+        for (const column of columns) {
+          const cell = document.createElement("div");
+          if (column.className) cell.className = column.className;
+          if (column.render) {
+            column.render(cell, item, options);
+          } else {
+            cell.textContent = String(item?.[column.field] ?? "");
+          }
+          row.appendChild(cell);
+        }
+        listNode.appendChild(row);
+      }
+    }
+
+    async function loadCatalog() {
+      const catalog = await request("/api/catalog");
+      renderCategoryList(templatesList, catalog.templates || []);
+      renderPairTable(componentsList, catalog.components || [], [
+        { label: "Component name", field: "name", className: "catalog-pair__key" },
+        { label: "Shortcode", field: "shortcode", className: "catalog-pair__value" },
+      ]);
+      renderPairTable(variablesList, catalog.variables || [], [
+        { label: "Key", field: "key", className: "catalog-pair__key" },
+        { label: "Value", field: "value", className: "catalog-pair__value" },
+      ]);
+      renderPairTable((pagesList), (catalog.pages || []).map(relPath => ({
+        source: relPath.replace(/^pages\//, ""),
+        url: "/" + relPath.replace(/\.md$/i, ".html").replace(/^pages\//, ""),
+      })), [
+        { label: "Source", field: "source", className: "catalog-pair__key" },
+        {
+          label: "Preview HTML",
+          className: "catalog-pair__value",
+          render(cell, item) {
+            const link = document.createElement("a");
+            link.href = `${previewOrigin}${item.url}`;
+            link.target = "_blank";
+            link.rel = "noreferrer";
+            link.textContent = item.url;
+            cell.appendChild(link);
+          },
+        },
+      ]);
+      renderCategoryList(frontmatterSystemKeysList, catalog.frontmatterSystemKeys || []);
+      renderCategoryList(frontmatterUserKeysList, catalog.frontmatterUserKeys || []);
+    }
+
+    async function loadPosts() {
+      try {
+        const posts = await request("/api/posts");
+        window.__posts = posts;
+        updateStats(posts);
+      } catch {
+        window.__posts = { posts: [] };
+      }
+    }
+
+    async function loadAll() {
+      setStatus("Loading project data...");
+      previewUrlText.href = `${previewOrigin}/`;
+      previewUrlText.textContent = previewOrigin.replace(/^https?:\/\//, "") + "/";
+      const network = await request("/api/network").catch(() => ({}));
+      if (network.url) {
+        networkUrlText.href = network.url;
+        networkUrlText.textContent = network.url.replace(/^https?:\/\//, "");
+      }
+      await Promise.all([loadPosts(), loadCatalog()]);
+      setStatus("Ready.");
+    }
+
+    async function buildSite() {
+      setStatus("Building...");
+      await request("/api/build", { method: "POST", body: "{}" });
+      setStatus("Build complete.");
+      await Promise.all([loadPosts(), loadCatalog()]);
+    }
+
+    buildButton.addEventListener("click", async () => {
+      try { await buildSite(); } catch (error) { setStatus(error.message); }
+    });
+
+    await loadAll();
+  </script>
+</body>
+</html>

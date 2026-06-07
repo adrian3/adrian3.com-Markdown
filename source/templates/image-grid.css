@@ -1,0 +1,107 @@
+.gallery {
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  padding: var(--ade-space-8) var(--ade-space-5);
+}
+
+.gallery-header {
+  margin-bottom: var(--ade-space-7);
+  padding-bottom: var(--ade-space-6);
+  border-bottom: 1px solid var(--ade-hairline);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--ade-space-5);
+}
+
+/* Card: <a> wraps <figure> for full-card click target */
+.gallery-grid a {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Square grid variant: add grid-ratio: square to page frontmatter */
+.gallery-square .gallery-grid img {
+  aspect-ratio: 1;
+}
+
+/* Darkening overlay */
+.gallery-grid figure::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(29, 29, 31, 0);
+  transition: background 0.35s ease;
+  pointer-events: none;
+}
+
+.gallery-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--ade-space-4);
+  color: #ffffff;
+  font-family: var(--ade-font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(0.4rem);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Hover state */
+.gallery-grid a:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-grid a:hover figure::after {
+  background: rgba(29, 29, 31, 0.55);
+}
+
+.gallery-grid a:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-grid img,
+  .gallery-grid figure::after,
+  .gallery-grid figcaption {
+    transition: none;
+  }
+  .gallery-grid a:hover img {
+    transform: none;
+  }
+}
+
+@media (max-width: 40rem) {
+  .gallery {
+    padding: var(--ade-space-6) 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: var(--ade-space-4);
+  }
+}

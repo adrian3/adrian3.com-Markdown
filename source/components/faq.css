@@ -1,0 +1,49 @@
+.faq {
+  max-width: var(--ade-content-width);
+  margin-inline: auto;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--ade-hairline);
+  padding-block: var(--ade-space-3);
+}
+
+.faq details:first-child {
+  border-top: 1px solid var(--ade-hairline);
+}
+
+.faq summary {
+  font-family: var(--ade-font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ade-ink);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ade-space-4);
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--ade-muted-soft);
+  flex-shrink: 0;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq details p {
+  margin-top: var(--ade-space-3);
+  padding-bottom: var(--ade-space-2);
+  font-size: 1.0625rem;
+  color: var(--ade-muted);
+}

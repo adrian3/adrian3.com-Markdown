@@ -1,0 +1,42 @@
+.post {
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  padding: var(--ade-space-8) var(--ade-space-5);
+}
+
+.post-header {
+  margin-bottom: var(--ade-space-7);
+  padding-bottom: var(--ade-space-6);
+  border-bottom: 1px solid var(--ade-hairline);
+}
+
+.post-header .eyebrow {
+  color: var(--ade-primary);
+  margin-bottom: var(--ade-space-3);
+}
+
+.post-header small {
+  display: block;
+  margin-top: var(--ade-space-3);
+}
+
+/* Ornamental section break overrides the baseline hairline hr */
+.post-body hr {
+  border: 0;
+  text-align: center;
+  margin-block: var(--ade-space-7);
+}
+
+.post-body hr::after {
+  content: "· · ·";
+  color: var(--ade-muted-soft);
+  font-family: var(--ade-font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.5em;
+}
+
+@media (max-width: 40rem) {
+  .post {
+    padding: var(--ade-space-6) 1rem;
+  }
+}

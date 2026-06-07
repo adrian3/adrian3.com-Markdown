@@ -1,0 +1,92 @@
+.nav {
+  background: var(--ade-parchment);
+  border-bottom: 1px solid var(--ade-hairline);
+}
+
+.nav-inner {
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  padding: 0 var(--ade-space-5);
+  height: 68px;
+  display: flex;
+  align-items: flex-end;
+  gap: var(--ade-space-5);
+  padding-bottom: var(--ade-space-3);
+}
+
+/* ── Logo ── */
+.nav-logo {
+  flex-shrink: 0;
+  line-height: 0;
+  display: block;
+}
+
+.nav-logo svg {
+  width: 110px;
+  height: 55px;
+  overflow: visible;
+  cursor: pointer;
+  display: block;
+  margin-bottom: -10px;
+}
+
+/* SVG path transitions — vanilla JS sets opacity/fill/transform */
+.nav-logo .d,  .nav-logo .a,  .nav-logo .e,
+.nav-logo .d2, .nav-logo .a2, .nav-logo .e2,
+.nav-logo .outlineA, .nav-logo .outlineD, .nav-logo .outlineE {
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: opacity 0.5s ease, fill 0.5s ease, transform 0.5s ease;
+}
+
+.nav-logo .outlineA,
+.nav-logo .outlineD,
+.nav-logo .outlineE {
+  fill: none;
+  stroke: var(--ade-hairline);
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+
+/* ── Nav links ── */
+.nav-inner nav {
+  display: flex;
+  align-items: center;
+  gap: var(--ade-space-5);
+  padding-bottom: 2px;
+}
+
+.nav-inner nav a {
+  font-family: var(--ade-font-ui);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ade-ink);
+  text-decoration: none;
+}
+
+.nav-inner nav a:hover {
+  color: var(--ade-primary);
+}
+
+.nav-inner nav a[aria-current="page"] {
+  color: var(--ade-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 40rem) {
+  .nav-inner {
+    padding-inline: 1rem;
+    gap: var(--ade-space-3);
+  }
+
+  .nav-logo svg {
+    width: 80px;
+    height: 40px;
+  }
+
+  .nav-inner nav {
+    gap: var(--ade-space-3);
+  }
+}
