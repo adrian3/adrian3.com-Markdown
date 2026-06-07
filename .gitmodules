@@ -1,0 +1,3 @@
+[submodule "admin/Ade-s-design-system"]
+	path = admin/Ade-s-design-system
+	url = https://github.com/adrian3/Ade-s-design-system.git

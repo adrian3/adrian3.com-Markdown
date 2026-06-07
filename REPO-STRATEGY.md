@@ -8,6 +8,7 @@ This project uses a split-repo workflow so content changes and site deployment c
 - `website/` is generated output only.
 - `adrian3.com-Markdown` is the content mirror for markdown-only work.
 - `adrian3.github.com` is the deploy/publish repo.
+- `admin/Ade-s-design-system` stays as a separate submodule for the shared baseline and tokens.
 
 ## Safe Workflow
 

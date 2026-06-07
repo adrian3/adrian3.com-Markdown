@@ -37,6 +37,7 @@ admin/           ← local build server and admin UI
 ```
 
 Source and output are separate folders. `website/` is fully regeneratable — delete it and a build recreates it. It is safe to gitignore.
+The design system under `admin/Ade-s-design-system/` stays as a separate git submodule so the shared tokens can evolve independently.
 
 ## Repository Topology
 
