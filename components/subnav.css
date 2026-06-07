@@ -1,0 +1,53 @@
+/* Hide when there are no sibling pages to list */
+.subnav:not(:has(li)) {
+  display: none;
+}
+
+.subnav {
+  background: var(--ade-parchment);
+  border-bottom: 1px solid var(--ade-hairline);
+  padding-block: var(--ade-space-2);
+  padding-inline: var(--ade-space-5);
+}
+
+.subnav ul {
+  list-style: none;
+  padding: 0;
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ade-space-4);
+}
+
+.subnav li {
+  border-bottom: 0;
+  padding: 0;
+  margin-top: 0;
+  font-family: var(--ade-font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.subnav a {
+  color: var(--ade-muted-soft);
+  text-decoration: none;
+}
+
+.subnav a:hover {
+  color: var(--ade-primary);
+}
+
+.subnav a[aria-current="page"] {
+  color: var(--ade-primary);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+@media (max-width: 40rem) {
+  .subnav {
+    padding-inline: 1rem;
+  }
+}

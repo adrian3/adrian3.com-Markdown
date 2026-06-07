@@ -1,0 +1,41 @@
+/* Shared by card.links, card.note, card.profile, card.status */
+.card {
+  background: var(--ade-canvas);
+  border: 1px solid var(--ade-hairline);
+  border-radius: 4px;
+  padding: var(--ade-space-5);
+  display: grid;
+  gap: var(--ade-space-3);
+}
+
+.card h3 {
+  font-family: var(--ade-font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ade-muted-soft);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  font-size: 1.0625rem;
+  line-height: 1.47;
+  color: var(--ade-muted);
+  border-bottom: 1px solid var(--ade-divider);
+  padding-block: 0.4rem;
+}
+
+.card li:last-child {
+  border-bottom: 0;
+}
+
+.card p {
+  font-size: 1.0625rem;
+  line-height: 1.47;
+  color: var(--ade-muted);
+}

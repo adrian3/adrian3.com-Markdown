@@ -1,0 +1,11 @@
+# Site-wide text tokens.
+# Use <variable-name /> in any component or page to insert these values.
+# Plain text only — for structured content, use a component instead.
+
+site-title: "The website of Adrian Hanft, III"
+site-url: "https://adrian3.com"
+author: "Ade Hanft"
+author-url: "/"
+copyright: "Copyright Adrian Hanft"
+newsletter-url: "https://ade3.substack.com"
+subscribe: "Subscribe at ade3.substack.com"
