@@ -9,13 +9,13 @@ layout:
 Awards/Recognition
 ===============
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/adcd award.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/adcd-award.webp" style="float: right; max-width: 33%;">
 **2012 ADCD Award Show**  
 Ghost-O-Meter App
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/denver 50 award.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/denver-50-award.webp" style="float: right; max-width: 33%;">
 **Denver 50, 2011**  
 Plugless Power Website
 
@@ -31,20 +31,20 @@ Judge, April 2008
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/winner photo book.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/winner-photo-book.webp" style="float: right; max-width: 33%;">
 **Best of Flickr**  
 The Blink of an Eye Flickr Photo Contest and New York Exhibition, 2006
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/aiga award.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/aiga-award.webp" style="float: right; max-width: 33%;">
 **Award of Excellence**  
 Website design, AIGA Nebraska Annual Design Competition, Omaha, Nebraska, 2004
 
 ---
 
 **Finalist**  
-<img src="https://adrian3.com/imgs/galleries/awards and honors/policeman photo.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/policeman-photo.webp" style="float: right; max-width: 33%;">
 Twentieth Annual College Photography Contest by Photographer’s Forum, 2000
 
 ---
@@ -82,35 +82,35 @@ Wentzville High School, 1997
 Work featured in:
 =================
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/cult of lego.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/cult-of-lego.webp" style="float: right; max-width: 33%;">
 **[Cult of Lego](http://www.amazon.com/The-Cult-LEGO-John-Baichtal/dp/1593273916)**  
 by John Baichtal, November 5, 2011  
 (Pages 38-39)  
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/communication arts.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/communication-arts.webp" style="float: right; max-width: 33%;">
 **Communication Arts**  
 May/June 2007  
 (Page 130)  
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/fingerprint handmade design.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/fingerprint-handmade-design.webp" style="float: right; max-width: 33%;">
 **[Fingerprint: The Art of Using Handmade Elements in Graphic Design](http://www.amazon.com/Fingerprint-Hand-Made-Elements-Graphic-Design/dp/1581808712)**  
 by Chen Design Associates, October 19, 2006  
 (Pages 129 and 145)  
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/art department news.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/art-department-news.webp" style="float: right; max-width: 33%;">
 **Concordia Art Department News**  
 "Holzworth and Hanft Explore Design Online"  
 Fall 2007  
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/step inside design 1.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/step-inside-design-1.webp" style="float: right; max-width: 33%;">
 **STEP Inside Design**  
 "Blogging Designers: Thinking Out Loud Online"  
 October 2005  
@@ -124,7 +124,7 @@ July 2005
 
 ---
 
-<img src="https://adrian3.com/imgs/galleries/awards and honors/how conference partner.jpg" style="float: right; max-width: 33%;">
+<img src="https://adrian3.com/imgs/galleries/awards-and-honors/how-conference-partner.webp" style="float: right; max-width: 33%;">
 **HOW Conference partner**  
 Live blogging from the 2005 HOW Conference  
 

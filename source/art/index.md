@@ -11,7 +11,7 @@ slot.sidebar-content: art-sidebar
 <hr />
 
 <h2 id="infestation">Infestation Insect Prints</h2>
-<a href="infestation.html"><img src="https://adrian3.com/imgs/galleries/infestation/infestation-thumb.jpg"></a>
+<a href="infestation.html"><img src="https://adrian3.com/imgs/galleries/infestation/infestation-thumb.webp"></a>
 <p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="https://etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
 <a href="infestation.html" class="button">View Project</a>
 <hr />
@@ -41,7 +41,7 @@ slot.sidebar-content: art-sidebar
 <hr />
 
 <h2 id="free-postcard-art">Free Postcard Art</h2>
-<a href="postcards.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/postcards/thermal-thumb.jpg"></a>
+<a href="postcards.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/postcards/thermal-thumb.webp"></a>
 <p>I enjoy mailing art to people. I’ve sent over 300 pieces so far. You can see them in the <a href="postcards.html">postcard section</a> of this site. If you want to get on my mailing list, reach out.</p>
 <hr />
 
@@ -61,7 +61,7 @@ slot.sidebar-content: art-sidebar
 <hr />
 
 <h2 id="illustrations">Illustrations</h2>
-<a href="../gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/illustrations/illustration12.jpeg"></a>
+<a href="../gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp"></a>
 <p>I draw all the illustrations in <a href="../writing/writing.html">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="../gallery-pages/illustrations.html">this gallery.</a></p>
 <hr />
 
@@ -71,7 +71,7 @@ slot.sidebar-content: art-sidebar
 <hr />
 
 <h2 id="book-shelf-photos">Book Shelf Photos</h2>
-<a href="../gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.jpeg"></a>
+<a href="../gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.webp"></a>
 <p>This is a <a href="../gallery-pages/bookshelves.html">gallery of photos of my book shelves</a>. I love to read and I love to collect toys and trinkets. It makes my home office a fun place to work and makes for a nice backdrop on video calls.</p>
 <hr />
 

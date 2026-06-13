@@ -108,21 +108,21 @@ User Zero
 
 <a href="/gallery-pages/bookshelves.html">
 <figure>
-<img src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.jpeg" alt="Bookshelves">
+<img src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.webp" alt="Bookshelves">
 <figcaption>Bookshelves</figcaption>
 </figure>
 </a>
 
 <a href="/gallery-pages/illustrations.html">
 <figure>
-<img src="https://adrian3.com/imgs/galleries/illustrations/illustration12.jpeg" alt="Illustrations">
+<img src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp" alt="Illustrations">
 <figcaption>Illustrations</figcaption>
 </figure>
 </a>
 
 <a href="/gallery-pages/2019-art.html">
 <figure>
-<img src="https://adrian3.com/imgs/galleries/2019%20art/1-matchbook-monday.jpg" alt="2019 Art">
+<img src="https://adrian3.com/imgs/galleries/2019-art/1-matchbook-monday.webp" alt="2019 Art">
 <figcaption>2019 Art</figcaption>
 </figure>
 </a>
