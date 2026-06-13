@@ -9,7 +9,7 @@ categories: Career Advice, Design Thinking
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay Relevant.webp" class="full-width">
+<img src="https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant.webp" class="full-width">
 
 # The Top 17 Design Tools You Must Master in 2016 to Stay Relevant
 
@@ -19,11 +19,11 @@ layout:
 
 Here’s a quiz. Scan this list below of desktop applications from Adobe and see how many you are proficient at.
 
-![](https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay Relevant2.png)
+![](https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant2.png)
 
 How did you do? Now scan this list of iPhone apps from Adobe again noting the apps you have mastered…
 
-![](https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay Relevant3.png)
+![](https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant3.png)
 
 What’s your total? If you tallied proficiency in less than 17 of these 59 programs I have some bad news for you. You are falling behind and you might not be employable much longer. Our industry demands it. Plus, we owe it to our employers to get as much use as possible out of our $49.99 monthly subscriptions.
 
@@ -31,7 +31,7 @@ Am I right? _Of course not._
 
 Designers have been [fooled by tools](https://medium.com/@ade3/shortcut-addiction-9e7e8c622371#.ng7g0pa12) since the beginning. Whether it is constant software upgrades or having the newest computers it can be tempting to believe that our value is as the operators of machines that are so simple to use, anybody can do it.
 
-<img src="https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay Relevant4.png" alt="Advertisement introducing the Apple II">
+<img src="https://adrian3.com/imgs/images/The-Top-17-Design-Tools-You-Must-Master-in-2016-to-Stay-Relevant4.png" alt="Advertisement introducing the Apple II">
 
 The availability of pre-made solutions increases the perception that anyone can be a designer. In February, apparently an additional [50 fresh resources](https://medium.com/@WebdesignerDepot/50-fresh-resources-for-designers-february-2016-597494c4136#.fp1wqa20x) flooded the market, enticing you to take the easy way out.
 

@@ -9,7 +9,7 @@ description: Inside your skull a movie is playing. You, obviously, are the hero 
 layout: 
 --->
 
-![](https://adrian3.com/imgs/images/Your-Skulls-Fourth Wall.webp)
+![](https://adrian3.com/imgs/images/Your-Skulls-Fourth-Wall.webp)
 
 # Your Skull’s Fourth Wall
 
@@ -21,7 +21,7 @@ Inside your skull a movie is playing. You, obviously, are the hero in this movie
 
 Your movie is different from mine. No better or worse, you just have a different director calling the shots. Everyone’s different movies interact with each other oblivious to the existence of what is playing on the screens next door. Most realities don’t leave room for the existence of alternative genres.
 
-![](https://adrian3.com/imgs/images/Your-Skulls-Fourth Wall2.webp)
+![](https://adrian3.com/imgs/images/Your-Skulls-Fourth-Wall2.webp)
 
 _This is what makes you miserable._ To advance the plot in your movie, you have to continually rationalize the strange behavior of terrible actors. How common is dialog like…
 
@@ -39,7 +39,7 @@ Lines like this are evidence of incompatible realities/movies bumping into each 
 
 As a result, you can’t get over the fact that your brother can support candidate X. In your movie, candidate X is a villain. This fact is your reality, as real as the White House. Your inner casting director has no choice but to assign your brother the role of an unenlightened idiot or brainwashed radical.
 
-![](https://adrian3.com/imgs/images/Your-Skulls-Fourth Wall3.webp)
+![](https://adrian3.com/imgs/images/Your-Skulls-Fourth-Wall3.webp)
 
 I want you to make an edit to your mental movie. As the hero in your movie you now have a new super power. Starting today, you have the ability to see the movies playing in other people’s heads. You can enter their movies at will as a supporting cast member. Break your [fourth wall](https://en.wikipedia.org/wiki/Fourth_wall).
 
