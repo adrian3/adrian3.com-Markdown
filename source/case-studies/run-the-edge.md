@@ -46,7 +46,7 @@ I decided that the first thing you see when you log in to the Amerithon Challeng
 
 The route across the US is dotted with points that mark milestones. Each milestone represents a badge that the user will earn and is accompanied by a video. 
 
-<img src="https://adrian3.com/case-studies/run-the-edge-images/map-animation.gif" style="margin: 0 auto 25px auto; width: 384px; height: 200px; display: block;">
+<img src="https://adrian3.com/imgs/gifs/map-animation.gif" style="margin: 0 auto 25px auto; width: 384px; height: 200px; display: block;">
 
 As you can see from the animation above, I used the map element as a progress bar when the page loaded. I created the animations from SVGs and javascript.
 

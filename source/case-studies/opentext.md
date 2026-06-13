@@ -58,7 +58,7 @@ Creating novel data visualizations is a heavy engineering task. When going beyon
 
 OpenText is a large corporation with hundreds of products. Our corporate design system allows us to maintain consistency across our products while also supporting the flexibility required by unique use cases. As a member of a team of 100+ UX designers around the world, I work within the pre-defined system but also look for opportunities to contribute to our design system to make it better. I wanted our application to support dark mode, a feature that I often heard customers requesting. The designs below are artifacts demonstring how OpScope would look in dark mode and some of the rationale I used to get this feature added to our design system.
 
-<img src="https://adrian3.com/case-studies/opentext-images/dark-mode.gif" style="margin: 25px 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/gifs/dark-mode.gif" style="margin: 25px 0; width: 100vw;">
 
 It was important that the user could navigate from the main screen down to the place where problems were occurring in their applications. 
 
