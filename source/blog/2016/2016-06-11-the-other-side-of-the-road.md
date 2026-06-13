@@ -11,7 +11,7 @@ description: It seems overwhelming, doesn’t it? I mean that thing you are tryi
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/The-Other-Side-of-the-Road.webp" class="full-width">
+<img src="https://adrian3.com/imgs/images/the-other-side-of-the-road.webp" class="full-width">
 
 # The Other Side of the Road
 

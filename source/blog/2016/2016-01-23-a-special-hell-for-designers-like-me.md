@@ -23,7 +23,7 @@ _(Disclaimer: Trashing your clients and former employer is bad form, even after 
 
 I knew I was going straight to designer hell the summer of hurricane Katrina. I was taking a lunch break from a photo shoot in Indiana, the heart of American RV manufacturing. I was stopped at a railroad crossing, waiting for a train to roll by. The cargo was unbranded RVs. Hundreds of big white boxes rushing south like blood cells racing to a wound.
 
-<img src="https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me2.png" alt="Some of the 120,000+ RVs heading to help hurricane victims." class="caption">
+<img src="https://adrian3.com/imgs/images/a-special-hell-for-designers-like-me2.webp" alt="Some of the 120,000+ RVs heading to help hurricane victims." class="caption">
 
 The RVs were to be temporary homes for the victims of the hurricane.
 
@@ -35,7 +35,7 @@ The logoless RVs on that train seemed like a perfect metaphor for the marketing 
 
 This was my job, and I would like to think I did it well. The work we created for our RV client was solid, and when you compare it to the notoriously low standards of the competition, we had created a surface layer for our client that put them (arguably) at the top of the industry. Here is my story, a list of the sins that I committed, and the secrets of how to market white boxes.
 
-<img src="https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me3.png" alt="An assortment of websites I helped create" class="caption">
+<img src="https://adrian3.com/imgs/images/a-special-hell-for-designers-like-me3.webp" alt="An assortment of websites I helped create" class="caption">
 
 First, let me tell you a little bit about the literal surface of the RVs. The exteriors are ugly and the swirly stickers don’t help much. I desperately wanted a chance to improve the graphics of the RVs. It seemed like the easiest way to differentiate our client’s white boxes from the competition.
 
@@ -81,7 +81,7 @@ If you can convincingly Photoshop this concept does it matter that it is a compl
 
 It makes a better trick to include the product in your illusions, but this isn’t mandatory. Simply having your product _next to_ lifestyle images can be enough to distract attention away from the product. For the record, the following brochure cover wasn’t created by me.
 
-<img src="https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me8.png" alt="If you make the product small enough, ugly exteriors are ignorable." class="caption">
+<img src="https://adrian3.com/imgs/images/a-special-hell-for-designers-like-me8.webp" alt="If you make the product small enough, ugly exteriors are ignorable." class="caption">
 
 * * *
 

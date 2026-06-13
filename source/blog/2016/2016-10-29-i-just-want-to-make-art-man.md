@@ -32,7 +32,7 @@ Three paragraphs into the assignment and you became bored. You start to mess aro
 
 As you fiddled with the font dropdown you made a discovery. Selecting certain fonts increased the amount of pages in your report. **Eureka!** You’ll be finished in no time.
 
-![](https://adrian3.com/imgs/images/I-just-want-to-make-art-man.webp)
+![](https://adrian3.com/imgs/images/i-just-want-to-make-art-man.webp)
 
 What else can you do to maximize your output and minimize your effort? You pump up the text size. You increase the space between letters, words, and lines. You increased the margins. In a final act of visual brutality you change all the text to ALL CAPS.
 
@@ -54,7 +54,7 @@ Perhaps you found consolation in art class where there were fewer rules and regu
 
 When it comes to picking a major you select design because it is the only thing on the course list that resembles an art class.
 
-![](https://adrian3.com/imgs/images/I-just-want-to-make-art-man2.webp)
+![](https://adrian3.com/imgs/images/i-just-want-to-make-art-man2.webp)
 
 In college you approach your design assignments just like any other class work. You look for shortcuts. Minimum effort, maximum output. The font-size and spacing scam you pulled in high school gets replaced by more nuanced fraud.
 

@@ -16,7 +16,7 @@ layout:
 
 * * *
 
-![](https://adrian3.com/imgs/images/Design-masochism.webp)
+![](https://adrian3.com/imgs/images/design-masochism.webp)
 
 Early on I remember choking back tears when my designs made first contact with outside eyes. The feedback stung. Don't get me wrong, the criticism was all valid. In those days my designs mostly sucked, they were unworthy of the pride I naively attached to them. I had yet to cultivate  the leathery skin of a design professional. Every word holding a hint of negativity was a dart that penetrated my tender puerile flesh. I wondered if I had chosen the wrong career.
 

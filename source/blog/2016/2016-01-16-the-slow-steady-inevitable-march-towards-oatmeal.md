@@ -9,7 +9,7 @@ categories: Career Advice, Design Thinking
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/The-Slow-Steady-Inevitable-March-Towards-Oatmeal.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/the-slow-steady-inevitable-march-towards-oatmeal.webp" class="full-width">
 
 # The Slow, Steady, Inevitable March Towards Oatmeal
 

@@ -35,7 +35,7 @@ That could explain why, ultimately, Asimov excused himself from the government p
 
 Reading those words in 2015 our first reaction might be to challenge this statement. Today we praise creativity! Or do we? We certainly pay it lip service, but I doubt that creativity is any easier today than it was half a century ago. This may surprise you, but your great idea _will_ be met with opposition. You _can_ create your art in public, but don’t count on applause. Instead, you should prepare for a zombie mob that hungers to tear your work limb from limb.
 
-![](https://adrian3.com/imgs/images/Brainstorming-Advice-from-a-Long-Lost-Isaac-Asimov-Letter.webp)
+![](https://adrian3.com/imgs/images/brainstorming-advice-from-a-long-lost-isaac-asimov-letter.webp)
 
 When I wrote _[Art of the Living Dead](http://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871)_ last year I described the creative process as an apocalyptic battle. The final third of my book attempts to identify five ingredients for creativity. It was uplifting to hear Asimov’s comments regarding each of these ingredients. They are (spoiler alert) [**space**, **time**, **trust**, **play**](https://medium.com/@ade3/ingredients-of-creativity-9f94cee9b3c0) and **inspiration**. Here is what Asimov had to say about these topics.
 

@@ -23,43 +23,43 @@ Since January 1, I have been posting one piece of art a day on [Instagram (@ade3
 
 #### Theme 1: Madonna/Marilyn
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art.webp)
 
 Day 61
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art2.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art2.webp)
 
 Day 62
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art3.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art3.webp)
 
 Day 63
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art4.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art4.webp)
 
 Day 64
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art5.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art5.webp)
 
 Day 65
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art6.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art6.webp)
 
 Day 66
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art7.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art7.webp)
 
 Day 67
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art8.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art8.webp)
 
 Day 68
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art9.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art9.webp)
 
 Day 69
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art10.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art10.webp)
 
 Day 70
 
@@ -67,31 +67,31 @@ Day 70
 
 #### Theme 2: Choppers
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art11.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art11.webp)
 
 Day 71
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art12.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art12.webp)
 
 Day 72
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art13.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art13.webp)
 
 Day 73
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art14.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art14.webp)
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art15.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art15.webp)
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art16.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art16.webp)
 
 Days 74–76
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art17.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art17.webp)
 
 Day 77
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art18.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art18.webp)
 
 Day 78
 
@@ -99,27 +99,27 @@ Day 78
 
 #### Theme 3: Bones
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art19.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art19.webp)
 
 Day 79
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art20.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art20.webp)
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art21.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art21.webp)
 
 Days 80–81
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art22.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art22.webp)
 
 Day 82
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art23.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art23.webp)
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art24.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art24.webp)
 
 Days 83–84
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art25.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art25.webp)
 
 Day 85
 
@@ -127,27 +127,27 @@ Day 85
 
 #### Theme 4: Astronaut
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art26.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art26.webp)
 
 Day 86
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art27.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art27.webp)
 
 Day 87
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art28.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art28.webp)
 
 Day 88
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art29.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art29.webp)
 
 Day 89
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art30.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art30.webp)
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art31.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art31.webp)
 
-![](https://adrian3.com/imgs/images/Month-3-of-Daily-Art32.png)
+![](https://adrian3.com/imgs/images/month-3-of-daily-art32.webp)
 
 Days 90–92
 
@@ -173,7 +173,7 @@ The print from day 77 was exhibited at my art show in Hastings, Nebraska in 2004
 
 * * *
 
-<img src="https://adrian3.com/imgs/images/Month-3-of-Daily-Art33.png" alt="Issues In Christian Education, Spring 2001">
+<img src="https://adrian3.com/imgs/images/month-3-of-daily-art33.webp" alt="Issues In Christian Education, Spring 2001">
 
 The third theme for March is bones. The backbone and ribcage comes from a photo I took in the science building at Concordia University, Seward, Nebraska. I used the school’s brand new digital camera, a Nikon Coolpix 990, back when 3.2 megapixels was enough to blow our minds.
 

@@ -25,7 +25,7 @@ Before I reveal the data I want you to guess what percentage of runners you thin
 
 I ended [Part 1](https://medium.com/@ade3/boston-marathon-data-analysis-part-1-4891d1832eba) with a question and a graph. The graph was the image below showing the distribution of runners in the 2018 Boston Marathon. My question was _why are there so many dots on the right side of the 4 hour mark?_
 
-![](https://adrian3.com/imgs/images/boston/2018-Finish-Times-By-Age-And-Gender.webp)
+![](https://adrian3.com/imgs/images/boston/2018-finish-times-by-age-and-gender.webp)
 
 My hypothesis was that there are way too many dots on the right side of the 4 hour line than you would expect based on the times required to be admitted into the race. The average finish time of the Boston Marathon is about 3:45 for men and 4:05 for women.
 

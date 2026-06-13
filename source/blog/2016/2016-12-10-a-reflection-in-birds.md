@@ -9,7 +9,7 @@ description: Last Sunday I needed to make a decision. I was debating leaving my 
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Eagle-Drawing2.webp" alt="" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/eagle-drawing2.webp" alt="" class="caption full-width">
 
 # A Reflection in Birds
 

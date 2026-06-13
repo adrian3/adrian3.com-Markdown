@@ -9,7 +9,7 @@ description: Breakthrough success and catastrophic failure seem random at first,
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/First-Loop-Fright.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/first-loop-fright.webp" class="full-width">
 
 # First Loop Fright
 

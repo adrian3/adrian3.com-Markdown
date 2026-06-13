@@ -10,7 +10,7 @@ description: When I get down, one of the things that pulls my head back above wa
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Racing-Shadows-and-Dodging-Doldrums.webp" class=" full-width">
+<img src="https://adrian3.com/imgs/images/racing-shadows-and-dodging-doldrums.webp" class=" full-width">
 
 # Racing Shadows and Dodging Doldrums
 

@@ -10,7 +10,7 @@ layout:
 thumbnail: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Five-Things-I-Learned-After-I-Left-the-Marketing-Agency-World.webp" class="caption full-width" alt="Zila Corporate Identity by Adrian Hanft">
+<img src="https://adrian3.com/imgs/images/five-things-i-learned-after-i-left-the-marketing-agency-world.webp" class="caption full-width" alt="Zila Corporate Identity by Adrian Hanft">
 
 # Five Things I Learned After I Left the Marketing Agency World
 
@@ -52,7 +52,7 @@ This is the attitude you have to take if you expect to achieve anything meaningf
 
 The best example of this was when I started working at Zila and I recommended a rebrand to the management. The Zila brand was damaged, the identity was dated and fragmented, and we lacked a visual identity. I championed the idea of a company-wide rebrand, essentially scrapping everything and starting from scratch. As you might expect, not everyone was as excited about this as I was.
 
-<img src="https://adrian3.com/imgs/images/Five-Things-I-Learned-After-I-Left-the-Marketing-Agency-World2.webp" class="caption full-width" alt="Zila brand standards guide">
+<img src="https://adrian3.com/imgs/images/five-things-i-learned-after-i-left-the-marketing-agency-world2.webp" class="caption full-width" alt="Zila brand standards guide">
 
 For about six months I preached the value of branding to anyone who would listen. I built consensus, I made presentations, and I fought vigorously for consistently high standards. I laid such a solid groundwork that when it came to actually execute the new identity it was practically a formality. I had won over the naysayers. This is very different from other logos I have designed where you design in isolation, present, fail, restart, rinse and repeat. Don’t expect your designs to be embraced. Fight for them.
 

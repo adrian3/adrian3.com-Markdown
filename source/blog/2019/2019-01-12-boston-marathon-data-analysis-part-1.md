@@ -26,7 +26,7 @@ The Boston Marathon is the perfect race to mine for data. Its high profile, stri
 ## Who gets in and who gets rejected?  
 Boston is notoriously hard to get into. Participation is capped at 30,000 runners with more than 20% reserved for special invitations and charity programs. That leaves about 23,000 spots up for grabs for anyone who can meet the qualification standards. If you know anyone who has tried to earn their “BQ” you can know how much work goes into achieving a qualifying time. The chart below shows the times needed to qualify for Boston from 2013–2019.
 
-![](https://adrian3.com/imgs/images/boston/boston-2013-2019-qualifying-times.png)
+![](https://adrian3.com/imgs/images/boston/boston-2013-2019-qualifying-times.webp)
 
 Adding to the difficulty of securing a spot at Boston’s starting line is the fact that so many people want to participate. There aren’t nearly enough open spots to satisfy the amount of people who qualify and apply. That puts the B.A.A in the unfortunate position of having to turn runners away. In 2019, Boston rejected 7,384 runners who had qualified based on their times. That is a rejection rate of nearly 1 in 4 and an increase of 2,200 from 2018.
 
@@ -59,7 +59,7 @@ The rule of thumb has been that if you want to be sure you can get in to Boston 
 ## New Standards in 2020  
 In response to the increasing number of people applying for the race and to reduce the number of disappointed qualifiers, the B.A.A. adjusted their standards for 2020. The field size remains at 30,000 but the times needed to qualify has increased by 5 minutes for all age groups. Below is a chart showing the new qualifying standards.
 
-![](https://adrian3.com/imgs/images/boston/boston-2020-qualifying-times.png)
+![](https://adrian3.com/imgs/images/boston/boston-2020-qualifying-times.webp)
 
 ## What do the new standards mean for runners?  
 Although an increase of 5:00 might seem disheartening to runners hoping to qualify, if you were already aiming to beat your qualifying time by 5 minutes, this probably won’t change your training or goals. Remember, just because the standards have changed doesn’t mean there will be thousands of runners who are running faster. _It is likely that the biggest impact of the standards change is just a reduction in the number of rejection letters that get sent out_.
@@ -73,7 +73,7 @@ Although an increase of 5:00 might seem disheartening to runners hoping to quali
 - 1% (433) have run 10 or more consecutive Boston Marathons
 - 1% (270) athletes were accepted with disabilities
 
-![](https://adrian3.com/imgs/images/boston/Boston-Marathon-Qualifier-Types.webp)
+![](https://adrian3.com/imgs/images/boston/boston-marathon-qualifier-types.webp)
 
 ## Age and Gender  
 In a perfect world the distribution of runners would be spread equally across all ages and genders. But the world is a messy place and the B.A.A. does a commendable job of balancing the fairness of qualifying times with a mostly even distribution of runners across ages and gender. Over the last four years the race has consistently been 45% female and 55% male.
@@ -102,7 +102,7 @@ What is happening here? It might be tempting to conclude that younger females an
 
 Now that we have a clear picture of what the Boston marathon field looks like, what happens in the actual race? Below is the distribution of runners across the field.
 
-![](https://adrian3.com/imgs/images/boston/2018-Finish-Times-By-Age-And-Gender.webp)
+![](https://adrian3.com/imgs/images/boston/2018-finish-times-by-age-and-gender.webp)
 
 This is basically what we would expect based on the abilities of the athletes from their qualifying times. The athlete clusters move up and to the right showing slowing as age increases. The 18-34 year old female cohort is also visible on the lower edge of the cloud.
 

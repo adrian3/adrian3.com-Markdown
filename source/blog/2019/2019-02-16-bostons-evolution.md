@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/boston/boston-header.png" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/boston/boston-header.webp" class="caption full-width">
 
 # Boston's Evolution: 1897–2018
 ## Boston Marathon Data Analysis, Part 3
@@ -48,7 +48,7 @@ Now that we have looked at the speedy end of the spectrum, let's examine the ave
 
 Why would average times get slower after 1975? Running changed in the 70's. It was becoming something that normal people did. More people were attempting the marathon distance and there was an ever-increasing pressure on Boston to allow more participants. With the doors opening to non-elite runners, the average times naturally got slower. While the times of the top 100 runners has been relatively steady since 1980, the overall average seems to get slower each year.
 
-![](https://adrian3.com/imgs/images/boston/Average-Finish-Times-Compared-1960-2018.webp)
+![](https://adrian3.com/imgs/images/boston/average-finish-times-compared-1960-2018.webp)
 
 At the extremes, if you compare the averages of 1975 to 2014, today's runners spend more than an hour on Boston's course. Meanwhile, the elite runners aren't getting faster. Even with our fitness watches, our ever-improving shoes, our technology and data, we don't seem to have improved our average performance.
 

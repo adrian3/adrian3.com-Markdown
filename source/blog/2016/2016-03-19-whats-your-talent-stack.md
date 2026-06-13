@@ -9,7 +9,7 @@ categories: Career Advice, Design Thinking
 layout: 
 --->
 
-![](https://adrian3.com/imgs/images/Whats-Your-Talent-Stack.webp)
+![](https://adrian3.com/imgs/images/whats-your-talent-stack.webp)
 
 # What’s Your Talent Stack?
 

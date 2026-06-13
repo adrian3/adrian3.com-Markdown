@@ -35,7 +35,7 @@ I was on a photoshoot in Indiana when a southbound train crossed my path, packed
 
 Strange, isn’t it? You might guess that an RV company would welcome the publicity that comes from helping fellow Americans affected by a disaster. The debranding wasn’t an act of humility or an oversight. No, it was denial, an intentional disassociation with their involvement in the project. Here’s why…
 
-![](https://adrian3.com/imgs/images/Got-a-brand-problem-Put-a-bird-on-it.webp)
+![](https://adrian3.com/imgs/images/got-a-brand-problem-put-a-bird-on-it.webp)
 
 FEMA was desperate to buy RVs. They were essentially writing blank checks. Any company that could slap together 4 walls on wheels was probably lining up to pack their product on those trains. These RVs were lower quality than average, a scary thought when you consider the low standards of the RV industry.
 
@@ -45,7 +45,7 @@ You don’t put your logo on the side of something like that. _You hope nobody a
 
 My eyes were opened. There in that Indiana photo studio I took a hard look at my client’s RV through the lens of my camera. A sticker of a cartoon bird smiled back at me. If I removed the decals I would have no way of distinguishing this white box from the ones on that train.
 
-![](https://adrian3.com/imgs/images/Got-a-brand-problem-Put-a-bird-on-it2.webp)
+![](https://adrian3.com/imgs/images/got-a-brand-problem-put-a-bird-on-it2.webp)
 
 _(I guess I should write a disclaimer before this gets worse. I don’t know if my client’s RVs were part of the shipment to the Gulf Coast. The people I worked with were nice people and I don’t have any evidence they are guilty of anything other than being indistinguishable from every other RV manufacturer. My goal isn’t to disparage them, they just happen to be my connection to the bigger story.)_
 
@@ -55,7 +55,7 @@ The RVs that were intended to rescue people ended up poisoning them.
 
 People got sick. Lawsuits were filed. The RVs needed to be quarantined. Thousands of empty RVs were parked in fields miles from where newly homeless people slept in crowded shelters.
 
-![](https://adrian3.com/imgs/images/Got-a-brand-problem-Put-a-bird-on-it3.png)
+![](https://adrian3.com/imgs/images/got-a-brand-problem-put-a-bird-on-it3.webp)
 
 When it became apparent that the RVs were uninhabitable, FEMA had a new disaster to deal with. How do you make thousands of toxic RVs disappear?
 
@@ -65,7 +65,7 @@ Do you know what the generic sticker in the window said? No, it wasn’t a carto
 
 > “Not to be used for housing.”
 
-![](https://adrian3.com/imgs/images/Got-a-brand-problem-Put-a-bird-on-it4.png)
+![](https://adrian3.com/imgs/images/got-a-brand-problem-put-a-bird-on-it4.webp)
 
 A mobile home with a “not to be used for housing” sticker. Maybe if you put it upside-down people won’t read it.
 

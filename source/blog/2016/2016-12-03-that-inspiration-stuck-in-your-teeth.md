@@ -10,7 +10,7 @@ description: Remember the last time inspiration blessed you with its divine pres
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Teeth-Toy.webp" class="full-width">
+<img src="https://adrian3.com/imgs/images/teeth-toy.webp" class="full-width">
 
 # That Inspiration Stuck in Your Teeth
 

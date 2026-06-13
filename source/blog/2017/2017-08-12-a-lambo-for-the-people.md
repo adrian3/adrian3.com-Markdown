@@ -23,7 +23,7 @@ If you aren't ready to invest in a the entire series, track down the part of the
 
 Thanks for reading. _Stay creative._
 
-<img src="https://adrian3.com/imgs/images/Lamborghini.webp" alt="I couldn't  track down my Trapper Keeper to accompany this post, but I did find this drawing from my school days. Memories." class="caption full-width">
+<img src="https://adrian3.com/imgs/images/lamborghini.webp" alt="I couldn't  track down my Trapper Keeper to accompany this post, but I did find this drawing from my school days. Memories." class="caption full-width">
 
 [1]:	https://medium.com/swlh/the-zombie-mobile-b03932ac971d?source=linkShare-f82ce6c25013-1502547420
 [2]:	https://www.google.com/search?q=james+may%27s+cars+of+the+people&prmd=vni&source=lnms&tbm=vid&sa=X&ved=0ahUKEwigwPuU89HVAhVG4WMKHXBBB6UQ_AUIECgB&biw=1366&bih=928

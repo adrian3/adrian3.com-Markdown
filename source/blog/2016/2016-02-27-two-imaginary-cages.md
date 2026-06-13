@@ -9,7 +9,7 @@ description: One mouse, one bird, and two cages. A grim parable for modern work
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Two-Imaginary-Cages.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/two-imaginary-cages.webp" class="full-width">
 
 # Two Imaginary Cages
 
@@ -23,7 +23,7 @@ Two cages hang suspended in space, each containing a prisoner pondering the purp
 
 The bird desperately tries to break the lock on her door. After years of pecking, a lifetime of beak-breaking effort, the lock finally falls. The door swings open and freedom is hers.
 
-<img src="https://adrian3.com/imgs/images/Two-Imaginary-Cages2.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/two-imaginary-cages2.webp" class="full-width">
 
 The bird steps into the void, spreads its wings, and feels the air in her feathers. Panic strikes as she realizes she has forgotten how to fly. The years of battling her cage has robbed her of the ability to thrive outside her cell.
 
@@ -35,7 +35,7 @@ The bird steps into the void, spreads its wings, and feels the air in her feathe
 
 The mouse’s cage is unlocked. The door is wide open and every day he walks to the edge and looks over the side. Unable to judge the distance below, he can’t calculate the risks and rewards of taking a leap.
 
-<img src="https://adrian3.com/imgs/images/Two-Imaginary-Cages3.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/two-imaginary-cages3.webp" class="full-width">
 
 Time passes and with each year courage perpetually eludes him. The older he gets the less interested he is in the wonders that may exist outside his cell. Finally, age overtakes him.
 

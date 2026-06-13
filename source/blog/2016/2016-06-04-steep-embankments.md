@@ -10,7 +10,7 @@ categories: Personal Stories
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Steep-Embankments.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/steep-embankments.webp" class="full-width">
 
 # Steep Embankments
 

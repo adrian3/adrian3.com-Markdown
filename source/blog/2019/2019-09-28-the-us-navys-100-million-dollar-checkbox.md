@@ -240,14 +240,14 @@ If you would like to learn more or verify my sources, here are links to addition
 [11]:	https://news.usni.org/2018/05/25/former-co-uss-john-s-mccain-pleads-guilty-negligence-collision-case
 [12]:	https://news.usni.org/2018/08/21/35947
 
-[image-1]:	https://adrian3.com/imgs/images/mccain/mccain-UI-cover-image.webp
-[image-2]:	https://adrian3.com/imgs/images/mccain/thrust-control.png
-[image-3]:	https://adrian3.com/imgs/images/mccain/unganged.png
-[image-4]:	https://adrian3.com/imgs/images/mccain/checkboxes.png
+[image-1]:	https://adrian3.com/imgs/images/mccain/mccain-ui-cover-image.webp
+[image-2]:	https://adrian3.com/imgs/images/mccain/thrust-control.webp
+[image-3]:	https://adrian3.com/imgs/images/mccain/unganged.webp
+[image-4]:	https://adrian3.com/imgs/images/mccain/checkboxes.webp
 [image-5]:	https://adrian3.com/imgs/images/mccain/bridge.gif
-[image-6]:	https://adrian3.com/imgs/images/mccain/mccain-timeline.png
-[image-7]:	https://adrian3.com/imgs/images/mccain/steering-control.png
-[image-8]:	https://adrian3.com/imgs/images/mccain/multi-screen-control.png
-[image-9]:	https://adrian3.com/imgs/images/mccain/big-red-button.png
-[image-10]:	https://adrian3.com/imgs/images/mccain/touchscreen-documentation2.png
-[image-11]:	https://adrian3.com/imgs/images/mccain/touchscreen-documentation.png
+[image-6]:	https://adrian3.com/imgs/images/mccain/mccain-timeline.webp
+[image-7]:	https://adrian3.com/imgs/images/mccain/steering-control.webp
+[image-8]:	https://adrian3.com/imgs/images/mccain/multi-screen-control.webp
+[image-9]:	https://adrian3.com/imgs/images/mccain/big-red-button.webp
+[image-10]:	https://adrian3.com/imgs/images/mccain/touchscreen-documentation2.webp
+[image-11]:	https://adrian3.com/imgs/images/mccain/touchscreen-documentation.webp

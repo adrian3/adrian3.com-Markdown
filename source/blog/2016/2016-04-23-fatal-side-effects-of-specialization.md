@@ -9,7 +9,7 @@ description: What is the opposite of specialization? It's not generalization. We
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Fatal-Side-Effects-of-Specialization.webp" alt="Buckminster Fuller, the dymaxion man and polymath" class="caption">
+<img src="https://adrian3.com/imgs/images/fatal-side-effects-of-specialization.webp" alt="Buckminster Fuller, the dymaxion man and polymath" class="caption">
 
 # Fatal Side Effects of Specialization
 

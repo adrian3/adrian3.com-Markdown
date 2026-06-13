@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-![](https://adrian3.com/imgs/images/I-Am-Data-Drivel.webp)
+![](https://adrian3.com/imgs/images/i-am-data-drivel.webp)
 
 # What Will Happen When Your Analytics Become Illegal?
 

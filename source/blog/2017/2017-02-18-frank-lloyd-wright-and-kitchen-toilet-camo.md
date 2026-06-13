@@ -32,7 +32,7 @@ He believed,
 
 When the role of the artist gets reduced to camouflage, when convenience and effort gets prioritized above design integrity you end up with kitchen toilets. 
 
-![](https://adrian3.com/imgs/images/Toilet.webp)
+![](https://adrian3.com/imgs/images/toilet.webp)
 
 Would it surprise you that Raymond Hood was confounded by Frank Lloyd Wright? Raymond was baffled by Wright's ability to create transcendent structures that seemed to contradict the desires that Raymond's customers typically requested. So he asked Frank,
 

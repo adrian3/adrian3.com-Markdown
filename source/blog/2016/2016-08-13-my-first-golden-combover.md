@@ -9,7 +9,7 @@ description: My design education had indoctrinated me with belief in the purity 
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/My-First-Golden-Combover.webp" class="full-width">
+<img src="https://adrian3.com/imgs/images/my-first-golden-combover.webp" class="full-width">
 
 # My First Golden Combover
 
@@ -39,7 +39,7 @@ _Uh oh._
 
 My design education had indoctrinated me with belief in the purity of flat design. I was a true believer. I was faced with a moral dilemma on my very first assignment. What did I do? I polished the hell out of that logo, of course. I couldn’t [afford idealism](../2015/2015-12-30-affordable-idealism.html) yet.
 
-<img src="https://adrian3.com/imgs/images/My-First-Golden-Combover2.webp" alt="The origin of the term golden combover" class="caption">
+<img src="https://adrian3.com/imgs/images/my-first-golden-combover2.webp" alt="The origin of the term golden combover" class="caption">
 
 The term “golden combover” was invented in 2003 during the outrage within the design community over the redesign of the UPS logo when Paul Rand’s sacred cow was sacrificed on the alter of swooshy gradients. I love the term because those two words convict the problem that threatens to rot the reputation of professional designers.
 

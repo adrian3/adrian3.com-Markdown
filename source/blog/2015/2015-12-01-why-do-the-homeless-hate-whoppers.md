@@ -9,7 +9,7 @@ categories: Personal Stories, Psychology
 layout: 
 --->
 
-![](https://adrian3.com/imgs/images/Why-Do-the-Homeless-Hate-Whoppers.webp)
+![](https://adrian3.com/imgs/images/why-do-the-homeless-hate-whoppers.webp)
 
 # Why Do the Homeless Hate Whoppers?
 
@@ -25,7 +25,7 @@ Maybe I felt sorry for him. Maybe I felt guilty about the extra 710 calories I w
 
 At that moment I realized why people give to the homeless. _It feels good._ For a brief second, I saw myself as a good person. I patted myself on the back and fantasized about how much better I was than the cheapskates in the cars around me.
 
-<img src="https://adrian3.com/imgs/images/Why-Do-the-Homeless-Hate-Whoppers2.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/why-do-the-homeless-hate-whoppers2.webp" class="full-width">
 
 I expected my flame-grilled™ gift to be received with a sincere thank you followed by a sparkle in his eye as he bit into that quarter pound* of savory beef.
 
@@ -33,7 +33,7 @@ That’s not what happened. Yes, he took my burger. No, he didn’t thank me.
 
 When I give somebody the gift of America’s favorite burger® and don’t get as much as a nod of thanks I begin to ask myself some questions. Either this guy doesn’t like Whoppers as much as I do (unlikely) or he would rather I had given him cold, hard cash. The other possibility is that he smelled my fries and knew that I had the means to have given him a full combo meal. Fair enough.
 
-![](https://adrian3.com/imgs/images/Why-Do-the-Homeless-Hate-Whoppers3.png)
+![](https://adrian3.com/imgs/images/why-do-the-homeless-hate-whoppers3.webp)
 
 When I am in a situation where I have to predict the character of a person, I tend to assume that they are rational, intelligent individuals. I believe if I were in their situation, I would do the same thing. If you don’t want to thank me I am sure you have your reasons. Still, what this man did next surprised me.
 
@@ -53,7 +53,7 @@ I could convince myself that I am a cheap, cynical, jerk. I could also choose to
 
 _* Quarter pound measurement based on pre-cooked patty weight._
 
-![](https://adrian3.com/imgs/images/Why-Do-the-Homeless-Hate-Whoppers4.png)
+![](https://adrian3.com/imgs/images/why-do-the-homeless-hate-whoppers4.webp)
 
 Thanks for reading. If you liked this I would point you [to this post as a diving off point for getting into my writing](2015-11-03-25-questions-you-didnt-know-you-needed-art-of-the-living-dead-to-answer.html). _Stay creative._
 

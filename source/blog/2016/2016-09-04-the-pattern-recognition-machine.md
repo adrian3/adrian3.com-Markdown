@@ -9,7 +9,7 @@ description: At some point our work inevitably makes contact with people who won
 layout: 
 --->
 
-![](https://adrian3.com/imgs/images/The-Pattern-Recognition-Machine.webp)
+![](https://adrian3.com/imgs/images/the-pattern-recognition-machine.webp)
 
 # The Pattern Recognition Machine
 
@@ -27,9 +27,9 @@ Even a gallery struggles to display the art. You can hover inches from the objec
 
 The objects beg to be held, treasured, and obsessed over. You want to take one, wrap it in cloth, stick it in your pocket and run far away. Once you are alone, you can pull it out and experience it the way it deserves.
 
-![](https://adrian3.com/imgs/images/The-Pattern-Recognition-Machine2.webp)
+![](https://adrian3.com/imgs/images/the-pattern-recognition-machine2.webp)
 
-![](https://adrian3.com/imgs/images/The-Pattern-Recognition-Machine3.webp)
+![](https://adrian3.com/imgs/images/the-pattern-recognition-machine3.webp)
 
 I said my sister has a problem. This is the same problem that you and I will experience if we are able to create something truly authentic. Humans are pattern recognition machines. At some point our work inevitably makes contact with people who won’t be able to match your work with their mental patterns. Pattern recognition is convenient when we are stocking the shelves but it can be stifling when we interact with concepts that want to change us.
 

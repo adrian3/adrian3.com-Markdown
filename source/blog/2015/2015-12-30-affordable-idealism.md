@@ -17,7 +17,7 @@ layout:
 
 Fresh out of school I was young, dumb, and idealistic. The war I wanted to fight was against stock photography. It was 1999 and stock photography was still distributed in printed catalogs. Photo CDs were just catching on. Crazy how foreign that sounds today.
 
-<a href="http://mashable.com/2015/03/04/vince-vaughn-stock-photos/"><img src="https://adrian3.com/imgs/images/Affordable-Idealism.webp" alt="These guys know what I am talking about." class="caption"></a>
+<a href="http://mashable.com/2015/03/04/vince-vaughn-stock-photos/"><img src="https://adrian3.com/imgs/images/affordable-idealism.webp" alt="These guys know what I am talking about." class="caption"></a>
 
 Anyway, I had vowed to never use stock photos. _Ever._ In my mind this was corrupting the integrity of my profession. I was ready to die for my convictions.
 
@@ -29,7 +29,7 @@ _Silly, child._
 
 My boss listened to my rant. She acknowledged my ambition and then reiterated the job that I was hired to do. I may have been idealistic, but I also needed that paycheck.
 
-<a href="http://mashable.com/2015/03/04/vince-vaughn-stock-photos/"><img src="https://adrian3.com/imgs/images/Affordable-Idealism2.webp" alt="As this chart clearly demonstrates." class="caption"></a>
+<a href="http://mashable.com/2015/03/04/vince-vaughn-stock-photos/"><img src="https://adrian3.com/imgs/images/affordable-idealism2.webp" alt="As this chart clearly demonstrates." class="caption"></a>
 
 I kept my job while unwillingly using stock. I was always looking for opportunities to present alternative designs that used my own photographs or illustrations. I never missed an opportunity to expose innocent bystanders to sermons about my holy quest.
 
@@ -37,7 +37,7 @@ Evangelism aside, I also did my job. It was uncomfortable, but I learned how to 
 
 Idealism is expensive. It is easier to go with the flow than to wage war. That is why idealism tends to be a trait of the young. Their ideas haven’t been worn down by the brutal grind of years of resistance. Most people give in. Idealism doesn’t have to be a young person’s game, though.
 
-<a href="http://womenlaughingalonewithsalad.tumblr.com"><img src="https://adrian3.com/imgs/images/Affordable-Idealism3.webp" alt="woman laughing alone with salad?" class="caption"></a>
+<a href="http://womenlaughingalonewithsalad.tumblr.com"><img src="https://adrian3.com/imgs/images/affordable-idealism3.webp" alt="woman laughing alone with salad?" class="caption"></a>
 
 Looking back I am amazed my managers and co-workers put up with my stock photo obstinance as much as they did. I guess nobody else really cared, and I am sure they wondered, “Who does this kid think he is?” But surprisingly some people listened to me. I might have even persuaded a person or two to join my cause.
 

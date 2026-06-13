@@ -67,17 +67,17 @@ As the top ranking member of the creative department **_it was my job_** to gove
 
 If they had studied my branding handbook it would have been perfectly obvious that they should have used the one-color version of my logo which looked like this:
 
-<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush4.png" alt="In one-color situations, this is the correct corporate logo choice. Preferably, use the vector version." class="caption">
+<img src="https://adrian3.com/imgs/images/death-by-toothbrush4.webp" alt="In one-color situations, this is the correct corporate logo choice. Preferably, use the vector version." class="caption">
 
 The logo mistake wasn’t a surprise. I saw the prototype. While there was still time to correct the mistake, I threw my fit. I demanded that it be corrected. My outrage was acknowledged. Then it was dismissed. I failed to justify the expense, the time lost, and the inconvenience that fixing the problem would require.
 
 The mistake was mass-produced. Our brand new flagship product contained a blatant disregard for my meticulously crafted brand standards.
 
-<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush5.png" alt="To protect the integrity of our logo, blah, blah, blah…" class="caption">
+<img src="https://adrian3.com/imgs/images/death-by-toothbrush5.webp" alt="To protect the integrity of our logo, blah, blah, blah…" class="caption">
 
 I don’t show the bottom of the toothbrush charger in my personal design portfolio. Why would I? Designers aren’t evaluated by how well random vendors execute their vision. No, in my portfolio I can carefully choose the best examples, the ones without any hint of mistakes, where any flaws are carefully Photoshopped out so that the marketing of the crappy toothbrush looks like this:
 
-<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush6.png" alt="The rusty toothbrush charger is intentionally left out of my design portfolio" class="caption">
+<img src="https://adrian3.com/imgs/images/death-by-toothbrush6.webp" alt="The rusty toothbrush charger is intentionally left out of my design portfolio" class="caption">
 
 This is the part of my post where I need to take my own medicine. Last week I identified the problem as neglect caused by the mantra, “That’s no my job.” If I had taken that to heart, my interaction with the charger prototype would have been different.
 

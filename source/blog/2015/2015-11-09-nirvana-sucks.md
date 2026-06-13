@@ -9,7 +9,7 @@ categories: Personal Stories
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/Nirvana-Sucks.png" alt="Nirvana performing on Saturday Night Live, 1992" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/nirvana-sucks.webp" alt="Nirvana performing on Saturday Night Live, 1992" class="caption full-width">
 
 # Nirvana Sucks
 
@@ -43,7 +43,7 @@ Unless you are an early adopter with flawless taste, your first instincts will _
 
 ### Three strategies for reserving judgement and getting out of your comfort zone…
 
-<img src="https://adrian3.com/imgs/images/Nirvana-Sucks2.png" alt="Dumbest game ever or genius?" class="caption">
+<img src="https://adrian3.com/imgs/images/nirvana-sucks2.webp" alt="Dumbest game ever or genius?" class="caption">
 
 **1\. Disgust is a signal that you should pay attention to.**  
 Recently my son started playing a game called Agar.io. When he first showed it to me I made fun of it. I thought he would realize how dumb it was and abandon it. To my dismay he didn’t stop.
@@ -59,7 +59,7 @@ When you feel disgust try not to overreact. The person/idea/art is taking you ou
 **2\. Be patient and live with the uncomfortable feeling.**  
 Here is a rule of thumb about music. If you like song on the first listen it is a keeper. If a song doesn’t engage you at all I ignore it. But if you _hate_ it on first listen pay close attention. Listen to it at least three more times before judging it. Much of my favorite music has come from being able to outlast the discomfort of the first listens.
 
-![](https://adrian3.com/imgs/images/Nirvana-Sucks3.png)
+![](https://adrian3.com/imgs/images/nirvana-sucks3.webp)
 
 If that sounds easy, it’s not. I was just reading [a friend describe how after watching a documentary on Amy Winehouse he realized how wrong his first impressions of her were](https://medium.com/@BernardoFanti/amy-thank-you-f00b4721d746). I wrote her off as a drug addict, too, becuase it was more convenient to ignore her than give her music a chance.
 
@@ -69,7 +69,7 @@ If art is going to change the world it has to start out uncomfortable. If it goe
 
 * * *
 
-<img src="https://adrian3.com/imgs/images/Nirvana-Sucks4.png" alt="This should have been a terrible movie." class="caption">
+<img src="https://adrian3.com/imgs/images/nirvana-sucks4.webp" alt="This should have been a terrible movie." class="caption">
 
 **3\. Appall can transform into fanaticism.**  
 The worst preview for a movie I have ever seen was for _Warm Bodies._ It looked like it was going to be a teen romance about a zombie. And it is. I remember actually feeling offended by the concept. I watched it primarily because of how terrible I thought it was going to be. Turns out _it was terrific_. I still can’t believe they pulled it off.
