@@ -10,7 +10,7 @@ tags:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color.webp" class="full-width">
 
 # Color Theory Scams: Exposing How Designers Manipulate You With Color
 
@@ -34,7 +34,7 @@ An educated designer can make your eyes glaze over with legitimate science expla
 
 A tell for manipulative intention is extravagant color names. The hucksters carefully select words that carry heavy emotionally associations. Men are already primed to like blue, so bolstering the color with words like navy, steel, slate, and midnight makes it a slam dunk. Bankers and environmentalists are easy marks for green because of the countless money and nature tropes.
 
-![](https://adrian3.com/images/dropbox_public/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color2.jpeg)
+![](https://adrian3.com/imgs/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color2.webp)
 
 Emotional words get swapped in and out depending on the audience. Forgive the sexism, but if they are selling brown to dudes they’ll use words like rustic, leather, and wood. If the audience is chicks the same colors get reframed with associations like chocolate, saddles, and gold.
 
@@ -44,11 +44,11 @@ _But does it work?_
 
 There is an irony hiding among all the fluffy language used to sell color. Despite all the flowery lingo, if you survey the use of color in almost any industry you will find two big winners: red and blue. Does that seem odd?
 
-![](https://adrian3.com/images/dropbox_public/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color3.jpeg)
+![](https://adrian3.com/imgs/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color3.webp)
 
 I am not just cherry-picking here. Research shows that [blue or red make up more than half off all corporate logos](http://www.emblemetric.com/2012/07/02/the-color-of-logos/). (As a side note, do you want to guess [what shape the corporate squares prefer?](http://www.emblemetric.com/2012/08/06/logos-taking-shape/))
 
-<a href="http://www.emblemetric.com/2012/07/02/the-color-of-logos/"><img src="https://adrian3.com/images/dropbox_public/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color4.jpeg" alt="Color research from emblematic.com" class="caption"></a>
+<a href="http://www.emblemetric.com/2012/07/02/the-color-of-logos/"><img src="https://adrian3.com/imgs/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With Color4.webp" alt="Color research from emblematic.com" class="caption"></a>
 
 So why would people prefer red and blue over more nuanced variations like _shaded lake_ or _eastern sunset_? Are companies too smart to be swindled by color hoaxes? Umm, no.
 

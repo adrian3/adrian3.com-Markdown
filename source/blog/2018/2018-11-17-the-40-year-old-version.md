@@ -37,4 +37,4 @@ Thanks for reading. By coincidence, my fortieth birthday falls on [Hug a Runner 
 [4]:	https://runtheedge.com/hug-a-runner/
 [5]:	https://www.shoesthatfit.org/
 
-[image-1]:	http://adrian3.com/images/dropbox_public/images/loveland-heart-running-route.jpg
+[image-1]:	https://adrian3.com/imgs/images/loveland-heart-running-route.webp

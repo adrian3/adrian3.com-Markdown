@@ -10,7 +10,7 @@ tags:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-Designers-Invisible-Skill-Set.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/The-Designers-Invisible-Skill-Set.webp" class="full-width">
 
 # The Designer’s Invisible Skill Set
 
@@ -54,7 +54,7 @@ As you move the squares around you start to sense the accumulation and release o
 
 You are developing a sensitivity to quality. You are learning to pick up on the micro-decisions that separate good design from the mediocre. This sensitivity will eventually allow you to transform text into typography, chaos into clarity. This isn’t art, it is a different skill altogether. The invisible is becoming visible. You are becoming a designer.
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-Designers-Invisible-Skill-Set2.jpeg" alt="Why do some designs work better than others?" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/The-Designers-Invisible-Skill-Set2.webp" alt="Why do some designs work better than others?" class="caption full-width">
 
 Your design gets put on the board along with the submissions of your classmates. The critique is just as valuable as the assignment becuase you get to hear explanations of why some designs are successful and why others struggle. You are developing a visual vocabulary that supports your invisible skills.
 

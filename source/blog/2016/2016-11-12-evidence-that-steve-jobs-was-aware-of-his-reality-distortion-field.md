@@ -10,7 +10,7 @@ tags:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Evidence that Steve Jobs was aware of his reality distortion field.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/Evidence that Steve Jobs was aware of his reality distortion field.png" class="full-width">
 
 # Evidence that Steve Jobs was aware of his reality distortion field
 

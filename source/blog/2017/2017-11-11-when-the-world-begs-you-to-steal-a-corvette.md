@@ -12,7 +12,7 @@ layout:
 
 # When the world begs you to steal a Corvette
 
-![](https://adrian3.com/images/dropbox_public/images/corvette-keys-small.jpg)
+![](https://adrian3.com/imgs/images/corvette-keys-small.webp)
 
 I didn't set out to steal a car that night, the opportunity just kind of presented itself.
 

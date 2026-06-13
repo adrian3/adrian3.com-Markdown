@@ -12,7 +12,7 @@ layout:
 
 # The Journey of a Single Brush Stroke
 
-![](http://adrian3.com/images/dropbox_public/images/brushstroke.jpg)
+![](https://adrian3.com/imgs/images/brushstroke.webp)
 
 There's a painting hanging in my garage that I am not particularly proud of. I keep it around because of a single brush stroke. The rest of the painting is mediocre, a still life of dismembered baby doll parts, the standard assignment given to beginning painting students. I should probably scrap the painting but that one splotch prevents me from throwing it out.
 

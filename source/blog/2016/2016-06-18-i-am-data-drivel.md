@@ -9,7 +9,7 @@ description: Consider quitting Google Analytics With Me
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/I-Am-Data-Drivel.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/I-Am-Data-Drivel.webp" class="full-width">
 
 # I Am Data Drivel
 
@@ -27,7 +27,7 @@ I want to challenge you to eliminate, or at lease minimize, the analytics tracki
 
 But the inclusion of tracking code in our app is getting harder to justify. You can’t go a week without hearing some story about massive privacy breaches. Apple’s foray into allowing ad blocking has sparked a rebellion against ads and any code that might increase page loading speed. And of course there is the whole Edward Snowden scandal.
 
-![](https://adrian3.com/images/dropbox_public/images/I-Am-Data-Drivel2.jpeg)
+![](https://adrian3.com/imgs/images/I-Am-Data-Drivel2.webp)
 
 This is the climate that your app is being released into. The public is hyper- sensitive to anything that has a whiff of privacy invasion. With that in mind, you should think long and hard about the tracking code embedded in your app or website.
 
@@ -47,7 +47,7 @@ Often the inclusion of analytics in our code is simply the result of laziness. W
 
 Whose job is it to protect our user’s information? Our users expect us to protect them, not expose them to trackers and data miners. We need to act on the user’s behalf.
 
-<img src="https://adrian3.com/images/dropbox_public/images/I-Am-Data-Drivel3.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/I-Am-Data-Drivel3.webp" class="full-width">
 
 If we have gotten so paralyzed by fear of making a mistake that we can’t release a feature without excessive data gathering something is wrong. In the good old days we could trust our intuition and have confidence in our own expertise. Now we split test everything as a way to hedge our bets against potential sub-optimization.
 
@@ -63,7 +63,7 @@ If you have a personal website, or an app where you have enough control that you
 
 When I get off my soapbox I am going to be back in the same boat as you. I will be looking for ways to validate my work. I will thirst for insight into what my users enjoy and what I can improve. I am not anti-data, I just believe we need to think extremely hard about what we want to measure. Anything that smells like an invasion of privacy should be ruthlessly evaluated.
 
-<img src="https://adrian3.com/images/dropbox_public/images/I-Am-Data-Drivel4.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/I-Am-Data-Drivel4.webp" class="full-width">
 
 Are you going to be able to eliminate all tracking from your apps and websites? Probably not. Heck, your iOS app comes with Apple’s analytics out of the box. You couldn’t remove that if you wanted to. But we can strive to be advocate’s for our user’s privacy. We owe it to them to strive to limit their exposure.
 

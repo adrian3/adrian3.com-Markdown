@@ -12,7 +12,7 @@ layout:
 
 # Mental Spacecraft: Two Contradictory Views from Space
 
-![](https://adrian3.com/images/dropbox_public/images/mental-spaceship.jpeg)
+![](https://adrian3.com/imgs/images/mental-spaceship.webp)
 
 Fifty years after humanity’s first steps on the moon seems like a good excuse to imagine the view from space. You are floating, weightless, taking in the beauty of Earth, a tiny blue marble dangling below. An umbilical cord tethers you to your spacecraft. The silence voids your senses, the only sound is the blood pumping through your veins. What thoughts cross your mind as you gaze back at our planet?
 

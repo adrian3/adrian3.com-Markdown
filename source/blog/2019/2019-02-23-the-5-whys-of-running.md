@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-<img src="http://adrian3.com/images/dropbox_public/images/Run-Rest-Repeat.jpg" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/Run-Rest-Repeat.webp" class="caption full-width">
 
 # The 5 Whys of Running
 

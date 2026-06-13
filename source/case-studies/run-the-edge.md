@@ -2,7 +2,7 @@
 title: Run The Edge Case Study
 unlisted: true
 --->
-<img src="https://adrian3.com/images/case-studies/run-the-edge-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/run-the-edge-header.webp" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 # Run The Edge App Redesign
 ### A Case Study by Adrian Hanft

@@ -9,7 +9,7 @@ categories: Career Advice, Design Thinking, My Heroes, Personal Stories, Special
 layout: 
 --->
 
-![](https://adrian3.com/images/dropbox_public/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco.jpeg)
+![](https://adrian3.com/imgs/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco.webp)
 
 # Stop Dribbbling, Get a Design Education at Costco
 
@@ -25,7 +25,7 @@ Before sunrise my design mentor and I would walk the cavernous aisles with our c
 
 I had unlimited access to thousands of products that contained the fingerprints of designers from all over the world. By pure coincidence, I was able to study this design archive daily with the 1-on-1 guidance of a veteran of the design industry.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco2.jpeg" alt="Paul drew this cartoon, teasing me for dreaming of a different life." class="caption">
+<img src="https://adrian3.com/imgs/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco2.webp" alt="Paul drew this cartoon, teasing me for dreaming of a different life." class="caption">
 
 When we weren’t counting cans of corn, Paul would pick a product off the shelf and quiz me. What were the merits of the design? Why did some packaging feel premium and others generic? Was this an [artifact of artistic integrity](https://medium.com/@ade3/artifacts-of-thought-4991d6a33184#.3wcww1ugm), or the thoughtless output of a designer drone? He gave me a second education.
 
@@ -33,7 +33,7 @@ Forget the design magazines, the award shows, the logo books, and the compilatio
 
 Paul and I loved to study logos. Occasionally we would find a collection of logos all grouped together on a box, NASCAR-style. We debated the merits of each mark as if it was an entry in a competition where we were respected judges. After careful debate we awarded the logo with the industry’s most prestigious honor. _Congratulations, some nobody warehouse worker somewhere thinks your logo is hot snot._
 
-<img src="https://adrian3.com/images/dropbox_public/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco3.jpeg" alt="Paul drew me this guide to help me improve my handwriting. I carried it in my wallet for years, which is why it is so ragged." class="caption">
+<img src="https://adrian3.com/imgs/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco3.webp" alt="Paul drew me this guide to help me improve my handwriting. I carried it in my wallet for years, which is why it is so ragged." class="caption">
 
 When we weren’t on the floor counting product, Paul and I were doing paperwork. Paul used every trivial form as a chance to practice his immaculate penmanship.
 
@@ -47,7 +47,7 @@ Paul knew something I didn’t. It doesn’t matter where you work, Costco, Pent
 
 In hindsight it is easy to recognize how lucky I was to have a design mentor before I even had a design job. Of course at the time, I hated my job. Costco seemed world’s away from my design ambitions. When I finally landed a graphic design job I was ecstatic. I worked my last two weeks, cut the going-away cake, and said goodbye to Paul. _Little did I know [the zombie apocalypse](https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7#.1llsndo53) I was about to enter…_
 
-<img src="https://adrian3.com/images/dropbox_public/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco4.jpeg" alt="My last day on the job. Goodbye Costco, hello design career." class="caption">
+<img src="https://adrian3.com/imgs/images/Stop-Dribbbling-Get-a-Design-Education-at-Costco4.webp" alt="My last day on the job. Goodbye Costco, hello design career." class="caption">
 
 * * *
 

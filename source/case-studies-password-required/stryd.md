@@ -1,7 +1,7 @@
 <!---
 title: Stryd App and Website Design
 --->
-<img src="https://adrian3.com/images/case-studies/stryd-header.jpg" style="margin: 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/stryd-header.webp" style="margin: 0; width: 100vw;">
 
 # Stryd Case Study
 

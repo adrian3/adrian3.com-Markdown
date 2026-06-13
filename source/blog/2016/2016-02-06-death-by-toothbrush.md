@@ -9,7 +9,7 @@ categories: Design Thinking, Personal Stories, Special Hell for Designers
 description: Apple products are notoriously hard to open because they are obsessed with hiding screws and minimizing seams. But if you are able to crack open one of their products you will see something beautiful.
 --->
 
-![](https://adrian3.com/images/dropbox_public/images/Death-by-Toothbrush.gif)
+![](https://adrian3.com/imgs/images/Death-by-Toothbrush.gif)
 
 # Death by Toothbrush
 
@@ -21,7 +21,7 @@ description: Apple products are notoriously hard to open because they are obsess
 
 Can you see what’s wrong with the following photo? This is the bottom of a charger for an electric toothbrush. Do you see the problem? _It’s not what you think._ Study it, and I will explain the error in a moment. First, let me tell you about my week.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Death-by-Toothbrush2.gif" alt="What’s wrong with this picture?" class="caption">
+<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush2.gif" alt="What’s wrong with this picture?" class="caption">
 
 So, this week I found myself knee deep in the unsexy part of my job. I was cleaning up sloppy HTML. There’s no fame or glory in writing clean, semantic markup. Nobody views the source of a website and says, “Wow, somebody really took pride on this page.”
 
@@ -43,7 +43,7 @@ There is a passage in Steve Jobs’ biography where he touches on this idea. Job
 
 Apple products are notoriously hard to open because they are obsessed with hiding screws and minimizing seams. But if you are able to crack open one of their products you will see something beautiful. The components are perfectly lined up. The invisible space is tended like a zen garden.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Death-by-Toothbrush3.gif" alt="Hidden inside Apple products is a devotion to space that few people ever see or appreciate." class="caption">
+<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush3.gif" alt="Hidden inside Apple products is a devotion to space that few people ever see or appreciate." class="caption">
 
 * * *
 
@@ -67,17 +67,17 @@ As the top ranking member of the creative department **_it was my job_** to gove
 
 If they had studied my branding handbook it would have been perfectly obvious that they should have used the one-color version of my logo which looked like this:
 
-<img src="https://adrian3.com/images/dropbox_public/images/Death-by-Toothbrush4.png" alt="In one-color situations, this is the correct corporate logo choice. Preferably, use the vector version." class="caption">
+<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush4.png" alt="In one-color situations, this is the correct corporate logo choice. Preferably, use the vector version." class="caption">
 
 The logo mistake wasn’t a surprise. I saw the prototype. While there was still time to correct the mistake, I threw my fit. I demanded that it be corrected. My outrage was acknowledged. Then it was dismissed. I failed to justify the expense, the time lost, and the inconvenience that fixing the problem would require.
 
 The mistake was mass-produced. Our brand new flagship product contained a blatant disregard for my meticulously crafted brand standards.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Death-by-Toothbrush5.png" alt="To protect the integrity of our logo, blah, blah, blah…" class="caption">
+<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush5.png" alt="To protect the integrity of our logo, blah, blah, blah…" class="caption">
 
 I don’t show the bottom of the toothbrush charger in my personal design portfolio. Why would I? Designers aren’t evaluated by how well random vendors execute their vision. No, in my portfolio I can carefully choose the best examples, the ones without any hint of mistakes, where any flaws are carefully Photoshopped out so that the marketing of the crappy toothbrush looks like this:
 
-<img src="https://adrian3.com/images/dropbox_public/images/Death-by-Toothbrush6.png" alt="The rusty toothbrush charger is intentionally left out of my design portfolio" class="caption">
+<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush6.png" alt="The rusty toothbrush charger is intentionally left out of my design portfolio" class="caption">
 
 This is the part of my post where I need to take my own medicine. Last week I identified the problem as neglect caused by the mantra, “That’s no my job.” If I had taken that to heart, my interaction with the charger prototype would have been different.
 

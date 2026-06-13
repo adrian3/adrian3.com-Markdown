@@ -9,7 +9,7 @@ description: Science seems to support the idea that you are a pattern recognitio
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Science-is-all-in-your head.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Science-is-all-in-your head.webp" class="full-width">
 
 # Science is all in your head
 

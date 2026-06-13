@@ -9,7 +9,7 @@ description: My girlfriend told me I was do it wrong. How was I supposed to know
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Mouth-Lookers-and-the-Connection-Illusion.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Mouth-Lookers-and-the-Connection-Illusion.webp" class="full-width">
 
 # Mouth Lookers and the Connection Illusion
 

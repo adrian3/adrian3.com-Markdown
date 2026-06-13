@@ -9,7 +9,7 @@ categories: Design Thinking, Personal Stories, Special Hell for Designers
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Special-Hell-7-Stasis Crackers.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Special-Hell-7-Stasis Crackers.webp" class="full-width">
 
 # Special Hell 7: Stasis Crackers
 

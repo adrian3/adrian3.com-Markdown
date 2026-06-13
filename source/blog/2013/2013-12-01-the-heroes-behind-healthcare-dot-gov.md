@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-Heroes-Behind-Healthcare-gov.jpeg" alt="Not all Government Contractors are zombies" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/The-Heroes-Behind-Healthcare-gov.webp" alt="Not all Government Contractors are zombies" class="caption full-width">
 
 # The Heroes Behind Healthcare.gov
 
@@ -36,7 +36,7 @@ Development Seed’s frontend has worked perfectly [from the beginning](http://d
 
 The site launched in June to great reviews. [The Atlantic called the site “a huge win for the American people](http://www.theatlantic.com/technology/archive/2013/06/healthcaregov-code-developed-by-the-people-and-for-the-people-released-back-to-the-people/277295/),” sighting how unprecedented it was to have a government website created in public using open source tools. The site was praised because it didn’t use Drupal or Percussion, the bloated content management systems that power most government websites. The site was praised because it incorporated [an API that allowed other developers to embed content from the site](https://www.healthcare.gov/developers/). The site was praised for it’s simplicity, theoretically allowing people with basic skills to make updates, a task that usually requires an expensive outside experts. It was fast, it was cheap, and it was open. It was going to change how governments build websites. It seemed like a dream come true.
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-Heroes-Behind-Healthcare-gov2.jpeg" alt="Once the backend kicked in, it was clearly a disaster" class="caption">
+<img src="https://adrian3.com/imgs/images/The-Heroes-Behind-Healthcare-gov2.webp" alt="Once the backend kicked in, it was clearly a disaster" class="caption">
 
 About three months later, healthcare.gov would make headlines again as thousands of users flocked to the site to sign up for healthcare. As we all know, the site failed miserably. It became clear to everyone that the backend was not going to be as stellar as the frontend.
 

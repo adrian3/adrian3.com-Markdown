@@ -9,7 +9,7 @@ folder: Writing/2015
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/In-the-future-everyone-will-be-creative-for-fifteen-minutes.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/In-the-future-everyone-will-be-creative-for-fifteen-minutes.webp" class="full-width">
 
 # In the future everyone will be creative for fifteen minutes
 
@@ -33,7 +33,7 @@ Some people might say that society would come to a grinding halt. Who would do a
 
 I pondered this question as I did some home maintenance last weekend. I imagined how my house might be different if the hands that built it were powered by a creative mind, a person who had spent his life mastering the art of home building.
 
-<a href="https://en.wikipedia.org/wiki/Dymaxion_house"><img src="https://adrian3.com/images/dropbox_public/images/In-the-future-everyone-will-be-creative-for-fifteen-minutes2.jpeg" alt="Buckminster Fuller’s Failed Dymaxion House" class="caption"></a>
+<a href="https://en.wikipedia.org/wiki/Dymaxion_house"><img src="https://adrian3.com/imgs/images/In-the-future-everyone-will-be-creative-for-fifteen-minutes2.webp" alt="Buckminster Fuller’s Failed Dymaxion House" class="caption"></a>
 
 As I imagined this imaginary builder at first I felt sorry for him. Surely he would be depressed because although he had a vision for a better house he would face amazing resistance. He wouldn’t have the authority to deviate from the blueprints. He wouldn’t have the budget to select better materials. He wouldn’t have permission to fail should his new ideas go awry. Most of all he would be battling the expectations of society that long ago decided that our houses be built a certain way.
 

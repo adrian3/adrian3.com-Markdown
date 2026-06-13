@@ -4,7 +4,7 @@ date: November 24, 2016
 --->
 # Immortal Game: The Greatest Chess Ever Played
 
-<img src="https://adrian3.com/images/Immortal_Game_cover.jpg" />
+<img src="https://adrian3.com/imgs/Immortal_Game_cover.webp" />
 
 _Immortal Game_ tells the story of ten of the most famous chess matches ever played. They are so famous that they are known by nicknames like "The Evergreen Game" or "Game of the Century."  
 

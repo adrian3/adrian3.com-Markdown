@@ -46,7 +46,7 @@ If we are stuck as the heroes in our imaginary movies our lives are destined to 
 
 The ultimate change agents are people like Donald Trump or Steve Jobs who seem to have [reality distortion fields](https://medium.com/@ade3/evidence-that-steve-jobs-was-aware-of-his-reality-distortion-field-49e4eacf8306#.yy71lsvvh). Whether your inner-movie has casts them as heroes or villains you have to admit that they are distorting your movie. They force us all to rationalize our beliefs, to reinforce our storylines, and to reassure ourselves that we are still heroes. Convinced or our hero status we are oblivious to our status as part of the mob. We are zombie puppets, unaware of the strings controlling our actions. 
 
-![](https://adrian3.com/images/dropbox_public/images/2017-01-07-Anti-Hero-Abandoning-the-Movie-Inside-Your-Head2.png)
+![](https://adrian3.com/imgs/images/2017-01-07-Anti-Hero-Abandoning-the-Movie-Inside-Your-Head2.png)
 
 Like many of you I have been captivated by Westworld lately. I won't spoil anything, but I have never seen a show that forces you to question reality this thoroughly. It is full of stereotypes, of characters we think we understand. But in Westworld there is a sense that anyone can break from their contrived roll and change their world. It is great television, but it is also a great metaphor. Change is only possible if we abandon the movie inside our heads and silence the voice inside that tells us we are the hero. We are capable of more than rationalization, we can be change agents.
 

@@ -9,7 +9,7 @@ categories: Buckminster Fuller, Creativity, Design Thinking, My Heroes, Special 
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Special-Hell-6-Dymaxion Man.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Special-Hell-6-Dymaxion Man.webp" class="full-width">
 
 # Special Hell 6: Dymaxion Man
 
@@ -35,7 +35,7 @@ The thing that saved Bucky was that he believed in design. He believed that like
 
 Six years after hitting rock bottom, Bucky would test this belief. He was speeding down the highway at 100 miles per hour in a car of his own design. His original ambition was to make the car fly, but when flight proved impractical he settled for three wheels. He called his design the dymaxion car. Dynamic + maximum + tension = dymaxion. Bucky embodied that formula.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Special-Hell-6-Dymaxion Man2.jpeg" alt="The Dymaxion Car" class="caption">
+<img src="https://adrian3.com/imgs/images/Special-Hell-6-Dymaxion Man2.webp" alt="The Dymaxion Car" class="caption">
 
 Although the dymaxion car’s specs were interesting (30 mpg, seated 11, unequaled turning radius) that alone wasn’t what captured people’s imagination. The design was so outrageous that everyone could see it was designed by someone who had completely abandoned tradition. The crowds that formed to see the dymaxion car weren’t potential car buyers, they were people that were drawn to the most contagious thing in the world, a leader who says,
 
@@ -51,13 +51,13 @@ Bucky’s second chance came after World War II. There was a housing crisis that
 
 Bucky’s dymaxion house was just as audacious as his flying car concept. Imagine a floating house suspended from a giant central mast. The dymaxion house was designed to be lightweight and easy to transport. Bucky envisioned the homes being mass produced in factories and delivered by aircraft.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Special-Hell-6-Dymaxion Man3.jpeg" alt="The Dymaxion House Concept" class="caption">
+<img src="https://adrian3.com/imgs/images/Special-Hell-6-Dymaxion Man3.webp" alt="The Dymaxion House Concept" class="caption">
 
 The dymaxion house captured people’s imagination in the same way as his car. Tradition had stuffed people into square boxes and told them that was the way it had to be. Of course they would be drawn to the man who said,
 
 > “Things can be different. Follow me.”
 
-<img src="https://adrian3.com/images/dropbox_public/images/Special-Hell-6-Dymaxion Man4.jpeg" alt="The dymaxion house more closely resembled a UFO" class="caption">
+<img src="https://adrian3.com/imgs/images/Special-Hell-6-Dymaxion Man4.webp" alt="The dymaxion house more closely resembled a UFO" class="caption">
 
 Interest for the house resulted in 35,000 pre-orders from eager customers looking to reserve their dymaxion house. That was enough capital to build a prototype.
 
@@ -113,7 +113,7 @@ The antidote to specialization is curiosity. As a generalist you are free from t
 
 Bucky loved the metaphor that our planet was a spaceship. He wrote [the operating manual](http://www.amazon.com/Operating-Manual-Spaceship-Buckminster-Fuller/dp/3037781262/ref=sr_1_1?ie=UTF8&qid=1459030310&sr=8-1&keywords=Operating+Manual+for+Spaceship+Earth). This concept says that Earth comes equipped with the supplies to sustain life. As the crew of the ship we must work together for the greater good. I am a sucker for idealism that generates these kind of utopic ideas. It is the friendly flip side of [my zombie metaphor](https://medium.com/@ade3/armageddon-143a2c57d32f#.70lcemiuz).
 
-![](https://adrian3.com/images/dropbox_public/images/Special-Hell-6-Dymaxion Man5.jpeg)
+![](https://adrian3.com/imgs/images/Special-Hell-6-Dymaxion Man5.webp)
 
 Bucky finally turned the Earth with his iconic geodesic structures. The giant spheres captured our imaginations in the same way as his failed dymaxion projects. We believed in his vision for a different shaped world. The giant circles could only come from the mind of a generalist [outsider](https://medium.com/@ade3/inside-or-out-767884695959). They were stunning in their geometric beauty. Bucky would be quick to point out that beauty wasn’t the goal, however. He said,
 

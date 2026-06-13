@@ -9,7 +9,7 @@ folder: Writing/2015
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator.png" class="full-width">
 
 # A Confession from Ghost-O-Meter’s Creator 
 
@@ -23,7 +23,7 @@ Every year around Halloween hoards of thrill seekers fire up [Ghost-O-Meter](htt
 
 _I need to make a confession._
 
-<a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8"><img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator2.gif"></a>
+<a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8"><img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator2.gif"></a>
 
 While some may doubt the legitimacy of Ghost-O-Meter in general (and that’s fine) I need you to understand that what I am about to tell you is true. **This is really happening.**
 
@@ -37,7 +37,7 @@ My app is just one of a swarm of apps that pump data into Central Brain. Every t
 
 Below is a U.S. map that plots all the ghost sitings from September, 2015.
 
-<img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator3.png" alt="(As a sidenote, If you have a fear of ghosts, I would steer clear of southern California.)" class="caption">
+<img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator3.png" alt="(As a sidenote, If you have a fear of ghosts, I would steer clear of southern California.)" class="caption">
 
 All app usage is monitored by Central Brain which meticulously records the exact date and time when you encounter a ghost.
 
@@ -47,7 +47,7 @@ It knows what kind of device you are using, the version of operating system you 
 
 I can watch in real-time as a map of your town lights up. I can see what part of the app you are using and when you make contact with the paranormal. _But it gets worse._
 
-<img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator4.png" alt="I can watch in real-time as users interact with Ghost-O-Meter" class="caption">
+<img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator4.png" alt="I can watch in real-time as users interact with Ghost-O-Meter" class="caption">
 
 _And this is where it gets creepy._
 
@@ -55,7 +55,7 @@ While Ghost-O-Meter doesn’t access any personal data beyond what I mentioned a
 
 The tracking code in Ghost-O-Meter is one of the most widely distributed scripts in use today. It is embedded in nearly every web page on the internet and most likely resides in the majority of apps installed on your phone and iPad. _You can’t escape it._
 
-<img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator5.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator5.png" class="full-width">
 
 And because it has so many eyes on you it doesn’t need to explicitly steal your personal data. No, because it is the largest artificial intelligence ever built it can extrapolate info about you with startling accuracy. It can infer your age, gender, interests, and other demographic data by connecting the dots between your web surfing habits and your app usage.
 
@@ -66,17 +66,17 @@ If you haven’t already guessed, what I am calling Central Brain is actually [G
 
 Let’s entertain a couple hypothetical scenarios. Remember the scene in Ghostbusters where a portal opens and the spirits and demons from another dimension are about to destroy humanity?
 
-<img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator6.png" alt="Who you gonna call?">
+<img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator6.png" alt="Who you gonna call?">
 
 If this scene came true, perhaps Google’s data could come in handy. A map of ghost locations is exactly what we would need in order to defeat the deadly invasion.
 
 Despite the pending apocalypse, this would be the _best_ case scenario: the data that was stolen from you actually allows Google to destroy the ghosts with pinpoint accuracy thanks to militarized self-driving cars. All brought to you with harmless ads for Stay Puft Marshmallows.
 
-<a href="https://www.blogger.com/profile/16065104457040305732"><img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator7.png" alt="(Illustration by Dave Perillo)" class="caption">
+<a href="https://www.blogger.com/profile/16065104457040305732"><img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator7.png" alt="(Illustration by Dave Perillo)" class="caption">
 
 The worst case scenario is more like another popular Hollywood theme. Pick one of the movies where an evil corporation gains massive power and creates a monster that is capable of destroying the world. Personally, I like this one:
 
-<img src="https://adrian3.com/images/dropbox_public/images/A-Confession-from-Ghost-O-Meters-Creator8.png" alt="A super computer with tracking info for every human on earth? What could go wrong?" class="caption">
+<img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator8.png" alt="A super computer with tracking info for every human on earth? What could go wrong?" class="caption">
 
 _Okay, back to reality._ So Google probably isn’t going to use this data to destroy the world (or save it). For right now they are content to just use what they know about you to show you better ads. But that doesn’t mean it is okay for me to put tracking code in my apps without your knowledge. That’s wrong. _Right?_
 

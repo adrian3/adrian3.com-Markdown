@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-![](http://adrian3.com/images/dropbox_public/images/airpod-pro-flow-trigger.jpg)
+![](https://adrian3.com/imgs/images/airpod-pro-flow-trigger.webp)
 
 # How to use your AirPod Pros to trigger flow
 
@@ -35,7 +35,7 @@ Perhaps you already have a creative ritual. If so, incorporate the AirPod Pros i
 
 How do AirPod Pros fit into your ritual? Adding AirPods to your routine might be as simple as storing them on the charger on the table next to where you do your creative work. Let that be there home. When you are ready to work, open Apple’s pure white shell, pause to appreciate the pearls nestled in their bed, note the pleasing confirmation of the green light, then put them on. Feel the world disappear as you slip into flow.
 
-![](http://adrian3.com/images/dropbox_public/images/airpod-pro-flow-trigger2.jpg)
+![](https://adrian3.com/imgs/images/airpod-pro-flow-trigger2.webp)
 
 ## 3. Pair with the right music
 Songs have the power to be more than just background music. Like an athlete selecting the songs for the playlist that pumps them up before a game, music can elevate your mental state. You probably already know what type of music pairs best with the type of work you do. Some people reach for classical music, others for metal or techno. Some people can work to music with vocals, but I find lyrics to be distracting. I default to electronic music, movie soundtracks, or a playlist on Apple Music called [“Classicaltronics.”](https://music.apple.com/us/playlist/classicaltronics/pl.b9414a5b66b34f14bfc8caf1cd531da3) The genre you choose matters less than the intentionality of your music selection. 

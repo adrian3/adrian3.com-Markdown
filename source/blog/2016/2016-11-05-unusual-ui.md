@@ -10,7 +10,7 @@ tags:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Unusual-UI.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Unusual-UI.webp" class="full-width">
 
 # Unusual UI
 

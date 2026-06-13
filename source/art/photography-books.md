@@ -4,7 +4,7 @@ unpublished: true
 --->
 
 # Photography Books
-![](https://adrian3.com/images/Photography%20Books/Photography%20Books%209.jpg)
+![](https://adrian3.com/imgs/Photography%20Books/Photography%20Books%209.webp)
 
 There are three books documenting my photography. The titles are:
 

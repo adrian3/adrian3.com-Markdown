@@ -9,7 +9,7 @@ description: I am going to take a wild guess that your workplace isn’t condusi
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Caution-Workers-at-Play.gif" class="full-width">
+<img src="https://adrian3.com/imgs/images/Caution-Workers-at-Play.gif" class="full-width">
 
 # Caution: Workers at Play
 
@@ -31,7 +31,7 @@ Invent a holiday (Taco Johnukkah) to celebrate eight days of lunch at your favor
 
 Invent complex Nerf gun games with elaborate rules and give them names like “shoot the boot” or “Darticus.”
 
-<img src="https://adrian3.com/images/dropbox_public/images/Caution-Workers-at-Play2.gif" alt="Even the dullest creative brief has possibilities when you are free to play." class="caption">
+<img src="https://adrian3.com/imgs/images/Caution-Workers-at-Play2.gif" alt="Even the dullest creative brief has possibilities when you are free to play." class="caption">
 
 In hindsight, I can’t believe our boss allowed us to do these things at work. Now it makes sense why client tours typically bypassed the creative department.
 

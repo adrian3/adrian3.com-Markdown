@@ -19,27 +19,27 @@ When it comes to art, fewer words are usually better so I will let you browse th
 
 #### Week 1: Water Lilies
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-2016.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-2016.png)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20162.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20162.png)
 
 Day 1–2
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20163.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20163.png)
 
 Day 3 (with detail)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20164.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20164.png)
 
 Day 4
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20165.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20165.png)
 
 Day 5
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20166.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20166.png)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20167.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20167.png)
 
 Day 6–7
 
@@ -47,55 +47,55 @@ Day 6–7
 
 #### Week 2: Single Water Lily
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20168.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20168.png)
 
 Day 8
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-20169.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-20169.png)
 
 Day 9 (with detail)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201610.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201610.png)
 
 Day 10
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201611.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201611.png)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201612.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201612.png)
 
 Day 11–12
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201613.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201613.png)
 
 Day 13
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201614.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201614.png)
 
 Day 14
 
 #### Week 3: Spider Flower
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201615.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201615.png)
 
 Day 15
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201616.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201616.png)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201617.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201617.png)
 
 Day 16–17
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201618.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201618.png)
 
 Day 18
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201619.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201619.png)
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201620.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201620.png)
 
 Day 19–20
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201621.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201621.png)
 
 Day 21
 
@@ -103,43 +103,43 @@ Day 21
 
 #### Week 4: Wasps
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201622.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201622.png)
 
 Day 22
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201623.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201623.png)
 
 Day 23
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201624.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201624.png)
 
 Day 24
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201625.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201625.png)
 
 Day 25
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201626.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201626.png)
 
 Day 26
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201627.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201627.png)
 
 Day 27
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201628.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201628.png)
 
 Day 28
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201629.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201629.png)
 
 Day 29
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201630.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201630.png)
 
 Day 30
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201631.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201631.png)
 
 Day 31
 
@@ -149,7 +149,7 @@ Day 31
 
 I refer to these as paintings mainly because I don’t have a better word for them. Since the word “painting” conjures up ideas of brushes and canvas, I should explain generally what I am doing.
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201632.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201632.png)
 
 My new studio space
 
@@ -159,7 +159,7 @@ Now that I have a new studio space it’s a chance to get intentional again. As 
 
 For my first month, I picked some of the oldest imagery in my book. The lily photos were from one of the first rolls of film I ran through my Pentax back in high school. In college I used these photos to create screenprints which I mixed into my senior show in 2001.
 
-![](https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201633.png)
+![](https://adrian3.com/imgs/images/The-First-31-Paintings-of-201633.png)
 
 Sources of imagery from 1997 and 2001
 
@@ -191,7 +191,7 @@ If design govern in a thing so small.
 
 Isn’t that fantastic? Anyway, here is what the source photo looks like to give you an idea of how far this theme has come.
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-First-31-Paintings-of-201634.png" alt="The original spider flower photo on the left, remixed on the right">
+<img src="https://adrian3.com/imgs/images/The-First-31-Paintings-of-201634.png" alt="The original spider flower photo on the left, remixed on the right">
 
 The final theme of the month keeps the bug theme going, but shifts from a spider to a wasp. Day 22 and 24 are the least “digital” of the bunch. They are unaltered photos of work I have framed and hanging in the house.
 

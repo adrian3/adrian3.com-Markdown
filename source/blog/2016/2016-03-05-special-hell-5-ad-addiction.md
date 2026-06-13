@@ -43,7 +43,7 @@ To their credit, the women were quick learners. Somewhere between showing them h
 
 > “How do we add one of those search things?”
 
-![](https://adrian3.com/images/dropbox_public/images/Special-Hell-5-Ad-diction.jpeg)
+![](https://adrian3.com/imgs/images/Special-Hell-5-Ad-diction.webp)
 
 This is where I made my mistake. I knew that a Google-powered search box could be connected to an affiliate account. As an affiliate for Google Ads, you automatically earn revenue when users click on ads within the search results. Within minutes I had added a search box to their website that was connected to my affiliate ID. Those ladies, so innocent, were delighted to have their “very own search engine.”
 

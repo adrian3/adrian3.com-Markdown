@@ -78,7 +78,7 @@ Thanks for reading. I wish you the best in the new year and hope these ideas hel
 [1]:	https://www.amazon.com/How-Fail-Almost-Everything-Still-ebook/dp/B00COOFBA4
 [2]:	https://link.medium.com/Ol0YzMtweT
 [3]:	https://link.medium.com/AnSkd8FqfT
-[4]:	http://adrian3.com/galleries/camera-drawings/
+[4]:	https://adrian3.com/imgs/galleries/camera-drawings/
 [5]:	/Art%20Shows.html
 [6]:	https://link.medium.com/h1b24L7VeT
 [7]:	https://tread1st.com

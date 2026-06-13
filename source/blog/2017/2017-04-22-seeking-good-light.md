@@ -12,7 +12,7 @@ layout:
 
 # Seeking Good Light
 
-![](https://adrian3.com/images/dropbox_public/images/camera.gif)
+![](https://adrian3.com/imgs/images/camera.gif)
 
 There used to be a small park just off a Colorado highway down in the Big Thompson Canyon. If you stopped there you would usually see several photographers pointing their cameras at the glow of pre-married couples, the awkward smiles of pimply high school seniors, or toddlers propped up by short-tempered parents.
 

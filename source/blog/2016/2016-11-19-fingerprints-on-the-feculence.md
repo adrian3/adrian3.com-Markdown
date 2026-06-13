@@ -10,7 +10,7 @@ tags:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Fingerprints-on-the-Feculence.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/Fingerprints-on-the-Feculence.webp" class="full-width">
 
 # Fingerprints on the Feculence
 
@@ -64,7 +64,7 @@ The toxic sludge that tanked my plugin isn’t limited to outside investors. It 
 
 And on and on. How do you silence these voices? A common theme in my writing is criticism of the attitude that says, “That’s not my job.” This is how most designers justify their claims of innocence when sludge gets shipped.
 
-![](https://adrian3.com/images/dropbox_public/images/Fingerprints-on-the-Feculence2.jpeg)
+![](https://adrian3.com/imgs/images/Fingerprints-on-the-Feculence2.webp)
 
 But when you tell yourself “that’s not my job,” you demote yourself to the role of a pawn. As a pawn you have the luxury of shrugging off blame. It’s not your fault the marketers insisted on popups. You blame the SEO expert for the clunky headline. You point at the data analyst for the privacy invasion. You blame the deadlines for the pressure to ship too early. There’s always some way to avoid ownership.
 

@@ -9,7 +9,7 @@ categories: Personal Stories
 layout: 
 --->
 
-![](https://adrian3.com/images/dropbox_public/images/Heart-Sneeze.png)
+![](https://adrian3.com/imgs/images/Heart-Sneeze.png)
 
 # Heart Sneeze
 

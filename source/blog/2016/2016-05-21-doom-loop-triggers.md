@@ -9,7 +9,7 @@ categories: Career Advice, Creativity, Design Thinking, Psychology
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Doom-Loop-Triggers.jpeg" alt="Brace for impact in 3, 2, 1…" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/Doom-Loop-Triggers.webp" alt="Brace for impact in 3, 2, 1…" class="caption full-width">
 
 # Doom Loop Triggers
 
@@ -23,7 +23,7 @@ Could there be a secret that the prolific people possess? Are there warning sign
 
 If we boil down the formula for creation down to its core elements it would look like this:
 
-![](https://adrian3.com/images/dropbox_public/images/Doom-Loop-Triggers2.jpeg)
+![](https://adrian3.com/imgs/images/Doom-Loop-Triggers2.webp)
 
 Pretty simple stuff. We all come out of school with relatively the same skills and knowledge. Our days all contain the same 24 hours and there is only so much we can accomplish before we run out of energy.
 

@@ -2,7 +2,7 @@
 title: Stryd App and Website Design
 unlisted: true
 --->
-<img src="https://adrian3.com/images/case-studies/stryd-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/stryd-header.webp" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 # Evolving Stryd's Website and App
 ### A Case Study by Adrian Hanft

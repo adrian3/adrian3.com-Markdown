@@ -2,7 +2,7 @@
 title: Defining the Athlinks User Experience
 unlisted: true
 --->
-<img src="https://adrian3.com/images/case-studies/athlinks-header.jpg" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/athlinks-header.webp" style="margin: -1.5rem 0 1rem 0; width: 100vw;">
 
 # Defining the Athlinks User Experience
 ### A Case Study by Adrian Hanft

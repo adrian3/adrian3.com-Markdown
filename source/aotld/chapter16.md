@@ -28,7 +28,7 @@ In the last decade every car manufacturer has embraced this new category and sal
 
 ![Can you match the crossover to its corresponding brand? The answers are below.](https://adrian3.com/aotld/images/Crossovers2-BW.jpg)
 
-![How did you do? Now can you identify the model names?](https://adrian3.com/images/dropbox_public/zombie-photos/Crossovers2-BW-answers.jpg)
+![How did you do? Now can you identify the model names?](https://adrian3.com/imgs/zombie-photos/Crossovers2-BW-answers.webp)
 
 The crossover is not the mastery of product design, but rather a breakthrough in market research. Car companies did not stumble into this vanilla landscape by accident. You can be sure that every manufacturer is profiting more with this copycat approach than by differentiating and innovating. As competitive forces reach equilibrium, car companies don't present an assortment of products equally spaced across the spectrum. Instead, they set up shop right next-door to the most lucrative location. Brand experts insist that success comes from promoting your unique attributes, but in practice differentiation is less profitable than consolidation. In game theory, this is called the Nash equilibrium and it can be seen at every intersection where a Burger King opens across the street from McDonald's, or a Costco opens next door to a Sam's Club. Competition doesn't produce variety, it results in commoditization until we are left with 23 identical variations of the same vehicle.  
 

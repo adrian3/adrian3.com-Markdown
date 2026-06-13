@@ -7,7 +7,7 @@ raw: true
 
 <p id="gallery-loader-path">Add a <code>?folder=</code> value to this page URL to load a gallery.</p>
 
-<div id="gallery-loader-embed" class="gallery-embed" data-gallery-api="https://adrian3.com/galleries/gallery-api.php" hidden>
+<div id="gallery-loader-embed" class="gallery-embed" data-gallery-api="https://adrian3.com/imgs/galleries/gallery-api.php" hidden>
   <div class="gallery-embed__status" role="status" aria-live="polite">Loading gallery...</div>
   <div class="gallery-embed__grid" aria-live="polite"></div>
   <noscript>

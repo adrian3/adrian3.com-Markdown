@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-![](https://adrian3.com/images/dropbox_public/images/pollock-dumpster.jpg)
+![](https://adrian3.com/imgs/images/pollock-dumpster.webp)
 
 # Jackson Pollock Found in Dumpster
 

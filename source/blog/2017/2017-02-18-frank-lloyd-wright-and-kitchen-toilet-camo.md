@@ -12,7 +12,7 @@ layout:
 
 # Frank Lloyd Wright and Kitchen Toilet Camo
 
-![](https://adrian3.com/images/dropbox_public/images/frank-lloyd-wright.jpg)
+![](https://adrian3.com/imgs/images/frank-lloyd-wright.webp)
 
 * * * 
 
@@ -32,7 +32,7 @@ He believed,
 
 When the role of the artist gets reduced to camouflage, when convenience and effort gets prioritized above design integrity you end up with kitchen toilets. 
 
-![](https://adrian3.com/images/dropbox_public/images/Toilet.jpeg)
+![](https://adrian3.com/imgs/images/Toilet.webp)
 
 Would it surprise you that Raymond Hood was confounded by Frank Lloyd Wright? Raymond was baffled by Wright's ability to create transcendent structures that seemed to contradict the desires that Raymond's customers typically requested. So he asked Frank,
 

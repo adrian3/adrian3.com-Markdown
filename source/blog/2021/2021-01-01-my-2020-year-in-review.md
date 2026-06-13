@@ -144,12 +144,12 @@ That wraps up 2020 for me. Happy New Year, and thanks for reading! _Stay creativ
 [13]:	https://tread1st.com/Ade3/report
 [14]:	https://www.goodreads.com/user/show/39560187-adrian-hanft
 
-[image-1]:	https://adrian3.com/images/2020-Art/book-promo.jpg
-[image-2]:	https://adrian3.com/images/2020-Art/coffee-stirrer-camera-examples.jpg
-[image-3]:	https://adrian3.com/images/2020-Art/54-cameras.jpg
-[image-4]:	https://adrian3.com/images/2020-Art/60-mutations-small.jpg
-[image-5]:	https://adrian3.com/images/2020-Art/graffiti.png
-[image-6]:	https://adrian3.com/images/2020-Art/bookshelves.png
-[image-7]:	https://adrian3.com/images/2020-Art/illustrations.png
-[image-8]:	https://adrian3.com/images/2020-Art/2020-miles-by-month.png
-[image-9]:	https://adrian3.com/images/2020-Art/2020-miles-adrian-hanft.jpg
+[image-1]:	https://adrian3.com/imgs/2020-Art/book-promo.webp
+[image-2]:	https://adrian3.com/imgs/2020-Art/coffee-stirrer-camera-examples.webp
+[image-3]:	https://adrian3.com/imgs/2020-Art/54-cameras.webp
+[image-4]:	https://adrian3.com/imgs/2020-Art/60-mutations-small.webp
+[image-5]:	https://adrian3.com/imgs/2020-Art/graffiti.webp
+[image-6]:	https://adrian3.com/imgs/2020-Art/bookshelves.webp
+[image-7]:	https://adrian3.com/imgs/2020-Art/illustrations.webp
+[image-8]:	https://adrian3.com/imgs/2020-Art/2020-miles-by-month.webp
+[image-9]:	https://adrian3.com/imgs/2020-Art/2020-miles-adrian-hanft.webp

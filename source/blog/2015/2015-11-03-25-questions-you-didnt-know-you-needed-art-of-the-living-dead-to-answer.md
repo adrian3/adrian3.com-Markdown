@@ -9,7 +9,7 @@ description: A starting point for anyone curious about reading a book about crea
 layout: 
 --->
 
-![](https://adrian3.com/images/dropbox_public/images/25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.jpeg)
+![](https://adrian3.com/imgs/images/25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.webp)
 
 # 25 Questions You Didn’t Know You Needed “Art of the Living Dead” to Answer
 

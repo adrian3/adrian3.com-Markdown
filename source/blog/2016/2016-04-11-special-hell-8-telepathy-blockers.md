@@ -9,7 +9,7 @@ categories: Design Thinking, Personal Stories, Special Hell for Designers
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Special-Hell-8-Telepathy-Blockers.jpeg" alt="The Zoltar fortune telling machine" class="caption">
+<img src="https://adrian3.com/imgs/images/Special-Hell-8-Telepathy-Blockers.webp" alt="The Zoltar fortune telling machine" class="caption">
 
 # Special Hell 8: Telepathy Blockers
 
@@ -47,7 +47,7 @@ Practical telepathy (a.k.a. emotional intelligence) looks like this:  We read em
 
 That’s not the pinnacle of telepathic development, however. There is another level of telepathy above the practical realm of emotional intelligence. At the top of the telepathy pyramid are the masters of manipulation. The hierarchy looks like this:
 
-![](https://adrian3.com/images/dropbox_public/images/Special-Hell-8-Telepathy-Blockers2.jpeg)
+![](https://adrian3.com/imgs/images/Special-Hell-8-Telepathy-Blockers2.webp)
 
 As a child you conform to the will of the mind-readers. Adolescence involves learning how to lie. As adults we maintain order by developing emotional intelligence. At the top of the pyramid are the masters of manipulation.
 

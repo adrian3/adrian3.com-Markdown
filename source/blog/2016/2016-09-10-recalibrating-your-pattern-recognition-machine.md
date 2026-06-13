@@ -19,7 +19,7 @@ I suggested that if your work is going to be change the world you will have to r
 
 Remember the last time you shopped for a car? After you did your research, let’s say you decided on a used Nissan Rogue. One [zombie-mobile among a sea of vanilla](https://medium.com/swlh/the-zombie-mobile-b03932ac971d#.dzehsfs7x) all of a sudden comes into focus for you. The next time you are on the road you will start spotting Rogues everywhere.
 
-![](https://adrian3.com/images/dropbox_public/images/Recalibrating-Your-Pattern-Recognition-Machine-Part-2.jpeg)
+![](https://adrian3.com/imgs/images/Recalibrating-Your-Pattern-Recognition-Machine-Part-2.webp)
 
 Are there suddently more Rogues in the world than yesterday? No, your attention has just been tuned to notice something that you previously ignored.
 

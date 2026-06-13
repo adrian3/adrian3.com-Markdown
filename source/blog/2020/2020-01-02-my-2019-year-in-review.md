@@ -166,14 +166,14 @@ Happy New Year, and thanks for reading. Don’t forget to [sign up for my User Z
 [18]:	https://www.thehouseontherock.com/
 [19]:	https://mailchi.mp/0584d8c46822/letter-zero
 
-[image-1]:	http://adrian3.com/images/dropbox_public/images/8-house-on-the-hill.jpg
-[image-2]:	http://adrian3.com/images/dropbox_public/images/9-straw-camera.jpg
-[image-3]:	http://adrian3.com/images/dropbox_public/images/11-post-it-note-graffiti-2.jpg
-[image-4]:	http://adrian3.com/images/dropbox_public/images/10-post-it-note-graffiti-1.jpg
-[image-5]:	http://adrian3.com/images/dropbox_public/images/1-matchbook-monday.jpg
-[image-6]:	http://adrian3.com/images/dropbox_public/images/2-textploder-tuesday.jpg
-[image-7]:	http://adrian3.com/images/dropbox_public/images/3-whiskey-wednesday.jpg
-[image-8]:	http://adrian3.com/images/dropbox_public/images/4-texture-thursday.jpg
-[image-9]:	http://adrian3.com/images/dropbox_public/images/5-face-drawing-friday.jpg
-[image-10]:	http://adrian3.com/images/dropbox_public/images/6-circle-saturday.jpg
-[image-11]:	http://adrian3.com/images/dropbox_public/images/7-sunlight-sunday.jpg
+[image-1]:	https://adrian3.com/imgs/images/8-house-on-the-hill.webp
+[image-2]:	https://adrian3.com/imgs/images/9-straw-camera.webp
+[image-3]:	https://adrian3.com/imgs/images/11-post-it-note-graffiti-2.webp
+[image-4]:	https://adrian3.com/imgs/images/10-post-it-note-graffiti-1.webp
+[image-5]:	https://adrian3.com/imgs/images/1-matchbook-monday.webp
+[image-6]:	https://adrian3.com/imgs/images/2-textploder-tuesday.webp
+[image-7]:	https://adrian3.com/imgs/images/3-whiskey-wednesday.webp
+[image-8]:	https://adrian3.com/imgs/images/4-texture-thursday.webp
+[image-9]:	https://adrian3.com/imgs/images/5-face-drawing-friday.webp
+[image-10]:	https://adrian3.com/imgs/images/6-circle-saturday.webp
+[image-11]:	https://adrian3.com/imgs/images/7-sunlight-sunday.webp

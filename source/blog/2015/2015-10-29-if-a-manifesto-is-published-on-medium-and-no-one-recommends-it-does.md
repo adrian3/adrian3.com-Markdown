@@ -26,7 +26,7 @@ In 1964 a group of designers composed the\_ First Things First\_ manifesto. They
 
 > “[The talent within] the advertising industry is wasted on trivial purposes.”— 1964
 
-<img src="https://adrian3.com/images/dropbox_public/images/If-a-manifesto-is-published-on-Medium-and-no-one-recommends-it-does-it-make-a sound.jpeg" alt="First Things First Manifesto, 1964">
+<img src="https://adrian3.com/imgs/images/If-a-manifesto-is-published-on-Medium-and-no-one-recommends-it-does-it-make-a sound.webp" alt="First Things First Manifesto, 1964">
 
 In 2000 it was updated by some big names in the design community. These people wanted designers to use their skills for social causes because they didn’t think commercial work could change the world. You can read that version at [First Things First 2000][4].
 

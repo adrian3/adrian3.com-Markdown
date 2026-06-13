@@ -11,7 +11,7 @@ thumbnail:
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/best-writing-2016.jpg" alt="" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/best-writing-2016.webp" alt="" class="caption full-width">
 
 # Inspirational Design Stories You Missed in 2016
 

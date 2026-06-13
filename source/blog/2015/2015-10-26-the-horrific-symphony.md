@@ -9,7 +9,7 @@ description: There is a faint whistle from the nose of a coworker as he exhales.
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-Horriffic-Symphony.jpeg" alt="Do you ever just sit and listen?" class="caption full-width">
+<img src="https://adrian3.com/imgs/images/The-Horriffic-Symphony.webp" alt="Do you ever just sit and listen?" class="caption full-width">
 
 # The Horrific Symphony
 

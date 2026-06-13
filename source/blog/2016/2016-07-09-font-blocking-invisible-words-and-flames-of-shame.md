@@ -33,7 +33,7 @@ She knew that the CFO’s request was dumb, she was just dutifully doing her job
 
 While I waited to see how my treasonous actions would be received by the bigwig, I am ashamed to admit that I actually typed “flaming font” into Google. I sat there in the glow of burning letters contemplating forwarding the search results to the secretary. It would have been so easy to just give her a fiery font and pretend the whole thing never happened.
 
-![](https://adrian3.com/images/dropbox_public/images/Font-Blocking-Invisible-Words-and-Flames-of-Shame.png)
+![](https://adrian3.com/imgs/images/Font-Blocking-Invisible-Words-and-Flames-of-Shame.png)
 
 Unsurprisingly my nuanced typography speech got lost in translation. I am pretty sure her explanation was probably something along the lines of,
 

@@ -15,7 +15,7 @@ layout:
 
 What does it feel like to be contacted by a brand you love and admire? Well, if the person reaching out to you is a lawyer from their trademark protection team it probably feels like a kick in the gut. That’s what happened to me recently when Polaroid contacted me about my app, Grungy.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Polaroid-you-broke-my-heart.gif" alt="Grungy is a free photo un-enhancement app" class="caption">
+<img src="https://adrian3.com/imgs/images/Polaroid-you-broke-my-heart.gif" alt="Grungy is a free photo un-enhancement app" class="caption">
 
 If you aren’t familiar with Grungy it is an app that applies layers of grunge on top of your photos. Think of it as a photo un-enhancement app for people that prefer wear-and-tear over glossy perfection. [It’s is a free app](https://itunes.apple.com/us/app/grungy/id595550299?mt=8), so check it out if that is your kind of thing. _Anyway…_
 
@@ -42,7 +42,7 @@ Guilty? Now, since [I literally wrote a book about surviving in a world where cr
 
 > Adrian Hanft
 
-<img src="https://adrian3.com/images/dropbox_public/images/Polaroid-you-broke-my-heart2.gif" alt="One of my favorite cameras, the Polaroid SX-70" class="caption">
+<img src="https://adrian3.com/imgs/images/Polaroid-you-broke-my-heart2.gif" alt="One of my favorite cameras, the Polaroid SX-70" class="caption">
 
 Until this incedent I have had nothing but fond feelings about Polaroid. [I have spent many hours lovingly repairing and hacking the cameras](http://www.foundphotography.com/category/cameras/polaroid-cameras/) that survive as artifacts of a once vibrant and thriving company. I have even [written about my admiration for the Polaroid brand](https://withinthefold.com/the-branding-of-polaroid-the-inside-story/) in the past and the work done by their first art director, Paul Giambarba back in the 50's.
 

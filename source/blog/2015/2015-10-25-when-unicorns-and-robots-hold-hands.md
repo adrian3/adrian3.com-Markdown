@@ -9,7 +9,7 @@ categories: Career Advice, Design Thinking
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/When-Unicorns-and-Robots-Hold-Hands.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/When-Unicorns-and-Robots-Hold-Hands.png" class="full-width">
 
 # When Unicorns and Robots Hold Hands
 
@@ -48,7 +48,7 @@ It would be tempting to think that the way to innovate is to get the right mixtu
 
 Take a look at the illustration below. This is my attempt to explain why both data-driven and design-driven initiatives fail.
 
-![](https://adrian3.com/images/dropbox_public/images/When-Unicorns-and-Robots-Hold-Hands2.png)
+![](https://adrian3.com/imgs/images/When-Unicorns-and-Robots-Hold-Hands2.png)
 
 Notice that in the middle of this chart is a dotted line that represents reality. Despite what anyone claims, nobody can _really_ see this line. We are all blind, feeling around in the dark for this. We seek truth, never completely sure when we find it.
 

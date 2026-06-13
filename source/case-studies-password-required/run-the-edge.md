@@ -1,7 +1,7 @@
 <!---
 title: Run The Edge Case Study
 --->
-<img src="https://adrian3.com/images/case-studies/run-the-edge-header.jpg" style="margin: 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/run-the-edge-header.webp" style="margin: 0; width: 100vw;">
 
 # Run The Edge Case Study
 

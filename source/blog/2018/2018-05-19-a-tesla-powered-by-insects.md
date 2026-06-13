@@ -12,7 +12,7 @@ layout:
 
 # A Tesla Powered by Insects
 
-![](http://adrian3.com/images/dropbox_public/images/beetle.gif)
+![](https://adrian3.com/imgs/images/beetle.gif)
 
 An exhausted beetle crawled across the palm of a young child’s hand. The boy rotated his arm as the bug walked, creating an endless treadmill for his little friend. Around and around the June bug went until eventually it flew away. As he watched it leave, the boy made a calculation. How many million bugs were there? If you could harness the energy of enough bugs you could power the world.
 

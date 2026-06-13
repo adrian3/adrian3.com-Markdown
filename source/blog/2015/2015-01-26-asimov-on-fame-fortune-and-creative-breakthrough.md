@@ -9,7 +9,7 @@ folder: Writing/2015
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/asimov2.jpg" class="full-width">
+<img src="https://adrian3.com/imgs/images/asimov2.webp" class="full-width">
 
 # Asimov on Fame, Fortune, and Creative Breakthrough
 

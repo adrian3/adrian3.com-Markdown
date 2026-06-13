@@ -10,7 +10,7 @@ thumbnail:
 layout: 
 --->
 
-![](http://adrian3.com/images/dropbox_public/images/ethdenver-speaker.jpg)
+![](https://adrian3.com/imgs/images/ethdenver-speaker.webp)
 
 # ETHDenver: A Glimpse into the Future
 
@@ -24,7 +24,7 @@ Once you get your bearings, the magic of the Sports Castle’s unique architectu
 
 The coffee, energy drinks, fruit, and salty snacks are all free and regularly restocked by a dedicated crew that tries to keep pace with the hackers. If you need a full meal, there are food trucks parked right outside the front entrance. To pay, scan the QR code with a burner wallet, a compelling demonstration of cryptocurrency in action. 
 
-![](http://adrian3.com/images/dropbox_public/images/ethdenver-hackathon.jpg)
+![](https://adrian3.com/imgs/images/ethdenver-hackathon.webp)
 
 The thing that is harder to describe is the energy of ETHDenver. Teams converge and migrate around the building, switching between intense collaborative conversations and deep coding sessions isolated by noise-cancelling headphones. Once my team had our idea we sketched out some loose wireframes, each of us claimed chunks of work that aligned with our skills, and we dug into the project. There was no project management software, no job titles, no story points, no egos - only builders finding thrill in contributing, learning, and solving problems. 
 
@@ -32,7 +32,7 @@ The sense of mission was palpable. Combine the excitement of a hackathon with th
 
 You can’t help but ask an uncomfortable question. Why is it happening here? Why not in business settings? Why not in churches? Why not in schools? Why not in government? Why is it that our biggest institutions feel lifeless and empty while a band of developer strangers can assemble for a weekend and all of a sudden the future seems hackable?  
 
-![](http://adrian3.com/images/dropbox_public/images/ethdenver-jared-polis.jpg)
+![](https://adrian3.com/imgs/images/ethdenver-jared-polis.webp)
 
 Even government felt bendable in the face of ETHDenver. On Friday evening the governor of Colorado, Jared Polis (democrat) and the governor of Wyoming, Mark Gordon (republican) shared the stage answering questions from podcaster Laura Shin. Despite their political differences, they seemed to agree that the future of crypto is bright and they aren’t waiting for federal green lights before they take advantage of blockchain technology. 
 

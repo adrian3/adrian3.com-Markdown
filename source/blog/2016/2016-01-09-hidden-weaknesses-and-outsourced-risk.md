@@ -54,7 +54,7 @@ The downside of being unable to ask for help is that your work will suffer —
 
 The good news is that it has never been easier to fake it. The learning curve for writing code gets lower each day. You can find a video tutorial for any skill you want to learn. Free frameworks let you jumpstart your project. If you really can’t learn a skill it is getting easier to find, hire, and collaborate with specialists anywhere in the world. Use these tools, just be careful to use them as support for your growing skills, not as a replacement for them.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Hidden-Weaknesses-and-Outsourced-Risk2.png" alt="One of my first apps, Chess Roulette, was a flop. I didn’t know what I was doing." class="caption full-width">
+<img src="https://adrian3.com/imgs/images/Hidden-Weaknesses-and-Outsourced-Risk2.png" alt="One of my first apps, Chess Roulette, was a flop. I didn’t know what I was doing." class="caption full-width">
 
 If you are stubborn enough to stick with the “I’d rather do it myself” approach you will eventually see the upside. You will have a wider knowledge of your craft than the specialists who are experts in their silo of knowledge. You will be able to work faster than teams that have to grind through internal conflict and political positioning. You will ship your work and more importantly you will build knowledge and skill. Isn’t that what it’s all about?
 

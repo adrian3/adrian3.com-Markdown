@@ -9,7 +9,7 @@ categories: Design Thinking, Special Hell for Designers
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Pissing-in-the-Wind.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/Pissing-in-the-Wind.png" class="full-width">
 
 # Pissing in the Wind
 
@@ -23,7 +23,7 @@ One of my favorite FAIL photos shows a sign above a hand dryer containing a mess
 
 > “Attention: This is not a urinal.”
 
-![](https://adrian3.com/images/dropbox_public/images/Pissing-in-the-Wind2.png)
+![](https://adrian3.com/imgs/images/Pissing-in-the-Wind2.png)
 
 The model of hand dryer pictured is a Dyson product. If you read _Art of the Living Dead_ you might remember [I praised the ambition of James Dyson’s dryer and questioned the haters who blindly criticize what they perceive to be the flawed “design” of the product](https://medium.com/@ade3/artifacts-of-thought-4991d6a33184#.x2q3t9j0r). Today I once again find myself coming to the defense of Sir James.
 
@@ -49,7 +49,7 @@ Let me sum up the astonishing results of this scientific study in terms that sim
 
 **Spoiler alert:** Sure enough, the jet dryer distributed the viral lotion significantly farther than even the most violent paper towel simulations.
 
-<img src="https://adrian3.com/images/dropbox_public/images/Pissing-in-the-Wind3.png" alt="Ready, aim, fire." class="caption">
+<img src="https://adrian3.com/imgs/images/Pissing-in-the-Wind3.png" alt="Ready, aim, fire." class="caption">
 
 Another “finding” of the study was that 70% of the virus flung by the hand dryer was at the height of a small child’s face.
 

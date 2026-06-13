@@ -9,7 +9,7 @@ description: Why car companies view their brands as a liability and what they ar
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/Fooling-the-Focus-Groups.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/Fooling-the-Focus-Groups.png" class="full-width">
 
 # Fooling the Focus Groups
 
@@ -31,7 +31,7 @@ Have you noticed how car companies are desperately trying to shed the burden of 
 
 _(I can’t believe I am saying this, but you should watch those commercials if you haven’t seen them. Scroll to the bottom if you don’t want to bounce over to YouTube.)_
 
-![](https://adrian3.com/images/dropbox_public/images/Fooling-the-Focus-Groups2.png)
+![](https://adrian3.com/imgs/images/Fooling-the-Focus-Groups2.png)
 
 “But with the blast shield down, I can’t even see!”–Luke Skywalker
 
@@ -45,7 +45,7 @@ Call me crazy, but if just adding a Chevy logo to the hood causes a car to depre
 
 I want to tell you how and why an ad like this gets made. It is devilishly intentional and it requires me to untangle some of the myths that brand hucksters have been force feeding us for too long. You don’t still believe brands are a way to differentiate yourself from your competitors do you?
 
-<a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d?source=your-stories"><img src="https://adrian3.com/images/dropbox_public/images/Fooling-the-Focus-Groups3.png" alt="Image from The Zombie-mobile" class="caption"></a>
+<a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d?source=your-stories"><img src="https://adrian3.com/imgs/images/Fooling-the-Focus-Groups3.png" alt="Image from The Zombie-mobile" class="caption"></a>
 
 One of the criticisms my “[Zombie-Mobile](https://medium.com/swlh/the-zombie-mobile-b03932ac971d#.aolvwi311)” story received was that I was basing my conclusions on the exterior design of the car. That is understandable since the image in my post shows 23 identical cars made by 23 different companies. I was pointing at exteriors, but what I was really talking about was brands.
 
@@ -77,7 +77,7 @@ These aren’t observations of quality by “real people.” They are buzz words
 
 Brands are a way to organize products into categories of people. Purchasing has become a way of identifying ourselves with the type of people we want to be. The Apple brand appeals to artists. The Lexus brand resonates with people seeking luxury, and so on. Chevy deliberately leaches these attributes throughout the ad.
 
-![](https://adrian3.com/images/dropbox_public/images/Fooling-the-Focus-Groups4.png)
+![](https://adrian3.com/imgs/images/Fooling-the-Focus-Groups4.png)
 
 Notice how in the Chevy commercial the generic car is placed in a glass house next to a vineyard. The brands that get mentioned to define the anonymous car are Bose, Apple, Lexus, Audi, BMW, and Tesla. The location is a “Design Clinic” in Sonoma, California. That’s what psychologists call [priming](https://en.wikipedia.org/wiki/Priming_%28psychology%29).
 

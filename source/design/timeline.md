@@ -7,11 +7,11 @@ date: November 24, 2016
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/runcoach.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/runcoach.webp" width="182" height="40">
 <hr>
 <h3>2018 - Present</h3>
 
@@ -29,11 +29,11 @@ date: November 24, 2016
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/athlinks-logo.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/athlinks-logo.webp" width="182" height="40">
 <hr>
 <h3>2016 - 2018</h3>
 
@@ -56,11 +56,11 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/trainingpeaks-logo.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/trainingpeaks-logo.webp" width="182" height="40">
 <hr>
 <h3>2014 - 2016</h3>
 
@@ -82,11 +82,11 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/zila-logo.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/zila-logo.webp" width="182" height="40">
 <hr>
 <h3>2012-2014</h3>
 <p class="lead">Before they went out of business I worked for a dental technology company called Zila. As creative director I <a href="https://www.behance.net/gallery/6657455/Zila">rebranded the company</a> and helped modernize their websites and products.</p>
@@ -102,11 +102,11 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/burns-marketing-logo.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/burns-marketing-logo.webp" width="182" height="40">
 <hr>
 <h3>2011-2012</h3>
 <p class="lead">My "big agency" experience came from working at Burns Marketing. I designed apps and websites for big clients like <a href="https://www.behance.net/gallery/5173495/HP-Mobile-Apps">HP</a> and Lenovo as well as <a href="https://www.behance.net/gallery/5173527/Baxa">smaller businesses</a>.</p>
@@ -121,11 +121,11 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/red-rocket-logo.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/red-rocket-logo.webp" width="182" height="40">
 <hr>
 <h3>2009-2011</h3>
 <p class="lead">As creative director at Red Rocket I helped <a href="https://www.behance.net/gallery/615631/Red-Rocket-Web-Specialists">rebrand the company</a> as web specialists and designed dozens of websites for <a href="https://www.behance.net/gallery/10588981/Encore-Sight-Sound">small</a> to <a href="https://www.behance.net/gallery/5173245/Keeton-Industries">mid-sized businesses</a> in Northern Colorado. </p>
@@ -142,11 +142,11 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/images/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
-<img src="https://adrian3.com/images/_logos/huebnerpetersen-logo.jpg" width="182" height="40">
+<img src="https://adrian3.com/imgs/_logos/huebnerpetersen-logo.webp" width="182" height="40">
 <hr>
 <h3>2003-2009</h3>
 <p class="lead">HuebnerPetersen is where I learned the ropes by hacking together websites and fighting to develop my design chops.</p>

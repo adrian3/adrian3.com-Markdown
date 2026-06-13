@@ -9,7 +9,7 @@ folder: Writing/2015
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/How-I-almost-became-a-child-millionaire3.png" class="full-width">
+<img src="https://adrian3.com/imgs/images/How-I-almost-became-a-child-millionaire3.png" class="full-width">
 
 # How I almost became a child millionaire
 
@@ -23,7 +23,7 @@ I was under the impression that worms could regenerate if they were cut in half.
 
 _I wasn’t a monster, I just always had my ideas._
 
-![](https://adrian3.com/images/dropbox_public/images/How-I-almost-became-a-child-millionaire.png)
+![](https://adrian3.com/imgs/images/How-I-almost-became-a-child-millionaire.png)
 
 As I got a little older I became aware of money. The cicadas were a plague that summer. I managed to convince my mom to give me a penny for every cicada I killed. The forest would be quieter and in exchange I could earn some pennies.
 
@@ -31,7 +31,7 @@ It took hard work, but one hundred bug crunches later and I had earned my first 
 
 _I wasn’t a monster, I just always had my ideas._
 
-![](https://adrian3.com/images/dropbox_public/images/How-I-almost-became-a-child-millionaire2.png)
+![](https://adrian3.com/imgs/images/How-I-almost-became-a-child-millionaire2.png)
 
 Having money was always better than spending it. There was great pleasure in folding a bill up, placing it in my wallet, and feeling the weight in my back pocket.
 

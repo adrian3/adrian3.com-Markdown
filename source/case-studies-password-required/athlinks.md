@@ -1,7 +1,7 @@
 <!---
 title: Defining the Athlinks User Experience
 --->
-<img src="https://adrian3.com/images/case-studies/athlinks-header.jpg" style="margin: 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/athlinks-header.webp" style="margin: 0; width: 100vw;">
 
 # Athlinks Case Study
 

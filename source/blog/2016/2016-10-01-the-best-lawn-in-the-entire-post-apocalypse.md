@@ -9,7 +9,7 @@ description: What kind of an idiot am I that I would be doing lawn maintenance d
 layout: 
 --->
 
-<img src="https://adrian3.com/images/dropbox_public/images/The-Best-Lawn-in-the-Entire-Post-Apocalypse.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/The-Best-Lawn-in-the-Entire-Post-Apocalypse.webp" class="full-width">
 
 # The Best Lawn in the Entire Post-Apocalypse
 

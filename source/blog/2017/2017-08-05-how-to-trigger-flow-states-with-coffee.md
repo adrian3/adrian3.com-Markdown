@@ -13,7 +13,7 @@ layout:
 # How to Trigger Flow States with Coffee
 ## (Quick hits, slow triggers, and magic beans)
 
-![](https://adrian3.com/images/dropbox_public/images/flow-triggers.gif)
+![](https://adrian3.com/imgs/images/flow-triggers.gif)
 
 Most of us use coffee to get through the day. It's a routine that we probably don't think much about. Wake up, pour a cup and go. When the buzz wears off it is time for another cup. But what if we used coffee more intentionally? Could we develop a system where coffee becomes your secret weapon? Let's explore how the humble cup of joe can transform into a trigger that you can use to instantly push yourself into a state of flow.
 
@@ -66,7 +66,7 @@ First, the decision of what kind of coffee to drink is made for me. If I had to 
 
 Second, the coffee bean's backstory isn't trivial. It gets me thinking about people who are different from me who live in exotic locations. For flow this is important because creative insights spring from moments when we are comfortably outside of our normal mental models. This month they sent me Sumatra Ketiara Kopi Ocen and told me it has a "cranberry-like sparkle for uncommon flare." Beans with a story engage my mind so much more than a generic bag of beans–even if I can't taste the cranberry.  
 
-<img src="https://adrian3.com/images/dropbox_public/images/flow-triggers1.jpg" class="full-width">
+<img src="https://adrian3.com/imgs/images/flow-triggers1.webp" class="full-width">
 
 Next is the smell of the freshly ground beans and the intense sound of the grinder. The Keurig barely tickles the senses, but grinding your own beans kicks your senses in the face. Likewise, the Aeropress requires firm pressure, engaging your muscles. You aren't just tapping a button and zoning out. You are present, engaged, and involved. And yet your mind isn't overwhelmed. You aren't stressing over water temperature, grind levels, or timers. On the edges of your mind there is room for toying with thoughts about what you are about to do. 
 
@@ -89,7 +89,7 @@ For my magic trigger I drink mushroom coffee. Strange, I know. My mushroom coffe
 - Next I grab my iPad and surprise myself with the words that appear on the screen.
 - As I write I wonder if the coffee _really_ has nootropic powers or if it is a placebo. 
 
-<img src="https://adrian3.com/images/dropbox_public/images/flow-triggers2.jpg" class="full-width">
+<img src="https://adrian3.com/imgs/images/flow-triggers2.webp" class="full-width">
 
 Here's how the magic trigger works... 
 

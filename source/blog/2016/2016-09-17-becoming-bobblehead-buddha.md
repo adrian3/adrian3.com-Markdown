@@ -9,7 +9,7 @@ description: We have been fooled into believing in the supremacy of human data p
 layout: 
 --->
 
-![](https://adrian3.com/images/dropbox_public/images/Becoming-Bobblehead-Buddha.gif)
+![](https://adrian3.com/imgs/images/Becoming-Bobblehead-Buddha.gif)
 
 # Becoming Bobblehead Buddha
 
