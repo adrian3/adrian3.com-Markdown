@@ -11,7 +11,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter9.webp)
+![](https://adrian3.com/imgs/aotld/chapter9.webp)
 
 Squeak. Creeeeeek. Squeak.  
 

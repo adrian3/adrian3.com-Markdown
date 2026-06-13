@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter15.webp)
+![](https://adrian3.com/imgs/aotld/chapter15.webp)
 
 We live in a time when art is easier to create than ever. The limitations that once stifled artists have disappeared. The financial cost has dropped to zero. We have access to state-of-the-art tools. An unlimited audience just needs to be plugged in to. Access to the entire knowledge of mankind is instantly accessible in the palm of your hand. With all these advantages, every person born today _should_ be an artist. How is it that we can be given such an unprecedented opportunity, and yet our population isn't flooded with new insight and invention? Instead we exist in gridlock, afraid to innovate, unable to change, slaves to consumerism, and indebted to conformity.  
 
@@ -38,7 +38,7 @@ Zombies may prefer content, but that doesn't mean they don't recognize the marke
 
 The traditional method for generating attention for your products was to pay expensive specialists who had access to attention you hoped to access. For example, you might give money to an advertising agency. The advertising agency would keep some of your money for themselves and use the rest to buy time from a television network to run your ad between shows. The television network would pocket some of that cash and then use the rest to produce a show that would appeal to as many people as possible. If enough people watched the show your product would get the attention of a few qualified viewers who might go on to purchase your product.  
 
-![](https://adrian3.com/imgs/aotld/images/eyeball-map.webp)
+![](https://adrian3.com/imgs/aotld/eyeball-map.webp)
 
 The "Old Economy" chart illustrates how you put money into the system in exchange for attention. It was inefficient, but it worked because the audiences were so large that even a small percentage of attention was enough to outweigh the expense. It was also the only game in town, so your options were either participate or be invisible.  
 
@@ -48,7 +48,7 @@ To excuse the growing lack of return on investment, the term "brand awareness" w
 
 Finally, the system collapsed. Or at least it should have. But that's not what happened. Television networks are still making shows. The shows are still interrupted by ads. There is no shortage of advertising agencies begging you to put your money into this model. The continued existence of this is baffling especially when you consider the new model that has taken its place.  
 
-![](https://adrian3.com/imgs/aotld/images/eyeball-map2.webp)
+![](https://adrian3.com/imgs/aotld/eyeball-map2.webp)
 
 The "New Economy" chart explains the new economic model for getting attention for your product. If the old zombie economy chart looks doomed, the living economy should warm your heart. In the new economy you are at the center surrounded by your art and an audience of living patrons. The zombies are on the outside, uninvited to your healthy ecosystem. Instead of paying outsiders to create content, this time you create your own message. This is possible because the cost of tools has dropped significantly in the last decade. 
 

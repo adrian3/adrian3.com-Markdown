@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter21.webp)
+![](https://adrian3.com/imgs/aotld/chapter21.webp)
 
 So far we have mostly talked about creativity with sweeping generalities. It is time to get practical. Wouldn't it be nice to have some tips that you could use to give your work the best chance of success? 
 

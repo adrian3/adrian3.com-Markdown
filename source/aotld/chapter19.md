@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter19.webp)
+![](https://adrian3.com/imgs/aotld/chapter19.webp)
 
 As children we are told the story of the Wright brothers. The children's book version of the invention of the first airplane goes like this,  
 
@@ -49,9 +49,9 @@ To say that the stakes were high is a huge understatement. When the first test f
 
 > "Nothing Aerial About the Aerodrome: It Sinks, Swims then is Taken Home."  
 
-![The aerodrome is ready for its first test flight.](https://adrian3.com/imgs/aotld/images/aerodrome.webp)
+![The aerodrome is ready for its first test flight.](https://adrian3.com/imgs/aotld/aerodrome.webp)
 
-![Upon takeoff, the aerodrome plunged straight into the river.](https://adrian3.com/imgs/aotld/images/aerodrome2.webp)
+![Upon takeoff, the aerodrome plunged straight into the river.](https://adrian3.com/imgs/aotld/aerodrome2.webp)
 
 It seems odd that Langley was not present on the day of the first test flight. He claimed that he had "urgent business" to attend to. Could this have been an excuse because he knew that failure was probable? Did he anticipate the public's outrage and want to be as far away from the scene as possible? Evidence to support this theory doesn't exist, but it seems like a possible explanation for why he would be absent at the very moment that would define his career.  
 
@@ -61,9 +61,9 @@ History has judged Langley too harshly. How many people have the courage to purs
 
 **Passionate Outsiders: The Wright Brothers**  
 
-![The Wright's refined their designs in isolation, far from the public eye.](https://adrian3.com/imgs/aotld/images/wright-brothers1.webp)
+![The Wright's refined their designs in isolation, far from the public eye.](https://adrian3.com/imgs/aotld/wright-brothers1.webp)
 
-![The first controlled, sustained powered flight](https://adrian3.com/imgs/aotld/images/wright-brothers2.webp)
+![The first controlled, sustained powered flight](https://adrian3.com/imgs/aotld/wright-brothers2.webp)
 
 The Wright brothers have become so synonymous with aviation that we forget that in 1900 they were unknown. They were the last people you would have expected to take flight. They were outsiders. They didn't rub shoulders with scholars, schmooze with congressmen, or dine with the elite. They were bicycle enthusiasts. What is it about bikes that allowed the brothers to succeed where the insider, Langley, failed?  
 

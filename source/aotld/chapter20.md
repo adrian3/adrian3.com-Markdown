@@ -10,13 +10,13 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter20.webp)
+![](https://adrian3.com/imgs/aotld/chapter20.webp)
 
-![In World War II, an average of 40 planes were shot down every day.](https://adrian3.com/imgs/aotld/images/war-planes.webp)
+![In World War II, an average of 40 planes were shot down every day.](https://adrian3.com/imgs/aotld/war-planes.webp)
 
 Let's fast forward four decades to World War II. The Wright brothers' invention has morphed into a deadly war weapon, and every day about 40 U.S. planes are getting shot down over the Pacific Ocean. The returning planes are analyzed and studied in hopes that armor can be added to improve their survival rate. You can only put so much armor on a plane before it is too heavy to fly, so it is important that only the most critical areas get reinforced. The surviving planes revealed that most of the bullet holes accumulated along the wings, body, and tail gunner. Naturally, the Air Force decided that the best place to put the armor was in the areas that had the most damage. It took a mathematician named Abraham Wald to show why this would be a terrible mistake. Can you see why?  
 
-![Where would you put additional armor to improve survival rates?](https://adrian3.com/imgs/aotld/images/war-planes2.webp)
+![Where would you put additional armor to improve survival rates?](https://adrian3.com/imgs/aotld/war-planes2.webp)
 
 Wald's insight was that the damage showed the places where a plane can be hit and _still survive_. The places where the planes _weren't_ hit were the vulnerable areas because planes shot here never returned home for analysis. The planes that were shot in fatal locations were destroyed and obviously couldn't be studied. The bullet holes actually showed where the planes were strongest, not weakest.  
 

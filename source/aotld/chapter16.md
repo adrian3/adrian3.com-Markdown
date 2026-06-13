@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter16.webp)
+![](https://adrian3.com/imgs/aotld/chapter16.webp)
 
 What if I told you that after a hundred years of rigorous competition, car manufacturers have finally created the perfect automobile? Would you believe that the evolution of car design has culminated in a vehicle so perfect that every manufacturer has agreed to produce the same model? That would be absurd, wouldn't it? And yet, in 2013 that is the conclusion you might draw if you compare vehicles side by side. There has never been less differentiation between cars as there is right now. On the next page is an image containing 23 cars from 21 manufacturers. See if you can tell who makes what. How did this happen?  
 
@@ -26,7 +26,7 @@ If you squint at a crossover you can impose whatever vehicle you want onto its b
 
 In the last decade every car manufacturer has embraced this new category and sales of crossovers have been outstanding. Consumers love the non-decision of buying a crossover.    
 
-![Can you match the crossover to its corresponding brand? The answers are below.](https://adrian3.com/imgs/aotld/images/crossovers2-bw.webp)
+![Can you match the crossover to its corresponding brand? The answers are below.](https://adrian3.com/imgs/aotld/crossovers2-bw.webp)
 
 ![How did you do? Now can you identify the model names?](https://adrian3.com/imgs/zombie-photos/crossovers2-bw-answers.webp)
 
@@ -72,9 +72,9 @@ Another powerful brand that has succumbed to the crossover craze is BMW. They ha
 
 Wow, one thing. That is the essence of branding, to associate one thing with your company. Would it surprise you to learn that BMW actually offers 71 models? That doesn't include their motorcycle division, either. With a dozen BMW crossovers to choose from it is surprising the fickle consumer can decide which "one thing" to buy.  
 
-![Although they claim to only make one thing, their product lineup contains over 70 products, and that doesn't count motorcycles. ](https://adrian3.com/imgs/aotld/images/bmw-lineup.webp)
+![Although they claim to only make one thing, their product lineup contains over 70 products, and that doesn't count motorcycles. ](https://adrian3.com/imgs/aotld/bmw-lineup.webp)
 
-![](https://adrian3.com/imgs/aotld/images/concept-cars.webp)
+![](https://adrian3.com/imgs/aotld/concept-cars.webp)
 
 Have you ever wondered why concept cars are so innovative, but the production models end up so bland? Many cars start out with bold ideas, only to become watered-down later. A great concept car is amazing because it represents a new idea. A concept car can capture people's imagination because people have never seen anything like it before. By the time the car that wowed fans at car shows hits the showroom floors the art seems to have been squeezed out of it. 
 

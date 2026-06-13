@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter4.webp)
+![](https://adrian3.com/imgs/aotld/chapter4.webp)
 
 I was a junior in high school when my art teacher, Mr. Schatz, shattered my understanding of art. The assignment sounded simple enough at first. "Create something that represents your family." That was all. The class was confused by these vague instructions, so we raised our hands with questions.  
 

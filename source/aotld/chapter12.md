@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter12.webp)
+![](https://adrian3.com/imgs/aotld/chapter12.webp)
 
 It is impossible to exist in our society without feeling the bite of zombies. It infects our mind and corrupts our best intentions. Fortunately, being bitten is not necessarily a death sentence.  
 

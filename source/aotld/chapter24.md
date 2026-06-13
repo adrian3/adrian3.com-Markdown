@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter24.webp)
+![](https://adrian3.com/imgs/aotld/chapter24.webp)
 
 Let's entertain the idea for a moment that this all works out. You use the ingredients of creativity to complete your masterpiece. You find inspiration, overcome resistance, and you conquer the zombies. Finally, you achieve success. What happens then?  
 

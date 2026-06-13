@@ -11,7 +11,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/imgs/aotld/images/chapter6.webp)
+![](https://adrian3.com/imgs/aotld/chapter6.webp)
 
 Worlds away from the art museum where visitors scratch their heads in confusion as they analyze a black and white photo of Duchamp's urinal, there is a public restroom. In this restroom is a hand dryer. There is no debate about whether or not this hand dryer is art, but there is definitely confusion. In an attempt to reduce user error, a restroom attendant has created a sign that reads,  
 
@@ -51,7 +51,7 @@ You would expect a device like this to get a universally positive reception. Ins
 
 No product is above criticism, but the thing that stands out in the commentary is just how viscously certain the commenters are that the Airblade is poorly designed. The zombies unapologetically appropriate the word "design" and use it against the designer. They attack the person who cares so deeply about this problem that he has invested his fortune and years of his life to improve. Some go as far as calling out James Dyson personally, accusing him of using marketing and style to inflate the price of his inferior products. This is the same condemnation that regularly gets directed at Apple products and the late Steve Jobs. There are few companies in the world, or company leaders, as committed to quality as Apple and Dyson and few as hated.  
 
-![](https://adrian3.com/imgs/aotld/images/dyson-airblade-dryer.webp)
+![](https://adrian3.com/imgs/aotld/dyson-airblade-dryer.webp)
 
 You can't completely blame the hatred of design visionaries on blind zombie tendencies. We have become so skeptical of marketing, so eager to discredit the ads that when something well-designed and legitimately well-marketed appears, our shortcut mechanism takes over. Ads have fooled us before, and we won't let ourselves get taken for the fool again. In a strange inversion of taste, we are hostile to things that are well-designed, and forgiving of things with obvious flaws that we have adapted to and accepted.  
 
