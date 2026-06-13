@@ -11,7 +11,7 @@ thumbnail:
 layout: 
 --->
 
-<img src="http://design.adrian3.com/temp/toy-hauler-2.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/toy-hauler-2.webp" class="full-width">
 
 # Lost in the desert and all I got was this lousy RV brochure
 
@@ -41,7 +41,7 @@ Yesterday I was at an RV dealership staging a photo shoot with my client's toy h
 
 That's why I was in the desert in August, to commit visual fraud in order to sell RVs. My photo will be on the cover of brochures promoting RVs so poorly made that when you load toys into them, the ramp permanently bends and the door won't close behind them. Yes, I photoshopped the bent ramps back to straight, too. Did you not believe me when I said [there's a special hell for designers like me][1]?
 
-<img src="http://design.adrian3.com/temp/toy-hauler-1.jpeg" class="full-width">
+<img src="https://adrian3.com/imgs/images/toy-hauler-1.webp" class="full-width">
 
 So I am not leaving the desert without a photo. Clearly I wasn't going to get the "lifestyle" shot I imagined but at least I could get some scenic views of sand dunes to plop the RV and dune buggy on. So I left my rental car, grabbed my camera, and walked into the blazing heat towards the sand dune in the distance.
 
