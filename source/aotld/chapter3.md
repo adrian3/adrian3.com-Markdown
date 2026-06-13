@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter3.png)
+![](https://adrian3.com/imgs/aotld/images/chapter3.webp)
 
 Contrary to popular belief, life doesn't start at conception or the instant of birth. Life begins at the moment when you discover your ability to create. This is not a philosophical, political, or religious statement, it is just an observation that helps us to differentiate between the living and the living dead. The living create. Zombies destroy life.  
 

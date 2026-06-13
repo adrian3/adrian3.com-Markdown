@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter17.png)
+![](https://adrian3.com/imgs/aotld/images/chapter17.webp)
 
 As an artist you will have one of two relationships with zombie institutions. You will either be on the outside trying to blaze a new path or on the inside hoping to bring about change from within. Insiders and outsiders both share a passion for their art and possess skills that allow them to advance their field, but they often fail because they can't overcome the crippling challenges inherent in challenging enormous zombie institutions.   
 
@@ -19,7 +19,7 @@ Passionate outsiders fight for revolution, creating alternatives to the institut
 Insiders work from within the zombie system to produce good work, winning small victories one battle at a time. Often, they are incapable of turning the ship around. 
 
 If we were to map the distribution of zombies and artists in relationship to an institution it would look like the chart on the next page. The black circles are zombies, the white dots are artists. The large gray circle represents an institution. The dots within the institution's circle are insiders, and the dots on the outside represent outsiders. The dotted circles represent art. Not all artists create art. Zombies can't create art, so they are never inside a dotted circle. Small packets of artists are creating art despite being surrounded by zombies. Some of the artists are insiders creating art within an institution, while other artists are outsiders.   
-![](https://adrian3.com/aotld/images/zombie-artist-distribution.jpg)
+![](https://adrian3.com/imgs/aotld/images/zombie-artist-distribution.webp)
 
 You can predict from this distribution map that it is going to be hard for the artists to protect their art. The zombies outnumber the artists and some are already swarming towards the art, attempting to destroy the dotted bubbles.  
 
@@ -28,7 +28,7 @@ As we will learn, each type of artist, insider and outsider, faces unique challe
 **Passionate Outsiders: Health Sherpa**  
 "We need to overhaul healthcare in America," is a good example of a spineless platitude. Talking about big problems in the world makes you sound noble, but it is usually just talk. The zombies feel safe knowing that because they are outsiders they will never have to actually work to backup their rhetoric. There are artists on the outside, however, who aren't content with just talking about the problem. They roll up their sleeves and work to make a meaningful difference.  
 
-![](https://adrian3.com/aotld/images/zombie-artist-distribution-health-sherpa.jpg)
+![](https://adrian3.com/imgs/aotld/images/zombie-artist-distribution-health-sherpa.webp)
 
 The launch of the healthcare.gov website was a disaster. With estimates for the cost of the website somewhere in the $600 million range it is the most expensive website ever created. President Barack Obama admits that,  
 
@@ -36,7 +36,7 @@ The launch of the healthcare.gov website was a disaster. With estimates for the 
 
 What would happen if a team of brilliant artists worked to fix the problem? What if these outsiders weren't working for a chunk of the $600 million, but because they were committed to doing meaningful work? The result would be something like thehealthsherpa.com.  
 
-![](https://adrian3.com/aotld/images/healthcare-website.jpg)
+![](https://adrian3.com/imgs/aotld/images/healthcare-website.webp)
 The front end design of healthcare.gov, created by Development Seed, never went online despite the disasterous launch
 
 The Health Sherpa was created by three artists named George Kalogeropoulos, Ning Liang, and Michael Wasser. Their website, healthsherpa.com, allows you to compare policies and get quotes, a basic expectation which the government site couldn't do at the time of launch. While not a full blown replacement for healthcare.gov these artists were able to create a better user experience in three days _for free_ than the government and a handful of contractors could with $600 million and much longer development time. The Health Sherpa website proudly boasts that it "is not affiliated with any lobby, trade group or government agency and has no political agenda." The Sherpa team creates art because they are passionate about helping people make better decisions through data.  
@@ -48,7 +48,7 @@ Unfortunately, the accomplishment of Health Sherpa, while amazing, can't be seen
 As an outsider, Health Sherpa is small, fast, and independent. Although they possess the exact skills needed to solve many of the problems that have crippled healthcare.gov, there is little hope that they will be able to bring about change as outsiders. Could the solution be found on the inside?  
 
 **Skilled Insiders: Development Seed**  
-![](https://adrian3.com/aotld/images/zombie-artist-distribution-development-seed.jpg)
+![](https://adrian3.com/imgs/aotld/images/zombie-artist-distribution-development-seed.webp)
 Every organization contains skilled insiders no matter how corrupt they may appear from the outside. It might not be visible to outsiders, but inside these zombie corporations are often skilled artists who are trying to make a difference. They are working at the source of the problem, directly applying their skills to the problems at hand. For these artists, the victories are small, the progress is slow, and the rewards aren't fame or fortune. They do meaningful work because they believe they can make a difference.  
 
 Insiders are a hard population to get information on because they are nearly invisible. They risk their careers if they speak publicly about the battles they are fighting.  

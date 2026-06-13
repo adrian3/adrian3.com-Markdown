@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter18.png)
+![](https://adrian3.com/imgs/aotld/images/chapter18.webp)
 
 We have all had terrible experiences using poorly designed websites. It is frustrating, but what can you do? The common response is to assume that the people who created the abomination are incompetent. A less common approach is to redesign the website yourself in your free time. Surprisingly, this is an increasingly popular pastime within the design community. A good example of passionate outsider syndrome is a growing trend where designers redesign prominent websites and post their improvements online. Whether this is a noble gesture or a publicity stunt is unclear, but could this be an effective way for an outsider to change a zombie organization?  
 
@@ -44,13 +44,13 @@ If there was any doubt about the crippling culture within American Airlines, it 
 
 In 2013 (four years after Mr. X was fired), American Airlines rolled out a new logo and brand identity that received mostly positive reviews. It is a pleasant logo, and is part of a smart identity system. Could it be that the struggling airline has turned a corner? No, the shiny new identity wasn't done in-house. It was outsourced to the powerhouse branding firm, FutureBrand—a company so skilled at crafting identities that they could rebrand the Nazi party as girl scouts and the general public would buy thin mints from Hitler himself. The new identity amounts to nothing more than frosting on a rotten cupcake.  
 
-![Former logo designed by Massimo Vignelli, 1968, New logo designed by FutureBrand, 2013](https://adrian3.com/aotld/images/american-airlines-logos.jpg)
+![Former logo designed by Massimo Vignelli, 1968, New logo designed by FutureBrand, 2013](https://adrian3.com/imgs/aotld/images/american-airlines-logos.webp)
 
 When you factor in a pending merger with US Airways, the brand refresh makes a little more sense. Why would you invest millions in rebranding your company if you are negotiating a merger which would result in the evaporation of your brand into a new identity? The zombies realize that the perceived value of the company will increase if they look like a more legitimate acquisition prospect. It isn't about _creating_ a strong brand, it is about _looking_ like a strong brand. It isn't an investment in design brought about by a cultural change within American Airlines. It is an investment in branding as a shortcut to legitimacy. The rebranding goes hand-in-hand with claims of profitability that stem from an equally sugary reading of their financial status. The new logo is just lipstick on a zombie.  
 
 Let's take a step back and see what this looks like from a distance. The design community rightly points out an object that is damaging to humanity and shows how the problem could be corrected. The organization contains a few humans that care deeply about the issue and have the skill to fix it. They work daily to improve the system from within, enduring the brain sucking culture that hampers their efforts. When the artist publicly defends their work, the zombies within the organization are alerted to the presence of the living being in their midst. The artist is quickly disemboweled and his corpse is expelled from the organization. The organization proceeds as if nothing has happened, limping along absorbing the blows of lost revenue and even bankruptcy. When things get bad, and seeing a chance at acquisition, the zombies turn not to the internal artists but to outside conmen. The website never gets fixed, the artist loses his job, and the company never addresses its real issues, and they proceed to poison humanity for years and years.  
 
-![](https://adrian3.com/aotld/images/zombie-artist-distribution-american-airlines.jpg)
+![](https://adrian3.com/imgs/aotld/images/zombie-artist-distribution-american-airlines.webp)
 
 The problem with the current state of affairs is not a shortage of designers. The problem is deeper than websites that deliver poor user experiences. The problem can't be solved by ranting on your blog. It can't be smoothed over with corporate Twitter accounts and lifeless tweets. It can't be whitewashed with a million dollar rebranding campaign. This is what the zombie apocalypse looks like. The plague has consumed the system making it impossible for integrity to prevail.  
 

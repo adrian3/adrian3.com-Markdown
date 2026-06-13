@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter22.png)
+![](https://adrian3.com/imgs/aotld/images/chapter22.webp)
 
 Days before Neil Armstrong became the first human to walk on the moon, the _New York Times_ published a retraction to a story published in 1920. Half a century earlier, an inventor named Robert Goddard was making headlines for his claims that it was possible to create a rocket capable of reaching the moon. Back then, few believed him. The _Times_ rejected Goddard's research saying, 
 
@@ -20,7 +20,7 @@ The _Times_ recited the belief of the day that the thrust which propels a rocket
 
 The Times was not alone in criticizing Goddard. The press was ruthless, dismissing his work and mocking him with the title "Moon Rocket Man." Even after _successful_ rocket tests, the headlines ridiculed him saying, "Moon Rocket Misses Target by 238,799 1/2 Miles."  
 
-![Robert Goddard posing in front of one of his rockets in 1911](https://adrian3.com/aotld/images/goddard.jpg)
+![Robert Goddard posing in front of one of his rockets in 1911](https://adrian3.com/imgs/aotld/images/goddard.webp)
 
 Had Goddard lived today, he would surely be the nightly punchline for late night comedians. Goddard would eventually be recognized as the founding father of modern rocketry despite nearly universal opposition during his life. How did he have the audacity to reject accepted truths and carry on in the face of such public criticism? 
 
@@ -52,7 +52,7 @@ _Goddard could play._ The term "rocket scientist" is a brainy stereotype, but Go
 
 > "To him it was seventh heaven to spend all day every day on rocket research... My husband was a highly gifted and a very very happy man because he was doing precisely what he wanted to do most in all the world."  
 
-![Robert Goddard, smiling as he demonstrates the principle of the gyroscope in order to convince the patent office of the legitimacy of his claims](https://adrian3.com/aotld/images/goddard2.jpg) 
+![Robert Goddard, smiling as he demonstrates the principle of the gyroscope in order to convince the patent office of the legitimacy of his claims](https://adrian3.com/imgs/aotld/images/goddard2.webp) 
 
 ---
 

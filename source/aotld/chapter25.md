@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter25.png)
+![](https://adrian3.com/imgs/aotld/images/chapter25.webp)
 
 When you arrive at the end of a zombie story, you can't exactly call it a happy ending. The hero returns to camp bloody, exhausted, and emotionally scarred. The fighting is over, for now. There has been so much destruction. We have come a long way, so let's summarize the ideas that have brought us this far.  
 

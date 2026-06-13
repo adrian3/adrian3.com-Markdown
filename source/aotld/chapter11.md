@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter11.png)
+![](https://adrian3.com/imgs/aotld/images/chapter11.webp)
 
 Zombies are drawn to the pulse of your creative spirit like a moth to a flame. They feel that their survival is threatened by your life force. Your desire to innovate is not something they can passively ignore. No, they need to destroy it. This seems like a strange reaction, doesn't it? Why would a zombie be so unwilling to invest any energy into creating their own art, and yet when it comes to destroying your art they suddenly have an unstoppable surge of aggression?  
 

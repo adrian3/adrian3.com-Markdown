@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter5.png)
+![](https://adrian3.com/imgs/aotld/images/chapter5.webp)
 
 When you hear me use the word "art" you might have an instinctual eye roll reaction. You are not alone. Step inside the modern wing of any art museum and you will probably hear someone saying, "How is that art?" Despite thousands of years of artistic tradition we are still debating art and its role in society. Art has evolved into something that is at best misunderstood and at worst despised by the general public. How did we get here?  
 
@@ -36,7 +36,7 @@ When the common person became the subject of art, the popularity and controversy
 As the popularity of art increased, artist celebrities emerged. Individual styles grew out of the need for artists to differentiate themselves from their competitors. The subject matter was still important, but now how it was painted and who it was painted by was also important. The priority of art shifted slightly away from realism, because absolute realism leaves little room for personal style. Artists embraced looser brush strokes, personal subject matter, unique color theories, and selective attention to detail to create one-of-a-kind, ego-driven styles. Thanks to the advent of style, Art was sought after as much for the brand of the artist who created it as it was for the merit of the work itself.  
 
 **Impressionism**  
-![Waterloo Bridge, London, Claude Monet, 1903](https://adrian3.com/aotld/images/monet.jpg)
+![Waterloo Bridge, London, Claude Monet, 1903](https://adrian3.com/imgs/aotld/images/monet.webp)
 
 When we observe the soft, flowery paintings of the impressionists it is hard to appreciate just how subversive this movement actually was. Impressionists appalled their peers by applying paint as loosely as they could. Colors weren't pre-mixed on palettes, but slopped right on the canvas where it was mixed by the eye of the viewer. In a sense, it was artistic heresy because they were challenging the very idea of what a painting was.
 
@@ -45,16 +45,16 @@ To the impressionists, the subject matter wasn't just a flower or a building, th
 Recognizing the subversion of the new way of painting, the zombie power structure of the art world prevented the impressionist's work from being displayed side-by-side with the anointed work of the traditional artists of the time. The impressionists broke through not by critical acclaim or acceptance into the Salon, but by subverting the art world further when they displayed their work in an underground art show of their own.  
 
 **Cubism**  
-![Les Demoiselles d'Avignon, Pablo Picasso, 1907](https://adrian3.com/aotld/images/picasso.jpg)
+![Les Demoiselles d'Avignon, Pablo Picasso, 1907](https://adrian3.com/imgs/aotld/images/picasso.webp)
 
 The shift away from realism was completed by the cubists who embraced abstraction. Expanding the ideas of the Impressionists who broke down the painting into dots and splashes of color, the Cubists broke it down even further, reducing objects to flat shapes and fragments. Cubists gave themselves the freedom to paint objects from different points of view within the same painting. Realism disappeared almost entirely leaving only a hint of what the subject actually looked like. Ignoring the mandate of the past to accurately replicate reality, abstract artists  thrived by subverting the definition of art and deconstructing notions of what art was.  
 
 **Abstract Expressionism**  
 Careful brushwork hides the artist, but flinging paint from a stick is a technique that makes marks as unique as the artists–or so the abstract expressionists believed. Artists like Jackson Pollock pushed ego into the spotlight making their individual expression the subject matter. The way that the artist applied his paint was more important than anything else. The artist’s expression was what mattered. Abstract Expressionism was a projection of the artist's ego directly on the canvas. Whether it was huge canvases of color or paint flung spatters, the technique was owned by the artist and that alone was the subject matter. The artist had become the art.  
 
-![Jackson Pollock's painting technique (photo by Hans Namuth)](https://adrian3.com/aotld/images/jackson-pollock.jpg)
+![Jackson Pollock's painting technique (photo by Hans Namuth)](https://adrian3.com/imgs/aotld/images/jackson-pollock.webp)
 
-![Number-1A, Jackson Pollock, 1948](https://adrian3.com/aotld/images/pollock-painting.jpg)
+![Number-1A, Jackson Pollock, 1948](https://adrian3.com/imgs/aotld/images/pollock-painting.webp)
 
 **Art Theory**  
 The new art of the expressionists, cubists, surrealists, and  other idea-driven movements were confusing to an audience that expected art to be a primarily visual experience. With the appreciation of art increasingly having less and less to do with observable visual rationality, there grew a need for explanation of the thinking behind the new modern art. Art critics stepped in to fill the void by inventing art theory. Technique was no longer enough. If art was to be taken seriously, it also needed a theory as compelling as the artwork it described. theory became more important than the artwork. Tom Wolfe sarcastically lamented,
@@ -74,7 +74,7 @@ So no, the zombies were usually not the artists, they were the outsiders looking
 **Pop Art**  
 Rounding a corner of the St. Louis Art Museum as a boy, I distinctly remember coming face-to-face with a canvas filled with Campbell's soup cans. I thought maybe I was lost. Had I stumbled on a gallery of children's artwork? I read the name "Andy Warhol" printed on a tiny board pinned next to the painting. My shock was not unlike the reaction the art world had when the Pop Artists appeared in the 1960's. 
 
-![100 Cans, Andy Warhol, 1962](https://adrian3.com/aotld/images/andy-warhol.jpg)
+![100 Cans, Andy Warhol, 1962](https://adrian3.com/imgs/aotld/images/andy-warhol.webp)
 
 Pop Art wasn't about realism or artistic expression. Its subject matter wasn't holy material of devotion, but rather objects pulled from the newspapers, comics, advertisements, and store shelves. Pop Art promoted indifference to artistic technique, instead embracing commercial themes and industrial processes. Andy Warhol chose commercial printing techniques because it freed him from the burden of personal expression. It wasn't even important that the artist create the work themselves, and indeed Warhol hired others to help produce his paintings for him. Personality-exposing brush strokes were replaced by giant mechanical dot matrixes. The flat colors in a Lichtenstein painting have more in common with wallpaper than the earlier romantic flatness of abstract painters.  
 
@@ -83,7 +83,7 @@ Pop Art was understandably controversial. Since the beginning of time, art had b
 Despite the blasphemy, or perhaps because of it, the popularity of art remained high, perhaps higher than ever. Pop Art was accessible in a way that the more cerebral alternatives weren't. The "enlightened" appreciated Pop because it made them feel superior to those who weren't in on the joke. The rest of us liked the fact that you didn't need a philosophy degree to enjoy the fun, bright, playful pieces of art. Andy Warhol just stepped back and watched, careful not to break the illusion of either audience. 
 
 **Conceptual Art**  
-![Fountain, Marcel Duchamp, 1917 (photo by Alfred Stieglitz)](https://adrian3.com/aotld/images/duchamp.jpg)
+![Fountain, Marcel Duchamp, 1917 (photo by Alfred Stieglitz)](https://adrian3.com/imgs/aotld/images/duchamp.webp)
 
 The notion that at its core art is an idea doesn't fit nicely on a timeline of art history. From Dada in the early 20th century, through cubism, within the art theory-driven abstractionists, and powering the pop artists, concept was king.  
 
@@ -110,7 +110,7 @@ According to the new rules, if you don't like something it is probably good. If 
 
 Today the only art to make headlines are the ideas that are so terrible that only fools have the audacity to execute them. The worse ideas you have, the better your chances of getting noticed and the more likely you are to be successful. Examples of this include Chris Ofili, whose _Holy Virgin Mary_ uses elephant dung to depict Mary surrounded by images of female genitalia cut from pornographic magazines. Shooting yourself can be art (Chris Burden). Squirting paint out your eyes through your tear glands (Leandro Granato) is art. In 2001, Martin Creed won the Turner Prize for _The Lights Going On and Off,_ which consisted of an empty room in which, you guessed it, the lights go on and off. There is no nobility in these ideas. Postmodern art deconstructs the ideas of art indiscriminately, flipping rationality on its head.  
 
-![Shoot, Chris Burden, 1971](https://adrian3.com/aotld/images/chris-burden.jpg)
+![Shoot, Chris Burden, 1971](https://adrian3.com/imgs/aotld/images/chris-burden.webp)
 
 The general public's response to this art is either outrage from those who still see art as an important cultural component or a shrug from everyone else who dismiss art as irrelevant. Outside of artist circles, art is one of three things. For some it is a relic of the past that you can honor by visiting museums to mourn the loss of a long-dead civilization. For others, art compliments their anarchist world view, praised as a tool that allows you to subvert art even further, continuing to push art toward irrelevance. For everyone else, art is something that you disregard completely because you believe it is disconnected from the forward progress of society. These three views leave little room for non-zombie artists.    
 
@@ -138,7 +138,7 @@ The non-zombie artist is in an impossible position. Zombies have an excuse to re
 
 The transformation from artist to zombie is complete. There are four forces that cause art to have cultural significance. They are skill, popularity, individualism, and theory. Skill is mastery of technical ability. Popularity is the ability of art to resonate with the audience. Individualism is the extent that a person's character affects the work. Theory is the recognition of the additional meaning that original ideas contribute to a work. The rise and fall of art as a societal force can be seen by charting these four trend lines.  
 
-![](https://adrian3.com/aotld/images/art-history-chart.jpg)
+![](https://adrian3.com/imgs/aotld/images/art-history-chart.webp)
 
 Starting on the left in Pre-Renaissance times, the humble beginnings of the cave painter didn't require complex theories. Art was pushed forward by the novelty of new techniques.
 
@@ -154,7 +154,7 @@ The chart ends and we enter today's art landscape. Art has never been less popul
 
 So today the prototype artist has emerged. He is anonymous, he shuns popularity and the spotlight, his technique is speed and stealth, and above all he exists solely in the realm of conceptual ambiguity. The epitome of this ideal is an anonymous artist going by the name Banksy. Banksy's art isn't made for museums. It is a combination of graffiti, performance art, and anarchy. He balances pop culture, social commentary, wit, subversion, and awe-inducing courage—all outside the incestuous fine art system.  
 
-![(Graffiti), Bansky](https://adrian3.com/aotld/images/bansky.jpg)
+![(Graffiti), Bansky](https://adrian3.com/imgs/aotld/images/bansky.webp)
 
 Despite the low impact of today's art, it is hard to have anything but respect for Banksy or similar artists like Shepard Fairey. While their work is fascinating, the question we must ask is does this work change the world in any meaningful way? It blends nicely alongside the tabloids and clickbait of internet culture. It may make headlines, but does it change anything? It is entertaining, but does it push humanity forward? Is this the type of artist we want to emulate, or is it possible for us to be artists who exist outside the hopeless endpoint illustrated in this timeline?  
 

@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter13.png)
+![](https://adrian3.com/imgs/aotld/images/chapter13.webp)
 
 What does it feel like to be alive? I am not talking about the cartoon version of ourselves that is always smiling on Facebook.  Take a second to look at the real you. We spend so much time going through the motions, pretending to be alive, that I wonder if we  really know how to answer that question.  
 

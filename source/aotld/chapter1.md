@@ -11,7 +11,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter1.png)
+![](https://adrian3.com/imgs/aotld/images/chapter1.webp)
 
 Strange as it may seem, this is a book about creativity. It is a guide for how to hold on to the living parts of your brain. I have been scraping together content for this book for years. No, that's a lie. Truthfully, I have been avoiding writing this book for years. Like everything that is worth doing, I have resisted it. Call it procrastination. Call it fear. Finally, I sat down and started writing. To my surprise, the book that was hiding inside me was about zombies. Who knew?  
 
@@ -19,17 +19,17 @@ I have no idea why zombies turned out to be the thing that unified my theories a
 
 Yes, I love zombie movies, TV shows, Plants vs. Zombies, and anything zombie-related. I have been sucked in by the recent explosion of zombie pop culture. It's everywhere. 
 
-![](https://adrian3.com/aotld/images/zombie-searches.jpg)
+![](https://adrian3.com/imgs/aotld/images/zombie-searches.webp)
 
 It is hard to pinpoint exactly what sparked the zombie craze, but at the turn of the century, the pulse of zombie popularity started to beat. Zombie fanaticism began with movies. In the 90's only 35 zombie movies were made, but that number ballooned to 171 in the 2000's. There were 31 zombie movies made in 2008 alone. Web searches for the term "zombie" echo this trend, as a Google trend graph shows the beginning of a spike starting in 2009.    
 
 Today, zombie-themed events generate massive participation. Many cities host annual zombie walks that produce thousands of participants. While the Guinness record is officially 8,027 attendees, other sources claim the Twin Cities 2012 walk was the largest zombie gathering, with estimates of over 30,000 zombie-clad fans.  
 
-![Zombie walks generate thousands of participants.](https://adrian3.com/aotld/images/zombie-walk.jpg)
+![Zombie walks generate thousands of participants.](https://adrian3.com/imgs/aotld/images/zombie-walk.webp)
 
 Step on any college campus and you might stumble into a game of Humans vs. Zombies, or HvZ as the players call it. HvZ is a week-long game of tag involving Nerf guns where students are divided into humans or zombies in a fight for survival. Over 650 campuses have participated in week-long HvZ games each of which can involve hundreds of students.  
 
-![Map showing campuses where HvZ has been played.](https://adrian3.com/aotld/images/humans-vs-zombies.jpg)
+![Map showing campuses where HvZ has been played.](https://adrian3.com/imgs/aotld/images/humans-vs-zombies.webp)
 
 The enthusiasm of zombie fans and the massive participation that zombie events generate has even caught the eye of government program organizers. Simulated zombie events are being used by the Centers for Disease Control and Prevention to train disaster response workers. It may seem silly, but the participation level, public awareness, and general enthusiasm for a zombie simulation greatly exceeds that of a more traditional disaster.  
 

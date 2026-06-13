@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter2.png)
+![](https://adrian3.com/imgs/aotld/images/chapter2.webp)
 
 What if humanity's capacity to innovate disappeared? I hate to be the bearer of bad news, but there has been an outbreak of a new virus. It has spread across the planet, infecting anyone who comes in contact with it. It passes from person-to-person corrupting mind after mind. Entire races of vibrant, creative people have become ill. The future of our species is in danger.  
 
@@ -53,7 +53,7 @@ This creative/non-creative division is a dangerous myth that I need to debunk up
 
 Let me be clear. When I talk about zombies I am not talking about non-creatives. Everyone is capable of creativity. I refuse to acknowledge this creative vs. non-creative categorization as a legitimate explanation of human behavior. It isn't accurate, and it gives creativity a mystical quality that clouds our perceptions about what is required to make things.
 
-![](https://adrian3.com/aotld/images/human-or-zombie.jpg)
+![](https://adrian3.com/imgs/aotld/images/human-or-zombie.webp)
 
 Somewhere along the line the word "creative" got imbued with special powers. Despite the fact that our culture celebrates creativity more than any time in history, art is not necessarily a label that we eagerly assign to the meaningful work we do. It is a word loaded with mysterious associations, burdened by misunderstanding, and exaggerated by dangerous stereotypes. 
 

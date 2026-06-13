@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter23.png)
+![](https://adrian3.com/imgs/aotld/images/chapter23.webp)
 
 As anyone who has been defeated by a blank screen or canvas knows, the desire to create art isn't enough. An abundance of space, time, trust, and play can't guarantee success, either. You also need inspiration, the spark of an idea worth pursuing. Without it you can't begin. Waiting around for it to hit you can be excruciating.    
 

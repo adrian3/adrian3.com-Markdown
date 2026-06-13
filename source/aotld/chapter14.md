@@ -10,7 +10,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter14.png)
+![](https://adrian3.com/imgs/aotld/images/chapter14.webp)
 
 Do you consider yourself to be a right or left-brained person? The popular model states that the right half of the brain controls creativity and the left hemisphere is responsible for analytical tasks. Just as some people are right or left-handed, people believe that they also have a dominant brain type. Could this be the differentiator between human and zombie? The answer, surprisingly, is no. The right vs. left-brain theory is an enduring myth that doesn't hold up to scrutiny.  
 
@@ -44,7 +44,7 @@ In other words, if you work harder than any other rational human, your art won't
 
 Georges Seurat knew this when he painted over 6 million dots to create _A Sunday Afternoon on the Island of La Grande Jatte_.  
 
-![A Sunday Afternoon on the Island of La Grande Jatte_, Georges Seurat, 1884–1886](https://adrian3.com/aotld/images/seurat.jpg)
+![A Sunday Afternoon on the Island of La Grande Jatte_, Georges Seurat, 1884–1886](https://adrian3.com/imgs/aotld/images/seurat.webp)
 
 James Dyson produced 5,127 prototypes before he created his famous vacuum. 
 

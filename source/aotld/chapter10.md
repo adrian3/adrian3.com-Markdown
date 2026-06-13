@@ -11,7 +11,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter10.png)
+![](https://adrian3.com/imgs/aotld/images/chapter10.webp)
 
 Zombies have no taste. I don't mean taste as in flavor, I mean taste as in "she has great taste in music." This seems like a weird thing to pinpoint as a difference between the living and zombies. On the surface this seems like a pretty squishy concept. It has an "I am better than you" feeling because we have a tendency to look down on people who don't agree with our preferences. Taste seems arbitrary. This week you might like rap music, but next week you might prefer country music. You can swear that country music is better than rap, but what we are really arguing about is our preferences, not taste. Good taste is a preference formed by educated observation.  
 

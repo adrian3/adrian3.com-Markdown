@@ -10,13 +10,13 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter8.png)
+![](https://adrian3.com/imgs/aotld/images/chapter8.webp)
 
 The previous chapter was violent, and perhaps expected in a zombie-themed book. In certain situations, aggression might be warranted, but the focus of our energy should be on creating art, rather than destroying opposition to it. A human has a limited amount of energy. Being efficient with our attention increases the potency of our actions. 
 
 By forfeiting the press coverage that more bloody encounters may attract, deliberate avoidance of tempting distractions will repay us with more productive output. This approach is similar to chess in that it makes for a dull spectator sport to all but the most dedicated fans. Not all chess games are boring, however. Certain legendary encounters go down in history with nicknames like, "The Immortal Game" or "The Evergreen Game." The annotation of noteworthy games are sprinkled with exclamation marks that seem out of place. Certain moves are so outrageous that the commentators can't resist using double punctuation marks of exuberance. I find it inspiring that even in a centuries old game, a game so explicitly defined by rules, that it is still possible to cause delight and surprise in observers.  
 
-![17.Nf6+ !! This game between Adolf Anderssen and Jean Dufresne in 1852  is nicknamed the “Evergreen Game” because with this sacrifice Anderssen forces checkmate in 14 moves.](https://adrian3.com/aotld/images/chess-game.jpg)
+![17.Nf6+ !! This game between Adolf Anderssen and Jean Dufresne in 1852  is nicknamed the “Evergreen Game” because with this sacrifice Anderssen forces checkmate in 14 moves.](https://adrian3.com/imgs/aotld/images/chess-game.webp)
 
 Great chess players have something merely good players lack. What is it that these chess players possess that allows them to produce art in a game notorious for being boring? Most people think it involves being able to see more moves ahead than the opponent. That's not the difference. The secret is that great players make more wrong moves than their opponents. They are able to entertain wrong moves longer than their opponents and see where tradition, training, and experience fails. In other words, they don't rely on shortcuts. Traditional chess skills are built around shortcuts because, like so many aspects of life involving pattern recognition, it is easier to follow simple rules than to create new ideas. Chess students memorize openings, practice combinations, make calculated exchanges, and learn to recognize the tiniest advantages in positions.  
 
@@ -34,7 +34,7 @@ Risk aversion cripples our courage. Instead of daring, thrilling duals, our enco
 
 What can we do to train ourselves to identify the difference between bad moves and moves that just look bad but prove to be correct in the end? It can be tempting to rely on our access to infinite computing power as a substitute for mental strain. The stats and research that can be so reassuring too often ends up being flawed. We are so used to trusting our machines that we stop questioning conventional wisdom. We need to learn to be open to ideas that seem wrong. We need to train ourselves that the uncomfortable feeling that accompanies a new idea is not the danger, the danger is not learning everything we can from the new ideas.  
 
-![It is black's turn, therefore black is in zugzwang because any move results in a losing position.](https://adrian3.com/aotld/images/chess-zugzwang.jpg)
+![It is black's turn, therefore black is in zugzwang because any move results in a losing position.](https://adrian3.com/imgs/aotld/images/chess-zugzwang.webp)
 
 Are you familiar with the term "zugzwang"? This word describes a chess situation where you are forced to move even though any movement will weaken your position. It doesn't happen very often because there is almost always _something_ you can do to improve your position. When caught in zugzwang it would be better if you could skip your turn and keep things as they are. Unfortunately, the rules of chess dictate that you must move, so your only option is to fall on your own sword.  
 
@@ -52,7 +52,7 @@ Once we manage to escape zugzwang, when our minds have absolved themselves from 
 
 In Japan there is an art called Kintsugi. It is the art of repairing broken pottery. The tradition is that broken pots are not discarded, rather the cracks are filled with gold resin. Instead of being seen as flaws that should be hidden, the fault lines of the vessel are emphasized, celebrated, and immortalized with precious metals. The pieces are more beautiful for having been broken.  
 
-![An example of Kintsugi (golden repair)](https://adrian3.com/aotld/images/kintsugi.jpg)
+![An example of Kintsugi (golden repair)](https://adrian3.com/imgs/aotld/images/kintsugi.webp)
 
 Value is not a process of mass-producing flawless clones, but the experience of exploring the rough-edges of failure. Here, where the damage produces scars, we typically obscure the mistakes, or discard the experience all together. These veins of weakness are not flaws, they are opportunities for beauty.  
 

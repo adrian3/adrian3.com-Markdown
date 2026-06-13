@@ -11,7 +11,7 @@ membersonly: true
 
 ---
 
-![](https://adrian3.com/aotld/images/chapter7.png)
+![](https://adrian3.com/imgs/aotld/images/chapter7.webp)
 
 We are about to enter the domain of the professional. The workplace is infested with zombies. If life were a movie, our zombie problem would be easier to solve. With enough weapons and ammo, removing a zombie infestation with force could be possible. Could violence be the answer? There is a place not too far from here that is crawling with walkers where we can test this theory.  
 

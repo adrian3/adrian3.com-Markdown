@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 
-![](https://adrian3.com/aotld/images/art-of-the-living-dead-text.jpg)
+![](https://adrian3.com/imgs/aotld/images/art-of-the-living-dead-text.webp)
 
 by Adrian Hanft III
 
