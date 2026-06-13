@@ -51,4 +51,4 @@ Thanks for reading. I write weekly, adding a fresh coat of paint to my world eve
 [2]:	http://publicart.artscene.org/tour-de-lincoln/
 [3]:	http://www.cityofloveland.org/departments/cultural-services/art-in-public-places/current-collection/transformations
 
-[image-1]:	https://adrian3.com/imgs/images/fire-hydrant.gif
+[image-1]:	https://adrian3.com/imgs/gifs/fire-hydrant.gif

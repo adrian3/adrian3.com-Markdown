@@ -108,7 +108,7 @@ This is basically what we would expect based on the abilities of the athletes fr
 
 The chart below shows the change in finish time distribution from year to year. While the clusters mostly remain consistent, 2018 shows a wider spread of runners. I suspect this is most likely a result of the weather since the conditions for the race were so difficult in 2018.
 
-![](https://adrian3.com/imgs/images/boston/Finish-Times-By-Age-And-Gender.gif)
+![](https://adrian3.com/imgs/gifs/finish-times-by-age-and-gender.gif)
 
 It is also interesting to see how many people land on the right side of the 4:00 finish time line. Huge numbers of people seem to be failing to hit their qualifying time on race day. Why might this be? And can the answer be revealed by the data? Stay tuned for Part 2 where I try to answer those questions and dig deeper into the story behind the data of the Boston Marathon.
 

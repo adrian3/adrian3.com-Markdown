@@ -244,7 +244,7 @@ If you would like to learn more or verify my sources, here are links to addition
 [image-2]:	https://adrian3.com/imgs/images/mccain/thrust-control.webp
 [image-3]:	https://adrian3.com/imgs/images/mccain/unganged.webp
 [image-4]:	https://adrian3.com/imgs/images/mccain/checkboxes.webp
-[image-5]:	https://adrian3.com/imgs/images/mccain/bridge.gif
+[image-5]:	https://adrian3.com/imgs/gifs/bridge.gif
 [image-6]:	https://adrian3.com/imgs/images/mccain/mccain-timeline.webp
 [image-7]:	https://adrian3.com/imgs/images/mccain/steering-control.webp
 [image-8]:	https://adrian3.com/imgs/images/mccain/multi-screen-control.webp
