@@ -319,6 +319,31 @@ button:active {
   transform: scale(0.96);
 }
 
+.button {
+  background: var(--ade-primary);
+  border: 1px solid var(--ade-primary);
+  border-radius: var(--ade-radius);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ade-font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  gap: var(--ade-space-2);
+  line-height: 1;
+  min-height: 44px;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus-visible {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 label {
   color: var(--ade-ink);
   display: block;

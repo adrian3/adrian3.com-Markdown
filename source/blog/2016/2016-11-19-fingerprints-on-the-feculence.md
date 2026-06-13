@@ -82,27 +82,27 @@ This is part 13 in my ongoing series called, _A Special Hell for Designers Like 
 
 1. [Scratching the Surface.](https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613?source=linkShare-f82ce6c25013-1481400462)
 
-2. [Got a brand problem? Put a bird on it.](2016-01-30-Got-a-brand-problem-Put-a-bird-on-it.html)
+2. [Got a brand problem? Put a bird on it.](2016-01-30-got-a-brand-problem-put-a-bird-on-it.html)
 
-3. [Death by Toothbrush](2016-02-06-Death-by-Toothbrush.html)
+3. [Death by Toothbrush](2016-02-06-death-by-toothbrush.html)
 
-4. [Stop Dribbbling, Get a Design Education at Costco](2016-02-20-Stop-Dribbbling-Get-a-Design-Education-at-Costco.html)
+4. [Stop Dribbbling, Get a Design Education at Costco](2016-02-20-stop-dribbbling-get-a-design-education-at-costco.html)
 
-5. [Ad-diction](2016-03-05-Special-Hell-5-Ad-Addiction.html)
+5. [Ad-diction](2016-03-05-special-hell-5-ad-addiction.html)
 
 6. [The Dymaxion Man](https://uxdesign.cc/special-hell-6-dymaxion-man-13a3cb1023aa#.j6qoba4kc)
 
-7. [Stasis Crackers](2016-04-02-Special-Hell-7-Stasis-Crackers.html)
+7. [Stasis Crackers](2016-04-02-special-hell-7-stasis-crackers.html)
 
-8. [Telepathy Blockers](2016-04-11-Special-Hell-8-Telepathy-Blockers.html)
+8. [Telepathy Blockers](2016-04-11-special-hell-8-telepathy-blockers.html)
 
-9. [Pissing in the Wind](2016-05-07-Pissing-in-the-Wind.html)
+9. [Pissing in the Wind](2016-05-07-pissing-in-the-wind.html)
 
-10. [Font Blocking, Invisible Words, and Flames of Shame](2016-07-09-Font-Blocking-Invisible-Words-and-Flames-of-Shame.html)
+10. [Font Blocking, Invisible Words, and Flames of Shame](2016-07-09-font-blocking-invisible-words-and-flames-of-shame.html)
 
-11. [My First Golden Combover](2016-08-13-My-First-Golden-Combover.html)
+11. [My First Golden Combover](2016-08-13-my-first-golden-combover.html)
 
-12. [Color theory scams](2016-10-15-Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With-Color.html)
+12. [Color theory scams](2016-10-15-color-theory-scams-exposing-how-designers-manipulate-you-with-color.html)
 
 * * *
 

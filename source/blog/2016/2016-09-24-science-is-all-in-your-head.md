@@ -17,11 +17,11 @@ layout:
 
 * * *
 
-[Why do people respond to art differently?](2016-09-10-Recalibrating-Your-Pattern-Recognition-Machine.html)
+[Why do people respond to art differently?](2016-09-10-recalibrating-your-pattern-recognition-machine.html)
 
-[Why has this election created the illusion of stupid people?](2016-09-04-The-Pattern-Recognition-Machine.html)
+[Why has this election created the illusion of stupid people?](2016-09-04-the-pattern-recognition-machine.html)
 
-[If our brains _aren’t_ like computers, what is the alternative?](2016-09-17-Becoming-Bobblehead-Buddha.html)
+[If our brains _aren’t_ like computers, what is the alternative?](2016-09-17-becoming-bobblehead-buddha.html)
 
 If I am doing my job my last three stories made you uncomfortable. Nobody likes to be told their brain is broken and my answers to these questions weren’t exactly textbook.
 

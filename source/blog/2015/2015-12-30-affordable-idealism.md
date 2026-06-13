@@ -49,5 +49,5 @@ How do you afford your idealism? Balance your eccentric point of view with the p
 
 * * *
 
-Thanks for reading. If you made it this far, you should check out [my other crazy ideas](https://medium.com/@ade3). And don’t get me started about [my book](2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html). *Stay creative.*
+Thanks for reading. If you made it this far, you should check out [my other crazy ideas](https://medium.com/@ade3). And don’t get me started about [my book](2015-11-03-25-questions-you-didnt-know-you-needed-art-of-the-living-dead-to-answer.html). *Stay creative.*
 

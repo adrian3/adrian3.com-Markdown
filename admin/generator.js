@@ -136,6 +136,79 @@ function findPlaceholderNames(markdownSource) {
   return names;
 }
 
+function findWrapperComponentNames(markdownSource, componentsByName) {
+  const names = new Set();
+  const pattern = /<(?!\/)([A-Za-z][A-Za-z0-9_.-]*)([^>]*)>/g;
+  let match;
+  while ((match = pattern.exec(markdownSource))) {
+    const componentEntry = componentsByName.get(match[1]);
+    if (componentEntry?.data.wrapper === true) {
+      names.add(match[1]);
+    }
+  }
+  return names;
+}
+
+function findIncludePageRefs(markdownSource, currentRel, pageEntriesByRel) {
+  const refs = new Set();
+  const pattern = /<include([^>]*?)\s*\/>/g;
+  let match;
+  while ((match = pattern.exec(markdownSource))) {
+    const attrs = parseShortcodeAttrs(match[1] || "");
+    const pageRef = typeof attrs.page === "string" ? attrs.page.trim() : "";
+    if (!pageRef) continue;
+    const target = resolveIncludedPageEntry(pageRef, currentRel, pageEntriesByRel);
+    if (target) refs.add(target.rel);
+  }
+  return refs;
+}
+
+function normalizeIncludePageRef(pageRef) {
+  return String(pageRef || "")
+    .trim()
+    .replace(/\\/g, "/")
+    .replace(/^\/+/, "");
+}
+
+function candidateIncludeRelPaths(pageRef, currentRel) {
+  const normalized = normalizeIncludePageRef(pageRef);
+  if (!normalized) return [];
+
+  const candidates = [];
+  const seen = new Set();
+  const push = rel => {
+    const cleaned = path.posix.normalize(rel).replace(/^\.\//, "");
+    if (!cleaned || seen.has(cleaned)) return;
+    seen.add(cleaned);
+    candidates.push(cleaned);
+  };
+
+  const currentDir = currentRel ? path.posix.dirname(currentRel) : "";
+  if (currentDir) {
+    push(path.posix.join(currentDir, normalized));
+    if (!path.posix.extname(normalized)) {
+      push(path.posix.join(currentDir, `${normalized}.md`));
+      push(path.posix.join(currentDir, `${normalized}.markdown`));
+    }
+  }
+
+  push(normalized);
+  if (!path.posix.extname(normalized)) {
+    push(`${normalized}.md`);
+    push(`${normalized}.markdown`);
+  }
+
+  return candidates;
+}
+
+function resolveIncludedPageEntry(pageRef, currentRel, pageEntriesByRel) {
+  for (const rel of candidateIncludeRelPaths(pageRef, currentRel)) {
+    const entry = pageEntriesByRel.get(rel);
+    if (entry) return entry;
+  }
+  return null;
+}
+
 function wrapComponentHtml(html, data = {}) {
   const attrs = [];
   if (data.id) attrs.push(`id="${escapeHtml(String(data.id))}"`);
@@ -181,6 +254,87 @@ function renderPageList(folder, contentEntries, currentRel) {
   return `<ul>${items}</ul>`;
 }
 
+function injectContentSlot(html, contentHtml, label = "component") {
+  return injectTemplate(html, { content: contentHtml }, [], label);
+}
+
+function expandRawComponentsInHtml(html, componentsByName, variables = {}, context = {}) {
+  return html.replace(/<([A-Za-z][A-Za-z0-9_.-]*)([^>]*?)\s*\/>/g, (match, name, attrStr) => {
+    const componentEntry = componentsByName.get(name);
+    if (componentEntry && componentEntry.data.raw === true) {
+      const attrs = parseShortcodeAttrs(attrStr);
+      return renderComponentHtml(
+        componentEntry,
+        componentsByName,
+        { ...variables, ...attrs },
+        new Set([name]),
+        {
+          currentRel: context.currentRel || componentEntry.rel,
+          pageEntriesByRel: context.pageEntriesByRel,
+          warnings: context.warnings,
+        }
+      );
+    }
+    return match;
+  });
+}
+
+function expandWrapperComponentsInHtml(html, componentsByName, variables = {}, context = {}) {
+  const wrapperNames = [...componentsByName.entries()]
+    .filter(([, entry]) => entry.data.wrapper === true)
+    .map(([name]) => name);
+
+  if (!wrapperNames.length) return html;
+
+  let output = html;
+  let changed = true;
+
+  while (changed) {
+    changed = false;
+
+    for (const name of wrapperNames) {
+      const pattern = new RegExp(
+        `<${escapeRegExp(name)}([^>]*)>([\\s\\S]*?)</${escapeRegExp(name)}>`,
+        "g"
+      );
+      output = output.replace(pattern, (match, attrStr, innerHtml) => {
+        const componentEntry = componentsByName.get(name);
+        if (!componentEntry || componentEntry.data.wrapper !== true) return match;
+        changed = true;
+        const attrs = parseShortcodeAttrs(attrStr);
+        return renderComponentHtml(
+          componentEntry,
+          componentsByName,
+          { ...variables, ...attrs },
+          new Set([name]),
+          context,
+          innerHtml
+        );
+      });
+    }
+  }
+
+  return output;
+}
+
+function renderBodyHtml(source, componentsByName, variables = {}, context = {}, componentStack = new Set(), includeStack = new Set(), raw = false) {
+  const includeExpanded = expandIncludeShortcodes(source, componentsByName, variables, context, componentStack, includeStack);
+  const shortcodeExpanded = expandShortcodes(includeExpanded, componentsByName, variables, componentStack, context);
+  if (raw) {
+    return shortcodeExpanded
+      .replace(/\{\{\s*([A-Za-z0-9_.-]+)\s*\}\}/g, (match, key) => (
+        Object.hasOwn(variables, key) ? String(variables[key]) : match
+      ))
+      .trim();
+  }
+  return expandRawComponentsInHtml(
+    renderMarkdown(resolveReferenceLinks(shortcodeExpanded)).replace(/\n+/g, ""),
+    componentsByName,
+    variables,
+    context
+  );
+}
+
 // Expands built-in shortcodes (e.g. <page-list />) that require per-page context.
 // Run this as a final pass on the fully assembled HTML so shortcodes that survived
 // inside pre-rendered component HTML are still resolved correctly.
@@ -193,6 +347,47 @@ function expandBuiltinShortcodes(html, context) {
       : "";
     const folder = typeof attrs.folder === "string" ? attrs.folder : currentDir;
     return renderPageList(folder, context.contentEntries, context.currentRel);
+  });
+}
+
+function expandIncludeShortcodes(source, componentsByName, variables = {}, context = {}, componentStack = new Set(), includeStack = new Set()) {
+  return source.replace(/<include([^>]*?)\s*\/>/g, (match, attrStr) => {
+    const attrs = parseShortcodeAttrs(attrStr);
+    const pageRef = typeof attrs.page === "string" ? attrs.page.trim() : "";
+    if (!pageRef) return match;
+
+    const pageEntriesByRel = context.pageEntriesByRel;
+    if (!pageEntriesByRel) return match;
+
+    const targetEntry = resolveIncludedPageEntry(pageRef, context.currentRel, pageEntriesByRel);
+    if (!targetEntry) {
+      if (Array.isArray(context.warnings)) {
+        const label = context.currentRel || "unknown source";
+        context.warnings.push(`Include "${pageRef}" in "${label}" could not be resolved to a page.`);
+      }
+      return "";
+    }
+
+    if (includeStack.has(targetEntry.rel)) {
+      if (Array.isArray(context.warnings)) {
+        context.warnings.push(
+          `Circular include detected for "${targetEntry.rel}" while rendering "${context.currentRel || "unknown source"}".`
+        );
+      }
+      return "";
+    }
+
+    const nextStack = new Set(includeStack);
+    nextStack.add(targetEntry.rel);
+    return renderBodyHtml(
+      targetEntry.body,
+      componentsByName,
+      variables,
+      { ...context, currentRel: targetEntry.rel },
+      componentStack,
+      nextStack,
+      false
+    );
   });
 }
 
@@ -219,7 +414,7 @@ function expandShortcodes(source, componentsByName, variables = {}, stack = new 
       if (stack.has(name)) return "";
       const nextStack = new Set(stack);
       nextStack.add(name);
-      return renderComponentHtml(componentEntry, componentsByName, scopedVariables, nextStack);
+      return renderComponentHtml(componentEntry, componentsByName, scopedVariables, nextStack, context);
     }
     if (Object.hasOwn(variables, name)) {
       return String(variables[name]);
@@ -228,17 +423,27 @@ function expandShortcodes(source, componentsByName, variables = {}, stack = new 
   });
 }
 
-function renderComponentHtml(componentEntry, componentsByName, variables = {}, stack = new Set()) {
-  const expandedBody = expandShortcodes(componentEntry.body, componentsByName, variables, stack);
-  // raw: true bypasses the markdown renderer — body is injected verbatim.
-  // Use for embed codes, complex HTML, or anything the markdown renderer would mangle.
-  const renderedHtml = componentEntry.data.raw === true
-    ? expandedBody
-        .replace(/\{\{\s*([A-Za-z0-9_.-]+)\s*\}\}/g, (match, key) => (
-          Object.hasOwn(variables, key) ? String(variables[key]) : match
-        ))
-        .trim()
-    : renderMarkdown(expandedBody).replace(/\n+/g, "");
+function renderComponentHtml(componentEntry, componentsByName, variables = {}, stack = new Set(), context = {}, contentHtml = null) {
+  let renderedHtml = renderBodyHtml(
+    componentEntry.body,
+    componentsByName,
+    variables,
+    {
+      currentRel: context.currentRel || componentEntry.rel,
+      pageEntriesByRel: context.pageEntriesByRel,
+      warnings: context.warnings,
+    },
+    stack,
+    context.includeStack || new Set(),
+    componentEntry.data.raw === true
+  );
+  if (componentEntry.data.wrapper === true && contentHtml != null) {
+    renderedHtml = injectContentSlot(
+      renderedHtml,
+      contentHtml,
+      `Wrapper component ${componentEntry.rel || componentEntry.data?.["component-name"] || "unknown"}`
+    );
+  }
   return wrapComponentHtml(renderedHtml, componentEntry.data);
 }
 
@@ -851,6 +1056,8 @@ function buildGraph(sourceDir) {
   const componentsByName = new Map();
   const templatesByRel = new Map();
   const componentsByRel = new Map();
+  const entriesByRel = new Map();
+  const pageEntriesByRel = new Map();
   const variablesEntries = [];
   const contentEntries = [];
   const unpublishedEntries = [];
@@ -861,6 +1068,7 @@ function buildGraph(sourceDir) {
     const { data: rawData, body } = parseFrontmatter(raw);
     const data = normalizeFrontmatterData(rawData);
     const entry = { file, rel, data, body };
+    entriesByRel.set(rel, entry);
 
     if (guessMarkdownKind(file, data) === "template") {
       const aliases = normalizeTemplateAliases(file, data);
@@ -893,38 +1101,47 @@ function buildGraph(sourceDir) {
       ...entry,
       templateName: String(entry.data.template || "main"),
       outputPath: path.join(sourceDir, rel.replace(/\.md$/i, ".html")),
-      refs: new Set(),
     };
+    pageEntriesByRel.set(rel, contentEntry);
 
     if (isPublishedContent(data)) contentEntries.push(contentEntry);
     else unpublishedEntries.push(contentEntry);
   }
 
-  for (const templateRecord of templatesByRel.values()) {
-    const refs = findPlaceholderNames(templateRecord.entry.body);
-    for (const ref of refs) {
-      if (componentsByName.has(ref)) {
-        templateRecord.refs.add(ref);
-      }
-    }
-  }
+  const directDepsByRel = new Map();
+  const reverseDepsByRel = new Map();
 
-  for (const componentRecord of componentsByRel.values()) {
-    const refs = findPlaceholderNames(componentRecord.entry.body);
-    for (const ref of refs) {
-      if (componentsByName.has(ref)) {
-        componentRecord.refs.add(ref);
-      }
+  const registerReverseDep = (sourceRel, targetRel) => {
+    if (!reverseDepsByRel.has(targetRel)) {
+      reverseDepsByRel.set(targetRel, new Set());
     }
-  }
+    reverseDepsByRel.get(targetRel).add(sourceRel);
+  };
 
-  for (const contentEntry of contentEntries) {
-    const refs = findPlaceholderNames(contentEntry.body);
-    for (const ref of refs) {
-      if (componentsByName.has(ref)) {
-        contentEntry.refs.add(ref);
-      }
+  for (const entry of entriesByRel.values()) {
+    const deps = new Set();
+
+    const templateEntry = templatesByName.get(String(entry.data.template || "main"));
+    if (pageEntriesByRel.has(entry.rel) && templateEntry) {
+      deps.add(templateEntry.rel);
     }
+
+    for (const ref of findPlaceholderNames(entry.body)) {
+      const componentEntry = componentsByName.get(ref);
+      if (componentEntry) deps.add(componentEntry.rel);
+    }
+
+    for (const ref of findWrapperComponentNames(entry.body, componentsByName)) {
+      const componentEntry = componentsByName.get(ref);
+      if (componentEntry) deps.add(componentEntry.rel);
+    }
+
+    for (const includeRel of findIncludePageRefs(entry.body, entry.rel, pageEntriesByRel)) {
+      deps.add(includeRel);
+    }
+
+    directDepsByRel.set(entry.rel, deps);
+    for (const dep of deps) registerReverseDep(entry.rel, dep);
   }
 
   return {
@@ -933,37 +1150,52 @@ function buildGraph(sourceDir) {
     componentsByName,
     templatesByRel,
     componentsByRel,
+    entriesByRel,
+    pageEntriesByRel,
+    directDepsByRel,
+    reverseDepsByRel,
     variablesEntries,
     contentEntries,
     unpublishedEntries,
   };
 }
 
+function collectReverseDependentPages(seedRel, reverseDepsByRel, contentRelSet) {
+  const queue = [seedRel];
+  const visited = new Set([seedRel]);
+  const impacted = new Set();
+
+  while (queue.length) {
+    const currentRel = queue.shift();
+    const dependents = reverseDepsByRel.get(currentRel);
+    if (!dependents) continue;
+
+    for (const dependentRel of dependents) {
+      if (visited.has(dependentRel)) continue;
+      visited.add(dependentRel);
+      queue.push(dependentRel);
+      if (contentRelSet.has(dependentRel)) impacted.add(dependentRel);
+    }
+  }
+
+  return impacted;
+}
+
 function toHtmlOutputPath(rootDir, relPath) {
   return path.join(rootDir, relPath.replace(/\.(md|ya?ml)$/i, ".html"));
 }
 
-function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDir, generatedFiles, contentEntries = []) {
+function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDir, generatedFiles, contentEntries = [], pageEntriesByRel = new Map()) {
   const variables = site.variables || {};
-  const context = { contentEntries, currentRel: entry.rel };
-  const expandedContent = expandShortcodes(entry.body, componentsByName, variables, new Set(), context);
-  // renderMarkdown runs first; raw components were left as self-closing tags so they
-  // survive the renderer untouched, then get expanded here into the rendered HTML.
-  const contentHtml = renderMarkdown(resolveReferenceLinks(expandedContent)).replace(
-    /<([A-Za-z][A-Za-z0-9_.-]*)([^>]*?)\s*\/>/g,
-    (match, name, attrStr) => {
-      const componentEntry = componentsByName.get(name);
-      if (componentEntry && componentEntry.data.raw === true) {
-        const attrs = parseShortcodeAttrs(attrStr);
-        return renderComponentHtml(
-          componentEntry,
-          componentsByName,
-          { ...variables, ...attrs },
-          new Set([name])
-        );
-      }
-      return match;
-    }
+  const context = { contentEntries, currentRel: entry.rel, pageEntriesByRel };
+  const contentHtml = renderBodyHtml(
+    entry.body,
+    componentsByName,
+    variables,
+    context,
+    new Set(),
+    new Set(),
+    false
   );
   const pageTitle = entry.data.title || path.basename(entry.rel, ".md");
 
@@ -986,9 +1218,33 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
     warnings.push(`"${entry.rel}" specifies template "${entry.templateName}" which was not found — rendered without a template.`);
     html = `<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>${escapeHtml(pageTitle)}</title>\n</head>\n<body>\n${contentHtml}\n</body>\n</html>\n`;
   } else {
+    const templateContext = {
+      currentRel: templateEntry.rel,
+      pageEntriesByRel,
+      contentEntries,
+      warnings,
+    };
+    const expandedTemplateSource = expandIncludeShortcodes(
+      templateEntry.body,
+      componentsByName,
+      variables,
+      templateContext,
+      new Set(),
+      new Set()
+    );
     const componentHtml = {};
     for (const [name, componentEntry] of componentsByName.entries()) {
-      componentHtml[name] = renderComponentHtml(componentEntry, componentsByName, variables, new Set([name]));
+      componentHtml[name] = renderComponentHtml(
+        componentEntry,
+        componentsByName,
+        variables,
+        new Set([name]),
+        {
+          currentRel: componentEntry.rel,
+          pageEntriesByRel,
+          warnings,
+        }
+      );
     }
 
     // Per-page slot overrides: frontmatter key slot.name: component-name
@@ -999,7 +1255,17 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
       const slotName = key.slice(5);
       const componentEntry = componentsByName.get(String(value));
       if (componentEntry) {
-        slotOverrides[slotName] = renderComponentHtml(componentEntry, componentsByName, variables, new Set([String(value)]));
+        slotOverrides[slotName] = renderComponentHtml(
+          componentEntry,
+          componentsByName,
+          variables,
+          new Set([String(value)]),
+          {
+            currentRel: componentEntry.rel,
+            pageEntriesByRel,
+            warnings,
+          }
+        );
       } else {
         warnings.push(`Slot "${slotName}" references unknown component "${value}" in "${entry.rel}".`);
       }
@@ -1014,7 +1280,7 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
     };
 
     html = injectTemplate(
-      templateEntry.body,
+      expandedTemplateSource,
       replacements,
       warnings,
       `Template ${templateEntry.rel || templateEntry.data?.["template-name"] || entry.templateName}`
@@ -1031,6 +1297,16 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
   }
 
   html = replaceVariablesInHtml(html, variables);
+  html = expandWrapperComponentsInHtml(html, componentsByName, variables, {
+    currentRel: entry.rel,
+    pageEntriesByRel,
+    warnings,
+  });
+  html = expandRawComponentsInHtml(html, componentsByName, variables, {
+    currentRel: entry.rel,
+    pageEntriesByRel,
+    warnings,
+  });
   // Final pass: expand built-in shortcodes that may have survived inside
   // pre-rendered component HTML (e.g. <page-list /> inside a component body).
   html = expandBuiltinShortcodes(html, context);
@@ -1082,10 +1358,9 @@ export async function build(options = {}) {
 
   const buildAll = !changedPath;
   let mode = buildAll ? "full" : "incremental";
-  let deletedOutputPath = null;
-  let deletedCount = 0;
   const changedAbs = changedPath ? path.resolve(changedPath) : null;
   const changedRel = changedAbs ? path.relative(sourceDir, changedAbs).replace(/\\/g, "/") : null;
+  const publishedContentRelSet = new Set(graph.contentEntries.map(entry => entry.rel));
 
   if (!buildAll && changedRel.startsWith("..")) {
     mode = "full";
@@ -1097,56 +1372,16 @@ export async function build(options = {}) {
   } else if (changedRel) {
     const changedKind = guessMarkdownKind(changedAbs, fs.existsSync(changedAbs) ? parseFrontmatter(readText(changedAbs)).data : {});
 
-    if (eventType === "unlink" && changedKind === "content") {
-      deletedOutputPath = path.join(outputDir, changedRel.replace(/\.md$/i, ".html"));
-      if (fs.existsSync(deletedOutputPath)) {
-        fs.rmSync(deletedOutputPath, { force: true });
-      }
-      previousGenerated.delete(deletedOutputPath);
-      deletedCount = 1;
-    } else if (eventType === "unlink" && changedKind !== "content") {
+    if (eventType === "unlink") {
       mode = "full";
       for (const entry of graph.contentEntries) targets.add(entry.rel);
+    } else if (graph.entriesByRel.has(changedRel) && (changedKind === "content" || changedKind === "template" || changedKind === "component")) {
+      const impacted = collectReverseDependentPages(changedRel, graph.reverseDepsByRel, publishedContentRelSet);
+      for (const rel of impacted) targets.add(rel);
+      if (publishedContentRelSet.has(changedRel)) targets.add(changedRel);
     } else if (changedKind === "content") {
-      if (graph.contentEntries.some(entry => entry.rel === changedRel)) {
-        targets.add(changedRel);
-      } else {
-        mode = "full";
-        for (const entry of graph.contentEntries) targets.add(entry.rel);
-      }
-    } else if (changedKind === "template") {
-      const aliases = changedAbs && fs.existsSync(changedAbs)
-        ? normalizeTemplateAliases(changedAbs, parseFrontmatter(readText(changedAbs)).data)
-        : [path.basename(changedRel, ".md").replace(/^template\./, ""), path.basename(changedRel, ".md")];
-      const templateAliasSet = new Set(aliases.filter(Boolean).map(String));
-      for (const entry of graph.contentEntries) {
-        if (templateAliasSet.has(entry.templateName)) {
-          targets.add(entry.rel);
-        }
-      }
-    } else if (changedKind === "component") {
-      const aliases = changedAbs && fs.existsSync(changedAbs)
-        ? normalizeComponentAliases(changedAbs, parseFrontmatter(readText(changedAbs)).data)
-        : [path.basename(changedRel, ".md").replace(/^component\./, ""), path.basename(changedRel, ".md")];
-      const componentAliasSet = collectTransitiveComponentRefs(
-        new Set(aliases.filter(Boolean).map(String)),
-        graph.componentsByRel
-      );
-      const impactedTemplates = new Set();
-      for (const templateRecord of graph.templatesByRel.values()) {
-        for (const ref of templateRecord.refs) {
-          if (componentAliasSet.has(ref)) {
-            for (const alias of templateRecord.aliases) impactedTemplates.add(alias);
-            break;
-          }
-        }
-      }
-      for (const entry of graph.contentEntries) {
-        const contentUsesComponent = [...entry.refs].some(ref => componentAliasSet.has(ref));
-        if (impactedTemplates.has(entry.templateName) || contentUsesComponent) {
-          targets.add(entry.rel);
-        }
-      }
+      mode = "full";
+      for (const entry of graph.contentEntries) targets.add(entry.rel);
     } else {
       mode = "full";
       for (const entry of graph.contentEntries) targets.add(entry.rel);
@@ -1157,7 +1392,16 @@ export async function build(options = {}) {
     const entry = graph.contentEntries.find(item => item.rel === rel);
     if (!entry) continue;
     const templateEntry = graph.templatesByName.get(entry.templateName);
-    const pageRecord = rebuildPageEntry(entry, templateEntry, graph.componentsByName, site, outputDir, generatedFiles, graph.contentEntries);
+    const pageRecord = rebuildPageEntry(
+      entry,
+      templateEntry,
+      graph.componentsByName,
+      site,
+      outputDir,
+      generatedFiles,
+      graph.contentEntries,
+      graph.pageEntriesByRel
+    );
     rebuiltPages.push(pageRecord);
   }
 
@@ -1216,13 +1460,8 @@ export async function build(options = {}) {
     "utf8"
   );
 
-  if (mode !== "full" && deletedOutputPath) {
-    previousGenerated.delete(deletedOutputPath);
-  }
-
   const stateGenerated = new Set(previousGenerated);
   for (const generatedPath of generatedFiles) stateGenerated.add(generatedPath);
-  if (deletedOutputPath) stateGenerated.delete(deletedOutputPath);
   if (mode === "full") {
     stateGenerated.clear();
     for (const generatedPath of generatedFiles) stateGenerated.add(generatedPath);
@@ -1232,7 +1471,7 @@ export async function build(options = {}) {
   return {
     ok: true,
     mode,
-    pagesBuilt: rebuiltPages.length + deletedCount,
+    pagesBuilt: rebuiltPages.length,
     postsBuilt: pages.length,
     sourceDir,
     outputDir,

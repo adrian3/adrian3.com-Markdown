@@ -1,34 +1,26 @@
 <!---
 title: Writing by Adrian Hanft
+template: with-sidebar
+slot.sidebar-content: writing-sidebar
 --->
-<div class="sidebar">
-<h2>Writing</h2>
-<ul>
-  <li><a href="#user-zero">User Zero</a></li>
-  <li><a href="#art-of-the-living-dead">Art of the Living Dead</a></li>
-  <li><a href="#made-by-ade">Newsletter</a></li>
-  <li><a href="https://ade3.medium.com/">Medium</a></li>
-  <li><a href="#best-of">Essays (Best Of)</a></li>
-  <li><a href="archive.html">Blog Archive</a></li>
-</ul>
-</div>
-<div class="content">
-<h1 style="margin:0 0 15px 0;" id="user-zero">User Zero</h1>
-<p><a href="https://www.amazon.com/dp/1735835803"><img src="https://adrian3.com/images/user-zero/user-zero-cover-background2-1800x600.jpg"></a></p>
-<p>My new book, <em><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803">User Zero</a></em> is out now! It starts by questioning the obvious, a tool as basic as your humble hammer, only to realize things are not as simple as they seem. As we retrace the evolution of our gadgets you’ll notice we’ve gotten a little bit stupider with each iteration. From pinball to pixels, playgrounds to Powerpoints, bicycles to Beetles, Coke bottles to cockpits – I’ll take you on a tour of the invisible side of technology that, I’ll warn you ahead of time, picks fights with some sacred cows. </p>
+
+<h1 id="user-zero">User Zero</h1>
+<a href="https://www.amazon.com/dp/1735835803"><img src="https://adrian3.com/images/user-zero/user-zero-cover-background2-1800x600.jpg"></a>
+<p>My new book, <em><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803">User Zero</a></em> is out now! It starts by questioning the obvious, a tool as basic as your humble hammer, only to realize things are not as simple as they seem. As we retrace the evolution of our gadgets you’ll notice we’ve gotten a little bit stupider with each iteration. From pinball to pixels, playgrounds to Powerpoints, bicycles to Beetles, Coke bottles to cockpits – I’ll take you on a tour of the invisible side of technology that, I’ll warn you ahead of time, picks fights with some sacred cows.</p>
 <img class="userzero" src="https://adrian3.com/images/user-zero/User-Zero-Cover.png">
-<p>And at the exact moment where you see where I am heading, right as you realize that something bad is going to happen, that’s the instant I’ll stick you behind the wheel of driverless cars, insert you into the cockpit of falling planes, and place you on the bridge of out-of-control Navy destroyers so that you’ll have a front row seat when tragedy strikes. <em>Buckle up.</em> </p>
+<p>And at the exact moment where you see where I am heading, right as you realize that something bad is going to happen, that’s the instant I’ll stick you behind the wheel of driverless cars, insert you into the cockpit of falling planes, and place you on the bridge of out-of-control Navy destroyers so that you’ll have a front row seat when tragedy strikes. <em>Buckle up.</em></p>
 <p><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803"><img src="https://adrian3.com/images/amazon.svg"></a> <a href="https://books.apple.com/us/book/user-zero/id1538379461?ls=1"><img src="https://adrian3.com/images/ibooks.svg"></a></p>
 <hr />
 
 <p><img src="https://adrian3.com/images/art-of-the-living-dead.png"></p>
 <h1 id="art-of-the-living-dead">Art of the Living Dead</h1>
-<p>My first book is a book about creativity. It's a guide for protecting the living parts of your brain. Why is there so much opposition to innovation? Why does creativity come so easily for some people? Why do the relics of the past survive when better alternatives are created? Where does creativity come from? How can we maintain artistry when we work for pulseless corporations? How many revolutionaries have we missed because humanity’s collective scorn downed their creative ambition? These answer to these questions will change how you look at art, advertising, car design, education, fame, and success. <a href="https://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">Art of the Living Dead is available on Amazon.</a></p> 
+<p>My first book is a book about creativity. It's a guide for protecting the living parts of your brain. Why is there so much opposition to innovation? Why does creativity come so easily for some people? Why do the relics of the past survive when better alternatives are created? Where does creativity come from? How can we maintain artistry when we work for pulseless corporations? How many revolutionaries have we missed because humanity’s collective scorn downed their creative ambition? These answer to these questions will change how you look at art, advertising, car design, education, fame, and success. <a href="https://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">Art of the Living Dead is available on Amazon.</a></p>
 <hr />
 
 <h2 id="made-by-ade">Made by Ade Newsletter</h2>
 <p>I write a newsletter called <a href="https://ade3.substack.com/about">Made by Ade</a> where you can get a taste of my twisted blend of technology critique, storytelling, and ideas for maintaining your creative energy. I want to add you to my distribution list.</p>
 <subscribe />
+
 <h2 id="best-of">Best Of:</h2>
 <ul>
 <li><a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d">The Zombie-mobile</a></li>
@@ -47,10 +39,6 @@ title: Writing by Adrian Hanft
 <li><a href="https://ade3.medium.com/ingredients-of-creativity-9f94cee9b3c0">Ingredients of Creativity</a></li>
 <li><a href="https://medium.com/@ade3/the-heroes-behind-healthcare-gov-e8c670f743fd">The Heroes Behind Healthcare.gov</a></li>
 </ul>
-<h2 id="blog">From the Blog:</h2>
+
+<h2 id="blog-archive">From the Blog:</h2>
 <blog-recent />
-
-</div>
-
-
-</div>

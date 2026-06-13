@@ -17,7 +17,7 @@ layout:
 
 This week I was walloped by two words from a person I respect. Just two devastating words that threatened to down me. Two words that made me question everything I am and have been working toward. I am too embarrassed to say what they were or who uttered them. The point is it threw me into a tailspin. Normally I would just brace for impact, but maybe that’s not the best option.
 
-Today I want to talk about the difference between unproductive mopes and highly successful people. Imagine a spectrum with prolific artists at the top and ineffective slugs at the bottom. You and I fall somewhere between these extremes. Sometimes we ship good work. Sometimes we ship [oatmeal](2016-01-16-The-slow-steady-inevitable-march-towards-oatmeal.html). Sometimes we fail to ship anything at all.
+Today I want to talk about the difference between unproductive mopes and highly successful people. Imagine a spectrum with prolific artists at the top and ineffective slugs at the bottom. You and I fall somewhere between these extremes. Sometimes we ship good work. Sometimes we ship [oatmeal](2016-01-16-the-slow-steady-inevitable-march-towards-oatmeal.html). Sometimes we fail to ship anything at all.
 
 Could there be a secret that the prolific people possess? Are there warning signs that might prevent us from getting stuck in the sticky ooze of futility?
 
@@ -41,5 +41,5 @@ Recognizing the feedback loops in your life (or organization) is the first step 
 
 * * *
 
-Thanks for reading. If these words help spin your flywheel, consider following me. I post once a week with crazy ideas about surviving your [daily apocalypse](../2015/2015-11-03-25-Questions-You-Didnt-Know-You-Needed-Art-of-the-Living-Dead-to-Answer.html). _Stay creative._
+Thanks for reading. If these words help spin your flywheel, consider following me. I post once a week with crazy ideas about surviving your [daily apocalypse](../2015/2015-11-03-25-questions-you-didnt-know-you-needed-art-of-the-living-dead-to-answer.html). _Stay creative._
 

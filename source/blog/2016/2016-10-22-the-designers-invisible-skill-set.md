@@ -28,7 +28,7 @@ No gradients.
 
 No variation of line weight.
 
-You can’t use [the manipulative properties of color](2016-10-15-Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With-Color.html).
+You can’t use [the manipulative properties of color](2016-10-15-color-theory-scams-exposing-how-designers-manipulate-you-with-color.html).
 
 No shades of gray.
 
@@ -66,11 +66,11 @@ If you are lucky you will land in a place where your design sense is valued and 
 
 But often you land in a job where your role is misunderstood. Perhaps they dismiss your role as simply “aesthetics.” When design is invisible and _not valued,_ your role is that of a stylist. You become the person who comes in after all the “real” work is done to apply a layer of visual frosting to the final product.
 
-If you are stuck in the role of stylist, you may be wondering if it is possible to make your invisible skills real to your co-workers. I believe it is, and I recommend you explore my thoughts about [recalibrating the pattern recognition machine](2016-09-10-Recalibrating-Your-Pattern-Recognition-Machine.html).
+If you are stuck in the role of stylist, you may be wondering if it is possible to make your invisible skills real to your co-workers. I believe it is, and I recommend you explore my thoughts about [recalibrating the pattern recognition machine](2016-09-10-recalibrating-your-pattern-recognition-machine.html).
 
 I try to reveal the tricks of design magicians each week, so consider [following me](https://twitter.com/ade3) so you don’t miss the next one. _Stay creative._
 
 * * *
 
-One more thing. If you enjoyed this post, you might enjoy [part 2 where I confess that everything I wrote here might be wrong.](2016-10-29-I-just-want-to-make-art-man.html)
+One more thing. If you enjoyed this post, you might enjoy [part 2 where I confess that everything I wrote here might be wrong.](2016-10-29-i-just-want-to-make-art-man.html)
 

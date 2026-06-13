@@ -6,11 +6,11 @@ title: Design by Adrian Hanft
   
 Design is less about beauty than it is in finding solutions to complex challenges. Being a good designer requires you to sit in someone else's shoes and see the problem from many different angles. I have been fortunate to design for some great running technology companies. Here are some case studies documenting my work.
 
-<a href="case-studies/trainingpeaks.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/trainingpeaks.jpg"></a>
-<a href="athlinks.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/athlinks-locked.jpg"></a>
-<a href="stryd.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/stryd-locked.jpg"></a>
-<a href="run-the-edge.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/run-the-edge-locked.jpg"></a>
-<a href="runcoach.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/runcoach-locked.jpg"></a>
-<a href="tread1st.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/tread1st-locked.jpg"></a>
+<a href="../case-studies/trainingpeaks.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/trainingpeaks.jpg"></a>
+<a href="../case-studies-password-required/athlinks.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/athlinks-locked.jpg"></a>
+<a href="../case-studies-password-required/stryd.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/stryd-locked.jpg"></a>
+<a href="../case-studies-password-required/run-the-edge.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/run-the-edge-locked.jpg"></a>
+<a href="../case-studies-password-required/runcoach.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/runcoach-locked.jpg"></a>
+<a href="../projects/tread1st.html"><img class="case-study-image" src="http://adrian3.com/images/case-studies/tread1st-locked.jpg"></a>
 
-<a href="http://design.adrian3.com">Portfolio</a>/<a href="https://www.behance.net/Adrian3">Behance</a>/<a href="http://dribbble.com/adrian3">Dribbble</a><br /><a href="timeline.html">Profesional Timeline</a>/<a href="resume.html">Resume</a><br /><a href="Awards.html">Awards/Recognition</a><br /><a href="Apps.html">Apps</a><br /></p>
+<a href="http://design.adrian3.com">Portfolio</a>/<a href="https://www.behance.net/Adrian3">Behance</a>/<a href="http://dribbble.com/adrian3">Dribbble</a><br /><a href="timeline.html">Profesional Timeline</a>/<a href="resume.html">Resume</a><br /><a href="../art/awards.html">Awards/Recognition</a><br /><a href="../apps/apps.html">Apps</a><br /></p>

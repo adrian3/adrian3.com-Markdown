@@ -70,6 +70,6 @@ Thanks for following my writing. If you enjoyed this story, here is some recomme
 
 [Three Words Invented by Buckminster Fuller](https://medium.com/@ade3/three-words-invented-by-buckminster-fuller-d8002645226d)
 
-[A Special Hell for Designers Like Me](../2016/2016-01-23-A-Special-Hell-for-Designers-Like-Me.html)
+[A Special Hell for Designers Like Me](../2016/2016-01-23-a-special-hell-for-designers-like-me.html)
 
 _Stay creative._

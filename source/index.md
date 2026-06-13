@@ -4,30 +4,135 @@ template: main
 --->
 
 ## Hi, I'm Ade.
-<p><img src="https://adrian3.com/images/Adrian-Hanft5.jpg" class="about-me">I'm a creator from Colorado who writes <a href="/writing.html">books, letters, and essays</a>. I document my art experiments on <a href="https://www.instagram.com/ade3/">Instagram</a>. Experiments you ask? I make things like <a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">enormous cameras made of coffee stirrers.</a> And I've sent <a href="/postcards.html">hundreds of art postcards</a> to my friends. I also enjoy <a href="reading.html">reading good books</a>, and <a href="http://tread1st.com/Ade3/training">running long distances</a>. Thanks for checking out my website, let's <a href="https://linktr.ee/hanft">follow each other on the socials</a>.</p>
+<p><img src="https://adrian3.com/images/adrian-hanft6.jpg" class="about-me">I'm a creator from Colorado who writes <a href="writing/writing.html">books, letters, and essays</a>. I document my art experiments on <a href="https://www.instagram.com/ade3/">Instagram</a>. Experiments you ask? I make things like <a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">enormous cameras made of coffee stirrers.</a> And I've sent <a href="art/postcards.html">hundreds of art postcards</a> to my friends. I also enjoy <a href="writing/reading.html">reading good books</a>, and <a href="http://tread1st.com/Ade3/training">running long distances</a>. Thanks for checking out my website, let's <a href="https://linktr.ee/hanft">follow each other on the socials</a>.</p>
 
 <p>I write a newsletter called <a href="https://ade3.substack.com/about">Made by Ade</a> where you can get a taste of my twisted blend of technology critique, storytelling, and ideas for maintaining your creative energy. I want to add you to my distribution list.</p>
 
-<subscribe />
+<divider />
+
+### Things I've made...
+
+Cameras:
+Coffee stirrer camera
+Tape Gun Camcorder
+World's Smallest Film Projector
+Scanner Camera
+Receipt Printer Polaroid
+Money printing camera
+
+Tools:
+- ??
+
+Art Projects:
+Infestation
+Receipt Animations
+Lego Loop Animation Machine
+Explod-o-graphs, Explosures
+VICE TV - NYC
+Inner Demons
+Thermal Printing
+Postcards
+
+
+Books:
+AOTLD
+User Zero
+
+
+
+
+<image-grid>
+
+<a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">
+<figure>
+<img src="https://adrian3.com/images/art-section/self-portrait.jpg" alt="Coffee Stirrer Camera">
+<figcaption>Coffee Stirrer Camera</figcaption>
+</figure>
+</a>
+
+<a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510">
+<figure>
+<img src="https://adrian3.com/images/art-section/ghost-o-meter.jpg" alt="Ghost-O-Meter">
+<figcaption>Ghost-O-Meter</figcaption>
+</figure>
+</a>
+
+<a href="http://tread1st.com/boston.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/boston-marathon-data.jpg" alt="Boston Marathon Data">
+<figcaption>Boston Marathon Data</figcaption>
+</figure>
+</a>
+
+<a href="../art/pinecones.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/pinecone.jpg" alt="Pine Cones">
+<figcaption>Pine Cones</figcaption>
+</figure>
+</a>
+
+<a href="/art/index.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/spider-flower.jpg" alt="Art Shows">
+<figcaption>Art Shows</figcaption>
+</figure>
+</a>
+
+<a href="/gallery-pages/pottery.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/pottery.jpg" alt="Pottery">
+<figcaption>Pottery</figcaption>
+</figure>
+</a>
+
+<a href="../art/postcards.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/postcard.jpg" alt="Free Postcard Art">
+<figcaption>Free Postcard Art</figcaption>
+</figure>
+</a>
+
+<a href="/gallery-pages/camera-drawings.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/cameras.jpg" alt="Camera Drawings">
+<figcaption>Camera Drawings</figcaption>
+</figure>
+</a>
+
+<a href="/gallery-pages/camera-graffiti.html">
+<figure>
+<img src="https://adrian3.com/images/art-section/camera-graffiti.jpg" alt="Baby Powder Graffiti">
+<figcaption>Baby Powder Graffiti</figcaption>
+</figure>
+</a>
+
+<a href="/gallery-pages/bookshelves.html">
+<figure>
+<img src="https://adrian3.com/galleries/bookshelves/bookshelf3.jpeg" alt="Bookshelves">
+<figcaption>Bookshelves</figcaption>
+</figure>
+</a>
+
+<a href="/gallery-pages/illustrations.html">
+<figure>
+<img src="https://adrian3.com/galleries/illustrations/illustration12.jpeg" alt="Illustrations">
+<figcaption>Illustrations</figcaption>
+</figure>
+</a>
+
+<a href="/gallery-pages/2019-art.html">
+<figure>
+<img src="https://adrian3.com/galleries/2019%20art/1-matchbook-monday.jpg" alt="2019 Art">
+<figcaption>2019 Art</figcaption>
+</figure>
+</a>
+
+</image-grid>
 
 ---
 
-## Things I've made...  
-<p><a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010"><img class="case-study-image" src="https://adrian3.com/images/art-section/self-portrait.jpg"></a>
-<a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="https://adrian3.com/user-zero/images/ghost-o-meter.jpg"></a>
-<a href="http://tread1st.com/boston.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/boston-marathon-data.jpg"></a> 
-<a href="/gallery-pages/pinecones.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/pinecone.jpg"></a>
-<a href="Art%20Shows.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/spider-flower.jpg"></a>
-<a href="/gallery-pages/pottery.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/pottery.jpg"></a>
-<a href="postcards.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/postcard.jpg"></a>
-<a href="/gallery-pages/camera-drawings.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/cameras.jpg"></a>
-<a href="/gallery-pages/camera-graffiti.html"><img class="case-study-image" src="https://adrian3.com/images/art-section/camera-graffiti.jpg"></a>
-<a href="/gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/galleries/bookshelves/bookshelf3.jpeg"></a>
-<a href="/gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/galleries/illustrations/illustration12.jpeg"></a>
-<a href="/gallery-pages/2019-art.html"><img class="case-study-image" src="https://adrian3.com/galleries/2019%20art/1-matchbook-monday.jpg"></a>
-</p>
-
----
+Recent Posts:
+<substack />
 
 ### The Best Of My Writing:
 - [The Zombie-mobile][1]
@@ -46,10 +151,8 @@ template: main
 - [Ingredients of Creativity][14]
 - [The Heroes Behind Healthcare.gov][15]
 
-<substack />
-
 ### Blog Archive:
-<recent-posts>
+<blog-recent />
 
 ---
 

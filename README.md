@@ -162,6 +162,38 @@ Insert in a template or page body with `<byline />`. Components can nest other c
 
 Each component can have a paired CSS file with the same name (`byline.css` beside `byline.md`). The build picks it up automatically — no manual `<link>` tags needed.
 
+Wrapper components are normal components with `wrapper: true` in frontmatter. They use paired tags and put the page-authored markdown into `<content />` inside the component body.
+
+```md
+<!---
+component: true
+component-name: grid
+wrapper: true
+--->
+<div class="gallery-grid">
+<content />
+</div>
+```
+
+Use them like:
+
+```md
+<grid>
+- ![Alt text](image.jpg)
+- ![Alt text](image-2.jpg)
+</grid>
+```
+
+### Page Includes
+
+If you want to reuse the body of another page without turning it into a component, use:
+
+```html
+<include page="path/to/page.md" />
+```
+
+That pulls in only the page body. The target page's template is ignored. Includes resolve relative to the current file first, then the source root. Nested includes are supported, and the build protects against cycles.
+
 ### Component Attributes
 
 Shortcode attributes become component variables with the same name.
@@ -320,8 +352,8 @@ The build compiles all CSS into a single `website/css/styles.css` in order: base
 ## How the Build Works
 
 1. The generator walks `source/` and classifies every file by folder (`components/`, `templates/`) and frontmatter
-2. Components are pre-rendered and registered by name
-3. Each content page has its shortcodes expanded, markdown rendered to HTML, and content injected into its template
+2. Components are pre-rendered and registered by name, including paired wrapper components
+3. Each content page has its shortcodes expanded, other page bodies can be included inline, wrapper components can capture inner markdown, markdown rendered to HTML, and content injected into its template
 4. `{{token}}` expressions are replaced (title, page metadata, base path)
 5. Per-page `slot.*` frontmatter overrides are applied
 6. CSS files from `components/` and `templates/` are copied to `website/css/`

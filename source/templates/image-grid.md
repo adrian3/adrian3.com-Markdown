@@ -1,6 +1,6 @@
 <!---
 template: true
-template-name: image-grid
+template-name: page-image-grid
 --->
 <!DOCTYPE html>
 <html lang="en">

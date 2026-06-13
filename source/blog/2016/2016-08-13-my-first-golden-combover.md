@@ -37,7 +37,7 @@ The project was to update her logo. The logo was a giant letter “O.” My job 
 
 _Uh oh._
 
-My design education had indoctrinated me with belief in the purity of flat design. I was a true believer. I was faced with a moral dilemma on my very first assignment. What did I do? I polished the hell out of that logo, of course. I couldn’t [afford idealism](../2015/2015-12-30-Affordable-Idealism.html) yet.
+My design education had indoctrinated me with belief in the purity of flat design. I was a true believer. I was faced with a moral dilemma on my very first assignment. What did I do? I polished the hell out of that logo, of course. I couldn’t [afford idealism](../2015/2015-12-30-affordable-idealism.html) yet.
 
 <img src="https://adrian3.com/images/dropbox_public/images/My-First-Golden Combover2.jpeg" alt="The origin of the term golden combover" class="caption">
 

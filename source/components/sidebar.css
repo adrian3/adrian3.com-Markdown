@@ -1,9 +1,9 @@
-.sidebar {
+.sidebar-layout-aside {
   display: grid;
   gap: var(--ade-space-5);
 }
 
-.sidebar h3 {
+.sidebar-layout-aside h3 {
   font-family: var(--ade-font-ui);
   font-size: 0.75rem;
   font-weight: 600;
@@ -13,21 +13,21 @@
   margin-bottom: var(--ade-space-2);
 }
 
-.sidebar p {
+.sidebar-layout-aside p {
   font-size: 0.9375rem;
 }
 
-.sidebar ul {
+.sidebar-layout-aside ul {
   list-style: none;
   padding: 0;
 }
 
-.sidebar li {
+.sidebar-layout-aside li {
   border-bottom: 1px solid var(--ade-divider);
   padding-block: 0.35rem;
   font-size: 0.9375rem;
 }
 
-.sidebar li:last-child {
+.sidebar-layout-aside li:last-child {
   border-bottom: 0;
 }

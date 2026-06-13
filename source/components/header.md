@@ -22,10 +22,10 @@ class: nav
   </a>
   <nav>
     <a href="/index.html">home</a>
-    <a href="/dashboard.html">dashboard</a>
-    <a href="/art.html">art</a>
-    <a href="/writing.html">writing</a>
-    <a href="/projects.html">projects</a>
+    <a href="/art/index.html">art</a>
+    <a href="/writing/index.html">writing</a>
+    <a href="/gallery-pages/index.html">galleries</a>
+    <a href="/case-studies/index.html">case studies</a>
     <a href="/kitchen-sink/index.html">kitchen sink</a>
   </nav>
 </div>

@@ -13,6 +13,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:net";
 import { build, buildStylesheet, parseFrontmatter } from "./generator.js";
+import { applyLinkFix, getLinkReport, invalidateLinkReportCache } from "./link-checker.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -139,6 +140,10 @@ function parseShortcodeAttrsMeta(value) {
 function buildShortcodeExample(name, data) {
   const explicit = String(data["shortcode-example"] || "").trim();
   if (explicit) return explicit;
+
+  if (data.wrapper === true || data.wrapper === "true") {
+    return `<${name}>...</${name}>`;
+  }
 
   const attrs = parseShortcodeAttrsMeta(data["shortcode-attrs"]);
   if (!attrs.length) return `<${name} />`;
@@ -351,7 +356,8 @@ async function handleRequest(req, res) {
 
       catalog.components.push(
         { name: "page-list", shortcode: '<page-list />', source: "built-in" },
-        { name: "page-list (folder)", shortcode: '<page-list folder=\"...\" />', source: "built-in" }
+        { name: "page-list (folder)", shortcode: '<page-list folder=\"...\" />', source: "built-in" },
+        { name: "include", shortcode: '<include page=\"path/to/page.md\" />', source: "built-in" }
       );
       catalog.components.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -364,6 +370,39 @@ async function handleRequest(req, res) {
       res.writeHead(500, { "Content-Type": "application/json" });
       res.end(JSON.stringify({ error: err.message }));
     }
+    return;
+  }
+
+  if (pathname === "/api/link-report" && req.method === "GET") {
+    try {
+      const report = getLinkReport(getSourceRoot(), getOutputRoot());
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify(report));
+    } catch (err) {
+      res.writeHead(500, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  if (pathname === "/api/link-fix" && req.method === "POST") {
+    let body = "";
+    req.on("data", chunk => body += chunk);
+    req.on("end", async () => {
+      try {
+        const payload = JSON.parse(body || "{}");
+        const result = applyLinkFix(getSourceRoot(), getOutputRoot(), payload);
+        const changedPath = path.join(getSourceRoot(), String(payload.source || ""));
+        const buildResult = await build({ changedPath, eventType: "change" });
+        logBuildWarnings(buildResult);
+        broadcastReload();
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify(result));
+      } catch (err) {
+        res.writeHead(400, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: false, error: err.message }));
+      }
+    });
     return;
   }
 
@@ -460,6 +499,7 @@ async function startServer() {
         const relative = path.relative(mdDir, filePath || "").replace(/\\/g, "/");
         console.log(`Markdown ${event}${relative ? `: ${relative}` : ""}, rebuilding...`);
         try {
+          invalidateLinkReportCache();
           const result = await build({ changedPath: filePath, eventType: event });
           logBuildWarnings(result);
           console.log(`Rebuilt (${result.mode}): ${result.pagesBuilt} pages, ${result.postsBuilt} posts`);
@@ -489,6 +529,7 @@ async function startServer() {
             const outRel = isMappedCss ? path.join("css", path.basename(filename)) : filename;
             const outFile = path.join(getOutputRoot(), outRel);
             try {
+              invalidateLinkReportCache();
               if (fs.existsSync(srcFile)) {
                 fs.mkdirSync(path.dirname(outFile), { recursive: true });
                 fs.copyFileSync(srcFile, outFile);
@@ -515,6 +556,7 @@ async function startServer() {
     // Also watch settings.json
     fs.watch(path.join(__dirname, "settings.json"), (eventType) => {
       if (eventType !== "change") return;
+      invalidateLinkReportCache();
       queueBuild("change", path.join(__dirname, "settings.json"));
     });
   } catch {

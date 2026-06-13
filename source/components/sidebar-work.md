@@ -1,7 +1,6 @@
 <!---
 component: true
 component-name: sidebar-work
-class: sidebar
 --->
 
 ### In this section
