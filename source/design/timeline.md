@@ -7,7 +7,7 @@ date: November 24, 2016
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
@@ -29,7 +29,7 @@ date: November 24, 2016
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
@@ -56,7 +56,7 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
@@ -82,7 +82,7 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
@@ -102,7 +102,7 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
@@ -121,7 +121,7 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
@@ -142,7 +142,7 @@ I solved complex interactions around the claiming of race results that users sav
 
 <div class="cd-timeline-block">
 <div class="cd-timeline-img cd-location">
-<img src="https://adrian3.com/imgs/_logos/fi-marker.svg" class="icon">
+<img src="https://adrian3.com/imgs/svgs/fi-marker.svg" class="icon">
 </div> 
 
 <div class="cd-timeline-content">
