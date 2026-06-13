@@ -48,7 +48,7 @@ There is an irony hiding among all the fluffy language used to sell color. Despi
 
 I am not just cherry-picking here. Research shows that [blue or red make up more than half off all corporate logos](http://www.emblemetric.com/2012/07/02/the-color-of-logos/). (As a side note, do you want to guess [what shape the corporate squares prefer?](http://www.emblemetric.com/2012/08/06/logos-taking-shape/))
 
-<a href="http://www.emblemetric.com/2012/07/02/the-color-of-logos/"><img src="https://adrian3.com/imgs/images/Color-Theory-Scams-Exposing-How-Designers-Manipulate-You-With-Color4.webp" alt="Color research from emblematic.com" class="caption"></a>
+<a href="http://www.emblemetric.com/2012/07/02/the-color-of-logos/"><img src="https://adrian3.com/imgs/images/color-theory-scams-exposing-how-designers-manipulate-you-with-color4.webp" alt="Color research from emblematic.com" class="caption"></a>
 
 So why would people prefer red and blue over more nuanced variations like _shaded lake_ or _eastern sunset_? Are companies too smart to be swindled by color hoaxes? Umm, no.
 
