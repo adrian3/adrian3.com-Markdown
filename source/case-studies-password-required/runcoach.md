@@ -1,7 +1,7 @@
 <!---
 title: Runcoach Case Study
 --->
-<img src="https://adrian3.com/case-studies/runcoach-images/runcoach-header.jpg" style="margin: 0; width: 100vw;">
+<img src="https://adrian3.com/imgs/case-studies/runcoach-images/runcoach-header.webp" style="margin: 0; width: 100vw;">
 
 # Runcoach Case Study
 
