@@ -81,7 +81,7 @@ slot.sidebar-content: art-sidebar
 <hr />
 
 <h2 id="ghost-o-meter">Ghost-O-Meter</h2>
-<a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="https://adrian3.com/imgs/user-zero/ghost-o-meter.webp"></a>
+<a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="https://adrian3.com/imgs/user-zero-illustrations/ghost-o-meter.webp"></a>
 <p>While not exactly an art project, the <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510">Ghost-O-Meter app</a> is one of my creations that got pretty popular. In the early days of the App Store this was downloaded around 1 million times.</p>
 <hr />
 
