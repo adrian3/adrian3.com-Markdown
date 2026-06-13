@@ -43,7 +43,7 @@ gallery-class: gallery-square
 
 <a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8">
 <figure>
-<img src="https://adrian3.com/user-zero/images/ghost-o-meter.jpg" alt="Ghost-O-Meter">
+<img src="https://adrian3.com/imgs/user-zero/ghost-o-meter.webp" alt="Ghost-O-Meter">
 <figcaption>Ghost-O-Meter</figcaption>
 </figure>
 </a>
