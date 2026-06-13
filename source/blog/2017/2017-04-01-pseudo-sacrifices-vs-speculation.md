@@ -14,7 +14,7 @@ layout:
 
 * * *
 
-![](https://adrian3.com/imgs/images/chess-small.gif)
+![](https://adrian3.com/imgs/gifs/chess-small.gif)
 
 Observers are stunned when they witness a queen sacrifice. For a chess player to abandon their most powerful piece seems like a daring risk. The sacrifice is followed by a decisive combo resulting in checkmate. Bravo, the crowd goes wild.
 

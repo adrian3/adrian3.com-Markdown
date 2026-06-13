@@ -13,7 +13,7 @@ layout:
 # How to Trigger Flow States with Coffee
 ## (Quick hits, slow triggers, and magic beans)
 
-![](https://adrian3.com/imgs/images/flow-triggers.gif)
+![](https://adrian3.com/imgs/gifs/flow-triggers.gif)
 
 Most of us use coffee to get through the day. It's a routine that we probably don't think much about. Wake up, pour a cup and go. When the buzz wears off it is time for another cup. But what if we used coffee more intentionally? Could we develop a system where coffee becomes your secret weapon? Let's explore how the humble cup of joe can transform into a trigger that you can use to instantly push yourself into a state of flow.
 

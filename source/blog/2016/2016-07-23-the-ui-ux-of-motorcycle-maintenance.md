@@ -9,7 +9,7 @@ description: The motorcycle of tomorrow will be so simple to operate that you no
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/The-UI-UX-of-Motorcycle-Maintenance.gif" class="full-width">
+<img src="https://adrian3.com/imgs/gifs/the-ui-ux-of-motorcycle-maintenance.gif" class="full-width">
 
 # The UI/UX of Motorcycle Maintenance
 
@@ -31,7 +31,7 @@ You carry around a piece of glass that transforms instantly into any tool you co
 
 Beneath the surface of this technology is not the romantic nuts and bolts of Pirsig’s novel. Today’s tech is built on chips, pixels, and trillions of lines of code.
 
-![](https://adrian3.com/imgs/images/The-UI-UX-of-Motorcycle-Maintenance2.gif)
+![](https://adrian3.com/imgs/gifs/the-ui-ux-of-motorcycle-maintenance2.gif)
 
 Yesterday a single person’s skull could contain all the knowledge necessary to keep a motorcycle in good maintenance. Today every object we touch is an impenetrable black box. Understanding even a fraction of the complexity inside everyday objects requires a lifetime of study.
 
@@ -41,7 +41,7 @@ Design knowledge is fractured across many pockets of specialization. The UX desi
 
 So what happens when something goes wrong? [What happens if teams of specialists create a gear shifter so flawed that it kills someone?](https://uxdesign.cc/deadly-ui-2397120f2be9) There is nobody to blame because the responsibility, like the knowledge itself, has been spread thinly across hundreds of innocent specialists. Each expert sleeps at night, confident that they did their best, blind to their contribution to catastrophe.
 
-<img src="https://adrian3.com/imgs/images/The-UI-UX-of-Motorcycle-Maintenance3.gif" class="full-width">
+<img src="https://adrian3.com/imgs/gifs/the-ui-ux-of-motorcycle-maintenance3.gif" class="full-width">
 
 Back to my original question about the amazing motorcycle of the future. _How do you think you will you feel in a world of incredible tech?_
 

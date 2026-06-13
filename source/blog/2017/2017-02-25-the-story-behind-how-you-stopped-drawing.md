@@ -15,7 +15,7 @@ layout:
 
 * * *
 
-![](https://adrian3.com/imgs/images/Blind-Contour-Drawing-Animation-Hand.gif)
+![](https://adrian3.com/imgs/gifs/blind-contour-drawing-animation-hand.gif)
 
 Drawing is terrifying. Do you disagree? Even if you have the courage to draw privately, showing your sketches to people makes you feel naked. Drawing is a strange thing to be scared of, isn't it? Let's dissect that a little bit this morning. 
 
@@ -49,7 +49,7 @@ Blind contour drawing is a technique that  corrects bad drawing habits. Learning
 
 Pick an object to draw. It should be something in your view, not something imaginary. Drawing your hand is a great place to start. Select the point on the object where you want to start your drawing.
 
-![](https://adrian3.com/imgs/images/Blind-Contour-Drawing-Animation-Face.gif)
+![](https://adrian3.com/imgs/gifs/blind-contour-drawing-animation-face.gif)
 
 Place your pencil (or finger) to the screen ad let your eye trace the details of object. As your eye moves, move your hand. Do not lift your pencil, instead make a single continuous line that wanders around responding to the details your eyes stumble across.
 

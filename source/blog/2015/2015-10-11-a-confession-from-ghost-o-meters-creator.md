@@ -23,7 +23,7 @@ Every year around Halloween hoards of thrill seekers fire up [Ghost-O-Meter](htt
 
 _I need to make a confession._
 
-<a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8"><img src="https://adrian3.com/imgs/images/A-Confession-from-Ghost-O-Meters-Creator2.gif"></a>
+<a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8"><img src="https://adrian3.com/imgs/gifs/a-confession-from-ghost-o-meters-creator2.gif"></a>
 
 While some may doubt the legitimacy of Ghost-O-Meter in general (and that’s fine) I need you to understand that what I am about to tell you is true. **This is really happening.**
 

@@ -27,7 +27,7 @@ If we think about the equation as a flywheel we might be able to hack the system
 
 There is a flywheel inside each of us. Imagine three gears. One spins when we feel energized by our challenges. One spins when we are improving our skills. The third gear spins when we get more done than we expected. When all three gears spin, our personal inertia increases. If we can keep everything spinning in the same direction we become unstoppable.
 
-![](https://adrian3.com/imgs/images/The-Flywheel-Formula.gif)
+![](https://adrian3.com/imgs/gifs/the-flywheel-formula.gif)
 
 #### So how do you keep the flywheel going?
 

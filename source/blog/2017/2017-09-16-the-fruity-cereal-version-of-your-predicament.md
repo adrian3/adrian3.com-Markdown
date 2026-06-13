@@ -12,7 +12,7 @@ layout:
 
 # The Fruity Cereal Version of Your Predicament
 
-![](https://adrian3.com/imgs/images/silly-rabbit.gif)
+![](https://adrian3.com/imgs/gifs/silly-rabbit.gif)
 
 A dazed bunny landed inches from my head. It was the night before a race, the precious hours of sleep before my 4am wake up call. 
 

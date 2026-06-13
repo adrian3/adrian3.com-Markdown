@@ -14,7 +14,7 @@ layout:
 
 I thought I found a solution to my social media problem last week. I am not great at interacting with my followers or initiating conversations. It turns out that being social doesn't come easily for me online _or_ in real life. If only I could outsource the uncomfortable work.
 
-![](https://adrian3.com/imgs/images/han-solo.gif)
+![](https://adrian3.com/imgs/gifs/han-solo.gif)
 
 I wanted more people to see [the animated Star Wars drawings I have been posting on Instagram](https://www.instagram.com/ade3/). How could I get them in front of people outside my normal friends and fans?
 

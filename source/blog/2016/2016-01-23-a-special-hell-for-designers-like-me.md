@@ -9,7 +9,7 @@ categories: Design Thinking, Personal Stories, Special Hell for Designers
 layout: 
 --->
 
-<img src="https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me.gif" class="full-width">
+<img src="https://adrian3.com/imgs/gifs/a-special-hell-for-designers-like-me.gif" class="full-width">
 
 # A Special Hell for Designers Like Me
 
@@ -39,7 +39,7 @@ This was my job, and I would like to think I did it well. The work we created fo
 
 First, let me tell you a little bit about the literal surface of the RVs. The exteriors are ugly and the swirly stickers don’t help much. I desperately wanted a chance to improve the graphics of the RVs. It seemed like the easiest way to differentiate our client’s white boxes from the competition.
 
-![](https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me4.gif)
+![](https://adrian3.com/imgs/gifs/a-special-hell-for-designers-like-me4.gif)
 
 Here’s how the graphics on an RV come to be. RV manufacturers have contracts with the companies that produce the decorative decals. The “design costs” are baked into the cost of the stickers. These sticker-makers are cutting deals with all the RV makers so all the stickers are designed by the same cost- constrained designers. It’s a monopoly of mediocrity.
 
@@ -49,7 +49,7 @@ You can still make a white box with ugly stickers the object of desire. Like any
 
 #### Magic Trick 1: Makeup
 
-<img src="https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me5.gif" alt="An alley in the ghetto transforms into paradise. Magic." class="caption">
+<img src="https://adrian3.com/imgs/gifs/a-special-hell-for-designers-like-me5.gif" alt="An alley in the ghetto transforms into paradise. Magic." class="caption">
 
 The first trick is the oldest in the book. Add makeup. Photoshop out the blemishes. Fix it in post.
 
@@ -63,7 +63,7 @@ The post-production used in photos of female models is well-documented. The dama
 
 I don’t know if you have been in an RV, so let me just tell you. They are tiny. Often you can stick your arms out and touch both walls. Making the interior of an RV look spacious is an impressive trick.
 
-<img src="https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me6.gif" alt="One of my favorite things about working for an RV client was being able to art direct the photo shoots for RV interiors." class="caption full-width">
+<img src="https://adrian3.com/imgs/gifs/a-special-hell-for-designers-like-me6.gif" alt="One of my favorite things about working for an RV client was being able to art direct the photo shoots for RV interiors." class="caption full-width">
 
 We used an assortment of photographers in Indiana who specialized in creating these illusions. It was amazing to watch them build a shot. In the morning you have an ordinary RV. You find the best place to put the camera. Select the right lens. Manicure the surfaces. Add props. Then carefully build light. By the end of the day you have achieved the impossible–the tiny interior looks massive.
 
@@ -73,7 +73,7 @@ The final step would be for me to take the interior photo, cut out the windows, 
 
 The third trick is misdirection. If your product can’t rely on its own good looks, you create images that encourage the viewer to look at something else. We called them lifestyle photos. Pictures of smiling, happy people doing exciting things with your product as a prop in the background. The sleight of hand is to shift of attention away from the product.
 
-![](https://adrian3.com/imgs/images/A-Special-Hell-for-Designers-Like-Me7.gif)
+![](https://adrian3.com/imgs/gifs/a-special-hell-for-designers-like-me7.gif)
 
 Imagine an adventurous couple on vacation. They slide their canoe into a crystal clean lake. Before climbing onboard, the man looks back over his shoulder at his RV parked on the beach. With a knowing nod, he thanks the heroic product for making this all possible.
 

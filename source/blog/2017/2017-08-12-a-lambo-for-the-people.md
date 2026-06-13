@@ -13,7 +13,7 @@ layout:
 
 # A Lambo for the People
 
-<img src="https://adrian3.com/imgs/images/lambo.gif">
+<img src="https://adrian3.com/imgs/gifs/lambo.gif">
 
 If you count eyeballs, [_the zombie-mobile_][1] is the most popular story I have written. This week instead of my normal essay I want to simply point you to a show that will surely appeal to fans of car design and haters of the crossover. 
 

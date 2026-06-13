@@ -9,7 +9,7 @@ categories: Design Thinking, Personal Stories, Special Hell for Designers
 description: Apple products are notoriously hard to open because they are obsessed with hiding screws and minimizing seams. But if you are able to crack open one of their products you will see something beautiful.
 --->
 
-![](https://adrian3.com/imgs/images/Death-by-Toothbrush.gif)
+![](https://adrian3.com/imgs/gifs/death-by-toothbrush.gif)
 
 # Death by Toothbrush
 
@@ -21,7 +21,7 @@ description: Apple products are notoriously hard to open because they are obsess
 
 Can you see what’s wrong with the following photo? This is the bottom of a charger for an electric toothbrush. Do you see the problem? _It’s not what you think._ Study it, and I will explain the error in a moment. First, let me tell you about my week.
 
-<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush2.gif" alt="What’s wrong with this picture?" class="caption">
+<img src="https://adrian3.com/imgs/gifs/death-by-toothbrush2.gif" alt="What’s wrong with this picture?" class="caption">
 
 So, this week I found myself knee deep in the unsexy part of my job. I was cleaning up sloppy HTML. There’s no fame or glory in writing clean, semantic markup. Nobody views the source of a website and says, “Wow, somebody really took pride on this page.”
 
@@ -43,7 +43,7 @@ There is a passage in Steve Jobs’ biography where he touches on this idea. Job
 
 Apple products are notoriously hard to open because they are obsessed with hiding screws and minimizing seams. But if you are able to crack open one of their products you will see something beautiful. The components are perfectly lined up. The invisible space is tended like a zen garden.
 
-<img src="https://adrian3.com/imgs/images/Death-by-Toothbrush3.gif" alt="Hidden inside Apple products is a devotion to space that few people ever see or appreciate." class="caption">
+<img src="https://adrian3.com/imgs/gifs/death-by-toothbrush3.gif" alt="Hidden inside Apple products is a devotion to space that few people ever see or appreciate." class="caption">
 
 * * *
 
