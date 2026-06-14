@@ -1034,6 +1034,26 @@ function copyTree(sourceDir, outputDir, generatedFiles) {
   }
 }
 
+// Copy favicons (icons + site.webmanifest) from admin/favicons into a
+// root-level favicons/ in the output. Kept separate from imgs/ so it can't
+// collide with the existing imgs/ folder on the live server. These live under
+// admin/ — build tooling, not content — so they stay out of the source/
+// markdown mirror while still landing in the built site, visible locally and
+// on deploy.
+function copyFavicons(outputDir, generatedFiles) {
+  const faviconDir = path.join(__dirname, "favicons");
+  if (!fs.existsSync(faviconDir)) return;
+  const targetDir = path.join(outputDir, "favicons");
+  ensureDir(targetDir);
+  for (const name of fs.readdirSync(faviconDir)) {
+    const src = path.join(faviconDir, name);
+    if (!fs.statSync(src).isFile()) continue;
+    const target = path.join(targetDir, name);
+    fs.copyFileSync(src, target);
+    generatedFiles.add(target);
+  }
+}
+
 function readPreviousState() {
   try {
     return JSON.parse(fs.readFileSync(BUILD_STATE_PATH, "utf8"));
@@ -1448,6 +1468,7 @@ export async function build(options = {}) {
     .sort((a, b) => a.url.localeCompare(b.url));
 
   buildStylesheet(outputDir);
+  copyFavicons(outputDir, generatedFiles);
   const feedPath = buildBlogFeed(outputDir, pages, variableValues["site-url"] || "", variableValues["site-title"] || "");
   const sitemapPath = buildSitemap(outputDir, pages, variableValues["site-url"] || "");
   if (feedPath) generatedFiles.add(feedPath);
