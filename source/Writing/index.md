@@ -9,7 +9,7 @@ slot.sidebar-content: writing-sidebar
 <p>My new book, <em><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803">User Zero</a></em> is out now! It starts by questioning the obvious, a tool as basic as your humble hammer, only to realize things are not as simple as they seem. As we retrace the evolution of our gadgets you’ll notice we’ve gotten a little bit stupider with each iteration. From pinball to pixels, playgrounds to Powerpoints, bicycles to Beetles, Coke bottles to cockpits – I’ll take you on a tour of the invisible side of technology that, I’ll warn you ahead of time, picks fights with some sacred cows.</p>
 <img class="userzero" src="https://adrian3.com/imgs/user-zero/user-zero-cover.webp">
 <p>And at the exact moment where you see where I am heading, right as you realize that something bad is going to happen, that’s the instant I’ll stick you behind the wheel of driverless cars, insert you into the cockpit of falling planes, and place you on the bridge of out-of-control Navy destroyers so that you’ll have a front row seat when tragedy strikes. <em>Buckle up.</em></p>
-<p><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803"><img src="https://adrian3.com/imgs/svgs/amazon.svg"></a> <a href="https://books.apple.com/us/book/user-zero/id1538379461?ls=1"><img src="https://adrian3.com/imgs/svgs/ibooks.svg"></a></p>
+<p><a href="https://www.amazon.com/User-Zero-Inside-Reshaping-Dystopia/dp/1735835803"><img style="display: inline-block;" src="https://adrian3.com/imgs/svgs/amazon.svg"></a> <a href="https://books.apple.com/us/book/user-zero/id1538379461?ls=1"><img style="display: inline-block;" src="https://adrian3.com/imgs/svgs/ibooks.svg"></a></p>
 <hr />
 
 <p><img src="https://adrian3.com/imgs/art-of-the-living-dead.webp"></p>
@@ -20,6 +20,8 @@ slot.sidebar-content: writing-sidebar
 <h2 id="made-by-ade">Made by Ade Newsletter</h2>
 <p>I write a newsletter called <a href="https://ade3.substack.com/about">Made by Ade</a> where you can get a taste of my twisted blend of technology critique, storytelling, and ideas for maintaining your creative energy. I want to add you to my distribution list.</p>
 <subscribe />
+
+<substack />
 
 <h2 id="best-of">Best Of:</h2>
 <ul>

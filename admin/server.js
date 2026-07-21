@@ -49,6 +49,17 @@ function logBuildWarnings(result) {
   }
 }
 
+async function buildInitialPreview() {
+  try {
+    invalidateLinkReportCache();
+    const result = await build();
+    logBuildWarnings(result);
+    console.log(`Initial preview build (${result.mode}): ${result.pagesBuilt} pages, ${result.postsBuilt} posts`);
+  } catch (err) {
+    console.error("Initial preview build error:", err.message);
+  }
+}
+
 async function checkPortFree(port) {
   return new Promise(resolve => {
     const tester = createServer()
@@ -444,6 +455,8 @@ async function startServer() {
   server.listen(PORT, "0.0.0.0", () => {
     console.log(`Admin server running at http://localhost:${PORT}`);
   });
+
+  await buildInitialPreview();
 
   // Preview server — serves website/ at root, mirroring production
   const outDir = getOutputRoot();

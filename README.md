@@ -337,7 +337,7 @@ The build compiles all CSS into a single `website/css/styles.css` in order: base
 
 | Token | Value | Use |
 |---|---|---|
-| `--ade-primary` | `#cc3300` | Single accent color for all interactive elements |
+| `--ade-primary` | `#43b3ae` | Single accent color for all interactive elements |
 | `--ade-ink` | `#3c3a3a` | Body text |
 | `--ade-parchment` | `#fafafa` | Header, footer, supporting surfaces |
 | `--ade-canvas` | `#ffffff` | Page background |

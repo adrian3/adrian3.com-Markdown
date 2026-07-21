@@ -8,9 +8,9 @@ class: nav
   <a class="nav-logo" href="/index.html" aria-label="Home">
     <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
       <g id="logo2">
-        <path class="d"        fill="#fff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
-        <path class="a"        fill="#fff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
-        <path class="e"        fill="#fff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d"        fill="#f2f2f2" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#f2f2f2" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#f2f2f2" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
         <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
         <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
         <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
@@ -21,12 +21,10 @@ class: nav
     </svg>
   </a>
   <nav>
-    <a href="/index.html">home</a>
-    <a href="/art/index.html">art</a>
-    <a href="/writing/index.html">writing</a>
-    <a href="/gallery-pages/index.html">galleries</a>
-    <a href="/case-studies/index.html">case studies</a>
-    <a href="/kitchen-sink/index.html">kitchen sink</a>
+    <a href="/art/index.html">Art</a>
+    <a href="/writing/index.html">Writing</a>
+    <a href="/code/index.html">Code</a>
+    <a href="/case-studies.html">Design</a>
   </nav>
 </div>
 <script>
@@ -41,6 +39,7 @@ class: nav
   };
 
   var count = 0, timer;
+  var neutralFill = '#f2f2f2';
   // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
   // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
   // restore: +180 = 540° (upside down again), and so on.
@@ -55,16 +54,15 @@ class: nav
     // Disable transitions so the initial state snaps in without a white flash
     Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
 
-    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
-    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
-    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
     s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
     s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
     // Start e2 upside-down and hidden
     e2Rot = 180;
     s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
-    // Outlines hidden from the start
-    s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
 
     requestAnimationFrame(function () {
       Object.values(s).forEach(function (el) { el.style.transition = ''; });
@@ -77,13 +75,16 @@ class: nav
     s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
     s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
     s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
-    s.e.style.opacity = rAlpha(); s.e.style.fill = '#cc3300';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
     s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
     s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
     s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
     // Rotate e2 another 180° — it lands right-side up (ADE visible)
     e2Rot += 180;
     s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
   }
 
   function restore() {

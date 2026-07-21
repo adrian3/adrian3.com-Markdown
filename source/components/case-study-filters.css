@@ -1,0 +1,48 @@
+.case-study-filter-panel {
+  max-width: var(--ade-wide-width);
+  margin: 0 auto var(--ade-space-6);
+  padding: var(--ade-space-5);
+  background: var(--ade-parchment);
+  border: 1px solid var(--ade-hairline);
+  border-radius: var(--ade-radius);
+}
+
+.case-study-filter-header > * + * {
+  margin-top: var(--ade-space-3);
+}
+
+.case-study-filter-header h2 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.case-study-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ade-space-2);
+  margin-top: var(--ade-space-5);
+}
+
+.case-study-filter-chip {
+  border: 1px solid var(--ade-hairline);
+  background: var(--ade-canvas);
+  color: var(--ade-ink);
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: var(--ade-font-ui);
+  font-size: 10px;
+  min-height: 0;
+  padding: 7px;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.case-study-filter-chip:hover,
+.case-study-filter-chip:focus-visible {
+  border-color: var(--ade-primary);
+  color: var(--ade-primary);
+}
+
+.case-study-filter-chip.is-active {
+  background: var(--ade-primary);
+  border-color: var(--ade-primary);
+  color: #fff;
+}

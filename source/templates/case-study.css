@@ -1,0 +1,42 @@
+.case-study-shell {
+  padding: 0 0 var(--ade-space-8);
+}
+
+.case-study-inner {
+  max-width: var(--ade-wide-width);
+  margin: 0 auto;
+}
+
+.case-study-inner > * + * {
+  margin-top: var(--ade-space-5);
+}
+
+.case-study-inner > h1,
+.case-study-inner > h2,
+.case-study-inner > h3,
+.case-study-inner > p,
+.case-study-inner > ul,
+.case-study-inner > ol,
+.case-study-inner > blockquote,
+.case-study-inner > pre,
+.case-study-inner > table,
+.case-study-inner > hr {
+  max-width: var(--ade-content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-inner > figure.figure-content,
+.case-study-inner > figure:not(.figure-full) {
+  max-width: var(--ade-content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-inner > figure.figure-full {
+  max-width: none;
+}
+
+.case-study-inner img {
+  width: 100%;
+}

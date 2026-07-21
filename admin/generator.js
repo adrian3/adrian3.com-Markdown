@@ -128,7 +128,7 @@ function guessMarkdownKind(filePath, data = {}) {
 
 function findPlaceholderNames(markdownSource) {
   const names = new Set();
-  const pattern = /<([A-Za-z][A-Za-z0-9_.-]*)\s*\/\s*>/g;
+  const pattern = /<([A-Za-z][A-Za-z0-9_.-]*)(?:\s+[^>]*)?\/\s*>/g;
   let match;
   while ((match = pattern.exec(markdownSource))) {
     names.add(match[1]);
@@ -1462,6 +1462,8 @@ export async function build(options = {}) {
         date: entry.data.date || "",
         description: entry.data.description || "",
         categories: entry.data.categories || "",
+        thumbnail: entry.data.thumbnail || "",
+        thumbnailAlt: entry.data["thumbnail-alt"] || entry.data.thumbnailAlt || "",
         unlisted: isUnlistedContent(entry.data),
       };
     })

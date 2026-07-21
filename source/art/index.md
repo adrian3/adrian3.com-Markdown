@@ -10,6 +10,9 @@ slot.sidebar-content: art-sidebar
 
 <hr />
 
+<h2 id="galleries">Galleries</h2>
+<page-list folder="gallery-pages" />
+
 <h2 id="infestation">Infestation Insect Prints</h2>
 <a href="infestation.html"><img src="https://adrian3.com/imgs/galleries/infestation/infestation-thumb.webp"></a>
 <p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="https://etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
