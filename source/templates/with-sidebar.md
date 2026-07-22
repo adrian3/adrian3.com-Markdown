@@ -11,12 +11,12 @@ template-name: with-sidebar
 <header />
 <subnav />
 <div class="sidebar-layout">
-	<main class="sidebar-layout-main">
-		<content />
-	</main>
 	<aside class="sidebar-layout-aside">
 		<sidebar-content />
 	</aside>
+	<main class="sidebar-layout-main">
+		<content />
+	</main>
 </div>
 <footer />
 </body>

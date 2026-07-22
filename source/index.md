@@ -20,9 +20,6 @@ Scanner Camera
 Receipt Printer Polaroid
 Money printing camera
 
-Tools:
-- ??
-
 Art Projects:
 Infestation
 Receipt Animations
@@ -37,97 +34,6 @@ Postcards
 Books:
 AOTLD
 User Zero
-
-
-
-
-<image-grid>
-
-<a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/self-portrait.webp" alt="Coffee Stirrer Camera">
-<figcaption>Coffee Stirrer Camera</figcaption>
-</figure>
-</a>
-
-<a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/ghost-o-meter.webp" alt="Ghost-O-Meter">
-<figcaption>Ghost-O-Meter</figcaption>
-</figure>
-</a>
-
-<a href="http://tread1st.com/boston.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/boston-marathon-data.webp" alt="Boston Marathon Data">
-<figcaption>Boston Marathon Data</figcaption>
-</figure>
-</a>
-
-<a href="../art/pinecones.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/pinecone.webp" alt="Pine Cones">
-<figcaption>Pine Cones</figcaption>
-</figure>
-</a>
-
-<a href="/art/index.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/spider-flower.webp" alt="Art Shows">
-<figcaption>Art Shows</figcaption>
-</figure>
-</a>
-
-<a href="/gallery-pages/pottery.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/pottery.webp" alt="Pottery">
-<figcaption>Pottery</figcaption>
-</figure>
-</a>
-
-<a href="../art/postcards.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/postcard.webp" alt="Free Postcard Art">
-<figcaption>Free Postcard Art</figcaption>
-</figure>
-</a>
-
-<a href="/gallery-pages/camera-drawings.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/cameras.webp" alt="Camera Drawings">
-<figcaption>Camera Drawings</figcaption>
-</figure>
-</a>
-
-<a href="/gallery-pages/camera-graffiti.html">
-<figure>
-<img src="https://adrian3.com/imgs/art-section/camera-graffiti.webp" alt="Baby Powder Graffiti">
-<figcaption>Baby Powder Graffiti</figcaption>
-</figure>
-</a>
-
-<a href="/gallery-pages/bookshelves.html">
-<figure>
-<img src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.webp" alt="Bookshelves">
-<figcaption>Bookshelves</figcaption>
-</figure>
-</a>
-
-<a href="/gallery-pages/illustrations.html">
-<figure>
-<img src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp" alt="Illustrations">
-<figcaption>Illustrations</figcaption>
-</figure>
-</a>
-
-<a href="/gallery-pages/2019-art.html">
-<figure>
-<img src="https://adrian3.com/imgs/galleries/2019-art/1-matchbook-monday.webp" alt="2019 Art">
-<figcaption>2019 Art</figcaption>
-</figure>
-</a>
-
-</image-grid>
 
 ---
 

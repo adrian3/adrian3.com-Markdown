@@ -41,6 +41,3 @@ slot.sidebar-content: writing-sidebar
 <li><a href="https://ade3.medium.com/ingredients-of-creativity-9f94cee9b3c0">Ingredients of Creativity</a></li>
 <li><a href="https://medium.com/@ade3/the-heroes-behind-healthcare-gov-e8c670f743fd">The Heroes Behind Healthcare.gov</a></li>
 </ul>
-
-<h2 id="blog-archive">From the Blog:</h2>
-<blog-recent />

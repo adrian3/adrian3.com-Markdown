@@ -12,7 +12,7 @@ This page uses `template: with-sidebar` with a page-specific sidebar override:
 slot.sidebar-content: sidebar-work
 ```
 
-The sidebar on the right is `component.sidebar-work.md` — a component with context specific to the work section, not the global site-wide links. The global `sidebar-content` component is completely replaced for this page.
+The sidebar on the left is `component.sidebar-work.md` — a component with context specific to the work section, not the global site-wide links. The global `sidebar-content` component is completely replaced for this page.
 
 ## How slot overrides work
 

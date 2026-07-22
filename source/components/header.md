@@ -4,13 +4,14 @@ component-name: header
 raw: true
 class: nav
 --->
+
 <div class="nav-inner">
   <a class="nav-logo" href="/index.html" aria-label="Home">
     <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
       <g id="logo2">
-        <path class="d"        fill="#f2f2f2" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
-        <path class="a"        fill="#f2f2f2" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
-        <path class="e"        fill="#f2f2f2" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
         <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
         <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
         <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
@@ -20,26 +21,28 @@ class: nav
       </g>
     </svg>
   </a>
-  <nav>
-    <a href="/art/index.html">Art</a>
-    <a href="/writing/index.html">Writing</a>
-    <a href="/code/index.html">Code</a>
-    <a href="/case-studies.html">Design</a>
-  </nav>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav>
+      <a href="/art/index.html">Art</a>
+      <a href="/code.html">Code</a>
+      <a href="/case-studies.html">Design</a>
+      <a href="/writing/index.html">Writing</a>    </nav>
+  </div>
 </div>
 <script>
 (function () {
   var svg = document.getElementById('logo');
   if (!svg) return;
-
   var s = {
     a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
     a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
     outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
   };
 
-  var count = 0, timer;
-  var neutralFill = '#f2f2f2';
+
+  var count = 0;
+  var neutralFill = '#ffffff';
   // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
   // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
   // restore: +180 = 540° (upside down again), and so on.
@@ -63,7 +66,7 @@ class: nav
     e2Rot = 180;
     s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
     s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
-
+    
     requestAnimationFrame(function () {
       Object.values(s).forEach(function (el) { el.style.transition = ''; });
     });
@@ -99,15 +102,8 @@ class: nav
     s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
   }
 
-  function tick() {
-    scramble();
-    if (count > 5) clearInterval(timer);
-    setTimeout(restore, 3000);
-  }
-
   init();
-  timer = setInterval(tick, 6000);
-  svg.addEventListener('mouseenter', function () { scramble(); clearInterval(timer); });
+  svg.addEventListener('mouseenter', scramble);
   svg.addEventListener('mouseleave', restore);
 }());
 </script>

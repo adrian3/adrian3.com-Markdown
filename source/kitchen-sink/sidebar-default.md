@@ -5,7 +5,7 @@ template: with-sidebar
 --->
 # Default Sidebar
 
-This page uses `template: with-sidebar` with no slot override. The sidebar on the right is the global `sidebar-content` component — the same one that appears on every page using this template.
+This page uses `template: with-sidebar` with no slot override. The sidebar on the left is the global `sidebar-content` component — the same one that appears on every page using this template.
 
 ## How the default works
 
@@ -17,4 +17,4 @@ The default sidebar works well for pages where the supplementary content is genu
 
 ## Typography and spacing
 
-This column exercises baseline heading hierarchy, paragraph spacing, and list rendering inside the main content area. The sidebar column should stay sticky as this content scrolls, pinned to the top of the viewport with a hairline left border separating it from the content.
+This column exercises baseline heading hierarchy, paragraph spacing, and list rendering inside the main content area. The sidebar column should stay sticky as this content scrolls, pinned to the top of the viewport beside the content.

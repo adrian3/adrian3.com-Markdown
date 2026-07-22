@@ -5,8 +5,102 @@ template: with-sidebar
 slot.sidebar-content: art-sidebar
 --->
 
-<h4>My philosophy on art...</h4>
-<p>Beauty is hiding in plain sight waiting to be discovered. That's what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my <a href="http://instagram.com/ade3">Ade3 Instagram account</a>.</p>  
+#### My philosophy on art...
+Beauty is hiding in plain sight waiting to be discovered. That's what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my [http://instagram.com/ade3](Ade3 Instagram account).
+
+<image-grid>
+
+<a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/self-portrait.webp" alt="Coffee Stirrer Camera">
+<figcaption>Coffee Stirrer Camera</figcaption>
+</figure>
+
+</a>
+
+<a href="../art/pinecones.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/pinecone.webp" alt="Pine Cones">
+<figcaption>Pine Cones</figcaption>
+</figure>
+
+</a>
+
+<a href="/art/index.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/spider-flower.webp" alt="Art Shows">
+<figcaption>Art Shows</figcaption>
+</figure>
+
+</a>
+
+<a href="/gallery-pages/pottery.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/pottery.webp" alt="Pottery">
+<figcaption>Pottery</figcaption>
+</figure>
+
+</a>
+
+<a href="../art/postcards.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/postcard.webp" alt="Free Postcard Art">
+<figcaption>Free Postcard Art</figcaption>
+</figure>
+
+</a>
+
+<a href="/gallery-pages/camera-drawings.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/cameras.webp" alt="Camera Drawings">
+<figcaption>Camera Drawings</figcaption>
+</figure>
+
+</a>
+
+<a href="/gallery-pages/camera-graffiti.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/art-section/camera-graffiti.webp" alt="Baby Powder Graffiti">
+<figcaption>Baby Powder Graffiti</figcaption>
+</figure>
+
+</a>
+
+<a href="/gallery-pages/bookshelves.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.webp" alt="Bookshelves">
+<figcaption>Bookshelves</figcaption>
+</figure>
+
+</a>
+
+<a href="/gallery-pages/illustrations.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp" alt="Illustrations">
+<figcaption>Illustrations</figcaption>
+</figure>
+
+</a>
+
+<a href="/gallery-pages/2019-art.html">
+
+<figure>
+<img src="https://adrian3.com/imgs/galleries/2019-art/1-matchbook-monday.webp" alt="2019 Art">
+<figcaption>2019 Art</figcaption>
+</figure>
+
+</a>
+
+</image-grid>
 
 <hr />
 
@@ -80,14 +174,7 @@ slot.sidebar-content: art-sidebar
 
 <h2 id="pine-cones">Pine Cones</h2>
 <a href="../gallery-pages/pinecones.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/pinecone.webp"></a>
-<p>I love the shape of pinecones. I capture their sillouettes using sun prints and then remix the shapes with stencils and different photographic techniques. Here is a <a href="../gallery-pages/pinecones.html">pine cone gallery</a> showing the results of this work.</p>
 <hr />
-
-<h2 id="ghost-o-meter">Ghost-O-Meter</h2>
-<a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="https://adrian3.com/imgs/user-zero-illustrations/ghost-o-meter.webp"></a>
-<p>While not exactly an art project, the <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510">Ghost-O-Meter app</a> is one of my creations that got pretty popular. In the early days of the App Store this was downloaded around 1 million times.</p>
-<hr />
-
 <h2 id="art-shows">Art Shows</h2>
 <a href="art-shows.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/spider-flower.webp"></a>
 <p>I've done a handful of art shows over the years. Here is a list of <a href="art-shows.html">Shows and Exhibitions</a> I have participated in.<br />
