@@ -1,5 +1,6 @@
 <!---
-title: Meet Max: Designing Trust into AI
+title: Meet Max
+sub-title: Designing Trust into AI
 template: case-study
 published: true
 unlisted: true

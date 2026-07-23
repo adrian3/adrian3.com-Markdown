@@ -1,5 +1,6 @@
 <!---
-title: Designing Observability: UX Leadership at OpenText
+title: Designing Observability
+sub-title: UX Leadership at OpenText
 template: case-study
 published: true
 unlisted: true

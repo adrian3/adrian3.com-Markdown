@@ -1,5 +1,6 @@
 <!---
-title: #ThanksCoach: A Viral Tool for Celebrating Coaches
+title: #ThanksCoach
+sub-title: A Viral Tool for Celebrating Coaches
 template: case-study
 published: true
 unlisted: true

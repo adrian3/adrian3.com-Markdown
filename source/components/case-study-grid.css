@@ -19,7 +19,7 @@
 
 .case-study-card {
   display: grid;
-  grid-template-rows: 12rem auto 1fr;
+  grid-template-rows: calc(12rem + 25px) auto;
   border: 1px solid var(--ade-hairline);
   border-radius: var(--ade-radius);
   background: var(--ade-canvas);
@@ -43,7 +43,7 @@
 .case-study-card-media {
   display: block;
   width: 100%;
-  height: 12rem;
+  height: calc(12rem + 25px);
   overflow: hidden;
   background: var(--ade-pearl);
 }
@@ -56,9 +56,6 @@
 }
 
 .case-study-card-body {
-  display: grid;
-  grid-template-rows: 6.25rem 1fr;
-  gap: 0.5rem;
   padding: 0.75rem 1rem 0.875rem;
   min-height: 0;
 }
@@ -75,6 +72,14 @@
   -webkit-line-clamp: 3;
 }
 
+.case-study-card-subtitle {
+  margin: 0.4rem 0 0;
+  color: var(--ade-muted);
+  font-family: var(--ade-font-ui);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
 .case-study-card-title a {
   color: inherit;
   text-decoration: none;
@@ -88,30 +93,6 @@
 
 .case-study-card-summary {
   display: none;
-}
-
-.case-study-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  align-content: flex-start;
-  align-self: end;
-}
-
-.case-study-card-tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--ade-hairline);
-  border-radius: 2px;
-  background: var(--ade-canvas);
-  color: var(--ade-muted);
-  font-family: var(--ade-font-ui);
-  font-size: 10px;
-  line-height: 1;
-  min-height: 0;
-  padding: 7px;
-  white-space: nowrap;
 }
 
 @media (max-width: 64rem) {

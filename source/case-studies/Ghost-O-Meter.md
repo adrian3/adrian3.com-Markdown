@@ -1,5 +1,6 @@
 <!---
-title: Ghost-O-Meter: The Joke App That Turned an Agency Into an App Studio
+title: Ghost-O-Meter
+sub-title: The App That Turned a Marketing Agency Into an App Studio
 template: case-study
 published: true
 unlisted: true

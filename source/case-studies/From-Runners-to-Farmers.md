@@ -1,5 +1,6 @@
 <!---
-title: From Runners to Farmers: The UX Problems Are Universal
+title: From Runners to Farmers
+sub-title: Universal UX Problems
 template: case-study
 published: true
 unlisted: true

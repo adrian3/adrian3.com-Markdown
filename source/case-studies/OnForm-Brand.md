@@ -1,5 +1,6 @@
 <!---
-title: OnForm: Branding a Video Coaching App
+title: OnForm
+sub-title: Branding a Video Coaching App
 template: case-study
 published: true
 unlisted: true

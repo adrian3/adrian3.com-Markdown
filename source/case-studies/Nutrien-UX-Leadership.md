@@ -1,5 +1,6 @@
 <!---
-title: Building a UX Practice at the World's Largest Ag Company
+title: Building a UX Practice
+sub-title: Insights from the World's Largest Ag Company
 template: case-study
 published: true
 unlisted: true

@@ -1,5 +1,6 @@
 <!---
-title: The Product Catalog: Helping Experts Choose the Right Product
+title: A Product Catalog for Farming
+sub-title: Helping Experts Choose the Right Product
 template: case-study
 published: true
 unlisted: true

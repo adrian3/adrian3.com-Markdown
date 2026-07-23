@@ -1,5 +1,6 @@
 <!---
-title: Rotadent Contour: A "Do the Math" Product Launch
+title: Rotadent Contour
+sub-title: A "Do the Math" Product Launch
 template: case-study
 published: true
 unlisted: true

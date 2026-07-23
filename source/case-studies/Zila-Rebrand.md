@@ -1,5 +1,6 @@
 <!---
-title: Rebranding Zila: One Identity Across 16 Medical Products
+title: Rebranding Zila
+sub-title: One Identity Across 16 Medical Products
 template: case-study
 published: true
 unlisted: true

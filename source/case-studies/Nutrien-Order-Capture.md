@@ -1,5 +1,6 @@
 <!---
-title: Decoupling Order Capture: Designing a Tool That Competes With a Phone Call
+title: Decoupling Order Capture
+sub-title: Designing a Tool That Competes With a Phone Call
 template: case-study
 published: true
 unlisted: true

@@ -1494,6 +1494,7 @@ export async function build(options = {}) {
         template: entry.templateName,
         date: entry.data.date || "",
         description: entry.data.description || "",
+        subtitle: entry.data["sub-title"] || entry.data.subtitle || "",
         categories: entry.data.categories || "",
         thumbnail: entry.data.thumbnail || "",
         thumbnailAlt: entry.data["thumbnail-alt"] || entry.data.thumbnailAlt || "",

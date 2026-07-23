@@ -1,5 +1,6 @@
 <!---
-title: Burns Marketing: Bringing App Development to an Agency
+title: Burns Marketing
+sub-title: Bringing App Development to an Agency
 template: case-study
 published: true
 unlisted: true

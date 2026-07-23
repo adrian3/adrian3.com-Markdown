@@ -1,5 +1,6 @@
 <!---
-title: Jayco: A Decade of Campaigns for "America's Most Liveable RVs"
+title: Jayco
+sub-title: A Decade of Campaigns for "America's Most Liveable RVs"
 template: case-study
 published: true
 unlisted: true

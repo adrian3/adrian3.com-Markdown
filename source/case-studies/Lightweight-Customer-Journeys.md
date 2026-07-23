@@ -1,5 +1,6 @@
 <!---
-title: Lightweight Customer Journeys
+title: UX Research Methods
+sub-title: Lightweight Customer Journeys
 template: case-study
 published: true
 unlisted: true

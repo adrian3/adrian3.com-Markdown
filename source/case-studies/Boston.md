@@ -1,5 +1,6 @@
 <!---
-title: Boston: The Marathon Data Project
+title: Boston
+sub-title: The Marathon Data Project
 template: case-study
 published: true
 unlisted: true

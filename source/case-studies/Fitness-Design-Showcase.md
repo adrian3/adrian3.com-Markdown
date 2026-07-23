@@ -1,5 +1,6 @@
 <!---
-title: Designing for Endurance: A Decade of Fitness-Tech Product Design
+title: Designing for Endurance
+sub-title: A Decade of Fitness-Tech Product Design
 template: case-study
 published: true
 unlisted: true

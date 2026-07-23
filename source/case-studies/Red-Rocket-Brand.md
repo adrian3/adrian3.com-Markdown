@@ -1,5 +1,6 @@
 <!---
-title: Red Rocket: Building the Brand of a Web Agency
+title: Red Rocket Rebrand
+sub-title: Building the Brand of a Web Agency
 template: case-study
 published: true
 unlisted: true

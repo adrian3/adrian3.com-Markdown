@@ -1,5 +1,6 @@
 <!---
-title: Red Rocket: Selected Client Work
+title: Red Rocket
+sub-title: Selected Client Work
 template: case-study
 published: true
 unlisted: true

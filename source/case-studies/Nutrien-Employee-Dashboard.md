@@ -1,5 +1,6 @@
 <!---
-title: The Employee Dashboard: The Right Message, in the Right Place, at the Right Time
+title: The Employee Dashboard
+sub-title: The Right Message, in the Right Place, at the Right Time
 template: case-study
 published: true
 unlisted: true

@@ -1,5 +1,6 @@
 <!---
-title: Weed Eaters: A Human-in-the-Loop Weed ID Tool
+title: Weed Eaters
+sub-title: A Human-in-the-Loop Weed ID Tool
 template: case-study
 published: true
 unlisted: true

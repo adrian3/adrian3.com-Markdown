@@ -1,8 +1,17 @@
 <!---
-title: Nutrien Case Study
+title: Nutrien
+sub-title: Modernizing Digital Tools for 20,000 Crop Consultants
+template: case-study
+published: true
 unlisted: true
+categories: featured, ux design, agriculture, user research, journey maps and personas
+thumbnail: https://adrian3.com/imgs/case-studies/nutrien-images/0.case-study-title.webp
+thumbnail-alt: Building a UX Practice at the World's Largest Ag Company thumbnail
 --->
-<img src="https://adrian3.com/imgs/case-studies/nutrien-images/0.case-study-title.webp" style="margin:  -1.5rem 0 1rem 0; width: 100vw;">
+--->
+<img src="https://adrian3.com/imgs/case-studies/nutrien-images/0.case-study-title.webp" style="margin: 0 0 1rem 0; width: 100vw;">
+
+# Modernizing Digital Tools for 20,000 Crop Consultants
 
 ### Introduction
 
