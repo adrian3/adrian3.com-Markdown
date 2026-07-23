@@ -19,7 +19,7 @@ layout:
 
 I am disappointed by the companies that make websites. As I survey the web agency sites they all seem to follow the same disturbing recipe. The ingredients are the same, each company just alters the quantities slightly. You take a healthy scoop of research and slowly blend in writing, code, photography, and design. You bake this mixture into a CMS, top it off with a layer of frosting and let it cool. Add responsive sauce to taste. If we believe their message, making a quality website is simple, just follow the recipe. But if that is true, why does so much garbage continue to get produced? We have been served this dish for years and I don’t think it’s working. Do you?
 
-<img src="https://adrian3.com/imgs/images/curiosity-obsession-clarity-quality2.webp" alt="This is what website creation looks like">
+![This is what website creation looks like](https://adrian3.com/imgs/images/curiosity-obsession-clarity-quality2.webp)
 
 A websites may satisfy the checklist of ingredients and still lack quality. A quality site transcends the ingredients. As an industry, website creators have stopped seeking to transcend and have been satisfied with mass production. Each company alters the recipe slightly, but the product stays the same. Most websites today stink. _So what makes a quality website then?_
 

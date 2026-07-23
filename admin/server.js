@@ -12,13 +12,13 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:net";
-import { build, buildStylesheet, parseFrontmatter } from "./generator.js";
 import { applyLinkFix, getLinkReport, invalidateLinkReportCache } from "./link-checker.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const PORT = Number.parseInt(process.env.PORT || "3002", 10);
 const PREVIEW_PORT = Number.parseInt(process.env.PREVIEW_PORT || String(PORT + 1), 10);
+const GENERATOR_PATH = path.join(__dirname, "generator.js");
 
 const MIME = {
   ".html": "text/html",
@@ -49,9 +49,15 @@ function logBuildWarnings(result) {
   }
 }
 
+async function loadGenerator() {
+  const mtime = fs.statSync(GENERATOR_PATH).mtimeMs;
+  return import(`./generator.js?mtime=${mtime}`);
+}
+
 async function buildInitialPreview() {
   try {
     invalidateLinkReportCache();
+    const { build } = await loadGenerator();
     const result = await build();
     logBuildWarnings(result);
     console.log(`Initial preview build (${result.mode}): ${result.pagesBuilt} pages, ${result.postsBuilt} posts`);
@@ -235,6 +241,7 @@ async function handleRequest(req, res) {
   if (pathname === "/api/build" && req.method === "POST") {
     res.writeHead(200, { "Content-Type": "application/json" });
     try {
+      const { build } = await loadGenerator();
       const result = await build();
       logBuildWarnings(result);
       broadcastReload();
@@ -329,6 +336,7 @@ async function handleRequest(req, res) {
       const frontmatterUserKeySet = new Set();
 
       for (const file of sourceFiles) {
+        const { parseFrontmatter } = await loadGenerator();
         const kind = classifyMarkdownFile(file.relPath);
         if (!kind) continue;
         if (kind === "variables") {
@@ -404,6 +412,7 @@ async function handleRequest(req, res) {
         const payload = JSON.parse(body || "{}");
         const result = applyLinkFix(getSourceRoot(), getOutputRoot(), payload);
         const changedPath = path.join(getSourceRoot(), String(payload.source || ""));
+        const { build } = await loadGenerator();
         const buildResult = await build({ changedPath, eventType: "change" });
         logBuildWarnings(buildResult);
         broadcastReload();
@@ -513,6 +522,7 @@ async function startServer() {
         console.log(`Markdown ${event}${relative ? `: ${relative}` : ""}, rebuilding...`);
         try {
           invalidateLinkReportCache();
+          const { build } = await loadGenerator();
           const result = await build({ changedPath: filePath, eventType: event });
           logBuildWarnings(result);
           console.log(`Rebuilt (${result.mode}): ${result.pagesBuilt} pages, ${result.postsBuilt} posts`);
@@ -548,6 +558,7 @@ async function startServer() {
                 fs.copyFileSync(srcFile, outFile);
               }
               if (/\.css$/i.test(filename)) {
+                const { buildStylesheet } = await loadGenerator();
                 buildStylesheet(getOutputRoot());
               }
               console.log(`Asset changed: ${filename} → ${outRel} — synced, reloading.`);

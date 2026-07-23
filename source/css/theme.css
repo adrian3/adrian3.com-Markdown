@@ -14,6 +14,10 @@
   padding: var(--ade-space-6) var(--ade-space-5) var(--ade-space-8);
 }
 
+.container.reading-column {
+  max-width: var(--ade-content-width);
+}
+
 /* ── Dashboard page layout ── */
 .dashboard-shell {
   display: grid;

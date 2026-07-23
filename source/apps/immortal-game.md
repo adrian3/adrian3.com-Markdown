@@ -4,17 +4,17 @@ date: November 24, 2016
 --->
 # Immortal Game: The Greatest Chess Ever Played
 
-<img src="https://adrian3.com/imgs/immortal_game_cover.webp" />
+![](https://adrian3.com/imgs/immortal_game_cover.webp)
 
 _Immortal Game_ tells the story of ten of the most famous chess matches ever played. They are so famous that they are known by nicknames like "The Evergreen Game" or "Game of the Century."  
 
 When I was a kid I remember trying to read chess books and getting stuck on the complex notation and static positions printed on the pages. Now that we read books on our phones and tablets it seems silly to carry that archaic format over to new devices. I took advantage of the iBook format by embedding digital chess boards that allow you to click though each game a move at a time. 
 
- Immortal game is available for <a href="https://itunes.apple.com/us/book/immortal-game-greatest-chess/id610194268?ls=1">download through iBooks</a> (recommended) or as an <a href="https://itunes.apple.com/us/app/immortal-game-greatest-chess/id613890349?mt=8">app</a>. Reprinted below is the introduction.
+ Immortal game is available for [download through iBooks](https://itunes.apple.com/us/book/immortal-game-greatest-chess/id610194268?ls=1) (recommended) or as an [app](https://itunes.apple.com/us/app/immortal-game-greatest-chess/id613890349?mt=8). Reprinted below is the introduction.
 
-<hr />
+---
 
-<h2>Chess: The Immortal Game</h2>
+## Chess: The Immortal Game
 Of the millions of millions of chess games played, what is it that makes a few stand out from the rest? The games selected for this book are examples of the most fascinating and world-renowned chess exhibitions the world has ever known. They stand as examples of the beauty of chess, and the unbelievable brilliance of the masters who dominated the game. But how do you rank the brilliance of a game of chess? What is it about these games that captures the imagination? The answer has as much to do with human psychology as it does with the genius on display.
 
 My theory behind the longevity of these games is that they are great stories. Like a great novel, these games contain themes that resonate with people. Immortal chess games contain drama, daring, suspense, heroes, villains, and underdogs. Some are violent battles between heavyweights. Others are like poetry. Some have unexpected outcomes, and still others are classics. They are tales of sacrifice, surprise, creativity, and even pacifism. These games are great stories that become immortal because people will be retelling them until the end of time.
@@ -23,4 +23,4 @@ We also retell stories because the humanity of the characters resonates with us.
 
 When mortals like you and I play chess there is a tendency for our play to be safe, expected, and if we are honest, our play is often boring. Once we master the basics, winning often becomes a simple matter of waiting and hoping for your you opponent to make a mistake. Once a player is ahead by a piece it is just a matter of grinding it out until the game ends. Even if you win, those types of games aren't much fun to play and they are even less fun to watch. If we think about our games as an opportunity to tell a story, perhaps we can gain more entertainment from the games we play. By studying the immortal games it is my hope that you will be inspired and entertained. Perhaps your chess games will be more entertaining as well.
 
-_Immortal Game_  is available for <a href="https://itunes.apple.com/us/book/immortal-game-greatest-chess/id610194268?ls=1">download through iBooks</a> (recommended) or as an <a href="https://itunes.apple.com/us/app/immortal-game-greatest-chess/id613890349?mt=8">app</a>.
+_Immortal Game_  is available for [download through iBooks](https://itunes.apple.com/us/book/immortal-game-greatest-chess/id610194268?ls=1) (recommended) or as an [app](https://itunes.apple.com/us/app/immortal-game-greatest-chess/id613890349?mt=8).

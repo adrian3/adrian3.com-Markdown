@@ -210,9 +210,18 @@ function resolveIncludedPageEntry(pageRef, currentRel, pageEntriesByRel) {
 }
 
 function wrapComponentHtml(html, data = {}) {
+  const element = data.element ? String(data.element).trim().toLowerCase() : "";
   const attrs = [];
   if (data.id) attrs.push(`id="${escapeHtml(String(data.id))}"`);
   if (data.class) attrs.push(`class="${escapeHtml(String(data.class))}"`);
+  if (element && /^[a-z][a-z0-9-]*$/.test(element)) {
+    const singleParagraph = html.trim().match(/^<p>([\s\S]*)<\/p>$/);
+    const innerHtml = singleParagraph && !singleParagraph[1].includes("<p>") && !singleParagraph[1].includes("</p>")
+      ? singleParagraph[1]
+      : html;
+    const attrText = attrs.length ? ` ${attrs.join(" ")}` : "";
+    return `<${element}${attrText}>${innerHtml}</${element}>`;
+  }
   if (!attrs.length) return html;
   return `<div ${attrs.join(" ")}>${html}</div>`;
 }
@@ -600,7 +609,12 @@ function inlineMarkdown(text) {
     // Protect inline HTML tags before escaping so they pass through intact.
     // Uses null-byte placeholders which cannot appear in markdown source.
     const saved = [];
-    let text = chunk.replace(/<([a-z][a-z0-9]*)\b([^>]*)>([\s\S]*?)<\/\1>/gi, (match) => {
+    let text = chunk.replace(/<!--[\s\S]*?-->/g, (match) => {
+      saved.push(match);
+      return `\x00${saved.length - 1}\x00`;
+    });
+
+    text = text.replace(/<([a-z][a-z0-9]*)\b([^>]*)>([\s\S]*?)<\/\1>/gi, (match) => {
       saved.push(match);
       return `\x00${saved.length - 1}\x00`;
     });
@@ -705,6 +719,17 @@ function renderMarkdown(markdown) {
     if (/^([-*_])\1\1+$/.test(trimmed)) {
       blocks.push("<hr>");
       i += 1;
+      continue;
+    }
+
+    if (trimmed.startsWith("<!--")) {
+      const commentLines = [line.trim()];
+      i += 1;
+      while (!commentLines.at(-1).includes("-->") && i < lines.length) {
+        commentLines.push(lines[i]);
+        i += 1;
+      }
+      blocks.push(commentLines.join("\n"));
       continue;
     }
 
@@ -863,6 +888,13 @@ function replaceVariablesInHtml(html, variables = {}) {
     output = output.replace(escapedPattern, normalized);
   }
   return output;
+}
+
+function normalizeClassAttributes(html) {
+  return html.replace(/\bclass="([^"]*)"/g, (_, value) => {
+    const normalized = value.trim().replace(/\s+/g, " ");
+    return normalized ? `class="${normalized}"` : "";
+  });
 }
 
 function withLiveReload(html) {
@@ -1317,6 +1349,7 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
   }
 
   html = replaceVariablesInHtml(html, variables);
+  html = normalizeClassAttributes(html);
   html = expandWrapperComponentsInHtml(html, componentsByName, variables, {
     currentRel: entry.rel,
     pageEntriesByRel,

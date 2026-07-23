@@ -23,7 +23,7 @@ Every year around Halloween hoards of thrill seekers fire up [Ghost-O-Meter](htt
 
 _I need to make a confession._
 
-<a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8"><img src="https://adrian3.com/imgs/gifs/a-confession-from-ghost-o-meters-creator2.gif"></a>
+[![](https://adrian3.com/imgs/gifs/a-confession-from-ghost-o-meters-creator2.gif)](https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8)
 
 While some may doubt the legitimacy of Ghost-O-Meter in general (and that’s fine) I need you to understand that what I am about to tell you is true. **This is really happening.**
 
@@ -66,7 +66,7 @@ If you haven’t already guessed, what I am calling Central Brain is actually [G
 
 Let’s entertain a couple hypothetical scenarios. Remember the scene in Ghostbusters where a portal opens and the spirits and demons from another dimension are about to destroy humanity?
 
-<img src="https://adrian3.com/imgs/images/a-confession-from-ghost-o-meters-creator6.webp" alt="Who you gonna call?">
+![Who you gonna call?](https://adrian3.com/imgs/images/a-confession-from-ghost-o-meters-creator6.webp)
 
 If this scene came true, perhaps Google’s data could come in handy. A map of ghost locations is exactly what we would need in order to defeat the deadly invasion.
 

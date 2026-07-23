@@ -23,11 +23,7 @@ class: nav
   </a>
   <div class="nav-menu">
     <a class="nav-home" href="/index.html">Made by Ade</a>
-    <nav>
-      <a href="/art/index.html">Art</a>
-      <a href="/code.html">Code</a>
-      <a href="/case-studies.html">Design</a>
-      <a href="/writing/index.html">Writing</a>    </nav>
+    <nav-links />
   </div>
 </div>
 <script>

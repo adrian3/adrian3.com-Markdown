@@ -173,7 +173,7 @@ The print from day 77 was exhibited at my art show in Hastings, Nebraska in 2004
 
 * * *
 
-<img src="https://adrian3.com/imgs/images/month-3-of-daily-art33.webp" alt="Issues In Christian Education, Spring 2001">
+![Issues In Christian Education, Spring 2001](https://adrian3.com/imgs/images/month-3-of-daily-art33.webp)
 
 The third theme for March is bones. The backbone and ribcage comes from a photo I took in the science building at Concordia University, Seward, Nebraska. I used the school’s brand new digital camera, a Nikon Coolpix 990, back when 3.2 megapixels was enough to blow our minds.
 

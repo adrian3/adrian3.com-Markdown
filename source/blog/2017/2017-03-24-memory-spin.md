@@ -13,7 +13,7 @@ layout:
 
 # Memory Spin
 
-<img src="https://adrian3.com/imgs/gifs/jets.gif">
+![](https://adrian3.com/imgs/gifs/jets.gif)
 
 The day after Patriot missiles streaked the skies and lit up our TV set with fuzzy trails narrated by nervous reporters I was screwing in a lightbulb. 
 
@@ -31,7 +31,7 @@ The boy's imagination is captured by the soldiers, his sketchbook fills with ima
 
 Can a father do anything but pray his son doesn't get drafted?
 
-<img src="https://adrian3.com/imgs/gifs/tank.gif">
+![](https://adrian3.com/imgs/gifs/tank.gif)
 
 I can't say what triggered that memory. It just appeared suddenly after a 26 year hibernation in the wrinkles of my brain. 
 

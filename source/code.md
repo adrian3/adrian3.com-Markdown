@@ -19,15 +19,15 @@ Over the years I've released dozens of apps and tools.
 
 
 
-<p>I love the shape of pinecones. I capture their sillouettes using sun prints and then remix the shapes with stencils and different photographic techniques. Here is a <a href="../gallery-pages/pinecones.html">pine cone gallery</a> showing the results of this work.</p>
-<hr />
+I love the shape of pinecones. I capture their sillouettes using sun prints and then remix the shapes with stencils and different photographic techniques. Here is a [pine cone gallery](../gallery-pages/pinecones.html) showing the results of this work.
+---
 
 <h2 id="ghost-o-meter">Ghost-O-Meter</h2>
 
 <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510"><img class="case-study-image" src="https://adrian3.com/imgs/user-zero-illustrations/ghost-o-meter.webp"></a>
 
-<p>While not exactly an art project, the <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510">Ghost-O-Meter app</a> is one of my creations that got pretty popular. In the early days of the App Store this was downloaded around 1 million times.</p>
-<hr />
+While not exactly an art project, the [Ghost-O-Meter app](https://apps.apple.com/us/app/ghost-o-meter/id476468510) is one of my creations that got pretty popular. In the early days of the App Store this was downloaded around 1 million times.
+---
 
 <a href="https://apps.apple.com/us/app/ghost-o-meter/id476468510">
 

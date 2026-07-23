@@ -1,30 +1,23 @@
 <!---
 title: Videos by Ade Hanft
-date: July 23, 2023
+template: with-sidebar
+slot.sidebar-content: video-sidebar
 --->
-<div class="sidebar">
-<h2>Videos</h2>
-<ul>
-  <li><a href="#graffiti-animation">Graffiti Animation</a></li>
-  <li><a href="#made-by-ade">Made by Ade</a></li>
-  <li><a href="https://www.youtube.com/@adehanft">YouTube Channel</a></li>
-  <li><a href="https://vimeo.com/ade3">Vimeo (Archive)</a></li>
-</ul>
-</div>
-<div class="content">
+
 <div  style="margin:0 0 15px 0;"><iframe width="560" height="315" src="https://www.youtube.com/embed/V9ShaKJ6J7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
 
 <hr>
 
-<h2 id="made-by-ade">Graffiti Animation</h2>
-<p>
+<h2 id="graffiti-animation">Graffiti Animation</h2>
 <!-- 8: Bike Rider -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2Wo8F79oq3s?si=gADRRKbz4ZuzyBdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <!-- 7: The Runner -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LizpBawd7pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- 6: Garbage -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wWrBhFpMM0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- 5: Trapeze Swinger -->
@@ -41,11 +34,9 @@ date: July 23, 2023
 
 <!-- 1: The Boxer -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXWhztrIod8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</p>
 
 <hr>
-<h2 id="graffiti-animation">Made By Ade</h2>
-<p>
+<h2 id="made-by-ade">Made By Ade</h2>
 <!-- Ep8. Label Printer Art Hack -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tPJRP5Z59wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -72,6 +63,3 @@ date: July 23, 2023
 
 <!-- Ep1. Experimental Art Demo: Acetone on Shipping Labels -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cbcw4vWEwCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</p>
-
-</div>

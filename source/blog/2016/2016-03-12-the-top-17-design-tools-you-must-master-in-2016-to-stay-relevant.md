@@ -31,7 +31,7 @@ Am I right? _Of course not._
 
 Designers have been [fooled by tools](https://medium.com/@ade3/shortcut-addiction-9e7e8c622371#.ng7g0pa12) since the beginning. Whether it is constant software upgrades or having the newest computers it can be tempting to believe that our value is as the operators of machines that are so simple to use, anybody can do it.
 
-<img src="https://adrian3.com/imgs/images/the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant4.webp" alt="Advertisement introducing the Apple II">
+![Advertisement introducing the Apple II](https://adrian3.com/imgs/images/the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant4.webp)
 
 The availability of pre-made solutions increases the perception that anyone can be a designer. In February, apparently an additional [50 fresh resources](https://medium.com/@WebdesignerDepot/50-fresh-resources-for-designers-february-2016-597494c4136#.fp1wqa20x) flooded the market, enticing you to take the easy way out.
 

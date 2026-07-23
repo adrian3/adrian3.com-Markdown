@@ -16,11 +16,11 @@ One of the most important lessons you learn as a student of design is the import
 
 Visually this is a critical lesson, but it is equally important as a way to evaluate other aspects of life. When you are listening to someone speak it is also important to hear what they _aren't_ saying. To appreciate Colorado's weather you need to acknowledge the absence of Missouri's weather. For every headline begging for your attention there is an untold story few can hear. Negative space is everywhere but it takes practice to see it.
 
-<img src="https://adrian3.com/imgs/images/escher.webp">
+![](https://adrian3.com/imgs/images/escher.webp)
 
 When I was a boy, I spent many dreary Missouri days studying my favorite artist, M.C. Escher. I was captivated by how Escher could break your brain by bending the positive and negative space of his art. Echoes of these brain-twisting lessons still reverberate in my skull. It has made me a skeptical adult, permanently questioning visual information, constantly on the lookout for fraudsters who manipulate our perceptions to serve selfish needs.
 
-<img src="https://adrian3.com/imgs/images/escher-stairs2.webp">
+![](https://adrian3.com/imgs/images/escher-stairs2.webp)
 
 If you strive to develop an eye for negative space it's hard not to feel like the lost beings in an Escher print. We sit in empty rooms, complete meaningless tasks, fill our bellies with tasteless food. Gravity shifts, stairs flip, and it is hard to know if we are going up or down. Faceless people pass us, incapable of eye contact, destined to remain strangers. How can you _not_ feel lost in this uncanny valley? It appears to be three-dimensional and yet something is missing.
 
@@ -34,7 +34,7 @@ Negative space in the workplace is equally scarce. Businesses require process, t
 
 Perhaps that is the most we can strive for, the ability to change things. But how? How do you think different? How do you train yourself to see the negative space hiding right in front of your eyes?
 
-<img src="https://adrian3.com/imgs/images/escher-stairs.webp">
+![](https://adrian3.com/imgs/images/escher-stairs.webp)
 
 Perhaps the answer is to once again step inside the artwork of Escher. You've spent your life climbing a staircase in search of answers. Perhaps it's your first time around, maybe it's your last. With each loop you gain a little clarity, and for the first time you notice a doorway. You step into its negative space and all of a sudden...
 

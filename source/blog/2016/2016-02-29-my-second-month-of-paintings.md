@@ -165,7 +165,7 @@ Once I removed the graffiti I set out to print some less controversial posters. 
 
 The other promotion for my show was invitations. I created 100 small pieces of art in my collage/painting style. I printed the invitation on semi-transparent vellum paper and folded it over the individually numbered pieces of art. Here is a short video showing what the result looked like.
 
-<img src="https://adrian3.com/imgs/images/my-second-month-of-paintings33.webp" alt="Aufdemberge (on the mountain)">
+![Aufdemberge (on the mountain)](https://adrian3.com/imgs/images/my-second-month-of-paintings33.webp)
 
 One image on the poster, which you can see most clearly on day 44, is a silhouette of my cousin standing on top of a mountain. I took the photo on a backpacking trip in the Rocky Mountains. He is a man I have admired my entire life and his heroic stance pretty much sums up how I have always viewed him. His last name is Aufdemberge which is German for “on the mountain.” Being a part of the Aufdemberge family has shaped me as much as anything else and our annual campouts are always a highlight of my year.
 

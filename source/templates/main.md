@@ -10,7 +10,7 @@ template-name: index
 <body>
 <header />
 <subnav />
-<main class="container">
+<main class="container {{page.content-class}}">
 <content />
 </main>
 <footer />

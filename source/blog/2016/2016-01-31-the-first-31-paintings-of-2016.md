@@ -191,7 +191,7 @@ If design govern in a thing so small.
 
 Isn’t that fantastic? Anyway, here is what the source photo looks like to give you an idea of how far this theme has come.
 
-<img src="https://adrian3.com/imgs/images/the-first-31-paintings-of-201634.webp" alt="The original spider flower photo on the left, remixed on the right">
+![The original spider flower photo on the left, remixed on the right](https://adrian3.com/imgs/images/the-first-31-paintings-of-201634.webp)
 
 The final theme of the month keeps the bug theme going, but shifts from a spider to a wasp. Day 22 and 24 are the least “digital” of the bunch. They are unaltered photos of work I have framed and hanging in the house.
 
