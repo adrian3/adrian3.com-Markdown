@@ -109,13 +109,14 @@ All this developer exploration happened at the same time that my designs were be
 My design process begins with sketches, wireframes, and whiteboard sessions. This is the quickest way to explore new ideas, build consensus, and seed a vision for what the team is going to build.
 
 <img src="https://adrian3.com/imgs/galleries/design/1-trainingpeaks-2014-2016/case-study/8-design-process.webp" style="margin: 0; width: 100vw;">
+
 <p class="caption">Sketches, wireframes, whiteboards, and interactive prototypes are important parts of the design exploration process</p>
 
 As these low-fidelity artifacts start to feel like they are working, I move on to more detailed comps, interactive prototypes, and more refined mock-ups.
 
 The first component of the coach marketplace that I designed was the coach profile pages. My designs went through many iterations before arriving at a final direction.
 
-<img src="https://adrian3.com/imgs/galleries/design/1-trainingpeaks-2014-2016/case-study/9-design-evolution.gif" style="margin: 0; width: 100vw;">
+<img src="https://adrian3.com/galleries/design/1%20trainingpeaks%202014-2016/case%20study/9%20design%20evolution.gif" style="margin: 0; width: 100vw;">
 
 My dream for the coach profiles was that each page would be as robust and compelling as a standalone website. Many coach websites, if they have one at all, are poorly designed. If done well, our coach profiles could replace the need for coaches to maintain separate sites. 
 
