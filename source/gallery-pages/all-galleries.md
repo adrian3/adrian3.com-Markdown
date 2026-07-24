@@ -1,6 +1,7 @@
 <!---
 title: Available Galleries
 template: main
+content-class: wide-column
 --->
 
 # Available Gallery Folders

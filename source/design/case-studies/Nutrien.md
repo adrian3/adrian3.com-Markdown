@@ -8,7 +8,7 @@ categories: featured, ux design, agriculture, user research, journey maps and pe
 thumbnail: https://adrian3.com/imgs/case-studies/nutrien-images/0.case-study-title.webp
 thumbnail-alt: Building a UX Practice at the World's Largest Ag Company thumbnail
 --->
---->
+
 <img src="https://adrian3.com/imgs/case-studies/nutrien-images/0.case-study-title.webp" style="margin: 0 0 1rem 0; width: 100vw;">
 
 # Modernizing Digital Tools for 20,000 Crop Consultants
@@ -34,7 +34,7 @@ Nutrien has over 1,700 locations around the world. Each region has unique terrai
 
 Having access to crop consultants was incredibly valuable as we reimagined the ag sales experience. I traveled into the field to see facilities in action. I sat in offices listening to sales calls. I road along with crop consultants and observed how they got their job done from their trucks. I listened to their frustrations and gathered ideas. I used this research to craft stories that I brought back to the teams. These stories, often accompanied by drawings and photographs took on a life of their own, getting used in quarterly planning events, executive summaries, story mapping exercises, and were referenced in conversations as teams strove to deliver a product that made our target persona’s job easier.
 
-<divider>
+<divider />
 
 ## 2. Prototyping: 
 ### Developing a More Meaningful Employee Dashboard
@@ -43,7 +43,7 @@ The name of the product we were building was called the "Employee Experience Hub
 
 <img src="https://adrian3.com/imgs/case-studies/nutrien-images/2.evolution-of-exh.webp" style="margin: 25px; width: 100vw;">
 
-<divider>
+<divider />
 
 ## 3. Equipping the Sales Force
 ### Identifying Sales Opportunities
@@ -60,7 +60,7 @@ The financial situation for each farmer is unique and a big part of the crop con
 
 <img src="https://adrian3.com/imgs/case-studies/nutrien-images/3b.calculators.webp" style="margin: 25px; width: 100vw;">
 
-<divider>
+<divider />
 
 ## 4. Improving the Pre-Sales Process
 ### Selecting the Right Product and Delivering the Best Price
@@ -73,7 +73,7 @@ We also experimented with different organization patterns that better mapped to 
 
 <img src="https://adrian3.com/imgs/case-studies/nutrien-images/4b.testing-organization-patterns.webp" style="margin: 25px; width: 100vw;">
 
-<divider>
+<divider />
 
 ## 5. Placing Orders
 ### Reducing Errors by Understanding Complex Systems
@@ -84,7 +84,7 @@ After a crop consultant submits an order, a complex fulfillment process begins. 
 
 By understanding the real-world connections between the submission form and the facility that fulfills the order we were able to reduce the amount of errors and tedious corrections made after an error was placed.
 
-<divider>
+<divider />
 
 ## Conclusion
 

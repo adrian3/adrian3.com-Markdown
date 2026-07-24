@@ -1,7 +1,9 @@
 <!---
-title: Adrian Hanft's Professional Timeline
-date: November 24, 2016
+title: Timeline
+show-in-nav: false
 --->
+
+# Adrian Hanft's Professional Timeline
 
 <section id="cd-timeline" class="cd-container" style="margin: -85px auto -50px auto;">
 

@@ -9,13 +9,17 @@
 
 /* ── Main container ── */
 .container {
-  max-width: var(--ade-wide-width);
+  max-width: var(--ade-content-width);
   margin-inline: auto;
   padding: var(--ade-space-6) var(--ade-space-5) var(--ade-space-8);
 }
 
 .container.reading-column {
   max-width: var(--ade-content-width);
+}
+
+.container.wide-column {
+  max-width: var(--ade-wide-width);
 }
 
 /* ── Dashboard page layout ── */

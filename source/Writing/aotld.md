@@ -1,3 +1,10 @@
+<!---
+title: Art of the Living Dead
+date: December 26, 2019
+template: main
+show-in-nav: true
+--->
+
 # Art of the Living Dead
 
 ### Table of Contents  

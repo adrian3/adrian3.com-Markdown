@@ -132,7 +132,7 @@
     var statusEl = gridShell.querySelector("[data-case-study-status]");
     var filterEl = document.querySelector("[data-case-study-filters]");
     var source = gridShell.getAttribute("data-source") || "/posts.json";
-    var pathPrefix = gridShell.getAttribute("data-path-prefix") || "/case-studies/";
+    var pathPrefix = gridShell.getAttribute("data-path-prefix") || "/design/case-studies/";
 
     fetch(source)
       .then(function (response) { return response.json(); })

@@ -1,6 +1,6 @@
 <!---
-title: Immortal Game, The Greatest Chess Ever Played
-date: November 24, 2016
+title: Immortal Game
+show-in-nav: true
 --->
 # Immortal Game: The Greatest Chess Ever Played
 

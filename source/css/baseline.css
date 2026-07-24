@@ -36,7 +36,7 @@
   --ade-divider: #f0f0f0;
   --ade-shadow: 0 3px 30px rgba(0, 0, 0, 0.22);
   --ade-radius: 4px;
-  --ade-content-width: 35rem;
+  --ade-content-width: 48rem;
   --ade-wide-width: 72rem;
   --ade-space-1: 0.25rem;
   --ade-space-2: 0.5rem;
@@ -133,21 +133,57 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: clamp(2.75rem, 5vw, 4.25rem);
+  font-size: 2.5rem;
   letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: 2rem;
   letter-spacing: -0.02em;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 1.5rem;
 }
 
 h4 {
   font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+@media (max-width: 48rem) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.625rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 p, li, td, th {

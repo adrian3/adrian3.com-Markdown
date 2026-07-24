@@ -794,8 +794,9 @@ function renderMarkdown(markdown) {
       }
       if (i < lines.length) i += 1;
       const renderedInner = renderMarkdown(innerLines.join("\n"));
-      const innerHtml = /^<p>[\s\S]*<\/p>$/.test(renderedInner)
-        ? renderedInner.replace(/^<p>|<\/p>$/g, "")
+      const singleParagraph = renderedInner.trim().match(/^<p>([\s\S]*)<\/p>$/);
+      const innerHtml = singleParagraph && !singleParagraph[1].includes("<p>") && !singleParagraph[1].includes("</p>")
+        ? singleParagraph[1]
         : renderedInner;
       blocks.push(`<${tag}${attrs}>${innerHtml}</${tag}>`);
       continue;

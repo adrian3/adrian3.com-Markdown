@@ -11,19 +11,41 @@
   margin-top: var(--ade-space-5);
 }
 
+.case-study-inner > h1:first-child,
+.case-study-inner > h2:first-child,
+.case-study-inner > h3:first-child,
+.case-study-inner > h4:first-child,
+.case-study-inner > h5:first-child,
+.case-study-inner > h6:first-child,
+.case-study-inner > p:first-child:not(:has(> img:only-child)),
+.case-study-inner > ul:first-child,
+.case-study-inner > ol:first-child,
+.case-study-inner > blockquote:first-child {
+  margin-top: var(--ade-space-7);
+}
+
 .case-study-inner > h1,
 .case-study-inner > h2,
 .case-study-inner > h3,
+.case-study-inner > h4,
+.case-study-inner > h5,
+.case-study-inner > h6,
 .case-study-inner > p,
 .case-study-inner > ul,
 .case-study-inner > ol,
 .case-study-inner > blockquote,
 .case-study-inner > pre,
-.case-study-inner > table,
-.case-study-inner > hr {
+.case-study-inner > table {
   max-width: var(--ade-content-width);
   margin-left: auto;
   margin-right: auto;
+}
+
+.case-study-inner > hr {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .case-study-inner > figure.figure-content,
@@ -39,4 +61,18 @@
 
 .case-study-inner img {
   width: 100%;
+}
+
+.case-study-inner > img[style*="width: 100vw"] {
+  width: 100vw !important;
+  max-width: none;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+
+.case-study-inner > img[style*="width: 100vw"] + p.caption {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }

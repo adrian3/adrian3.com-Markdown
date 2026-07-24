@@ -12,7 +12,7 @@ class: blog-archive
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var posts = (data.posts || [])
-        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && !p.unlisted; })
+        .filter(function (p) { return p.url.indexOf('/Writing/blog/') === 0 && p.title && !p.unlisted; })
         .sort(function (a, b) {
           return new Date(b.date || 0) - new Date(a.date || 0);
         });

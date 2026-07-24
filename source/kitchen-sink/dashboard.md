@@ -1,6 +1,7 @@
 <!---
 title: Dashboard
 template: main
+content-class: wide-column
 --->
 <div class="dashboard-shell">
 <section class="dashboard-intro">

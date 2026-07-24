@@ -2,6 +2,7 @@
 title: Postcards Camera Gallery
 show-in-nav: true
 template: main
+content-class: wide-column
 --->
 # Postcards Camera Gallery
 

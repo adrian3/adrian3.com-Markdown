@@ -32,7 +32,7 @@ img {
 
 # Runcoach: Reimagining a Training App Around Real Runner Needs
 
-<divider>
+<divider />
 
 The invitation to lead design at Runcoach was a great opportunity. The team was small, the product was full of potential, and there was a need in the industry for an app that could adjust to the busy lives of runners. I brought with me a toolkit full of skills and knowledge I had gained from collaborations with TrainingPeaks, Athlinks, Stryd, and Run the Edge. 
 
@@ -48,7 +48,7 @@ Being the sole designer on the Runcoach team I lead the entire design process. A
 
 With this case study I would like to show you how I approached the reimagining of Runcoach. You will see my deep sympathy for the needs of our users, my passion for evangelize design thinking, and how that all came together in the design of a major feature (a calendar redesign). Let's get started...
 
-<divider>
+<divider />
 
 ## Part 1: Product Positioning  
 Runcoach is an app that helps runners achieve their goals. Powered by a training engine that adapts to user’s needs and supported by a team of world-class coaches, Runcoach fills a unique need in the fitness technology space.
@@ -69,7 +69,7 @@ Above you can see some of the places where I brought the coach into the foregrou
 
 <img src="https://adrian3.com/imgs/case-studies/runcoach-images/app-store-carousel.webp" style="margin: 25px 0; width: 100vw;">
 
-<divider>
+<divider />
 
 ## Part 2: Building Empathy for Users  
 As a runner I naturally can relate to Runcoach's users. This is both a blessing and a curse. On one hand I can usually trust my gut to tell me how our users will think about our product. On the other hand it is tempting to get lazy and then end up blindsided when I inevitably discover that users are different than me. 
@@ -98,7 +98,7 @@ As I work to create alignment within teams about the features we should enhance 
 
 The goal/progress/achievement loop became a concept that informed feature development. It helped us identify the core features that make our app sticky and gave us the courage to abandon ideas that contradicted our main mission. 
 
-<divider>
+<divider />
 
 ## Part 3: User Journeys  
 I believe stories are the most potent way to motivate and align teams around a common mission. If you can put a real face and name to the problems of a user, the impact of that story gains momentum. 
@@ -120,7 +120,7 @@ A great source of inspiration for this type of user journey is customer service.
 
 Chris is runner who is training for the Marine Corp Marathon. He contacted customer service with a question about a target icon within our app. While I had already identified this feature as an experience that could be vastly improved, the illumination of Chris' story helped our team buy-in to the enhancement. I quickly designed a proof-of-concept that the team used to explore ways to improve Chris' training. 
 
-<divider>
+<divider />
 
 ## Part 4: Calendar Redesign  
 <img src="https://adrian3.com/imgs/case-studies/runcoach-images/runcoach-screens.webp" style="margin: 25px 0; width: 100vw;">
@@ -155,7 +155,7 @@ The image above represents some of the artifacts of the designer/developer hando
 
 While we are building the minimum viable product I am simultaneoulsly working on preparing designs for the next iteration. With each loop through the design process (research, prototype, design, deliver) our app gets a little better. Today Runcoach is continuing to iterate towards the vision I set for the calendar. 
 
-<divider>
+<divider />
 
 ## Conclusion  
 Thank you for taking the time to read this case study. I hope that my enthusiasm for design and commitment to my craft comes through.  If you would like to see some designs that weren't included here, be sure to check out [this Behance gallery](https://www.behance.net/gallery/73765157/Runcoach). If you have any questions I welcome the opportunity to talk more.

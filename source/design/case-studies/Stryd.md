@@ -47,7 +47,7 @@ The holy grail for a tool like Stryd is to be so in tune with a runner's body th
 <img src="https://adrian3.com/imgs/case-studies/stryd-images/injury-prevention.webp" style="margin: 0; width: 100vw;">
 <p class="caption">Injury Prediction Technology</p>
 
-<divider>
+<divider />
 
 ## Part 2: App Design
 
@@ -74,6 +74,6 @@ Finally, a note about my tools. I designed the app in Sketch. I used InVision to
 <img src="https://adrian3.com/imgs/case-studies/stryd-images/app-screens2.webp" style="margin: 0; width: 100vw;">
 <p class="caption">App Screens</p>
 
-<divider>
+<divider />
 
 Thank you for taking the time to read this case study. I hope that my enthusiasm for design and commitment to my craft comes through. If you have any questions I welcome the opportunity to talk more. You can contact me at designer@adrianhanft.com.

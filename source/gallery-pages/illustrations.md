@@ -1,6 +1,7 @@
 <!---
 title: Illustrations
 template: main
+content-class: wide-column
 --->
 
 # Illustrations Gallery

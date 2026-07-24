@@ -2,6 +2,7 @@
 title: Camera Drawings Gallery
 show-in-nav: true
 template: main
+content-class: wide-column
 --->
 # Camera Drawings Gallery
 

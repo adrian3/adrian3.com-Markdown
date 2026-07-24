@@ -18,7 +18,7 @@ thumbnail-alt: Defining the Athlinks User Experience thumbnail
 
 Athlinks is the world’s largest collection of race results. Members of Athlinks are able to claim their historical results and build a profile that celebrates the highlights of their racing career. As a UX designer on a small cross-functional team I am able to contribute to a wide variety of projects. From user research to visual design to front-end code to website promotions, I touch it all. What follows is a sampling of my work along with brief explanations of the strategy and methodology behind the designs.
 
-<divider>
+<divider />
 
 ## Part 1: Branding and Visual Design
 
@@ -44,7 +44,7 @@ The long term vision for Athlinks is being able to mine our database of millions
 
 The design snippets above explore visualizations that will give athletes insights that they have never seen before. How do they stack up against other people in a race? How does their performance compare to their friends and rivals? How has their performance changed over the years? How is their pace affected by the map of the course? All these concepts hold promise but also depend on simple and well-executed designs. User testing is needed to upgrade these concepts from graphics that look pretty on screen to working features that delight users.
 
-<divider>
+<divider />
 
 ## Part 2: User Research and Testing
 
@@ -86,6 +86,6 @@ User testing takes many forms and the artifacts of the process are also varied. 
 
 The projects I have described here are small steps towards the ultimate goal of delighting customers. Athlinks’ products are far from perfect and there is plenty of work to do to get things to where I want them to be. This is the endless job of a user experience designer, always pushing for better experiences, always advocating for the user.
 
-<divider>
+<divider />
 
 Thank you for taking the time to read this case study. I hope that my enthusiasm for design and commitment to my craft comes through. If you have any questions I welcome the opportunity to talk more. You can contact me at designer@adrianhanft.com.

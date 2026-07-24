@@ -4,6 +4,7 @@ template: gallery
 section: Software
 description: Mobile apps designed and developed by Ade Hanft.
 gallery-class: gallery-square
+show-in-nav: true
 --->
 
 <a href="http://itunes.apple.com/us/app/chess-puzzles-pro/id432827559?mt=8">

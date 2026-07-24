@@ -1,10 +1,10 @@
 <!---
-title: Archive
+title: Substack
 template: main
+show-in-nav: true
+content-class: wide-column
 --->
 
-# Archive
-
-Every post from the newsletter, going back to 2020.
+# Substack
 
 <substack-archive />

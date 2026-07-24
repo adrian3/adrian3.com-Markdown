@@ -1,6 +1,7 @@
 <!---
-title: Postcards by Adrian Hanft
+title: Postcards
 date: June 22, 2020
+show-in-nav: true
 --->
 
 Dear friend,

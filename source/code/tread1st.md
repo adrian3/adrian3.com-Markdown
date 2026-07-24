@@ -1,5 +1,6 @@
 <!---
-title: Tread1st Case Study
+title: Tread1st
+show-in-nav: true
 --->
 <img src="https://adrian3.com/imgs/case-studies/tread1st-header.webp" style="margin: 0; width: 100vw;">
 

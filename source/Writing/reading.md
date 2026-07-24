@@ -1,7 +1,7 @@
 <!---
 title: Reading
-date: December 26, 2019
 template: main
+show-in-nav: true
 --->
 
 # Reading

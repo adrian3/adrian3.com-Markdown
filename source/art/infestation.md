@@ -1,6 +1,7 @@
 <!---
-title: Art by Adrian Hanft
+title: Infestation
 date: November 5, 2022
+show-in-nav: true
 --->
 # The Infestation  
 

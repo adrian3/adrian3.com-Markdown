@@ -1,6 +1,6 @@
 <!---
-title: Adrian Hanft's Resume
-date: January 12, 2018
+title: Resume
+show-in-nav: true
 --->
 
 # Education  

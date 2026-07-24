@@ -2,6 +2,7 @@
 title: Gallery Inline Demo
 show-in-nav: true
 template: main
+content-class: wide-column
 --->
 # Gallery Inline Demo
 

@@ -5,6 +5,7 @@ element: nav
 --->
 
 [Art](/art/index.html)
-[Code](/code.html)
-[Design](/case-studies.html)
-[Writing](/writing/index.html)
+[Code](/code/)
+[Design](/design/)
+[Writing](/writing/)
+[Video](/video/)
