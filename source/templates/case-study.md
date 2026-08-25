@@ -9,6 +9,7 @@ template-name: case-study
 </head>
 <body>
 <header />
+<design-subnav />
 <article class="case-study-shell">
   <div class="case-study-inner">
     <content />

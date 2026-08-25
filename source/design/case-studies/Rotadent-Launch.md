@@ -11,7 +11,9 @@ thumbnail-alt: Rotadent Contour: A "Do the Math" Product Launch thumbnail
 
 # Rotadent Contour: A "Do the Math" Product Launch
 
-**Role:** Creative Director (design lead), Zila · **When:** 2013 · **Scope:** Brand identity, packaging, website, advertising, and the full launch campaign for a relaunched electric toothbrush
+**Role:** Creative Director, Zila
+**When:** 2013
+**Scope:** Brand identity, packaging, website, advertising, and the full launch campaign for a relaunched electric toothbrush
 
 ![The Rotadent Contour packaging and toothbrush — a sleek silver, white, and blue electric brush beside its retail canister.](https://adrian3.com/imgs/case-studies/images/Rotadent-Launch/01-packaging.jpg)
 

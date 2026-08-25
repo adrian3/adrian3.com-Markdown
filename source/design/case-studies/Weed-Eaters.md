@@ -11,7 +11,9 @@ thumbnail-alt: Weed Eaters: A Human-in-the-Loop Weed ID Tool thumbnail
 
 # Weed Eaters: A Human-in-the-Loop Weed ID Tool
 
-**Role:** Design & UX lead (with Natalie Slater) · **Company:** Nutrien · **When:** 2019 · **Context:** Company hackathon — finalist · **Team:** web, iOS, data & machine learning
+**Role:** Design & UX lead, Nutrien · **When:** 2019
+**Context:** Company hackathon — finalist
+**Team:** web, iOS, data & machine learning
 
 ![The Weed Identification Tool inside Nutrien's platform — a list of weed matches with attribute icons and thumbnails on the left, and a visual "Leaf Characteristics" panel on the right where the user picks a leaf shape, type, margin, and arrangement to narrow the results.](https://adrian3.com/imgs/case-studies/images/Weed-Eaters/01-tool-hero.jpg)
 

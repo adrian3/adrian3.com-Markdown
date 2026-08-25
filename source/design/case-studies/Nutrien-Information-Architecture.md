@@ -10,7 +10,10 @@ thumbnail-alt: Nutrien: Designing the Information Architecture of a Sprawling Pl
 
 # Nutrien: Designing the Information Architecture of a Sprawling Platform
 
-**Role:** Senior UX Designer, Nutrien Ag Solutions · **When:** 2019 · **Team:** A UX team of 12 designers and researchers · **Focus:** The Employee Experience Hub (EXH) — navigation & information architecture
+**Role:** Senior UX Designer, Nutrien Ag Solutions
+**When:** 2019
+**Team:** A UX team of 12 designers and researchers
+**Focus:** The Employee Experience Hub (EXH) — navigation & information architecture
 
 ![A crop consultant crouched in a field, working on a tablet — the person every navigation decision had to serve.](https://adrian3.com/imgs/case-studies/images/Nutrien-Information-Architecture/01-field-hero.jpg)
 

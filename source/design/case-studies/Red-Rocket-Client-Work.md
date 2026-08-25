@@ -11,7 +11,8 @@ thumbnail-alt: Red Rocket: Selected Client Work thumbnail
 
 # Red Rocket: Selected Client Work
 
-**Format:** A visual showcase · **Role:** Creative Director, Red Rocket Web Specialists (2009–2011) · **Companion to:** the [Red Rocket brand case study](Red-Rocket-Brand.html)
+**Role:** Creative Director, Red Rocket Web Specialists (2009–2011)
+**Companion to:** the [Red Rocket brand case study](Red-Rocket-Brand.html)
 
 As Creative Director at Red Rocket Web Specialists, I designed and art-directed websites for dozens of Northern Colorado clients — working directly with each one to define project scope and creative direction, and overseeing the developers who built the work in WordPress. Here is a selection across very different industries, each with its own voice.
 

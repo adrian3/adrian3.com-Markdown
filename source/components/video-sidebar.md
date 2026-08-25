@@ -5,7 +5,7 @@ component-name: video-sidebar
 
 ### Videos
 
-- [Graffiti Animation](#graffiti-animation)
-- [Made by Ade](#made-by-ade)
+- [Graffiti Animation](/video/graffiti-animation.html)
+- [Made by Ade](/video/made-x-ade.html)
+- [Instagram](https://www.instagram.com/ade3/)
 - [YouTube Channel](https://www.youtube.com/@adehanft)
-- [Vimeo (Archive)](https://vimeo.com/ade3)

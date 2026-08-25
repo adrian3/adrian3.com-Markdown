@@ -11,7 +11,10 @@ thumbnail-alt: Ghost-O-Meter: The Joke App That Turned an Agency Into an App Stu
 
 # Ghost-O-Meter: The Joke App That Turned an Agency Into an App Studio
 
-**Role:** Concept, design & development · **Company:** Burns Marketing Communications · **When:** 2011–2012 · **Recognition:** 2012 Art Directors Club of Denver (Social Media)
+**Role:** Concept, design & development  
+**Company:** Burns Marketing Communications  
+**When:** 2011–2012  
+**Recognition:** 2012 Art Directors Club of Denver (Social Media)
 
 ![The Ghost-O-Meter app on an iPad and iPhone resting on weathered wood — a vintage, brass-and-leather "ghost detector" interface glowing in the dark.](https://adrian3.com/imgs/case-studies/images/Ghost-O-Meter/01-app-on-wood.jpg)
 

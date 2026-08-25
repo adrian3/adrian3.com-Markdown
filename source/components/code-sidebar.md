@@ -3,7 +3,7 @@ component: true
 component-name: code-sidebar
 --->
 
-### Apps
+### Code
 
 - [Github: @adrian3](https://github.com/adrian3)
 

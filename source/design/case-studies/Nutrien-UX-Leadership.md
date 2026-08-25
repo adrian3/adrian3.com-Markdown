@@ -11,7 +11,9 @@ thumbnail-alt: Building a UX Practice at the World's Largest Ag Company thumbnai
 
 # Building a UX Practice at the World's Largest Ag Company
 
-**Role:** UX Manager, Nutrien Ag Solutions (Digital Commerce) · **When:** 2019–2022 · **Team:** Grew the design team from 7 to 15
+**Role:** UX Manager, Nutrien Ag Solutions (Digital Commerce)
+**When:** 2019–2022
+**Team:** Grew the design team from 7 to 15
 
 ![Presenting a UX vision — "Our Idea: Nutrien Ag Solutions, Now and Forever" — to a packed room at a company planning event.](https://adrian3.com/imgs/case-studies/images/Nutrien-UX-Leadership/01-presenting-to-org.png)
 

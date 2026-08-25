@@ -12,9 +12,7 @@ thumbnail-alt: Boston: The Marathon Data Project thumbnail
 # Boston: The Marathon Data Project
 
 **Role:** Data engineering, design, development & writing
-
 **When:** 2017–2020
-
 **Results:** a four-part study, an interactive tool, and an open dataset
 
 ![The Boston Marathon course traced as a glowing golden line across a dark map of greater Boston, from Hopkinton to the finish line in the city.](https://adrian3.com/imgs/case-studies/images/Boston/01-course-map.jpg)

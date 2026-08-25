@@ -12,10 +12,10 @@ thumbnail-alt: Designing for Endurance: A Decade of Fitness-Tech Product Design 
 # Designing for Endurance: A Decade of Fitness-Tech Product Design
 
 **Format:** A visual product-design showcase
-**Brands:** TrainingPeaks, Athlinks, Runcoach, Stryd, OnForm, Run The Edge
-**Role:** Lead / freelance product & brand designer
+**Brands:** TrainingPeaks, Athlinks, Runcoach, Stryd, Run The Edge
+**Role:** Lead Product Designer
 
-Before I designed software for agriculture, I spent the better part of a decade shaping the look and feel of products for endurance athletes and the coaches who train them. Across six companies I worked on brand identities, marketing sites, and the apps themselves — and the same design problem kept reappearing: how do you take cold, dense performance data and turn it into something an athlete actually trusts, understands, and comes back to? This is a visual tour of that work.
+Before I designed software for agriculture, I spent the better part of a decade shaping the look and feel of products for endurance athletes and the coaches who train them. Across five companies I worked on brand identities, marketing sites, and the apps themselves — and the same design problem kept reappearing: how do you take cold, dense performance data and turn it into something an athlete actually trusts, understands, and comes back to? This is a visual tour of that work.
 
 ## Stryd
 
@@ -53,14 +53,6 @@ Run The Edge turns running into a community challenge — run 2,018 miles in a y
 
 ![A breakdown of Run The Edge's data-rich interface — a world map of 47.9 million participant miles, a mileage-logging calendar, team dashboards, the Amerithon challenge medal, and device sync with Garmin, Strava, and Fitbit.](https://adrian3.com/imgs/case-studies/images/Fitness-Design-Showcase/run-the-edge-3.jpg)
 
-## OnForm
-
-OnForm is a video-based coaching app that analyzes an athlete's form. I created its identity around the record dot at the heart of the product and applied it across the marketing site and app store. _(See the full [OnForm branding case study](OnForm-Brand.html).)_
-
-![The OnForm marketing site: an equestrian rider mid-jump with the app's pose-analysis overlay, under "Achieve your true potential."](https://adrian3.com/imgs/case-studies/images/Fitness-Design-Showcase/onform-1.jpg)
-
-![OnForm's App Store listing — the record-dot app icon and in-app form-analysis screenshots.](https://adrian3.com/imgs/case-studies/images/Fitness-Design-Showcase/onform-2.jpg)
-
 ## The Through-Line
 
-Six companies, one recurring brief: make performance data feel human. Whether it was a power number on a mountain, a coach's voice inside an app, or a race result waiting to be claimed, the job was always to turn data into trust and motivation. It's the same instinct I later carried into agriculture — and it's why I think of myself less as a designer of any one industry than as a designer of *trust in data-rich products.*
+Five companies, one recurring brief: make performance data feel human. Whether it was a power number on a mountain, a coach's voice inside an app, or a race result waiting to be claimed, the job was always to turn data into trust and motivation. It's the same instinct I later carried into agriculture — and it's why I think of myself less as a designer of any one industry than as a designer of *trust in data-rich products.*

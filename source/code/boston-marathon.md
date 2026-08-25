@@ -5,12 +5,7 @@ show-in-nav: true
 
 # Boston Marathon Data Project
 
-Over the years I've released dozens of apps and tools.  
+I collected and cleaned 121 years of Boston Marathon results, then turned the data into an interactive project for exploring how the race has changed over time. The tool lets runners compare qualifying standards, finish times, demographics, and year-by-year performance, while the open dataset gives other researchers a starting point for their own analysis.
 
-<a href="http://tread1st.com/boston.html">
-
-<figure>
-<img src="https://adrian3.com/imgs/art-section/boston-marathon-data.webp" alt="Boston Marathon Data">
-<figcaption>Boston Marathon Data</figcaption>
-</figure>
-</a>
+Website: <a href="http://tread1st.com/boston.html">Boston Marathon Data Project</a>
+Case Study: [A four-part study, interactive tool, and open dataset](/design/case-studies/Boston.html)

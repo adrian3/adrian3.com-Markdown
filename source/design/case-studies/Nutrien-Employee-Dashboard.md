@@ -11,7 +11,10 @@ thumbnail-alt: The Employee Dashboard: The Right Message, in the Right Place, at
 
 # The Employee Dashboard: The Right Message, in the Right Place, at the Right Time
 
-**Role:** Senior UX Designer, Nutrien Ag Solutions · **When:** 2019–2020 · **Team:** A UX team of 12 designers and researchers · **Focus:** The Employee Experience Hub (EXH)
+**Role:** Senior UX Designer, Nutrien Ag Solutions
+**When:** 2019–2020
+**Team:** A UX team of 12 designers and researchers
+**Focus:** The Employee Experience Hub (EXH)
 
 ![The shipped Employee Experience Hub dashboard: "Welcome back, Ryan," with a Sales Activity table, a Targeted Planning Opportunities widget, opportunity alerts, a grower list, financials, and a long-range weather forecast.](https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/04-dashboard-shipped.png)
 

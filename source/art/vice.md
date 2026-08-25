@@ -1,3 +1,8 @@
+<!---
+title: NYC
+show-in-nav: true
+--->
+
 # Danger, fear, and art-making in New York City
 
 ### Ade's art adventure in Brooklyn

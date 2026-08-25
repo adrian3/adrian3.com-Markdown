@@ -1,6 +1,6 @@
 <!---
 title: Photography
-show-in-nav: true
+show-in-nav: false
 --->
 
 # Photography Books

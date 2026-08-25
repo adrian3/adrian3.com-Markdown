@@ -1,126 +1,167 @@
 <!---
 title: Resume
+template: resume
 show-in-nav: true
 --->
 
-# Education  
+# Adrian (Ade) Hanft
+## Senior Product Designer
 
-## Concordia University  
-Bachelor of Fine Arts, Graphic Design
-
-- Brommer Award – Outstanding Junior Scholarship, 2000
-- Merit Art Award – Outstanding Sophomore Scholarship, 1999
-- Merit Art Award – Outstanding Freshman Scholarship, 1998
+Curious, disciplined, outcome-driven product designer with a passion for tackling complex problems and designing simple, intuitive solutions in highly technical industries. I bring an engineering mind, creative drive, and customer-first mindset to product teams working with complex systems, data-heavy workflows, AI/ML, and human-centered design.
 
 ---
 
-# Skills  
+# Professional Experience
 
-- Photoshop, Illustrator, InDesign, HTML, CSS/SASS, Javascript/jQuery, PHP, Wordpress, IOS App Development (Phonegap/Cordova), Photography, Cinema4D
+## OpenText <small>(2022-2026)</small>
 
----
+### Senior UX Designer
 
-# Experience  
-
-## Nutrien <small>(2019-2022)</small>  
-
-### UX Design Manager  
-
-- I helped our design team grow from 7 to 15 designers and researchers while establishing customer obsession as one of Nutrien’s core values.
-- As UX Manager for Nutrien’s digital commerce division I helped shape the UX vision and product roadmap through collaboration with product managers and engineering leaders.
-- I mentored designers, removed roadblocks, facilitated career advancement, and created an environment of trust and safety for my team.
-- I built a design culture by championing critiques, retros, research, design systems, usability studies, new tools, and identifying ways to work more effectively with people outside of UX.
-- I championed user-centered design and found ways to build empathy for our customers across Nutrien’s entire organization
-- I traveled across the country meeting users and observing how products are being used in the field. I returned with inspiring stories that challenged our teams to build better and more useful products.
-- I created drawings, workflows, and storyboards that showed how people interact with our products in order to help teams understand the big picture and how what we were building made user's lives easier.
-- I measured the effectiveness of our products and prototypes through analytics, research, and data-driven decision making.
+- Designed data exploration tools that use OpenTelemetry, machine learning, and artificial intelligence to help IT professionals understand the health of complex software infrastructure.
+- Used Figma to design proof-of-concept applications that established a multi-year roadmap for integrating OpenTelemetry into OpenText's enterprise product line.
+- Led the design of a new Observability product that helps IT professionals identify problems and optimize cloud software.
+- Partnered with data scientists to detect anomalies in streams of billions of data points and translate patterns into useful insights.
+- Documented UX principles for designing with AI and contributed new patterns and components to OpenText's design system.
+- Redesigned applications acquired from Micro Focus, helping transition legacy products into OpenText's product line.
+- Validated concepts with internal users, conducted usability testing with customers at OpenText World, and used data visualization to make complex issues understandable.
+- Won second place in OpenText's Innofest hackathon for data visualization using 3D and VR technology.
 
 ---
 
-## Runcoach <small>(2018-2019)</small>  
+## Nutrien Ag Solutions <small>(2019-2022)</small>
 
-### Product Designer  
-- I worked to transform Runcoach into the leading app for runners training for a race.
-- I lead the design of our small team as we tackle the challenge of building software that adapts to the busy schedules of our users.
-- I built prototypes and tested my designs with runners to ensure that we built features that were intuitive and genuinely improved our user's training.
+### Senior UX Designer / UX Design Manager
 
----
-
-## Athlinks <small>(2016-2018)</small>  
-
-### UX Designer  
-- I was responsible for the UI and UX of Athlinks' website and native apps.
-- I solved complex interactions around the claiming of race results that populate user’s profiles.
-- I collaborated with developers with a shared goal of delighting users and improving Athlinks' products.
-- I helped define processes and systems for Athlinks' relatively new UX team.
+- Helped shape the UX vision and product roadmap for Nutrien's digital commerce division through collaboration with product managers and engineering leaders.
+- Helped Nutrien's design team grow from 7 to 15 designers and researchers while establishing customer obsession as one of Nutrien's core values.
+- Launched an agriculture e-commerce platform that generated over $5 billion in sales in its first three years.
+- Led the transition from Sketch to Figma as the team's main design tool and used Figma to create high-fidelity mockups, interactive prototypes, sketches, workflows, and storyboards.
+- Conducted UX workshops with key partners such as John Deere, BASF, and Syngenta.
+- Led the design of an experimental product that used machine learning to identify sales opportunities within Nutrien's archive of historical sales data.
+- Traveled across the country meeting users and observing how products were used in the field, then brought those stories back to help teams empathize with the people relying on our software.
+- Mentored designers, removed roadblocks, facilitated career advancement, and built a design culture through critiques, retros, research, design systems, usability studies, and collaboration tools.
 
 ---
 
-## TrainingPeaks <small>(2014-2016)</small>  
+## Runcoach <small>(2018-2019)</small>
 
-### Interaction Designer  
-- I worked across teams, regularly providing design assistance to our iOS and Android team.
-- I served as team lead (product owner) on a major web initiative to create a coach directory. 
-- I designed and coded a version of our website that was responsive across all devices and browsers.
-- My team helped overhaul a training plan platform which contained thousands of plans.
-- I built websites for the annual Endurance Coaching Summit and a #ThanksCoach social campaign.
-  
+### Lead Product Designer
 
----
-
-## Zila <small>(2012-2014)</small>  
-
-### Creative Technologist  
-- I led the rebrand of Zila, transforming its identity into a modern dental technology company.
-- I managed Zila’s brand and defined the identity of Zila’s 10 product lines.
-- I produced websites, brand strategy, literature, advertisements, packaging, and tradeshow tools.
-- I directed product managers, designers, developers, and vendors in the creation of marketing material.
+- Established a new vision for Runcoach's web, iOS, and Android products.
+- Created empathy for users within the company by translating research into compelling stories.
+- Rebranded the company and defined new brand guidelines.
+- Led product exploration exercises including competitive research, ideation, and persona development.
+- Worked with iOS and Android developers to ensure alignment between design intentions and shipped code.
+- Curated a group of trusted users for product input, design feedback, and beta testing, and created wireframes, user flows, and interactive prototypes.
 
 ---
 
-## Burns Marketing <small>(2011-2012)</small>  
+## Run the Edge <small>(2018-2019)</small>
 
-### UX Designer/Developer  
-- I designed websites/apps for national brands such as HP, Lenovo, Baxa, SolidFire, and PCS Wireless.
-- I won awards for a mobile website design for Plugless Power as well as an app called Ghost-O-Meter.
-- I championed new digital efforts such as Facebook apps, Twitter integration, and brand-based games.
-- I designed and oversaw the development of iOS and Android apps as well as device-friendly websites.
+### Freelance Product Designer
 
----
-
-## Red Rocket Web Specialists <small>(2009-2011)</small>  
-
-### Creative Director  
-- I designed about 50 websites for small to mid-sized businesses in Northern Colorado.
-- I introduced Wordpress, training staff to make it a compelling, profitable, and high quality product.
-- I redefined the perception of Red Rocket, shifting away from cartoonish to professional experts.
+- Redesigned the web-based product to be optimized for mobile and desktop devices.
+- Built a library of reusable design components to streamline development and establish a living style guide.
+- Designed and developed a social engagement tool that allowed users to create shareable images celebrating the miles they ran in 2018.
+- Designed and developed charts, graphs, interactive maps, and animations to enhance the user experience.
 
 ---
 
-## Huebner Petersen <small>(2003-2009)</small>  
+## Athlinks <small>(2016-2018)</small>
 
-### Interactive Art Director  
+### UX Designer
 
----
-
-## Nelnet <small>(2002-2003)</small>  
-
-### Graphic Designer  
-
----
-
-## Focus on the Family <small>(1999-2002)</small>  
-
-### Freelance Graphic Designer  
+- Created the UI and improved the UX of Athlinks' website and native apps.
+- Designed high-fidelity clickable prototypes and conducted usability tests to validate product enhancements and new features.
+- Defined style guidelines and built a library of reusable design patterns.
+- Designed and developed a mobile kiosk for displaying live race results for the Miami Marathon.
+- Established relationships with local runners to better understand users.
 
 ---
 
-## Front Range Community College <small>(February-June 2002)</small>  
+## Stryd <small>(2017-2018)</small>
 
-### Graphic Designer  
+### Freelance Product Designer
+
+- Updated Stryd's website to better explain the benefits of a running power meter to different types of runners.
+- Designed Stryd's iOS app to bring the functionality of its web app to the phone.
+- Designed a case study explaining the science behind Stryd's product.
 
 ---
 
-## Concordia University <small>(1997-2001)</small>  
+## TrainingPeaks <small>(2014-2016)</small>
 
-### Staff Photographer, Graphic Designer  
+### Interaction Designer / Product Owner
+
+- Led a team that created a coach directory for connecting a network of coaches with thousands of runners.
+- Redesigned a training plan store, reviving an important source of revenue.
+- Provided design direction to TrainingPeaks' iOS and Android teams.
+- Designed and developed a successful #ThanksCoach social campaign used by thousands of athletes.
+- Designed and developed the Endurance Coaching Summit website and marketing materials.
+- Converted the company's website to be mobile-friendly.
+- Designed the branding, website, and collateral for Peaksware, TrainingPeaks' parent company.
+- Designed email campaigns, developed mobile-friendly email templates, and managed transactional emails generated by the system.
+
+---
+
+## Zila <small>(2012-2014)</small>
+
+### Creative Director
+
+---
+
+## Burns Marketing <small>(2011-2012)</small>
+
+### Interactive Designer / Developer
+
+---
+
+## Red Rocket Web Specialists <small>(2009-2011)</small>
+
+### Creative Director
+
+---
+
+## Huebner Integrated Marketing <small>(2003-2009)</small>
+
+### Art Director
+
+---
+
+## Nelnet <small>(2002-2003)</small>
+
+### Graphic Designer
+
+---
+
+# Education
+
+## Concordia University
+
+### Bachelor of Fine Arts, Graphic Design
+
+---
+
+# Core Competencies
+
+**Product strategy:** product design strategy, product discovery, roadmap exploration, agile product development, stakeholder alignment
+
+**UX practice:** human-centered design, interaction design, information architecture, user flows, wireframes, prototypes
+
+**Research and validation:** user research, usability testing, workshop facilitation, product analytics, data visualization
+
+**Systems and scale:** design systems, accessibility, enterprise UX, cross-platform product design
+
+**AI product design:** AI-assisted workflows, responsible AI patterns, human-in-the-loop experiences, data-dense decision support
+
+---
+
+# Technical Expertise
+
+**Design tools:** Figma, Adobe Creative Cloud, Sketch
+
+**Front-end:** HTML, CSS, JavaScript, Foundation/Bootstrap
+
+**AI coding agents:** Claude, ChatGPT, Codex, Figma Make
+
+**Technical domains:** PHP, MySQL, artificial intelligence, machine learning, OpenTelemetry, data visualization, iOS and Android UI design

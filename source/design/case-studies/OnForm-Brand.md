@@ -14,7 +14,7 @@ thumbnail-alt: OnForm: Branding a Video Coaching App thumbnail
 **Role:** Freelance brand identity & website design.  
 **Client:** OnForm — a video analysis tool for coaching  
 **When:** 2019  
- **Scope:** Visual identity, marketing site, app-store presence  
+**Scope:** Visual identity, marketing site, app-store presence  
 
 ![The OnForm marketing site: an equestrian rider mid-jump, the right half overlaid with the app's pose-analysis graphics, under the headline "Achieve your true potential."](https://adrian3.com/imgs/case-studies/images/OnForm-Brand/01-website-light.jpg)
 

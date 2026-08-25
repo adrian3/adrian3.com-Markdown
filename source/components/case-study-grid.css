@@ -1,6 +1,13 @@
 .case-study-grid-shell {
   max-width: var(--ade-wide-width);
+}
+
+.case-study-grid-shell:not(.wide-breakout) {
   margin: 0 auto;
+}
+
+.case-study-grid-shell.wide-breakout {
+  max-width: calc(100vw - (var(--ade-space-5) * 2));
 }
 
 .case-study-grid-status {

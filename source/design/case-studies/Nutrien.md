@@ -5,7 +5,7 @@ template: case-study
 published: true
 unlisted: true
 categories: featured, ux design, agriculture, user research, journey maps and personas
-thumbnail: https://adrian3.com/imgs/case-studies/nutrien-images/0.case-study-title.webp
+thumbnail: https://adrian3.com/imgs/case-studies/nutrien.webp
 thumbnail-alt: Building a UX Practice at the World's Largest Ag Company thumbnail
 --->
 

@@ -1,0 +1,154 @@
+.resume-page {
+  max-width: 64rem;
+  margin-inline: auto;
+  padding: var(--ade-space-8) var(--ade-space-5);
+}
+
+.resume-page > h1:first-child {
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+}
+
+.resume-page > h1:first-child + h2 {
+  margin-top: var(--ade-space-2);
+  padding-left: 0;
+  color: var(--ade-muted-soft);
+  font-family: var(--ade-font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.resume-page > h1:first-child + h2 + p {
+  max-width: 43rem;
+  margin-top: var(--ade-space-5);
+  padding-left: 0;
+  color: var(--ade-muted);
+  font-size: 1.16rem;
+  line-height: 1.48;
+}
+
+.resume-page > hr {
+  margin-block: var(--ade-space-7) var(--ade-space-5);
+  border-top-color: var(--ade-hairline);
+}
+
+.resume-page > h1:not(:first-child) {
+  margin-top: 0;
+  color: var(--ade-muted-soft);
+  font-family: var(--ade-font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.resume-page > h2 {
+  position: relative;
+  margin-top: var(--ade-space-6);
+  padding-left: var(--ade-space-5);
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.resume-page > h1 + h2,
+.resume-page > hr + h2 {
+  margin-top: 0;
+}
+
+.resume-page h2 small {
+  float: right;
+  margin-top: 0.35rem;
+  font-family: var(--ade-font-ui);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.resume-page > h3 {
+  margin-top: 0.15rem;
+  padding-left: var(--ade-space-5);
+  color: var(--ade-muted-soft);
+  font-family: var(--ade-font-ui);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.resume-page > h2 + h3 {
+  margin-top: 0;
+}
+
+.resume-page > p,
+.resume-page > ul {
+  max-width: 44rem;
+}
+
+.resume-page > p {
+  padding-left: var(--ade-space-5);
+}
+
+.resume-page > ul {
+  margin-top: var(--ade-space-3);
+  padding-left: calc(var(--ade-space-5) + 1.1rem);
+}
+
+.resume-page li {
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.resume-page li + li {
+  margin-top: 0.35rem;
+}
+
+.resume-page > h3 + ul {
+  margin-top: var(--ade-space-3);
+}
+
+@media (min-width: 52rem) {
+  .resume-page > hr + h1:not(:first-child),
+  .resume-page > h1:not(:first-child):not(:first-child) {
+    float: left;
+    width: 10rem;
+    padding-top: 0.2rem;
+  }
+
+  .resume-page > h1:not(:first-child) ~ h2,
+  .resume-page > h1:not(:first-child) ~ h3,
+  .resume-page > h1:not(:first-child) ~ ul,
+  .resume-page > h1:not(:first-child) ~ p {
+    margin-left: 12rem;
+  }
+
+  .resume-page > h1:not(:first-child) ~ hr {
+    clear: both;
+  }
+}
+
+@media (max-width: 52rem) {
+  .resume-page {
+    padding: var(--ade-space-6) var(--ade-space-4);
+  }
+
+  .resume-page h2 small {
+    display: block;
+    float: none;
+    margin-top: var(--ade-space-1);
+  }
+
+  .resume-page > h2,
+  .resume-page > h3,
+  .resume-page > p,
+  .resume-page > ul {
+    padding-left: var(--ade-space-4);
+  }
+
+  .resume-page > h1:first-child + h2,
+  .resume-page > h1:first-child + h2 + p {
+    padding-left: 0;
+  }
+}

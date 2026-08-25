@@ -11,7 +11,9 @@ thumbnail-alt: Red Rocket: Building the Brand of a Web Agency thumbnail
 
 # Red Rocket: Building the Brand of a Web Agency
 
-**Role:** Creative Director, Red Rocket Web Specialists · **When:** 2009–2011 · **Scope:** Company rebrand, creative strategy, and art direction for dozens of client websites
+**Role:** Creative Director, Red Rocket Web Specialists
+**When:** 2009–2011
+**Scope:** Company rebrand, creative strategy, and art direction for dozens of client websites
 
 ![The Red Rocket logo — a glossy, three-dimensional red rocket standing above the wordmark "RED ROCKET WEB SPECIALISTS."](https://adrian3.com/imgs/case-studies/images/Red-Rocket-Brand/01-logo.jpg)
 

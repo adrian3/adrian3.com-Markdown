@@ -1,32 +1,27 @@
 <!---
 title: iOS Apps
-template: gallery
-section: Software
-description: Mobile apps designed and developed by Ade Hanft.
-gallery-class: gallery-square
 show-in-nav: true
 --->
 
-<a href="http://itunes.apple.com/us/app/chess-puzzles-pro/id432827559?mt=8">
+# iOS Apps by Ade
+My apps are no longer available in Apple's app store, but over the years I developed a dozen or so apps. I am working to give them a second life as progressive web apps. In the meantime here are some icons from the apps I designed.
+
+<app-icon-grid>
+
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/puzzles-144x144.webp" alt="Chess Puzzles">
 <figcaption>Chess Puzzles</figcaption>
 </figure>
-</a>
 
-<a href="http://itunes.apple.com/us/app/eugene-chess-hd/id418816633?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/eugene-splash.webp" alt="Eugene Chess">
 <figcaption>Eugene Chess</figcaption>
 </figure>
-</a>
 
-<a href="https://itunes.apple.com/au/app/chess-server/id998153813?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/chess-server-144x144.webp" alt="Chess Server">
 <figcaption>Chess Server</figcaption>
 </figure>
-</a>
 
 <a href="http://design.adrian3.com/chess-messages.html">
 <figure>
@@ -35,58 +30,44 @@ show-in-nav: true
 </figure>
 </a>
 
-<a href="https://itunes.apple.com/us/app/ghost-o-graph/id626600438?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/ghost-o-graph.webp" alt="Ghost-O-Graph">
 <figcaption>Ghost-O-Graph</figcaption>
 </figure>
-</a>
 
-<a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8">
 <figure>
-<img src="https://adrian3.com/imgs/user-zero-illustrations/ghost-o-meter.webp" alt="Ghost-O-Meter">
+<img src="https://adrian3.com/imgs/app-icons/ghost-o-meter.webp" alt="Ghost-O-Meter">
 <figcaption>Ghost-O-Meter</figcaption>
 </figure>
-</a>
 
-<a href="https://itunes.apple.com/us/app/grungy/id595550299?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/grungy.webp" alt="Grungy">
 <figcaption>Grungy</figcaption>
 </figure>
-</a>
 
-<a href="http://itunes.apple.com/us/app/call-my-mommy-app-builder/id466333611?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/call-my-mommy.webp" alt="Call My Mommy">
 <figcaption>Call My Mommy</figcaption>
 </figure>
-</a>
 
-<a href="http://itunes.apple.com/us/app/bobby-fischer-complete-collection/id426892039?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/fischer.webp" alt="Bobby Fischer">
 <figcaption>Bobby Fischer</figcaption>
 </figure>
-</a>
 
-<a href="http://itunes.apple.com/us/app/jose-capablancas-greatest/id427479533?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/capablanca.webp" alt="Capablanca">
 <figcaption>Capablanca</figcaption>
 </figure>
-</a>
 
-<a href="http://itunes.apple.com/us/app/garry-kasparovs-greatest-chess/id427480004?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/kasparov.webp" alt="Kasparov">
 <figcaption>Kasparov</figcaption>
 </figure>
-</a>
 
-<a href="http://itunes.apple.com/us/app/grandmaster-archive/id471186727?mt=8">
 <figure>
 <img src="https://adrian3.com/imgs/app-icons/grandmaster-archive.webp" alt="Grandmaster Archive">
 <figcaption>Grandmaster Archive</figcaption>
 </figure>
-</a>
+
+</app-icon-grid>

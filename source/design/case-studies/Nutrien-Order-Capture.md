@@ -11,7 +11,10 @@ thumbnail-alt: Decoupling Order Capture: Designing a Tool That Competes With a P
 
 # Decoupling Order Capture: Designing a Tool That Competes With a Phone Call
 
-**Role:** Senior UX Designer, Nutrien Ag Solutions · **When:** 2019–2020 · **Team:** A UX team of 12 designers and researchers · **Focus:** The Employee Experience Hub (EXH)
+**Role:** Senior UX Designer, Nutrien Ag Solutions
+**When:** 2019–2020
+**Team:** A UX team of 12 designers and researchers
+**Focus:** The Employee Experience Hub (EXH)
 
 ![A crop consultant standing in a field of lettuce, checking his phone.](https://adrian3.com/imgs/case-studies/images/Nutrien-Order-Capture/01-field-phone.png)
 

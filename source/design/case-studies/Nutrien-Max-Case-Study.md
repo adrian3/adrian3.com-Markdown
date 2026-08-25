@@ -11,7 +11,10 @@ thumbnail-alt: Meet Max: Designing Trust into AI thumbnail
 
 # Meet Max: Designing Trust into AI
 
-**Role:** Senior UX Designer, Nutrien Ag Solutions · **When:** 2019–2020 · **Team:** A UX team of 12 designers and researchers · **Focus:** The Employee Experience Hub (EXH)
+**Role:** Senior UX Designer, Nutrien Ag Solutions
+**When:** 2019–2020
+**Team:** A UX team of 12 designers and researchers
+**Focus:** The Employee Experience Hub (EXH)
 
 ![Max, the friendly robot persona, introducing himself: "Hi, I'm MAX. My artificial intelligence looks for opportunities to maximize your experience within the employee portal."](https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/05-max-intro.png)
 

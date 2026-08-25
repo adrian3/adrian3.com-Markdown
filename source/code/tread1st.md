@@ -4,6 +4,6 @@ show-in-nav: true
 --->
 <img src="https://adrian3.com/imgs/case-studies/tread1st-header.webp" style="margin: 0; width: 100vw;">
 
-# Tread1st Case Study
+# Tread1st
 
-This case study is password protected. If you would like to learn more, contact me and I will grant you access. Or check out [tread1st.com](https://tread1st.com) to see the final product.
+Tread1st is a side project where I document my running and cycling workouts. Check out [tread1st.com](https://tread1st.com/Ade3/training) to see every run/ride I've recorded since 2009.

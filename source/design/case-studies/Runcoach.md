@@ -10,24 +10,6 @@ thumbnail: https://adrian3.com/imgs/case-studies/images/Runcoach/runcoach_thumb.
 thumbnail-alt: Runcoach Case Study thumbnail
 --->
 
-<style type="text/css">
-p.caption {
-width: 100%;
-max-width: 100%;
-background-color: #ebebeb;
-margin: -12px 0 50px;
-padding: 20px;
-text-align: center;
-font-family: sans-serif;
-font-size: 0.8rem;
-}
-header {
-	margin-bottom: 0;
-}
-img {
-	margin: 25px 0;
-}
-</style>
 <img src="https://adrian3.com/imgs/case-studies/runcoach-images/runcoach-header.webp" style="margin: 0 0 1rem 0; width: 100vw;">
 
 # Runcoach: Reimagining a Training App Around Real Runner Needs

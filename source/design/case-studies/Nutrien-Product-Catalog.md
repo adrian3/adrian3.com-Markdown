@@ -11,7 +11,10 @@ thumbnail-alt: The Product Catalog: Helping Experts Choose the Right Product thu
 
 # The Product Catalog: Helping Experts Choose the Right Product
 
-**Role:** Senior UX Designer, Nutrien Ag Solutions · **When:** 2020 · **Team:** A UX team of 12 designers and researchers · **Focus:** The Employee Experience Hub (EXH)
+**Role:** Senior UX Designer, Nutrien Ag Solutions
+**When:** 2020
+**Team:** A UX team of 12 designers and researchers
+**Focus:** The Employee Experience Hub (EXH)
 
 ![Rows of fertilizer tanks and product stock at a Nutrien facility — a glimpse of the enormous catalog a crop consultant has to navigate.](https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/01-product-scale.png)
 

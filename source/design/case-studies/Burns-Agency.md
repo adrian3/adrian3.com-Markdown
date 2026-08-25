@@ -11,8 +11,8 @@ thumbnail-alt: Burns Marketing: Bringing App Development to an Agency thumbnail
 
 # Burns Marketing: Bringing App Development to an Agency
 
-**Role:** Interactive Designer, Burns Marketing Communications
-**When:** 2011–2012
+**Role:** Interactive Designer, Burns Marketing Communications  
+**When:** 2011–2012 
 **Scope:** Websites and mobile apps across a wide roster of agency clients
 
 ![Baxa's "Simply Safe" tradeshow app shown on an iPad and iPhone — a polished product experience for a medical-device maker.](https://adrian3.com/imgs/case-studies/images/Burns-Agency/03-baxa-app.png)
