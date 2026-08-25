@@ -14,7 +14,7 @@ slot.sidebar-content: writing-sidebar
 
 <p><img src="https://adrian3.com/imgs/art-of-the-living-dead.webp"></p>
 <h1 id="art-of-the-living-dead">Art of the Living Dead</h1>
-<p>My first book is a book about creativity. It's a guide for protecting the living parts of your brain. Why is there so much opposition to innovation? Why does creativity come so easily for some people? Why do the relics of the past survive when better alternatives are created? Where does creativity come from? How can we maintain artistry when we work for pulseless corporations? How many revolutionaries have we missed because humanity’s collective scorn downed their creative ambition? These answer to these questions will change how you look at art, advertising, car design, education, fame, and success. <a href="https://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">Art of the Living Dead is available on Amazon.</a></p>
+<p>My first book is a book about creativity. It’s a guide for protecting the living parts of your brain. Why is there so much opposition to innovation? Why does creativity come so easily for some people? Why do the relics of the past survive when better alternatives are created? Where does creativity come from? How can we maintain artistry when we work for pulseless corporations? How many revolutionaries have we missed because humanity’s collective scorn downed their creative ambition? These answer to these questions will change how you look at art, advertising, car design, education, fame, and success. <a href="https://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">Art of the Living Dead is available on Amazon.</a></p>
 <hr />
 
 <h2 id="made-by-ade">Made by Ade Newsletter</h2>

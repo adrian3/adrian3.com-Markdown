@@ -12,7 +12,7 @@ layout:
 
 # Three Words Invented by Buckminster Fuller
 
-A simple post today to introduce you to three words coined by one of my heroes, Buckminster Fuller. When current words couldn't contain his ideas, Bucky would invent new ones. Here are three terms you should know...
+A simple post today to introduce you to three words coined by one of my heroes, Buckminster Fuller. When current words couldn’t contain his ideas, Bucky would invent new ones. Here are three terms you should know...
 
 **Livingry:** the opposite of weaponry. 
 
@@ -22,4 +22,4 @@ A simple post today to introduce you to three words coined by one of my heroes, 
 
 If you are unfamiliar with Buckminster Fuller, check out my story _[Special Hell 6: The Dymaxion Man](https://uxdesign.cc/special-hell-6-dymaxion-man-13a3cb1023aa)_ to learn the incredible story of his life.
 
-Thanks for reading. I combine words into sentences every Saturday so you should follow me so you don't miss my next one. _Stay creative._
+Thanks for reading. I combine words into sentences every Saturday so you should follow me so you don’t miss my next one. _Stay creative._

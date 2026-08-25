@@ -28,15 +28,15 @@ We cut through the technical jargon and code dogma.
 
 Finally, at the core of the web we found something worth saving. We heard the whisper of a human voice plugged into the greatest amplification system ever invented. 
 
-And that's where I ended my essay, with an idealistic, suggestion that the web could become a place where honest voices are heard through honest ears.
+And that’s where I ended my essay, with an idealistic, suggestion that the web could become a place where honest voices are heard through honest ears.
 
-Even if you nodded in agreement with my sentiment that the web's greatest redeeming quality is you, that your ability to broadcast your art is revolutionary, you still probably wondered,
+Even if you nodded in agreement with my sentiment that the web’s greatest redeeming quality is you, that your ability to broadcast your art is revolutionary, you still probably wondered,
 
-> "That's great, but we still have to live beneath the web's multiple layers of gunk. Don't we?"
+> “That’s great, but we still have to live beneath the web’s multiple layers of gunk. Don’t we?”
 
-I don't think so. Or at least I refuse to believe it.
+I don’t think so. Or at least I refuse to believe it.
 
-Today I want to tell you about a writing tool called [Whisper](https://github.com/adrian3/whisper) that I created for authors who don't want to let their art touch the gunk. But before I get to that, I need to describe my writing process.
+Today I want to tell you about a writing tool called [Whisper](https://github.com/adrian3/whisper) that I created for authors who don’t want to let their art touch the gunk. But before I get to that, I need to describe my writing process.
 
 This is how I write my weekly essays:
 
@@ -44,11 +44,11 @@ This is how I write my weekly essays:
 
 2. When I save my story it automatically publishes to [my website](../..).
 
-Notice what isn't included in this process. Do you see any of the [7 layers of gunk](https://medium.com/@ade3/powered-by-a-whisper-ff9cf8cf3428)? I don't mess with HTML, Javascript, or CSS. I never touch a CMS. I don't worry about SEO or analytics. There isn't a database. I don't FTP any files. It's just me and my [search for words that transcend](https://medium.com/@ade3/the-search-for-words-that-transcend-7824f2320e41). Yes, I cross-post my posts on Medium, but that is a hypocrisy I will save for another day.
+Notice what isn’t included in this process. Do you see any of the [7 layers of gunk](https://medium.com/@ade3/powered-by-a-whisper-ff9cf8cf3428)? I don’t mess with HTML, Javascript, or CSS. I never touch a CMS. I don’t worry about SEO or analytics. There isn’t a database. I don’t FTP any files. It’s just me and my [search for words that transcend](https://medium.com/@ade3/the-search-for-words-that-transcend-7824f2320e41). Yes, I cross-post my posts on Medium, but that is a hypocrisy I will save for another day.
 
 For about a year I achieved my minimal setup by using a set of automations I created on my iPad. I used an app called  [Editorial](http://omz-software.com/editorial/)) which allows you to create powerful workflows that interact with different apps and services. It worked great but took a long time to setup and was so custom that I couldn’t share my process with others. So I re-thought my process. 
 
-The result is [Whisper](https://adrian3.github.io/whisper/index.html). _Here's how it works..._
+The result is [Whisper](https://adrian3.github.io/whisper/index.html). _Here’s how it works..._
 
 You save all your writing in Markdown files in Dropbox. Whisper watches your Dropbox files and if it detects any changes it compiles your writing and publishes it to your website.
 

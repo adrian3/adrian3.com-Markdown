@@ -19,7 +19,7 @@ The day after Patriot missiles streaked the skies and lit up our TV set with fuz
 
 As I helped my dad install a flagpole in our front yard we talked about the Persian Gulf War. 
 
-Dad noticed the 10 year life expectancy of the flood light printed on the bulb's packaging and speculated on how long the war would last. 
+Dad noticed the 10 year life expectancy of the flood light printed on the bulb’s packaging and speculated on how long the war would last. 
 
 We wondered whether that bulb would still be burning on the day when our troops came home from Iraq.
 
@@ -27,15 +27,15 @@ Or would an American flag silently go dark on the front lawn of an ordinary subu
 
 What does a 13 year old boy know about war? How does a Vietnam veteran teach his boy about patriotism, peace, and politics?
 
-The boy's imagination is captured by the soldiers, his sketchbook fills with images of jets and tanks. The father remembers an aircraft carrier where he watched dots on a screen disappear as planes fell from the sky.
+The boy’s imagination is captured by the soldiers, his sketchbook fills with images of jets and tanks. The father remembers an aircraft carrier where he watched dots on a screen disappear as planes fell from the sky.
 
-Can a father do anything but pray his son doesn't get drafted?
+Can a father do anything but pray his son doesn’t get drafted?
 
 ![](https://adrian3.com/imgs/gifs/tank.gif)
 
-I can't say what triggered that memory. It just appeared suddenly after a 26 year hibernation in the wrinkles of my brain. 
+I can’t say what triggered that memory. It just appeared suddenly after a 26 year hibernation in the wrinkles of my brain. 
 
-This is typically how my writing starts, a [thought appears from nowhere and like a kernel stuck in my teeth I can't help but tongue it][1].
+This is typically how my writing starts, a [thought appears from nowhere and like a kernel stuck in my teeth I can’t help but tongue it][1].
 
 My [mental movie][2] kicks in and I spin the story to fit my movie. 
 
@@ -45,7 +45,7 @@ Or I could have used it to talk about how the news was different in 1991 before 
 
 Perhaps I should have written about parenting and what it feels like to be the grown up struggling to connect with his son.
 
-The internet is flooded with that kind of spin, every essay bends the words to push agendas. That's what I do, too, but maybe this one time I can resist that temptation.
+The internet is flooded with that kind of spin, every essay bends the words to push agendas. That’s what I do, too, but maybe this one time I can resist that temptation.
 
 I would rather just linger on the memory, be transported back to the freshly mowed grass and humid weekends when dad and I worked together. To the time we watched our flag blowing in the wind, uncertain of what the next decade held for us.
 

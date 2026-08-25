@@ -24,11 +24,11 @@ These thoughts were interrupted by a cute couple who asked if I would take their
 
 I obliged and to my surprise they began stripping down to their underwear. 
 
-"Wait, what kind of a picture are you expecting here?" I asked.
+“Wait, what kind of a picture are you expecting here?” I asked.
 
-"We want you to document us swimming in the river."
+“We want you to document us swimming in the river.”
 
-"I don’t know how safe it––" 
+“I don’t know how safe it––” 
 
 Before any rational thought could kick in they were diving, I kid you not, head-first into the void of muddy water. 
 

@@ -37,7 +37,7 @@ My reality changed. I no longer dreaded crossing prairie dog land. I won the war
 Prairie dog transformation is trivial, but don’t underestimate the power of this ability that we all possess. So many of us get trapped in our stories, our dramas escalate until we become victims of hopeless situations. Jobs become dead ends. Countries become dystopias. No, you can’t make the annoying prairie dogs disappear, but the war—the story that is making us miserable—exists only in our minds. There is nothing stopping us from creating a _different_ story. 
 
 If you are intrigued by the idea of altering your reality, here are some examples that further explain how to harness your super power:
-- [Your Skull's Fourth Wall](https://medium.com/@ade3/your-skulls-fourth-wall-d0f682820296)
+- [Your Skull’s Fourth Wall](https://medium.com/@ade3/your-skulls-fourth-wall-d0f682820296)
  - [Evidence that Steve Jobs was Aware of his Reality Distortion Field](https://medium.com/@ade3/evidence-that-steve-jobs-was-aware-of-his-reality-distortion-field-49e4eacf8306#.yy71lsvvh)
 - [Anti-Hero, Abandoning the Movie Inside Your Head](https://medium.com/@ade3/anti-hero-changing-the-movie-inside-your-head-ee395e9a322b?source=linkShare-f82ce6c25013-1483814594)
 - [Becoming Bobblehead Buddha](https://medium.com/@ade3/becoming-bobblehead-buddha-925eddfacc1)

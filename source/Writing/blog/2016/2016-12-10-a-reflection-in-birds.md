@@ -41,7 +41,7 @@ The content osprey, perched in his home above the creek, oblivious to my daily c
 
 How I envy the hawks circling groundhogs below, rising in beautiful arcs, motionless except for the imperceptible adjustments that keep their direction true.
 
-Leaving a job is hard, especially when the employer is a place like TrainingPeaks. It's impossible to know if my next flight will resemble the eagle I saw on that run. All I can do is approach it with optimism, hoping I can stir up a flock of progress as I flap my wings.
+Leaving a job is hard, especially when the employer is a place like TrainingPeaks. It’s impossible to know if my next flight will resemble the eagle I saw on that run. All I can do is approach it with optimism, hoping I can stir up a flock of progress as I flap my wings.
 
 Thanks for reading my post this week. I write stories like this every Saturday morning, so consider [following me](http://twitter.com/@ade3) if my words resonate with you. *Stay creative.*
 

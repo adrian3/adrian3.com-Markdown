@@ -13,7 +13,7 @@ When no `slot.sidebar-content` key is present in frontmatter, the template rende
 
 ## When to use the default
 
-The default sidebar works well for pages where the supplementary content is genuinely site-wide — navigation, an author bio, a stable list of links. If the sidebar needs to reflect the page's specific subject matter, use a slot override instead.
+The default sidebar works well for pages where the supplementary content is genuinely site-wide — navigation, an author bio, a stable list of links. If the sidebar needs to reflect the page’s specific subject matter, use a slot override instead.
 
 ## Typography and spacing
 

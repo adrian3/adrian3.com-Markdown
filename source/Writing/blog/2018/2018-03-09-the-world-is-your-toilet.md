@@ -33,13 +33,13 @@ Have you noticed that the day after you purchase a white Ford Fiesta you will st
 
 
 ### Lesson 2: Yes, This is Your Job
-I can’t tell you what type of work is beneath you. Maybe you are too proud or too important for physical labor of this kind. But I can tell you that the words, "that’s not my job" are toxic. I believe that this phrase, more than anything else, has lead to the silos that plague the design industry. 
+I can’t tell you what type of work is beneath you. Maybe you are too proud or too important for physical labor of this kind. But I can tell you that the words, “that’s not my job” are toxic. I believe that this phrase, more than anything else, has lead to the silos that plague the design industry. 
 
 It’s not a designer’s job to write copy. It’s not a designer’s job to understand code. It’s not a designer’s job to do marketing. On and on designers absolve ourselves from responsibility until our job is so narrowly defined that the only time anyone thinks to involve us in their projects is when they need a jpg of the company’s logo. 
 
 Many designers are satisfied pushing pixels and letting experts do the real work. If that’s you, go ahead and walk right past that leaky toilet. It’s not your job. But as we already established, _you care._ And since you care you can’t help but want to fix the problems you notice. THAT is your job. You aren’t getting paid to apply makeup to financial reports. You are here to fix real problems.
 
-**What makes designers different?** We claim responsibility for solving problems outside of our job description. We are so curious, so desperate to improve things that our immediate response to every situation is, "This might not be in my job description but I can’t help myself." Yes, it is going to take you out of your comfort zone. It’s going to challenge your assumptions. You are going to come away from the experience with a new respect for an object that you never fully appreciated before. But maybe, just maybe you will be the person who actually fixes the problem.
+**What makes designers different?** We claim responsibility for solving problems outside of our job description. We are so curious, so desperate to improve things that our immediate response to every situation is, “This might not be in my job description but I can’t help myself.” Yes, it is going to take you out of your comfort zone. It’s going to challenge your assumptions. You are going to come away from the experience with a new respect for an object that you never fully appreciated before. But maybe, just maybe you will be the person who actually fixes the problem.
 
 
 ### Lesson 3: The More You Look, the More You See

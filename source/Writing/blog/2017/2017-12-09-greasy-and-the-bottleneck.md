@@ -13,15 +13,15 @@ layout:
 
 # Greasy and the Bottleneck
 
-I asked my future boss what his role was in the company he founded. I wasn't sure if I wanted to work for him yet. 
+I asked my future boss what his role was in the company he founded. I wasn’t sure if I wanted to work for him yet. 
 
 He told me his job was to apply grease. That sounded good. 
 
 He went on to explain that he saw his company as a machine. When things were going well, when the machine was functioning as designed, his role was to stay out of the way. If his machine slowed down he would apply grease to the situation. At the time I thought he meant he would fight for the best ideas, I didn’t realize it amounted to little more than firing people who weren’t producing. Nevertheless, he promised he would do everything he could to stay out of the way, to only appear in the rare situations where he could unclog the flow of revenue. I accepted the job, and true to his promise, I barely saw him in the entire time I worked for him.
 
-Years before Greasy, I worked for a boss we nicknamed, "Bottleneck." This wasn't done behind his back, we openly joked about his tendency to delay projects. He simply couldn't resist the urge to personally approve everything that his company shipped. It was hard to blame him, his name was baked into the company logo. And despite the delays and frustration it caused the team, the work was generally better after he added his fingerprints. But why would someone hire creative people only to redo their work?
+Years before Greasy, I worked for a boss we nicknamed, “Bottleneck.” This wasn’t done behind his back, we openly joked about his tendency to delay projects. He simply couldn’t resist the urge to personally approve everything that his company shipped. It was hard to blame him, his name was baked into the company logo. And despite the delays and frustration it caused the team, the work was generally better after he added his fingerprints. But why would someone hire creative people only to redo their work?
 
-I resented the style of both of these men. I didn't like that Greasy was removed from the day-to-day grind, that he got rich without participating in the creative process. I didn’t like that Bottleneck inserted himself into our work, derailed it right before it could have shipped. 
+I resented the style of both of these men. I didn’t like that Greasy was removed from the day-to-day grind, that he got rich without participating in the creative process. I didn’t like that Bottleneck inserted himself into our work, derailed it right before it could have shipped. 
 
 Does this match what you’ve seen in companies where you’ve worked? Leadership is either too deep in the weeds or too far removed from reality? Is there an alternative to the micro-manager bottleneck and the greasy empty suit? Sure there is. But it’s rare. It is rare because each of us secretly feels the pressure to be like Greasy and the Bottleneck. 
 

@@ -11,7 +11,7 @@ layout:
 --->
 
 # Seven ways to increase stress
-## (and why that isn't as bad of an idea as it sounds)
+## (and why that isn’t as bad of an idea as it sounds)
 
 * * *
 

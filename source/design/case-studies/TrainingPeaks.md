@@ -131,7 +131,7 @@ My dream for the coach profiles was that each page would be as robust and compel
 <img src="https://adrian3.com/imgs/galleries/design/1-trainingpeaks-2014-2016/case-study/10-before-and-after-profile.webp" style="margin: 0; width: 100vw;">
 <p class="caption">Old coach profiles existed only in modals making them impossible to link to. New profiles are multi-tabbed allowing deep linking and precise analytics measurement.</p>
 
-The design of the coach profile pages presented some interesting challenges. TrainingPeaks benefits most by promoting the more experienced, most profitable coaches. Coaches range from basic memberships at the low end of the spectrum up to coaches who are enrolled in all of TrainingPeaks' programs. This is a natural way of differentiating the coaches, but how do you promote the higher value coaches without short-changing the lower value coaches?
+The design of the coach profile pages presented some interesting challenges. TrainingPeaks benefits most by promoting the more experienced, most profitable coaches. Coaches range from basic memberships at the low end of the spectrum up to coaches who are enrolled in all of TrainingPeaks’ programs. This is a natural way of differentiating the coaches, but how do you promote the higher value coaches without short-changing the lower value coaches?
 
 Our solution was to create templates where the more a coach participates in our programs, the more content they can “unlock” on their profile page. Basic users might be limited to a library of pre-selected header images, while a certified coach could get a custom header designed by TrainingPeaks. All profiles will look nice and professional and the additional widgets will entice coaches to upgrade.
 
@@ -202,7 +202,7 @@ TrainingPeaks is lucky to have professional coaches on staff so user feedback is
 
 Once trends become apparent from the user research a list of improvements can be made. This list can be prioritized in grooming meetings where team members respond to the feedback and brainstorm solutions. Items that are critical get addressed first and non-essential enhancements can be put into the team’s backlog.
 
-In the example above you will note that an item “Hire me button” is de-prioritized until after launch. This single bullet point represents the main way the coach marketplace will put money in our coach's pockets. Why would we wait until after the launch to release this?
+In the example above you will note that an item “Hire me button” is de-prioritized until after launch. This single bullet point represents the main way the coach marketplace will put money in our coach’s pockets. Why would we wait until after the launch to release this?
 
 The answer is not intuitive and it represents a trap that many teams make. If you wait until your product is “finished,” you will never ship. There will always be ways to improve your product but the cost of not shipping your work often outweighs the value of getting a usable product in front of your customers and iterating later. It took guts, but we decided to add hiring functionality in a follow-up release. 
 

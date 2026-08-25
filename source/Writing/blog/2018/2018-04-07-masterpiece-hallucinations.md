@@ -13,11 +13,11 @@ layout:
 # Masterpiece Hallucinations
 ## Passing the Squint Test
 
-There’s a technique that artists use to evaluate their art. There’s nothing formal about it and they might not even realize what they are doing. They look at their work through squinted eyes. It's an odd thing when you think about it. 
+There’s a technique that artists use to evaluate their art. There’s nothing formal about it and they might not even realize what they are doing. They look at their work through squinted eyes. It’s an odd thing when you think about it. 
 
-What can you see through blurry eyes that you can't see with 20/20 vision? 
+What can you see through blurry eyes that you can’t see with 20/20 vision? 
 
-But what artists have learned, and often the hard way, is that they get so attached to their work that they can't see it the way other people do. Fresh eyes might see a mess, but the artist has invested so much into their work that they risk becoming blind to the truth right in front of them. They know how easy it is to hallucinate a masterpiece.
+But what artists have learned, and often the hard way, is that they get so attached to their work that they can’t see it the way other people do. Fresh eyes might see a mess, but the artist has invested so much into their work that they risk becoming blind to the truth right in front of them. They know how easy it is to hallucinate a masterpiece.
 
 So they squint. They turn their painting upside down. They look at it from across the room, through mirrors, and in low light. They go to great lengths to see their work with fresh eyes. 
 

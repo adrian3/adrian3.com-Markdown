@@ -26,7 +26,7 @@ The metal shines in areas, polished by the fingers of curious children, burnishe
 
 Its shell is sealed, welded shut, closed to protect you from the secrets within. 
 
-No, it isn't the type of art you would expect to see on a pedestal. And yet, if you were to pick it up, your effort would be rewarded.
+No, it isn’t the type of art you would expect to see on a pedestal. And yet, if you were to pick it up, your effort would be rewarded.
 
 Roll it in your hand and there is a tinkle.
 

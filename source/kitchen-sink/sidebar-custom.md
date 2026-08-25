@@ -25,7 +25,7 @@ Use slot overrides when a template slot needs genuinely different content per pa
 - A documentation sidebar with section-specific chapter links
 - A project page sidebar listing related tools or collaborators
 - A writing index sidebar filtered to a specific category
-- Any case where "the same layout, different context" is the right model
+- Any case where “the same layout, different context” is the right model
 
 ## What stays the same
 

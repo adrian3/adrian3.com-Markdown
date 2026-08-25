@@ -112,7 +112,7 @@ by Chen Design Associates, October 19, 2006
 
 <media-row>
 **Concordia Art Department News**  
-"Holzworth and Hanft Explore Design Online"  
+“Holzworth and Hanft Explore Design Online”  
 Fall 2007
 
 ![Concordia Art Department News feature](https://adrian3.com/imgs/galleries/awards-and-honors/art-department-news.webp)
@@ -120,7 +120,7 @@ Fall 2007
 
 <media-row>
 **STEP Inside Design**  
-"Blogging Designers: Thinking Out Loud Online"  
+“Blogging Designers: Thinking Out Loud Online”  
 October 2005  
 (Pages 72-77)
 
@@ -128,7 +128,7 @@ October 2005
 </media-row>
 
 <media-row>
-**"Design Blogs: The Good, the Bad and the Nasty,"**  
+**”Design Blogs: The Good, the Bad and the Nasty,”**  
 Design Matters with Debbie Millman  
 July 2005
 </media-row>
@@ -142,6 +142,6 @@ Live blogging from the 2005 HOW Conference
 
 <media-row>
 **HowDesign.com**  
-"HOW’s Top Ten Sites"  
+“HOW’s Top Ten Sites”  
 March 2005
 </media-row>

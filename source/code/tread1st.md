@@ -6,4 +6,4 @@ show-in-nav: true
 
 # Tread1st
 
-Tread1st is a side project where I document my running and cycling workouts. Check out [tread1st.com](https://tread1st.com/Ade3/training) to see every run/ride I've recorded since 2009.
+Tread1st is a side project where I document my running and cycling workouts. Check out [tread1st.com](https://tread1st.com/Ade3/training) to see every run/ride I’ve recorded since 2009.

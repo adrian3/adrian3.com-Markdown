@@ -20,7 +20,7 @@ _Flat Earthers want us to stop blindly accepting what we are told and build our 
 
 _Flat Earthers invite us to invest the effort to really understand our world rather than memorizing textbooks._
 
-You are probably nodding in agreement with these statements but mentally screaming at your screen additions like "...but that doesn’t mean..." or "...but you can’t just..." to the end of my sentences. I know, I know. _Me, too._ But let’s try to suppress that reflex temporarily and see where it leads us.
+You are probably nodding in agreement with these statements but mentally screaming at your screen additions like “...but that doesn’t mean...” or “...but you can’t just...” to the end of my sentences. I know, I know. _Me, too._ But let’s try to suppress that reflex temporarily and see where it leads us.
 
 There is a cognitive bias known as [the IKEA effect](https://en.m.wikipedia.org/wiki/IKEA_effect). It says that when you build something you irrationally overvalue it. We fall in love with our creations. The same is true of our ideas. An idea that you generate yourself will be treasured more than an idea fed to you in a PowerPoint presentation. Unfortunately, self-generated ideas can go horribly wrong like a poorly built Kallax shelf and we will still love them. Reread the statements above again through the lens of the IKEA effect. If you are like me, you may for the first time have a sympathy for these people that was previously beyond reach. Did you feel your Earth bend a little with this new realization?
 

@@ -15,7 +15,7 @@ layout:
 ---- 
 After quitting his job, a friend made an odd comment. He said,
 
-> "It’s weird when you realize that none of it is real."
+> “It’s weird when you realize that none of it is real.”
 
 His observation stuck me as both profoundly true and maddeningly confusing. Like a riddle that you flip over in your mind trying to find the key, once the idea takes hold you can’t stop thinking about it.
 

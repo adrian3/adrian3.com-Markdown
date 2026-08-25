@@ -18,13 +18,13 @@ Curious, disciplined, outcome-driven product designer with a passion for tacklin
 ### Senior UX Designer
 
 - Designed data exploration tools that use OpenTelemetry, machine learning, and artificial intelligence to help IT professionals understand the health of complex software infrastructure.
-- Used Figma to design proof-of-concept applications that established a multi-year roadmap for integrating OpenTelemetry into OpenText's enterprise product line.
+- Used Figma to design proof-of-concept applications that established a multi-year roadmap for integrating OpenTelemetry into OpenText’s enterprise product line.
 - Led the design of a new Observability product that helps IT professionals identify problems and optimize cloud software.
 - Partnered with data scientists to detect anomalies in streams of billions of data points and translate patterns into useful insights.
-- Documented UX principles for designing with AI and contributed new patterns and components to OpenText's design system.
-- Redesigned applications acquired from Micro Focus, helping transition legacy products into OpenText's product line.
+- Documented UX principles for designing with AI and contributed new patterns and components to OpenText’s design system.
+- Redesigned applications acquired from Micro Focus, helping transition legacy products into OpenText’s product line.
 - Validated concepts with internal users, conducted usability testing with customers at OpenText World, and used data visualization to make complex issues understandable.
-- Won second place in OpenText's Innofest hackathon for data visualization using 3D and VR technology.
+- Won second place in OpenText’s Innofest hackathon for data visualization using 3D and VR technology.
 
 ---
 
@@ -32,12 +32,12 @@ Curious, disciplined, outcome-driven product designer with a passion for tacklin
 
 ### Senior UX Designer / UX Design Manager
 
-- Helped shape the UX vision and product roadmap for Nutrien's digital commerce division through collaboration with product managers and engineering leaders.
-- Helped Nutrien's design team grow from 7 to 15 designers and researchers while establishing customer obsession as one of Nutrien's core values.
+- Helped shape the UX vision and product roadmap for Nutrien’s digital commerce division through collaboration with product managers and engineering leaders.
+- Helped Nutrien’s design team grow from 7 to 15 designers and researchers while establishing customer obsession as one of Nutrien’s core values.
 - Launched an agriculture e-commerce platform that generated over $5 billion in sales in its first three years.
-- Led the transition from Sketch to Figma as the team's main design tool and used Figma to create high-fidelity mockups, interactive prototypes, sketches, workflows, and storyboards.
+- Led the transition from Sketch to Figma as the team’s main design tool and used Figma to create high-fidelity mockups, interactive prototypes, sketches, workflows, and storyboards.
 - Conducted UX workshops with key partners such as John Deere, BASF, and Syngenta.
-- Led the design of an experimental product that used machine learning to identify sales opportunities within Nutrien's archive of historical sales data.
+- Led the design of an experimental product that used machine learning to identify sales opportunities within Nutrien’s archive of historical sales data.
 - Traveled across the country meeting users and observing how products were used in the field, then brought those stories back to help teams empathize with the people relying on our software.
 - Mentored designers, removed roadblocks, facilitated career advancement, and built a design culture through critiques, retros, research, design systems, usability studies, and collaboration tools.
 
@@ -47,7 +47,7 @@ Curious, disciplined, outcome-driven product designer with a passion for tacklin
 
 ### Lead Product Designer
 
-- Established a new vision for Runcoach's web, iOS, and Android products.
+- Established a new vision for Runcoach’s web, iOS, and Android products.
 - Created empathy for users within the company by translating research into compelling stories.
 - Rebranded the company and defined new brand guidelines.
 - Led product exploration exercises including competitive research, ideation, and persona development.
@@ -71,7 +71,7 @@ Curious, disciplined, outcome-driven product designer with a passion for tacklin
 
 ### UX Designer
 
-- Created the UI and improved the UX of Athlinks' website and native apps.
+- Created the UI and improved the UX of Athlinks’ website and native apps.
 - Designed high-fidelity clickable prototypes and conducted usability tests to validate product enhancements and new features.
 - Defined style guidelines and built a library of reusable design patterns.
 - Designed and developed a mobile kiosk for displaying live race results for the Miami Marathon.
@@ -83,9 +83,9 @@ Curious, disciplined, outcome-driven product designer with a passion for tacklin
 
 ### Freelance Product Designer
 
-- Updated Stryd's website to better explain the benefits of a running power meter to different types of runners.
-- Designed Stryd's iOS app to bring the functionality of its web app to the phone.
-- Designed a case study explaining the science behind Stryd's product.
+- Updated Stryd’s website to better explain the benefits of a running power meter to different types of runners.
+- Designed Stryd’s iOS app to bring the functionality of its web app to the phone.
+- Designed a case study explaining the science behind Stryd’s product.
 
 ---
 
@@ -95,11 +95,11 @@ Curious, disciplined, outcome-driven product designer with a passion for tacklin
 
 - Led a team that created a coach directory for connecting a network of coaches with thousands of runners.
 - Redesigned a training plan store, reviving an important source of revenue.
-- Provided design direction to TrainingPeaks' iOS and Android teams.
+- Provided design direction to TrainingPeaks’ iOS and Android teams.
 - Designed and developed a successful #ThanksCoach social campaign used by thousands of athletes.
 - Designed and developed the Endurance Coaching Summit website and marketing materials.
-- Converted the company's website to be mobile-friendly.
-- Designed the branding, website, and collateral for Peaksware, TrainingPeaks' parent company.
+- Converted the company’s website to be mobile-friendly.
+- Designed the branding, website, and collateral for Peaksware, TrainingPeaks’ parent company.
 - Designed email campaigns, developed mobile-friendly email templates, and managed transactional emails generated by the system.
 
 ---

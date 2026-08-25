@@ -17,7 +17,7 @@ layout:
 
 ---- 
 
-There is a good chance you missed my best writing of 2016. Let's fix that. Of the 50 stories I posted this year, here are the ten that got the most traffic as well as some of the work I am proudest of. 
+There is a good chance you missed my best writing of 2016. Let’s fix that. Of the 50 stories I posted this year, here are the ten that got the most traffic as well as some of the work I am proudest of. 
 
 1. [Evidence that Steve Jobs was Aware of his Reality Distortion Field](https://medium.com/@ade3/evidence-that-steve-jobs-was-aware-of-his-reality-distortion-field-49e4eacf8306)
 	This was my most popular post of the year thanks in part to a share by Guy Kawasaki. Find out if you have a reality distortion field, too.
@@ -47,7 +47,7 @@ There is a good chance you missed my best writing of 2016. Let's fix that. Of th
 	Is your job to satisfy the demands of consumers? If that is true we are in trouble.
 
 10. [I Am Data Drivel](https://medium.freecodecamp.com/data-drivel-f3efc8238732?source=linkShare-f82ce6c25013-1482013363)
-	Need a New Year's resolution? Abandon Google Analytics with me.
+	Need a New Year’s resolution? Abandon Google Analytics with me.
 
 ---
 

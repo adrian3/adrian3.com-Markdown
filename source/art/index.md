@@ -6,7 +6,7 @@ slot.sidebar-content: art-sidebar
 --->
 
 #### My philosophy on art...
-Beauty is hiding in plain sight waiting to be discovered. That's what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my [http://instagram.com/ade3](Ade3 Instagram account).
+Beauty is hiding in plain sight waiting to be discovered. That’s what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my [http://instagram.com/ade3](Ade3 Instagram account).
 
 <image-grid>
 
@@ -109,7 +109,7 @@ Beauty is hiding in plain sight waiting to be discovered. That's what I believe 
 
 <h2 id="infestation">Infestation Insect Prints</h2>
 <a href="infestation.html"><img src="https://adrian3.com/imgs/galleries/infestation/infestation-thumb.webp"></a>
-<p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it's a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="https://etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
+<p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it’s a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="https://etsy.com/shop/byAdrian3">my Etsy store</a>.</p>
 <a href="infestation.html" class="button">View Project</a>
 <hr />
 
@@ -119,7 +119,7 @@ Beauty is hiding in plain sight waiting to be discovered. That's what I believe 
 
 <h2 id="inner-demons">Inner Demons</h2>
 <a href="../gallery-pages/inner-demons.html"><img src="https://adrian3.com/imgs/inner-demons.webp"></a>
-<p>I called this series "Inner Demons" because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="../gallery-pages/inner-demons.html">this gallery</a>.</p>
+<p>I called this series “Inner Demons” because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="../gallery-pages/inner-demons.html">this gallery</a>.</p>
 <hr />
 
 <h2 id="money-maker">Money Printer Camera</h2>
@@ -144,7 +144,7 @@ Beauty is hiding in plain sight waiting to be discovered. That's what I believe 
 
 <h2 id="camera-graffiti">Baby Powder Graffiti</h2>
 <a href="../gallery-pages/camera-graffiti.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/camera-graffiti.webp"></a>
-<p>For this project I used baby powder and other non-destructive techniques to create graffiti. I love the idea of artwork that doesn't last long. It's there one moment and gone the next. You can view a <a href="../gallery-pages/camera-graffiti.html">gallery of this art here</a>.</p>
+<p>For this project I used baby powder and other non-destructive techniques to create graffiti. I love the idea of artwork that doesn’t last long. It’s there one moment and gone the next. You can view a <a href="../gallery-pages/camera-graffiti.html">gallery of this art here</a>.</p>
 <hr />
 
 <h2 id="lego-camera">Lego Pinhole Camera</h2>
@@ -154,7 +154,7 @@ Beauty is hiding in plain sight waiting to be discovered. That's what I believe 
 
 <h2 id="camera-drawing-animation">Camera Drawing Animation</h2>
 <a href="../gallery-pages/camera-drawings.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/cameras.webp"></a>
-<p>I created software that recorded my pencil as I drew dozens of <a href="../gallery-pages/camera-drawings.html">Cameras from my collection</a>. By replaying my pencil's movement I was able to create animations of the cameras being redrawn. In the first iteration of my software I created <a href="../gallery-pages/star-wars-drawings.html">drawings of my favorite Star Wars characters.</a></p>
+<p>I created software that recorded my pencil as I drew dozens of <a href="../gallery-pages/camera-drawings.html">Cameras from my collection</a>. By replaying my pencil’s movement I was able to create animations of the cameras being redrawn. In the first iteration of my software I created <a href="../gallery-pages/star-wars-drawings.html">drawings of my favorite Star Wars characters.</a></p>
 <hr />
 
 <h2 id="illustrations">Illustrations</h2>
@@ -164,7 +164,7 @@ Beauty is hiding in plain sight waiting to be discovered. That's what I believe 
 
 <h2 id="pottery">Pottery</h2>
  <a href="../gallery-pages/pottery.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/pottery.webp"></a>
- <p>It's been a few years but I was a prolific potter in college. It helped me make some extra money but more importantly it was a relaxing stress reliever. You can view some of my pots in this <a href="../gallery-pages/pottery.html">pottery gallery</a>.</p>
+ <p>It’s been a few years but I was a prolific potter in college. It helped me make some extra money but more importantly it was a relaxing stress reliever. You can view some of my pots in this <a href="../gallery-pages/pottery.html">pottery gallery</a>.</p>
 <hr />
 
 <h2 id="book-shelf-photos">Book Shelf Photos</h2>
@@ -177,5 +177,5 @@ Beauty is hiding in plain sight waiting to be discovered. That's what I believe 
 <hr />
 <h2 id="art-shows">Art Shows</h2>
 <a href="art-shows.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/spider-flower.webp"></a>
-<p>I've done a handful of art shows over the years. Here is a list of <a href="art-shows.html">Shows and Exhibitions</a> I have participated in.<br />
+<p>I’ve done a handful of art shows over the years. Here is a list of <a href="art-shows.html">Shows and Exhibitions</a> I have participated in.<br />
 </p>

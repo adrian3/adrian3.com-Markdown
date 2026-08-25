@@ -24,9 +24,9 @@ I discovered that announcing “talent doesn’t exist” is a sure way to freez
 
 I thought the choice was between believing the talent myth or evangelizing the virtues of hard work. I missed the alternative. If people want to believe in talent, _let them._ Here’s why...
 
-Talent is an illusion. And like any good magic trick, the way to leverage the illusion is not to go around explaining how the trick is done. Magicians don’t correct their fans by saying, "No, it’s not really magic. It’s just a trick." Likewise, nobody likes the guy who says, "It’s not magic, I saw him slide the card up his sleeve." 
+Talent is an illusion. And like any good magic trick, the way to leverage the illusion is not to go around explaining how the trick is done. Magicians don’t correct their fans by saying, “No, it’s not really magic. It’s just a trick.” Likewise, nobody likes the guy who says, “It’s not magic, I saw him slide the card up his sleeve.” 
 
-So if you are the type of person who regularly gets referred to as "talented," accept the compliment graciously. 
+So if you are the type of person who regularly gets referred to as “talented,” accept the compliment graciously. 
 
 You don’t have to reveal the secrets of your illusion. Nobody _really_ cares how you did the trick. And if they do ask for your secret, tell them the truth. You worked harder than any normal person would think reasonable. That is the truth disguised as magic. The magician Teller explains that the secret to magic is that the best tricks are “a lot more trouble than the trick seems worth.”
 

@@ -22,7 +22,7 @@ The clouds parted, angels sang, and an idea descended like a holy dove.
 
 _Inspiration!_
 
-What, it doesn't happen that way for you?
+What, it doesn’t happen that way for you?
 
 Me neither. 
 
@@ -30,11 +30,11 @@ For me the experience more closely resembles a tiny piece of food that gets stuc
 
 When you first feel it, it is just a slight pressure, a vague awareness of something requesting your attention.
 
-You don't know where it came from but there it is, a minor irritation intruding on your peaceful routine and careful plans.
+You don’t know where it came from but there it is, a minor irritation intruding on your peaceful routine and careful plans.
 
 You ignore it. 
 
-But you know it's there and it doesn't seem to be going away.
+But you know it’s there and it doesn’t seem to be going away.
 
 Eventually you indulge.
 
@@ -44,7 +44,7 @@ Your tongue slides across the familiar surfaces of your teeth seeking the source
 
 Then you feel it. A tiny tip of something lodged there, hidden in the shadows.
 
-Now you can't leave it alone. Your tongue is on a mission. 
+Now you can’t leave it alone. Your tongue is on a mission. 
 
 The intruder must be investigated. 
 
@@ -54,7 +54,7 @@ It irritates, itches, burns inside you.
 
 You push on it. Pull on it. Attack it from all angles.
 
-Now you can't concentrate on anything else. The object has your undivided attention.
+Now you can’t concentrate on anything else. The object has your undivided attention.
 
 From the outside everything looks normal, but inside you are waging war. This thing will not defeat you.
 
@@ -62,21 +62,21 @@ Eventually you have a breakthrough. The pressure releases and you are free from 
 
 _Success._ 
 
-And once again, there aren't any halos, fluffy clouds, or trumpets.
+And once again, there aren’t any halos, fluffy clouds, or trumpets.
 
 No fireworks or parades held in your honor. 
 
-You did what you had to do, that's all.
+You did what you had to do, that’s all.
 
 You could lionize the process, try to replicate the factors that caused the inspiration in the first place. 
 
-But the truth is you don't know where it came from. 
+But the truth is you don’t know where it came from. 
 
-And you aren't entirely sure you want all that discomfort again anyway. 
+And you aren’t entirely sure you want all that discomfort again anyway. 
 
 So you do what you have always done, you keep chewing, day after day. 
 
-And eventually, what's that? Do you feel something? And off you go...
+And eventually, what’s that? Do you feel something? And off you go...
 
 ---- 
 

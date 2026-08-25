@@ -23,19 +23,19 @@ Two hundred feet below a car is driving by with an open window.
 
 What are the odds that the boy would know better than to release his ice cube?
 
-What are the odds that the boy's aim would be true?
+What are the odds that the boy’s aim would be true?
 
-What are the odds that the wind wouldn't affect the ice's trajectory enough to prevent a direct hit?
+What are the odds that the wind wouldn’t affect the ice’s trajectory enough to prevent a direct hit?
 
 What are the odds that the target would be an unmarked police car?
 
-What are the odds that the cops wouldn't spot the boy's face when they looked up?
+What are the odds that the cops wouldn’t spot the boy’s face when they looked up?
 
-What are the odds that the boy's friends would cover for him?
+What are the odds that the boy’s friends would cover for him?
 
-What are the odds that his marching band wouldn't be kicked out of the competition?
+What are the odds that his marching band wouldn’t be kicked out of the competition?
 
-What are the odds that the band director wouldn't be able to pin the crime on the misfit trombone player?
+What are the odds that the band director wouldn’t be able to pin the crime on the misfit trombone player?
 
 Against all odds I survived my own stupidity that day. But is luck the best way to frame this story?
 

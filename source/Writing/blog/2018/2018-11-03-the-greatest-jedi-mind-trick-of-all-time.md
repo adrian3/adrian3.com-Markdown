@@ -16,7 +16,7 @@ What percentage of your visible world would you say you can see?
 
 Yes, you read that correctly. 
 
-The obvious answer is "all of it." 
+The obvious answer is “all of it.” 
 
 That’s the definition of visible, the part of the world that you can see. But stick with me... 
 

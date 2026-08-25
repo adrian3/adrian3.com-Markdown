@@ -25,7 +25,7 @@ Every system has a moment of closure — the point at which the rules are fixed 
 
 The antidote is to stay in the finding phase longer than is comfortable. Hold the rules loosely. Make the minimum number of decisions required to move forward. Leave the load-bearing decisions until last, when you have the most information.
 
-This is hard. There is enormous social and institutional pressure to resolve ambiguity early. Stakeholders want specifications. Developers want interfaces. Managers want commitments. The person who says "I don't know yet" is seen as less competent than the person who says "here is the plan."
+This is hard. There is enormous social and institutional pressure to resolve ambiguity early. Stakeholders want specifications. Developers want interfaces. Managers want commitments. The person who says “I don’t know yet” is seen as less competent than the person who says “here is the plan.”
 
 But the plan made with insufficient information is not a plan. It is a guess that has been given the social weight of a plan. And guesses made early, in the dark, with authority, are the most expensive kind.
 

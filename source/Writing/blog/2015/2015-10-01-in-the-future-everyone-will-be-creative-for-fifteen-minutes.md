@@ -15,7 +15,7 @@ layout:
 
 * * *
 
-We were promised a future of flying cars and robot slaves. I love my smart phone, but pinch me if the future doesn’t look an awful lot like the 80's. I blame the creative people.
+We were promised a future of flying cars and robot slaves. I love my smart phone, but pinch me if the future doesn’t look an awful lot like the 80’s. I blame the creative people.
 
 Take my house for example. It is a nice enough building, but it’s the same as every other house in the world. Paint covers drywall which covers wood beams spaced exactly 16 inches apart.
 

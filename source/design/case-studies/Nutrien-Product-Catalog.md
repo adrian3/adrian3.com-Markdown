@@ -20,7 +20,7 @@ thumbnail-alt: The Product Catalog: Helping Experts Choose the Right Product thu
 
 ## Introduction
 
-A crop consultant doesn't just take orders — they prescribe. Choosing the right chemical, seed, or fertilizer for a given field is one of the hardest parts of the job, because it means balancing agronomic fit against cost, performance, resistance management, and years of hard-won knowledge about a specific piece of ground. When we set out to build the product catalog inside the Employee Experience Hub (EXH), the goal wasn't to make a prettier list of products. It was to support that expert decision. This is the story of how research shaped a catalog built for the way crop consultants actually think.
+A crop consultant doesn’t just take orders — they prescribe. Choosing the right chemical, seed, or fertilizer for a given field is one of the hardest parts of the job, because it means balancing agronomic fit against cost, performance, resistance management, and years of hard-won knowledge about a specific piece of ground. When we set out to build the product catalog inside the Employee Experience Hub (EXH), the goal wasn’t to make a prettier list of products. It was to support that expert decision. This is the story of how research shaped a catalog built for the way crop consultants actually think.
 
 ## 1. The Problem
 
@@ -34,27 +34,27 @@ The design challenge was to bring that scattered knowledge into a single catalog
 
 ### From partner design sprints to testable wireframes
 
-I didn't want to design this in a vacuum, so the work started with collaborative design sprints that included major manufacturing partners like **Syngenta and BASF** — the people who know these products best. Those sprints turned into testable wireframes: **31 distinct components spread across three pages** — a catalog home, a product detail page, and a comparison view. Building it as a set of discrete, testable components meant we could put concrete concepts in front of users and learn which ones actually earned their place.
+I didn’t want to design this in a vacuum, so the work started with collaborative design sprints that included major manufacturing partners like **Syngenta and BASF** — the people who know these products best. Those sprints turned into testable wireframes: **31 distinct components spread across three pages** — a catalog home, a product detail page, and a comparison view. Building it as a set of discrete, testable components meant we could put concrete concepts in front of users and learn which ones actually earned their place.
 
 ## 3. Research
 
 ### User testing during a pandemic
 
-We tested the wireframes in the middle of the pandemic, which meant moving the research remote rather than letting it stall. I ran **one-hour interviews with seven crop consultants** from across the country — from Clinton, Oklahoma to Edmonton, Canada to the Southern High Plains of Kansas — walking each of them through the concepts and asking what they'd actually use.
+We tested the wireframes in the middle of the pandemic, which meant moving the research remote rather than letting it stall. I ran **one-hour interviews with seven crop consultants** from across the country — from Clinton, Oklahoma to Edmonton, Canada to the Southern High Plains of Kansas — walking each of them through the concepts and asking what they’d actually use.
 
 The response was encouraging, and specific:
 
-> _"I would use it daily as a research tool. A lot of things I do right now, it would eliminate. Especially if this was in an app, I would religiously use this a lot."_ — Jared Yost, Crop Consultant
+> _”I would use it daily as a research tool. A lot of things I do right now, it would eliminate. Especially if this was in an app, I would religiously use this a lot.”_ — Jared Yost, Crop Consultant
 
-> _"Any of the work that I normally do by hand is nicely placed here. If I were sitting with a grower in front of me, those are a lot of the questions they would ask."_ — Abbey Halwa, Crop Consultant
+> _”Any of the work that I normally do by hand is nicely placed here. If I were sitting with a grower in front of me, those are a lot of the questions they would ask.”_ — Abbey Halwa, Crop Consultant
 
-That second quote was the one that mattered most: the catalog wasn't just a place to look something up, it was a tool a consultant could use *with a grower in the room.*
+That second quote was the one that mattered most: the catalog wasn’t just a place to look something up, it was a tool a consultant could use *with a grower in the room.*
 
 ## 4. What We Designed
 
 ### A catalog organized around how consultants think
 
-The catalog home led with **search**, because search turned out to be the primary way consultants expect to find a product — they estimated they'd type a product name straight into the box 50–90% of the time. It was so obvious to them that most didn't even think to list it among their top-five priorities. Around it we built the entry points they actually reached for: **crop-specific catalogs** (consultants almost always start with a crop in mind, so the catalog can default to the crops grown in their region) and **pest-specific catalogs** covering insects, weeds, and diseases, with a pest-identification tool promoted to the homepage rather than buried on a detail page.
+The catalog home led with **search**, because search turned out to be the primary way consultants expect to find a product — they estimated they’d type a product name straight into the box 50–90% of the time. It was so obvious to them that most didn’t even think to list it among their top-five priorities. Around it we built the entry points they actually reached for: **crop-specific catalogs** (consultants almost always start with a crop in mind, so the catalog can default to the crops grown in their region) and **pest-specific catalogs** covering insects, weeds, and diseases, with a pest-identification tool promoted to the homepage rather than buried on a detail page.
 
 ![The catalog home: a product search, partner catalogs (BASF, Syngenta, Loveland), crop- and pest-specific entry points, a product finder, and branch-inventory browsing.](https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/02-catalog-home.png)
 
@@ -66,10 +66,10 @@ The **comparison chart** drew the strongest reaction of anything we showed — e
 
 ## 5. What I Learned
 
-### Design the catalog around the expert's mental model
+### Design the catalog around the expert’s mental model
 
-The throughline of the research was that crop consultants are experts who already have a process — they search by crop, they think in pests, they compare by rate per acre, they reach for label data and active ingredients. The job of the catalog wasn't to teach them a new way to shop. It was to take the work they were already doing by hand, across a dozen sources, and put it in one place that respected how they think.
+The throughline of the research was that crop consultants are experts who already have a process — they search by crop, they think in pests, they compare by rate per acre, they reach for label data and active ingredients. The job of the catalog wasn’t to teach them a new way to shop. It was to take the work they were already doing by hand, across a dozen sources, and put it in one place that respected how they think.
 
 ## Conclusion
 
-A good catalog for a layperson helps them discover. A good catalog for an expert helps them decide faster and with more confidence. By starting with partner design sprints and grounding every component in interviews with working crop consultants, we built a catalog that earned a place in the consultant's day — and, in the words of one of them, in the conversation happening with a grower sitting right across the desk.
+A good catalog for a layperson helps them discover. A good catalog for an expert helps them decide faster and with more confidence. By starting with partner design sprints and grounding every component in interviews with working crop consultants, we built a catalog that earned a place in the consultant’s day — and, in the words of one of them, in the conversation happening with a grower sitting right across the desk.

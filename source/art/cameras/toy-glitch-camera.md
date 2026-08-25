@@ -140,7 +140,7 @@ Made by Ade Substack is a reader-supported publication. To receive new posts and
 
 
 
-Awesome write up, thanks a lot for going into your process! For anyone else following along to this post don't be a dummy like me and not fully comb through the linked resources. Make sure the ribbon cable you get is a "type b" ribbon cable, otherwise the camera screen is going to show those color bars because the connections are reversed.
+Awesome write up, thanks a lot for going into your process! For anyone else following along to this post don’t be a dummy like me and not fully comb through the linked resources. Make sure the ribbon cable you get is a “type b” ribbon cable, otherwise the camera screen is going to show those color bars because the connections are reversed.
 
 
 
@@ -238,7 +238,7 @@ Oct 19, 2025 • [Ade](https://substack.com/@ade3)
 
 [Danger, fear, and art-making in New York City](https://ade3.substack.com/p/danger-fear-and-art-making-in-new)
 
-[Ade's art adventure in Brooklyn](https://ade3.substack.com/p/danger-fear-and-art-making-in-new)
+[Ade’s art adventure in Brooklyn](https://ade3.substack.com/p/danger-fear-and-art-making-in-new)
 
 May 16 • [Ade](https://substack.com/@ade3)
 
@@ -288,7 +288,7 @@ Feb 1 • [Ade](https://substack.com/@ade3)
 
 ![img](https://substackcdn.com/image/fetch/$s_!8tIw!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0a9c804f-305d-4eda-a355-e8e2be5650ad_600x449.gif)
 
-[I can't draw and so can you!](https://ade3.substack.com/p/the-story-of-how-i-almost-got-kicked)
+[I can’t draw and so can you!](https://ade3.substack.com/p/the-story-of-how-i-almost-got-kicked)
 
 [The story of how I almost got kicked out of art school](https://ade3.substack.com/p/the-story-of-how-i-almost-got-kicked)
 

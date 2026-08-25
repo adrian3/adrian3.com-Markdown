@@ -41,7 +41,7 @@ That’s not just poetry, it has been measured with, perhaps ironically, the sci
 
 When the UK test was expanded to 200,00 people in their mid-20s it only got worse with none but 2 in 100 who could think divergently. I assume these results were so depressing that the scientists abandoned the research before testing middle-aged and senior adults. Oh, and the study is 15 years old, so the numbers could be worse today. 
 
-* Note: I got  these numbers from a [Ted Talk from Sir Ken Robinson][1]. Despite my digging, I can't find the actual source of these numbers. They could be hot air.
+* Note: I got  these numbers from a [Ted Talk from Sir Ken Robinson][1]. Despite my digging, I can’t find the actual source of these numbers. They could be hot air.
 
 For now, let’s accept those numbers at face value. How does a civilization function when the ratio of clones to creatives is 99 to 1? Well, until recently, humanity has managed just fine with these skewed numbers. That’s because there is stability in a population that accepts the ideas that are handed down to them by their tribe leaders. When there are only a few free thinkers in the mix, they can be tolerated or ignored without damaging the comforting cocoon of conformity most of us inhabit. 
 
@@ -59,7 +59,7 @@ Can these genies ever really go peacefully back into the bottle? Will students r
 
 When the old reality of education and employment dissolves, what are you left with? Of course we have riots. Is it a surprise that so many people want to destroy any symbol that smells like the ghost that produced the classroom to cubicle con? Who could blame you for hating the system now that the lie is exposed? 
 
-Is it possible that the 1% of minds left still capable of divergent thought (again, if we accept these numbers) can save us? That puts a huge strain on the 1%. That’s a lot to ask of somebody. We've been breed to vilify all opposition to our beliefs until we can't distinguish an ideology-free idea from a personal attack. Can we really expect an outnumbered free thinker to stand up to the mob? All the creativity in the world fails when you are facing down a population that's been systematically trained to accept single answers to questions.
+Is it possible that the 1% of minds left still capable of divergent thought (again, if we accept these numbers) can save us? That puts a huge strain on the 1%. That’s a lot to ask of somebody. We’ve been breed to vilify all opposition to our beliefs until we can’t distinguish an ideology-free idea from a personal attack. Can we really expect an outnumbered free thinker to stand up to the mob? All the creativity in the world fails when you are facing down a population that’s been systematically trained to accept single answers to questions.
 
 I know what you are thinking. I said I was going to fill you with hope and now I’ve painted a picture where the fate of humanity hangs on the shoulders of 1% of the population, a sliver of humanity that’s shrinking, a population of thinkers that for all we know might not even exist any more. Stick with me...
 
@@ -69,7 +69,7 @@ When the world is split into tribes we are left with a comfortable illusion that
 
 We somehow believe that the path to utopia lies within our side’s silo despite lacking any actual vision. The best we can muster are vague ideas “Make America Great Again” or “Build Back Better.” Pick your poison, but either way you basically saying, “go back to the way things were before” or “replace it with what other people are doing.” Again, we lack the imagination to see outside of our army’s trenches. That’s not a path to change, but what’s the alternative? Buckminster Fuller said,
 
-> "You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete." 
+> “You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.” 
 
 Solving the world’s problems is a bit out of the scope of this essay, but for the sake of demonstration, I want to at least point in the direction of what divergent thinking actually looks like. I’ll pick two of the most contentious issues I can think of, guns and abortion. Watch as I offend both political parties without ever saying anything partisan. 
 
@@ -107,7 +107,7 @@ This is why I question the validity of the study that concluded that less than 2
 
 The dullest of jobs are helmed by incredibly creative people. My hypothesis is that the unmeasurable skills (call it creativity, divergent thinking, call it soft skills) are the secret weapon of the humans that inexplicably perform above the potential they show on paper. Even if they don’t exercise it at work, creative people find an outlet for their ideas in their free time. It’s not that people are incapable of wielding creativity at their job, it’s just that the incentive structures are setup to discourage divergent thoughts. If I’m paying somebody to support my institution, why would they jeopardize their paycheck by reimagining my business? 
 
-Once we knew the rules, when we saw how the game was to be played, we played along. Sure, some people punch the clock in dead end jobs because they've reached the pinnacle of their human potential. But most people do it because they know how to play the game. They make more money propping up the facade than if they were to point at the penis of depantsed emperors. 
+Once we knew the rules, when we saw how the game was to be played, we played along. Sure, some people punch the clock in dead end jobs because they’ve reached the pinnacle of their human potential. But most people do it because they know how to play the game. They make more money propping up the facade than if they were to point at the penis of depantsed emperors. 
 
 We proved that schools and jobs can function differently. You can’t unsee that. The guards have left those mental prison doors unlocked, all we have to do is step through the bars. It’s just a slight shift in mentality, perhaps a 1% divergence that points our ship away from dystopia and towards a golden age. 
 

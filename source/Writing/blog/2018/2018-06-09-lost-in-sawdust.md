@@ -13,11 +13,11 @@ layout:
 
 # Lost in Sawdust
 
-"Steel sharpens steel," I said, struggling to find the silver lining of a recent failure.  
+“Steel sharpens steel,” I said, struggling to find the silver lining of a recent failure.  
 
-My boss wasn't buying it. 
+My boss wasn’t buying it. 
 
-He replied, "It really doesn't matter how sharp your blade is if you're blinded by all the sawdust in the air."
+He replied, “It really doesn’t matter how sharp your blade is if you’re blinded by all the sawdust in the air.”
 
 He had a knack for taking a truism and flipping it in on itself, exposing it as an empty platitude, and refilling the void with ideas that can recalibrate your brain.
 

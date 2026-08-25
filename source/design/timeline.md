@@ -3,7 +3,7 @@ title: Timeline
 show-in-nav: false
 --->
 
-# Adrian Hanft's Professional Timeline
+# Adrian Hanft’s Professional Timeline
 
 <section id="cd-timeline" class="cd-container" style="margin: -85px auto -50px auto;">
 
@@ -39,7 +39,7 @@ show-in-nav: false
 <hr>
 <h3>2016 - 2018</h3>
 
-<p class="lead">At Athlinks I was responsible for the UI and UX of Athlinks' website and native apps.</p>
+<p class="lead">At Athlinks I was responsible for the UI and UX of Athlinks’ website and native apps.</p>
 
 <div class="readMoreContainer" style="display: none;">
 <p>I created a new visual language that helped define the Athlinks brand and products.
@@ -73,7 +73,7 @@ I solved complex interactions around the claiming of race results that users sav
 
 <p>Most of my work at TrainingPeaks revolved around the website, <a href="http://www.trainingpeaks.com">trainingpeaks.com</a>. Because this was such a massive entity it was more work than even I can tackle alone. This is where speaking the languages of design and code really helps. I could collaborate across teams and leapfrog the silos that could sink a project with so many stakeholders.</p>
 
-<p>I also created smaller websites for initiatives like the <a href="http://summit.trainingpeaks.com">Endurance Coaching Summit</a>. I also launched <a href="http://thankscoach.trainingpeaks.com">a "Thanks Coach" tool</a> that allowed athletes to create images with a custom #ThanksCoach stamp and share it in their social feeds. I designed the website and did the majority of the development. The site was produced from concept to completion in about one month. In the first two weeks the site generated 3,000 photos and countless shares.</p>
+<p>I also created smaller websites for initiatives like the <a href="http://summit.trainingpeaks.com">Endurance Coaching Summit</a>. I also launched <a href="http://thankscoach.trainingpeaks.com">a “Thanks Coach” tool</a> that allowed athletes to create images with a custom #ThanksCoach stamp and share it in their social feeds. I designed the website and did the majority of the development. The site was produced from concept to completion in about one month. In the first two weeks the site generated 3,000 photos and countless shares.</p>
 
 </div>
 <a href="#" class="accordion-title readMore">Read more</a>
@@ -94,7 +94,7 @@ I solved complex interactions around the claiming of race results that users sav
 <p class="lead">Before they went out of business I worked for a dental technology company called Zila. As creative director I <a href="https://www.behance.net/gallery/6657455/Zila">rebranded the company</a> and helped modernize their websites and products.</p>
 
 <div class="readMoreContainer" style="display: none;">
-<p>This was my first experience working "in-house," as they say. <a href="https://medium.com/@ade3/five-things-i-learned-after-i-left-the-marketing-agency-world-185dc889bfd#.mqud6hh4y">Why did I move in-house?</a> After working at design agencies for close to a decade I realized I could have a bigger impact at the "ground level" than when I was billing in hourly increments and separated from the decision makers by layers of bureaucracy. I was right. My time at Zila left me with one of the deepest case studies in my portfolio.</p>
+<p>This was my first experience working “in-house,” as they say. <a href="https://medium.com/@ade3/five-things-i-learned-after-i-left-the-marketing-agency-world-185dc889bfd#.mqud6hh4y">Why did I move in-house?</a> After working at design agencies for close to a decade I realized I could have a bigger impact at the “ground level” than when I was billing in hourly increments and separated from the decision makers by layers of bureaucracy. I was right. My time at Zila left me with one of the deepest case studies in my portfolio.</p>
 <p>In addition to the <a href="https://www.behance.net/gallery/6657455/Zila">rebrand project</a> you can see some of the Zila product lines I designed for in these galleries of <a href="https://www.behance.net/gallery/11396117/Rotadent-Contour">Rotadent projects</a>, <a href="https://www.behance.net/gallery/10608405/ViziLite">ViziLite work</a>, or <a href="https://www.behance.net/gallery/13799067/Zila-Product-Photography">this gallery of my product photography</a>.</p>
 </div>
 <a href="#" class="accordion-title readMore">Read more</a>
@@ -111,7 +111,7 @@ I solved complex interactions around the claiming of race results that users sav
 <img src="https://adrian3.com/imgs/_logos/burns-marketing-logo.webp" width="182" height="40">
 <hr>
 <h3>2011-2012</h3>
-<p class="lead">My "big agency" experience came from working at Burns Marketing. I designed apps and websites for big clients like <a href="https://www.behance.net/gallery/5173495/HP-Mobile-Apps">HP</a> and Lenovo as well as <a href="https://www.behance.net/gallery/5173527/Baxa">smaller businesses</a>.</p>
+<p class="lead">My “big agency” experience came from working at Burns Marketing. I designed apps and websites for big clients like <a href="https://www.behance.net/gallery/5173495/HP-Mobile-Apps">HP</a> and Lenovo as well as <a href="https://www.behance.net/gallery/5173527/Baxa">smaller businesses</a>.</p>
 
 <div class="readMoreContainer" style="display: none;">
 <p>It seems funny in hindsight, but I remember a time when clients had to be persuaded that they needed an app. Some of the best projects at Burns were spec work where I was free to simply <a href="https://www.behance.net/gallery/5173299/Ghost-O-Meter">create things</a> that demonstrated the power of apps and the magic of a brand new device known as the iPad.</p>
@@ -154,7 +154,7 @@ I solved complex interactions around the claiming of race results that users sav
 <p class="lead">HuebnerPetersen is where I learned the ropes by hacking together websites and fighting to develop my design chops.</p>
 
 <div class="readMoreContainer" style="display: none;">
-<p>HuebnerPetersen's main client was Jayco RVs. Branding, literature, <a href="https://www.behance.net/gallery/13798831/Jayco-Product-Photography">photography</a>, advertising, websites&mdash;we did it all. I still think <a href="https://www.behance.net/gallery/5173073/Jayco">the work</a> holds up pretty well after all these years.</p>
+<p>HuebnerPetersen’s main client was Jayco RVs. Branding, literature, <a href="https://www.behance.net/gallery/13798831/Jayco-Product-Photography">photography</a>, advertising, websites&mdash;we did it all. I still think <a href="https://www.behance.net/gallery/5173073/Jayco">the work</a> holds up pretty well after all these years.</p>
 </div>
 <a href="#" class="accordion-title readMore">Read more</a>
 <span class="cd-date">2003</span>

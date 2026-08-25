@@ -94,7 +94,7 @@ Here are the books I read in 2020. [If you are on GoodReads, follow me.][14]
 - The End of Education, by Neil Postman
 - Amusing Ourselves to Death, by Neil Postman
 - The Elements of Eloquence, by Forsyth, Mark
-- God's Debris, by Scott Adams
+- God’s Debris, by Scott Adams
 - Alchemy, by Rory Sutherland
 - Salt Sugar Fat, by Michael Moss
 - The Confidence Game, by Maria Konnikova

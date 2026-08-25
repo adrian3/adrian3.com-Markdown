@@ -12,7 +12,7 @@ Marxhausen Art Gallery, Concordia University, Seward, Nebraska
 Screen Printing as a Painting Technique
 ---------------------------------------
 
-The title of this exhibition is called "Paintings/Prints by Adrian Hanft." The classification of print and painting is not clearly defined in my work. This is because I mainly use screen printing as a painting tool. I prefer to classify the work on paper as monoprints, and the work on masonite boards as paintings. The discerning eye will note that I combine painting, printing, collage, drawing, photography, and experimental techniques in my work.
+The title of this exhibition is called “Paintings/Prints by Adrian Hanft.” The classification of print and painting is not clearly defined in my work. This is because I mainly use screen printing as a painting tool. I prefer to classify the work on paper as monoprints, and the work on masonite boards as paintings. The discerning eye will note that I combine painting, printing, collage, drawing, photography, and experimental techniques in my work.
 
 Almost two years ago, I began thinking about what I was going to do for my senior exhibition. Because I have an intense interest in photography, printmaking, drawing, painting, and ceramics, I had difficulty choosing one medium to concentrate on. I decided to focus on painting, and began exploring what approach I would take. I did not want to paint from observation because I preferred photography as a way to record observable information. Despite my interest in photography, I did not want to make paintings that imitate photography. Although I like abstraction and non-objectivity, I wanted a visual vocabulary that extended beyond formal elements. This was about the time I started studying the work of Andy Warhol and Robert Rauschenburg, and I began exploring screen printing as a painting technique. This was the starting point for what was developed into this exhibition. 
 
@@ -24,7 +24,7 @@ Because I am working with several different techniques in the same painting, org
 
 This far, I have only talked about how I use the screen print as a mark-making tool. It is also important to realize that the screen is the main source of subject matter in my painting. I have emphasized my main concern with the screen is formal. Without the screen printing, my paintings would be non-objective. It seems appropriate that I should explain the importance of the images I choose, and how the images are related.
 
-The subject matter of my screen printing has gone through four phases. My first images were chosen for conceptual reasons. I reproduced an image of Madonna, images from the Holocaust, an astronaut, and a reproduction of Warner Sallman's "Christ" painting. I was interested in the implications of repetition and juxtaposition of images that had powerful content associated with them. For fear of breaking copyright laws, I moved away from using other people's images.
+The subject matter of my screen printing has gone through four phases. My first images were chosen for conceptual reasons. I reproduced an image of Madonna, images from the Holocaust, an astronaut, and a reproduction of Warner Sallman’s “Christ” painting. I was interested in the implications of repetition and juxtaposition of images that had powerful content associated with them. For fear of breaking copyright laws, I moved away from using other people’s images.
 
 In the second phase of screen printing imagery, I wanted to rely on images taken from my own photography that still maintained a high level of symbolism and emotional content. These images include a BMW symbol, money, a Pepsi can, and a sculpture of Mary.
 
@@ -40,7 +40,7 @@ On a white heal-all, holding up a moth
 Like a piece of rigid satin cloth-  
 Assorted characters of death and blight  
 Mixed ready to begin the morning right,  
-Like the ingredients of a witches' broth-  
+Like the ingredients of a witches’ broth-  
 A snow-drop spider, a flower like a froth,  
 and dead wings carried like a paper kit.  
 

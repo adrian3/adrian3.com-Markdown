@@ -11,11 +11,11 @@ thumbnail:
 layout: 
 --->
 
-# My Favorite People Don't Have Problems
+# My Favorite People Don’t Have Problems
 
-I walked into my boss’s office and said, "Mia, I have a problem." 
+I walked into my boss’s office and said, “Mia, I have a problem.” 
 
-It was my first week as a graphic designer and I had no idea what I was doing. Before I could explain whatever trivial issue I couldn’t resolve, Mia stopped me. She said, "Here’s some advice. Never say you have a problem. What you have is an _opportunity._" 
+It was my first week as a graphic designer and I had no idea what I was doing. Before I could explain whatever trivial issue I couldn’t resolve, Mia stopped me. She said, “Here’s some advice. Never say you have a problem. What you have is an _opportunity._” 
 
 Mia was a good boss.
 

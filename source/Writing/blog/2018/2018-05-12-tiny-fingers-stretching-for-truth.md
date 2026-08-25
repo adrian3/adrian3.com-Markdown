@@ -28,7 +28,7 @@ The stranger bumps me, not hard, but I expect an apology. Nothing?
 
 I still don’t look up, I am too consumed by questions about why I run, wondering if it’s worth this pain.
 
-The person bumps me again and I feel a tiny hand, scan me. "Hi," I said as I finally realize this is my introduction to a blind girl. 
+The person bumps me again and I feel a tiny hand, scan me. “Hi,” I said as I finally realize this is my introduction to a blind girl. 
 
 A crack forms on my heart and [my reality movie flips channels](https://medium.com/@ade3/your-skulls-fourth-wall-d0f682820296?source=linkShare-f82ce6c25013-1526133342). Suddenly the 26 miles of agony don’t seem so hard. I realize how blessed I am to be able to bound down a mountain then complain about aches and pains in my body.
 

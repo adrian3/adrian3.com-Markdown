@@ -6,6 +6,6 @@ content-class: wide-column
 --->
 # Camera Drawings Gallery
 
-This page tests the gallery endpoint's handling of image thumbnails that open MOV/MP4 full-size media.
+This page tests the gallery endpoint’s handling of image thumbnails that open MOV/MP4 full-size media.
 
 <gallery folder="camera-drawings" />

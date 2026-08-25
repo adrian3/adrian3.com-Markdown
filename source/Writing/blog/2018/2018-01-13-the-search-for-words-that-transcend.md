@@ -28,13 +28,13 @@ Lifetimes are spent in search of words that transcend.
 
 If you are lucky enough to find the words, the battle has just begun.
 
-Last week I told you about Bob Gill's career-ending advice that "[interesting words need boring graphics](https://medium.com/@ade3/fives-words-that-might-end-your-design-career-8e4083b4f0fd)."
+Last week I told you about Bob Gill’s career-ending advice that “[interesting words need boring graphics](https://medium.com/@ade3/fives-words-that-might-end-your-design-career-8e4083b4f0fd).”
 
-If you take that lesson to heart, you can't help but wonder what's the absolute minimum you need to convey an idea? 
+If you take that lesson to heart, you can’t help but wonder what’s the absolute minimum you need to convey an idea? 
 
 And if you can find that perfect minimum, what would you do to protect it from the onslaught that your idea must endure before it enters the world?
 
-A committee will shake your idea, thrash it until it doesn't resemble itself.
+A committee will shake your idea, thrash it until it doesn’t resemble itself.
 
 An SEO expert will tempt you to exchange your words for more valuable keywords.
 

@@ -4,7 +4,7 @@ show-in-nav: true
 --->
 
 # iOS Apps by Ade
-My apps are no longer available in Apple's app store, but over the years I developed a dozen or so apps. I am working to give them a second life as progressive web apps. In the meantime here are some icons from the apps I designed.
+My apps are no longer available in Apple’s app store, but over the years I developed a dozen or so apps. I am working to give them a second life as progressive web apps. In the meantime here are some icons from the apps I designed.
 
 <app-icon-grid>
 

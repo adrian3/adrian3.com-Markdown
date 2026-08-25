@@ -17,7 +17,7 @@ Are you as glad as I am that December is here? November did its best to bring me
 
 _Poor me, I know._ 
 
-Normally I wouldn't bore you with my personal problems, but I have been concentrating on methods for maintaining functional energy levels and I want to share some of my secrets in case the doldrums are threatening you, too. 
+Normally I wouldn’t bore you with my personal problems, but I have been concentrating on methods for maintaining functional energy levels and I want to share some of my secrets in case the doldrums are threatening you, too. 
 
 My philosophy of energy management is contained in these four stories: 
 

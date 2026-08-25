@@ -6,7 +6,7 @@ show-in-nav: true
 
 Dear friend,
 
-I would like to tell you about a project I call "Postcard Zero." So far I have done four mailings. The first theme was [cameras][1], the second I called [mutations][2], the third is [thermal][3], and the most recent is called [Inner Demons][4]. Each postcard is unique, a variation on the theme. You can view galleries of the postcards by clicking the images below...
+I would like to tell you about a project I call “Postcard Zero.” So far I have done four mailings. The first theme was [cameras][1], the second I called [mutations][2], the third is [thermal][3], and the most recent is called [Inner Demons][4]. Each postcard is unique, a variation on the theme. You can view galleries of the postcards by clicking the images below...
 
 <p><a href="../gallery-pages/postcards-camera.html"><img src="https://adrian3.com/imgs/galleries/thumbnails/postcards/camera/3.webp" height="150px"></a> <a href="/gallery-pages/postcards-mutations.html"><img src="https://adrian3.com/imgs/galleries/thumbnails/postcards/mutations/mutations-postcard08.webp" width="150px" height="150px"></a> <a href="/gallery-pages/postcards-thermal.html"><img src="https://adrian3.com/imgs/galleries/postcards/thermal-thumb.webp" width="183px" height="150px"></a>  <a href="../gallery-pages/inner-demons.html"><img src="https://adrian3.com/imgs/inner-demons.webp" width="183px" height="150px"></a></p>
 

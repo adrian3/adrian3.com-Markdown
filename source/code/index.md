@@ -7,7 +7,7 @@ slot.sidebar-content: code-sidebar
 
 # Code
 
-Over the years I've released dozens of apps and tools.  
+Over the years I’ve released dozens of apps and tools.  
 
 <a href="http://tread1st.com/boston.html">
 

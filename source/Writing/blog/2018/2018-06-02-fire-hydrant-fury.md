@@ -23,9 +23,9 @@ That’s how I ended up in art class with an assignment to transform fire hydran
 
 To be sure we understood the assignment we repeated it back to the art teacher. 
 
-> "So you want us to paint the fire hydrants?"
+> “So you want us to paint the fire hydrants?”
 
-> "That’s, right. You can paint whatever you want, and the winning submission gets to split a $100 prize with your group."
+> “That’s, right. You can paint whatever you want, and the winning submission gets to split a $100 prize with your group.”
 
 After a week blindly trying to figure out what to paint I added some gold fish to my hydrant and tried to forget the whole thing ever happened. A month later the fire hydrants were on display, proudly bolted to a slab of cement on the side of the road, an [annual eye sore welcoming visitors to Wentzville, Missouri][1]. 
 
@@ -35,7 +35,7 @@ If you are an artist living in a city with a public art project you hope nobody 
 
 Cities are generally ugly places, why should beautification attempts enrage me more than the normal ugliness of neglect? It all stems from a tragic corruption of good intention that confirms people’s worst suspicions about artists. Let me explain.
 
-Non-artists see the ugly art scattered around their city and suspect that the whole circus is a frivolous misuse of funds. But politeness prevents them from objecting and they endure the charade out of a vague notion about "the arts" and culture. The artists continue the fraud either out of ignorance or a misguided sense of duty to support their fellow artisans.
+Non-artists see the ugly art scattered around their city and suspect that the whole circus is a frivolous misuse of funds. But politeness prevents them from objecting and they endure the charade out of a vague notion about “the arts” and culture. The artists continue the fraud either out of ignorance or a misguided sense of duty to support their fellow artisans.
 
 As a bystander trying to understand the hellscape it’s easy to conclude that the important work gets done by professionals and afterward an artist is hired to apply a thin layer of gloss on top of the ugliness. The second part is optional and depends purely on how much frosting you like squeezed on top of your cupcakes.
 

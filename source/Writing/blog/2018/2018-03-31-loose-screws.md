@@ -16,11 +16,11 @@ layout:
 
 *carriage bolt*
 
-I really shouldn't be doing this right now. So many better ways to spend my time. There's the freelance projects, the weekend errands, unread books, Saturday morning posts to write. And yet I can't stop.
+I really shouldn’t be doing this right now. So many better ways to spend my time. There’s the freelance projects, the weekend errands, unread books, Saturday morning posts to write. And yet I can’t stop.
 
 *rounded phillips wood screw*
 
-These screws, they build up over years of odd jobs and weekend projects. I can't use them but I can't throw them out, either. So they collect in little piles here and there. Why now should I have the urge to organize them?
+These screws, they build up over years of odd jobs and weekend projects. I can’t use them but I can’t throw them out, either. So they collect in little piles here and there. Why now should I have the urge to organize them?
 
 *hex self drilling sheet metal screw*
 
@@ -32,11 +32,11 @@ I should be awed by the precision represented by this simple machine, the tolera
 
 *thread cutting machine screw*
 
-As I sort these screws it’s hard not to look for my reflection. I see a staircase, an ascending spiral, the arc of a career climbing higher and higher. Or am I sliding down? It's hard to remember which way this world is rotating sometimes.
+As I sort these screws it’s hard not to look for my reflection. I see a staircase, an ascending spiral, the arc of a career climbing higher and higher. Or am I sliding down? It’s hard to remember which way this world is rotating sometimes.
 
 *slotted button wood screw*
 
-I keep preaching, "the more you look, the more you see." And it's true. Even this pile of bolts is a collection of stories waiting to be told. Just look at this one...
+I keep preaching, “the more you look, the more you see.” And it’s true. Even this pile of bolts is a collection of stories waiting to be told. Just look at this one...
 
 *flat slotted machine screw*
 

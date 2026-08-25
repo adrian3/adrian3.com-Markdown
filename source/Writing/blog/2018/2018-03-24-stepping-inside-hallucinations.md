@@ -15,21 +15,21 @@ layout:
 
 The cake tilted precariously as I stumbled into my parents bedroom. Panic gripped me as I tried to steady the massive cake.
 
-"It's too big," I sobbed.
+“It’s too big,” I sobbed.
 
 I stood there with my giant cake, trying to wake mom and dad.
 
-"What's too big, honey?"
+“What’s too big, honey?”
 
-"The cake, it won't fit."
+“The cake, it won’t fit.”
 
-"What are you talking about? You're dreaming. Go back to bed."
+“What are you talking about? You’re dreaming. Go back to bed.”
 
-"But I need to get the cake into the other room."
+“But I need to get the cake into the other room.”
 
-If you've ever been woken by a sleepwalking child you probably know how hard it is to shake them from their hallucination. Loving moms might rock their kids back to sleep. Abusive fathers might slap their kid back to consciousness. The technique my dad chose was different. He stepped into my dream, tried to see the world as I saw it, and offered a solution. He said,
+If you’ve ever been woken by a sleepwalking child you probably know how hard it is to shake them from their hallucination. Loving moms might rock their kids back to sleep. Abusive fathers might slap their kid back to consciousness. The technique my dad chose was different. He stepped into my dream, tried to see the world as I saw it, and offered a solution. He said,
 
-"Why don’t you cut a bigger whole in the wall?"
+“Why don’t you cut a bigger whole in the wall?”
 
 His advice broke the spell I was under. Once I realized my silly predicament, I voluntarily went to my room and fell back to sleep. I can’t guarantee this will work on your kids, but give it a try. 
 

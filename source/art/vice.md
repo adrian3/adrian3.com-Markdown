@@ -5,7 +5,7 @@ show-in-nav: true
 
 # Danger, fear, and art-making in New York City
 
-### Ade's art adventure in Brooklyn
+### Ade’s art adventure in Brooklyn
 
 ![img](https://substackcdn.com/image/fetch/$s_!EjY9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe76812c1-525f-4461-872c-776896b7249f_3840x2160.jpeg)
 
@@ -173,7 +173,7 @@ People who make it to the bottom tend to subscribe because they realize they are
 
 
 
-So rad you got to do that. I hear you about sensory overload and the flow state antidote. That's what I used to love about riding my bike in the city. It would put me in a flow state where I could just go with the sensory bombardment, but walking was another story. Congrats on such a cool opportunity.
+So rad you got to do that. I hear you about sensory overload and the flow state antidote. That’s what I used to love about riding my bike in the city. It would put me in a flow state where I could just go with the sensory bombardment, but walking was another story. Congrats on such a cool opportunity.
 
 
 
@@ -193,7 +193,7 @@ Share
 
 
 
-A wonderful tale! My first time in NYC was in the 80s. I was living in rural VT at the time, a country mouse. I wandered the streets on foot, open-mouthed with wonder. Your word, "texture," is exactly right and describes my experience.
+A wonderful tale! My first time in NYC was in the 80s. I was living in rural VT at the time, a country mouse. I wandered the streets on foot, open-mouthed with wonder. Your word, “texture,” is exactly right and describes my experience.
 
 
 
@@ -323,7 +323,7 @@ Feb 1 • [Ade](https://substack.com/@ade3)
 
 ![img](https://substackcdn.com/image/fetch/$s_!8tIw!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0a9c804f-305d-4eda-a355-e8e2be5650ad_600x449.gif)
 
-[I can't draw and so can you!](https://ade3.substack.com/p/the-story-of-how-i-almost-got-kicked)
+[I can’t draw and so can you!](https://ade3.substack.com/p/the-story-of-how-i-almost-got-kicked)
 
 [The story of how I almost got kicked out of art school](https://ade3.substack.com/p/the-story-of-how-i-almost-got-kicked)
 

@@ -33,7 +33,7 @@ Hal’s eyes landed on an aspiring employee below bagging groceries. _Bingo._
 
 That’s when I heard my name called on the store intercom.
 
-> "Adrian to the upstairs office please. Adrian to the upstairs office."
+> “Adrian to the upstairs office please. Adrian to the upstairs office.”
 
 Hal was known to blow his top, the white collar of his shirt always seemed too tight, his cheeks chronically red, his eyes permanently bulged and baggy. He would get a little too close to you, close enough that you could smell a blend of coffee and ashtray. Then he’d give you his used car salesman grin as he explained what you were going to do for him.
 

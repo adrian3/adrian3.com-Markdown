@@ -44,7 +44,7 @@ Guilty? Now, since [I literally wrote a book about surviving in a world where cr
 
 <img src="https://adrian3.com/imgs/gifs/polaroid-you-broke-my-heart2.gif" alt="One of my favorite cameras, the Polaroid SX-70" class="caption">
 
-Until this incedent I have had nothing but fond feelings about Polaroid. [I have spent many hours lovingly repairing and hacking the cameras](http://www.foundphotography.com/category/cameras/polaroid-cameras/) that survive as artifacts of a once vibrant and thriving company. I have even [written about my admiration for the Polaroid brand](https://withinthefold.com/the-branding-of-polaroid-the-inside-story/) in the past and the work done by their first art director, Paul Giambarba back in the 50's.
+Until this incedent I have had nothing but fond feelings about Polaroid. [I have spent many hours lovingly repairing and hacking the cameras](http://www.foundphotography.com/category/cameras/polaroid-cameras/) that survive as artifacts of a once vibrant and thriving company. I have even [written about my admiration for the Polaroid brand](https://withinthefold.com/the-branding-of-polaroid-the-inside-story/) in the past and the work done by their first art director, Paul Giambarba back in the 50’s.
 
 * * *
 

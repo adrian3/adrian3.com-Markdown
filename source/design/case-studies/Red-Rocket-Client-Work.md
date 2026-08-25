@@ -18,21 +18,21 @@ As Creative Director at Red Rocket Web Specialists, I designed and art-directed 
 
 ## Keeton Industries
 
-An aquaculture company that supplies fish farms and hatcheries. The identity centers on a clean, dynamic fish mark, and the site presents a technical, B2B product line with confidence — "hatching more than just good ideas."
+An aquaculture company that supplies fish farms and hatcheries. The identity centers on a clean, dynamic fish mark, and the site presents a technical, B2B product line with confidence — “hatching more than just good ideas.”
 
-![The Keeton Industries logo — a stylized leaping fish above the wordmark "KEETON INDUSTRIES."](https://adrian3.com/imgs/case-studies/images/Red-Rocket-Client-Work/01-keeton-logo.png)
+![The Keeton Industries logo — a stylized leaping fish above the wordmark “KEETON INDUSTRIES.”](https://adrian3.com/imgs/case-studies/images/Red-Rocket-Client-Work/01-keeton-logo.png)
 
 ![The Keeton Industries website — a deep-blue aquaculture site with product, case-study, and resource sections.](https://adrian3.com/imgs/case-studies/images/Red-Rocket-Client-Work/02-keeton-website.png)
 
 ## Encore Sight & Sound
 
-A Fort Collins home-theater and home-automation company. The design balances warmth and authority — "Fort Collins home automation experts you can trust" — to make high-end installation feel approachable.
+A Fort Collins home-theater and home-automation company. The design balances warmth and authority — “Fort Collins home automation experts you can trust” — to make high-end installation feel approachable.
 
 ![The Encore Sight & Sound website — a red-and-gray home-automation site with home-theater photography and clear service navigation.](https://adrian3.com/imgs/case-studies/images/Red-Rocket-Client-Work/03-encore-website.png)
 
 ## Group Publishing — Gabbit
 
-For the family publisher Group, a playful product site for *Gabbit*, a family conversation-starter gadget. Bright color, a friendly mascot, and a "Get your family talking!" message aimed squarely at parents and kids.
+For the family publisher Group, a playful product site for *Gabbit*, a family conversation-starter gadget. Bright color, a friendly mascot, and a “Get your family talking!” message aimed squarely at parents and kids.
 
 ![The Gabbit product website — a bright, playful design with a rabbit mascot, the conversation-starter device, and a companion mobile app.](https://adrian3.com/imgs/case-studies/images/Red-Rocket-Client-Work/04-gabbit-website.png)
 

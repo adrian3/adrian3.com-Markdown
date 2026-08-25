@@ -187,7 +187,7 @@ There is one potential glimmer of hope hidden in the _CRR_:
 
 > Naval Surface Warfare Center Dahlgren was identified as a center of excellence for human factors engineering within the Navy design community. Discussions with their leading experts revealed they had not been involved in specific reviews during modernization of Bridge system.
 
-Apparently there _is_ a Navy design community and conversations are happening that might lead to improved design literacy across the fleet. I wouldn't hold your breath.
+Apparently there _is_ a Navy design community and conversations are happening that might lead to improved design literacy across the fleet. I wouldn’t hold your breath.
 
 ---- 
 

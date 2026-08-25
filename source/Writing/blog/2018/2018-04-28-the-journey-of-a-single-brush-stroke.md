@@ -14,7 +14,7 @@ layout:
 
 ![](https://adrian3.com/imgs/images/brushstroke.webp)
 
-There's a painting hanging in my garage that I am not particularly proud of. I keep it around because of a single brush stroke. The rest of the painting is mediocre, a still life of dismembered baby doll parts, the standard assignment given to beginning painting students. I should probably scrap the painting but that one splotch prevents me from throwing it out.
+There’s a painting hanging in my garage that I am not particularly proud of. I keep it around because of a single brush stroke. The rest of the painting is mediocre, a still life of dismembered baby doll parts, the standard assignment given to beginning painting students. I should probably scrap the painting but that one splotch prevents me from throwing it out.
 
 When you are learning to paint you aren’t quite sure if your work is any good. You are so invested in your work that you can’t see it the way everyone else does. This is the [masterpiece hallucination](https://medium.com/@ade3/masterpiece-hallucinations-3f77272a84f7?source=linkShare-f82ce6c25013-1523119563) effect I told you about a few weeks ago. Is my work good or not? When your painting is mounted in front of the class during a critique you have no way of knowing how it is going to go. Will the instructor rip your work to shreds or praise your accomplishment?
 

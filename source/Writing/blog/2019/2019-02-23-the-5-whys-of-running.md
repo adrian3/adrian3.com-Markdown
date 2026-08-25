@@ -16,19 +16,19 @@ layout:
 
 *** 
 
-If you ask "Why?" five times you can discover the motivation behind anything. At least that is what this simple interrogation method is supposed to do. It's never worked for me.
+If you ask “Why?” five times you can discover the motivation behind anything. At least that is what this simple interrogation method is supposed to do. It’s never worked for me.
 
-There's a game that every child invents in the days when they are awakening to the complexity of the world. Up until that moment they have been satisfied with a single "why" and the simple answer provided by their parents. Either out of curiousity or perhaps they sense the laziness in a parent's answer, but one day they follow up with a second why. Soon they realize that they can string together an infinity of whys and never hit the bottom. The game is to see how many times they can ask why before their parent either says, "I don't know" or scolds the child for abusing their parent's patience.
+There’s a game that every child invents in the days when they are awakening to the complexity of the world. Up until that moment they have been satisfied with a single “why” and the simple answer provided by their parents. Either out of curiousity or perhaps they sense the laziness in a parent’s answer, but one day they follow up with a second why. Soon they realize that they can string together an infinity of whys and never hit the bottom. The game is to see how many times they can ask why before their parent either says, “I don’t know” or scolds the child for abusing their parent’s patience.
 
-When you tell a non-runner you are training for a marathon the inevitable question is "Why?" Runners get asked this question so many times that most of us have our go-to answer. Most people's questioning ends there, which is fortunate because reasons for running break down by the second or third why. For example...
+When you tell a non-runner you are training for a marathon the inevitable question is “Why?” Runners get asked this question so many times that most of us have our go-to answer. Most people’s questioning ends there, which is fortunate because reasons for running break down by the second or third why. For example...
 
 > I run to stay in shape.
 
-Is the runner’s physique really the look you want? Besides, you reached "in shape" a long time ago, why do you keep running?
+Is the runner’s physique really the look you want? Besides, you reached “in shape” a long time ago, why do you keep running?
 
 > I run so I can eat what I want.
 
-Then why aren’t you eating what you want? Isn't it hard to run on a stomach full of junk food?
+Then why aren’t you eating what you want? Isn’t it hard to run on a stomach full of junk food?
 
 > I run because I like being outdoors.
 
@@ -47,9 +47,9 @@ You know what’s cheaper and more convenient? Not running at all.
 
 We interrogate ourselves looking for an answer that sticks. On and on, the reasons break down until eventually you are left with nothing but...
 
-> I can't explain it, I just like to run.  
+> I can’t explain it, I just like to run.  
 
-Which is the equivelent of confessing, "I don't know."
+Which is the equivelent of confessing, “I don’t know.”
 
 The lack of a believable answer is uncomfortable. Perhaps, like an exhausted parent, we scold ourselves for asking questions that seem to have no answers. Or perhaps the question keeps us searching, trying to understand this thing we love, the reasons we keep lacing up our shoes. 
 
