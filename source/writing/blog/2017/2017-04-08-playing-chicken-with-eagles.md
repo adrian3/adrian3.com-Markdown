@@ -45,4 +45,4 @@ Reality is the story we tell ourselves, a personal interpretation of our circums
 [1]:	https://medium.com/@ade3/a-reflection-in-birds-d22db665d8d5?source=linkShare-f82ce6c25013-1491663268
 [2]:	https://medium.com/@ade3/anti-hero-changing-the-movie-inside-your-head-ee395e9a322b?source=linkShare-f82ce6c25013-1491663367
 
-[image-1]:	/images/dropbox_public/images/Carp3.gif
+[image-1]:	/imgs/images/Carp3.gif

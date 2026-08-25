@@ -42,4 +42,4 @@ Thanks for reading. They don’t pay me to write this stuff and I don’t charge
 [1]:	/blog/2016/2016-02-20-stop-dribbbling-get-a-design-education-at-costco.html
 [2]:	/blog/2013/2013-11-03-five-things-i-learned-after-i-left-the-marketing-agency-world.html
 
-[image-1]:	/images/dropbox_public/images/Wheelbarrow.jpeg
+[image-1]:	/imgs/images/Wheelbarrow.jpeg

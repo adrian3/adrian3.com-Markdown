@@ -44,4 +44,4 @@ It’s a lesson I have to re-learn again and again. Opinions solidify quickly bu
 Thanks for reading. If my writing hasn’t taken hold yet, try again. I will be back next Saturday with another attempt to get you to follow me. _Stay creative._
 
 
-[image-1]:	/images/dropbox_public/images/dylan.jpg
+[image-1]:	/imgs/images/dylan.jpg

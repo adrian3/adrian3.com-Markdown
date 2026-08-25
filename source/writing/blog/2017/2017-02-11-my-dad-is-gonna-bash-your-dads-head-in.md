@@ -42,4 +42,4 @@ Now I am an adult with boys of my own and I am still impressed by my dad’s cou
 Thanks for reading. For my own safety, I avoid writing about religion and politics every week. You should follow me so you don’t miss my next story. _Stay creative._
 
 
-[image-1]:	/images/dropbox_public/images/Sid.jpg
+[image-1]:	/imgs/images/Sid.jpg

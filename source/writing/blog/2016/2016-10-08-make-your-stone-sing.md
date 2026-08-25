@@ -49,4 +49,4 @@ Thanks for reading. Every week I present an idea for you tap on. If the sound of
 [6]:	/blog/2016/2016-04-23-fatal-side-effects-of-specialization.html
 [7]:	https://medium.com/@ade3/the-moon-rocket-man-c9d463b8a861#.xmju4ttyq
 
-[image-1]:	/images/dropbox_public/images/Make-Your-Stone-Sing.png
+[image-1]:	/imgs/images/Make-Your-Stone-Sing.png

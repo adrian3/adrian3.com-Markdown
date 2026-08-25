@@ -66,4 +66,4 @@ I still have a long way to go, but finally I have cobbled together enough skills
 [3]:	https://medium.com/@ade3
 [4]:	/blog/2015/2015-11-03-25-questions-you-didnt-know-you-needed-art-of-the-living-dead-to-answer.html
 
-[image-1]:	/images/dropbox_public/images/Hidden-Weaknesses-and-Outsourced-Risk.gif
+[image-1]:	/imgs/images/Hidden-Weaknesses-and-Outsourced-Risk.gif

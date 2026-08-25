@@ -71,4 +71,4 @@ Thanks for reading. I write confessions like this every week, you should follow 
 [3]:	https://medium.com/@ade3/the-day-jennifer-smiled-b0eef43128e
 [4]:	https://medium.com/@ade3/a-reflection-in-birds-d22db665d8d5
 
-[image-1]:	/images/dropbox_public/images/Atrocity-capacity.jpg
+[image-1]:	/imgs/images/Atrocity-capacity.jpg

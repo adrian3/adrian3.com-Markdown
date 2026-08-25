@@ -52,4 +52,4 @@ Thanks for reading. Every Saturday I tell you stories like this, add a trickle o
 
 [1]:	https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613#.a79kcsnpx
 
-[image-1]:	/images/dropbox_public/images/arch_river.jpg
+[image-1]:	/imgs/images/arch_river.jpg

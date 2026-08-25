@@ -111,5 +111,5 @@ Some lives are defined by rebellion and acts of anarchy.
 I was lucky. None of those things ended up defining me because I had a skill that got me through the hard times. I could draw.
 
 
-[image-1]:	/images/dropbox_public/images/The-Day-Jennifer-Smiled.png
-[image-2]:	/images/dropbox_public/images/The-Day-Jennifer-Smiled2.png
+[image-1]:	/imgs/images/The-Day-Jennifer-Smiled.png
+[image-2]:	/imgs/images/The-Day-Jennifer-Smiled2.png

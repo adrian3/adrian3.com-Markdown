@@ -36,4 +36,4 @@ Thanks for reading. I collect stories like this every Saturday. Did you miss my 
 
 [1]:	https://medium.com/@ade3/jackson-pollock-in-the-dumpster-4ae794b45e10?source=linkShare-f82ce6c25013-1507398203
 
-[image-1]:	/images/dropbox_public/images/ken-griffey-jr.gif
+[image-1]:	/imgs/images/ken-griffey-jr.gif
