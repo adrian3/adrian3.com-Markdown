@@ -634,6 +634,7 @@ function inlineMarkdown(text) {
     result = result.replace(/`([^`]+)`/g, (_, code) => `<code>${escapeHtml(code)}</code>`);
     result = result.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     result = result.replace(/(^|[^\*])\*([^*]+)\*(?!\*)/g, (_, prefix, body) => `${prefix}<em>${body}</em>`);
+    result = result.replace(/(^|[^\w_])_([^_\n]+)_(?![\w_])/g, (_, prefix, body) => `${prefix}<em>${body}</em>`);
     return result;
   }
 
@@ -828,7 +829,12 @@ function renderMarkdown(markdown) {
       paragraphLines.push(nextTrimmed);
       i += 1;
     }
-    blocks.push(`<p>${inlineMarkdown(paragraphLines.join(" "))}</p>`);
+    // Single newlines inside a paragraph render as hard line breaks (<br>),
+    // matching how this site's markdown is authored (e.g. the Role/When/
+    // Results lines in case studies). A null-byte token is used so the
+    // break survives inlineMarkdown's HTML escaping, then becomes <br>.
+    const joined = paragraphLines.join("\x00br\x00");
+    blocks.push(`<p>${inlineMarkdown(joined).replace(/\x00br\x00/g, "<br>")}</p>`);
   }
 
   return blocks.join("\n");
