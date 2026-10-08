@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Month 3 of Daily Art — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Personal Stories</p>
+		<h1>Month 3 of Daily Art</h1>
+		<small>April 5, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>Month 3 of Daily Art</h1><ul><li><em> </em></li></ul><p>Since January 1, I have been posting one piece of art a day on <a href="https://www.instagram.com/ade3/">Instagram (@ade3)</a> and <a href="http://ade3.tumblr.com">Tumblr</a>. Follow me if you want to keep up with this ongoing project. I will let the art speak for itself, but if you want the back story, scroll to the bottom. And if you missed my first 2 posts you might want to start with these two links below.</p><p><a href="2016-01-31-the-first-31-paintings-of-2016.html">The first 31 paintings of 2016</a></p><p><a href="2016-02-29-my-second-month-of-paintings.html">My second month of paintings</a></p><ul><li><em> </em></li></ul><h4>Theme 1: Madonna/Marilyn</h4><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art.webp"></p><p>Day 61</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art2.webp"></p><p>Day 62</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art3.webp"></p><p>Day 63</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art4.webp"></p><p>Day 64</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art5.webp"></p><p>Day 65</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art6.webp"></p><p>Day 66</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art7.webp"></p><p>Day 67</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art8.webp"></p><p>Day 68</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art9.webp"></p><p>Day 69</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art10.webp"></p><p>Day 70</p><ul><li><em> </em></li></ul><h4>Theme 2: Choppers</h4><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art11.webp"></p><p>Day 71</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art12.webp"></p><p>Day 72</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art13.webp"></p><p>Day 73</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art14.webp"></p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art15.webp"></p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art16.webp"></p><p>Days 74–76</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art17.webp"></p><p>Day 77</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art18.webp"></p><p>Day 78</p><ul><li><em> </em></li></ul><h4>Theme 3: Bones</h4><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art19.webp"></p><p>Day 79</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art20.webp"></p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art21.webp"></p><p>Days 80–81</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art22.webp"></p><p>Day 82</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art23.webp"></p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art24.webp"></p><p>Days 83–84</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art25.webp"></p><p>Day 85</p><ul><li><em> </em></li></ul><h4>Theme 4: Astronaut</h4><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art26.webp"></p><p>Day 86</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art27.webp"></p><p>Day 87</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art28.webp"></p><p>Day 88</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art29.webp"></p><p>Day 89</p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art30.webp"></p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art31.webp"></p><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art32.webp"></p><p>Days 90–92</p><ul><li><em> </em></li></ul><h4>About these paintings…</h4><p>Here’s a little bit of background on the artwork I posted in March. I started with a series of Madonna/Marilyn images. Here’s the problem with reworking images from 1998. I don’t know where the original source photo comes from. The art from days 63, 65, and 66 are definitely Madonna. For the rest I lean towards Marilyn as the source, although for the life of me I can’t track down the original. That leaves me wondering if it is neither Madonna or Marilyn. If you happen to know the source, please share.</p><p>Regardless, these images of female faces came from some of my first screen printing experiments. I was inspired by Andy Warhol, and these were an attempt to put my own spin on his famous Marilyn series. Like Warhol, I am fascinated by the idea of how images change and gain meaning as they are repeated, broadcast, and manipulated in random ways.</p><p>Day 66 is a monoprint from 1998, one of my first screen prints. The print from day 70 uses an interesting technique. I screen printed glue onto the printing surface and sprinkled some fine grit onto the glue. Then ink was applied to the plate and wiped away. The ink remained on the grit and was removed from the smooth areas. When put through a press, the result is this somewhat ghostly effect.</p><ul><li><em> </em></li></ul><p>The second theme for March centers around an image of a helicopter. Day 73 shows a print I made in 2000 with the number 451 on it, a reference to Fahrenheit 451 by Ray Bradbury. If you remember that book, a helicopter is chasing the hero and broadcasting the event. Bradbury has this beautiful sentence describing the world watching the hero’s escape on their screens:</p><blockquote><p>“He imagined thousands on thousands of faces peering into yards, into alleys, and into the sky, faces hid by curtains, pale, night-frightened faces, like gray animals peering from electric caves, faces with gray colorless eyes, gray tongues, and gray thoughts looking out through the numb flesh of the face.”</p></blockquote><p>I like the idea of a painting of a photograph of a helicopter that is itself broadcasting pictures. It reminds me of the degradation of an image as it is photocopied over and over.</p><p>The print from day 77 was exhibited at my art show in Hastings, Nebraska in 2004. This is one of my larger paper pieces with a size of 31x43. It is printed on paper I recovered from a billboard in 2001. It was a rainy day and I was driving through Columbus, Nebraska. I saw a huge piece of paper peeling off a billboard by the side of the road. I managed to climb to the top, remove the paper, and escape without getting in trouble. This is one of several pieces I have created using that paper.</p><ul><li><em> </em></li></ul><p><img src="https://adrian3.com/imgs/images/month-3-of-daily-art33.webp" alt="Issues In Christian Education, Spring 2001"></p><p>The third theme for March is bones. The backbone and ribcage comes from a photo I took in the science building at Concordia University, Seward, Nebraska. I used the school’s brand new digital camera, a Nikon Coolpix 990, back when 3.2 megapixels was enough to blow our minds.</p><p>I first used the image for the cover of a magazine called, <em>Issues in Christian Education</em>. The theme of this issue was “Theology and Science.” I have always been happy with that image, especially how the spine of the animal lined up with the roof of the church, mirror images representing opposing ideas. With such a contentious topic, I thought it did a good job of positioning the church and science as opposed to each other and yet intertwined in interesting ways.</p><p>The thing that I like about using bones in my paintings is that it reminds me of archeology. My process is exploratory, equal parts addition and subtraction. I build up layers of paint and then sand into it until I find order in the chaos.</p><p>I remember finding a large fossil of a claw as a child. I was fascinated that something so beautiful could be trapped in stone, just waiting for someone to discover it. This is the same wonder I have with the images I create. I never know what I will find buried in the layers.</p><ul><li><em> </em></li></ul><p>The final theme for March uses some astronaut images. The first astronaut (days 86–88) is an image from NASA. Days 89–90 uses an original photograph I took a few years ago. Day 91 uses an image I found in a box of slides from my dad of which I don’t know the back story.</p><p>As far as my ideas about the astronaut, this series shares similarities to the helicopter. I like the idea of images of a man being broadcast from space. As he floats there miles from humanity, his picture is transferred around the planet being slightly degraded as it flows through terminals, stations, and millions of devices. Perhaps the signal itself is sent out beyond our galaxy to be viewed by alien eyes that translate information completely different from our own. If I am lucky, my art sparks the same ideas for you as you view them.</p><ul><li><em> </em></li></ul><p>That sums it up for March. Thanks for reading. Remember to follow me on <a href="https://www.instagram.com/ade3/">Instagram (@ade3)</a> or <a href="http://ade3.tumblr.com">Tumblr</a> if you want to see my daily art. I will make another post like this next month to show the next 30 paintings. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

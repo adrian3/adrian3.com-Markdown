@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 7 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Infestation and Eradication</h1><blockquote><p><em>”The brain is a wonderful organ; it starts the moment you get up in the morning and does not stop until you get to the office.”</em> — Robert Frost</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter7.webp"></p><p>We are about to enter the domain of the professional. The workplace is infested with zombies. If life were a movie, our zombie problem would be easier to solve. With enough weapons and ammo, removing a zombie infestation with force could be possible. Could violence be the answer? There is a place not too far from here that is crawling with walkers where we can test this theory.</p><p>The location is the old UMBRILA facilities. We join Ethan, a former employee who managed to escape without contracting the zombie virus. Ethan’s goal is extermination and his plan is to clear out UMBRILA’s main office building. As he enters the premises, all seems normal. The parking lot is surprisingly full of cars. Creatures of habit, the zombies inexplicably feel the urge to return to their jobs. They arrive in the morning, punch the clock, and leave at five, repeating the routine that was burned into them through years of service to UMBRILA.</p><p>Entering the parking lot there is a sound and a zombie appears from behind a car. He seems to be a low-level worker. He notices Ethan and starts limping toward him carrying his traveling mug full of coffee.</p><p>The history of UMBRILA began when a brilliant scientist invented a drug for fighting cancer. The drug was a breakthrough and quickly became a hit product. Within a year the company grew to 25 people. The company has doubled every year and today UMBRILA employs over 500 zombies.</p><p>The brilliant scientist left the company soon after the cancer drug hit the market, claiming he had a better opportunity with another drug manufacturer. The truth was that UMBRILA was already showing signs of early zombie infection. He left because he couldn’t bear the idea of his art being corrupted by the money-hungry zombies. His exit was welcomed because the zombies already owned his art and the drug would be easier to exploit without his noisy objections and expectations of integrity. Free from the scientist’s creative burden, UMBRILA’s zombies broadened their portfolio through acquisitions of smaller companies, absorbing new products of questionable quality.</p><p>Now only a car length away from Ethan, the zombie’s face is contorted with apathy, his flesh barely clinging to his skull. His name badge says “Randy.”</p><p>The cars are facing different directions, no doubt a habit carried over from when the drivers were still living. Some cars are backed into their spots as if the drivers were plotting their escape before they even started their day. A sports car is parked in a reserved spot at the entrance. No doubt this is the president’s car, complete with skid marks documenting his dramatic exits. If we can find the president, perhaps we can get some answers.</p><p>Randy drops his mug and lunges at Ethan, whose blade is quick. Randy’s body collapses. Spilled coffee mixes with dark blood, swirling between the tire patterns of burnt rubber. Ethan grabs Randy’s name badge which also works as a key to enter the building. He steps over the body and continues toward the door. The main entrance is just ahead. There is movement inside.</p><p>Ethan worked for UMBRILA for two years as creative director. He started his job with ambition and optimism unaware of UMBRILA’s corruption. His every effort toward beauty was met with opposition. Innovative designs were reduced to mediocrity. Compelling marketing messages were rejected in favor of generic, meaningless taglines. The zombies were just as committed to mediocrity as he was to integrity. Ethan had no choice but to quit, and today he has returned for revenge.</p><p>The door unlocks as Ethan waves Randy’s name badge in front of the sensor. The receptionist turns and greets him with a gargle and a gasp. Ethan lifts his crossbow and fires.</p><p>It is hard to say how the receptionist and the parking lot zombie became infected. They didn’t accept the job because of ambition, they probably just wanted a steady paycheck. As their knowledge of the company grew and the atrocities happening behind closed doors became known to them, they had choices. They could either look the other way and keep cashing their checks, they could quit, or they could attempt to somehow work to improve the organization through their work. They chose ambivalence and life was choked out of them until finally they became zombies.</p><p>Exiting the foyer Ethan enters the main office space where the sound of zombies clicking on their keyboards and sipping their coffee reminds him how much he hated this place.</p><p>The first cubicle has a kitten calendar and a magnetic sign identifies the zombie as Lynn. A red light blinks at the end of a microphone strapped to her head. She is a customer retention specialist. With her script memorized, she can mimic a tone of sympathy when angry customers call about malfunctioning UMBRILA products. She can replicate a tone of surprise when they describe the flaw that nearly every customer discovers after purchasing the products. Her script is filled with loopholes that allow her to escape the “lifetime warranty” claim that gets stamped proudly on every box that leaves UMBRILA. Ethan’s blade swings and the headset falls to the floor, the red light still blinking.</p><p>Ethan passes a zombie he vaguely remembered from the financial department. His greasy grin scared children even when he was alive, but now the corners of his mouth seem pinned to his cheek bones holding up sagging lips that salivate as he scurries by before Ethan can strike him down.</p><p>Ethan continues through a corridor into a hive of tightly packed cubicles buzzing with activity. They press phones against their skulls as their jowls chomp in the memorized rhythm of long forgotten sales pitches. They barely notice the commotion as Ethan quickly clears the cubes.</p><p>The next cubicle, adorned with a poster of the sun setting on an unidentified tropical beach, contains a regulatory zombie named Linda. Her job is to read government documents and apply their vague mandates to UMBRILA’s products. This involves identifying anything that differentiates the product from other products on the market, documenting these deviations, and then eliminating them through a grueling “approval” process. If she does her job the output of the company will be completely free of beauty, marketing, and any description of what the product actually does. The packaging would be covered in cryptic government symbols, legal jargon, disclaimers, part numbers, codes, and generic descriptions. In short, her job is to remove the art from the art. Her head, cleanly separated from her body by Ethan’s blade, falls onto a thick binder nearly bursting with regulations.</p><p>The next cubicle occupant, Max, belongs to the quality department. On his desk is a miniature zen garden. The name of this department is misleading. Real quality comes from creative thought. Creativity would only cause confusion to Max, whose job consists mainly of checking part numbers, scanning barcodes, and comparing specifications to finished goods. The real function of the quality department is not quality, but accurate documentation. As a result, the quality of the products on paper is high, perfectly documented. The actual quality of the product is questionable. It may malfunction, or it might just lack the real quality that results from living workers infusing the products with integrity. Max will not be mourned when he is gone. A <em>quality</em> blow to his head sends Max into early retirement.</p><p>The human resources cubicle is decorated with motivational quotes. The HR zombie’s job is to hire people who would fit in well with the zombie culture at UMBRILA. Her skill is giving the illusion of a well-functioning, highly compensated, conflict-free workplace. A resourceful swing puts an end to the lie. Even in death, her expression still maintains a well rehearsed smile.</p><p>It is harder to deduce the role that other zombies serve in the organization. The plaques on their walls document their years of service, but the output of their position is uncertain. They have gamed the system into thinking that their work is important. They are always busy but never get anything done. These zombies fall easily, their blank stares are giant targets that Ethan fills expertly with arrows.</p><p>Ethan’s former cubicle is just ahead. He recalls an afternoon when an accountant was giving a tour of the office. When her tour entered Ethan’s creative space she paused and whispered, “I think he is an artist or something.” They stared for a few awkward seconds and then continued the tour.</p><p>The marketing zombies are an especially devious breed. Understanding that their products lack integrity, they resort to false claims, advertising lies, and manipulative messages. They eagerly embrace any trend that exploits the behaviors of consumers. What appears to be a designer tries to defend himself with a Nerf gun, but it is no match for Ethan’s blade, and his body drains onto his sketchbook. The other marketers fall just as easily.</p><p>Next up is an accountant’s cube, with walls completely free of decoration except for a single Dilbert cartoon. He works with a clean conscience, knowing that his excuse for destroying art is completely warranted. By controlling the flow of money he can cut funding to any project that carries the superfluous signs of artistic integrity. A resourceful blow to his head sends glasses flying.</p><p>The buzz of hard drives and the hum of servers tells us that we are entering the IT area. These specialized zombies have cornered the market on technical knowledge giving them control over the infrastructure that the company runs on. When the email system goes down or the website is offline, their defense is a mind-numbing technical excuse. Because they alone have access to the infrastructure, it is impossible for anyone outside to question the authenticity of their claims and therefore they are able to maintain their jobs despite their incompetence. Legacy software will remain obsolete, further ensuring their job security. Software updates and patches will require specialists, allowing them to increase their numbers through new hires. One by one, the IT zombies fall beneath the blows of Ethan’s blade. Unfortunately the commotion damages the email server and soon the IT department will be flooded with confused workers incapable of working without email access.</p><p>Realizing the internet is down, a zombie mob appears. There must be a hundred of them blocking the exit. Ethan pushes into the herd, desperately fighting to escape. In the chaos it is unclear what department they represent. Some are defenders of the status quo. Some battle for low standards. Others are cunning conformity warriors. Some proudly display badges of incompetence.</p><p>Ethan swings his blade wildly as he pushes through.</p><p>Academic zombies. Jargon zombies. Nitpicker zombies. One zombie is decisive and the next defers authority.</p><p>As their bodies fall, another batch instantly takes their place.</p><p>Zombies that take pleasure from defending the rules. Zombies that deflect responsibility. Zombies that make excuses. Zombies that procrastinate. Zombies with emotional distance from their work. Experts at passing the buck and covering their butts. Zombies that thrive on drama. The room is churning with apathy, incompetence, and conformity.</p><p>Zombies seeking consensus, zombies who look for shortcuts. Get-rich-quick zombies. Zombies that don’t want to do things the hard way. Devil’s advocate zombies. Escapist zombies. Addicts. Zombies crippled by indecision. Zombies who rush to decisions too quickly. Zombie that haven’t been given a fair chance and feel victimized.</p><p>Wave after wave Ethan cuts through the crowd.</p><p>Angry zombies. Passive aggressive zombies. Zombies with GED’s, PHD’s, and fake ID’s. Know-it-all zombies. Religious and atheist zombies. Democrats, Republicans, and indifferent.</p><p>Finally, Ethan emerges and sprints for the corner office, taking out a couple lawyer zombies as he goes. Kicking open the door, Ethan sees the president sitting behind his oversized desk. Ethan shouts,</p><blockquote><p>“Why did you do it? You are the one person who could have stopped the infection. You had the power to inspire your workers with a vision of hope. Your chose corruption over integrity. These people didn’t have to become zombies. You could have nurtured their humanity with meaningful jobs, and an environment that encouraged integrity, creativity, and innovation. You are responsible for the atrocities UMBRILA has committed! Why did you do it?”</p></blockquote><p>The president stares blankly. He seems to vaguely recall Ethan’s face as belonging to a former employee. He replies,</p><blockquote><p>“Sir, UMBRILA, is far from corrupt. We are the largest employer in northern Oklahoma. Our products save lives. Our profits support the struggling economy. You may not like it, but you can’t stop progress.”</p></blockquote><p>This answer stuns Ethan. He expected the president to be an evil genius carefully orchestrating a master plan. He is shocked to discover the president is just another mindless zombie. His role is not special, the president’s job is just another gear in a dysfunctional machine. He is no more to blame than any of the other departments. Ethan realizes that the president’s last statement about progress is true. It <em>can’t</em> be stopped. Even if todays attack succeeds and UMBRILA is destroyed, there are countless other companies just like this one.</p><p>Devastated, Ethan pulls his crossbow’s trigger. The president collapses and Ethan turns to leave. It is too late. The mob is at the door. Ethan tries to push through, but they overwhelm him. He is crushed beneath the pile. Ethan is gone and any contribution his life could have made to the world dies with him.</p><p>The raid of UMBRILA was a failure. Despite their losses, the zombies will rebuild. A new leader will be selected. The vacant cubicles will be filled by zombies eager to advance their careers. The attack was only a temporary setback and they will be shipping dysfunctional products again in a matter of days. Ethan died in vain.</p><p>Violence solves nothing. In real life we don’t have the luxury of stalking from office to office killing our zombie co-workers. When a psychopath goes postal in the real world, his workplace violence is not in the pursuit of creative integrity. We are not deranged, and what we fight for is too important to allow anger, hate, or aggression to derail our mission. No, our battle can’t be fought with weapons or brute force. Our response must be more nuanced.</p><p>Exaggerated as this chapter is, the cynicism represented by Ethan’s rampage might be familiar. As professionals it can be easy to look around and feel like the answer is to strike down the opposition. It is tempting to blame our surroundings for our failure, but if the survival of our creative work is the goal, we must become experts at working within the zombie system peacefully. There isn’t a nuclear option, only the day-to-day effort of showing up and doing our job, weathering the highs and the lows. On the best of days, the ones that start with a song on your tongue, when the light of opportunity fills you with possibility, when you celebrate success, savor these moments and remember them when things turn dark.</p><p>On the worst of days, when doing your job tests your sanity, when doing the right thing feels like anarchy, when every step is a step closer to your breaking point, these moments define us. Heroes aren’t birthed in Jello molds of frictionless ceremony, they are forged in the furnaces of grinding opposition. Battling zombies is less like a first-person shooter game and more like a cerebral game of chess.</p><p><a href="chapter8.html">Chapter 8. Zugzwang and Kintsugi</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

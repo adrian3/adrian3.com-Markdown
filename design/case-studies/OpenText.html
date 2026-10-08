@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>OpenText — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html">Resume</a></li></ul></div>
+<article class="case-study-shell">
+  <div class="case-study-inner">
+    <img src="https://adrian3.com/imgs/case-studies/opentext-images/opscope-header.webp" style="margin: 0 0 1rem 0; width: 100vw;"><h1>OpenText: Taking OpScope From Whiteboards to Launch</h1><p>I joined OpenText in November, 2022 as the lead UX Designer for a new product called OpScope. The idea was to create a lightweight monitoring tool that IT professionals could use to monitor the health and performance of their company’s applications and infrastructure. OpScope is different from previous OpenText products because it leverages an emerging technology called Open Telemetry.</p><p>In this case study I will highlight my role in this project as we went from whiteboards to launch. I will focus on 3 areas:</p><ol><li>User Research</li><li>Product Design</li><li>Driving Innovation</li></ol><img src="https://adrian3.com/imgs/case-studies/opentext-images/intro.webp" style="margin: 25px; width: 100vw;"><h2>Part 1: User Research</h2><h3>Understanding the people who will use OpScope</h3><p>When starting this project, my first task was to better understand the domain I was entering. Although I have worked with many developers over the years, I didn’t fully understand how professionals in the IT industry troubleshoot application and infrastructure problems. Much of my initial research involved familiarizing myself with Site Reliability Engineering (SRE) to understand the tools, methodologies, and competition in the IT troubleshooting space. As I mapped the problem space, I could see that current best practices were no longer adequate to address the increasingly ambiguous and chaotic nature of modern application problems. To over-simply, today’s engineers work in systems where anything can go wrong for any unpredictable reason. This was an important observation because it meant that our design solution would require a novel approach rather than a re-skinning of existing IT tools. The goal was to create a tool that supported new forms of complex problem solving.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/domain-research.webp" style="margin: 25px 0; width: 100vw;"><p>With a basic understanding of the DevOps domain, I sought out people in the industry to talk to so that I could understand the SRE persona better. OpenText already had an assortment of user personas but they were mostly based on legacy patterns of IT management. Because OpScope was focusing on an emerging technology (Open Telemetry) it was important to create a new persona based on where the industry was going. This persona is called a Site Reliability Engineer (SRE). I created a living document that loosely described the SRE persona and then began a user study where I talked to a dozen SREs. I used empathy mapping techniques to document the jobs of SREs, collected a list of pain points, and highlighted the gains that would benefit our users.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/persona.webp" style="margin: 25px 0; width: 100vw;"><p>As our product started to take shape I continued to look for opportunities to talk to our users. In October 2023 I conducted a usability study at OpenText World, our annual global company event. Because so many people attend OpenText World, our UX team is able to conduct over 100 usability tests over the course of two days. These moderated tests are scripted, data is carefully collected, and the results are formally presented to the product teams after the event. I’ve done usability testing in the past on a smaller scale, but this was the largest and most organized research project I have been a part of.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/usability-testing.webp" style="margin: 25px 0; width: 100vw;"><p>My testing at OpenText World identified several areas where users struggled with our product. For example, the discoverability of one of our main screens was suffering due to an obscure icon placed oddly in the UI. This was a known UX issue, but it was only after I demonstrated that 100% of users failed to find the screen that our UX fix could be prioritized. Armed with data and stories from the users I returned home to present my findings to our teams and stakeholders. My recommendations were discussed, stories were created, and fixes were implemented.</p><p>Next I want to describe my approach to the product design of OpScope.</p><hr><h2>Part 2: Product Design</h2><h3>From Prototype to Wireframes, to Prototype, to Launch</h3><p>One of my first tasks in designing OpScope was to identify the key workflows that our application needed to support. To do this, I used Miro and Figma to map out the primary tasks that users would perform. These workflows were created in collaboration with my product management counterparts. Together we identified “troubleshooting” as the first workflow we wanted to support. In short, “When something goes wrong, how do I diagnose the problem so that I can fix it?” The image below shows some of the artifcats of taking the product from workflow diagrams to sketches to prototypes.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/work-flows.webp" style="margin: 25px 0; width: 100vw;"><p>I believe it is important to start at low fidelty. By quickly sketching wireframes in Figma I am able to refine ideas and get alignment between my partners in Product and Engineering. Once the OpScope wireframes were developed to a point where we felt they were ready to be validated with users, I showed them to the IT professionals in our office to confirm that we were indeed on the right track.</p><p>With validated wireframes, I then moved into the prototype phase where I used Figma to build interactive prototypes. The prototypes were used to get feedback from customers. We met regularly with customers who signed up to be “design partners” and revised our designs based on their feedback. With each iteration of the prototype, the designs were refined and improved. I already mentioned my collaboration with product managers, but throughout this phase of the product design I was also working in collaboration with our engineering leaders. This is important because it allowed our developers to begin working on the product before designs were completely finalized. In the spirit of agile development, we embrace collaboration over waiting for official approval before starting development.</p><p>I mentioned earlier that a goal of OpScope was to enable complex problem solving. To support this concept I explored different ways to represent information through data visualizations. Behind the scenes, modern software products can have hundreds of microservices communicating with each other. This isn’t a static system, it is more like a constantly changing living organism. When a problem occurs it is difficult to pinpoint what is causing the issue. Below are some of my explorations around different ways to visualize the system data.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/data-visualization.webp" style="margin: 25px 0; width: 100vw;"><p>Creating novel data visualizations is a heavy engineering task. When going beyond standard line graphs and bar charts, you quickly hit the limits of off-the-shelf charting libraries such as highcharts or echarts. We used D3, a library that although it comes with a steep learning curve, it allowed our developers to support the types of data visualizations that would set our product apart from the competition.</p><!-- The first version of our app supported a basic workflow, basically you could navigate from an application overview down to problem areas by filtering through microservices, transactions, and traces until you arrive at the exact log/span details where the errors occur. This basic linear workflow is fine but it isn't the exploratory problem solving experience that we eventually want to support.  --><p>OpenText is a large corporation with hundreds of products. Our corporate design system allows us to maintain consistency across our products while also supporting the flexibility required by unique use cases. As a member of a team of 100+ UX designers around the world, I work within the pre-defined system but also look for opportunities to contribute to our design system to make it better. I wanted our application to support dark mode, a feature that I often heard customers requesting. The designs below are artifacts demonstring how OpScope would look in dark mode and some of the rationale I used to get this feature added to our design system.</p><img src="https://adrian3.com/imgs/gifs/dark-mode.gif" style="margin: 25px 0; width: 100vw;"><p>It was important that the user could navigate from the main screen down to the place where problems were occurring in their applications.</p><p>Our product has launched with a core set of functionality and the next step is to expand to more advanced use cases and workflows. Next, I will conclude this case study by describing how our product is designed to evolve in future iterations.</p><hr><h2>Part 3: Driving Innovation</h2><h3>Designing for a future of AI/ML, VR, and 3D</h3><p>Finally, I want to show how the first versions of OpScope are driving towards innovation in future releases. When launching a new product it can be challenging to design the first release while maintaining an eye on the future.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/innovation.webp" style="margin: 25px 0; width: 100vw;"><p>As part of an internal hackathon week, our team imagined what our product would look like as a VR app. We transformed our flat, 2D graphs into immersive 3d environments where users could walk inside their data as if it were a galaxy of stars. By changing attributes in the data we noticed that the data constellations clustered in interesting ways, allowing to users to see relationships that wouldn’t be possible in traditional 2d graphs. While we may never ship a VR app, this exercise let us look at our product from a novel perspective.</p><img src="https://adrian3.com/imgs/case-studies/opentext-images/ai-ml.webp" style="margin: 25px 0; width: 100vw;"><p>Like so many companies, OpenText is embracing artificial intelligence and working to leverage machine learning and large language models in our products. Sometimes lost among the excitement of AI/ML potential is the UX challenges that these new technologies present. As I work with our data scientists I find myself talking about trust as the primary driver of good UX in products that leverage AI/ML/LLMs. For example, ML can be used to detect anomalies but when that anomaly is presented to a user, how will that person be able to understand why it is anomalous? Often the reason is opaque because the algorithms that flagged it are based on models that aren’t easily parsed into human language. The user ends up having to fact-check the AI/ML because the user can’t trust the results yet. There are similar UX challenges with the ChatGPT implementations. I’ve found that there is real skepticism with users as they are chatting with an AI. The promise of AI/ML/LLMs is that they will reduce the work of humans but if we aren’t careful we will actually increase the work of users because now they have to fact-check and babysit a not-yet-fully-developed AI. This is an unsolved problem, and a UX opportunity that I look forward to solving as AI changes our world.</p><hr><h2>Conclusion</h2><p>Thanks for taking the time to read this case study. If you have questions or feedback for me I invite you to contact me.</p>
+  </div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

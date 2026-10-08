@@ -1,0 +1,128 @@
+.nav {
+  background: var(--ade-parchment);
+  border-bottom: 1px solid var(--ade-hairline);
+}
+
+.nav-inner {
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  padding: 0 var(--ade-space-5);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: var(--ade-space-5);
+}
+
+/* ── Logo ── */
+.nav-logo {
+  flex-shrink: 0;
+  line-height: 0;
+  display: block;
+  margin-left: -50px;
+}
+
+.nav-logo svg {
+  width: 240px;
+  height: 120px;
+  overflow: visible;
+  cursor: pointer;
+  display: block;
+  transform: translateY(17px);
+}
+
+/* SVG path transitions — vanilla JS sets opacity/fill/transform */
+.nav-logo .d,  .nav-logo .a,  .nav-logo .e,
+.nav-logo .d2, .nav-logo .a2, .nav-logo .e2,
+.nav-logo .outlineA, .nav-logo .outlineD, .nav-logo .outlineE {
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: opacity 0.5s ease, fill 0.5s ease, transform 0.5s ease;
+}
+
+.nav-logo .outlineA,
+.nav-logo .outlineD,
+.nav-logo .outlineE {
+  fill: none;
+  stroke: #cccccc;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+
+/* ── Nav links ── */
+.nav-menu {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.nav-home {
+  font-family: var(--ade-font-ui);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #3d5f5b;
+  text-decoration: none;
+}
+
+.nav-home:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-menu nav {
+  display: flex;
+  align-items: center;
+  gap: var(--ade-space-5);
+  padding-bottom: 0;
+}
+
+.nav-menu nav a {
+  font-family: var(--ade-font-ui);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ade-ink);
+  text-decoration: none;
+}
+
+.nav-menu nav a:hover {
+  color: var(--ade-primary);
+}
+
+.nav-menu nav a[aria-current="page"] {
+  color: var(--ade-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 40rem) {
+  .nav-inner {
+    padding-inline: 1rem;
+    gap: var(--ade-space-3);
+  }
+
+  .nav-logo svg {
+    width: 160px;
+    height: 80px;
+    transform: translateY(11px);
+  }
+
+  .nav-menu {
+    align-items: flex-end;
+    gap: 0.35rem;
+  }
+
+  .nav-home {
+    font-size: 0.95rem;
+  }
+
+  .nav-menu nav {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.35rem var(--ade-space-3);
+  }
+}

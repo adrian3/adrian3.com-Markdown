@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 4 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Learning the Unteachable</h1><blockquote><p><em>”We know that only the technical means of artistic achievement can be taught, not art itself.”</em> — Walter Gropius, founder of the Bauhaus</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter4.webp"></p><p>I was a junior in high school when my art teacher, Mr. Schatz, shattered my understanding of art. The assignment sounded simple enough at first. “Create something that represents your family.” That was all. The class was confused by these vague instructions, so we raised our hands with questions.</p><p>“So, you are asking us to draw a picture of our family?”</p><p>“No. The assignment is to create something that represents your family,” Mr. Schatz replied.</p><p>“Do you mean a sculpture, then?”</p><p>“No. The assignment is to create something that represents your family.”</p><p>Why was Mr. Schatz being so vague? We tried to ask the question differently. “If I take a photo of my family and then make a painting from it, will I get a good grade?”</p><p>“Probably not.”</p><p>The class was baffled. How could we complete an assignment if we couldn’t define its parameters? We continued to press our teacher, but the more we pressed, the more confusing the assignment became.</p><p>“So if we can’t use realistic representations of our family, does that mean you want us to create something abstract?”</p><p>“Not necessarily.”</p><p>The novelty of this exercise was wearing off as we realized he wasn’t going to tell us what to do. It didn’t seem fair. Frustrated, we asked, “How do we know what the correct format for this assignment will be, if you don’t tell us?”</p><p>“The medium isn’t important.”</p><p>Confusion started to turn to panic as we realized Mr. Schatz wasn’t going to give any further direction. Someone asked, “So are you saying that it doesn’t matter what we make? It can be anything we want?”</p><p>“No, it matters. It should be the correct format to best represent your family.”</p><p>We were bewildered.</p><p>“So different families require different mediums? How do we know which is correct?”</p><p>Finally Mr. Schatz gave us a clue, saying “That’s the wrong question. First you must figure out what your family is. What is your family?”</p><p>We responded with the obvious answers, reciting the inventory of our families. “I have a sister, a mother, and a father.”</p><p>Mr. Schatz explained that, “Lot’s of people can describe their family that way. What is <em>your</em> family?”</p><p>With a tone of desperation, someone asks, “Is it a set of beliefs, traditions, and feelings?”</p><p>“I don’t know. Is it?”</p><p>After we exhausted every line of questioning, Mr. Schatz said, “For the rest of the hour, I would like you to think about what your family is, what it means, and how you would convey that idea to someone who doesn’t know your family. Figure this out first, then the art will come later. Before you can create anything, first you must understand it.”</p><p>It is hard to understate how frustrating this was to my classmates and I. A decade of classes had led us to believe that school was a process of memorization and pattern repetition. Success involved remembering what hoops to jump through and in what order. If you do a, b, and c you earn your diploma. Without a clearcut formula we were lost.</p><p>This was the first time an art assignment had been hard for any of us. Before that day, all that was needed was patience and practice. You find something beautiful and draw it. It didn’t even really have to be good because you could always fall back on the subjectivity of art. Art was supposed to be <em>easy</em>. No one said this outright, but we were all thinking the same thing, “Listen, Mr. Schatz, this is an art class, and I need an A. You need to tell us how to do this, so we can get our grade.”</p><p>My classmates were bewildered, but I was terrified. I was supposedly one of the “talented” artists in the class and I had no idea what I was doing. I was lost. I realized that the thing that defined me, my art, was a mystery. I thought I knew what art was, but that day I was reduced to an amateur. I had some skills, yes, but mentally I was still an infant. My turf suddenly felt foreign to me.</p><p>As I struggled with the assignment, things gradually became clearer. The challenge was not the assignment, it was coping with the knowledge that everything I understood about art had just been shattered. I knew that being technically skilled was no longer enough. The next step wasn’t a lesson I could learn in school. Grades were meaningless. There wasn’t a formula to follow. The teachers could point me in the general direction, but I had to do the work myself.</p><p>Most people define art by dividing it into simple categories. They wrongly assume that visual art consists of drawing, painting, sculpture, photography, sculpture, printmaking, or pottery. Music, literature, dance and other arts can likewise be sliced and diced into chunks.</p><p>By dividing art into categories, the definition of art has been distorted by zombies. The categories are not art. Those are just activities. In order for something to transcend these activities it needs something else, something deeper. To borrow a quote from <em>Fight Club</em>, “Putting feathers up your butt doesn’t make you a chicken.” Likewise, being able to draw, paint, or dance doesn’t make you an artist.</p><p>The missing link between artistry and an easily defined category is quality. A dance is not art unless the artist has the ability to infuse his work with quality. A sculpture isn’t art without the quality that causes it to transcend the stone it was carved from.</p><p>You can’t get from activity to art by following instructions, although that’s the formula our schools follow. How do you teach the unteachable? You divide art into categories and subdivide it into teachable chunks. Learning to draw involves micro-lessons about paper, pencil sharpening, eraser technique, hand-eye coordination, and methods for making marks. Put it all together and what do you get? The result may satisfy the requirements completely, but it still isn’t art.</p><p>In <em>The Medium is the Massage</em>, Marshall McLuhan wrote,</p><blockquote><p>“Education must shift from instruction, from imposing of stencils, to discovery–to probing and exploration and to the recognition of the language of forms.”</p></blockquote><p>Mr. Schatz removed the stencils by hiding the categories of the assignment. We could create art in whatever medium we wanted. Why should this be so terrifying? We don’t realize how much comfort we get from categorization and rules. We will never admit it, but we love to be told what to do. Zombies don’t just devour the living, they also include those who ingest the words of others without thinking for themselves. That, too often, sums up our educations.</p><p>Assignments are comforting because it is easy to reproduce a photo with a pencil and turn it in by next Tuesday. Producing something meaningful without restrictions feels like navigating a mine field without a map. Without clear rules to follow, the uncertainty is crippling. How will we know what is good without a manual to test our answers against?</p><p>The educational system of memorization and recitation cripples young people’s creative courage. The assignment from Mr. Schatz taught me that exploration outside the typical assignment is a fertile and empowering journey. School should nurture the ability to thrive in situations where there isn’t a clear right or wrong answer. An education should cultivate strength of character that doesn’t define self-worth as a measurement of how accurately we conform. Too few leave school with these skills. Most graduate not with an appreciation for ambiguity and an appetite for the unknown, but with a loyalty to rigid rules and an unwavering belief in the infallibility of memorized correct answers. Graduation happens when the last item in the list gets checked off and you can finally stop learning.</p><p>With education out of the way, we begin our professional lives and enter the vacuum of the real world. Here, the uncertainty is crushing, so we try to recreate the comfort of school in our jobs. We replace our teachers with a boss who gives us our daily assignments. Our syllabus is replaced by a job description. Our report cards come in the form of quarterly reviews where we defend our performance and argue that we deserve A’s instead of B’s.</p><p>Art isn’t the only place where humans comfort themselves by lumping things into big categorical buckets. The definitions of doctors, scientists, teachers, carpenters, and fast-food workers are categories that allow for very little “mixed media.”</p><p>Professionals have difficulty transcending their job categories. When conversations stray beyond the literal, the artist will see the terrified bewilderment of a teenager in the face of co-workers. Like school children, the zombie employee prefers the cubicle comfort of measurable activities over the uncharted territory that artistic ideas represent. They swim away from uncertainty, but you swim toward it because that is the only place where art can exist. If you survive swimming against the current, eventually you arrive on the island of uncertainty alone, exhausted, and wishing there was someone, anyone, who could understand your achievement. This is the journey of the artist. The next chapter retraces the steps of the historical artists who shaped our understanding of what it means to be and artist. What if art history got a few things wrong?</p><p><a href="chapter5.html">Chapter 5. The Historical Conquest of Art</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

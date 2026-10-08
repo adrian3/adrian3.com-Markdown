@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Boosters and Drainers — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Design Thinking</p>
+		<h1>Boosters and Drainers</h1>
+		<small>July 2, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>Boosters and Drainers</h1><h2>Creating the Illusion of Inexhaustible Energy</h2><ul><li><em> </em></li></ul><p>Life hackers look for shortcuts. Tips for curing your hangover have their place but there is only so much hacking you can do before your life devolves into a chaotic mess. I prefer the idea of building a personal system. If done right, a system can produce <a href="2016-05-28-the-flywheel-formula.html">a flywheel effect</a> that leads to breakthrough. We can be greater than the sum of our skills and we can achieve more than we are capable of. <em>That’s my theory anyway.</em></p><p>Personal energy comes from a rechargeable battery that gets drained and refilled daily. We wake up tired, fuel with caffeine, and are lucky to make it through the afternoon before the battery dies completely. Evenings are spent relaxing, unplugging from the main power source. When we collapse into sleep our batteries try to get back to full power. The cycle repeats until we are as dead as a used up Duracell.</p><img src="https://adrian3.com/imgs/gifs/boosters-and-drainers.gif" alt="Diagram 2: Your Daily Routine" class="caption"><p>The daily recharge cycle works alright for <a href="2016-01-16-the-slow-steady-inevitable-march-towards-oatmeal.html">oatmeal people</a>. But not you. You’re striving for breakthrough so you are going to need full energy at all times. Without maximum energy your flywheel will turn into a <a href="2016-05-21-doom-loop-triggers.html">doom loop</a>. So is inexhaustible energy possible?</p><img src="https://adrian3.com/imgs/gifs/boosters-and-drainers2.gif" alt="Diagram 3: The Doom Loop" class="caption"><p>Our energy system can be improved or damaged, boosted or drained. Measuring these positive and negative impacts can give you an idea of the health of your battery. The following isn’t necessarily universal, but scan this list and note the items that are present in your current situation:</p><h4>Boosters</h4><ul><li>Autonomy</li><li>Purpose</li><li>New Skills</li><li>New Knowledge</li><li>Connection with People</li><li>Fitness</li><li>Culture</li><li>Shipping Quality Work</li><li>Wins/Progress</li></ul><img src="https://adrian3.com/imgs/gifs/boosters-and-drainers3.gif" alt="Diagram 4: Energy Drainer" class="caption"><h4>Drainers</h4><ul><li>Politics</li><li>Difficult Personalities</li><li>Dull Tasks</li><li>Stress/Pressure</li><li>Poor Health</li><li>Rework</li><li>Debt (technical, creative, or financial)</li><li>Environment Flaws</li><li>Losses/Setbacks</li></ul><p>Tally it up. Are there more boosters or drainers present in your life? Each boost can be canceled by a drain, so despite the presence of some really healthy factors you could still have a net loss in energy. It reminds me of a job I had where they gave us free beer on Friday afternoons. Sure, I drank the beer, but I wasn’t any happier with the work I was doing so I quit. Physical perks can’t compensate for lack of purpose.</p><img src="https://adrian3.com/imgs/gifs/boosters-and-drainers4.gif" alt="Diagram 5: Lack of Purpose" class="caption"><p>If you find yourself in positive energy territory your work doesn’t feel like work at all. Occasionally you might be so engaged by your day job that you take work home with you. If you voluntarily work overtime on weekends you know that your employer understands the flywheel concept.</p><img src="https://adrian3.com/imgs/gifs/boosters-and-drainers5.gif" alt="Diagram 6: Voluntary Overtime" class="caption"><p>But building your flywheel around your employer is probably a bad idea. There are just too many uncontrollable factors within any company to tie your personal battery system to that kind of a fluctuating power grid. You need a system that works regardless of where your paycheck comes from.</p><p>For a more reliable source of energy you need personal projects, things that you are always eager to work on. The ultimate energy boost comes from creating. Nothing beats the feeling of shipping. That’s why I have a bunch of ongoing projects that I can throw energy into whenever I need a boost:</p><ul><li>Chess Apps (<a href="http://itunes.apple.com/us/app/eugene-chess-hd/id418816633?mt=8">Eugene</a>, <a href="http://itunes.apple.com/us/app/grandmaster-archive/id471186727?mt=8">Grandmasters</a>, <a href="http://itunes.apple.com/us/app/chess-puzzles-pro/id432827559?mt=8">Puzzles</a>, <a href="https://itunes.apple.com/au/app/chess-server/id998153813?mt=8">Server</a>, <a href="https://itunes.apple.com/us/book/immortal-game-greatest-chess/id610194268?mt=11">Immortal Game</a>)</li><li>Photography (<a href="https://www.flickr.com/photos/foundphotography/153431841/in/album-72157609237189273/">Lego</a>, <a href="https://vimeo.com/13189032">Timelapse</a>, <a href="https://vimeo.com/11758019">Stop Motion</a>, <a href="https://www.flickr.com/photos/foundphotography/albums/223629">Pinhole</a>, <a href="https://www.instagram.com/ade3/">Instagram</a>)</li><li><a href="http://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">Art of the Living Dead</a></li><li><a href="https://itunes.apple.com/us/app/grungy/id595550299?mt=8#">Grungy</a></li><li><a href="http://ade3.tumblr.com">Daily Art</a></li><li><a href="https://profiles.wordpress.org/adrian3/#content-plugins">Wordpress Plugins</a></li><li><a href="https://itunes.apple.com/us/app/ghost-o-meter/id476468510?mt=8">Ghost-O-Meter</a></li><li><a href="https://www.strava.com/athletes/442364">Running</a></li><li><a href="https://medium.com/@ade3">Weekly Medium Posts</a></li><li><a href="https://github.com/adrian3">Clunky code</a></li></ul><p>And that’s just the stuff I am willing to put my name on. I have another list of flops (and <a href="https://vimeo.com/57322739">strange inventions</a>) that although they failed, were once great sources of energy. I give you this list not to brag (okay maybe a little) but to show how at any moment I have a dozen power sources that I can plug my batteries into and get recharged through the thrill of shipping something.</p><p>If my day job isn’t fulfilling my creative needs I can create more art. If my code skills are getting rusty I can updates my apps. If my thinking needs refinement I can write.</p><p>Have I hit breakthrough yet? No. But if I can keep pushing on my flywheel I increase my chances of leveling up. This is the advantage of a system. Rather than aiming for a single goal and getting derailed by forces beyond your control, your battery never gets drained. If your flywheel never stops it feels exactly like having inexhaustible energy.</p><ul><li><em> </em></li></ul><p>Thanks for reading. If this post gave you a jolt you should follow me because I write to charge your batteries every week. <em>Stay creative.</em></p><p><img src="https://adrian3.com/imgs/gifs/boosters-and-drainers6.gif"></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art by Adrian Hanft — The website of Adrian Hanft, III</title><script src="../js/nav.js" defer></script><script src="../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/art/cameras.html">Cameras</a></li><li><a href="/art/art-shows.html">Exhibitions</a></li><li><a href="/art/infestation.html">Infestation</a></li><li><a href="/art/vice.html">NYC</a></li><li><a href="/art/postcards.html">Postcards</a></li><li><a href="/art/receipt-animation.html">Receipts</a></li></ul></div>
+<div class="sidebar-layout">
+	<aside class="sidebar-layout-aside">
+		<h3>Art Projects</h3><ul><li><a href="#infestation">Infestation Insect Prints</a></li><li><a href="#graffiti">Graffiti Animation</a></li><li><a href="#inner-demons">Inner Demons Postcards</a></li><li><a href="#money-maker">Money Printing Camera</a></li><li><a href="#digital-polaroid">Polaroid Receipt Camera</a></li><li><a href="#coffee-stirrer-camera">Coffee Stirrer Camera</a></li><li><a href="#free-postcard-art">Free Postcard Art</a></li><li><a href="#camera-graffiti">Baby Powder Graffiti</a></li><li><a href="#lego-camera">Lego Pinhole Camera</a></li><li><a href="#camera-drawing-animation">Camera Drawing Animation</a></li><li><a href="#illustrations">Illustrations</a></li><li><a href="#pottery">Pottery</a></li><li><a href="#book-shelf-photos">Book Shelf Photos</a></li><li><a href="#pine-cones">Pine Cones</a></li><li><a href="#ghost-o-meter">Ghost-O-Meter</a></li><li><a href="#art-shows">Art Shows</a></li></ul>
+	</aside>
+	<main class="sidebar-layout-main">
+		<h4>My philosophy on art...</h4><p>Beauty is hiding in plain sight waiting to be discovered. That’s what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my <a href="Ade3 Instagram account">http://instagram.com/ade3</a>.</p><article class="gallery {{page.gallery-class}}"><div class="gallery-grid"><a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010"><figure><img src="https://adrian3.com/imgs/art-section/self-portrait.webp" alt="Coffee Stirrer Camera"><figcaption>Coffee Stirrer Camera</figcaption></figure></a><a href="../art/pinecones.html"><figure><img src="https://adrian3.com/imgs/art-section/pinecone.webp" alt="Pine Cones"><figcaption>Pine Cones</figcaption></figure></a><a href="/art/index.html"><figure><img src="https://adrian3.com/imgs/art-section/spider-flower.webp" alt="Art Shows"><figcaption>Art Shows</figcaption></figure></a><a href="/gallery-pages/pottery.html"><figure><img src="https://adrian3.com/imgs/art-section/pottery.webp" alt="Pottery"><figcaption>Pottery</figcaption></figure></a><a href="../art/postcards.html"><figure><img src="https://adrian3.com/imgs/art-section/postcard.webp" alt="Free Postcard Art"><figcaption>Free Postcard Art</figcaption></figure></a><a href="/gallery-pages/camera-drawings.html"><figure><img src="https://adrian3.com/imgs/art-section/cameras.webp" alt="Camera Drawings"><figcaption>Camera Drawings</figcaption></figure></a><a href="/gallery-pages/camera-graffiti.html"><figure><img src="https://adrian3.com/imgs/art-section/camera-graffiti.webp" alt="Baby Powder Graffiti"><figcaption>Baby Powder Graffiti</figcaption></figure></a><a href="/gallery-pages/bookshelves.html"><figure><img src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.webp" alt="Bookshelves"><figcaption>Bookshelves</figcaption></figure></a><a href="/gallery-pages/illustrations.html"><figure><img src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp" alt="Illustrations"><figcaption>Illustrations</figcaption></figure></a><a href="/gallery-pages/2019-art.html"><figure><img src="https://adrian3.com/imgs/galleries/2019-art/1-matchbook-monday.webp" alt="2019 Art"><figcaption>2019 Art</figcaption></figure></a></div></article><hr /><h2 id="galleries">Galleries</h2><ul><li><a href="/gallery-pages/2019-art.html">2019 Art</a></li><li><a href="/gallery-pages/bookshelves.html">Bookshelves</a></li><li><a href="/gallery-pages/camera-drawings.html">Camera Drawings</a></li><li><a href="/gallery-pages/camera-graffiti.html">Camera Graffiti</a></li><li><a href="/gallery-pages/postcards-camera.html">Camera Postcards</a></li><li><a href="/gallery-pages/infestation.html">Infestation</a></li><li><a href="/gallery-pages/inner-demons.html">Inner Demons</a></li><li><a href="/gallery-pages/postcards-inner-demons.html">Inner Demons Postcards</a></li><li><a href="/gallery-pages/postcards-mutations.html">Mutations Postcards</a></li><li><a href="/gallery-pages/pinecones.html">Pinecones</a></li><li><a href="/gallery-pages/pottery.html">Pottery</a></li><li><a href="/gallery-pages/star-wars-drawings.html">Star Wars Drawings</a></li><li><a href="/gallery-pages/postcards-thermal.html">Thermal Postcards</a></li></ul><h2 id="infestation">Infestation Insect Prints</h2><a href="infestation.html"><img src="https://adrian3.com/imgs/galleries/infestation/infestation-thumb.webp"></a><p>The artwork from the Infestation Project uses a new process I invented to create prints directly from the corpses of dead insects. Yes, it’s a bit weird but stick with me. I had been perfecting the technique over a wouple years before launching the Infestation on <a href="https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects">Kickstarter</a>. Prints are available for sale on <a href="https://etsy.com/shop/byAdrian3">my Etsy store</a>.</p><a href="infestation.html" class="button">View Project</a><hr /><h2 id="graffiti">Graffiti Animation</h2><a href="https://www.youtube.com/playlist?list=PLX3XH99XPcfcEYm2kWxHRfbswGhUIrSCE"><img src="https://adrian3.com/imgs/graffiti-animation.webp"></a><p>I create an animation loop made of 15 frames or so. Each frame becomes a sticker that finds a home in the urban landscape. I take a photo of the graffiti and string the photos back into an animation. You can watch the videos on this <a href="https://www.youtube.com/playlist?list=PLX3XH99XPcfcEYm2kWxHRfbswGhUIrSCE">Graffiti Animation YouTube playlist</a></p><h2 id="inner-demons">Inner Demons</h2><a href="../gallery-pages/inner-demons.html"><img src="https://adrian3.com/imgs/inner-demons.webp"></a><p>I called this series “Inner Demons” because my process resembled a self-administered Rorschach test. I let drops of alcohol fall on a piece of thermal paper (otherwise known as a shipping label) and then stared at it until it told me what it wanted to be. Apparently there were skulls, zombies, scary masks, and various disfigured heads inside me trying to escape. The collection can be viewed in <a href="../gallery-pages/inner-demons.html">this gallery</a>.</p><hr /><h2 id="money-maker">Money Printer Camera</h2><img src="https://adrian3.com/imgs/money-printer.webp"><p>I combined a Raspberry Pi and a portable receipt printer to create a camera that prints money. You can <a href="https://www.youtube.com/watch?v=1rxPhT5FdYQ&t=1s">watch a video of the camera in action here</a>.</p><hr /><h2 id="digital-polaroid">Polaroid Receipt Camera</h2><img src="https://adrian3.com/imgs/polaroid-receipt-printer.webp"><p>I made a digital Polaroid camera that combines a receipt printer with a Raspberry Pi. To build it I took an old Polaroid Minute Maker camera, stripped out its guts, and replaced the innards with a digital camera, an e-ink display, a receipt printer, and an SNES controller to operate the camera. You can read about the <a href="https://ade3.medium.com/how-to-build-a-digital-polaroid-camera-e1140d7a05b8">digital receipt printer polaroid camera here</a>.</p><hr /><h2 id="coffee-stirrer-camera">Coffee Stirrer Camera</h2><a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010"><img class="case-study-image" src="https://adrian3.com/imgs/coffee-stirrer-camera.webp"></a><p>I made a camera made of 23,248 coffee stirrers, powered by a Raspberry Pi, and controlled with a Nintendo controller.  It is one of the strangest cameras and the photos it takes are equally unique. You can read <a href="https://ade3.medium.com/a-camera-made-of-23-248-coffee-stirrers-raspberry-pi-lego-and-a-nintendo-controller-9e7a10b82010">the entire story here.</a></p><hr /><h2 id="free-postcard-art">Free Postcard Art</h2><a href="postcards.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/postcards/thermal-thumb.webp"></a><p>I enjoy mailing art to people. I’ve sent over 300 pieces so far. You can see them in the <a href="postcards.html">postcard section</a> of this site. If you want to get on my mailing list, reach out.</p><hr /><h2 id="camera-graffiti">Baby Powder Graffiti</h2><a href="../gallery-pages/camera-graffiti.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/camera-graffiti.webp"></a><p>For this project I used baby powder and other non-destructive techniques to create graffiti. I love the idea of artwork that doesn’t last long. It’s there one moment and gone the next. You can view a <a href="../gallery-pages/camera-graffiti.html">gallery of this art here</a>.</p><hr /><h2 id="lego-camera">Lego Pinhole Camera</h2><a href="https://ade3.medium.com/inside-the-lego-camera-733d822c8b33"><img src="https://adrian3.com/imgs/lego-camera.webp"></a><p>My first experience going viral happened after I created a medium format pinhole camera out of Legos. You can <a href="https://ade3.medium.com/inside-the-lego-camera-733d822c8b33">read about it here</a>. It made the rounds on popular websites in 2001 and even got featured in a book.</p><hr /><h2 id="camera-drawing-animation">Camera Drawing Animation</h2><a href="../gallery-pages/camera-drawings.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/cameras.webp"></a><p>I created software that recorded my pencil as I drew dozens of <a href="../gallery-pages/camera-drawings.html">Cameras from my collection</a>. By replaying my pencil’s movement I was able to create animations of the cameras being redrawn. In the first iteration of my software I created <a href="../gallery-pages/star-wars-drawings.html">drawings of my favorite Star Wars characters.</a></p><hr /><h2 id="illustrations">Illustrations</h2><a href="../gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp"></a><p>I draw all the illustrations in <a href="../writing/writing.html">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="../gallery-pages/illustrations.html">this gallery.</a></p><hr /><h2 id="pottery">Pottery</h2> <a href="../gallery-pages/pottery.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/pottery.webp"></a> <p>It’s been a few years but I was a prolific potter in college. It helped me make some extra money but more importantly it was a relaxing stress reliever. You can view some of my pots in this <a href="../gallery-pages/pottery.html">pottery gallery</a>.</p><hr /><h2 id="book-shelf-photos">Book Shelf Photos</h2><a href="../gallery-pages/bookshelves.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/bookshelves/bookshelf3.webp"></a><p>This is a <a href="../gallery-pages/bookshelves.html">gallery of photos of my book shelves</a>. I love to read and I love to collect toys and trinkets. It makes my home office a fun place to work and makes for a nice backdrop on video calls.</p><hr /><h2 id="pine-cones">Pine Cones</h2><a href="../gallery-pages/pinecones.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/pinecone.webp"></a><hr /><h2 id="art-shows">Art Shows</h2><a href="art-shows.html"><img class="case-study-image" src="https://adrian3.com/imgs/art-section/spider-flower.webp"></a><p>I’ve done a handful of art shows over the years. Here is a list of <a href="art-shows.html">Shows and Exhibitions</a> I have participated in.<br /></p>
+	</main>
+</div>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

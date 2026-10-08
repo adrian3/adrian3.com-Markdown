@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>The Top 17 Design Tools You Must Master in 2016 to Stay Relevant — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Career Advice</p>
+		<h1>The Top 17 Design Tools You Must Master in 2016 to Stay Relevant</h1>
+		<small>March 12, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<img src="https://adrian3.com/imgs/images/the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant.webp" class="full-width"><h1>The Top 17 Design Tools You Must Master in 2016 to Stay Relevant</h1><h2>(Or, could there be a single skill that makes all that software irrelevant?)</h2><ul><li><em> </em></li></ul><p>Here’s a quiz. Scan this list below of desktop applications from Adobe and see how many you are proficient at.</p><p><img src="https://adrian3.com/imgs/images/the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant2.webp"></p><p>How did you do? Now scan this list of iPhone apps from Adobe again noting the apps you have mastered…</p><p><img src="https://adrian3.com/imgs/images/the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant3.webp"></p><p>What’s your total? If you tallied proficiency in less than 17 of these 59 programs I have some bad news for you. You are falling behind and you might not be employable much longer. Our industry demands it. Plus, we owe it to our employers to get as much use as possible out of our $49.99 monthly subscriptions.</p><p>Am I right? <em>Of course not.</em></p><p>Designers have been <a href="https://medium.com/@ade3/shortcut-addiction-9e7e8c622371#.ng7g0pa12">fooled by tools</a> since the beginning. Whether it is constant software upgrades or having the newest computers it can be tempting to believe that our value is as the operators of machines that are so simple to use, anybody can do it.</p><p><img src="https://adrian3.com/imgs/images/the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant4.webp" alt="Advertisement introducing the Apple II"></p><p>The availability of pre-made solutions increases the perception that anyone can be a designer. In February, apparently an additional <a href="https://medium.com/@WebdesignerDepot/50-fresh-resources-for-designers-february-2016-597494c4136#.fp1wqa20x">50 fresh resources</a> flooded the market, enticing you to take the easy way out.</p><p>Despite what your resume says, the thing that you bring to your job is not software knowledge. Clicking around in software might feel like design, but the real work doesn’t happen on screen. No, you earn your paycheck by exercising the squishy stuff between your ears.</p><p>We don’t need another rundown of free resources or another list of software flavors of the month. We need to strengthen our mind muscles. To me, that means mastering the most important weapon in our arsenal: <strong>clarity</strong>. If you can master this one concept it doesn’t matter if you are still running Pagemaker 7 on a Power Mac G4, you’ll do fine.</p><h4>So what is clarity and how do you get it?</h4><p>The ultimate goal is to strip away everything inessential until you are left with a clear, compelling idea. That’s clarity. I prefer the word clarity over the word simplicity because there isn’t anything easy about this goal. Clarity is difficult. The challenge starts with confusion about what designers actually do.</p><p>There is a common misconception that designers are decorators. Some people think our role is to appear at the end of a project and apply a layer of frosting on everything.</p><p>End of project wand-waving by a designer never results in clarity. Instead, you end up with band-aids covering serious flaws. You end up with products that look pleasing but are hard to use. When designers become decorators their creations might look nice but there is something wrong that you can’t quite put your finger on. Strong designs bring clarification, less effective designs obfuscate the underlying problem.</p><p>To people unfamiliar with design thinking, our job might look like a checklist of software proficiency. The app skills and pixel-pushing is just the final step in a quest for clarity, however.</p><p>The first step towards clarity is to be involved in the project from the beginning as a trusted member of the team. That might mean <a href="../2013/2013-11-03-five-things-i-learned-after-i-left-the-marketing-agency-world.html">leaving your agency job and becoming an in-house designer</a>. It might mean leaving your design silo and sitting with the engineers. You need to be in the middle of the action, whereever the decisions are being made. Things don’t get easier from there, however.</p><p>In his book <a href="http://www.amazon.com/Forget-Rules-Learned-Graphic-Design/dp/0823018636">Forget all the rules you ever learned about graphic design</a>, the design legend <a href="http://www.bobgilletc.com">Bob Gill</a> suggests that,</p><blockquote><p>“Interesting words need boring graphics.”</p></blockquote><p>I love the idea of striving for boring graphics. If you find yourself using design to compensate for bad writing, just stop. You aren’t solving the problem, you are making it worse.</p><p>Often designers don’t have much say in the words selected for our work. Occasionally you are blessed with an opportunity to work with a skilled copywriter, but more often the word-chooser doesn’t share your obsession with clarity. That’s a problem.</p><blockquote><p>“Some people have a way with words. Others not have way.” – Steve Martin</p></blockquote><p>You might think that the words aren’t your responsibility. That’s apathy talking and it is the first step on <a href="2016-02-06-death-by-toothbrush.html">the pathway to designer hell</a>. No, words <em>are</em> your job. Do whatever you can to start with interesting words. Write them yourself if you have to.</p><p>Where do interesting words come from? Is it a special skill reserved for copywriters or articulate product managers? No. Here’s the most important thing you need to know about writing:</p><p>Good writing is the result of good thinking.</p><p>That’s it. If you find yourself completely stuck on a design assignment you can bet that problem is flawed thinking. There are millions of causes for bad thinking. For example…</p><p>Perhaps clarity is illusive because you don’t understand your user. A clue that this might be the problem is when you are expected to satisfy multiple audiences at the same time.</p><p>Perhaps clarity is challenged by a desire to be data-driven. Instead of designing for a user that you mostly understand, you end up designing for increased data-gathering. A well-designed A/B test is not the same as a well-designed solution.</p><p>Perhaps clarity is challenged by pressure to ship work before it is fully-baked. The market is going to decide the fate of your product one way or another, the flaw in thinking is a belief that future iteration (design frosting) can be applied by design decorators <em>after</em> the customer has decided if they like your product or not.</p><p>Perhaps clarity is stifled by the complexity of the product, an over-ambitious marketing plan, government regulation, rigid brand standards, or the competing priorities of unaligned stakeholders. I could go on and on.</p><p>Navigating the minefields of internal politics is beyond the scope of this post, but just like copywriting, don’t believe this isn’t your job. You have the responsibility to strive for clarity. Otherwise your job will be reduced to that of a stylist recommending comb-overs to clients whose thinking is as thin as a receding hairline. And when you are forced to react to baldheaded ideas, not even the best software in the world will be able to save you.</p><ul><li><em> </em></li></ul><p>Thanks for reading. Your shares, recommendations, and tweets make my day. I write a story every week, so follow me if you want to keep up with my crazy ideas. If this is your first encounter with my words, can I point you at <a href="https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7#.t6r7y3drh">Art of the Living Dead</a> as the best entrance point into the deeper corners of my zombie skull?</p><p><em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

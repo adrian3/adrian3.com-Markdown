@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Powered by a Whisper — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Advertising</p>
+		<h1>Powered by a Whisper</h1>
+		<small>January 27, 2018</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>Powered by a Whisper</h1><p><em>Seven slices to the heart of the web</em></p><ul><li><em> </em></li></ul><p><a href="https://medium.com/@ade3/hungry-scalpels-f6c5cc1b90b4">As promised</a>, today we are going to take a journey to the heart of the web. The web has become bloated and gluttonous. We need <a href="https://medium.com/@ade3/hungry-scalpels-f6c5cc1b90b4">hungry scalpels</a>, sharp mental x-acto knives to cut away the excess. What will we find at the center? Is there a truth worth saving at the heart of the web?</p><p>Before we get started, I want to ask you a question. Why do you love the web? It is a surprisingly tough question, isn’t it? The answer is on the tip of your tongue. That’s what we are looking for when I say we are going to the center of the web. We are looking for the thing that makes us love the web.</p><p>The journey to the center of the web is a reduction exercise, a dissection in search of truth. Our surgery will start at the surface where the skin is tough and dry. As we move to the center we will need to be more precise as we uncover more fragile organs. Let’s dig in.</p><h2>Slice 1: The Dark Web</h2><p>At the beginning, the cutting is easy. Enormous chunks can be lopped off the web without much remorse.</p><p>Advertising. Content farms. Click bait. Spam. Trolls for hire. Twitter bots. The dark web.</p><p>The outer crust can be removed and few will mourn its passing. We might feel a little sting at the loss of ad revenue but our search for integrity demands we separate ourselves from the filth.</p><p>With the <a href="https://medium.com/@ade3/zombie-economics-e61fd99b5c4d">zombie economy</a> removed the web is looking better already. What else can we eliminate?</p><h2>Slice 2: Analytics</h2><p>The next slice of our x-acto knives requires a bit more precision. We are going to carve off analytics. No, wait. Stick with me. I know the thought of functioning without data seems unthinkable. Remember, this is just a mental exercise. Nobody is going to take away your data just yet. But let’s imagine the web without analytics and see how it looks.</p><p>Data collection is the plaque building up inside of the web’s arteries. If analytics were removed from your website, would your users notice? Other than the beneficial speed boost, probably not. Website owners can console themselves with excuses to justify this behavior, but the line between spyware and analytics is blurry at best. With analytics removed the web is faster, privacy improves, and complexity is reduced.</p><p>Less reliance on analytics means creators can ship there work faster. There is less analysis paralysis. We can focus on <a href="https://medium.com/@ade3/fives-words-that-might-end-your-design-career-8e4083b4f0fd">finding Bob Gill’s interesting words</a> instead of getting lost in spreadsheets, dashboards, and tracking pixels.</p><p>It’s a tough sell, I realize. I had few takers the last time I invited the world to <a href="https://medium.com/@ade3/data-drivel-f3efc8238732">quit analytics with me</a>. But would you at least concede that the purpose that the web isn’t analytics, that data is just a by-product? If you can grant me that small point we can keep slicing deeper and keep searching for the truth powering the web. Let’s be ruthless, and see how deep we can go.</p><h2>Slice 3: Search Engines</h2><p>With each slice of our blades things gets harder to eliminate. What would happen to the web without search engines? It would seem that search engines are indispensable, the front door to the web. Would the web be better without them?</p><p>The trouble is that the SEO industry sold us a lie. We bought the idea that by altering our words to titillate the search engines a floodgate of eyeballs would bombard our websites. The unintended consequences of this mistake was that the web got less personal. We hired an industry of middlemen who valued <em>key</em> words over <em>interesting</em> words. And the voice of the creators was muffled beneath a fog of manipulation.</p><p>Again, this is a mental exercise, so let’s indulge ourselves by imagining a web where Google can direct traffic honestly and accurately without the intervention of SEO salesman.</p><h2>Slice 4: Facebook, Twitter, and YouTube</h2><p>Our knife work is getting uncomfortable now, isn’t it? Facebook, Twitter, YouTube, and Instagram make up the entirety of the web for many of us. We rarely leave these silos. We love our communities and would rather slice everything else away from the web than abandon these platforms.</p><p>But now more than ever these services are showing critical flaws. Fake news. Polarization. Censorship. Anonymous attacks. Hatred. Pick any “ism” and you can lose yourself in a crowd of people supporting that agenda. The voice of individuals is lost among the chants of warring tribes. Have we reached the core of the web only to find a reflection of ourselves as bitter, hate-filled people? And yet it is hard to remove Facebook from our lives.</p><p>You are wondering if we really have to get rid of social media. Couldn’t we just fix them? Maybe. But for the sake of our journey to the center of the web let’s remove it completely and see if there is anything beneath. We have come this far, let’s keep slicing.</p><h2>Slice 5: Wordpress</h2><p>Would it be ridiculous to eliminate Wordpress from the web? How will ordinary people create websites without the user-friendly content management systems we have come to rely on?</p><p>But Wordpress isn’t above criticism. At its best Wordpress empowers people to quickly get their ideas out into the world. Bravo. But at its worst it becomes a planet-sized distraction. You get caught in its gravitational pull, losing countless hours managing themes, plugins, and endless customization.</p><p>Remember the original purpose of our journey to the center of the web. We are looking for truth. Wordpress (and all content management systems) are just tools. They aren’t the end. So let’s at least temporarily slice away the content management systems from the web so we can see what is happening beneath them.</p><h2>Slice 6: Code</h2><p>Now we are getting somewhere. With those giant pillars removed there’s nothing left to block our view of what the web is really made of. Let’s look around.</p><p>At first it appears to be a maze of programming languages, databases, and APIs. Look closer and you see temples filled with tribes of zealots worshipping at alters built to gods of code. So much dogma. If you were an engineer perhaps you could make sense of the web at this level, but to the rest of us only see a cult-like devotion to methodologies and ancient languages.</p><p>The web can’t run without code, but this isn’t the purpose of the web is it? What is all this complexity supporting? Let’s remove it and see what happens.</p><h2>Slice 7: HTML, CSS, Javascript</h2><p>Now we are down to the bare essentials, the most primitive components of the web. HTML structures our pages. CSS lets us style the HTML. Javascript makes things a bit more dynamic.</p><p>We couldn’t possible eliminate this. Could we? As simple as these things are, they are still a barrier to entry. For those of us who have become fluent in this language we forget how foreign this code looks to newcomers.</p><p>We have come this far, we might as well slice HTML, CSS, and Javascript, too.</p><h2>The End</h2><p>Our journey to the center of the web has ended. We have stripped away everything from the biggest institutions to the most basic building blocks. I guess that’s it. There is nothing left.</p><p>Before we leave, let’s just take a moment to sit with the emptiness. We never get to see the web this way, so pure, so quiet. There is emptiness for miles in every direction, intimidating like a blank canvas.</p><p>A whisper could echo for miles.</p><p>Hey, do you see that? It was so obvious, I guess I missed it. Right there, the blinking cursor. It sits there, a pulsing invitation for anyone brave enough to raise their voice. Is this what we have been looking for, the truth at the heart of the web?</p><p>Do you remember how you felt the first time you heard your voice echo across the web? If there is anything that can redeem the web, it is the sound of an honest voice. Your voice, independent and pure, slicing through the seven layers we have been dissecting:</p><p>It’s clarity resists the complexity imposed by markup languages and the dogma of code zealots.</p><p>It reverberates beyond the content containment systems and wysiwygs.</p><p>It invites the humanity back to social media.</p><p>People will seek it out, regardless of where it ranks in search engines.</p><p>Because your words move people, they inspire people to action in ways that baffles the analytics hunters.</p><p>By refusing to accept debt from the advertisers and integrity leeches, it can even cut through the thick outer layers of the dark web.</p><p>This is the truth at the center of the web, the heartbeat worth saving. Your voice, simple, unadorned, and revolutionary. Beneath the bloat and gluttony, the web is still alive. Powered by a whisper.</p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Resume — The website of Adrian Hanft, III</title><script src="../js/nav.js" defer></script><script src="../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html" aria-current="page">Resume</a></li></ul></div>
+<main class="resume-page">
+	<h1>Adrian (Ade) Hanft</h1><h2>Senior Product Designer</h2><p>Curious, disciplined, outcome-driven product designer with a passion for tackling complex problems and designing simple, intuitive solutions in highly technical industries. I bring an engineering mind, creative drive, and customer-first mindset to product teams working with complex systems, data-heavy workflows, AI/ML, and human-centered design.</p><hr><h1>Professional Experience</h1><h2>OpenText <small>(2022-2026)</small></h2><h3>Senior UX Designer</h3><ul><li>Designed data exploration tools that use OpenTelemetry, machine learning, and artificial intelligence to help IT professionals understand the health of complex software infrastructure.</li><li>Used Figma to design proof-of-concept applications that established a multi-year roadmap for integrating OpenTelemetry into OpenText’s enterprise product line.</li><li>Led the design of a new Observability product that helps IT professionals identify problems and optimize cloud software.</li><li>Partnered with data scientists to detect anomalies in streams of billions of data points and translate patterns into useful insights.</li><li>Documented UX principles for designing with AI and contributed new patterns and components to OpenText’s design system.</li><li>Redesigned applications acquired from Micro Focus, helping transition legacy products into OpenText’s product line.</li><li>Validated concepts with internal users, conducted usability testing with customers at OpenText World, and used data visualization to make complex issues understandable.</li><li>Won second place in OpenText’s Innofest hackathon for data visualization using 3D and VR technology.</li></ul><hr><h2>Nutrien Ag Solutions <small>(2019-2022)</small></h2><h3>Senior UX Designer / UX Design Manager</h3><ul><li>Helped shape the UX vision and product roadmap for Nutrien’s digital commerce division through collaboration with product managers and engineering leaders.</li><li>Helped Nutrien’s design team grow from 7 to 15 designers and researchers while establishing customer obsession as one of Nutrien’s core values.</li><li>Launched an agriculture e-commerce platform that generated over $5 billion in sales in its first three years.</li><li>Led the transition from Sketch to Figma as the team’s main design tool and used Figma to create high-fidelity mockups, interactive prototypes, sketches, workflows, and storyboards.</li><li>Conducted UX workshops with key partners such as John Deere, BASF, and Syngenta.</li><li>Led the design of an experimental product that used machine learning to identify sales opportunities within Nutrien’s archive of historical sales data.</li><li>Traveled across the country meeting users and observing how products were used in the field, then brought those stories back to help teams empathize with the people relying on our software.</li><li>Mentored designers, removed roadblocks, facilitated career advancement, and built a design culture through critiques, retros, research, design systems, usability studies, and collaboration tools.</li></ul><hr><h2>Runcoach <small>(2018-2019)</small></h2><h3>Lead Product Designer</h3><ul><li>Established a new vision for Runcoach’s web, iOS, and Android products.</li><li>Created empathy for users within the company by translating research into compelling stories.</li><li>Rebranded the company and defined new brand guidelines.</li><li>Led product exploration exercises including competitive research, ideation, and persona development.</li><li>Worked with iOS and Android developers to ensure alignment between design intentions and shipped code.</li><li>Curated a group of trusted users for product input, design feedback, and beta testing, and created wireframes, user flows, and interactive prototypes.</li></ul><hr><h2>Run the Edge <small>(2018-2019)</small></h2><h3>Freelance Product Designer</h3><ul><li>Redesigned the web-based product to be optimized for mobile and desktop devices.</li><li>Built a library of reusable design components to streamline development and establish a living style guide.</li><li>Designed and developed a social engagement tool that allowed users to create shareable images celebrating the miles they ran in 2018.</li><li>Designed and developed charts, graphs, interactive maps, and animations to enhance the user experience.</li></ul><hr><h2>Athlinks <small>(2016-2018)</small></h2><h3>UX Designer</h3><ul><li>Created the UI and improved the UX of Athlinks’ website and native apps.</li><li>Designed high-fidelity clickable prototypes and conducted usability tests to validate product enhancements and new features.</li><li>Defined style guidelines and built a library of reusable design patterns.</li><li>Designed and developed a mobile kiosk for displaying live race results for the Miami Marathon.</li><li>Established relationships with local runners to better understand users.</li></ul><hr><h2>Stryd <small>(2017-2018)</small></h2><h3>Freelance Product Designer</h3><ul><li>Updated Stryd’s website to better explain the benefits of a running power meter to different types of runners.</li><li>Designed Stryd’s iOS app to bring the functionality of its web app to the phone.</li><li>Designed a case study explaining the science behind Stryd’s product.</li></ul><hr><h2>TrainingPeaks <small>(2014-2016)</small></h2><h3>Interaction Designer / Product Owner</h3><ul><li>Led a team that created a coach directory for connecting a network of coaches with thousands of runners.</li><li>Redesigned a training plan store, reviving an important source of revenue.</li><li>Provided design direction to TrainingPeaks’ iOS and Android teams.</li><li>Designed and developed a successful #ThanksCoach social campaign used by thousands of athletes.</li><li>Designed and developed the Endurance Coaching Summit website and marketing materials.</li><li>Converted the company’s website to be mobile-friendly.</li><li>Designed the branding, website, and collateral for Peaksware, TrainingPeaks’ parent company.</li><li>Designed email campaigns, developed mobile-friendly email templates, and managed transactional emails generated by the system.</li></ul><hr><h2>Zila <small>(2012-2014)</small></h2><h3>Creative Director</h3><hr><h2>Burns Marketing <small>(2011-2012)</small></h2><h3>Interactive Designer / Developer</h3><hr><h2>Red Rocket Web Specialists <small>(2009-2011)</small></h2><h3>Creative Director</h3><hr><h2>Huebner Integrated Marketing <small>(2003-2009)</small></h2><h3>Art Director</h3><hr><h2>Nelnet <small>(2002-2003)</small></h2><h3>Graphic Designer</h3><hr><h1>Education</h1><h2>Concordia University</h2><h3>Bachelor of Fine Arts, Graphic Design</h3><hr><h1>Core Competencies</h1><p><strong>Product strategy:</strong> product design strategy, product discovery, roadmap exploration, agile product development, stakeholder alignment</p><p><strong>UX practice:</strong> human-centered design, interaction design, information architecture, user flows, wireframes, prototypes</p><p><strong>Research and validation:</strong> user research, usability testing, workshop facilitation, product analytics, data visualization</p><p><strong>Systems and scale:</strong> design systems, accessibility, enterprise UX, cross-platform product design</p><p><strong>AI product design:</strong> AI-assisted workflows, responsible AI patterns, human-in-the-loop experiences, data-dense decision support</p><hr><h1>Technical Expertise</h1><p><strong>Design tools:</strong> Figma, Adobe Creative Cloud, Sketch</p><p><strong>Front-end:</strong> HTML, CSS, JavaScript, Foundation/Bootstrap</p><p><strong>AI coding agents:</strong> Claude, ChatGPT, Codex, Figma Make</p><p><strong>Technical domains:</strong> PHP, MySQL, artificial intelligence, machine learning, OpenTelemetry, data visualization, iOS and Android UI design</p>
+</main>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

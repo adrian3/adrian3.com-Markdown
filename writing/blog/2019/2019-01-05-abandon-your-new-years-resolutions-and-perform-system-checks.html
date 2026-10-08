@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Abandon Your New Year’s Resolutions and Perform 6 System Checks — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Creativity</p>
+		<h1>Abandon Your New Year’s Resolutions and Perform 6 System Checks</h1>
+		<small>January 5, 2019</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>Abandon Your New Year’s Resolutions and Perform 6 System Checks</h1><p>I had trouble making resolutions this year.</p><p>Normally I love the process, I make my list, sketch out a plan, maybe even buy an online course or two.</p><p>But this year I couldn’t do it. Why was my brain blocking the New Year’s resolution tradition?</p><p>It’s not for lack of enthusiasm for 2019. I have so many ideas and projects I want to tackle this year that I could burst. It’s going to be a great year. And yet when it comes to formalizing my ambitions in the form of resolutions I can’t seem to do it. Here’s why.</p><p>Resolutions are just another word for goals. And while there is nothing necessarily wrong with having goals, there is something better. I want to introduce you to a potentially life-changing alternative that can be summed up in 3 words.</p><p><strong>Systems beat goals.</strong></p><p>This is a concept I latched on to after reading <em><a href="https://www.amazon.com/How-Fail-Almost-Everything-Still-ebook/dp/B00COOFBA4">How to Fail at Almost Everything and Still Win Big</a></em> by Scott Adams. Great book.</p><p>Most resolutions are abandoned. These goals fail because they aren’t integrated into our systems. Compare these common resolutions (goals) to their corresponding systems:</p><p>Eating less junk food is a goal. Nutrition is a system.</p><p>Exercising more is a goal. Fitness is a system.</p><p>Saving money is a goal. A budget is a system.</p><p>Learning a skill is a goal. Knowledge is a system.</p><p>Finding a job is a goal. Being an irreplaceable employee is a system.</p><p>And on and on...</p><p>Goals are pass/fail. You are always one slip-up away from failure. That’s no way to live. No wonder so many resolutions are broken.</p><p>Systems are maintainable. When done right they can be <a href="https://link.medium.com/Ol0YzMtweT">personal perpetual energy machines</a> that keep moving because of compounding inertia.</p><p>Once you understand that systems beat goals, the process of creating resolutions doesn’t really make sense. Why voluntarily add self-imposed obstacles that are going to make your life more difficult? That is just throwing a wrench into your system. You want to read more books? At the expense of what? What you should be striving for are ways to improve your system by <em>reducing</em> friction. A good resolution would be something that integrates seamlessly into your day-to-day routine. It’s not “I am going to start doing x tomorrow” it is “if I make a slight change I think my overall system will perform better.”</p><p>With that in mind, the beginning of a new year is the perfect time to perform a system check. It’s not hard. Make a simple list of your main systems. They probably look like this: Fitness, Nutrition, Creativity, Relationships, Knowledge, and Integrity. You might want to add Finance and Career to your list as well. Reflect on your systems and note areas that are performing well and areas that you can strengthen. This will naturally lead to ideas that you can incorporate into your routine.</p><p>For me that looks like this:</p><p><strong>1. Fitness System Check</strong><br>Last year I was in goal-mode when I ran the Colorado Marathon. I didn’t hit my Boston Marathon qualifying time and I felt like a failure. Isn’t that silly? I changed my mentality about running to a system approach. I acknowledged running is a part of who I am and that won’t change just because I have a bad race. Every run is a chance to gather data and evaluate my progress. I adjusted my system and qualified for Boston 5 months later. And because this system seems to be working I don’t need to change it for 2019. I am just going to tweak it to keep things fun. This year I want to do more trail runs, some mountain biking, maybe find an ultra marathon to add to my resume. Without a system, most exercise will be followed by sore muscles, blisters, or injury. That in turn makes you less motivated to exercise again. That’s a <a href="https://link.medium.com/AnSkd8FqfT">doom loop</a>. But if you can develop a fitness system you will achieve more than you ever thought possible with hardly any negative side effects.</p><p><strong>2. Nutrition System Check</strong><br>The cure for weight loss isn’t to starve yourself, it’s system thinking. I got my weight under control largely because of my fitness system. But that doesn’t mean there aren’t gains to be found by altering what I consume. My eating routine naturally looks something like intermittent fasting. This year I am learning more about Keto to see if there are tweaks that I can make to get more benefits from my diet. I have been thinking that my running might improve if I can transition from burning sugar to burning fat. I continue to crave sugar after meals and I should monitor this more closely. Coffee has become an addiction and I should be more intentional about how and when I fuel myself through caffeine. The body needs fuel and it is so easy to become slaves to what we crave rather than control this critical part of our system.</p><p><strong>3. Creative System Check</strong><br>I wrote 37 essays last year, down from 48 in 2017 and 50 in 2016. If I was chasing a goal of 1 story per week, that would be a failure. But because my writing is the by-product of a system where I write every Saturday morning that number is just a clue that something has changed that might be worth closer inspection. The truth is I have been considering a tweak to my writing system that shifts from public stories to private curation with the goal of transforming my archives into a second book. And because my Saturday morning routine is part of my life this will be an almost imperceptible change. If my resolution was to write a book in 2019 I would almost certainly fail. But because I have a system, I may end up with a book with barely any change to my current routine. Because creativity is so important to me, it isn’t surprising that this is my broadest system. Without structure I couldn’t maintain my consistent output of side projects, whether they take the form of apps, <a href="https://adrian3.com/imgs/galleries/camera-drawings/">drawings</a>, photography, <a href="/Art%20Shows.html">art shows</a>, websites, <a href="https://link.medium.com/h1b24L7VeT">whispers</a>, or writing.</p><p><strong>4. Relationship System Check</strong><br>Being an introvert, this system is one that I have a tendency to neglect. Recurring coffee with friends I wouldn’t otherwise see has been a new addition to my system and it is something I plan to do with more people. This isn’t rocket science, but if I were to just set a goal of reconnecting with friends it would probably become an abandoned resolution. Instead I can recognize that I run alone too much and make an effort to run with friends or maybe even seek out a running group. I can stay on the lookout for opportunities to have  1-on-1 time with my boys so they each get my undiluted attention. I can take stock of my relationships with co-workers and find new collaborators.</p><p><strong>5. Knowledge System Check</strong><br>I am glad I released myself from the guilt of spending money on books last year. Audible has allowed me to reclaim the time that would otherwise be wasted on my hour commute. A small tweak is to keep my wish list full so that I never have to lose time searching for my next book. Learning Vue.js in my free time is paying off and there are great gains to be made by continuing to add features to <a href="https://tread1st.com">Tread1st.com</a>. Collaboration with developers continues to be the easiest way for me to acquire technical knowledge. I try to remain on the lookout for mentors and opportunities to share things I’ve learned. It’s not about reading new books or adding a skill to the resume. It’s a constant evaluation and optimization of the time available, the resources at hand, and work that is worth doing.</p><p><strong>6. Integrity Systems Check</strong><br>I can do better at being the person I want my boys to become. Kids have amazing noses for hypocrisy and if I can’t eat my own dog food, my hope for good parenting goes out the window. I should admit when I screw up sooner and try to forgive myself more when I do wrong. I like to have the Prayer of Saint Francis as my desktop wallpaper as a reminder of what integrity looks like. I will be continuing a routine where I start my day by flipping through a deck of 5 cards that contain verses and aspirations because I like the way this primes me to attempt more than I think I am capable of. Integrity sounds like a judgy word, but we all strive to be the best version of ourselves. The more intentional we can be about defining what that means, the closer we can get to being that person.</p><hr><p>As you can see, a system check doesn’t leave you with a checklist of to-do items that you are unlikely to finish. Instead of worrying about breaking a perfect streak, you wake up each day with new ideas for how you might optimize yourself. There is plenty of wiggle room for trial-and-error and instead of broken resolutions, your year can become a self-healing march toward progress. Happy new year!</p><p>Thanks for reading. I wish you the best in the new year and hope these ideas help your systems thrive in 2019. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 22 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>The Moon Rocket Man</h1><blockquote><p><em>”Every vision is a joke until the first man accomplishes it; once realized, it becomes commonplace.”</em> — Robert Goddard</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter22.webp"></p><p>Days before Neil Armstrong became the first human to walk on the moon, the <em>New York Times</em> published a retraction to a story published in 1920. Half a century earlier, an inventor named Robert Goddard was making headlines for his claims that it was possible to create a rocket capable of reaching the moon. Back then, few believed him. The <em>Times</em> rejected Goddard’s research saying,</p><blockquote><p>“He seems to lack the knowledge ladled out daily in high schools.”</p></blockquote><p>The <em>Times</em> recited the belief of the day that the thrust which propels a rocket within earth’s atmosphere couldn’t exist in the vacuum of space.</p><p>The Times was not alone in criticizing Goddard. The press was ruthless, dismissing his work and mocking him with the title “Moon Rocket Man.” Even after <em>successful</em> rocket tests, the headlines ridiculed him saying, “Moon Rocket Misses Target by 238,799 1/2 Miles.”</p><p><img src="https://adrian3.com/imgs/aotld/goddard.webp" alt="Robert Goddard posing in front of one of his rockets in 1911"></p><p>Had Goddard lived today, he would surely be the nightly punchline for late night comedians. Goddard would eventually be recognized as the founding father of modern rocketry despite nearly universal opposition during his life. How did he have the audacity to reject accepted truths and carry on in the face of such public criticism?</p><p>In 1899, as the Wrights were still experimenting with kites, Goddard set his sites on the moon and committed his life to making his vision a reality. From the characterization of him in the media, you would think he was a lunatic, but by the time his work was in the news in the 1920s, he had already patented a multi-stage rocket and a liquid-fuel rocket. Goddard was so alone in his expertise that it would take decades before the rest of the world would catch up and recognize the brilliance of his work.</p><p>It is tragic that Goddard’s brilliance wasn’t fully appreciated during his life. Goddard’s life reinforces the same patterns that we observed with the Wright brothers and Samuel Langley. The decoy factors of education, fame, and money were not influential in his art, but he did have all four ingredients for creativity (space, time, trust, and play) in abundance. Let’s explore these factors one at a time.</p><p><em>Education was not a factor</em> in Goddard’s success. He struggled in school, partly due to poor health, and was two years behind other children his age. Ironically, the <em>Times’</em> insult that he lacked the force-fed knowledge that comes from school might not have been entirely inaccurate. That’s not to say Goddard was uneducated. He had a Ph.D. in physics and accepted a research fellowship at Princeton. His most valuable education, however, came from trial-and-error. When Goddard failed, he called it “valuable negative information.” Of one-hundred and six official  flight tests, forty failed to even lift off. His optimism was not deterred.</p><p><em>Fame was not a factor</em> either, at least not after he had learned to avoid it. The early publicity of Goddard’s work painted him as a mad scientist. Nationally he was a punchline. Locally, he was a nuisance, his rockets disturbing the peace and occasionally damaging property. After a particularly loud rocket test, complaints about his stunts reached the state fire marshall who, seemingly overstepping his jurisdiction, banned any flight to the moon from Massachusetts. The painful experience of fame sent Goddard into isolation. He became very secretive and protective of his work. He moved to Roswell, New Mexico where he could conduct his experiments in seclusion.</p><p>The high point of Goddard’s experiments was when his rocket, named Nell, reached 9,000 feet in March 1937. It was an event that didn’t make headlines and was unattended by the press, sponsors, or official United States representation.</p><p><em>Money was not a factor</em> in Goddard’s success, either. Goddard funded his first modest experiments himself. Eventually, when his money ran out, he received a $5,000 grant from the Smithsonian, and later funding came from Daniel Guggenheim, whose foundation gave $100,000 over four years at the urging of Goddard’s friend, Charles Lindbergh. His friendship with Lindbergh, I would speculate, is what allowed these funds to be used without the strings and conditions that might have forced his work into the dangerous realm of public scrutiny.</p><p>The most money received by Goddard came after his death when the U.S. Armed Forces and NASA paid out an award of one million dollars to settle patent infringement lawsuits. That sum exceeded the total amount of all the funding that Goddard received for his work, throughout his entire career.</p><p>Unimpeded by the trappings of fame, fortune, or educational bias, Goddard thrived because he had the real ingredients for creativity in abundance.</p><p><em>Goddard had space.</em> His New Mexico oasis afforded him isolation for miles in every direction. The desert is where Goddard’s most fruitful work took place. Alone, far from the public eye, and miles from disrupting other citizens, Goddard was free to experiment and fail without fear of mocking headlines.</p><p><em>Goddard had time.</em> The years he spent perfecting his art were free from distraction. There were no deadlines. His ideas could percolate indefinitely until a flash of inspiration lead to new experiments. Completing as many as 50 tests a day, he easily passed the 10,000 hour mark until eventually he became a master rocket builder. In his own words,</p><blockquote><p>“Work that is finally successful is the result of a series of unsuccessful tests in which difficulties are gradually eliminated.”</p></blockquote><p><em>Goddard had trust.</em> Being burned by publicity, Goddard surrounded himself with a small, select group of supportive friends and family. He only shared his discoveries hesitantly outside this community. After his death, Goddard was criticized for not sharing more with outsiders during his life. The people who tried to replicate his experiments later struggled to understand the nuances that can only be learned from years of isolated experimentation.</p><p><em>Goddard could play.</em> The term “rocket scientist” is a brainy stereotype, but Goddard had great fun building his rockets. There was nothing he would rather be doing. His wife Esther says,</p><blockquote><p>“To him it was seventh heaven to spend all day every day on rocket research... My husband was a highly gifted and a very very happy man because he was doing precisely what he wanted to do most in all the world.”</p></blockquote><p><img src="https://adrian3.com/imgs/aotld/goddard2.webp" alt="Robert Goddard, smiling as he demonstrates the principle of the gyroscope in order to convince the patent office of the legitimacy of his claims"></p><hr><p>Goddard died at 62 of cancer, essentially unknown to the world. He had invented the liquid-propelled rocket, the multi-stage rocket, the bazooka, rocket-assisted plane takeoff, and enough breakthroughs to eventually claim 214 patents. While history recognizes his work in hindsight, why wasn’t the world able to appreciate his genius during his lifetime?</p><p>Does humanity have the ability to receive revolutionary ideas with anything other than hatred? If in hindsight we recognize our errors, is correction enough to reverse the damage? Robert Goddard had been dead twenty-four years when the following apology was published by the <em>New York Times</em>,</p><blockquote><p>“Further investigation and experimentation have confirmed the findings of Isaac Newton in the 17th century and it is now definitely established that a rocket can function in a vacuum as well as in an atmosphere. The Times regrets the error.”</p></blockquote><p>How many revolutionaries have we missed because humanity’s collective scorn downed their creative ambition? If humanity’s bias causes us to attack heroes like Goddard, to embarrass heroes like Langley, and to dilute the lessons of the Wright brothers, how can we possible expect to reverse armageddon? We tend to think of mankind’s progress as a steady march forward from knuckle-dragging fool to enlightened savant. Could this optimism be another example of survivorship bias? A better metaphor might be a missile. Our progress is a rocket hurdling through space with little more input than a map scribbled on the back of a napkin as guidance. We are navigating the cosmos with blind faith in what amounts to little more than a compass and candlelight, oblivious to whether our ship is heading up or down. When we see the ground hurling towards us, we curse the map, sound the alarm, and frantically try to pull the nose upward.</p><p><a href="chapter23.html">Chapter 23. Origins of Inspiration</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

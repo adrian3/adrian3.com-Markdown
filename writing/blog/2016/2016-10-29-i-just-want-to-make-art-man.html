@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>I just want to make art, man. — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Creativity</p>
+		<h1>I just want to make art, man.</h1>
+		<small>October 29, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>“I just want to make art, man.”</h1><h2>The Designer’s Invisible Skill Set, Part 2</h2><ul><li><em> </em></li></ul><p>So there’s a chance I was wrong last week. Maybe I was too optimistic.</p><p>My nostalgic love letter to my first design class described how professors open our eyes to an invisible world, <a href="2016-10-22-the-designers-invisible-skill-set.html">a secret language that lives just beneath the consciousness of all but a select group of design practitioners</a>.</p><p>The problem is I was describing <em>my</em> design education and not necessarily a <em>normal</em> design education.</p><p>Is it naive for me to believe that all or even most design professionals had this experience? Let me paint an alternate reality for us to explore this morning.</p><p>Your first experience with design was probably a grade school book report. The assignment was daunting, a multi-page paper typed out one tedious keyboard peck at a time.</p><p>This assignment actually looks more like a design lesson than <a href="2016-10-22-the-designers-invisible-skill-set.html">the two square exercise</a> I described last week. Doesn’t it? This is a communication challenge not some seemingly random shape arrangement game.</p><p>Three paragraphs into the assignment and you became bored. You start to mess around with the word processor’s settings.</p><p>As you fiddled with the font dropdown you made a discovery. Selecting certain fonts increased the amount of pages in your report. <strong>Eureka!</strong> You’ll be finished in no time.</p><p><img src="https://adrian3.com/imgs/images/i-just-want-to-make-art-man.webp"></p><p>What else can you do to maximize your output and minimize your effort? You pump up the text size. You increase the space between letters, words, and lines. You increased the margins. In a final act of visual brutality you change all the text to ALL CAPS.</p><p>Did it look good? No. It’s a design abomination. But t_echnically_ you followed the instructions.</p><p>As teachers got wise to your scam, they responded with additional specifications to the assignment. They mandated that future submissions would all contain:</p><blockquote><p>“12pt Times New Roman, single-sided, double-spaced, 1-inch margins.”</p></blockquote><p>All deviations will be punished.</p><p>Your teacher taught <em>english</em>, not design. She didn’t have time or desire to show you how computers and software can be used to enhance meaning. There is no room for lessons in legibility. All your english teacher did was shrug and say,</p><blockquote><p>“That’s no my job.”</p></blockquote><p>Instead of a design lesson at the moment when we most needed it, we were taught something else. Design isn’t a tool that changes the world, it is just something that you do to satisfy the requirements of an authority figure.</p><p>Perhaps you found consolation in art class where there were fewer rules and regulations. In high school you become known as “the art guy.”</p><p>When it comes to picking a major you select design because it is the only thing on the course list that resembles an art class.</p><p><img src="https://adrian3.com/imgs/images/i-just-want-to-make-art-man2.webp"></p><p>In college you approach your design assignments just like any other class work. You look for shortcuts. Minimum effort, maximum output. The font-size and spacing scam you pulled in high school gets replaced by more nuanced fraud.</p><p>Stuck on a blank screen?  <em>Download a pre-designed template.</em></p><p>Building a website?  <em>Modify a Wordpress theme.</em></p><p>Need an original design?  <em>Just alter something from Dribbble.</em></p><p>And what about the text? What about the actual meaning of the work you are creating?</p><p><em>Doesn’t matter.</em></p><p>Just flow in lorem ipsum. As long as it looks “clean and simple” you get a passing grade. After all, you want to “just make art, man.”</p><p>You graduate with a portfolio full of fake work that carries a whiff of stench beneath the glossy crust. Somehow you have become a designer without ever wrestling with the <a href="https://en.wikipedia.org/wiki/Visual_design_elements_and_principles">principles of design</a>.</p><p>You call yourself a designer, but the reality is you are just a stylist. What’s the difference anyway? If the knowledge isn’t taught, it doesn’t exist.</p><p>In this alternate reality there are no design principles. Design is art, a ruleless practice that bends and sways based on the whims of style and personal taste. You create the art and let the “real work” get done by other specialists.</p><p>In the professional world the role of teacher is reprised by our clients. They give us assignments, we read over the specifications, then we go back to our desks and peck out a solution. We turn in our assignments and hope that we didn’t misspell any words or overlook any job requirements.</p><p>So we end up in an ugly reality where the designer’s voice is stifled because we have nothing but style to defend our recommendations. We wash our hands of responsibility for the things that we should be transforming.   <em>Poor user experience?</em>  “Um no, we call it a minimum viable product.”</p><p><em>Buggy software?</em>  “No, we are embracing a philosophy of iteration.”</p><p><em>Intrusive ads?</em>  “You won’t believe the conversion rates.”</p><p><em>Inhuman writing?</em>  “Heck no, that is SEO value.”</p><p><em>Visual clutter?</em>  “No, it is part of a split testing strategy.”</p><p><em>The product is garbage?</em>  “The data doesn’t support that hypothesis.”</p><p>What’s the role of the designer again? Don’t ask me. I just want to create art, man. And yet how can we sit on the sidelines and pretend designers aren’t to blame when we look around and see ugliness everywhere? If we don’t fix it who will?</p><p>But here’s the thing about the interpretation of reality I wrote about today. Whether you view yourself as a helpless stylist or a trusted creative partner isn’t up to me. You have your own <a href="2016-09-17-becoming-bobblehead-buddha.html">pattern recognition machine</a> that let’s you decide how involved you want to be in making the world better.</p><p>I hope you reject the stylist role. We need more designers.</p><p>Thanks for reading. More like this next week, so follow me so you don’t miss out. And if you are new to my ramblings, you might want to check out <a href="https://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">my book about the design apocalypse</a>. You’ll like it. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Designing Observability — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html">Resume</a></li></ul></div>
+<article class="case-study-shell">
+  <div class="case-study-inner">
+    <h1>Designing Observability: UX Leadership at OpenText</h1><p><strong>Role:</strong> Senior UX Designer, OpenText (formerly Micro Focus)<br><strong>When:</strong> 2022–2026<br><strong>Focus:</strong> OpScope — observability for IT teams and Site Reliability Engineers</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/01-service-map.png" alt="A data-dense OpScope service map — a network graph of interconnected microservices, color-coded by health, used to trace problems across a live system."></p><h2>Introduction</h2><p>At OpenText I led the user experience for <strong>OpScope</strong>, a new observability product that helps IT professionals understand the health and performance of complex software systems. The work began under Micro Focus and continued after OpenText’s acquisition. But the part I’m proudest of isn’t a single screen — it’s the <em>leadership</em>: setting the UX strategy, defining who we were designing for, running the research that grounded our decisions, and producing the design “blueprints” that other teams built from. This case study is that story.</p><h2>1. Thought Leadership: Why Observability?</h2><h3>Setting a strategy the whole org could rally behind</h3><p>Observability is a crowded, jargon-heavy space, so before designing screens I worked to align the organization on <em>why</em> we were building this and <em>what</em> great would look like. I framed the core problem with the old parable of the blind men and the elephant: every tool sees one part of system health — the application, the infrastructure, the network — but nobody sees the whole animal. True observability means seeing the complete picture.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/02-why-observability.png" alt="A strategy slide framing the problem as the blind-men-and-the-elephant — different roles each perceive only part of a system’s health."></p><p>From that I set a deliberately audacious north-star goal: <em>anyone, regardless of their role, should be able to understand their system’s health within two clicks.</em> And I gave the strategy a mental model the team could design against — <strong>lenses, or layers</strong> — treating Application, Infrastructure, and Network as interdependent sub-systems (much like the body’s nervous and circulatory systems) that you inspect through different lenses but diagnose together.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/03-lenses.png" alt="The “lenses” concept — Application, Infrastructure, and Network as three inspection lenses onto one interdependent system."></p><h2>2. Knowing the User: The SRE Persona</h2><h3>Designing for an emerging role</h3><p>Observability is the domain of the <strong>Site Reliability Engineer (SRE)</strong> — a relatively new role built around modern practices like Open Telemetry. OpenText already had user personas, but they were rooted in legacy IT-management patterns. Because OpScope was betting on where the industry was <em>going</em>, I created a new, living SRE persona — built from interviews, empathy mapping, and a running list of the jobs, pains, and gains of the people doing this work — and made it the reference point for who we were designing for.</p><p>The work started from a clear hypothesis: <strong>the audience for an observability product is fundamentally different from the classic ITOps personas the company already had.</strong> Software had moved from monolithic applications to distributed microservices, which created a new problem — how do you measure the health of a system when its performance is scattered across dozens of services? Open Telemetry emerged as the technology to answer that, and the SRE emerged as the role. As Google’s Ben Treynor defined it, site reliability engineering is “what happens when you treat operations as a software problem and staff it with software engineers.” It’s Conway’s Law in action: new system architectures give rise to new kinds of teams — and new users to design for.</p><p>I gave the persona a name and a face — <strong>Sam</strong> — so the whole team could stop saying “the user” and start asking a sharper question: <em>what would Sam need here?</em></p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/09-sre-persona.png" alt="The SRE persona one-pager: Sam, with his description, pain points, motivations, typical tools, and the roles he interacts with."></p><p>Sam is a former developer whose role expanded into keeping revenue-critical systems running — the organization’s subject-matter expert on Open Telemetry, and the first person called when software breaks. He’s an early adopter who never wants to go back to the “monolithic” days, still thinks like a developer who cares about well-written code, and lives in tools like DataDog. The research also surfaced the pains that define his days — <strong>alert fatigue, complex and unintuitive tools, legacy systems and tech debt, organizational silos, and the ambiguity of diagnosing problems no one has seen before</strong> — all compounded by how new and fast-moving the SRE discipline still is. Capturing those pains, motivations, and tools in one shared artifact gave every designer, PM, and engineer the same mental model of exactly who we were serving.</p><p>I paired the persona with hypothesis-driven research, writing up emerging use cases (traces with thousands of spans, monolithic vs. microservice applications, database insights, auto-discovery) as testable hypotheses so the team designed for real, anticipated needs rather than assumptions.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/07-use-case-research.png" alt="A research slide stating a new-use-case hypothesis — “Traces with thousands of spans” — with what it means and design recommendations."></p><h2>3. Usability Testing at OpenText World</h2><h3>Three years of research at the Innovation Lab</h3><p>For three years running, I was part of the UX team that ran an <strong>Innovation Lab at OpenText World in Las Vegas</strong> — moderated usability testing with real customers during the company’s biggest annual event. It’s the largest, most organized research effort I’ve been part of: scripted tests, careful data capture, and findings formally presented to product teams afterward.</p><p>The 2023 lab was a clinic in why you test with real users. My seven participants spanned the real ITOps landscape — performance and principal engineers, an AiOps manager, an IT manager, an OpenText architect — and they handed me findings no internal review would have surfaced:</p><ul><li><strong>A persona reality check.</strong> Almost none were yet working as SREs or familiar with Open Telemetry. The market was earlier than we’d assumed, which reframed a design problem as an <em>onboarding</em> one: the app expected users to arrive already fluent in Otel, and most didn’t.</li><li><strong>A branding disconnect.</strong> Users came looking for “OpScope,” but the interface said “Operations Bridge” — one even tried to <em>search</em> for OpScope to be sure he was in the right place.</li><li><strong>A 100% failure rate.</strong> Not a single participant could find the Event Summary page, hidden behind a “squiggly arrow” icon nobody recognized — a problem leadership suspected but the test made undeniable.</li></ul><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/08-usability-findings.png" alt="A 2023 Innovation Lab findings slide on dashboards and workflows, with verbatim quotes — “I don’t like fluff.” — Richard Low, IT Manager — beside the screen being evaluated."></p><p>The value wasn’t just the bug list — it was returning with data <em>and</em> stories. When an IT manager says “I don’t like fluff” and an architect says the homepage “looks like a business screen talking about different products,” you have something that moves a roadmap in a way no backlog ticket can. (Tellingly, even with a documented 100% failure rate, the Event Summary fix lost its PI-planning priority battle — research gives you ammunition, but you still have to fight for the work.)</p><h2>4. Competitive Research</h2><h3>Bringing order to navigation</h3><p>Navigation is the hardest information-architecture problem in observability, because these products sprawl. I ran a competitive analysis of how the leaders — Datadog, New Relic, Dynatrace — and our own Operations Bridge structured their navigation, and concluded that <em>nobody</em> was doing it well: huge item counts, deep nesting, confusing labels.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/04-competitive-nav.png" alt="A side-by-side comparison of the navigation menus of Datadog, New Relic, Dynatrace, and OpenText Operations Bridge."></p><p>To bring order to it, I created a taxonomy of navigation entry types — primitive objects, product objects, domains, and actions — so the team could reason about the menu systematically instead of bolting on links ad hoc.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/05-nav-taxonomy.png" alt="A navigation taxonomy color-coding menu entries into Primitive Objects, Product Objects, Domains, and Actions."></p><h2>5. Design Blueprints and Data-Dense Interfaces</h2><h3>A north star teams could build from</h3><p>To turn all of this — strategy, persona, research — into shippable product, I produced detailed UX <strong>blueprints</strong>: comprehensive, high-fidelity designs that product and engineering teams used as the north star for development. They covered the hardest part of observability UX: making <em>data-dense</em> interfaces legible. Observability throws a flood of telemetry at the user, and the job is to turn that flood into status at a glance — the service map at the top of this case study, dashboards that surface red/yellow/green health, and detail views that let an engineer drill from a symptom down to its cause.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/06-dashboard.png" alt="An OpScope observability dashboard concept — Application, Infrastructure, and Network views with health gauges, trend charts, and event summaries."></p><h2>6. A Design Language for the Product: OpenSpace</h2><h3>Giving the work a consistent, modern skin</h3><p>Blueprints define <em>what</em> to build; a design language defines how it should <em>feel</em>. So I developed a visual system — internally codenamed <strong>JATO</strong> and presented as <strong>”OpenSpace”</strong> — to unify OpScope (and OpenText products beyond it) under one modern, confident look. The principles were deliberately restrained: <strong>vibrant color used sparingly, motion and animation as a brand element, clear and beautiful data visualization, and elegant typography in service of intentional simplicity.</strong> I gave it an aviation-inspired signature — a recurring <strong>10° angle</strong> and “Aviator” interaction patterns — so the brand showed up in the details, not just the logo.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/10-openspace-data-screens.jpg" alt="OpenSpace data screens — polished product dashboards in the new design language: a “Core DevOps Management” view with status metrics and charts beside a “Core Content Services” home screen with a colorful health gauge and recent activity."></p><p>Crucially, the system shipped in both <strong>light and dark mode</strong> — I championed dark mode into the corporate design system, which matters for SREs who live in these tools during late-night incidents — and it carried a forward-looking <strong>”Aviator Insights” AI assistant</strong> for surfacing answers in context. It was the layer that made the strategy, persona, and research feel like one coherent, shippable product rather than a stack of documents.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/11-openspace-dark-mode.jpg" alt="The OpenSpace design language shown across multiple product screens in light and dark mode, including an “Aviator Insights” AI assistant panel."></p><h2>7. Innovation: A War Room in VR, and Health You Can Fly Through</h2><h3>Betting on where observability is going</h3><p>OpenText runs an annual innovation hackathon called <strong>Innofest</strong>, and my team carried a single idea through two of them. The question was simple and ambitious: what if the invisible health of a complex system became a <em>place</em> you could see and move through?</p><p>In <strong>2022</strong> we built a <strong>VR proof of concept</strong> — a virtual “ops war room” where a distributed team could gather during a 2 AM outage and troubleshoot system health together in a shared space. The following year we refined the concept and grounded it in real systems: the headset-first vision gave way to an interactive <strong>3D force-graph</strong> of service dependencies — health you could read at a glance and fly through — paired with a <strong>”Network Aviator” AI assistant</strong> for asking questions in plain language. The work earned recognition at Innofest two years running.</p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/12-innofest-evolution.jpg" alt="A concept board showing the project’s maturity progression — from a 2D service-dependency graph (MVP) to dark mode, to a 3D motion graph, to a “Network Aviator” ChatGPT assistant, to a virtual-reality experience — labeled Basic Implementation → Additional Complexity → Emerging New Patterns."></p><p><img src="https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/13-innofest-vr.jpg" alt="The “OpenText VR — Data Visualization Experience”: a person in a VR headset reaching out to manipulate floating data panels (Vertica, Magellan) against a dark, branded backdrop."></p><p>It’s the same conviction that runs through the rest of this work, aimed a few years downfield: take the dense, overwhelming reality of a live system and make it something a human can see, navigate, and trust.</p><p>That push toward AI/ML also surfaced the UX problem I care about most. Working with our data scientists, I kept returning to one principle: <strong>trust is the primary driver of good UX in AI/ML products.</strong> A model can flag an anomaly, but if the user can’t see <em>why</em> it’s anomalous, they’re left to fact-check and babysit the AI — and a tool meant to <em>reduce</em> work quietly creates more of it. It’s the same conviction behind <a href="Nutrien-Max-Case-Study.html">Max at Nutrien</a>, now pointed at observability: the intelligence may live in the model, but trust is won or lost in the interface.</p><h2>Conclusion</h2><p>Leading UX for OpScope meant operating at every altitude at once: the strategic (“why observability, and what’s our audacious goal?”), the foundational (who is the SRE, and what do they actually need?), the empirical (three years of testing with real customers), and the concrete (blueprints and a design language detailed enough to build from). The thread connecting all of it was the same instinct that runs through my whole career — take something dense and overwhelming, understand the human on the other side of it, and make it clear.</p>
+  </div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

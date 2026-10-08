@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 8 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Zugzwang and Kintsugi</h1><blockquote><p><em>”Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.”</em> — Scott Adams</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter8.webp"></p><p>The previous chapter was violent, and perhaps expected in a zombie-themed book. In certain situations, aggression might be warranted, but the focus of our energy should be on creating art, rather than destroying opposition to it. A human has a limited amount of energy. Being efficient with our attention increases the potency of our actions.</p><p>By forfeiting the press coverage that more bloody encounters may attract, deliberate avoidance of tempting distractions will repay us with more productive output. This approach is similar to chess in that it makes for a dull spectator sport to all but the most dedicated fans. Not all chess games are boring, however. Certain legendary encounters go down in history with nicknames like, “The Immortal Game” or “The Evergreen Game.” The annotation of noteworthy games are sprinkled with exclamation marks that seem out of place. Certain moves are so outrageous that the commentators can’t resist using double punctuation marks of exuberance. I find it inspiring that even in a centuries old game, a game so explicitly defined by rules, that it is still possible to cause delight and surprise in observers.</p><p><img src="https://adrian3.com/imgs/aotld/chess-game.webp" alt="17.Nf6+ !! This game between Adolf Anderssen and Jean Dufresne in 1852  is nicknamed the “Evergreen Game” because with this sacrifice Anderssen forces checkmate in 14 moves."></p><p>Great chess players have something merely good players lack. What is it that these chess players possess that allows them to produce art in a game notorious for being boring? Most people think it involves being able to see more moves ahead than the opponent. That’s not the difference. The secret is that great players make more wrong moves than their opponents. They are able to entertain wrong moves longer than their opponents and see where tradition, training, and experience fails. In other words, they don’t rely on shortcuts. Traditional chess skills are built around shortcuts because, like so many aspects of life involving pattern recognition, it is easier to follow simple rules than to create new ideas. Chess students memorize openings, practice combinations, make calculated exchanges, and learn to recognize the tiniest advantages in positions.</p><p>Once you learn these shortcuts, the playing field is level. At the highest levels of chess play, every player can make the correct moves, by the book, selecting the school of thought that best suits the position. They have all memorized the patterns and can process the game data correctly. How do you move ahead in an even playing field? The answer is not to keep making correct moves, the market is cornered in regard to correct moves. The answer is the opposite. A great chess player spends more energy studying the “wrong” moves because brilliance doesn’t exist in the well-worn path of tradition, but in the uncharted territory of error.</p><p>The reason the majority of chess games are so excruciatingly boring is because most don’t end in victory, but in a draw. The games cling to tradition and lurch along predictably until you run out of pieces and the game ends exactly like it started – dead even. Stalemate.</p><p>You might not play chess, but can you relate to this analogy as it applies to your professional life? Careers are built on a simple set of rules. You start out with a basic understanding of the various pieces and through practice you get better at navigating the squares, using the strengths of your position to win material gains. You make calculated sacrifices. You have some big wins and suffer devastating losses. Then you get to a point where it seems that every day begins and ends in stalemate. You are going through the motions. You do the right thing, make the suggested moves, and recite canonical knowledge, but you are no longer making progress.</p><p>In chess, and I would suggest also in life, brilliance occurs not by following the established formulas precisely, but by knowing when it is imperative to break the rules. Great work is unorthodox. Success is not about finding the recommended square to place your piece. The winners are the people who are willing to spend longer wrestling with seemingly bad options. Amazing only happens when canonical knowledge is abandoned in favor of a decision to do something that everyone else in the world would agree is wrong. In order to make a move that goes against everything you have ever been taught is a rare achievement that takes real courage.</p><p>The reason computers beat humans at chess is because we cling to our shortcuts. A computer doesn’t have to worry about breaking from tradition, it just plows through massive amounts of data analyzing every move without bias. The bandwidth of the human brain is limited, so we must rely on our flawed patterns, familiar theories, and limited personal experience out of necessity. Breaking this tradition carries a huge burden because the stakes are so high. When playing a computer you can’t risk an unorthodox move because you don’t have the processing power required to guarantee that your move is sound. If you lose after making a “correct” move you are forgiven, but if you lose by making an intentionally unorthodox decision, the punishment will be twice as painful. In addition to the normal shame of losing, your failure will be marked by an asterisk that notes your mistake as being avoidable. Most players choose the comfort of a draw over the risk of loss as a result of breaking the rules.</p><p>Risk aversion cripples our courage. Instead of daring, thrilling duals, our encounters are timid and uncontroversial. While we rarely run into catastrophic mistakes, we also rarely encounter amazing victories. Our days are filled with mundane, uninspiring, unexciting routines. We know that tomorrow will be pretty much like yesterday and we like it that way. We prefer the predictability of stalemate to the risk of personal loss.</p><p>What can we do to train ourselves to identify the difference between bad moves and moves that just look bad but prove to be correct in the end? It can be tempting to rely on our access to infinite computing power as a substitute for mental strain. The stats and research that can be so reassuring too often ends up being flawed. We are so used to trusting our machines that we stop questioning conventional wisdom. We need to learn to be open to ideas that seem wrong. We need to train ourselves that the uncomfortable feeling that accompanies a new idea is not the danger, the danger is not learning everything we can from the new ideas.</p><p><img src="https://adrian3.com/imgs/aotld/chess-zugzwang.webp" alt="It is black’s turn, therefore black is in zugzwang because any move results in a losing position."></p><p>Are you familiar with the term “zugzwang”? This word describes a chess situation where you are forced to move even though any movement will weaken your position. It doesn’t happen very often because there is almost always <em>something</em> you can do to improve your position. When caught in zugzwang it would be better if you could skip your turn and keep things as they are. Unfortunately, the rules of chess dictate that you must move, so your only option is to fall on your own sword.</p><p>The trap of zugzwang and the idea that doing nothing could be better than doing something is counterintuitive. Could the zombie apocalypse reflect a state of self-imposed zugzwang? As the world spins around us in perpetual movement, we feel pressure to keep moving, too. Rather than maintain our position and recharge our dignity, we push forward. Instead of pausing for reflection, we jump in head first and go, go, go. When we trip and fall on our swords, the failure comes as a shock. Why couldn’t we see this coming?</p><p>Life isn’t a chess game where you are required to move your pieces. We forget that doing nothing is a legitimate option. Abstaining might be exactly what we need. If we intentionally choose to do nothing, it feels uncomfortable because we are addicted to momentum. How long could you sit at your desk in silent contemplation without producing something? When was the last time you forced yourself to concentrate on nothing? How long could you resist before indulging the urge to plug back in to the devices that ping us constantly?</p><p>We have become dependent on the buzz of constant connectedness. Being surrounded by constant motion produces an illusion that we are actually doing something meaningful. Silence makes us uncomfortable. Stopping seems like an unthinkable strategy for success. Are we our own worst enemy, always overfilling our schedules, always promising more than we can deliver, and never saying no?</p><p>We are rarely in situations where we absolutely have to do something, but we forget that inaction is an option. We <em>can</em> find the time to isolate ourselves from distraction. We <em>can</em> tell our spouse, boss, and friends “no.” We <em>can</em> reduce our workload so we can focus on what is really important. Be decisive and stop allowing yourself to get forced into action.</p><p>In our hyper-competitive society it seems foreign to use a non-strategy like skipping our turn. Victory typically gets framed in terms of inflicting damage on your opponent, but there is something very elegant about winning through pacifism. Instead of praising the silent winners, the people who get the attention are the ones who defeat their opponents as graphically as possible. Why exert energy if your enemy is caught in zugzwang? Let him fail on his own, and conserve your energy for when you can inflict maximum impact with minimal effort. Zugzwang won’t make headlines, but it’s refreshing to think of someone with so much skill that she wins by simply forcing her opponent to make a move – any move.</p><p>Once we manage to escape zugzwang, when our minds have absolved themselves from the pressures of our surroundings, a sense of purpose will arise. The tasks we face are not battles against external forces, they are an opportunity to bring beauty and meaning to our lives. Mistakes are not something to avoid, they are opportunities for growth. They are paths far more fertile than the paths exhausted by conformity.</p><p>In Japan there is an art called Kintsugi. It is the art of repairing broken pottery. The tradition is that broken pots are not discarded, rather the cracks are filled with gold resin. Instead of being seen as flaws that should be hidden, the fault lines of the vessel are emphasized, celebrated, and immortalized with precious metals. The pieces are more beautiful for having been broken.</p><p><img src="https://adrian3.com/imgs/aotld/kintsugi.webp" alt="An example of Kintsugi (golden repair)"></p><p>Value is not a process of mass-producing flawless clones, but the experience of exploring the rough-edges of failure. Here, where the damage produces scars, we typically obscure the mistakes, or discard the experience all together. These veins of weakness are not flaws, they are opportunities for beauty.</p><p>We often confuse meaningful work with glamorous jobs. We wrongly assume that mundane tasks can’t be done with pride and craftsmanship. We desperately hide our weaknesses, avoid mistakes, and never discover our true potential. The selves we project are polished and retouched, never hinting at the wreckage that exists just below the tight skin.</p><p>We all do this and the result is a hyper-realistic world that isn’t real. It is an illusion. This uncanny valley is filled with cartoon versions of people we think we know. It is so close to being real that it’s creepy. You can’t put your finger on what exactly is wrong with the picture. Every surface is so perfectly polished that you can’t find perspective. You can’t see the flaws, and that’s the problem. When everything gets polished beyond realism, the landscape no longer rings true.</p><p>As we navigate the zombie apocalypse we have to be careful of aiming for utopia. In movies we have the luxury of being able to identify zombies by their grotesque bodies. In our apocalypse, the enemy isn’t a disfigured monster, and the heroes aren’t flawless, unbroken vessels. Victory won’t come from indulging in violent abolition of flaws, the journey requires patiently filling the cracks of failure with the gold of authentic work. As we get better at assigning value to things that are truly authentic, perhaps we can break our addiction to the shortcuts that cause us to misvalue objects in the first place.</p><p><a href="chapter9.html">Chapter 9. Shortcut Addiction</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

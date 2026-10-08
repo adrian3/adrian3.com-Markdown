@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Boston Marathon Data Analysis, Part 1 — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Running</p>
+		<h1>Boston Marathon Data Analysis, Part 1</h1>
+		<small>January 20, 2019</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>Boston Marathon Data Analysis, Part 1</h1><h2>Women, men, young, and old: What can we learn from the data about how to qualify for Boston?</h2><hr><p><em>This is my first story in a new series focusing on the Boston Marathon. This is a bit of a departure from my normal themes of design and creativity, but if you look closely those ideas will still probably break through at points. Let’s get to it…</em></p><hr><p>Every time I line up at the start of a marathon I am amazed by the diversity of humans I see. Running is truly a sport for all shapes, sizes, and varieties of people. While the top finishers steal the headlines, the real story to me is the thousands of runners who finish behind the winners. If you dig into the data of the thousands of runners who conquer Boston, what kind of themes will emerge? That is what this series hopes to uncover.</p><p>The Boston Marathon is the perfect race to mine for data. Its high profile, strict qualification standards, and long history of results make it a juicy target for analysis. As a recent qualifier, I have been on a mission to learn as much as I can about the race and share the fruits of my research with you. For the first part of this series I am digging into the data around age, gender, and the standards around qualification for the big race.</p><h2>Who gets in and who gets rejected?</h2><p>Boston is notoriously hard to get into. Participation is capped at 30,000 runners with more than 20% reserved for special invitations and charity programs. That leaves about 23,000 spots up for grabs for anyone who can meet the qualification standards. If you know anyone who has tried to earn their “BQ” you can know how much work goes into achieving a qualifying time. The chart below shows the times needed to qualify for Boston from 2013–2019.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-2013-2019-qualifying-times.webp"></p><p>Adding to the difficulty of securing a spot at Boston’s starting line is the fact that so many people want to participate. There aren’t nearly enough open spots to satisfy the amount of people who qualify and apply. That puts the B.A.A in the unfortunate position of having to turn runners away. In 2019, Boston rejected 7,384 runners who had qualified based on their times. That is a rejection rate of nearly 1 in 4 and an increase of 2,200 from 2018.</p><p><img src="https://adrian3.com/imgs/images/boston/accepted-rejected-2019.webp"></p><p>Nearly 1 in 4 athletes who qualify for Boston were rejected in 2019<br>The rule of thumb has been that if you want to be sure you can get in to Boston you should aim to beat your qualifying time by 5 minutes. This advice got thinner and thinner until in 2019 the cutoff time was 4:52.</p><h2>Cutoff Times:</h2><p>2014: You needed to beat your qualifying time by 1 minute, 38 seconds<br><em>2,976 people turned away</em></p><p>2015: You needed to beat your qualifying time by1 minute, 2 seconds<br><em>1,947 people turned away</em></p><p>2016: You needed to beat your qualifying time by 2 minutes, 28 seconds<br><em>4,562 people turned away</em></p><p>2017: You needed to beat your qualifying time by 2 minutes, 9 seconds<br><em>2,957 people turned away</em></p><p>2018: You needed to beat your qualifying time by 3 minutes, 23 seconds<br><em>5,062 people turned away</em></p><p>2019: You needed to beat your qualifying time by 4 minutes, 52 seconds<br><em>7,248 people turned away</em></p><p><img src="https://adrian3.com/imgs/images/boston/turned-away-cutoff-times.webp"></p><h2>New Standards in 2020</h2><p>In response to the increasing number of people applying for the race and to reduce the number of disappointed qualifiers, the B.A.A. adjusted their standards for 2020. The field size remains at 30,000 but the times needed to qualify has increased by 5 minutes for all age groups. Below is a chart showing the new qualifying standards.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-2020-qualifying-times.webp"></p><h2>What do the new standards mean for runners?</h2><p>Although an increase of 5:00 might seem disheartening to runners hoping to qualify, if you were already aiming to beat your qualifying time by 5 minutes, this probably won’t change your training or goals. Remember, just because the standards have changed doesn’t mean there will be thousands of runners who are running faster. <em>It is likely that the biggest impact of the standards change is just a reduction in the number of rejection letters that get sent out</em>.</p><h2>Here is the breakdown of how people got in to the Boston Marathon in 2019:</h2><ul><li>18% (5,256) beat the qualifying time by 20 minutes or more</li><li>29% (8,620) beat the qualifying time by 10–20 minutes</li><li>29% (8,545) beat the qualifying time by 5–10 minutes</li><li>1% (220) beat the qualifying time by less than 5 minutes</li><li>22% (6,656) were invited by special invitation or through charities</li><li>1% (433) have run 10 or more consecutive Boston Marathons</li><li>1% (270) athletes were accepted with disabilities</li></ul><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-qualifier-types.webp"></p><h2>Age and Gender</h2><p>In a perfect world the distribution of runners would be spread equally across all ages and genders. But the world is a messy place and the B.A.A. does a commendable job of balancing the fairness of qualifying times with a mostly even distribution of runners across ages and gender. Over the last four years the race has consistently been 45% female and 55% male.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-gender-pie-chart.webp"><br><em>The field is consistently 45% female and 55% male</em></p><p>While the average age of a runner in the Boston Marathon is 42.5, that doesn’t tell the whole story. An interesting side effect separating the field into age groups is that it gives an advantage to runners on the younger side of the 5 year divisions. You have a much better chance of running a 3:35 as a 55 year old than running a 3:25 at 54 years old. This advantage comes through in the data. For example, in 2017 there were 651 runners age 44 compared to 1,127 who were 45. Notice in the graphs below that there are spikes at the start of every age group.</p><p><img src="https://adrian3.com/imgs/images/boston/age-distribution.webp"><br><em>The age distribution is remarkable consistent from year to year</em></p><p>At the extremes, the number of runners on the young side of an age group can double the number of runners on the older side of the spectrum. In 2018 there were 650 runners age 55 compared to 277 at age 59.</p><p>If you are a runner hoping to qualify for Boston you should definitely take advantage of the benefits of age groups if you can. If you are close to an age group jump, let that be added motivation for your training. Also, remember that your qualifying times are based on your age <em>on the day of the race</em>. That means that you can run your best race at age 34 and use the qualifying times for the 35–39 age group because that’s how old you will be on race day.</p><p>The largest demographic in the Boston Marathon by far is the female 18–34 group with 4,033 runners. The second largest group is the 18–34 male group with 2,984 runners. The 18–34 age groups are a 16 year spread while the other age groups are 5 years, so it makes sense that they will be large. Coming in third is the male 45-49 group with 2,540. The next closest group are males 40–44 with 1,932.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-age-group-gender-bar.webp"></p><p>If the chart above is redrawn as a line chart (see below) another interesting story emerges. Notice how the female trend drops off steadily as age increases. Males, meanwhile, rebound to age 45-49 before descending again.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-age-group-gender-line.webp"></p><p>What is happening here? It might be tempting to conclude that younger females and middle age men represent some sort of physical peak in performance. I it more likely that the reasons have as much to do as social pressures as they do with physical abilities.</p><p>Now that we have a clear picture of what the Boston marathon field looks like, what happens in the actual race? Below is the distribution of runners across the field.</p><p><img src="https://adrian3.com/imgs/images/boston/2018-finish-times-by-age-and-gender.webp"></p><p>This is basically what we would expect based on the abilities of the athletes from their qualifying times. The athlete clusters move up and to the right showing slowing as age increases. The 18-34 year old female cohort is also visible on the lower edge of the cloud.</p><p>The chart below shows the change in finish time distribution from year to year. While the clusters mostly remain consistent, 2018 shows a wider spread of runners. I suspect this is most likely a result of the weather since the conditions for the race were so difficult in 2018.</p><p><img src="https://adrian3.com/imgs/gifs/finish-times-by-age-and-gender.gif"></p><p>It is also interesting to see how many people land on the right side of the 4:00 finish time line. Huge numbers of people seem to be failing to hit their qualifying time on race day. Why might this be? And can the answer be revealed by the data? Stay tuned for Part 2 where I try to answer those questions and dig deeper into the story behind the data of the Boston Marathon.</p><hr><p><strong>About Me</strong><br>Thanks for reading. My name is Adrian Hanft. I am a runner from Colorado with a passion for data, design, and storytelling. You can follow my runs on <a href="https://www.strava.com/athletes/442364">Strava</a> and my writing here or on <a href="https://medium.com/@ade3">Medium</a>. If you enjoyed this analysis please share it with friends. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

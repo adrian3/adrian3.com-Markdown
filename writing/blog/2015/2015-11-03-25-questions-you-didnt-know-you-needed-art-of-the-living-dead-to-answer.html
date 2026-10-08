@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>25 Questions You Didn’t Know You Needed “Art of the Living Dead” to Answer — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Self Promotion</p>
+		<h1>25 Questions You Didn’t Know You Needed “Art of the Living Dead” to Answer</h1>
+		<small>November 3, 2015</small>
+	</header>
+	<div class="post-body reading-column">
+		<p><img src="https://adrian3.com/imgs/images/25-questions-you-didnt-know-you-needed-art-of-the-living-dead-to-answer.webp"></p><h1>25 Questions You Didn’t Know You Needed “Art of the Living Dead” to Answer</h1><h2>A starting point for anyone curious about reading a book about creativity and zombies</h2><ul><li><em> </em></li></ul><p>Soon every chapter of <em><a href="https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7?source=your-stories">Art of the Living Dead</a></em> will be available on Medium. You could start at the beginning and work your way through in chronological order. Or, I could disguise my table of contents as a list of challenging ideas that encourage you to jump in wherever the questions capture your curiosity. Up to you…</p><ul><li><em> </em></li></ul><p><strong><a href="https://medium.com/@ade3/why-zombies-b6bd5deb4ab4?source=your-stories">1\. Why Zombies?</a></strong><br>You and a few survivors are fighting for your lives and the world is against you. Can you relate to this metaphor? Will you survive, or die trying?</p><p><strong><a href="https://medium.com/@ade3/armageddon-143a2c57d32f?source=your-stories">2\. Armageddon</a></strong><br>There is no shortage of world-ending catastrophes threatening us daily. Could the answer be to change the definition of creativity?</p><p><strong><a href="https://medium.com/@ade3/the-birth-of-a-zombie-493bedc8da3f?source=your-stories">3\. The Birth of a Zombie</a></strong><br>Creativity comes so easily to children. Why do artistic children grow up to be useless adults?</p><p><strong><a href="https://medium.com/@ade3/learning-the-unteachable-66895d7260b2?source=your-stories">4\. Learning the Unteachable</a></strong><br>We could blame the education system, but what if the solution was trapped in our minds just waiting for the right teacher to unlock it?</p><p><strong><a href="https://medium.com/@ade3/the-historical-conquest-of-art-2845875f7da2?source=your-stories">5\. The Historical Conquest of Art</a></strong><br>What does it mean to be a creative individual living in a world where the term “art” has been bankrupted by centuries of misuse?</p><p><strong><a href="https://medium.com/@ade3/artifacts-of-thought-4991d6a33184?source=your-stories">6\. Artifacts of Thought</a></strong><br>What can objects tell us about their makers, and why would anyone want to subject themselves to the ridicule that new creations must endure?</p><p><strong><a href="https://medium.com/@ade3/infestation-and-eradication-5a294d79a69?source=your-stories">7\. Infestation and Eradication</a></strong><br>The corporate workplace is devastating to humanity. Sometimes don’t you just wish you could destroy it?</p><p><strong><a href="https://medium.com/@ade3/zugzwang-and-kintsugi-8661ac54d9ea?source=your-stories">8\. Zugzwang and Kintsugi</a></strong><br>What if victory didn’t require action? What if we honored our failure?</p><p><strong><a href="https://medium.com/@ade3/shortcut-addiction-9e7e8c622371?source=your-stories">9\. Shortcut Addiction</a></strong><br>Seemingly harmless shortcuts compound into catastrophic failures. Can we train ourselves to prevent mistakes that come from trusting our instincts?</p><p><strong><a href="https://medium.com/@ade3/the-taste-of-zombies-6f01712532fd?source=your-stories">10\. The Taste of Zombies</a></strong><br>We are bred to recognize brands. Could this basic human trait be used against us without us even noticing?</p><p><strong><a href="https://medium.com/@ade3/the-threat-of-creativity-8a5b19e47e94?source=your-stories">11\. The Threat of Creativity</a></strong><br>Why do the best ideas receive the greatest opposition? Why can’t good ideas survive the committee?</p><p><strong><a href="https://medium.com/@ade3/imposter-syndrome-760f7eab329f?source=your-stories">12\. Impostor Syndrome</a></strong><br>When it comes to doing meaningful work we are our own worst enemy. Can we win more of our internal battles?</p><p><strong><a href="https://medium.com/@ade3/zombies-don-t-cry-d8a92532dac7?source=your-stories">13\. Zombies Don’t Cry</a></strong><br>Emotion is a violation of our carefully regulated exteriors. What are the consequences of mastering the ability to conceal how we really feel?</p><p><strong><a href="https://medium.com/@ade3/magic-and-the-illusion-of-talent-1bfe391cc41b?source=your-stories">14\. Magic and the Illusion of Talent</a></strong><br>Spoiler, there is no such thing as magic. Or talent. Do these words damage ambition and prevent us from reaching our potential?</p><p><strong><a href="https://medium.com/@ade3/zombie-economics-e61fd99b5c4d?source=your-stories">15\. Zombie Economics</a></strong><br>The world used to be run by advertising swindlers, influence manipulators, infrastructure trolls, and spammers. If those formulas don’t work any more, what does?</p><p><strong><a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d?source=your-stories">16\. The Zombie-mobile</a></strong><br>What happens in the time between when the concept model captures the world’s imagination and when the production model ships with yawn-inducing reviews?</p><p><strong><a href="https://medium.com/@ade3/inside-or-out-767884695959?source=your-stories">17\. Inside or Out</a></strong><br>Are there artists working in zombie-infested companies? Is it possible to change an industry without insider leverage?</p><p><strong><a href="https://medium.com/@ade3/zombie-airlines-b4b43f06e171?source=your-stories">18\. Zombie Airlines</a></strong><br>What can we learn from the tragic story of an artist who was fired for defending the company he worked for?</p><p><strong><a href="https://medium.com/@ade3/zombies-in-flight-f0bd6c1c3ba4?source=your-stories">19\. Zombies in Flight</a></strong><br>Why did the Wright Brothers succeed and the people with the money, fame, and degrees fail?</p><p><strong><a href="https://medium.com/@ade3/bullet-holes-of-honor-6a9fb0ab2cd?source=your-stories">20\. Bullet Holes of Honor</a></strong><br>The success stories we recite have a fatal flaw. Are we blind to the actual lessons we should be learning about success?</p><p><strong>21\. <a href="https://medium.com/@ade3/ingredients-of-creativity-9f94cee9b3c0">Ingredients of Creativity</a></strong><br>The secrets of creative success are simple, but you aren’t going to like them. Why is the formula for creativity so counter-intuitive?</p><p><strong>22\. <a href="https://medium.com/@ade3/the-moon-rocket-man-c9d463b8a861">The Moon Rocket Man</a></strong><br>We say we want to be successful, but would you trade places with the man responsible for putting man in space? I doubt it.</p><p><strong>23\. <a href="https://medium.com/@ade3/origins-of-inspiration-b6588a662914#.68lcvrpwv">Origins of Inspiration</a></strong><br>True inspiration is overwhelming. Will you embrace it and let it destroy you? Can this wild animal be tamed?</p><p><strong>24\. <a href="https://medium.com/@ade3/success-turbulence-and-implosion-b555a9a9a079#.q7pxdu3f5">Success, Turbulence and Implosion</a></strong><br>Let’s say you succeed. What will you do when things inevitably go off the rails?</p><p><strong>25\. <a href="https://medium.com/@ade3/post-apocalypse-872d01ed4bd4#.arz5tmdbz">Post Apocalypse</a></strong><br>A final chapter and a final challenge. When you finish reading this will you be ready to keep fighting for your vision?</p><ul><li><em> </em></li></ul><p>If you have read this far, I have succeeded in writing the most interesting table of contents in the world. Thank you. Would you do me the honor of allowing me to keep writing for you? Followers, recommendations, and tweets (<a href="https://twitter.com/ade3">@ade3</a>) go a long way to encourage me to keep writing. Thanks, and <em>stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

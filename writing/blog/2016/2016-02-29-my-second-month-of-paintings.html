@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>My Second Month of Paintings — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Art</p>
+		<h1>My Second Month of Paintings</h1>
+		<small>February 29, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>My Second Month of Paintings</h1><h2>February, 2016</h2><ul><li><em> </em></li></ul><p>Since January 1, I have been posting one piece of art a day on <a href="https://www.instagram.com/ade3/">Instagram (@ade3)</a> and <a href="http://ade3.tumblr.com">Tumblr</a>. Follow me if you want to keep up with this ongoing project. I will let the art speak for itself, but if you want the back story, scroll to the end. And if you missed my first post you might want to start there.</p><p><strong><a href="https://medium.com/p/7542a1bb7e75">Month 1 of Daily Art</a></strong><br><strong><a href="2016-04-05-month-3-of-daily-art.html">Month 3 of Daily Art</a></strong></p><ul><li><em> </em></li></ul><h4>Theme 1: Skulls</h4><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings.webp"></p><p>Day 32</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings2.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings3.webp"></p><p>Days 33–34</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings4.webp"></p><p>Day 35</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings5.webp"></p><p>Day 36</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings6.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings7.webp"></p><p>Days 37–38</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings8.webp"></p><p>Day 39</p><ul><li><em> </em></li></ul><h4>Theme 2: Art Show Remix</h4><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings9.webp"></p><p>Day 40</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings10.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings11.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings12.webp"></p><p>Days 41–43</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings13.webp"></p><p>Day 44</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings14.webp"></p><p>Day 45</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings15.webp"></p><p>Day 46</p><ul><li><em> </em></li></ul><h4>Theme 3: BMW</h4><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings16.webp"></p><p>Day 47</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings17.webp"></p><p>Day 48</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings18.webp"></p><p>Day 49</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings19.webp"></p><p>Day 50</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings20.webp"></p><p>Day 51</p><ul><li><em> </em></li></ul><h4>Theme 4: Compass</h4><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings21.webp"></p><p>Day 52</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings22.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings23.webp"></p><p>Days 53–54</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings24.webp"></p><p>Day 55</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings25.webp"></p><p>Day 56</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings26.webp"></p><p>Day 57</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings27.webp"></p><p>Day 58</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings28.webp"></p><p>Day 59</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings29.webp"></p><p>Day 60</p><ul><li><em> </em></li></ul><h3>The Back Story…</h3><p>As I explained in <a href="2016-01-31-the-first-31-paintings-of-2016.html">my first post</a>, the goal of my painting-a-day project is to develop some themes from the chaotic archives of unfinished work in my basement studio.</p><p>The first theme for February was skulls. I found a series of line drawings of skulls that I did some time around 1999 and I wanted to mash them up with my collage/textural technique. I was nervous that these would dip too deeply into trite territory, but I think I managed to put a new spin on an overused symbol. Watch for more skull art from me later this year.</p><p>The second theme of the month was remixing imagery from the promotion of my senior art show from 2001.</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings30.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings31.webp"></p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings32.webp"><br><em>Artifacts from my 2001 senior show: poster, invitation, and semi-graffiti</em></p><p>To raise interest in my ary show I went around our campus screen printing my posters directly on the buildings. It was basically graffiti, and in hindsight I was probably lucky I didn’t get in more trouble. I was asked to remove the paint from the buildings and get official approval before promoting my show any further.</p><p>Once I removed the graffiti I set out to print some less controversial posters. Instead of printing on white paper, I used an assortment of wallpaper as the base layer of my prints. The design of my poster contained cropped images of the source imagery used in my paintings. You might recognize the lilies and spider flower from <a href="2016-01-31-the-first-31-paintings-of-2016.html">last month</a>.</p><p>The other promotion for my show was invitations. I created 100 small pieces of art in my collage/painting style. I printed the invitation on semi-transparent vellum paper and folded it over the individually numbered pieces of art. Here is a short video showing what the result looked like.</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings33.webp" alt="Aufdemberge (on the mountain)"></p><p>One image on the poster, which you can see most clearly on day 44, is a silhouette of my cousin standing on top of a mountain. I took the photo on a backpacking trip in the Rocky Mountains. He is a man I have admired my entire life and his heroic stance pretty much sums up how I have always viewed him. His last name is Aufdemberge which is German for “on the mountain.” Being a part of the Aufdemberge family has shaped me as much as anything else and our annual campouts are always a highlight of my year.</p><p>The third theme I explored this month was a BMW badge from a photo I took of a Z3. It is one of the first images I ever burned into a silkscreen. Day 50 shows a print I made in 1998. I remember being exhilarated by the technique of using a squeegee to pull paint through a screen. At the time I didn’t know how central to my work this technique would become. As far as the symbolism, I have always been a car guy. Check out <a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d#.hgi4n11f7">The Zombie Mobile</a> for more of my thoughts on automobiles.</p><p><img src="https://adrian3.com/imgs/images/my-second-month-of-paintings34.webp"></p><p>The final theme of the month comes from an image of a compass. This is a newer image that I haven’t exhibited yet. The actual compass in the picture, however, is something I’ve had since I was a boyscout. It was a gift from my dad, and aside from my swiss army knife, it was one of the most prized possessions of my youth. Symbolically it works in my art because it hints at ideas of direction and goals. It also connects with some of my newer work (which I haven’t posted yet) that uses maps.</p><ul><li><em> </em></li></ul><p>That sums it up for February. Thanks for reading. Remember to follow me on <a href="https://www.instagram.com/ade3/">Instagram (@ade3)</a> or <a href="http://ade3.tumblr.com">Tumblr</a> if you want to see my daily art. I will make another post like this next month to show the next 30 paintings. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

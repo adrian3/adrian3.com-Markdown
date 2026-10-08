@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 9 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Shortcut Addiction</h1><blockquote><p><em>”I conceive that the great part of the miseries of mankind are brought upon them by false estimates they have made of the value of things.”</em> — Benjamin Franklin</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter9.webp"></p><p>Squeak. Creeeeeek. Squeak.</p><p>It was a beautiful wood floor aside from the one squeaky spot in the middle. It drove the homeowner crazy. Finally, he called a craftsman. The craftsman said that for $100 he could fix the squeak. The homeowner gladly agreed.</p><p>The craftsman walked across the floor several times, applying pressure to different boards. Then he pulled a single nail out of his pocket and hammered it into a precise point on the floorboard. The squeak was gone. “That will be $100,” said the craftsman.</p><p>The homeowner was stunned and replied, “I am not paying $100 for a single nail!”</p><p>The craftsman replied, “The nail only cost $0.15. Knowing where to put that nail is worth $99.85.”</p><p>There is a similar story about Pablo Picasso who was asked by a fan to sketch her portrait. Picasso obliged and captured her essence with a single pencil stroke. She was amazed and asked, “What do I owe you?”</p><p>Picasso replied, “Five thousand dollars.”</p><p>The woman was stunned. “How could you want so much money? It only took you a second to draw!”</p><p>Picasso replied, “Madame, it took me my entire life.”</p><p>Humans are terrible at measuring the value of things. We look for shortcuts. The most common mistakes result from assigning value to materials and failing to account for the value of expertise. We assign the value to the nail, not the skill of the craftsman. We assign value to the time it takes to do a task rather than the mastery of the craftsman.</p><p>Nearly every professional has an hourly rate. Depending on how highly we value our skills and how much demand there is for our services, the rate we choose can be affordable or outrageously high compared to competitors. Billing hourly puts you on a level playing field with everyone else in your category. If you want work more you simply lower your rate. If you can earn a reputation for excellence you can survive with a rate higher than your competitors because people will seek you out.</p><p>We tend to look at a person’s hourly rate to assess the value of someone’s work. It is a shortcut that bypasses the difficult task of measuring the skill level of the worker. This is an invitation for zombies to over charge and under deliver. Billing hourly leaves no room for art. It forces a schedule on something that can’t be measured in chunks of time. When time expires before we are finished we are forced to ship mediocre work. When we finish early it puts pressure to either discount our art or exaggerate the effort we put into it. The shortcut of hourly rates fails us.</p><p>Another place where we commonly miscalculate the value of expertise is with tools. The zombie brain loves expensive tools. We would rather spend money on better tools than invest the time required to master our old but adequate equipment. The trap is believing that if you can purchase tools that compensate for your lack of skill then you can save the time that it would take to master the craft.</p><p>Tool shortcuts also fool onlookers who have been primed to associate expensive tools with expertise. The zombie gets the job because she has a $20,000 camera, but your wedding photos are worthless because her skills don’t match the expensive equipment.</p><p>The “fooled by tools” effect is why the camera industry has made a fortune selling cameras that are better and better at compensating for the unskilled zombie looking through the viewfinder. And yet despite the billions spent on more prestigous cameras, the quality of photography has not managed to get any better. We live in a time when the cameras in our phones are vastly superior to the most expensive cameras of a decade ago, and yet there isn’t any better art being created today than there was one hundred years ago when Henri Cartier-Bresson walked the streets.</p><p>Shortcuts waste our money. We regard the price tag as an assurance that the machine can compensate for our lack of skill. The more we spend, the more reassured we are that we have gotten our money’s worth. Zombies often use this bias against us to inflate their prices without improving their products. Yet another shortcut fails us.</p><p>Humans are addicted to our shortcuts. As we discussed, memorization is a shortcut for using flawed software, but that is just the beginning. Brands are shortcuts that tell us what to buy (We will revisit this idea in the next chapter). Religions are shortcuts that tell us what to believe in. Political parties are shortcuts that tell us what our policy decisions should be. Few of us can give nuanced explanations of why we are Hindu or Lutheran. Few of us can give persuasive reasoning about why we are Democrat or Republican. Few of us really understand what makes a BMW superior to a Honda. Even fewer of us have the courage to break the tradition of shortcuts and set out into uncharted territory.</p><p>Shortcuts are everywhere. We memorize answers because it is easier than solving problems repeatedly. We paraphrase. We summarize. We have become a population of know-it-alls even though our knowledge is based on generalities and abbreviated summaries. Like walking <em>CliffsNotes</em> we each carry a knowledge base that is very wide, but rarely very deep. With <em>Wikipedia</em> only a click away it is much easier to understand a little bit about everything than it is to be the world’s authority on a single subject. The problem with skin deep understanding is that it assumes that there are simple answers to any given question. Louis CK observes,</p><blockquote><p>&quot;When you’re learning about something and dissecting it, I don’t think you’re really through until you don’t understand anything about it... If you take any subject and keep asking ‘Why,&quot; without stopping, you’ll get to a point where there really aren’t any clear answers.&quot;</p></blockquote><p>That is why there are so many “jack-of-all-trades” and so few true masters in any given field. We get the “big picture” concepts and let the internet fill in the blanks if we ever need to support our claims. The result is a catastrophic assumption that we can rely on the shortcuts that have been burned into mankind’s collective consciousness.</p><p>When our shortcuts fail, the results might be trivial or catastrophic. Your brand loyalty could be a bias that costs you the benefits of using a superior product from a different brand. Your religious views might lead you to support legislation that does more harm than good. Your political shortcuts could cause you to vote for the wrong candidate just because he has a “D” or an “R” next to his name. Your child could die because you chose not to vaccinate based on the flawed advice of people in your peer group. These consequences are unacceptable because they are avoidable.</p><p>The usual subtext of zombie apocalypse stories is that civilization is inherently fragile in the face of truly unprecedented threats. Society collapses when most individuals can’t be relied upon to support the greater good. To break from conformity means that you are accepting personal risk, and most people won’t take that risk. When conformity isn’t aligned with the survival of the race, doom is inevitable. This is the scenario that mankind finds itself today. Our shortcuts are destroying us. We can’t afford to make these mistakes.</p><p>The alternative to shortcuts is expertise. If you are going to become an expert, you need to be aware of the real value of things. There aren’t any shortcuts. Strive to be a master. Commit to knowing even the tiniest detail of your craft inside and out. Know exactly what you know as well as what you don’t know. Don’t ever fake knowledge on a subject that you are fuzzy about. Dig deeper, work harder, and never stop learning. If you can truly attain mastery, making the wrong decision is no longer a risk because while everyone else is blinded by their incomplete knowledge you will be able to avoid mistakes.</p><p><a href="chapter10.html">Chapter 10. The Taste of Zombies</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

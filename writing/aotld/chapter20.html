@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 20 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Bullet Holes of Honor</h1><blockquote><p><em>”The eye sees only what the mind is prepared to comprehend.”</em> — Robertson Davies</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter20.webp"></p><p><img src="https://adrian3.com/imgs/aotld/war-planes.webp" alt="In World War II, an average of 40 planes were shot down every day."></p><p>Let’s fast forward four decades to World War II. The Wright brothers’ invention has morphed into a deadly war weapon, and every day about 40 U.S. planes are getting shot down over the Pacific Ocean. The returning planes are analyzed and studied in hopes that armor can be added to improve their survival rate. You can only put so much armor on a plane before it is too heavy to fly, so it is important that only the most critical areas get reinforced. The surviving planes revealed that most of the bullet holes accumulated along the wings, body, and tail gunner. Naturally, the Air Force decided that the best place to put the armor was in the areas that had the most damage. It took a mathematician named Abraham Wald to show why this would be a terrible mistake. Can you see why?</p><p><img src="https://adrian3.com/imgs/aotld/war-planes2.webp" alt="Where would you put additional armor to improve survival rates?"></p><p>Wald’s insight was that the damage showed the places where a plane can be hit and <em>still survive</em>. The places where the planes <em>weren’t</em> hit were the vulnerable areas because planes shot here never returned home for analysis. The planes that were shot in fatal locations were destroyed and obviously couldn’t be studied. The bullet holes actually showed where the planes were strongest, not weakest.</p><p>The principle represented here is called survivorship bias. We study survivors because we don’t have access to the destroyed. Like students reciting memorized answers, we proceed with complete confidence, oblivious to what we don’t know. Unaware of the missing pieces, we often draw the wrong conclusions. We apply armor to areas of strength instead of weakness, our assumptions about advantages and disadvantages are entirely backwards.</p><p>Survivorship bias explains why the retelling of the Wright story so often misses the important lessons. Now that we are aware of a blind spot, let’s dig even deeper into their story. The Wright brothers appear to be high school dropouts, struggling to earn a living by running a local bike shop. Langley was rich, famous, and well-educated. Why did Langley fail despite all his advantages, while the Wright brothers succeeded in the face of enormous disadvantages?  If we look for the solution in the “bullet holes” we might conclude that the Wright brothers possessed more talent or luck than their competitors. If we compensate for our survivorship bias, however, a different explanation emerges. What if Langley’s advantages were actually what caused him to fail? Could the Wright brothers’ limitations actually contribute to their success?</p><p>Let’s take these factors (money, fame, and education) one at a time and reveal the role each played in the success or failure of Langley and the Wrights.</p><p><strong>Money</strong><br>Money plays an important role in the Wright brothers’ story. Typically we think of the Wright brothers as succeeding in spite of their lack of funding. We assume that had they been better funded, success would have been easier for them. We forget that Langley had a nearly unlimited budget and yet that wasn’t enough. The Wright brothers had less capital than Langley, but they were actually relatively wealthy, too. Their bike business was successful enough that they could afford to be away for weeks at a time. Wilbur wrote,</p><blockquote><p>“For some years I have been afflicted with the belief that flight is possible to man. My disease has increased in severity and I feel that it will soon cost me an increased amount of money if not my life. I have been trying to arrange my affairs in such a way that I can devote my entire time for a few months to experiment in this field.”</p></blockquote><p>Money also wasn’t the goal of the Wrights. Wilbur wrote,</p><blockquote><p>“I make no secret of my plans for the reason that I believe no financial profit will accrue to the inventor of the first flying machine, and that only those who are willing to give as well as to receive suggestions can hope to link their names with the honor of its discovery.”</p></blockquote><p>These two passages of Wilbur show the role that money played in Wright brothers’ success. Their passion was a “disease” that they committed their lives and modest fortune to. They weren’t working for profit, but for the “honor” of contributing to a noble cause. Does this sound familiar? This is the same ethos that powers open source software and non-zombie companies like Development Seed.</p><p>The difference between the Wright’s wealth and Langley’s is that it was completely independent. There were no strings attached. When you spend other people’s money they rightfully expect a level of involvement. This corrodes the independence of the artist. As we saw earlier in the case of Health Sherpa, independence allows you to do things that would be impossible if you were forced to please prejudiced stakeholders.</p><p>Lack of funding is an excuse made by many aspiring artists. Some ambitious creators seek loans or angel investors to indulge the myth of cash being a prerequisite for success. Others postpone their work until a time when financial security has been attained. Money is impossible to disconnect from our work, but we need to be careful. We don’t want to trade our independence for funding. We also shouldn’t let lack of money become an excuse to postpone our work.</p><p><strong>Fame</strong><br>Langley’s celebrity status forced his experimentation into the public eye. He didn’t have a safe oasis where he could test and hone his prototypes. Publicity wasn’t a benefit, it was more like committing suicide in public. He was asked to kick a hundred yard field goal barefoot and blindfolded with a gun pointed at his head. Of course he failed! Yet we hold on to the notion that we need publicity to succeed. What we really need is enough anonymity to work in a safe environment free from the consequences of failure.</p><p>The public can’t recognize the value of our mistakes. To them it is just a spectacle. It’s entertainment. To us, mistakes are part of the process, it is how we learn. The public won’t appreciate the tedious process of trial-and-error that leads to breakthrough. The Wright brothers were able to work in isolation where their experiments could be conducted without the destructive criticism of public attention. Fame is not an advantage, it stifles creativity.</p><p>When the Wright brothers took flight, their ascent wasn’t lifted by the support of a dreaming public. Few knew who they were, and when they made history they were lucky they took a photo because there was no one around to witness it.</p><p>Langley was popular and well-connected. He was a celebrity that could make headlines whenever he needed publicity. Langley flew directly into the populous headwinds of cynicism and disbelief. Like his aerodromes, Langley’s ambition crashed and burned because the weight of his fame caused him to nosedive.</p><p>Fame has a tendency to compound survivorship bias ensuring that there is never a shortage of famous successful people who are eager to share the “secrets” of their success. Nobody is lining up for advice from proven failures, and yet, these are the only people who can speak with authority on what you shouldn’t do. In the words of journalist David McRaney,</p><blockquote><p>“The advice business is a monopoly run by survivors.”</p></blockquote><p>Few of us are willing to admit to failure, so we build our personal brands by minimizing weaknesses and maximizing our strengths. We strive for fame, attempting to associate our personas with attributes that bring brand value to our identities. We perform in a public arena that is as harsh towards failure as the newspapers that sunk Langley. A safer approach than creating more brand shortcuts is to retreat from the public eye. It is here, in isolation, that your art has the greatest chance for breakthrough.</p><p><strong>Education</strong><br>It is dangerous to be too loyal to the knowledge of others. Our education can fail us if we don’t test what we have learned. The Wright brothers were almost derailed by their initial trust of the mathematical research of their day. The accepted theories about lift and the correct shape of wings caused their first models to fail. An educated person might have concluded that flight was impossible. Instead, the Wright brothers concluded that the scientific knowledge was wrong. Orville Wright admitted that,</p><blockquote><p>“If we all worked on the assumption that what is accepted as true is really true, there would be little hope of advance.”</p></blockquote><p>When their observations contradicted mainstream knowledge of the mathematics of lift, they tested it. In addition to their planes, they also created their own wind tunnels and conducted experiments that rewrote the science books.</p><p>Langley’s prestigious connections to Harvard and the Smithsonian didn’t give him better information, it made it harder for him to question accepted truths. His degrees were not assets, but liabilities.</p><p>The fact that the Wrights didn’t finish high school is misleading. Wilbur completed his senior year with a 95 average, but never completed the formality of applying for a diploma or claiming his certificate. Orville seemed equally indifferent about his official education. He wasn’t talking about school when he said,</p><blockquote><p>“We were lucky to grow up in an environment where there was always much encouragement to children to pursue intellectual interests; to investigate whatever aroused curiosity.”</p></blockquote><p>The Wright brothers’ knowledge came from consuming every document regarding flight that they could get their hands on. Their loyalty wasn’t to institutions of higher learning, but to their firsthand observations, experiments, and understanding earned through rigorous trial-and-error. Through fantastic intuition, independence, and originality of mind, the Wrights were able to do the impossible.</p><p>Diplomas are similar to brand shortcuts in that people often assign too much value to the name on a piece of paper. Students desperately compete for admittance into prestigious universities because they assume the branded education they receive will be somehow superior to more obscure, less validated sources of knowledge. The marketplace plays along, assessing resumés at a glance, correlating schools with employability, and generally putting too much emphasis on educational background.</p><p>The lessons are simple, although counterintuitive. Financial independence is superior to wealth. Privacy is superior to fame. Experimentation is superior to education. The landscape is crowded with rich, famous, well-educated zombie survivors. The rare innovators are invisible, flying under the radar. Survivorship bias has warped our understanding of how success is achieved. We end up putting a high value on the very things that hurt our chances of success. We insist that education is key to getting ahead in life, but often it handcuffs our ability to create new ideas. We value marketing and publicity because it gets our message in front of people, but working in public makes it impossible to gracefully learn from the failures that lead to breakthrough. We believe that fundraising is critical, when in fact the reliance on outside funds destroys our ability to work independently.</p><p>If we are to protect our thinking from survivorship bias, we need to question the conclusions that we draw. When we see bullet holes, do we conclude that this is evidence of weakness or strength? When we see undamaged areas do we wrongly assume that these represent strength?</p><p>Acknowledging survivorship bias changes how we tell stories and reconcile historical lessons. We wrongly tell our children, “If you follow your dreams, maybe one day you will be successful like the Wright brothers.” If we weren’t biased, we would teach our children to question what they have been taught. We would tell them to work hard to protect their independence, be cautious of public attention, allow yourself the freedom to fail, and build on the lessons that failure teaches you. We would promote the idea that success doesn’t come from aimlessly following your dreams, it is the result of working extremely hard and failing repeatedly. That is how we create a population of artists rather than a herd of zombie dreamers.</p><p>If fame, fortune, and a good education are decoys, what are the real ingredients of success? That is the subject of the next chapter.</p><p><a href="chapter21.html">Chapter 21. Ingredients of Creativity</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

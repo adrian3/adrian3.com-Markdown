@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>My 2019 Year in Review — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow"></p>
+		<h1>My 2019 Year in Review</h1>
+		<small>January 2, 2020</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>My 2019 Year in Review</h1><p>I entered 2019 with more optimism than I have ever had going into the new year. I just felt like big things were on the horizon. I was right. Just as my time at Runcoach was coming to an end I found a new job at Nutrien and have spent this year immersing myself in the world of agriculture. It may seem like a shift for me to get away from fitness technology, but the similarities between optimizing human performance and equipping farms to feed the world are surprisingly parallel. It has been a fascinating education and I have so much more respect for how food gets produced.</p><p>To send 2019 into the history books, here are some lists that represent my output and input from the year…</p><h2>Writing</h2><p>My public writing output was down from previous years with only <a href="https://medium.com/@ade3">11 stories published on Medium</a>. That’s not to say I haven’t been writing, it has been quite the opposite. I have been busy working on my second book, User Zero. If you haven’t already, <a href="https://mailchi.mp/0584d8c46822/letter-zero">sign up for my mailing list so you can be first in line when the book launches in 2020</a>. Here are links to some of the articles I wrote this year:</p><ol><li><a href="https://link.medium.com/AEDemEh9T2">The U.S. Navy’s $100 Million Checkbox</a></li><li><a href="https://link.medium.com/mwxPPNc9T2">Cybertruck vs. The Zombie Mobile</a></li><li><a href="https://link.medium.com/P4VL9rl9T2">Mental Spacecraft: Two Contradictory Views from Space</a></li><li><a href="https://link.medium.com/mKIF45u9T2">The 5 Whys of Running</a></li><li><a href="https://link.medium.com/rlC4lFz9T2">Negative Space</a></li><li><a href="https://link.medium.com/Y55JWWC9T2">Regaining Write-Access to Your Brain</a></li><li><a href="https://link.medium.com/3X2V7iE9T2">Abandon Your New Year’s Resolutions and Perform 6 System Checks</a></li></ol><hr><h2>Running</h2><p>My <a href="http://tread1st.com/Ade3/workout/2019-10-01-164556-Running-Adrian%E2%80%99s%20Apple%C2%A0Watch_rev593e72e988b365b005968.fit">best run of the year</a> was in California, north of Santa Cruz while on a trip for work. I escaped my hotel and caught a trail heading towards Henry Cowell Redwoods State Park. Before I knew it I was surrounded by giant redwoods. The trees were stunning and being at sea level I felt unstoppable as I flew up and down the hills.</p><p>In total, this year I ran 1,111 miles which averages out to a 5k every day. That seems like a lot, but It was the fewest miles I’ve run since 2014. I made up for it by cycling my most miles ever at 1,274 miles (571 miles more than last year).</p><h3>Running Mileage by Year</h3><p>2019: 1,111 miles<br>2018: 1,774 miles<br>2017: 1,454 miles<br>2016: 1,193 miles<br>2015: 1,422 miles<br>2014: 642 miles<br>2013: 199 miles<br>2012: 204 miles<br>2011: 180 miles<br>2010: 264 miles<br><strong>Total for the Decade: 8,443</strong></p><p>I ran two races, the Horsetooth Half Marathon and the Loveland Turkey Trot. I didn’t have a marathon this year, my goal for 2019 was to stay healthy and maintain fitness in preparation for next year’s Boston Marathon. In September I was officially accepted into the Boston based on my time from 2018’s Twin Cities Marathon. As I dreamed about the Boston Marathon, I created a website called the <a href="http://tread1st.com/boston.html#/">Boston Marathon Data Project</a> that analyzes a century’s worth of race results. In case you missed it, here are the stories that the data revealed:</p><ol><li><a href="https://link.medium.com/SL0JsPN9T2">Boston Marathon Demographic Visualizations</a></li><li><a href="https://link.medium.com/vHwVWcB9T2">Why is the Boston Marathon So Slow?</a></li><li><a href="https://link.medium.com/uGRs3Xx9T2">Boston’s Evolution: 1897–2018</a></li><li><a href="https://link.medium.com/ns16K6f9T2">Qualifying for Boston in 2021 Will Be Harder than Ever</a></li></ol><p>I also put lots of work into my side project, <a href="http://tread1st.com/">Tread1st.com</a>, the website where all my fitness data is logged. It is a labor of love that I hope to continue developing in 2020.</p><hr><h2>Art</h2><p>My art output was a bit scattered this year, but I had a handful of side projects that kept me entertained. If you don’t follow me already, my <a href="https://instagram.com/ade3">Instagram (@ade3)</a> feed is the best way to keep track of my artistic output. Here are some of the projects I produced this year…</p><h3>Multiple Exposures from House on the Rock</h3><p>On our family vacation we visited the <a href="https://www.thehouseontherock.com/">House on the Rock</a> in Wisconsin. If you haven’t heard of it, it is a huge collection of oddities and eccentric objects. Hard to explain, but I recommend it. The images above are multiple exposures from the tour.</p><p><img src="https://adrian3.com/imgs/images/8-house-on-the-hill.webp"></p><h3>Straw Camera</h3><p>I built a few cameras made out of straws. Imagine a grid of thousands of drinking straws or coffee stirrers. Each straw allows a cylinder of light to pass through. The average of that light lands on a surface creating an image. I capture that image with a digital camera. That’s how these images were produced.</p><p><img src="https://adrian3.com/imgs/images/9-straw-camera.webp"></p><h3>Post-It Note Graffiti</h3><p>This project started when I drew a piece of candy on a Post-It Note for a friend at work and left it on her desk. That grew into a habit and now the cubicles of my teammates have drawings on them. I took the show on the road, leaving Post-It Note drawings in restaurants, hotels, and gas stations while on vacation.</p><p>10 Week Theme For ten weeks I posted photos to instagram with a different theme for each day of the week. Below are the photos, grouped by theme. You can see my matchbook collection, images from my Textploder app, some of my whiskey bottles, textures, face drawings, assorted circles, and some impressive sunlight distortion. Yes, I realize there are only 9 in each set, but I wanted to keep them in nice 3x3 grids, so one image is missing from each set.</p><p><img src="https://adrian3.com/imgs/images/11-post-it-note-graffiti-2.webp"><br><img src="https://adrian3.com/imgs/images/10-post-it-note-graffiti-1.webp"></p><h3>Matchbook Monday</h3><p><img src="https://adrian3.com/imgs/images/1-matchbook-monday.webp"></p><h3>Textploder Tuesday</h3><p><img src="https://adrian3.com/imgs/images/2-textploder-tuesday.webp"></p><h3>Whiskey Wednesday</h3><p><img src="https://adrian3.com/imgs/images/3-whiskey-wednesday.webp"></p><h3>Texture Thursday</h3><p><img src="https://adrian3.com/imgs/images/4-texture-thursday.webp"></p><h3>Face Drawing Friday</h3><p><img src="https://adrian3.com/imgs/images/5-face-drawing-friday.webp"></p><h3>Circle Saturday</h3><p><img src="https://adrian3.com/imgs/images/6-circle-saturday.webp"></p><h3>Sunlight Sunday</h3><p><img src="https://adrian3.com/imgs/images/7-sunlight-sunday.webp"></p><hr><h2>Books I Enjoyed:</h2><p>This was a breakthrough year for me in terms of reading. I finally found a routine that allowed my book consumption to match my ambition. In hindsight, the key was simple. Once I allow myself to purchase audiobooks without guilt, the amount of books I completed skyrocketed. Here are the books I enjoyed most this year…</p><p><strong>Top 10</strong><br><em>Quiet</em>, by Susan Cain<br><em>Range</em>, by David Epstein<br><em>The Innovators</em>, by Walter Isaacson<br><em>Technopoly</em>, by Neil Postman<br><em>Grunch of Giants</em>, by R. Buckminster Fuller<br><em>Stealing Fire</em>, by Steven Kotler<br><em>Loonshots</em>, by Safi Bahcall<br><em>Loserthink</em>, by Scott Adams<br><em>Antifragile</em>, by Nassim Nicholas Taleb<br><em>Dune</em>, by Frank Herbert</p><p><strong>Honorable Mention</strong><br><em>Essentialism</em>, by Greg McKeown<br><em>The Obstacle Is the Way</em>, by Ryan Holiday<br><em>A Dream About Lightning Bugs</em>, by Ben Folds<br><em>Wizard: The Life and Times of Nikola Tesla</em>, by Marc J. Seifer<br><em>The Black Swan</em>, by Nassim Nicholas Taleb<br><em>The Electric Kool-Aid Acid Test</em>, by Tom Wolfe<br><em>Natural Born Heroes</em>, by Christopher McDougall<br><em>Endure</em>, by Alex Hutchinson<br><em>Running with the Buffaloes</em>, by Chris Lear</p><h2>Music I Enjoyed</h2><p><em>Father of the Bride</em>, by Vampire Weekend<br><em>Anima</em>, by Thom Yorke<br><em>Permanent Way</em>, by Charlie Cunningham<br><em>Weather</em>, by Tycho<br><em>Fever Breaks</em>, by Josh Ritter<br><em>Let’s Rock</em>, by The Black Keys<br><em>Wave</em>, by Patrick Watson<br><em>The Later Years</em>, by Pink Floyd<br><em>Closer to Grey</em>, by Chromatics<br><em>Stockholm Marathon</em>, by Kornel Kovacs</p><hr><p>Happy New Year, and thanks for reading. Don’t forget to <a href="https://mailchi.mp/0584d8c46822/letter-zero">sign up for my User Zero mailing list</a> so you can find out about User Zero. <em>Stay creative</em>.</p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 24 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Success, Turbulence and Implosion</h1><blockquote><p><em>”I am afraid, my friend, that your usually sound judgment has been warped by the desire for great wealth.”</em> — Octave Chanute (to Wilbur Wright)</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter24.webp"></p><p>Let’s entertain the idea for a moment that this all works out. You use the ingredients of creativity to complete your masterpiece. You find inspiration, overcome resistance, and you conquer the zombies. Finally, you achieve success. What happens then?</p><p>As much as I would like to leave the story of the Wright brothers with a happy ending, I can’t simply let them fly peacefully into the sunset. Unfortunately, the second act of their story is a tragedy in which our heroes play the role of villain.</p><p>Imaging you just created one of the most important inventions in the history of mankind. What would you do next? You don’t just donate your invention to the world, naturally, you would want to make money from your invention. You would seek fame, fortune, and power. You would work to protect your priceless secrets. That is exactly what the Wright brothers did. They stopped innovating and put all their attention in defending their creation and milking it for every dollar they could squeeze out of it.</p><p>Soon after their first flight, the Wright brothers applied for a patent. After it was initially rejected, they hired a lawyer and three years later, they owned the rights to flight. The patent was so broad that they could essentially sue anyone who built an airplane or flew without permission from the Wright’s. They essentially closed up shop, stopped flying, and started attacking their rivals. Focusing on litigation full-time, they didn’t make a single flight in 1906 or 1907.</p><p>Manned flight was in its infancy, and anyone interested in advancing the art would face massive lawsuits unless they payed a $25,000 licensing fee to the Wrights. In addition, the Wrights wanted $1,000 for every airplane made. All aircraft in America was essentially grounded as the Wrights served injunctions to every pilot, enthusiast, and business man with ambition of getting off the ground.</p><p>The Wrights won nearly every lawsuit they filed. Court battles consumed the Wrights, especially Wilbur. Wilbur took the lead role in the patent fight because he felt he was fighting for a moral cause. He said,</p><blockquote><p>“It is our view that morally the world owes its almost universal system of lateral control entirely to us. It is also our opinion that legally it owes it to us.”</p></blockquote><p>This is a shocking reversal of the humble attitude Wilbur possessed at the beginning of his work when years earlier he said,</p><blockquote><p>“I wish to avail myself of all that is already known and then, if possible, add my mite to help on the future worker who will attain final success.”</p></blockquote><p>How does someone change so completely from a creative being into a life-sucking zombie? The success of the Wrights corrupted their values, transforming their morals into twisted inversions of what they formerly believed. Eventually, the testifying, consulting with lawyers, and preoccupation with legal issues took its tole, and in 1912 Wilbur died. The official cause of death was typhoid, but his family attributed it to the stress of the patent war.</p><p>In addition to the loss of life, the legal battles drained their fortunes. Orville would estimate that the court battles cost about $150,000. To put this in context, remember the record-breaking $50,000 that the government invested in Langley’s aerodrome? It is painful to imagine the innovation that could have happened if the Wrights wealth and skill could have been invested in furthering advancement in flight rather than attacking new innovators.</p><p>As a result of the toxic environment created by litigation, the only place where flight innovation could take place was outside the United States where patents were harder to enforce. German aviation thrived while the USA fell behind. By the time World War I broke out, America was so far behind that the government stepped in to stop the patent war. Driven by military demand, the government reduced the Wright’s royalties from 20% to 1% and started making war planes. The Wright planes, having advanced little since the initial flight, begin to look more and more obsolete compared to those of rivals, and in 1914 Orville sold the Wright Company and retired. It is a sad ending to an amazing story. Maciej Ceglowski summarizes the tragic finale like this,</p><blockquote><p>“The Wright brothers won every patent case they fought, and it did them absolutely no good. The prospect of a fortune wasn’t what motivated them to build an airplane, but ironically enough they could have made a fortune had they just passed on the litigation. In 1905, the Wrights were five years ahead of any potential competitor, and possessed a priceless body of practical knowledge. Their trade secrets and accumulated experience alone would have made them the leaders in the field.”</p></blockquote><p>The demise of the Wrights could easily turn into a critique of the zombie patent system. Yes, today’s patent system is still broken, but if the patent war hadn’t sunk the Wrights it could just as easily been something else. Leaders fall every day, brought down by scandal, abuse, corruption, and countless other sins.</p><p>If we survive the zombie apocalypse, there is a chance that maybe, just maybe, our efforts will find success. The choices available to a successful artist seem bleak. The fate of Robert Goddard was to die in obscurity. The fate of Wilbur Wright was to die from the exertion required to protect his creation. The words of Harvey Dent from <em>The Dark Knight</em> come to mind,</p><blockquote><p>“You either die a hero or you live long enough to see yourself become the villain.”</p></blockquote><p>This book has plenty to say about doing meaningful work, but unfortunately I have little advice for what happens if you succeed. Seeking space, time, trust and play is laughable advice to someone whose success leaves them sitting on a mountain of cash surrounded by a hoard of zombies larger and more vicious that the ones conquered to achieve success in the first place. Eventually, the corrosive forces of fame and fortune will immerse and perhaps overwhelm you.</p><p>The hope is not in a fairy tale ending, but in finding joy in the journey. The meaningful work we do is an end of itself. Our work defines us, and it is this effort towards excellence that we must embrace, protect, and cherish because if we don’t our legacy will not be the death of a hero, but the limping march of a lifeless being, unable to change his world, hostile to change, tragically impotent, and staggering eternally towards irrelevance.</p><p><a href="chapter25.html">Chapter 25. Post Apocalypse</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

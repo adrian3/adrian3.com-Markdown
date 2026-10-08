@@ -1,0 +1,94 @@
+.substack-archive section + section {
+  margin-top: var(--ade-space-7);
+}
+
+.substack-year-heading {
+  font-family: var(--ade-font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ade-muted-soft);
+  margin-bottom: var(--ade-space-3);
+  display: flex;
+  align-items: baseline;
+  gap: var(--ade-space-2);
+}
+
+.substack-year-count {
+  font-weight: 400;
+  color: var(--ade-muted-soft);
+  font-size: 0.7rem;
+}
+
+.substack-archive ul {
+  list-style: none;
+  padding: 0;
+}
+
+.substack-archive li {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr auto;
+  align-items: baseline;
+  gap: var(--ade-space-4);
+  border-bottom: 1px solid var(--ade-divider);
+  padding-block: 0.5rem;
+}
+
+.substack-archive li:last-child {
+  border-bottom: 0;
+}
+
+.substack-archive-date {
+  font-family: var(--ade-font-ui);
+  font-size: 0.75rem;
+  color: var(--ade-muted-soft);
+  white-space: nowrap;
+}
+
+.substack-archive-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.substack-archive-body a {
+  font-size: 1.0625rem;
+  color: var(--ade-ink);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.substack-archive-body a:hover {
+  color: var(--ade-primary);
+}
+
+.substack-archive-subtitle {
+  font-size: 0.875rem;
+  color: var(--ade-muted);
+  line-height: 1.3;
+}
+
+.substack-archive-badge {
+  font-family: var(--ade-font-ui);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ade-muted-soft);
+  border: 1px solid var(--ade-hairline);
+  border-radius: var(--ade-radius);
+  padding: 0.15rem 0.4rem;
+  white-space: nowrap;
+  align-self: center;
+}
+
+@media (max-width: 40rem) {
+  .substack-archive li {
+    grid-template-columns: 2.75rem 1fr;
+  }
+
+  .substack-archive-badge {
+    display: none;
+  }
+}

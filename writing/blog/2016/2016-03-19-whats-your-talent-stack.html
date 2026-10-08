@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>What’s Your Talent Stack? — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Career Advice</p>
+		<h1>What’s Your Talent Stack?</h1>
+		<small>March 19, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<p><img src="https://adrian3.com/imgs/images/whats-your-talent-stack.webp"></p><h1>What’s Your Talent Stack?</h1><h2>Could understanding Donald Trump’s success help designers get hired?</h2><ul><li><em> </em></li></ul><p>I am going to dip my toe in the boiling water of politics today. Don’t worry, I will be gentle…</p><p>I have been helping interview design candidates recently. (<a href="https://home.trainingpeaks.com/careers/">You should apply if you are looking for a new job</a>.) After all the resume reviewing, portfolio gazing, and candidate drilling I feel like I am missing something, a fundamental skill that would allow me to better measure these seemingly-qualified candidates. Something isn’t adding up.</p><p>This is where Donald Trump comes in.</p><p>If you aren’t a supporter of Trump, there is a good chance you are baffled by his popularity and success. The trending explanation for his rise is the assertion that a third of the country is extremely angry and possibly racist. If that is true I am deeply saddened. Could there be another explanation that doesn’t require me to question the integrity, intelligence, or motives of a massive number of people?</p><p>Perhaps these two questions are related. Why is the eligibility of a designer so hard to qualify? Why is it so hard to explain Trump’s success?</p><p>I believe the answer might be a concept called a talent stack. Let me explain…</p><p>The term “talent stack” comes from the cartoonist and hypnotist Scott Adams who predicted Trump’s political dominance earlier than anyone else in the media. He credits his prediction to his ability to identify systems where most people only see a checklist of unimpressive skills. He explains that,</p><blockquote><p><a href="http://blog.dilbert.com/post/137749295801/trumps-talent-stack-systems-versus-goals">“One of the most powerful systems I have seen involves layering one modest skill on top of another until the effect is something special… When you learn to see the world in terms of systems, not goals, everything comes into focus.”</a></p></blockquote><p>Adams explains how Trump’s skills, when taken one at a time, are not that remarkable. It is his talent stack that has created a system that makes him powerful. (Adam’s entire series of posts about persuasion are fascinating, so <a href="http://blog.dilbert.com/">I will simply pass you off to his site</a> so you can get lost in his unconventional analysis.)</p><p>Politics aside, the concept of a talent stack might be a better framework for evaluating candidates beyond the traditional resumes, portfolios, and interviews. The idea of a talent stack is new to me, but let me attempt to suggest how this concept could help us make better hiring decisions and also how it could make us stronger candidates if we are in the market for a new job…</p><h4>How can you recognize a talent stack?</h4><p>As you evaluate a candidate, pay attention to the things you are measuring. Are you simply marking boxes on a checklist of skills? <a href="2016-03-12-the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant.html">Last week I talked about the “fooled by tools” phenomena that results in 59 ridiculous flavors of design software.</a> Software skills are not a talent stack.</p><p>Job titles are also misleading. If you find yourself debating the differences between a UX designer and an interaction designer you will probably miss the talent stack. Job titles aren’t part of the stack.</p><p>Since applicants aren’t trained to talk in terms of their talent stack (they are pre-conditioned to respond to lists, too) you will have to ask good questions. Listen to how they talk about their work. When talking about their strongest designs can they articulate the wins and losses in the creation process? Is the story behind their less-than-stellar work more compelling than you expected? This dissonance could be the presence of (or lack of) a talent stack.</p><p>If you think in terms of systems, combined skills that amount to more than the sum of their parts, it explains why someone can look great on paper, but when it comes time to pull the trigger you just can’t hire them. It explains why you have an urge to hire someone despite the lack of checkmarks in the boxes of the job requirements. Where previously we just “went with our gut” perhaps the vocabulary of the talent stack can give us a way to quantify these fuzzy feelings.</p><h4>How do you create a talent stack?</h4><p>You probably already have a talent stack, you just haven’t identified it and aren’t good at talking about it yet. Your stack isn’t built on things that you are the best in the world at, it is simply an honest list of what you have to offer. When you release yourself from the burden of greatness (and faking greatness) in narrow categories it allows you to make a plan for getting the most out of the modest tools you already possess.</p><p>When evaluating candidates I found myself growing uncomfortable with my own portfolio. Maybe I am not as good as I think I am. If I find myself in need of finding a new job, I would be competing against these very designers. If my checklist is the same as these guys, would I be able to beat them?</p><p>If we all have the same list of skills the only way to stand out is to group your abilities (along with your unique merits that might not be in the job description) into a system. My first attempt at defining my talent stack looks like this:</p><p>1\. Design skills (good, but not amazing)</p><p>2\. Writing ability (good when I am passionate about the topic)</p><p>3\. Programming skills (good, for a designer)</p><p>4\. Speaking skills (below average)</p><p>5\. Energy and Determination (when I am engaged I am unstoppable)</p><p>6\. Persuasion skills (an aspiring student)</p><p>You can see that I am nothing special taken one skill at a time. But as a system it explains how in addition to my day job I can <a href="../2015/2015-11-03-25-questions-you-didnt-know-you-needed-art-of-the-living-dead-to-answer.html">publish a book</a>, <a href="https://itunes.apple.com/us/artist/adrian3/id395435271">create a handful of apps</a>, <a href="http://www.strava.com/athletes/442364">run four marathons</a>, and <a href="http://ade3.tumblr.com">produce daily artwork</a>.</p><p>Understanding your talent stack gives you a story to go with your checklist of skills. Not only does that make you more interesting, it also equips your interviewers to evaluate you more accurately.</p><p>As I said earlier, the idea of a talent stack is new to me, so I am curious how my suggestions align with your experience. I would love to see how you define your talent stack and how your system makes you more effective than the sum of your parts. <strong>If you post your talent stack send me a link.</strong></p><p><em>One last disclaimer.</em> I am on the record having said <a href="https://medium.com/@ade3/magic-and-the-illusion-of-talent-1bfe391cc41b#.qaxl31hjj">talent is a myth</a>. I stand behind that belief but the word “talent” is so embedded in our vocabulary that rather than fight it (replacing it with the word “skill” would do the trick) I am just going to go with it for the sake of this post.</p><ul><li><em> </em></li></ul><p>Thanks, as always, for reading. I share my crazy ideas weekly, so consider following me if you think you can handle it. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

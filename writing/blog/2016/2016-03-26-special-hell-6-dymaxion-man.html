@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Special Hell 6, Dymaxion Man — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Buckminster Fuller</p>
+		<h1>Special Hell 6, Dymaxion Man</h1>
+		<small>March 26, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<img src="https://adrian3.com/imgs/images/special-hell-6-dymaxion-man.webp" class="full-width"><h1>Special Hell 6: Dymaxion Man</h1><h2>The visionary crackpot who held Earth’s rudder</h2><ul><li><em> </em></li></ul><p>Do you believe in design? Is that a strange question? That’s the theme of today’s addition to my <em><a href="https://medium.freecodecamp.com/a-special-hell-for-designers-like- me-5c55bd855613">Special Hell for Designers</em></a> series. It’s the story of the ultimate designer, R. Buckminster Fuller.</p><p>In 1927, Bucky was a suicidal drunk living in the slums of Chicago.</p><p>No job.</p><p>Bankrupt.</p><p>His daughter had died in his arms from polio.</p><p>He was expelled from Harvard. Twice.</p><p>The thing that saved Bucky was that he believed in design. He believed that like the tiny rudder of an enormous ship, design gave him the power to turn the Earth. He said,</p><blockquote><p>“If you’re doing dynamic things mentally, the fact is that you can just put your foot out and change the direction of the whole big ship.”</p></blockquote><p>Six years after hitting rock bottom, Bucky would test this belief. He was speeding down the highway at 100 miles per hour in a car of his own design. His original ambition was to make the car fly, but when flight proved impractical he settled for three wheels. He called his design the dymaxion car. Dynamic + maximum + tension = dymaxion. Bucky embodied that formula.</p><img src="https://adrian3.com/imgs/images/special-hell-6-dymaxion-man2.webp" alt="The Dymaxion Car" class="caption"><p>Although the dymaxion car’s specs were interesting (30 mpg, seated 11, unequaled turning radius) that alone wasn’t what captured people’s imagination. The design was so outrageous that everyone could see it was designed by someone who had completely abandoned tradition. The crowds that formed to see the dymaxion car weren’t potential car buyers, they were people that were drawn to the most contagious thing in the world, a leader who says,</p><blockquote><p>“Things can be different. Follow me.”</p></blockquote><p>He was on the verge of turning the Earth. Then tragedy struck.</p><p>A test drive carrying celebrity passengers ended in a fatal crash. Headlines blamed the dymaxion’s “freak design” although it was later proven the car’s design wasn’t the cause. Ultimately it was the bean counters that sealed the dymaxion’s fate. Bankers feared Fuller’s car would destroy sales for second- hand cars and vehicles already in distribution. Or so the story goes. Regardless, only three of his cars were ever made. Bucky would have to find another way to turn the Earth.</p><ul><li><em> </em></li></ul><p>Bucky’s second chance came after World War II. There was a housing crisis that coincided with the decline in demand for fighter planes. Fuller’s idea was to use the technology and skills of the aircraft industry to build houses. Why build a house with primitive materials like wood and brick when you could live in a machine built with the precision and integrity of an airplane?</p><p>Bucky’s dymaxion house was just as audacious as his flying car concept. Imagine a floating house suspended from a giant central mast. The dymaxion house was designed to be lightweight and easy to transport. Bucky envisioned the homes being mass produced in factories and delivered by aircraft.</p><img src="https://adrian3.com/imgs/images/special-hell-6-dymaxion-man3.webp" alt="The Dymaxion House Concept" class="caption"><p>The dymaxion house captured people’s imagination in the same way as his car. Tradition had stuffed people into square boxes and told them that was the way it had to be. Of course they would be drawn to the man who said,</p><blockquote><p>“Things can be different. Follow me.”</p></blockquote><img src="https://adrian3.com/imgs/images/special-hell-6-dymaxion-man4.webp" alt="The dymaxion house more closely resembled a UFO" class="caption"><p>Interest for the house resulted in 35,000 pre-orders from eager customers looking to reserve their dymaxion house. That was enough capital to build a prototype.</p><p>Bucky was once again on the verge of breakthrough. And once again, his dream collapsed.</p><p>Manufacturing the house cost too much to get it (in this case literally) off the ground. Only one dymaxion house was ever built.</p><p>Bucky would have to find yet another way to turn the Earth.</p><ul><li><em> </em></li></ul><h4>Why did Bucky fail?</h4><p>So far in Bucky’s life nothing has worked out. His belief in design seems to have backfired. Conventional thinking points to some seemingly obvious reasons for the failures. Those voices sound like this:</p><p><em>Bucky didn’t understand the automotive industry. Of course his car failed.</em></p><p><em>Bucky’s invention looked more like a boat than a car. Of course it failed.</em></p><p><em>Bucky’s house cost a fortune. Of course it failed.</em></p><p><em>Bucky wasn’t an architect. Of course he failed.</em></p><p>If those explanations don’t make your blood boil, they should. If you are a designer, you hear these voice all the time.</p><p>It is the voice of the clueless client backseat driving your designs.</p><p>It is the voice of the coworker who thinks your job is to apply design frosting to their flawed project.</p><p>It is the voice of your boss who asks you to clean up his PowerPoint presentation, adding “jazz” to his half-baked thinking.</p><p>It is the voice of the data-driven bean counter who shoots down your “risky” idea.</p><p>It is the voice of the marketer who chooses spam tactics over honest engagement.</p><p>It is this toxic attitude that, more than anything else, has pushed designers to the edges of every industry. We are essentially irrelevant because we accept this sentiment:</p><p><em>Designers have a specific job. You do your job and let the experts do the real work.</em></p><p>Instead of turning the world, we accept roles as skilled combover artists. This is what I mean when I say, “<a href="https://medium.freecodecamp.com/a-special-hell-for-designers-like-me-5c55bd855613">there is a special hell for designers_</a>.” We traded Earth’s rudder for tubes of lipstick. Our apathy isn’t harmless. It might result in <a href="2016-01-30-got-a-brand-problem-put-a-bird-on-it.html">toxic homes sent to disaster victims</a>. It could result in <a href="2016-02-06-death-by-toothbrush.html">death by toothbrush</a>. It could result in <a href="2016-03-05-special-hell-5-ad-addiction.html">ad-diction</a>. Best case scenario, your work doesn’t matter and the only impact of your apathy is more <a href="2016-01-16-the-slow-steady-inevitable-march-towards-oatmeal.html">oatmeal</a>. Shame on us.</p><p>Listen to how Bucky connects his failures to society’s misconception about the role of a designer:</p><blockquote><p>Of course, our failures are a consequence of many factors, but possibly one of the most important is the fact that society operates on the theory that specialization is the key to success, not realizing that specialization precludes comprehensive thinking.</p></blockquote><p>There it is. Design has become the job of specialists. <em>Everything</em> has become the job of specialists and instead of turning the Earth we contribute to stagnation. This is the reason we drive <a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d">zombie-mobiles</a> instead of dymaxions. It is the reason <a href="2016-03-12-the-top-17-design-tools-you-must-master-in-2016-to-stay-relevant.html">Adobe makes 59 flavors of design software</a>.</p><p>Bucky would be appalled to see how the design profession has evolved into an assortment of design specialists. How many different job titles have you had in your career? Today we quibble over the differences between the disciplines of UI and UX, but if Bucky were still alive he would be preaching to us the virtues of being curious generalists. He said,</p><blockquote><p>“Specialization has bred feelings of isolation, futility, and confusion in individuals… It has also resulted in the individual’s leaving responsibility for thinking and social action to others… Specialization breeds biases that ultimately aggregate as international and ideological discord, which in turn leads to war…</p></blockquote><p>The antidote to specialization is curiosity. As a generalist you are free from the dogma, politics, and static knowledge that handcuffs progress. Last week I wrote about the <a href="2016-03-19-whats-your-talent-stack.html">talent stack</a>. This is the same thing. You don’t have to be the best in the world at one thing. By creating a system of complimentary skills you can become more than the sum of your parts. You can be the tiny rudder that turns the Earth. Put down the lipstick and take control of the ship.</p><p>Bucky loved the metaphor that our planet was a spaceship. He wrote <a href="http://www.amazon.com/Operating-Manual-Spaceship-Buckminster-Fuller/dp/3037781262/ref=sr_1_1?ie=UTF8&amp;amp;qid=1459030310&amp;amp;sr=8-1&amp;amp;keywords=Operating+Manual+for+Spaceship+Earth">the operating manual</a>. This concept says that Earth comes equipped with the supplies to sustain life. As the crew of the ship we must work together for the greater good. I am a sucker for idealism that generates these kind of utopic ideas. It is the friendly flip side of <a href="https://medium.com/@ade3/armageddon-143a2c57d32f#.70lcemiuz">my zombie metaphor</a>.</p><p><img src="https://adrian3.com/imgs/images/special-hell-6-dymaxion-man5.webp"></p><p>Bucky finally turned the Earth with his iconic geodesic structures. The giant spheres captured our imaginations in the same way as his failed dymaxion projects. We believed in his vision for a different shaped world. The giant circles could only come from the mind of a generalist <a href="https://medium.com/@ade3/inside-or-out-767884695959">outsider</a>. They were stunning in their geometric beauty. Bucky would be quick to point out that beauty wasn’t the goal, however. He said,</p><blockquote><p>“When I am working on a problem, I never think about beauty but when I have finished, if the solution is not beautiful, I know it is wrong.”</p></blockquote><p>I started this story with the question, “Do you believe in design?” I ask that because our skills have the potential to be so much more than sugar sprinkled on stale bread. As designers we have the ability to transcend our specialist silos. Our devotion to creative thinking allows us to curate diverse ideas and make a difference. You might sound crazy to non-believers, but people will follow you. We can’t help but be drawn to the visionary crackpots who dare to say,</p><blockquote><p>“Things can be different. Follow me.”</p></blockquote><ul><li><em> </em></li></ul><p>Part 7: <a href="2016-04-02-special-hell-7-stasis-crackers.html">Stasis Crackers</a></p><ul><li><em> </em></li></ul><p>Thanks for reading. If this story resonated with you please help my idea viruses spread by sharing it on <a href="https://twitter.com/ade3">Twitter</a> or poking the little heart icon below. Oh, and if you think Bucky was a crackpot, you should probably stay away from <a href="http://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">my book</a>. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

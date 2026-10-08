@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 10 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>The Taste of Zombies</h1><blockquote><p><em>”For the flesh desires what is contrary to the Spirit, and the Spirit what is contrary to the flesh.”</em> — Galatians 5:17</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter10.webp"></p><p>Zombies have no taste. I don’t mean taste as in flavor, I mean taste as in “she has great taste in music.” This seems like a weird thing to pinpoint as a difference between the living and zombies. On the surface this seems like a pretty squishy concept. It has an “I am better than you” feeling because we have a tendency to look down on people who don’t agree with our preferences. Taste seems arbitrary. This week you might like rap music, but next week you might prefer country music. You can swear that country music is better than rap, but what we are really arguing about is our preferences, not taste. Good taste is a preference formed by educated observation.</p><p>To legitimately have great taste seems like a super human ability. Drink a glass of wine with a connoisseur and you will question whether or not you are drinking the same thing as the pro. The expert can taste subtleties that are lost on your palette. They will describe flavors that, even if you can pick out, you wouldn’t be able to put the observation into words. It seems like people with taste possess an extra sense that we lack.</p><p>Having great taste involves more work than just owning the right products. A zombie will look just as good in a tailored suit as you or me. Does the zombie have good taste just because he wears a high quality suit? No. So what is great taste then? Having great taste is the ability to discern and articulate subtle differences in quality.</p><p>Taste is desirable and it can be learned, but the effort required to develop deep sensitivity is immense. If you are going to create art you need to develop an attention to detail and an understanding of your craft so deep that it might seem absurd to the people who don’t share your passion. It might actually offend them. You might be called a snob, an elitist, or a fanboy. Even people with good taste in other areas won’t understand the committing of your life to a deeper understanding of your obsession.</p><p>Some tasks, like designing a typeface, require a level of attention to detail that many people can’t comprehend. When Erik Spiekermann was asked if he would describe his work in typography as obsession, he responded by saying,</p><blockquote><p>“Unless you are obsessed by what you’re doing, you will not be doing it well enough. Typography appears to require a lot of detail, but so does music, cooking, carpentry, not to mention brain surgery. Sometimes only the experts know the difference, but if you want to be an expert at what you’re making, you will only be happy with the result when you’ve given it everything you have… I admit to being obsessive about my work, but I refuse to be classified as weird and unusual. Obsessiveness isn’t limited to certain disciplines.”</p></blockquote><p>Good taste is a mental activity that grows with experience. Anyone can buy the “right” stuff if they read the right reviews. It is something more complex to appreciate something because you recognize that the choices that led to the creation of the object were correct. Knowing that your beliefs are in alignment with the creator is what having good taste requires. Taste mandates a mastery on par with the mind that created the object.   John Cleese describes this paradox like this,</p><blockquote><p>“To know how good you are at something requires the same skills that it takes to be good at that thing. Which means that if you are absolutely hopeless at something you lack exactly the skills that you need to know that you’re absolutely hopeless at it. And this is a profound discovery, that most people that have absolutely no idea what they are doing have absolutely no idea that they have no idea what they’re doing. It explains a great deal of life. It explains why so many people in charge of so many organizations have no idea what they are doing.”</p></blockquote><p>This paradox creates a blind spot in people at the very point where they would most benefit from being able to see. This explains why there is such a gap between people who give the outward appearance of having good taste but lack the ability to create meaningful work, to transcend their zombie bonds. There comes a point in your creative development where your good taste evolves beyond a recognition of integrity and becomes an ability to actually produce art.</p><p>On the frustrating journey towards mastery, the majority of our work is generic uninspiring content. On a good day our work might contain a whiff of the immortal, but most of the time it just smells vanilla. Ira Glass describes the journey towards expertise like this,</p><blockquote><p>“All of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it’s just not that good. It’s trying to be good, it has potential, but it’s not. But your taste, the thing that got you into the game, is still killer. And your taste is why your work disappoints you. A lot of people never get past this phase, they quit.”</p></blockquote><p>If an artist can stick with it, there comes a point where your good taste evolves beyond a recognition of integrity and becomes an ability to actually produce art. Only a small few ever achieve mastery.</p><p>Even if we attain an expert level of knowledge in one area we can’t be masters at everything. We are all consumers and it is impossible to have good taste in everything we buy. We can’t expect to understand the quality and usefulness of every product before we buy it. It is impossible to become a software engineer just so you can purchase the best software. You can’t learn how an engine works just to purchase a car. The knowledge required to have good taste in all our purchases would require an infinite mental investment. So we take shortcuts.</p><p>Another word for these shortcuts are what we call “brands.” We invented brands because we need ways to understand at a glance the value of a product. Brand recognition bypasses the difficult task of measuring the quality of something by allowing you to rely on the collective judgement of others. So if your cult is the kind of people who buy Nike shoes, your purchasing is simplified because you just have to look for the swoosh. After all, the collective is smarter than the individual right? Zombies couldn’t possibly be wrong, could they?</p><p>Branding works when there is a small trusted population of people with great taste. We call these people trendsetters. Branding fails when the trendsetters aren’t craftsmen, but conmen. Zombies indulge an irresistible urge to cash in on brand value by putting a logo on anything that might make a buck. Little by little, the integrity that created the strong brand in the first place gets watered down. Zombies have learned that it is easier to prey on our need for shortcuts than it is to create new brands.</p><p>If the population of craftsmen gets replaced by conmen, branding is no longer a helpful shortcut, but an obstacle that confuses the masses. This confusion makes it even harder to tell the conmen from the trendsetters further handicapping the people who truly want to create meaningful work and making it even harder to have good taste.</p><p>As consumers spend their money without intention, lacking the ability to differentiate between authentic quality and substance-free style, a huge opportunity is missed. Bruno Munari describes it like this,</p><blockquote><p>“The money they spend to gratify their taste (which apart from everything else changes each season) could be spent on making this worship of an ephemeral kind of beauty into a stable appreciation of authenticity. This would reduce production costs and lead to a simpler and more genuine product.”</p></blockquote><p>Instead of pushing towards clarity, the tastes of the masses are perpetually diluted. Like sheep, people with similar tastes separate into groups forming huge brand-worshipping herds. These stereotypes reinforce the arbitrary preferences of the herds in a death spiral that has destroyed any consensus about legitimate quality. Trends flourish, while actual quality remains elusive. Quality, which used to be a by-product of deliberate intent, is now believed to be arbitrary.</p><p>Instead of evaluating a product’s merit, we categorize the brand by the type of people who use it. Often what we are buying isn’t the product itself, but a confirmation of the type of person we want to be. Brands are a way to organize products into categories of people. Purchasing has become a way of identifying ourselves with the type of people we want to be. The Nike brand resonates with athletes. The Apple brand appeals to artists. The Mercedes brand resonates with the wealthy, and so on.</p><p>If you are the type of person who believes in creating meaningful work this is disappointing. You want to create a great product. You will sacrifice everything to see your art make it into the world. And yet when it finally gets in the hands of people they don’t have the ability to recognize its value because people haven’t been taught to recognize quality, they have been trained to recognize brands. They have learned to rely on the shortcut. If someone doesn’t have the ability to rationally distinguish the brand from the object people stop being consumers and transform into something worse. The mindless brand followers are zombies.</p><p>Where have the people of taste gone? Some of the people that are most sensitive to quality (the trendsetters) are the artists and designers who have been trained to recognize the subtleties of well-designed objects. Where do these designers go to exercise their good taste? You guessed it, branding companies. The “practical” path for an art student is to find employment at ad agencies, marketing firms, or design shops. The crown jewel for these workers is to land a branding project and perhaps even design a new logo.</p><p>Many creators get sidetracked by the allure of creating a big brand. The idea of your own shiny logo is sexy and you want to create something significant. What’s bigger than brands like Target, Coca-Cola, and Starbucks? Instead of creating brands, many designers are satisfied just making logos.</p><p>If branding is a shortcut, then logos are just stickers that alert people about what to expect with the product. As employees of branding companies, designers get paid to create logos, packaging, photography, advertisements, and websites. This happens independently from the people actually creating the product. Product design happens in-house, while branding gets outsourced. Design has become something that artificially inflates the value of an object after it has been created. In this scenario are the designers more like zombie conmen or humans with discerning taste?</p><p>Today there are thousands of companies with great logos and very few great brands. There are seven volumes of the popular book series, <em>Logo Lounge</em>. Each book contains 2,000 logos. The Logo Lounge website boasts over 205,000 logos. The logo designs are beautiful. Some of the concepts are thrilling examples of simplicity, wit, and beauty, but creating a logo rarely adds clarity and meaning to the world. At best a logo is a shortcut that represents legitimate quality. At worst, it is a beautiful lie which the reality of the product or company can’t live up to. Logos write checks that the brands can’t cash and yet branding has become the sought after industry of the most creative people in the world. There are so many great logos and so few great brands because it is easier to create a logo (and the impression of a good brand) than it is to create meaningful work that backs the logo up.</p><p>If you study the branding companies you won’t hear them define logos as “a shortcut used by consumers.” They try to put a much more aspirational spin on it. The favorite words that marketers use to describe brands are “promise” and “experience.” Brand <em>promises</em> and brand <em>experiences</em> are meaningless slogans invented to sell more logos. These catchphrases make us think that brands have our best interest in minds. Rest assured that the only <em>brand promise</em> that you you can trust is that they will do whatever it takes to stay in business. The only <em>brand experience</em> that you can rely on is one that empties your wallet. Bob Hoffman exposes the lunacy of the brand pushers, saying,</p><blockquote><p>“There are people in our business who believe that consumers are in love with brands. They believe consumers want to have <em>relationships</em> with brands. They want to have brand <em>experiences</em> and be personally engaged with brands. These people <em>actually</em> believe this!”</p></blockquote><p>Not everyone swallows all the brand hype. It isn’t a coincidence that the word “brand” is banned from use in two of the most iconic companies in the world, Apple and Dyson. James Dyson says,</p><blockquote><p>“There are people who believe in brands; I happen not to. We’re designing things that have got to work properly and have better performance than other things. We don’t allow anyone to use the word brand here. It’s not in our lexicon. There are style gurus who don’t like the look of a Dyson product. I think they are massively missing the point.”</p></blockquote><p>Steve Jobs was equally hostile to the concept of branding. According to Allison Johnson, Apple’s Vice President of Worldwide Marketing Communication, “brand” was a dirty word among Apple employees and so was “marketing.”</p><p>The lesson here is that if you spend your time building a brand rather than focusing on making a great product you are wasting your time. Marketing is what you do to compensate for a flawed product. When we point to companies like Dyson and Apple as examples of great marketing and strong brands we are praising the shortcut rather than canonizing the hard work that led to their success.</p><p>In hindsight, we applaud the vision that created iconic logos like the Nike swoosh, but when Nike’s famous logo was created, Phil Knight’s comment was not a master stroke of brilliance, it was just an acceptance of what was put in front of him at the time. He said, “I don’t love it, but I think it will grow on me.” It wasn’t an inspired decision, he simply settled. When logo designers and brand advocates exalt the swoosh as the pinnacle of brand domination, the tail is wagging the dog.</p><p>If you work for a marketing or branding company you might feel like I am unfairly condemning your occupation to zombie-level. That’s not true at all. The truth is that you are incredibly important to the survival of the creative race. You are poised to be the last line of defense before garbage enters the world. If you are a designer creating stellar design for less than stellar products, here are things that you should ask to ensure that your work is helping humanity and not piling on to the confusion. Is the product worthy of the beauty and creativity you are applying to it? Is there a belief system behind the product’s creators that you support? Is the result of your work a confirmation of the product’s integrity, or are you compensating for its lack of integrity?</p><p>If you answer “no” to any of these questions then you should reevaluate your employment. You can’t create meaningful work in your current role. You are not an artist, you are a stylist. In the words of Robert Pirsig,</p><blockquote><p>“It’s the style that gets you; technological ugliness syruped over with romantic phoniness in an effort to produce beauty and profit by people who, though stylish, don’t know where to start because no one has ever told them there’s such a thing as Quality in this world and it’s real, not style.&quot;</p></blockquote><p>Forget about style. If you are legitimately focused on the future you are by definition not in style. This is a tough pill to swallow because most of us find ourselves putting positive spins on less than stellar situations. We want to create meaningful work. We recognize good work and desperately want to make the world a better place, but we feel stuck. Our jobs don’t give us the opportunity to clarify the value of the brands and instead we muddy the tastes of the public, the one thing that could save us from the brand apocalypse.</p><p>We all want to be a part of something bigger, but what if everything that is bigger is a zombie institution? What are we losing when we sacrifice our artistic integrity for the comforts of a steady paycheck? If we find ourselves in the valley of the zombies, questioning our careers, and looking for the courage to change the course of our lives, the only place where we will find refuge is in our work. We must transform our doubt into energy that we invest in improving our skills. This investment will eventually pay off in the form of new career opportunities.</p><p><a href="chapter11.html">Chapter 11. The Threat of Creativity</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

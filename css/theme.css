@@ -1,0 +1,156 @@
+/* Page-level layout only. Component styles live in css/component.*.css
+   and are injected automatically by the build pipeline. */
+
+/* ── Reading column ── */
+.reading-column {
+  max-width: var(--ade-content-width);
+  margin-inline: auto;
+}
+
+/* ── Main container ── */
+.container {
+  max-width: var(--ade-content-width);
+  margin-inline: auto;
+  padding: var(--ade-space-6) var(--ade-space-5) var(--ade-space-8);
+}
+
+.container.reading-column {
+  max-width: var(--ade-content-width);
+}
+
+.container.wide-column {
+  max-width: var(--ade-wide-width);
+}
+
+.wide-breakout {
+  width: var(--ade-wide-width);
+  max-width: calc(100vw - (var(--ade-space-5) * 2));
+  margin-left: calc((var(--ade-content-width) - var(--ade-wide-width)) / 2);
+  margin-right: calc((var(--ade-content-width) - var(--ade-wide-width)) / 2);
+}
+
+@media (max-width: 72rem) {
+  .wide-breakout {
+    width: calc(100vw - (var(--ade-space-5) * 2));
+    margin-left: calc(50% - 50vw + var(--ade-space-5));
+    margin-right: calc(50% - 50vw + var(--ade-space-5));
+  }
+}
+
+@media (max-width: 40rem) {
+  .wide-breakout {
+    width: calc(100vw - 2rem);
+    margin-left: calc(50% - 50vw + 1rem);
+    margin-right: calc(50% - 50vw + 1rem);
+  }
+}
+
+/* ── Dashboard page layout ── */
+.dashboard-shell {
+  display: grid;
+  gap: var(--ade-space-5);
+}
+
+.dashboard-intro {
+  max-width: 35rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ade-space-5);
+}
+
+@media (max-width: 40rem) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Image captions (used across case studies and art pages) ── */
+p.caption {
+  width: 100%;
+  background-color: var(--ade-parchment);
+  border-top: 1px solid var(--ade-hairline);
+  margin-top: 0;
+  margin-bottom: var(--ade-space-5);
+  padding: var(--ade-space-3) var(--ade-space-4);
+  text-align: center;
+  font-family: var(--ade-font-ui);
+  font-size: 0.8125rem;
+  color: var(--ade-muted);
+}
+
+/* ── Case study image (30% float, full-width on mobile) ── */
+img.case-study-image {
+  width: 30%;
+}
+
+@media only screen and (max-width: 40em) {
+  img.case-study-image {
+    width: 100%;
+  }
+}
+
+/* ── Circle avatar photo ── */
+.circle-photo {
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 40em) {
+  .circle-photo {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+/* ── Book promo image floats ── */
+img.aotld {
+  float: right;
+  max-width: 30%;
+  margin: var(--ade-space-5) var(--ade-space-5) 0 calc(-1 * var(--ade-space-6));
+}
+
+img.userzero {
+  float: left;
+  max-width: 25%;
+  margin: 0 var(--ade-space-5);
+}
+
+img.about-me {
+  float: right;
+  width: min(33%, 14rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: calc(-1 * var(--ade-space-6)) 0 0 var(--ade-space-5);
+  border-radius: 50%;
+}
+
+.booktitle {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 40em) {
+  img.aotld,
+  img.userzero,
+  img.about-me {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/* ── Mailchimp / newsletter embed wrapper ── */
+.mailchimp {
+  max-width: 28rem;
+  margin: 0 auto;
+}

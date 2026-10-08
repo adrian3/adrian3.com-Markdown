@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>How to use your AirPod Pros to Trigger Flow — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Creativity</p>
+		<h1>How to use your AirPod Pros to Trigger Flow</h1>
+		<small>January 1, 2020</small>
+	</header>
+	<div class="post-body reading-column">
+		<p><img src="https://adrian3.com/imgs/images/airpod-pro-flow-trigger.webp"></p><h1>How to use your AirPod Pros to trigger flow</h1><p>It’s 2020 and if you are like me you are hoping to spend as much of this year in a flow state as possible. I am always looking for hacks that allow my to get into the zone faster, stay there longer, and increase my creative output. Here’s a new trick that has been working for me lately.</p><p>You may recall my previous advice for <a href="https://link.medium.com/uxs4uwjJT2">how to trigger flow with coffee</a>. The idea here is the same. Our bodies are programmable and if we are intentional about the inputs we allow into our system we can optimize how we experience the world. Sound is a critical ingredient of our mental interface and using it to our advantage should be a part of your flow-hacking strategy.</p><p>For Christmas this year I got a pair of AirPod Pros. I was expecting them to be an upgrade to my aging first generation AirPods, but what I experienced was something unexpected. When I first inserted the AirPod Pros in my ears, the sensation was disorienting. It is hard to describe. I’ve heard other people describe it as adding a soundtrack to your life. Others call them Apple’s first augmented reality device. That’s not what it feels like to me. The closest thing I can compare it to is flow, that euphoric feeling when the world disappears and you are alone with your work. It feels like an altered state. This makes it an ideal tool for flow hacking.</p><p>If you doubt my experience, I should probably mention that I am not new to noise-canceling headphones. I have over-the-ear Bose noise-canceling headphones that I use at work. I love them. For me they are the only thing that makes working in an open office space tolerable. And while my productivity has improved because of the Bose headphones, they don’t automatically trigger flow. The AirPod Pros are different. The sensation is deeper, almost inside your skull. I especially notice it when I pull the AirPod Pros out of my ears and re-enter the real world. It is like the first steps as you exit an escalator, where the world slows down and it takes yourself a moment to re-orient yourself. Why not use this sensation to your advantage?</p><p>As promised, here are four suggestions for how to control flow using the AirPod Pros...</p><h2>1. Only use the AirPod Pros for creative work</h2><p>The first recommendation is disappointing, I know. The AirPod Pros are expensive and you want to get as much utility out of them as possible. Unfortunately, if you use them all the time you will deplete their ability to consistently trigger flow. If you also use the AirPod Pros when you run or while you clean the house, you are giving your body mixed signals. By isolating your usage exclusively to times when you are intentionally doing creative work, you are training your mind to associate the AirPod Pro sensation with flow. Like Pavlov’s dog, every time the AirPod Pro insertion is followed by flow, the trigger is strengthened.</p><p>If you decide to use your AirPod Pros to hack your flow, you might find you aren’t fully using their transparency mode. While the transparency feature works as advertised, this function is counter productive when our goal is flow. We don’t want to make it easy to break out of flow, we want to stay in the groove as long as possible. Interruptions happen, however, so it is handy to be able to turn the noise canceling off with a gentle squeeze of the AirPods stem. If you find yourself toggling it too often, this might be a sign that the environment you have chosen isn’t ideal for creative work.</p><h2>2. Ritualize the process</h2><p>Perhaps you already have a creative ritual. If so, incorporate the AirPod Pros into your ritual. If you don’t have a ritual, consider starting one. Everybody is different and you should personalize the ritual to suit your preferences. It doesn’t have to be fancy or time consuming, you are simply defining a series of actions that you perform in a prescribed order. Here’s what my ritual looks like. My Saturday mornings are holy. I wake up, prepare my coffee, wrap myself in a blanket, and write. Location is important and for me that means being in the office in my basement surrounded by books, toys, and records. I try to avoid using this space for anything but work to prevent creative contamination.</p><p>How do AirPod Pros fit into your ritual? Adding AirPods to your routine might be as simple as storing them on the charger on the table next to where you do your creative work. Let that be there home. When you are ready to work, open Apple’s pure white shell, pause to appreciate the pearls nestled in their bed, note the pleasing confirmation of the green light, then put them on. Feel the world disappear as you slip into flow.</p><p><img src="https://adrian3.com/imgs/images/airpod-pro-flow-trigger2.webp"></p><h2>3. Pair with the right music</h2><p>Songs have the power to be more than just background music. Like an athlete selecting the songs for the playlist that pumps them up before a game, music can elevate your mental state. You probably already know what type of music pairs best with the type of work you do. Some people reach for classical music, others for metal or techno. Some people can work to music with vocals, but I find lyrics to be distracting. I default to electronic music, movie soundtracks, or a playlist on Apple Music called <a href="https://music.apple.com/us/playlist/classicaltronics/pl.b9414a5b66b34f14bfc8caf1cd531da3">“Classicaltronics.”</a> The genre you choose matters less than the intentionality of your music selection.</p><p>One thing to avoid, however, is fiddling with your playlist while you are working. Hunting for music is procrastination. You want to be able to turn the music on and let it play, preferably without ever having to skip a track or switch albums. Apple Music’s radios stations or playlists are nice because they outsource the music selection process so you don’t have to think about it.</p><h2>4.  When the magic stops, pull the plug</h2><p>Despite our best intentions, we can’t stay in flow indefinitely. Eventually, the magic will wear off. When you get to that point don’t force it. Remember, we want to associate the AirPod Pros with the deepest moments of flow, so if you are grinding through unproductive periods with your headphones on you are reinforcing negative feedback. It is better to stop. When writing, I tend to max out around 1,500 words. Once the inspiration stops, I have learned it is better to walk away rather than force it and get frustrated.</p><p>Ideally, as your system gets better you will be able to stay in flow longer and longer. Inevitably there will be days when you just can’t find the groove. When that happens, forgive yourself. Take comfort in the fact that you showed up, did the work, and the muse didn’t appear. It’s not your fault. You will show up again next time because that’s what artists do.</p><hr><p>I hope you find my AirPod Pro hacks helpful. I am a single data point, so I am curious to know if my story matches your experience. Are you able to achieve the same effect with non-Apple headphones? What type of music works for you? If these suggestions work for you, let me know. Or if you have other tricks that work for you, please share them. Message me on <a href="https://twitter.com/ade3">Twitter (@ade3)</a> and share this story on Medium.</p><p>One final recommendation...</p><p>I believe that part of the reason the AirPod Pro hack works so well for me is that I have always struggled with sensory issues. Aside from the carefully controlled environment of my home, most other places are uncomfortable for me. I don’t talk about it much because it just sounds like I am complaining. But honestly, public spaces have been a lifelong obstacle because my senses are easily overwhelmed by sound, movement, light, smell, temperature, and people. If you can relate to that feeling, I recommend a book called <em><a href="https://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153">Quiet: The Power of Introverts in a World That Can’t Stop Talking</a></em>. It is easy to feel like sensitivity is a flaw when in reality it is more like a super power. And just like the origin story of a super hero, you have to go through a training phase where you learn how to use your powers. <em>Quiet</em> is the guide I wish I would have had earlier in life when I was still figuring out how to function in a noisy world.</p><p>Thanks for reading. If you enjoyed my AirPod Pro Tips, you will love my upcoming book <em>User Zero</em> because it reveals the hidden world hiding in plain sight and shows you how to transform your reality into an environment where you can be the best version of yourself. <a href="https://mailchi.mp/b6b7525ff5bb/user-zero">Join my mailing list</a> so you can be among the first to get your hands on a copy. <em>Stay creative</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

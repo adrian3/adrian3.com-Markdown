@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Fooling the Focus Groups — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Design Thinking</p>
+		<h1>Fooling the Focus Groups</h1>
+		<small>January 10, 2016</small>
+	</header>
+	<div class="post-body reading-column">
+		<img src="https://adrian3.com/imgs/images/fooling-the-focus-groups.webp" class="full-width"><h1>Fooling the Focus Groups</h1><h2>Why car companies view their brands as a liability and what they are doing about it. (Spoiler: It’s a Chevy.)</h2><ul><li><em> </em></li></ul><blockquote><p>“To keep it unbiased we removed all the logos.” — Chevy</p></blockquote><p>Have you noticed how car companies are desperately trying to shed the burden of their brands?</p><p><a href="https://www.youtube.com/watch?v=aSoafkSxorY">Buick fooled grandma.</a></p><p><a href="https://www.youtube.com/watch?v=SKL254Y_jtc">Chrysler started importing cars from Detroit.</a></p><p><a href="https://www.youtube.com/watch?v=NcydjIZSXtk">Nissan turned the Altima into a race car by applying stickers.</a></p><p><a href="https://www.youtube.com/watch?v=S6cSTBeaqFM">Today, Chevy fooled a focus group by removing the logos from their car.</a></p><p><em>(I can’t believe I am saying this, but you should watch those commercials if you haven’t seen them. Scroll to the bottom if you don’t want to bounce over to YouTube.)</em></p><p><img src="https://adrian3.com/imgs/images/fooling-the-focus-groups2.webp"></p><p>“But with the blast shield down, I can’t even see!”–Luke Skywalker</p><p>The gag of Chevy’s new TV spot is that without the signaling of the chrome badges the onlookers are lost. No logos means no reference for quality.</p><blockquote><p>“I have no idea even what car this is.” — Anonymous Dazed Onlooker</p></blockquote><p>The climax comes when the testers estimate that the Chevy would sell for anywhere between $50-$80,000. Jaws drop when the host reveals that it starts “at only $22,000.”</p><p>Call me crazy, but if just adding a Chevy logo to the hood causes a car to depreciate by over 300% they might be doing branding wrong. <em>Or are they?</em></p><p>I want to tell you how and why an ad like this gets made. It is devilishly intentional and it requires me to untangle some of the myths that brand hucksters have been force feeding us for too long. You don’t still believe brands are a way to differentiate yourself from your competitors do you?</p><a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d?source=your-stories"><img src="https://adrian3.com/imgs/images/fooling-the-focus-groups3.webp" alt="Image from The Zombie-mobile" class="caption"></a><p>One of the criticisms my “<a href="https://medium.com/swlh/the-zombie-mobile-b03932ac971d#.aolvwi311">Zombie-Mobile</a>” story received was that I was basing my conclusions on the exterior design of the car. That is understandable since the image in my post shows 23 identical cars made by 23 different companies. I was pointing at exteriors, but what I was really talking about was brands.</p><p>The big question is why are car companies running away from their brands?</p><p>Brands were originally invented because humans needed ways to understand at a glance the value of a product. It was a shortcut. Brand recognition bypasses the difficult task of measuring the quality of something by allowing you to rely on the collective judgement of others. So if your cult is the kind of people who buy Nike shoes, your purchasing is simplified because you just have to look for the swoosh. After all, the collective is smarter than the individual right?</p><p>Why would removing badging from a car make the Chevy evaluation unbiased? The optimist would say that the ad is an honest attempt to short circuit the brand shortcuts that have been burned into our collective consciences. A pessimist would see this as an admission that the only difference between today’s cars are the logos. Both are right.</p><p>Branding works when products get built by craftsmen. Branding fails when the products are peddled by zombies. The conmen indulge their irresistible urge to cash in on brand value by putting a logo on anything that might make a buck. Little by little, the integrity that created the strong brand in the first place gets watered down. Zombies have learned that it is easier to prey on our need for shortcuts than it is to create new brands.</p><p>Eventually the zombie’s brand goes bankrupt. How do you recover? Is it possible to change a brand? If your brand has become synonymous with garbage, can you turn the perception around? The solution (to a zombie) seems obvious. The ad men realize:</p><blockquote><p>It would be easier to sell a Chevy if we could hide the fact that it is a Chevy!</p></blockquote><p>The ads practically make themselves.</p><p>Chevy’s focus group, now robbed of their brand beacon, are forced to use a vocabulary that they literally don’t have. Listen to their words. <em>It gets weird.</em> At one point they actually start making animal noises. No joke!</p><p>Watch as the woman brushes her fingers against the roof and says it has “kind of a sleek elegance.” <em>It’s a roof.</em></p><p>One guy comments on the “dripping diamond effect” of the headlights. <em>Hmmm.</em></p><blockquote><p>“The front end has a little bit of a snarl.”</p></blockquote><p>A guy with a British accent points at the seam on the bumper and says it has, “seamless, classic, German design.” <em>Have I been taking crazy pills?</em></p><p>These aren’t observations of quality by “real people.” They are buzz words that have been memorized by clueless consumers. Their commentary is just as empty as the logos and badges.</p><p>Brands are a way to organize products into categories of people. Purchasing has become a way of identifying ourselves with the type of people we want to be. The Apple brand appeals to artists. The Lexus brand resonates with people seeking luxury, and so on. Chevy deliberately leaches these attributes throughout the ad.</p><p><img src="https://adrian3.com/imgs/images/fooling-the-focus-groups4.webp"></p><p>Notice how in the Chevy commercial the generic car is placed in a glass house next to a vineyard. The brands that get mentioned to define the anonymous car are Bose, Apple, Lexus, Audi, BMW, and Tesla. The location is a “Design Clinic” in Sonoma, California. That’s what psychologists call <a href="https://en.wikipedia.org/wiki/Priming_%28psychology%29">priming</a>.</p><p>Now, I have no idea if the Chevy Malibu is a quality vehicle or not. Maybe the Malibu has made by craftsman and it just happens to look like every other car on the market. You can’t blame my skepticism. One thing is clear, whoever made this ad knew the con they were making.</p><p>If the population of craftsmen gets replaced by conmen, branding is no longer a helpful shortcut, but an obstacle that confuses the public. Instead of pushing towards clarity, the tastes of the masses are perpetually diluted. The first step is to be aware of the con. Now you know.</p><ul><li><em> </em></li></ul><p>Thanks for reading. If this post pushed your buttons, here are a few of my other crazy ideas:</p><ul><li><a href="../2015/2015-12-01-why-do-the-homeless-hate-whoppers.html">Why do the homeless hate Whoppers?</a></li><li><a href="../2015/2015-12-30-affordable-idealism.html">Affordable Idealism</a></li><li><a href="../2015/2015-10-01-in-the-future-everyone-will-be-creative-for-fifteen-minutes.html">In the future everyone will be creative for fifteen minutes.</a></li></ul><div class="flex-video">  <iframe width="420" height="315" src="https://youtube.com/embed/SKL254Y_jtc" allowfullscreen style="border:0"></iframe></div><div class="flex-video">  <iframe width="420" height="315" src="https://youtube.com/embed/NcydjIZSXtk" allowfullscreen style="border:0"></iframe></div><div class="flex-video">  <iframe width="420" height="315" src="https://youtube.com/embed/S6cSTBeaqFM" allowfullscreen style="border:0"></iframe></div><h4>Bonus Simpson’s Video:</h4><div class="flex-video">  <iframe width="420" height="315" src="https://youtube.com/embed/EmTeToFuBqw" allowfullscreen style="border:0"></iframe></div><blockquote><p><em>“My H has been stolen! That’s how people know it’s a Honda!” — Superintendent Chalmers</em></p></blockquote>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

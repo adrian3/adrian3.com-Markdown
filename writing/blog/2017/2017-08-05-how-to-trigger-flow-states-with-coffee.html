@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>How to Trigger Flow States with Coffee — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Creativity</p>
+		<h1>How to Trigger Flow States with Coffee</h1>
+		<small>August 5, 2017</small>
+	</header>
+	<div class="post-body reading-column">
+		<h1>How to Trigger Flow States with Coffee</h1><h2>(Quick hits, slow triggers, and magic beans)</h2><p><img src="https://adrian3.com/imgs/gifs/flow-triggers.gif"></p><p>Most of us use coffee to get through the day. It’s a routine that we probably don’t think much about. Wake up, pour a cup and go. When the buzz wears off it is time for another cup. But what if we used coffee more intentionally? Could we develop a system where coffee becomes your secret weapon? Let’s explore how the humble cup of joe can transform into a trigger that you can use to instantly push yourself into a state of flow.</p><p>First off I should say that I am not a coffee snob or purist. People get religious about coffee and that’s the opposite of what I want to do. My opinion about coffee quality is simple. If you like it, <em>it’s good.</em> If you can use it to do better work, <em>that’s great.</em> You also might be surprised that this post isn’t about caffeine. My advice should work just as well using decaffeinated coffee. Heck, you could do everything I am going to talk about <em>except drink the coffee</em> and get the same results. This post could just as easily be written about sparkling water or Skittles. What I am about to give you are three mental models, simple systems that you can use to program your brain:</p><p>One is <em>the quick trigger</em>, the easy reliable way to trigger flow.</p><p>The second is <em>the slow trigger</em>, a more involved, deliberate technique for finding flow.</p><p>Third is <em>the magic trigger</em> a special method that you will save for situations where creative performance is most important to you.</p><p><em>So let’s get into it...</em></p><ul><li><em> </em></li></ul><h2>1. Keurig Coffee Pods</h2><p>(The quick trigger)</p><p>Let’s offend the purists right off the bat. Let me try to convince you why the Keurig might be the ideal tool to help you hack flow...</p><p>Think of coffee as a triggering mechanism. We want to use it only when it gives us specific, reliable benefits. If you are like me, the first time in my day where performance matters are the fifteen minutes following the moment I open my computer after I arrive at work. This sets the tone for my day and is my most productive time. That is the moment that I am optimizing for, the period when triggering flow can have the biggest ROI.</p><p>Here’s the bad news. Since timing is crucial you will probably need to shake up your routine. No more coffee right after you roll out of bed. No coffee in the car on your way to the office. Why not? Because those moments don’t require performance. Just like weak coffee, if we water down our routine with a steady flow of mild stimulation we never get the big boost we are looking for. So our first hit of coffee needs to arrive in conjunction with the first moment when performance matters.</p><p>But why Keurig? It’s quick and simple. You don’t have to fiddle with the production process. Just pop in a pod and punch a button. Brain effort spent on trivial matters is energy that isn’t getting directed at the important stuff. Eliminating unnecessary decisions allows you to focus on what you are about to do. Your life isn’t about coffee, it’s about changing the world, so eliminate decisions and complications that distract from your main purpose.</p><p>While the process of making a cup with the Keurig is dead simple, that doesn’t mean it isn’t an event. You get a pleasing little pop when the pod doors close. There is a wonderful sound as the water is heated and pumped through the device. The coffee hisses, spurts, and fizzes as your cup slowly fills. The air around you gently fills with the smell of coffee. Why is this important? A good flow trigger is going to engage all your senses. By the time the mug hits your lips you have just engaged your sight, smell, sound, touch, and taste in a very specific pattern. You are training your body to respond to this pattern. Once this code gets internalized it will be engrained in your being as the set of events that always precede your best work.</p><p>Ready for the second cup? <em>More bad news.</em> Remember that we are trying to develop a reliable system that works <em>every time.</em> That means we need to eliminate coffee consumption that isn’t connected to high performance. So if you are reaching for coffee just to stay awake through a PowerPoint presentation it is going to de-program the trigger. Avoid sending your body mixed messages. Does coffee mean you are about to perform at your peak or does it mean you are about to zone out while someone drones on about TPS reports? That’s not to say that you have to limit yourself to a single cup a day, but you have to be intentionally aware of when and how you initiate the trigger.</p><p><strong>Let me reduce “the quick trigger” down one more level:</strong><br>Reduce the process to the push of a button. Engage all your senses. Only initiate the trigger in moments that can be reliably followed by devoted work time.</p><ul><li><em> </em></li></ul><h2>2. Blue Bottle Coffee Subscriptions</h2><p>(The slow trigger)</p><p>Before I explain “the slow trigger” method for finding flow, let me outline how this routine looks for me:</p><ul><li><a href="https://bluebottlecoffee.com/at-home">Blue Bottle</a> sends me a bag of beans each month.</li><li>Each month the coffee comes from a different country and contains a brief story about the people who grew the beans.</li><li>Grinding up the beans is noisy but the bursting beans fill the kitchen with that wonderful aroma.</li><li>I use an <a href="https://www.amazon.com/dp/B0047BIWSK/ref=asc_df_B0047BIWSK5109212/?tag=hyprod-20&amp;amp;creative=394997&amp;amp;creativeASIN=B0047BIWSK&amp;amp;linkCode=df0&amp;amp;hvadid=167152462925&amp;amp;hvpos=1o1&amp;amp;hvnetw=g&amp;amp;hvrand=3423345900438164839&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=t&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9028770&amp;amp;hvtargid=pla-315571604316">AeroPress</a> which is a simple but physical process where you push the grounds through a syringe-like tube.</li><li>The cleanup is simple, I just pop the grounds into the trash, rinse off the AeroPress and I’m done.</li></ul><p>Did you spot the trigger patterns in that list?</p><p>First, the decision of what kind of coffee to drink is made for me. If I had to choose beans myself, I would get stuck. I would spend hours researching the best climates, methods, and philosophies involved in coffee production. That would paralyze me. Instead, I trust the experts and am delighted by what they surprise me with. Surprise is also a flow trigger.</p><p>Second, the coffee bean’s backstory isn’t trivial. It gets me thinking about people who are different from me who live in exotic locations. For flow this is important because creative insights spring from moments when we are comfortably outside of our normal mental models. This month they sent me Sumatra Ketiara Kopi Ocen and told me it has a “cranberry-like sparkle for uncommon flare.” Beans with a story engage my mind so much more than a generic bag of beans–even if I can’t taste the cranberry.</p><img src="https://adrian3.com/imgs/images/flow-triggers1.webp" class="full-width"><p>Next is the smell of the freshly ground beans and the intense sound of the grinder. The Keurig barely tickles the senses, but grinding your own beans kicks your senses in the face. Likewise, the Aeropress requires firm pressure, engaging your muscles. You aren’t just tapping a button and zoning out. You are present, engaged, and involved. And yet your mind isn’t overwhelmed. You aren’t stressing over water temperature, grind levels, or timers. On the edges of your mind there is room for toying with thoughts about what you are about to do.</p><p>Finally, the cleanup is simple. The transition from making coffee to working leaves no room for procrastination or distraction. It may take a bit longer overall, but once the coffee is ready, you will be too.</p><p><strong>Let me reduce “the slow trigger” down one more level:</strong><br>Reduce decision making. Be surprised and open to exotic thoughts. Physically engage with the process. Minimize distraction while your mind preps for performance.</p><ul><li><em> </em></li></ul><h2>3. Mushroom Coffee</h2><p>(The magic trigger)</p><p>Saturday mornings are when I do my creative writing. Every Friday night I go to bed wondering what I will write in the morning. Will this be the week where my creativity runs dry? When Saturday arrives, somehow I always have a story to tell. <em>It’s magic</em> and it might have something to do with the coffee.</p><p>For my magic trigger I drink mushroom coffee. Strange, I know. My mushroom coffee comes from a company called <a href="http://foursigmatic.com">Four Sigmatic</a> and can be ordered online. Surprisingly it doesn’t taste like mushrooms. It’s a blend of coffee beans, lion’s mane mushrooms, chaga mushrooms, and rhodiola root. These ingredients are thought to have nootropic properties that supposedly give you more of a boost than caffeine alone. Here is what my mushroom coffee routine looks like:</p><ul><li>Once a week I wake up a little earlier than normal and hit the coffee before anything else</li><li>I open a packet of coffee and stir it into hot water. The process couldn’t be simpler.</li><li>Next I grab my iPad and surprise myself with the words that appear on the screen.</li><li>As I write I wonder if the coffee <em>really</em> has nootropic powers or if it is a placebo.</li></ul><img src="https://adrian3.com/imgs/images/flow-triggers2.webp" class="full-width"><p>Here’s how the magic trigger works...</p><p>Timing is important. My goal for the magic trigger is different than my normal coffee triggers so the routine must change as well. Waking up early and hitting the coffee first is a way to break the pattern. Instead of a snooze-button work day, the early start is a reminder that I am doing this for me. It’s much easier to wake up when your reasons are selfish.</p><p>Notice that the process is even simpler than the Keurig. Where are the sense-tingling components of my other triggers? Because I only indulge in mushroom coffee once a week I am piggybacking off my normal coffee triggers. Remember how <a href="https://en.m.wikipedia.org/wiki/Classical_conditioning">Pavlov’s dog</a> magically salivated at the sound of a bell? My body has learned that coffee is a trigger, so even without a full process that engages all my senses, my body still reacts <em>as if I had.</em></p><p>Finally, notice that there is change of tools. My <em>professional</em> trigger is followed by time on a laptop. My <em>personal</em> trigger is followed by time on my iPad. Again, there is a piggy-back effect. The tool is similar enough to put me in “work mode” but different enough to prevent me from going into “business mode.” It also has the side-effect of creating a second trigger because I associate my iPad with creative writing. By honing our systems we can train ourselves to perform at a high level by priming ourselves with a coffee routine. Eventually, you should be able to get the same results by slightly altering the pattern.</p><p>I use mushroom coffee as my magic trigger, but your method doesn’t have to be as unusual. For example, you could reserve a special mug for only the times when you need to do the personal, creative work. You can call it superstition but it only takes one magical experience to stop questioning why it works and just build room into our routines that allows us to surprise ourselves with what we create.</p><p><strong>Let me reduce “the magic trigger” down one more level:</strong><br>Make the trigger dead simple and reserve it exclusively for special moments. Build it on top of proven triggers. Believe that magic is possible and trust that you are capable of more than you know.</p><ul><li><em> </em></li></ul><h2>Pitfalls of Flow Hacking with Coffee</h2><p>Finally, a word of warning. At the beginning of this story I mentioned that this post could just as easily been written about Skittles. I wasn’t joking. The main takeaway should be the understanding that your mind is hackable. By building patterns and altering behavior you have the ability to reprogram yourself.</p><p>So don’t make the mistake of focusing on the coffee. Focus on the system. If you dwell on the beans you could succumb to the snobbery, addiction, and office politics that surround our beloved drink. I knew a guy that quit his job almost entirely because his boss called him out for not re-filling the coffee pot after drinking the last cup. Coffee should be something you enjoy, so remain flexible and let your system adapt as you get better and better at tapping into maximum flow.</p><p>Thanks for reading. If you enjoyed this advice you should pick up <em><a href="https://www.amazon.com/Art-Living-Dead-Adrian-Hanft/dp/1495945871">Art of the Living Dead</a></em> because it’s like a tall, mocha, fully-caffeinated version of my weekly online writing. <em>Stay Creative.</em></p><br><br><br><br><br><br><h2>Bonus Tips: Cream and Sugar</h2><p>You’re still here? Awesome, you deserve some bonus content. Here’s how to think about sweetening your coffee...</p><p>Don’t feel guilty about masking the coffee flavor with additives. Tune out the snobs. Find what you like and stick with it. Try to keep it simple and try not to introduce complexity into your routine. For example, I use the sweetened flavored creamer that comes in a big bottle. It simplifies a 2-step process (cream <em>and</em> sugar) into a single pour. Add it to your cup first so that it mixes with the coffee as the mug fills. This saves you from having to find a spoon or stirrer to mix it up. That means you don’t have to do any dishes or find a trash can. Tiny things like that seem trivial but it doesn’t take much fuss to transform a trigger into a chore.</p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

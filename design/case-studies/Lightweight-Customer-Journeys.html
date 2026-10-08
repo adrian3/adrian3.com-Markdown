@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>UX Research Methods — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html">Resume</a></li></ul></div>
+<article class="case-study-shell">
+  <div class="case-study-inner">
+    <h1>Lightweight Customer Journeys</h1><p><strong>A UX research method from my work as Lead Product Designer at Runcoach</strong></p><h2>Introduction</h2><p>Every team says it wants to understand its users. Then someone prices out a proper research study, the calendar fills up, and the understanding quietly never happens. At Runcoach I kept running into the same wall: the research methods that were <em>trustworthy</em> were expensive and slow, and the methods that were <em>cheap</em> were mostly guesswork. So I developed a lightweight method for producing authentic, persuasive stories about real users — without a big research budget. This is that method, and you can use it too.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/01-accuracy-effort-quadrant.png" alt="An “Accuracy × Effort” chart plotting research methods on two axes — imaginary to accurate, low effort to high effort — with a question mark sitting in the low-effort, high-accuracy quadrant."></p><h2>1. How Do You Pick a Research Method?</h2><p>Before choosing a research tool, it helps to judge it on two axes. The first is <strong>effort</strong> — how much it costs you in time, money, difficulty, and organizational resistance. The second is <strong>accuracy</strong> — how much you can actually trust the result. Plot the methods we all reach for and a pattern appears.</p><ul><li><strong>Personas</strong> live in the high-effort, <em>imaginary</em> corner: we invest real work to invent stereotypes like “data-driven cyclists” or “Betty, the social race participant.”</li><li><strong>Target audiences</strong> are low-effort but equally imaginary — they’re what other people tell us our product is for (“runners don’t have money; we should target cyclists with power meters”).</li><li><strong>Designer intuition</strong> is low-effort and surprisingly accurate, because our experience usually steers us right. But intuition is fragile: it’s only as good as the designer, and it’s easy to attack in a room full of stakeholders.</li><li><strong>Customer journey maps</strong> sit in the high-effort, <em>accurate</em> corner — the gold standard of UX rigor.</li></ul><p>The interesting part of the chart is the corner that’s usually empty: <strong>low effort and accurate.</strong> That’s the quadrant lightweight customer journeys are designed to fill.</p><h2>2. The Trouble With the “Perfect” Journey Map</h2><p>A full customer journey map is the ultimate expression of UX perfection — an accurate map of every high and low your customer experiences. The UX world (Jared Spool among them) rightly holds it up as a standard to aspire to. The problem is what it costs and what it produces.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/02-rail-europe-map.png" alt="The Rail Europe customer experience map — a beautiful, sprawling, wall-sized document."></p><p>To build one “properly” you get every stakeholder in a room, make sure all the user types are represented, list every point of contact multiplied by every platform, and debate until you reach consensus. The result is genuinely impressive — and almost unusable. These documents are huge, intimidating, and impossible to absorb at a glance. Worst of all, the non-designers you most need to influence take one look and disengage. A research artifact that nobody reads can’t change what a team builds.</p><p>What I wanted was something with most of the accuracy of a journey map and a fraction of the effort — something a busy product manager would actually read.</p><h2>3. The Method: Research Like a Detective</h2><p>The trick is that you don’t need to commission new research. The story of a real user is already scattered across systems you can reach today — you just have to assemble it.</p><p><strong>Start with customer support.</strong> Support teams are sitting on a goldmine and are usually desperate for someone to listen. Ask what themes keep coming up. Find someone who recently wrote in about that problem, get their name and user ID, and ask to read the whole correspondence so you have context.</p><p><strong>Then mine your own product.</strong> Look the person up in your admin tools and public profile — review their history, and log in as them if you can. For a Runcoach user that meant: Do they have a race they’re training for? What kind of athlete are they? When did they join? How active are they?</p><p><strong>Then go external.</strong> Strava, Athlinks, race websites, Google, and social profiles will humanize the person in a way your database never can — photos, a bib number, the race they ran, a telling detail. Follow your intuition and look for the things that make them a person instead of a row in a table.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/03-external-research-strava.png" alt="A user’s public Strava profile — activities, achievements, and a photo of the bike-crash injury that changed his training — pieced together as external research."></p><h2>4. Tell It Like a Story</h2><p>Once you’ve gathered the pieces, don’t write a report. Write a three-act story — the same structure you learned in high school English, because it’s the structure that makes people care.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/06-story-arc.jpg"></p><ul><li><strong>Act I — Setup.</strong> Introduce the hero. Humanize them, make us care, and foreshadow the conflict to come.</li><li><strong>Act II — Conflict.</strong> Build the drama around what the user is struggling with, and use a <em>direct quote</em> from their support ticket. Never blame the user — the tension should be something any of us would struggle with in their shoes.</li><li><strong>Act III — Climax.</strong> End on a cliffhanger: <em>will this have a happy ending?</em> Act III is where the team gets to swoop in and solve the problem — so you don’t even need to supply the solution. Leaving it open is what pulls the team in.</li></ul><p><img src="https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/04-meet-chris.png" alt="A lightweight journey: “Meet Chris McAllister,” a simple timeline introducing a real Runcoach user with a few photos and dates."></p><p><img src="https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/05-chris-conflict.png" alt="The conflict beat of Chris’s journey — “Training Stops” — pairing his Runcoach calendar with a photo of him, three weeks after an injury."></p><p>At Runcoach this produced three users the whole team came to know by name. Here are their stories in a nutshell.</p><p><strong>Chris</strong>, was training for the Marine Corps Marathon when he was sidelined by a cycling injury mid-training. I connected with him after reading his support ticket where he was confused by the “target” icon in our app. He didn’t realize that we offered free support from real coaches on staff who helped him train through his injury. When he crossed the finish line carrying an american flag we were proud to share in his success in a tiny way.</p><p><strong>Heather</strong>, who had run a dozen races in a year but created a support ticket asking if there was a way to set a goal in our system. This was an important feature of our app and it really opened our team’s eyes to a bad user experience that hid our value from customers.</p><p><strong>Kim</strong>, training for a high-altitude trail marathon was also a Strava user. She didn’t realize that the Runcoach app could also track workouts. This was proof that our team was falling behind the competition and pushed us to improve our run tracking capabilities to match the expectations of our users.</p><h2>5. You Have a Story — Now What?</h2><p>A story only earns its keep if it spreads. Depending on the audience, write it up as a short script. Show it to your product manager first — they’ll help you evangelize it. Share it at stand-ups, print the timeline and post it somewhere public, and refer back to it in grooming sessions. Then listen: a good story spreads on its own, and you’ll know it worked when you hear someone else on the team repeat it.</p><h2>Why It Works</h2><p>As product designers it can be difficult to pull our teams out of the weeds and get them thinking about the people our app serves. A story tells them why the hard work matters. Lightweight customer journeys give you most of the truth of a formal journey map at a tiny fraction of the cost, in a form people actually pass around. The real measure of success isn’t the artifact. It’s the day a developer says, <em>”we need to fix this for Chris”</em> — and means it.</p>
+  </div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 14 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Magic and the Illusion of Talent</h1><blockquote><p><em>”Any sufficiently advanced technology is indistinguishable from magic.”</em> — Arthur C. Clarke</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter14.webp"></p><p>Do you consider yourself to be a right or left-brained person? The popular model states that the right half of the brain controls creativity and the left hemisphere is responsible for analytical tasks. Just as some people are right or left-handed, people believe that they also have a dominant brain type. Could this be the differentiator between human and zombie? The answer, surprisingly, is no. The right vs. left-brain theory is an enduring myth that doesn’t hold up to scrutiny.</p><p>A 2013 study titled <em>An Evaluation of the Left-Brain vs. Right-Brain Hypothesis</em> by Jared A. Nielsen evaluated the MRIs of one-thousand and eleven subjects to identify whether patients really did demonstrate dominant brain hemisphere behaviors. What they found was that there is not a healthy human brain in the world that doesn’t use both halves of their brain equally.</p><p>This news should come as a revelation to anyone who was disappointed when they were unfairly categorized as a left or right-brainer. It just isn’t true. Creativity is not hereditary. It is not a talent. It is not a trait limited to a segment of the population. When our brains are functioning properly they are capable of amazingly creative thought as well as deep analytical processing power. Being alive endows you with creative ability.</p><p>How has the right/left-brain theory become such an accepted truth? Why did it take such deep root in our cultural conscience? It all comes back to shortcuts and excuse-making. The knowledge that you can create is a blessing to an artist but a curse to a zombie. Having an excuse like, “I am not creative because I am not right-brained” comforts the zombie in us. The opposite excuse has likewise prevented many artists from reaching their full potential.</p><p>When you know you have the ability to create, the weight of this knowledge is the mandate that if you don’t use this gift it will be wasted. Wouldn’t it be better to not have a gift at all then to hold it in your hand and not be able to use it?</p><p>Why would people embrace an excuse not to use their creative capacity? The answer is that making art is hard. This again rubs against a tightly held myth about artists. We like to romanticize the idea that an artist is an amazing genius. They have been blessed with special powers that allow them to create masterpieces effortlessly. Nothing could be further from the truth.</p><p>The magician duo Penn and Teller have a routine called <em>Cups and Balls.</em> If you haven’t seen the trick, it is worthy of a quick YouTube search. The trick is a straightforward deception in which balls magically appear and disappear beneath three cups. It is pretty impressive, but then they do something that goes against the rules of magic. They do the trick a second time and this time they explain how it is done.</p><p>The second time they use clear plastic cups as Penn demystifies the trick play-by-play. The real magic is that as you watch the trick again it seems even more magical. It is virtually impossible to keep track of where the balls are, and where they are coming from even as Penn points out Teller’s slight of hand. You realize that they aren’t magicians. They are artists. They have perfected their craft. You can see how the trick is done, but there is no way that you could replicate it without hundreds if not thousands of hours of practice. If it is impressive when you thought it was magic, it is downright stunning when you see the mastery involved in creating the illusion.</p><p>Artists have a similar place in society as magicians. Artists create things that seem magical. We attribute special powers to them because we can’t explain how they do what the do. We think that have an inner genius, some special ability that regular people don’t possess. What if this magic wasn’t magical, but the result of years of practice and dedication to the craft? Would your art seem any less magical if people could “see through your cups?”</p><p>Knowing that art isn’t magic won’t make the trick any less impressive, rather it will show how amazing it is for someone to invest the effort required to acquire mastery. Teller says,</p><blockquote><p>“One of the things I learned about the world of art is there are people who really want to believe in magic, that artists are supernatural beings—there was some guy who could walk up and do that. But art is work like anything else—concentration, physical pain.”</p></blockquote><p>When we understand that art isn’t magic, it frees us from the burden of needing to be brilliant. We don’t need to reassure ourselves with right or left-brained labels. We don’t have to doubt ourselves when the stuff inside us doesn’t feel like genius. All we really need is the commitment to keep working. It’s still going to take thousands of hours, but it’s better than hoping some mystical entity is going to come down and convert your garbage into a masterpiece.</p><p>In describing the principles that allow our minds to accept magic as the only explanation for a trick, Teller explains a technique that artists understand. He says,</p><blockquote><p>“Make the secret a lot more trouble than the trick seems worth.”</p></blockquote><p>In other words, if you work harder than any other rational human, your art won’t be received with, “I could have done that,” but with “How did you do that?” Your art won’t be a cheap trick, it will be indistinguishable from magic.</p><p>Georges Seurat knew this when he painted over 6 million dots to create <em>A Sunday Afternoon on the Island of La Grande Jatte</em>.</p><p><img src="https://adrian3.com/imgs/aotld/seurat.webp" alt="A Sunday Afternoon on the Island of La Grande Jatte_, Georges Seurat, 1884–1886"></p><p>James Dyson produced 5,127 prototypes before he created his famous vacuum.</p><p>Leonardo Da Vinci was 46 years old before he painted his first masterpiece.</p><p>Michelangelo said,</p><blockquote><p>“If people knew how hard I worked to get my mastery, it wouldn’t seem so wonderful at all.”</p></blockquote><p>Thomas Edison said,</p><blockquote><p>“I have not failed. I’ve just found 10,000 ways that won’t work.”</p></blockquote><p>This is the same principle that makes the iPad feel so magical. Apple’s Jony Ive admits that,</p><blockquote><p>”When something exceeds your ability to understand how it works, it sort of becomes magical.&quot;</p></blockquote><p>Elon Musk’s entrepreneurial skill feels like magic, but he too is an advocate for hard work,</p><blockquote><p>“Work like hell. I mean you just have to put in 80 to 100 hour weeks every week. [This] improves the odds of success. If other people are putting in 40 hour work weeks and you’re putting in 100 hour work weeks, you will achieve in 4 months what it takes them a year to achieve.”</p></blockquote><p>Steve Jobs had similar thoughts when he said,</p><blockquote><p>“Creativity is just connecting things... and the reason they were able to do that was that they’ve had more experiences or they have thought more about their experiences than other people.”</p></blockquote><p>Malcolm Gladwell’s “The 10,000 Hour Rule” chapter in <em>Outliers</em> shows how Bill Gates, Steve Jobs, The Beatles, Mozart, and Bill Joy all clocked an enormous amount of practice time before they hit breakthrough. He makes a compelling argument that it is nearly impossible to reach pro status at anything without an investment of 10,000 hours.</p><p>It takes courage for us to let go of the idea that artists are gifted and accept that they are just like everyone else. The concept that dominates the myth of the artist is the term <em>talent</em>. Most of us use the word “talent” pretty loosely. “Eric is a talented musician,” we say, or, “Jane is a talented volleyball player.” Jason and Jane would probably take this as a compliment, but what do we really mean when we use this word?</p><p>We do a disservice to people who have mastered their craft by assuming they have somehow been endowed with natural ability. Yes, we are all different, but we should give credit where credit is due. By attributing success to an undefined force like talent we robs the individual of the accomplishment. To say that Jason is a talented musician ignores the fact that Jason practices more than the other students. Focusing on talent neglects to address his passion and commitment for improving his skills. The thing Jason has that we lack is that he was brave enough to overcome the resistance. He had the courage to create his art. He has endured where others have given up. The people who Jason is better than aren’t any less endowed with magical skills, they just gave up. Or they didn’t care. Or they didn’t put the time in.</p><p>Why do we prefer to use words like “gifted” or “talented” or “blessed” rather than acknowledging the effort behind someone’s achievements? Our misunderstanding is due to our zombie-like need for shortcuts.</p><p>We believe in talent because it gives us an excuse. It is much easier for us to excuse ourselves from creating art by believing that we don’t have an innate ability than it is to face the truth that if we applied ourselves we could accomplish great things, too.</p><p>Success doesn’t just happen without a focused, intentional decision. When we commit to creating our art there is no excuse. Talent won’t be what carries you over the finish line.</p><p>Inspiration might come from the heavens, but talent doesn’t. These people aren’t merely exercising a rare gift. They are simply reaping the rewards of their investment in their passion.</p><p>If pointing out a person’s talent is meant as a compliment, there is nothing worse than insulting someone by saying they are a “wasted talent.” Can’t you just feel the smugness that comes with phrase? “It’s such a shame that Jason quit playing piano. He was a natural talent you know.” The thing left unsaid is that if we had been given this magical ability <em>we</em> wouldn’t have squandered it. Talent is the important thing, not the effort. The thinking is that if you are given a natural ability it is your responsibility to use it. If you are “blessed” with talent then you shouldn’t waste it. There is only so much talent to go around. Zombies like us, who are born normal and without talent, are pardoned from the burden of excellence–but the talented, they just waste it.</p><p>There are only two responses to talent and neither of them is healthy. The first is contempt. We call this bullying. The bully sees talent as a gift that he never received. Because he was unfairly skipped when the talent pixie dust was sprinkled around the universe he wants to restore order by punishing the so-called talented. He feels that it is his responsibility to balance things out by punishing the gifted. Anyone who doesn’t conform will be targeted by the bully. The bully robs the artist of the ability to share her passion with us.</p><p>The artist, whose passion for their skill is more powerful than her fear of the bully, is only inconvenienced by the attacks of the bully. It is painful, but the artist will endure. The real damage is not to the artist but to the rest of the community. The rest of us are paralyzed by the existence of bullies. We question whether our effort will be criticized. We water down our art so it won’t be attacked. Maybe we never create art at all because we prefer the peace of conformity to the pain of bringing attention to our passion. We know that anything that smells like art will need to be defended. We don’t invest ourselves in our work because being even slightly above average is an invitation to attack.</p><p>The second response to talent is jealousy. This sounds less violent than bullying, but it is just as damaging. Like the impetus for bullying, jealousy starts with a feeling that you have been treated unfairly. “Why did she get talent and I was skipped over?” Jealousy makes us do things to damage the art we are jealous of. We might ignore the skill of the artist. We might downplay the effect that the art has on us. We might point out flaws in the art a little too eagerly.</p><p>While some jealous reactions are damaging directly to the artist (sabotaging their art for example) the bigger damage is to the jealous person themselves. Jealousy is so close to inspiration. It sees the value of art and it longs to have that ability. But being jealous, rather than inspired, robs you of the authentic motives that produce art. Jealousy can generate skill, but it doesn’t produce art. How many people became experts not because they had passion for their craft, but because they craved the attention that the “talented” received? These people are close to being artists, but they lack the authentic passion that would elevate their work to art. Jealousy won’t challenge the status quo, it will defend it. Jealousy doesn’t innovate, it just mimics the effort of others. Jealousy is selfish.</p><p>There isn’t a third response to talent because healthy responses to talent don’t exist. Admiration, gratitude, and awe aren’t responses to talent at all, they are acknowledgements of the abilities of the person (not her talent). Because we appreciate the dedication and commitment the person has invested, we treat her art as a gift that she gives to us, not a gift that was given to them from on high. We are the people who have been blessed, not them, because their skills aren’t anomalies. They earned them, and they had the courage to share their art with us. They survived the attacks of the bully and the jealous and we are lucky their art exists.</p><p>Is it any wonder we all suffer from imposter syndrome and self-esteem issues? The minute you think you have found your identity you are immediately reminded that you are different from everyone else. The artists with the guts to be different get ground into unsalted meat substitutes, bland and identical to everyone else on the conveyor belt. We learn this lesson in grade school where jealousy and bullying are the dominant market forces. Just when our experience clock begins ticking, the pressures of the classroom urge us to stop the timer and conform. School doesn’t create artists, it is a factory for churning out well rounded little boxes filled with the same recipe of knowledge.</p><p>Take a moment to look at your experience clock for the skill that you most want to change the world with. If you have crossed the 10,000 hour milestone you understand how difficult your journey has been. Most of us are still on the underside of mastery. We struggle to maintain our momentum. We make excuses and seek shortcuts. We need to stop blaming our failures on lack of talent. We need to put in our time knowing that eventually we will master our art. Our patience and intentional effort will pay off and talent will have little to do with our success.</p><p>Art isn’t magic. It’s the hardest work you will ever do. It will take more time to master than any reasonable person (or zombie) would invest. The economics of your decision to invest 10,000 hours into your craft won’t make sense to outsiders. In the next chapter we analyze the zombie economy and observe the complex relationship between art and commerce.</p><p><a href="chapter15.html">Chapter 15. Zombie Economics</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

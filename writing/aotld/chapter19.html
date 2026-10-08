@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 19 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>Zombies in Flight</h1><blockquote><p><em>”Thousands of men had thought about flying machines and a few had even built machines which they called flying machines, but these were guilty of almost everything except flying.”</em> — Wilbur Wright</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter19.webp"></p><p>As children we are told the story of the Wright brothers. The children’s book version of the invention of the first airplane goes like this,</p><blockquote><p>As kids, Orville and Wilbur loved to play with flying toys. They were mischievous students and never finished high school. They dropped out and started a printing business, then a bicycle repair shop. With the money they made from these businesses they could afford to tinker with making an airplane. Because they were talented geniuses, their experiments eventually paid off. Most people didn’t think that human flight was possible, but the Wrights accomplished the world’s first powered manned flight, proving everyone wrong. The Wright brothers became rich and famous and lived happily ever after. Remember, kids, if you follow your dreams anything is possible.</p></blockquote><p>Hopefully some alarm bells went off in your head as you read that. Like many stories that get warped through the romantic lens of history, the story of the Wright brothers is charming but lacking any meaningful lessons. This fairy tale tells us nothing of how they were able to succeed when all others had failed. What did Orville and Wilbur have that everyone else lacked? This story gives us nothing to build our art around.</p><p>Let’s look at the Wright brothers’ story and identify the outsiders and insiders. Perhaps our understanding of the Wright brothers’ achievements will evolve beyond the fairy tale and uncover the secrets to producing meaningful work.</p><p><strong>Skilled Insider: Samuel Pierpont Langley</strong><br>Before we get to the Wright brothers, first we must understand their main competitor, Samuel Pierpont Langley. If Langley gets mentioned at all in retelling of the fairy tale version of manned flight, he usually gets cast as the villain. It wrongly gets told like this,</p><blockquote><p>Langley was a greedy celebrity scientist who was awarded $50,000 to build the world’s first manned aircraft. Between the Smithsonian and other investors, there was as much as $100,000 of funding behind the project. That is about $78.2 million in today’s money.* Langley’s only achievement was two very public test flights that resulted with the planes getting slingshotted off a boat and straight into the river. When it came time for Congress to defend the investment in Langley, Representative Gilbert Hitchcock said, “The only thing he ever made fly was government money.” Langley died a few years later, a disgrace.</p></blockquote><p>[Footnote]<br>Figuring out the value of a dollar from 1900 isn’t as easy as it seems. Different calculations are made depending what the dollar is describing. For example, a 1900 dollar used to describe a commodity would only have a value of $28 in 2013. The same dollar used in the context of a project is much higher at $782 because it represents economic power connected to its ability to control production and influence the world economy. Because the invention of manned flight was such a world-changing invention, it is logical to put the value on the high end of the scale when estimating relative value.<br>[End Footnote]</p><p>This account of Samuel Langley is tragically unfair. Langley was not a villain, but rather a <em>skilled insider</em> whose contributions to manned flight are under-appreciated. If we give Langley a fair chance, his story would sound much different. Here is what really happened.</p><p>By 1886, Langley was a celebrated astrophysicist who decided to make a career change at age 52. Leaving his astrophysics career behind, he began experimenting with model planes, attempting to answer the question of whether or not flight was possible. After five years of testing he concluded that “mechanical flight is possible with engines we now possess.” Demonstrating this took another five years when in 1896 Langley had his first breakthrough with a steam powered, non-manned flight of 3,300 feet. While the plane carried the name “Aerodrome No. 5” it was actually the culmination of hundreds of designs that he had been perfecting over a decade. The next model, Aerodrome No. 6, set a new record by flying 4,200 feet and staying in the air over a minute.</p><p>In 1897, at the age of 63 Langley considered his work done and concluded his experiments. He wrote,</p><blockquote><p>“I have brought to a close (my) work ... and for the next stage, which is the commercial and practical development of the idea, it is probable that the world may look to others.”</p></blockquote><p>Does this sound like a greedy man who was out to waste the government’s money and fool the public? Does this sound like an incompetent scientist who didn’t have a chance of creating the world’s first manned flight? Any fair person would say no. If Langley’s career had ended here he would be remembered as a hero of aviation history rather than the villain often used in contrast to the heroic Wright brothers.</p><p>When the Spanish-American War broke out in 1898, the Department of War invested $50,000 to undertake the largest research project in U.S. history. A committee was formed of experts from the Navy, Army, and the US Naval Observatory who concluded that manned flight would be a valuable asset to the war machine. The obvious (and only) choice to lead the project was Samuel Langley. There is disagreement over whether Langley was approached for the project unsolicited or whether he actively set out to raise the money himself. Regardless, Langley was coaxed out of retirement and his career in aeronautics gained financial backing in 1898. It would take another five years and another $20,000-$50,000 before the first test flights took place.</p><p>This is where the story turns tragic. With so much money invested, Langley’s test flights could not be done quietly in private. When the first test flight took place in 1903 it was a national spectacle. Thousands of people showed up, including members of Congress. With the whole world watching, Langley’s legacy hung on the outcome of the very first test flight.</p><p>Langley had gotten this far not by hitting home runs on command, but by incremental failures, each of which taught tiny lessons that advanced the science forward. The fact that the test plane was named “Aerodrome A” shows that Langley’s expectation was not instant success, but a succession of designs that would ultimately lead to breakthrough.</p><p>To say that the stakes were high is a huge understatement. When the first test flight nosedived into the river, an event that Langley was conspicuously absent from, Langley was viscously attacked by the press. A typical headline read,</p><blockquote><p>“Nothing Aerial About the Aerodrome: It Sinks, Swims then is Taken Home.”</p></blockquote><p><img src="https://adrian3.com/imgs/aotld/aerodrome.webp" alt="The aerodrome is ready for its first test flight."></p><p><img src="https://adrian3.com/imgs/aotld/aerodrome2.webp" alt="Upon takeoff, the aerodrome plunged straight into the river."></p><p>It seems odd that Langley was not present on the day of the first test flight. He claimed that he had “urgent business” to attend to. Could this have been an excuse because he knew that failure was probable? Did he anticipate the public’s outrage and want to be as far away from the scene as possible? Evidence to support this theory doesn’t exist, but it seems like a possible explanation for why he would be absent at the very moment that would define his career.</p><p>The Aerodrome A was quickly repaired, but when the second test flight crashed into the river a month later, Langley’s fate was sealed. The public’s opinion of Langley shifted from “the most likely person to achieve manned flight” to “the man who wasted tons of public funds and didn’t even come close to flying.” It was already December, so even if the aerodrome could be repaired the next test flight wouldn’t have happened until spring. Money and support disappeared. There would be no Aerodrome B. Samuel Pierpont Langley died in 1906 at the age of 71.</p><p>History has judged Langley too harshly. How many people have the courage to pursue a different career at age 52? Langley was not content to just write about the possibility of flight, he contributed two decades of experimentation to advance the science. Should Langley have turned down the government funding and ignored an opportunity to advance science even further? If he was aware of the pending failure of the aerodrome, how could he have stopped it? Langley was a <em>skilled insider</em> that was destroyed by a zombie system.</p><p><strong>Passionate Outsiders: The Wright Brothers</strong></p><p><img src="https://adrian3.com/imgs/aotld/wright-brothers1.webp" alt="The Wright’s refined their designs in isolation, far from the public eye."></p><p><img src="https://adrian3.com/imgs/aotld/wright-brothers2.webp" alt="The first controlled, sustained powered flight"></p><p>The Wright brothers have become so synonymous with aviation that we forget that in 1900 they were unknown. They were the last people you would have expected to take flight. They were outsiders. They didn’t rub shoulders with scholars, schmooze with congressmen, or dine with the elite. They were bicycle enthusiasts. What is it about bikes that allowed the brothers to succeed where the insider, Langley, failed?</p><p>Orville and Wilbur opened a bike shop in 1892. They started selling and repairing bicycles, but soon realized they could make better bikes than the ones they were reselling. Not content with the quality of bikes on the market, they began to innovate. They invented a self-oiling hub that reduced maintenance. They solved the problem that plagued the bikes of the era where the left pedal would come off due to the natural unscrewing rotation of pedaling. They simply reversed the thread direction for the left pedal. It is a simple solution in hindsight, but it was basic improvements like these that allowed the bikes they built to be premium models. Their business was profitable and they managed to save $5,000, which they would use to finance their next venture, aviation machines. Transitioning from bike repair to manned flight seems like a leap, but was it?</p><p>Until you experience it, riding a bike sounds like magic. If you have ever taught a child how to ride a bike you know how impossible the idea of balancing on two wheels seems to the child. Everything that they have experienced with gravity in their short lives tells him or her that it won’t work. Not only that, it seems dangerous. You can’t blame them for saying “No thanks, I will stick with my tricycle, thank you.”</p><p>To appreciate the mechanics of the bike is to embrace the amazing capabilities of the human mind and body. This is where the Wright brothers excelled.</p><p>The bicycle is one of the most efficient machines ever created. If you had never seen a bicycle and you were asked to build a human-powered vehicle, how would you do it? If the mandate was that it needed to be five times more efficient than walking, would you think it was impossible? Your first designs would probably have more than two wheels. You would probably break the task into chunks and focus on the hardest problems first.</p><p>The challenge would be how you would magnify human power, so you might tackle that problem first. You could figure out less critical components like steering later. The efficiency challenge might send you down a path of exploration of gears, levers, and pulleys as you try to figure out the most effective way of harnessing human energy. Maybe you would invent roller skates or a skateboard. Perhaps your contraption would have a sail to capture additional power from the wind. Maybe you would give up and declare the challenge impossible. It is unlikely that you would invent something as elegant and simple as the bicycle. The bike’s creator didn’t solve it by breaking it into chunks. It required a magical insight, a leap of genius that placed the burden not on the machine, but within the mind of the rider. In the words of Wilbur Wright,</p><blockquote><p>“It is possible to fly without motors, but not without knowledge &amp; skill. This I conceive to be fortunate, for man, by reason of his greater intellect, can more reasonably hope to equal birds in knowledge, than to equal nature in the perfection of her machinery.”</p></blockquote><p>In the early 1900s, the problem of flight had been broken into chunks. Samuel Langley really just focused on building a machine that solved the propulsion problem. He figured that the other challenges, like turning and landing could be figured out later. Other pioneers of flight, like Otto Lilienthal, tried to solve the problem of lift by creating wings that matched the shape of birds. Still others used gliders to solve the conundrum of how to stay aloft. Engines and propellers were designed separately from the rest of the project without a unifying principle. The results weren’t simple, elegant solutions like the bicycle, but strange aberrations that (even when they were mildly successful) were far from a final product.</p><p>It isn’t a coincidence that the makers of the first planes were also expert bike builders. The Wright brothers approached their air travel machines like a bicycle. On a bike, the brilliance of the human is what allows the design to be so simple. Bicycle balance is not a flaw that needs to be conquered with extra wheels or complex mechanical additions. Balance is an intuitive extension of the mind that once learned, becomes second nature. The controls of the plane weren’t a problem to be solved later once the real problem of flight was solved. No, it was a fundamental part of the design. In the Wright brothers’ first designs, the pilot’s harness was connected to the wings in a way that caused the wings to twist as his body moved right or left. The twisting of the wings allowed the plane to roll similar to how a bike turns as its rider leans into the turn. The same motion turned the plane right or left by turning the vertical rudder in the rear. A horizontal elevator rudder in the front was controlled like pulling on the handlebars as if you were “popping a wheelie.” This full range of motion put them years, if not decades ahead of competitors who were struggling just to get off the ground.</p><p>When the Wright brothers’ plane took flight on December 17, 1903, they were not hobbyists who stumbled accidentally upon a discovery. They were the most skilled pilots and flight engineers in the world. Raw talent had nothing to do with their success, and they weren’t simply following their childhood dreams. They earned their success from thousands of hours of hard work.</p><p>The shallow fairy tale we have been taught about the Wright brothers is the result of nostalgia and the repeated misunderstanding of what it takes to be successful. The Wrights aren’t a rags-to-riches tale. They aren’t an “against all odds” story, the underdog theme dissolves under scrutiny. The untold story of Samuel Langley is further evidence that the lessons of the past are elusive. What are we missing? The next chapter is about survivorship bias, a phenomenon that will will shed further light on the lessons we should have learned from Langley and the Wright brothers.</p><p><a href="chapter20.html">Chapter 20. Bullet Holes of Honor</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

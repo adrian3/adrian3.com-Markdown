@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>scanner-camera — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<main class="container">
+<h2>How to Turn a Scanner Into a Camera</h2><h3>A Complete Guide (Failures and All)</h3><p>This is the story behind my latest camera project. I used a flatbed scanner and a cheap $10 magnifier (fresnel lens) to create a makeshift large format digital camera.</p><p>Why? This type of scanner has a couple of interesting aspects. First is the possibilities of the moving sensor. Unlike a normal camera that captures all the pixels at once, a scanner takes many seconds to move from one side to the other. This delay introduces some interesting distortion and creative possibilities. It’s kind of a poor man’s slit scan camera in this regard.</p><p>Self Portrait with Scanner Camera</p><p>The second interesting part is the fresnel lens. Yes, it is cheap. Yes, it is plastic. What could be dismissed as flaws, are also unique characteristics that you won’t get from normal lenses.</p><p>The other interesting aspect is the potential to create very high resolution images. A scanner like this can scan at 4800 pixels per inch. Multiply that by the size of the glass (8x12) and you are talking major megapixels. But before you get too excited remember that these megapixels are capturing an image from a plastic magnifying glass. At a certain point it stops making sense to get a higher resolution picture when the lens isn’t providing you additional detail. Still, the high resolution is part of the equation that makes a scanner camera interesting.</p><p>What follows is not exactly a tutorial. If you undertake this project your design will vary depending on the scanner you have at your disposal and your ingenuity with how you assemble your box. But I’ll try to provide the conceptual framework that will help you find your way.</p><p>I’m not the first to undertake this project but there are some things that I’ve done differently so I want to publish my method to help anyone else who falls down this rabbit hole. I will document several failed prototypes before I get to the camera that actually worked.</p><p>But first, let me explain the concept. A scanner is designed to capture an image pressed agains the glass. In other words, the focus point of the scanner is very close to the sensor. In order to take pictures we need the focus to be further from the glass. That’s where the fresnel lens comes into play. It has a couple benefits. First, it is flat, thin, and light unlike the oblong glass lenses we typically think of. It’s made of plastic so it is cheap. But most importantly, it projects light in an (almost) straight line. This straight projection of light means that it lets us “project” an image onto the focus plain of the scanner. It’s a bit more complicated than that but now that you have the general idea, let me show you some failed prototypes.</p><p>Prototype 1</p><p>Scanner Camera Prototype #1</p><p>Most of the time spent on my first prototype was trying to figure out how to put the camera on its side. After all, what good is a camera that only points at the ceiling? I used a piece of wood as the base and then mounted the scanner using the hinges from the scanner cover.</p><p>Unfortunately, this prototype failed because with the scanner on its side it forces the motor to struggle to pull the sensor up and down. It worked, sort of, but every few scans the motor would lock up.</p><p>This prototype wasn’t a complete failure, however, because I learned several things. Below is one of my first successful image after around 100 throwaway attempts.</p><p>Several interesting things can be seen here. First is that the entire scan bed isn’t getting an image. Second, there is a big light streak coming from the light from the scanner reflecting off the lens. But the most exciting discovery is that this is a color image. Why is color a surprise? Let me explain.</p><p>There are only a few scanner cameras that I can find documented online and they all generate only black and white images. I am not completely sure why, but I think it is because their designs rely on ground glass to “capture” the image before scanning it.</p><p>My design removed the glass entirely and let the light coming in from the lens to hit the scanner’s sensor directly. Removing the glass does a couple things. First, it eliminates dust and smudges. Here’s what it looks like with the glass. As you can see it is very dusty.</p><p>Dust. Yuck! Solution: remove the glass.</p><p>The “ground glass method” would have this dust, plus all the additional texture of the glass to compete with. The result would be an extremely grainy image because everything on the glass is captured. So get rid of it! You might think that without the glass to “capture” the image you wouldn’t get a picture. Wrong. Remember, we are trying to capture the light, not the glass. The light will still hit the sensor without the glass.</p><p>Prototype 2</p><p>Scanner Camera Prototype #2</p><p>In order to keep the flatbed scanner flat I used a mirror angled at 45 degrees to reflect the image coming in through the lens. With the scanner sitting flat, I was able to start fine-tuning the image. Here’s where I ran into a new problem. Because I put the image perpendicular to the sensor, the images I was getting were very wide. Below is what an image from the second prototype looked like.</p><p>Scanner Camera Sample Image</p><p>Ignore the giant light reflection in the image, I will fix that later. The bigger problem is the thin horizontal image size. I scrapped this design and turned the mirror so that the images would be tall and skinny instead of short and wide.</p><p>Prototype 3</p><p>My third prototype turned the mirror so that I was getting long vertical images instead of horizontal. For those of you following me on Instagram, you might have seen my compilation of hundreds of selfies as I tested this prototype. BTW, you should follow me if you don’t already.</p><p>Below is what the camera setup looks like.</p><p>Notice how far away the camera is from the subject. It’s about 8 feet. A downside of this camera is that the focus area is very shallow. It can be adjusted, however. By moving the lens closer and farther from the scanner, the focus changes inversely. If you undertake this project prepare to waste MANY scans just honing in on what is in focus.</p><p>You can also see some reflection spots, although they aren’t as bad as my example earlier. This can be minimized by covering the bulbs inside the scanner. You have to be careful, however, because there is some calibration that happens before a scan and if it doesn’t see light it will fail to start. It takes some trial and error, but eventually I found a balance that lets the lights be on enough that they register when it calibrates but doesn’t point directly at the lens so the reflection doesn’t bounce back.</p><p>Now, let’s talk about the long thin image. At least I can fit my face in the frame now, but it is still a big limitation. It sure would be nice if the image was more square.</p><p>Self Portrait with Scanner Camera Prototype 3</p><p>Why isn’t the entire bed of the scanner getting an image? I thought it was because of the fresnel lens. To test this theory I turned the lens 90 degrees. It didn’t change. Strange. What was happening?</p><p>It took me a while to figure this out. It required me to take the scanner apart to figure out what is actually happening in there. I mistakenly thought the light was the sensor. Oh, no. The light is just a light. Let’s take it apart to find the actual sensor...</p><p>Below the glass is a mirror. Pointed at this mirror is a lens. Behind the lens is the sensor. Unlike the sensor in your camera which has both a large length and width, this sensor is 1 pixel tall and many pixels wide. This makes sense because that “1px line” is moving as the scan slides down the rail. But notice how it is smaller than the width of the glass? That’s why the lens is there. It takes the wide light and narrows it down and focuses on the smaller sensor. My mental model was of a straight projection of the image from the glass up. It’s actually a cone. In other words, the farther away from the sensor we go, the bigger the lens needs to be. The wide angle of the lens was allowing it to see the sides of my box, hence the black borders on the right/left of the image.</p><p>So how do we make our image wider? Well, here is where we run into some physical limitations. Yes, they make bigger fresnel lenses, but in order to prevent the already large camera from growing to a ridiculous size, I decided to maximize the image size by increasing the width to the edge of the scanner but not further. That brings us to the final(?) prototype.</p><p>Prototype 4 (The Final Design)</p><p>Scanner Camera Prototype #4</p><p>Using a wider mirror (20in x 20in) and turning the fresnel lens horizontally allowed me to increase the image capture dimensions from 3 x 11in to a more acceptable 5.3x8.5. Below is a raw scan so you can see how the image gets cropped. I am also not brightening this one so you can see it unedited. This was taken in a pretty bright room, by the way.</p><p>Unedited scan (to show darkness)</p><p>Now I can talk about how to control how light or dark the image is. You can’t. Unlike a normal camera that has an aperture that gets bigger or smaller to control the light we just have a side open lens letting as much light is as possible all the time.</p><p>The sensor in a scanner is not very sensitive. It requires lots of light before it can “see” anything. That’s why if you’ve ever opened a scanner mid-scan you see that bright bulb that you can barely look at directly. Compare that to how much light comes in from the fresnel lens. It’s much less. That’s why the image above is dark. I haven’t taken the scanner outside to take a picture in direct sunlight, but my guess is you would still be able to get a photo with that much light.</p><p>Not being able to control the light is less of a problem than you might suspect. Why? Because the scanner is actually capturing the light three times. Once for Red, once for Green, and once for Blue. You actually have 3x the data to play with. Digital cameras don’t work that way, they interpolate the sensor data to assign 3 RGB values for each pixel. So while pushing the exposure of an image this dark on a digital camera would be problematic, you can push the scanner’s levels much further. (I read this somewhere so please fact check me if you disagree.)</p><p>Below is a comparison of the full color image and the three color channels. If your end goal is black and white, you can see that you have plenty of color data to play with to find your preferred style. one thing that surprises me is that the blue channel is more “grainy” than the red and green.</p><p>A brief segue on color channels. With separate sensors for red, green, and blue they can’t occupy the same space. So I believe each channel has its own row, each slightly behind the other. There is probably some software trick that bumps the color channels back into alignment. It is unnoticeable in a document scan. However, when the light is coming in from longer distances and different directions, this mis-alignment of RGB becomes visible. Look at the zoomed in image below and you will see what I am talking about:</p><p>Example of visible RGB color separation</p><p>I suppose I should caveat my theory with a thought that there’s a chance this is a by-product of the fresnel lens. Perhaps the plastic and the grooved nature of the lens design is what is causing the color shifts. To test this I tried a “traditional” glass lens instead of the fresnel lens. You can see in the image below that the color halo effect is still present. You can also see the circular shape that results from a different lens type.</p><p>Testing with a non-fresnel lens</p><p>Personally, I really like the unexpected color shifts that are happening with this camera. Traditional camera mentality is that anything that distorts an image is a flaw, but I reject that idea. I’m not a camera purist, obviously, otherwise I wouldn’t be making experimental cameras in the first place. My point is that the “flaws” of the scanner camera are a feature not a bug. Embrace the constraints.</p><p>Now let’s talk about resolution. I’ve settled on 600dpi as the best balance between time and quality. Jumping up to 1200dpi takes a couple minutes where 600dpi is less than 30 seconds. This gives me an image that is about 10in x 18in at 300dpi. Plenty for almost any use. The other argument against more resolution is that this is a plastic lens. It’s not going to be perfectly sharp. You won’t get more detail just by pumping up the resolution, you are just going to get more detail of the blur at the limits of the lens.</p><p>Ok, we are almost to the end of this long tutorial. Finally, can we have some fun? The Flash seems like the ideal model for a test of the time-warping capabilities of the scanner camera. Here’s the setup…</p><p>I have The Flash standing on a rotating stand. It spins as the scanner moves. The result is that The Flash appears to bend. The higher the resolution, the slower the scanner moves. That means if you want lots of movement, scan at 1200px.</p><p>The higher the dpi, the more movement is captured</p><p>The video above is made by taking many photos of The Flash and stitching them together, each image becoming a frame in the animation. It’s a pretty interesting effect isn’t it? Hopefully now you can see some of the possibilities of a scanner camera and maybe you are inspired to make one of your own. What’s next?</p><p>Prototype 5?</p><p>A project like this is never really done. It lives in your head forever, and you return to it regularly, turn it around, poke on it, and think about how you could do things differently. One thing that nags me is that inside the scanner is a lens next to the sensor. My fresnel lens is pointing at another lens before reaching the sensor. This annoys me. Is the middle lens necessary? Why not remove the middle lens and let the fresnel lens shine light directly on the sensor?</p><p>I’ve started going down this path. I have stripped everything away and uncovered the sensor. I mounted the sensor so it points outward. Below is an image from this setup…</p><p>Scanner with internal lens and mirrors removed.</p><p>Forget the fact that this image doesn’t look photographic. Still, it’s beautiful isn’t it? I want to end this post not on an “I’ve figured everything out” note. Instead, it seems better to leave the experiment open-ended. I may or may not get this version of the scanner camera to work and that is okay. There is more to discover, many untested avenues, no single solution. That’s where I invite you to take this project and make it your own. If you do, please share your successes and failures with me and the photo community.</p><p>The thing that fascinates me about experimental camera building is that there is unique beauty that results from the fingerprints that the tools leave on the images. They might seem like they are flaws, but they aren’t. They are personality. A camera made of a scanner has more personality than any SLR and that’s what I love about it.</p><p>All the pressure for buying and selling cameras points at perfect precision as the ultimate goal. More megapixels. Sharper lenses. Pocket-size. Point and shoot. We’ve achieved incredible precision and yet the result is that everyone’s photos look the same. To breathe life back into the pristine images people use digital filters and photoshop alterations to push them back to the gritty lo-fi territory where images feel closer to reality again.</p><p>If you made it this far and aren’t a subscriber, please join my free mailing list. Thanks for your interest in my odd projects and I wish you the best. Stay creative.</p><p>Your friend,Ade</p>
+</main>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

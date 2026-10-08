@@ -1,0 +1,19 @@
+.footer {
+  background: var(--ade-parchment);
+  border-top: 1px solid var(--ade-hairline);
+  margin-top: var(--ade-space-8);
+  padding-block: var(--ade-space-5);
+  padding-inline: max(var(--ade-space-5), calc((100% - var(--ade-wide-width)) / 2 + var(--ade-space-5)));
+  font-family: var(--ade-font-body);
+  font-size: small;
+  line-height: 2.41;
+  color: var(--ade-muted);
+}
+  .footer a {
+    margin-left: 20px
+  }
+@media (max-width: 40rem) {
+  .footer {
+    padding-inline: 1rem;
+  }
+}

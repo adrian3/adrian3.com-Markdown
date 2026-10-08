@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Meet Max — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html">Resume</a></li></ul></div>
+<article class="case-study-shell">
+  <div class="case-study-inner">
+    <h1>Meet Max: Designing Trust into AI</h1><p><strong>Role:</strong> Senior UX Designer, Nutrien Ag Solutions<br><strong>When:</strong> 2019–2020<br><strong>Team:</strong> A UX team of 12 designers and researchers<br><strong>Focus:</strong> The Employee Experience Hub (EXH)</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/05-max-intro.png" alt="Max, the friendly robot persona, introducing himself: “Hi, I’m MAX. My artificial intelligence looks for opportunities to maximize your experience within the employee portal.”"></p><p><em>This project wrapped up around 2019 and 2020 — a couple of years before ChatGPT put AI in front of everyone. We had no large language models to work with, but we already had the problem that now defines them: how do you get an expert to trust a system that is sometimes confidently wrong?</em></p><h2>Introduction</h2><p>As a Senior UX Designer at Nutrien Ag Solutions, I worked on the Employee Experience Hub — “EXH” for short — the platform used by Nutrien’s sales force of more than 20,000 crop consultants, alongside a UX team of 12 designers and researchers. Part of that work was bringing machine-learning recommendations into the tool. We built a data engine, called <strong>Deep Green</strong>, to generate the recommendations, and we gave its output a face: a friendly character named <strong>Max</strong>. This is the story of what designing Max taught me about the user experience of AI, well before that became everyone’s problem.</p><h2>1. The Problem</h2><h3>Asking experts to trust a machine</h3><p>To understand why this was hard, you have to understand who the user is. Crop consultants are not order-takers. They know more about agronomy than many of the farmers they sell to, and a recommendation from a crop consultant lands more like a prescription from a doctor than a sales pitch. Those relationships span years, sometimes decades.</p><p>So when EXH began to evolve from a system that <em>recorded</em> what a consultant sold into one that <em>recommended</em> what they should sell next, we ran straight into a wall. We were asking deeply experienced experts to take advice from software — and they didn’t trust it, partly because they didn’t trust the data underneath it, and partly because being told what to do felt like a challenge to their expertise.</p><p>This is the AI trust problem in miniature, and it has not changed since. I heard it plainly when I sat with consultants in the field:</p><blockquote><p><em>”Right now it really does me personally no good, because I can’t extract the information all the way down to the final detail that I need.”</em></p></blockquote><blockquote><p><em>”The thing that drives me the most bonkers is that I don’t have access to the answers… Give me access to real numbers. What did I sell it for? How much did I sell? What was my margin?”</em></p></blockquote><p>A few things came through over and over: consultants couldn’t easily get at their own sales, margins, and crop history; the system reported gross numbers when they only cared about net; and the stakes were high enough that forgetting a single product could mean tens of thousands of dollars in lost sales. They didn’t want a tool that graded them. They wanted one that had their back.</p><h2>2. Field Research</h2><h3>Listening before designing</h3><p>I spent a lot of time in the field. I traveled to facilities to see them in action, sat in offices listening to sales calls, and rode along with crop consultants to watch how they actually got their work done. I listened to their frustrations and collected their ideas, then brought those stories back to the team so the people building EXH could picture the person they were building for.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/02-field-research.png" alt="A field research session: crop consultants gathered around a conference table reviewing the platform on screen."></p><p>This is where the core tension surfaced — one that anyone building AI products will recognize today. The better a crop consultant was, the more a bad recommendation could cost them, which meant the people we most wanted to help were also the ones with the most to lose if our model got it wrong. And our model <em>would</em> get things wrong; this was years before “hallucination” entered the product vocabulary, but the failure mode was the same. So I stopped asking “how do we make the recommendations perfect?” and started asking the more honest question that every AI team eventually faces: “how do we make an imperfect system worth engaging with — long enough to make it better?”</p><h2>3. Deep Green and Max</h2><h3>Separating the engine from the interface</h3><p>Under the hood, <strong>Deep Green</strong> was the data engine. It was an experimental machine-learning product that mined Nutrien’s enormous archive of historical sales data — one of the largest agronomic data sets in the world — to surface lost “opportunities” a busy consultant might otherwise miss. This was the kind of machine learning we were quietly using well before the AI boom made it fashionable. Deep Green was powerful, data-hungry, and completely invisible to the user.</p><p><strong>Max</strong> was the part the consultant actually met. He was the user-facing layer that delivered Deep Green’s recommendations in plain language, and gathered the responses that, over time, would make Deep Green smarter.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/06-architecture-deep-green-max.png" alt="System diagram: user-facing channels (web, iOS, email, notifications) send a query to the Deep Green engine, which analyzes Nutrien’s data and returns a recommendation that Max delivers in plain language — with a feedback loop where user responses reinforce and improve the engine over time."></p><p>Splitting the system this way reflected a conviction I still hold, and one that matters more in the LLM era than ever: <strong>users don’t trust a model — they trust the interface wrapped around it.</strong> Deep Green could be brilliant and still fail if Max felt cold, arrogant, or evasive. The model is where the intelligence lives; the interface is where trust is won or lost. That is as true for a chatbot answering questions today as it was for a recommendation engine in 2020.</p><p>I’ll be honest about my own skepticism, because I raised it with the team directly: a cartoon robot was never going to fix our trust problems by itself. But a little personality could help. A friendly, humble face buys patience — people forgive a helper for being wrong in a way they never forgive a faceless “system.” A character also invites the interaction we needed to gather feedback. And anything that broke the stiff, corporate feel of an internal tool was worth trying.</p><p>Personality is a double-edged tool, though — a lesson the whole industry is relearning now that every AI product has a “voice.” So I studied how others handle it. Clippy is the cautionary tale: personality with no usefulness becomes an interruption people resent. Mailchimp sits at the other end, using warmth and humor to <em>reward</em> you for finishing a task. The difference was never the mascot. It was whether the personality respected the user’s time and intelligence.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/09-mascot-clippy.png" alt="Clippy, the Microsoft Office assistant, asking “It looks like you’re writing a letter. Would you like help?” — the cautionary tale of personality without usefulness."></p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/10-mascot-mailchimp.png" alt="Mailchimp’s friendly illustrated high-five confirming a campaign was sent — warmth that rewards finishing a task."></p><h2>4. Designing for Opportunities</h2><h3>What a recommendation looks like — and how to argue with it</h3><p>The unit of value in all of this was the <em>opportunity</em> — a specific, dollar-valued, explainable recommendation a consultant could act on, dismiss, or dig into. For consultants to take it seriously, it had to be concrete and, just as importantly, easy to push back on.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/03-opportunity-card.png" alt="A single opportunity card: “Theresa Hart — Fertilizer Opportunity. These growers purchase Bayer crop protection products from Nutrien Ag Solutions but do NOT buy seed from us…” with an estimated value of $100,000–$250,000 and Dismiss / Learn More buttons."></p><p>In the product, those opportunities lived inside the consultant’s dashboard, alongside their sales activity, their growers, financials, and the weather — so Deep Green’s recommendations showed up in the flow of real work rather than as a separate “AI feature” bolted on the side.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/13-dashboard-in-context.png" alt="The Employee Experience Hub dashboard: “Welcome back, Ryan,” with a Sales Activity table, a Targeted Planning Opportunities widget surfacing Max’s recommendations, opportunity alerts, a grower list, financials, and a weather forecast."></p><p>We introduced Max at the moment of recommendation, and we were deliberately honest about where the product stood — an alpha version, an open beta, feedback openly requested. The point was to set expectations rather than oversell. Years later I’d watch the best AI products do exactly this: tell people plainly that the system is new and can be wrong.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/07-welcome-modal.png" alt="The in-product welcome modal: “New: Personalized Recommendations — Alpha Version 0.1,” explaining the beta program, with Max in the corner saying “Hi, I’m MAX. I look for opportunities to maximize your experience within the employee portal.”"></p><p>The most important interaction wasn’t Max being right. It was making it effortless for a consultant to tell Max when he was <em>wrong</em>. Every correction became a piece of training data, and admitting the engine was still learning became part of the design itself. This is what we’d now call a human-in-the-loop feedback system — the same idea that, in a more sophisticated form, trains today’s large language models. We were closing that loop in an ag-retail tool years before it had a fashionable name.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/08-feedback-form.png" alt="Max’s feedback prompt: “Can you tell us more? Our recommendation engine is not learning yet, but your feedback helps us improve what you see in the future,” with reasons like “Timing is wrong” and “Not a valid recommendation.”"></p><h2>5. What We Learned</h2><h3>Authenticity and humility build trust</h3><p>I didn’t want to ship Max on a hunch, so we wrote the bet down as a testable hypothesis — <em>Max will foster forgiveness and encourage feedback</em> — and ran concept tests around it, comparing a version of the experience with Max against one without him. The point wasn’t to find out whether people liked a cartoon. It was to learn whether a friendly, humble interface actually changed how forgiving people were of an imperfect engine, and whether it made them more willing to talk back to it. That instinct — treat the persona as a design variable to be tested, not a decoration to be argued about — is one I’d carry straight into the LLM era.</p><p>We took Max back to crop consultants to see how it landed. The reactions told the real story:</p><blockquote><p><em>”I liked Max. It seemed friendly and open. I’ve got to a stage in my career where I don’t like people telling me what to do. Without Max, that’s what it felt like it was doing.”</em> — Steve Sackett, Crop Consultant</p></blockquote><blockquote><p><em>”I feel like we’re on a journey where in three to five years we’ll have tools more along the lines of what we’re working toward here. I understand it takes steps to get there.”</em> — Bradford Smith, Crop Consultant</p></blockquote><p>And the counter-voice that kept us honest:</p><blockquote><p><em>”I’m too busy to waste my time with the digital platform. Agriculture is a lot more difficult than an algorithm thinks. Also, the robot on the screen is dumb.”</em></p></blockquote><p>That tension was the lesson. The same friendliness that earned patience from one consultant read as condescension to another. What separated the two wasn’t the cartoon — it was whether the tool was honest about its limits. Max worked when he let the product admit it was still learning, which turned the engine’s biggest liability — imperfect early recommendations — into a relationship people were willing to invest in.</p><p>Two principles came out of it: <strong>authenticity increases trust, and humility increases trust.</strong> When you ask an expert to rely on a machine, the machine earns its place not by pretending to be right, but by being honest when it isn’t.</p><h2>6. Why This Still Matters</h2><h3>The UX of AI is the UX of being wrong gracefully</h3><p>When ChatGPT arrived and suddenly everyone was designing for AI, none of the hard problems were new to me. They were the Max problems, scaled up. A model that is confident and occasionally wrong. Users who need to know when to trust it and when to push back. The temptation to hide a system’s limitations behind a slick, certain-sounding voice — and the trust you forfeit the first time it burns someone.</p><p>Designing Max left me with a few convictions I now apply to every AI product:</p><ul><li><strong>Trust is built in the interface, not the model.</strong> No amount of accuracy survives an experience that feels arrogant or opaque. Deep Green needed Max, and a powerful model today still needs an interface that earns belief.</li><li><strong>Design for the system being wrong, not for the demo.</strong> The error path is the product. Make correction effortless, and every mistake becomes a chance to improve rather than a reason to quit.</li><li><strong>Humility outperforms false confidence.</strong> Telling users plainly that a system is new, limited, and learning earns more durable trust than pretending it is infallible.</li><li><strong>Personality is leverage, and leverage cuts both ways.</strong> A voice can invite people in or condescend to them. The deciding factor is whether it respects the user’s expertise.</li></ul><p>We didn’t have the language of large language models when we built Max. But we were already designing for the thing that matters most in AI: not how smart the system is, but whether a real expert is willing to trust it. That question only gets more important from here.</p>
+  </div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

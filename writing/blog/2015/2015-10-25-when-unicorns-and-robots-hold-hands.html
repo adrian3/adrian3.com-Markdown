@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>When Unicorns and Robots Hold Hands — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Career Advice</p>
+		<h1>When Unicorns and Robots Hold Hands</h1>
+		<small>October 25, 2015</small>
+	</header>
+	<div class="post-body reading-column">
+		<img src="https://adrian3.com/imgs/images/when-unicorns-and-robots-hold-hands.webp" class="full-width"><h1>When Unicorns and Robots Hold Hands</h1><h2>Are you data-driven or design-driven? Doesn’t matter, either way you will probably fail.</h2><ul><li><em> </em></li></ul><p>I get to work with some amazing developers. Call them engineers, coders, or technologists. Whatever. They are brilliant.</p><p>I also work with some amazing artists. Call them designers, creatives, or art directors. Whatever. They too are brilliant.</p><p>When these two groups work together there is healthy (and occasionally unhealthy) conflict.</p><p>The engineers might roll their eyes at the designer’s obsession with visual details but at the end of the day they appreciate the beauty of the final product. <strong>The robots tolerate the unicorns.</strong></p><p>The designer’s eyes may glaze over when the developer explains the 1’s and 0’s required to build the project. But the artist, too, highly values the skill required to write code. <strong>The unicorns tolerate the robots.</strong></p><p>If you are the decision maker at your company you are probably wrestling with tough questions like this:</p><blockquote><p>“Should I hire more creatives or more engineers?”</p></blockquote><blockquote><p>“How do I get the teams to work together better?”</p></blockquote><blockquote><p>“How do I break down silos?”</p></blockquote><p>It would be tempting to think that the way to innovate is to get the right mixture of people. I don’t blame you for trying to create the perfect ratio of designers to developers. Is it possible to find a sweet-spot halfway between these two extremes?</p><p><strong>I don’t think so. Here’s why.</strong><br>1\. There are successful engineer-lead companies that succeed with minimal “creative” input. A little <a href="http://getbootstrap.com">Bootstrap</a> can go a long way.</p><p>2\. There are successful design-lead companies that succeed with limited “technical” input. You can get pretty far with <a href="http://wordpress.org">Wordpress</a>.</p><p>3\. And there are countless failures from teams with equal numbers in the creative and engineering departments. Beautifully designed, masterfully coded flops ship every day.</p><h4>How is this possible?</h4><p>Take a look at the illustration below. This is my attempt to explain why both data-driven and design-driven initiatives fail.</p><p><img src="https://adrian3.com/imgs/images/when-unicorns-and-robots-hold-hands2.webp"></p><p>Notice that in the middle of this chart is a dotted line that represents reality. Despite what anyone claims, nobody can <em>really</em> see this line. We are all blind, feeling around in the dark for this. We seek truth, never completely sure when we find it.</p><p>Reality, or the line of truth, splits two worlds. Above this line is intuition. Below this line is data. These are the gods that we worship as designers and developers.</p><p><strong>Intuition worshipers</strong> tend to be artists. They aren’t inspired by data. They are story tellers, not number crunchers. Their insight comes from high emotional intelligence, rich experience, and sensitivity to intangibles that don’t fit nicely on a Gantt chart.</p><p><strong>Data worshipers</strong> tend to be the engineers. To them, if it isn’t easily measured, it isn’t relevant. They revel in complex problems. They can hold complicated models of information in their mind, manipulate it, and filter it until a simple formula presents itself.</p><p>Sure, there are <strong>intuition/data polytheists</strong> among us. Maybe most people fall in this category. Data-driven creatives. Code so elegant it is practically poetry. Masters of our craft because our deep technical knowledge is matched with an ability to improvise like jazz musicians.</p><p>But even if you are a polytheist, let’s focus on the stereotypes of the two extremes, the prototypical designer and developer. <em>The unicorn and the robot.</em></p><p>The robot developer spends the majority of his time on the data side. The unicorn designer lives primarily in the intuition realm. In my diagram the paths of these stereotypes unknowingly oscillate above and below the invisible line of reality.</p><p>The two white dots represent success. This happens in the rare moment when work intersects reality.</p><p>Everything else is failure and the black dots are scattered across both sides of the divide.</p><p>So if I have you on board with my diagram, let me pull out a couple of ideas from the drawing…</p><h4>Why is success so Elusive?</h4><p>Success only happens when our product intersects reality. Usually this happens because we get lucky. While we always <em>think</em> we are right, most of the time we have it wrong. Rather than admit we got it wrong we make excuses.</p><blockquote><p>“The world wan’t ready for our product.”</p></blockquote><blockquote><p>“The timing was wrong.”</p></blockquote><blockquote><p>“They stole our idea.”</p></blockquote><p>Unwilling to admit we might be wrong we instead wonder why people can’t see how great our ideas is. We double down on our failure.</p><p>The problem isn’t other people, the problem is your idea isn’t in alignment with reality. That’s okay. <em>Learn from it and try again.</em></p><h4>Consensus is not reality.</h4><p>My favorite part of the chart are the two points where the designers and developers are in agreement. <em>The unicorn and the robot hold hands.</em></p><p>This is what we are always striving for, consensus. And yet, these points don’t land on reality. It is possible to be unanimously wrong.</p><ol><li>Data is not truth. Trusting it completely is folly.</li><li>Intuition is not truth. Trusting it completely is folly.</li><li>When data and intuition converge you still don’t necessarily have truth.</li></ol><p>Don’t misunderstand me, though. We should strive for consensus. We should work to find common ground and build bridges. Even when consensus can’t be reached we still have to get on board with the direction of our product. There’s no avoiding that. Let’s just not fool ourselves into believing that just because we have stumbled into consensus we will succeed.</p><h4>Switching sides is a sure path to failure (unless you change the world).</h4><p>Things get interesting when designers and developers stray into unfamiliar territory. Unicorn software. Robotic rainbows. Are you cringing? It’s weird but stick with me. I don’t know if it is the best word to describe this, but in my diagram I label this as “hackers.”</p><p>The danger of a lifetime of robotic coding or …uhh… unicornic artistry, is that we can develop blind spots. Our expertise is so complete that we miss opportunities because we have become zealous about our religion. As outsiders, the robot or unicorn might bring just the outragous spark that shifts us out of our dogmatic views.</p><p>Magic can happen when people switch sides. Occasionally an artist’s mind can find ways of using code that is so unorthodox that it changes the landscape. Occasionally a developer can push us out of traditional design patterns.</p><p>Success of this kind is rare but world changing. Steve Jobs was an artist who changed the engineering landscape. Linus Torvalds was an engineer who redefined our cultural understanding of creative contribution (open source). Chances are your heroes are also examples of people who transcended and transformed the unicorn/robot worlds.</p><p>Since you and I are probably polytheists, worshiping both data and intuition, this should give us something to work towards. We can do more than mark small white circles of success on our paths, our success can be literally off the chart. Minor successes are great, but what we really strive for is the big breakthrough that creates new patterns of thought.</p><p>Since I have used the word creativity a few times in this article (mainly on the unicorn side), I should end with a disclaimer. I have a deep belief that creativity is something each of us does daily. This is what makes us living beings and not zombies. I despise the notion that creativity is reserved for people in a certain department. That’s the premise of my book <em><a href="https://medium.com/@ade3/art-of-the-living-dead-e5ecd9093ae7#.nr6wxejz2">Art of the Living Dead</a></em> so if that idea strikes a chord with you I encourage you to check it out.</p><p><em>One last thing.</em></p><p>It occurs to me now that I am wrapping up this post that my designer/developer example is just one industry. That’s where I live, so that’s what I write about. But does the intuition/data division ring true for your world? Could it work with researchers vs. marketing? Legal departments vs. sales? Accountants vs. investors? Car guys vs bean counters? I really don’t know, so please extend my metaphor if it has legs…</p><p>Thanks for reading. Here are a few other of my crazy ideas that you might enjoy:</p><ol><li><a href="2015-02-22-curiosity-plus-obsession-plus-clarity-equals-quality.html">Why the business of building websites generates so much garbage</a></li><li><a href="2015-10-01-in-the-future-everyone-will-be-creative-for-fifteen-minutes.html">In the future everyone will be creative for fifteen minutes</a></li><li><a href="../2013/2013-12-01-the-heroes-behind-healthcare-dot-gov.html">The untold story of how a small team of innovators almost fundamentally changed government</a></li><li><a href="2015-01-19-brainstorming-advice-from-a-long-lost-isaac-asimov-letter.html">Brainstorming advice from a long lost Isaac Asimov letter</a></li></ol><p><em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

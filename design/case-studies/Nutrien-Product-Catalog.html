@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>A Product Catalog for Farming — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html">Resume</a></li></ul></div>
+<article class="case-study-shell">
+  <div class="case-study-inner">
+    <h1>The Product Catalog: Helping Experts Choose the Right Product</h1><p><strong>Role:</strong> Senior UX Designer, Nutrien Ag Solutions<br><strong>When:</strong> 2020<br><strong>Team:</strong> A UX team of 12 designers and researchers<br><strong>Focus:</strong> The Employee Experience Hub (EXH)</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/01-product-scale.png" alt="Rows of fertilizer tanks and product stock at a Nutrien facility — a glimpse of the enormous catalog a crop consultant has to navigate."></p><h2>Introduction</h2><p>A crop consultant doesn’t just take orders — they prescribe. Choosing the right chemical, seed, or fertilizer for a given field is one of the hardest parts of the job, because it means balancing agronomic fit against cost, performance, resistance management, and years of hard-won knowledge about a specific piece of ground. When we set out to build the product catalog inside the Employee Experience Hub (EXH), the goal wasn’t to make a prettier list of products. It was to support that expert decision. This is the story of how research shaped a catalog built for the way crop consultants actually think.</p><h2>1. The Problem</h2><h3>Finding the right product was scattered work</h3><p>Before EXH, the information a consultant needed to choose a product lived everywhere except one place. Active ingredients, resistance information, labels, application timing, and comparisons were spread across manufacturer websites, PDFs, and binders of regional university field guides. Consultants did a lot of this work by hand, or from memory, often with a grower sitting across the desk waiting for an answer.</p><p>The design challenge was to bring that scattered knowledge into a single catalog — one organized around how a consultant searches (by crop, by pest, by active ingredient) rather than how the database happens to be structured.</p><h2>2. The Design Process</h2><h3>From partner design sprints to testable wireframes</h3><p>I didn’t want to design this in a vacuum, so the work started with collaborative design sprints that included major manufacturing partners like <strong>Syngenta and BASF</strong> — the people who know these products best. Those sprints turned into testable wireframes: <strong>31 distinct components spread across three pages</strong> — a catalog home, a product detail page, and a comparison view. Building it as a set of discrete, testable components meant we could put concrete concepts in front of users and learn which ones actually earned their place.</p><h2>3. Research</h2><h3>User testing during a pandemic</h3><p>We tested the wireframes in the middle of the pandemic, which meant moving the research remote rather than letting it stall. I ran <strong>one-hour interviews with seven crop consultants</strong> from across the country — from Clinton, Oklahoma to Edmonton, Canada to the Southern High Plains of Kansas — walking each of them through the concepts and asking what they’d actually use.</p><p>The response was encouraging, and specific:</p><blockquote><p><em>”I would use it daily as a research tool. A lot of things I do right now, it would eliminate. Especially if this was in an app, I would religiously use this a lot.”</em> — Jared Yost, Crop Consultant</p></blockquote><blockquote><p><em>”Any of the work that I normally do by hand is nicely placed here. If I were sitting with a grower in front of me, those are a lot of the questions they would ask.”</em> — Abbey Halwa, Crop Consultant</p></blockquote><p>That second quote was the one that mattered most: the catalog wasn’t just a place to look something up, it was a tool a consultant could use <em>with a grower in the room.</em></p><h2>4. What We Designed</h2><h3>A catalog organized around how consultants think</h3><p>The catalog home led with <strong>search</strong>, because search turned out to be the primary way consultants expect to find a product — they estimated they’d type a product name straight into the box 50–90% of the time. It was so obvious to them that most didn’t even think to list it among their top-five priorities. Around it we built the entry points they actually reached for: <strong>crop-specific catalogs</strong> (consultants almost always start with a crop in mind, so the catalog can default to the crops grown in their region) and <strong>pest-specific catalogs</strong> covering insects, weeds, and diseases, with a pest-identification tool promoted to the homepage rather than buried on a detail page.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/02-catalog-home.png" alt="The catalog home: a product search, partner catalogs (BASF, Syngenta, Loveland), crop- and pest-specific entry points, a product finder, and branch-inventory browsing."></p><p>The product detail page was where we consolidated everything a consultant used to hunt for. It surfaced active ingredients and resistance management (with active ingredients as links to every product sharing them), label information presented directly on the page instead of inside a PDF, branch inventory availability, application timing shown visually, complementary products, market trends, and a comparison chart.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/03-product-detail.png" alt="The product detail page, bringing together description and active ingredients, label information, branch inventory, application timing, complementary products, market trends, and a side-by-side comparison chart."></p><p>The <strong>comparison chart</strong> drew the strongest reaction of anything we showed — every person we interviewed was interested in it, and one already kept a version of it by hand. Their feedback sharpened it: add rate per acre (price is misleading without it), let consultants add and remove columns to customize the comparison, drop ratings and reviews, and only show yield comparisons when the data is regional or local enough to be trustworthy.</p><h2>5. What I Learned</h2><h3>Design the catalog around the expert’s mental model</h3><p>The throughline of the research was that crop consultants are experts who already have a process — they search by crop, they think in pests, they compare by rate per acre, they reach for label data and active ingredients. The job of the catalog wasn’t to teach them a new way to shop. It was to take the work they were already doing by hand, across a dozen sources, and put it in one place that respected how they think.</p><h2>Conclusion</h2><p>A good catalog for a layperson helps them discover. A good catalog for an expert helps them decide faster and with more confidence. By starting with partner design sprints and grounding every component in interviews with working crop consultants, we built a catalog that earned a place in the consultant’s day — and, in the words of one of them, in the conversation happening with a grower sitting right across the desk.</p>
+  </div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

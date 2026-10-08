@@ -1,0 +1,28 @@
+.chapter {
+  max-width: var(--ade-content-width);
+  margin-inline: auto;
+  padding: var(--ade-space-8) var(--ade-space-5);
+}
+
+/* Slightly more generous line-height for sustained reading */
+.chapter p {
+  line-height: 1.7;
+}
+
+/* Epigraph blockquotes at chapter opens */
+.chapter blockquote {
+  margin-inline: 0;
+  padding-left: var(--ade-space-5);
+  border-left: 2px solid var(--ade-hairline);
+}
+
+.chapter blockquote p {
+  font-style: italic;
+  color: var(--ade-muted-soft);
+}
+
+@media (max-width: 40rem) {
+  .chapter {
+    padding: var(--ade-space-6) 1rem;
+  }
+}

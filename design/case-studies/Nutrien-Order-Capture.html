@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Decoupling Order Capture — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"><ul><li><a href="/design/awards.html">Awards</a></li><li><a href="/design/index.html">Case Studies</a></li><li><a href="/design/resume.html">Resume</a></li></ul></div>
+<article class="case-study-shell">
+  <div class="case-study-inner">
+    <h1>Decoupling Order Capture: Designing a Tool That Competes With a Phone Call</h1><p><strong>Role:</strong> Senior UX Designer, Nutrien Ag Solutions<br><strong>When:</strong> 2019–2020<br><strong>Team:</strong> A UX team of 12 designers and researchers<br><strong>Focus:</strong> The Employee Experience Hub (EXH)</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Order-Capture/01-field-phone.png" alt="A crop consultant standing in a field of lettuce, checking his phone."></p><h2>Introduction</h2><p>Nutrien had built an app for crop consultants to place orders. It worked, technically. But out in the field, consultants kept reaching for a faster tool: their phone, to call the branch admin and have someone else do it. Our software was competing with a phone call — and losing. This is the story of why, and how reframing the problem changed what we thought we were building.</p><h2>1. The Problem</h2><h3>Competing with a phone call</h3><p>On paper, placing an order through our tool was “simple.” In practice it looked like this: connect to the VPN, log in, select the document type, select the customer account, select the branch, find the product, select the SKU, calculate the quantity, choose a price-adjustment code, justify the adjustment, submit to the ERP — then wait one to seven days for approval.</p><p>Faced with that, a busy consultant in a field does the rational thing: <em>”Screw it. I’m just gonna call my admin.”</em></p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Order-Capture/02-call-my-admin.png" alt="A branch administrator at a desk surrounded by paperwork and phones — the “tool” our app was actually competing with."></p><p>That was the uncomfortable truth I put in front of the team. The competition wasn’t another piece of software. It was a human being who could absorb a vague request — “I need this much of that for so-and-so” — and handle all the messy steps in the background. Our app demanded the consultant do that work themselves.</p><p>And the branch admins on the receiving end weren’t being helped either. When I asked whether our tool made <em>their</em> lives easier, the answer was blunt: cleaning up an order that came through EXH was more trouble than just creating it from scratch in the ERP. One admin offered to take a consultant’s login and submit it through EXH personally “so there aren’t errors.” Another put it even more simply: <em>”I’m going to have to re-enter this anyway, just write it out.”</em> We had built a tool that made more work on both ends of the transaction.</p><h2>2. The Root Cause</h2><h3>We had passed our complexity on to the user</h3><p>Why was the tool so rigid? Because, historically, digital had been built to mirror the company’s backend systems. The order form was essentially a window onto the ERP, and every required field and dropdown existed to satisfy a downstream system rather than to help the person at the keyboard.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Order-Capture/03-order-ticket.jpg" alt="A real handwritten order/delivery ticket, marked up with corrections and a sticky note of hand-calculated quantities — the genuine complexity behind a single “simple” order."></p><p>I described this as a <em>tightly coupled</em> design: by matching the ERP step for step, we passed the full complexity of our backend straight through to the user. It kept the engineering convenient and made the experience brittle. The honest summary of the status quo was uncomfortable — our systems were built around compounding internal complexity, and our users’ attitude was simply, <em>”I’ll use it because I have to.”</em></p><h2>3. The Reframe</h2><h3>What is an order, really?</h3><p>The breakthrough was refusing to accept that the tool had to look like the ERP. I asked the team a deceptively basic question: <em>what is an order?</em> Stripped of system jargon, the answer is human — <em>Customer X needs Y amount of product Z.</em></p><p>That reframing pointed at a different kind of product, closer to a customer management system than an order-entry form. The order should be a single thing that:</p><ul><li>flows smoothly through the whole sales process, from a loose early conversation to a finalized order;</li><li>accepts whatever level of detail the consultant actually has at that moment, instead of demanding every field up front;</li><li>and gives a consultant visibility across all of their customers in one view.</li></ul><p>In other words, <em>decouple</em> the experience from the ERP. Let the software absorb the complexity the way a good branch admin does, rather than forcing the user to.</p><h2>4. Understanding the Whole System</h2><h3>The form is connected to a warehouse</h3><p>Designing this responsibly meant understanding what happens <em>after</em> submit. An order doesn’t end at the form — it kicks off a physical process. At the facility, dozens of orders are in progress at once. They get printed and pinned to peg boards along a wall, moved down the line as each one progresses. Fertilizer is often a blend of several products, weighed and mixed by hand; overages, shortages, and substitutions are common.</p><p><img src="https://adrian3.com/imgs/case-studies/images/Nutrien-Order-Capture/04-fulfillment-wall.jpg" alt="A facility’s order wall: printed orders and sticky notes pinned to a peg board, tracking dozens of in-progress orders through fulfillment."></p><p>Seeing those real-world connections changed how we designed the form itself. When you understand that a field on the screen becomes a physical bag of product on a truck, you design to prevent the errors and tedious corrections that ripple downstream.</p><h2>Conclusion</h2><p>The order tool didn’t need more features. It needed a different premise. Once we stopped treating the order as a reflection of our ERP and started treating it as a reflection of how a sale actually unfolds, the path forward was clear: build something that competes with the phone call by being just as forgiving — and a lot more visible — than picking it up.</p><p>Order capture was one piece of a larger digital commerce effort, and the bet on designing around the user rather than the back end paid off: the agriculture e-commerce platform it belonged to went on to generate <strong>over $5 billion in sales in its first three years.</strong></p>
+  </div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

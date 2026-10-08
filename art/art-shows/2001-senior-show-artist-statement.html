@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Artist Statement, 2001 Senior Show — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<main class="container">
+<p>Paintings/Prints by Adrian Hanft<br>=======================</p><p>March 25-April 6, 2001<br>Marxhausen Art Gallery, Concordia University, Seward, Nebraska</p><p>Screen Printing as a Painting Technique</p><hr><p>The title of this exhibition is called “Paintings/Prints by Adrian Hanft.” The classification of print and painting is not clearly defined in my work. This is because I mainly use screen printing as a painting tool. I prefer to classify the work on paper as monoprints, and the work on masonite boards as paintings. The discerning eye will note that I combine painting, printing, collage, drawing, photography, and experimental techniques in my work.</p><p>Almost two years ago, I began thinking about what I was going to do for my senior exhibition. Because I have an intense interest in photography, printmaking, drawing, painting, and ceramics, I had difficulty choosing one medium to concentrate on. I decided to focus on painting, and began exploring what approach I would take. I did not want to paint from observation because I preferred photography as a way to record observable information. Despite my interest in photography, I did not want to make paintings that imitate photography. Although I like abstraction and non-objectivity, I wanted a visual vocabulary that extended beyond formal elements. This was about the time I started studying the work of Andy Warhol and Robert Rauschenburg, and I began exploring screen printing as a painting technique. This was the starting point for what was developed into this exhibition.</p><p>I have a theory that artists have one of two mentalities. One artist finds that the way he or she works best is to have an idea, make a plan, and create the work of art to match their original thought. This artist will feel his art has succeeded when the finished piece resembles the original idea. The second artist has a general idea of what he wants to do to create the piece, but the creation process is one of experiments, accidents, and reactions that transform the piece into a finished state. Because the second artist does not have any strong defined preconceptions for his art, he is free to react to the piece and let it develop to a point where he is content. I work most comfortably in the second mentality. I prefer being surprised by what I have created to the satisfaction of a product that matches a predetermined idea. That is why when I began screen printing I quickly became bored with using the screen to make editions of hundreds of identical prints. What fascinated me was that I could make hundreds of prints from the same screen and have them all be different.</p><p>Screen printing also has many qualities that work well with my experimental mentality. The versatility of a screen allows me to print photographic images on any flat surface, in any color, simply and quickly. As I transfer the image, some of the image is lost, and the surface beneath, whether it is wallpaper, modeling paste, or another print shows through. The printed image is just as important as the surface that is being printed on. The screen allows me to combine photographic images, drawn images, painting, drawing, collage, printing, and texture in my paintings. I use the screen as a tool to make marks in the same way as I do with a brush, pencil, collage, or sanding. My idea of a successful painting contains a formal organization of a variety of surface elements.</p><p>Because I am working with several different techniques in the same painting, organization is vital to the success of the painting. In my pieces that are the strongest, I have presented images that present controlled chaos. In order to develop this feeling, I am constantly checking myself against two dangers. The first danger is that if I am too intentional in my marks, the result is a piece that is over-structured, forced, or sterile. The second danger is that if I have no control over the composition, the result will be overworked, chaotic, and the piece will not hold together compositionally. To maintain the energy of the random and chaotic, I have to make intentionally unintentional marks. To create a unified finished piece, I have to create structured disorder.</p><p>This far, I have only talked about how I use the screen print as a mark-making tool. It is also important to realize that the screen is the main source of subject matter in my painting. I have emphasized my main concern with the screen is formal. Without the screen printing, my paintings would be non-objective. It seems appropriate that I should explain the importance of the images I choose, and how the images are related.</p><p>The subject matter of my screen printing has gone through four phases. My first images were chosen for conceptual reasons. I reproduced an image of Madonna, images from the Holocaust, an astronaut, and a reproduction of Warner Sallman’s “Christ” painting. I was interested in the implications of repetition and juxtaposition of images that had powerful content associated with them. For fear of breaking copyright laws, I moved away from using other people’s images.</p><p>In the second phase of screen printing imagery, I wanted to rely on images taken from my own photography that still maintained a high level of symbolism and emotional content. These images include a BMW symbol, money, a Pepsi can, and a sculpture of Mary.</p><p>My next phase of printing was to step away from images that carried such a mechanical mentality. Although I enjoyed the ideas that the high-impact images evoked, I wanted to explore images that had more personal meaning. I also felt the images I had been using were limiting in a formal sense. The next images I chose allowed me to be more subtle, and to create paintings that were more successful compositionally. The images of water lilies, a spiral staircase, and a spider and sunflower allowed me to simplify my images to a point where the could still be recognized as images, but now the would also have stronger shapes and textures. Because of the organic quality of these images, my paintings could now focus more on the surface of the canvas because the image is now being used more for formal reasons and less for content.</p><p>As I explored making personal and unique marks with mechanical images, the next phase was to get another step away from mechanical imagery. The most recent phase of my screen printing imagery is not taken from photography, but from drawing. I enjoy experimenting with how an image changes on its journey from a drawing/photograph to its use as a screen print.</p><p>As you are looking at my paintings, ask yourself what is the relationship between all the elements of the paintings. I would encourage you to take this mentality into your life outside of this gallery. There is a relationship between everything around us. Everything is connected to everything else. There is a design to the things we think of as good and bad. When you recognize that there is a design, you learn something about the designer.</p><p><strong>Design</strong><br>I found a dimpled spider, fat and white,<br>On a white heal-all, holding up a moth<br>Like a piece of rigid satin cloth-<br>Assorted characters of death and blight<br>Mixed ready to begin the morning right,<br>Like the ingredients of a witches’ broth-<br>A snow-drop spider, a flower like a froth,<br>and dead wings carried like a paper kit.</p><p>What had that flower to do with being white,<br>The wayside blue and innocent heal-all?<br>What brought the kindred spider to that height,<br>then steered the white moth tither in the night?<br>What but design of darkness to appall?-<br>If design govern in a thing so small.</p><p>-Robert Frost</p>
+</main>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

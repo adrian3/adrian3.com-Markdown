@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Boston's Evolution: 1897–2018 — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Running</p>
+		<h1>Boston's Evolution: 1897–2018</h1>
+		<small>February 16, 2019</small>
+	</header>
+	<div class="post-body reading-column">
+		<img src="https://adrian3.com/imgs/images/boston/boston-header.webp" class="caption full-width"><h1>Boston’s Evolution: 1897–2018</h1><h2>Boston Marathon Data Analysis, Part 3</h2><hr><p><em>This is my third story in a new series focusing on the Boston Marathon. If you missed it, you can catch up by reading how data illuminated <a href="https://medium.com/@ade3/boston-marathon-data-analysis-part-1-4891d1832eba">The Boston Marathon qualification process</a> and explained <a href="https://medium.com/@ade3/why-is-the-boston-marathon-so-slow-6f8512129e24">why so many Boston runners fail to PR on race day</a>. Let’s get to it…</em></p><hr><p>Today my Boston Marathon dataset expands beyond the last 4 years to encompass the last <a href="https://github.com/adrian3/Boston-Marathon-Data-Project">121 years</a>. That is a ton more data and it means I can now tell a wider story about the Boston Marathon. <em>With the benefit of another century of data, what will we learn?</em></p><p>First, let’s try to put ourselves in the shoes of a runner from the early 1900’s. No internet, no Strava, no name brand shoes. Roads were just beginning to adapt to cars. Running was a different thing back then. Marathons were a new concept, a sport for a handful of running enthusiasts, all of whom were men. It would be 75 years before the Boston Marathon resembled anything like the modern spectacle we think of today.</p><p><strong>Varying Course Distance, 24.5–26.2 Miles</strong><br>One of the surprising things about the history of the Boston Marathon is that the race distance wasn’t always 26.2 miles. The best information I can find says that the distance from 1897–1924 was 24.5 miles. The Olympic standard of 26.2 miles was established in 1924 and that seems to be when Boston’s course was lengthened to 26.2 miles.</p><p>Unfortunately, as roads improved and curves were straightened the course lost an unknown distance each year. By 1957 the course was about 2/3 of a mile short. The chart below shows winning finish times with the years the course was lengthened marked by dotted lines.</p><p><img src="https://adrian3.com/imgs/images/boston/winning-finish-times-men.webp"></p><p>As you would expect, there is a spike where times slowed down as the course was extended in 1924 and 1957. In the span from 1924–1957 there is a general trend of getting faster that might be attributable to the roads getting straighter and the course getting shorter. I say “maybe” because it is just as likely that the extra speed comes from the increase of race participants and improving competition.</p><p><img src="https://adrian3.com/imgs/images/boston/winning-finish-times.webp"></p><p>Based on my loose estimate of course distance I can figure out pace. For 1897–1923 I used a course length of 24.5 miles, for 1924–1956 I used a course length of 25.5 miles and for 1957–2018 I used 26.2 miles. Obviously guessing at course length is dangerous, so you should be a bit skeptical of the left half of the chart below. However, it does show a steady increase in winner’s pace over the years.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-winner-pace.webp"></p><p>Humans seem to be getting faster. If you ignore how much the speed has leveled out in the last decades you might conclude that we still have a chance to break the 2 hour mark. You could also make a strong case that humans have pretty much maxed out our potential for marathon performance.</p><p>Now that we have looked at the speedy end of the spectrum, let’s examine the averages. The chart below shows average finish times and you can see a trend similar to the winning times. The thing that stands out is that the average time gets steadily slower starting around 1975.</p><p><img src="https://adrian3.com/imgs/images/boston/average-finish-times-men.webp"></p><p>Why would average times get slower after 1975? Running changed in the 70’s. It was becoming something that normal people did. More people were attempting the marathon distance and there was an ever-increasing pressure on Boston to allow more participants. With the doors opening to non-elite runners, the average times naturally got slower. While the times of the top 100 runners has been relatively steady since 1980, the overall average seems to get slower each year.</p><p><img src="https://adrian3.com/imgs/images/boston/average-finish-times-compared-1960-2018.webp"></p><p>At the extremes, if you compare the averages of 1975 to 2014, today’s runners spend more than an hour on Boston’s course. Meanwhile, the elite runners aren’t getting faster. Even with our fitness watches, our ever-improving shoes, our technology and data, we don’t seem to have improved our average performance.</p><p><img src="https://adrian3.com/imgs/images/boston/1975vs2014.webp"></p><p>You can see why I called this story, “Boston’s Evolution.” In a century the race has transformed from a small race for a handful of elite men to an event where speed is only part of the story. Next, let’s quantify just what it means to grow from 15 runners in 1897 to today’s massive numbers.</p><hr><p><strong>From 30 finishers to 30,000+</strong><br>In the first 75 years of the Boston Marathon about 3,500 runners crossed the finish line. They were all men. In the next 50 years more than 586,000 runners finished the race. Women account for over 200,000 of those participants. That is an amazing transformation.</p><p>Below is a chart showing the number of finisher’s from 1897 to 1971. (You should be a bit skeptical of the first decade because the record keeping wasn’t as reliable back then.)</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-participation-1897-1971.webp"><br><em>From 1897–1971 the maximum number of finishers was 125 in 1963</em></p><p>Now, let’s look at the data from 1972 to 2018. As you study the chart below, notice the empty spots for 1975 and 1976. There are actually 150+ runners there but the scale of the chart renders them as sub-pixels. Note that the chart above maxes out at 125. You can see why I had to break the results into 2 charts. If drawn in a single chart, the first 75 years of the Boston Marathon wouldn’t even be visible because the numbers are so small in comparision.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-participation-1972-2018-men.webp"></p><p>You might wonder why there is such a spike at 1996. This was the 100th Boston Marathon and it drew larger attendance than normal. This <a href="https://www.nytimes.com/1996/04/14/us/boston-braces-for-a-colossal-100th-marathon.html">New York Times Article</a> tells the story:</p><blockquote><p>But for the 100th running of Boston, organizers made 5,000 spots available through a lottery, and another 6,000 runners gained entry through such methods as charity auctions and running clubs. What organizers had not counted on was that another 27,000 runners would run qualifying times. In a normal year, 9,000 runners qualify for Boston, and 3,000 bandits join during the race. What had been planned as an event for 30,000 registered runners has fattened considerably.&quot; –<a href="https://www.nytimes.com/1996/04/14/us/boston-braces-for-a-colossal-100th-marathon.html">New York Times, April 14, 1996</a></p></blockquote><p>The other reason I split the results at 1972 is that this is the first year women were officially allowed to enter the race. The number of women finishers has grown from 8 in 1972 to a high of 14,284 in 2014.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-participation-1972-2018-women.webp"></p><p>When you combine the charts to include men and women you can see that there have always been more men participants than women, although the gap has been closing.</p><p><img src="https://adrian3.com/imgs/images/boston/boston-marathon-participation-1972-2018-combined.webp"></p><p>Unless Boston decides to allow more runners into the race, the total number of runners should remain steady for the foreseeable future. Participation seems to have peaked in 2014. After the bombing in 2013 it is reasonable to assume that the surge in 2014 was the collective response of runners eager to prove that we won’t let evil discourage us from our dreams. Another factor might be that Boston waived the qualifying standards for 5,633 of the 2013 participants who ran at least half the race prior to the bombing.</p><p>Isn’t it fascinating to see the evolution of the Boston Marathon played out in the data?</p><p>If you would like to explore this data further, I have 2 resources for you. The first is my <a href="https://github.com/adrian3/Boston-Marathon-Data-Project">Github repo containing Boston Marathon results from 1897–2018</a>. The second is what I am calling <a href="https://tread1st.com/boston.html#/">The Boston Marathon Data Project</a>, where you will find interactive versions of the charts from my articles plus much more data.</p><p><strong>About Me</strong><br>Thanks for reading. My name is Adrian Hanft. I am a runner from Colorado with a passion for data, design, and storytelling. You can <a href="https://www.strava.com/athletes/442364">follow my runs on Strava</a> and <a href="https://medium.com/@ade3">my writing on Medium</a>. If you enjoyed this analysis, please click the clap icon or share it with friends. <em>Stay creative.</em></p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

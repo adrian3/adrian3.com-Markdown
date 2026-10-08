@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 16 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>The Zombie-mobile</h1><blockquote><p><em>”Remember when we were kids? Each car looked so different, so unique unto itself. This is just oatmeal.”</em> — Jerry Seinfeld</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter16.webp"></p><p>What if I told you that after a hundred years of rigorous competition, car manufacturers have finally created the perfect automobile? Would you believe that the evolution of car design has culminated in a vehicle so perfect that every manufacturer has agreed to produce the same model? That would be absurd, wouldn’t it? And yet, in 2013 that is the conclusion you might draw if you compare vehicles side by side. There has never been less differentiation between cars as there is right now. On the next page is an image containing 23 cars from 21 manufacturers. See if you can tell who makes what. How did this happen?</p><p>Buying a car happens like this: first you decide on the category. “I want a car.” Then you identify the brand. “I like Honda.” Then you decide on the sub-category. “Should I get the Accord or the Civic?” Then you pick a color. “I’ll take the Accord in red.” Notice how you never have more than a few choices at any point in the decision process? This isn’t accidental.</p><p>People think they want a huge variety of options, but variety cripples our ability to make easy decisions. Car companies give the illusion of variety while keeping the actual categories very basic. This is why you only get 5 color options instead of choosing from a pantone book. Deciding between red and white is easy compared to deciding between fire red or cherry red.</p><p>Car companies understand that in order for you to make a purchase they can’t overwhelm you with options. There are millions of combinations of vehicles, brands, and options, but by breaking the selection down into bite-size mini-decisions, salesman are able to overcome our indecisiveness. Broad categories (car, truck, van) funnel customers towards making a purchase.</p><p>Sometimes even the broad categories aren’t enough to completely eliminate the indecision of the fickle customer. To satisfy consumers who couldn’t decide between a truck, car, van, or SUV, a new category was created. It is called the crossover. The crossover is the ultimate one-size-fits-all product. It is a truck without being a truck. It is a car without being a car. It is an SUV without being an SUV. It is a minivan without being a minivan. It is fast, yet fuel-efficient, yet powerful, yet roomy, yet safe. It is as if the car companies took the wish-list of every consumer type and frankensteined it all together in a single vehicle.</p><p>If you squint at a crossover you can impose whatever vehicle you want onto its bland exterior. It has the rounded lines of a car. It has the rugged stance of an SUV. It has the extended rear end of a station wagon. It has the space-maximizing bubble shape of a minivan. It doesn’t have a flat bed, but add a hitch and a towing package and your internal truck voice will be satisfied.</p><p>In the last decade every car manufacturer has embraced this new category and sales of crossovers have been outstanding. Consumers love the non-decision of buying a crossover.</p><p><img src="https://adrian3.com/imgs/aotld/crossovers2-bw.webp" alt="Can you match the crossover to its corresponding brand? The answers are below."></p><p><img src="https://adrian3.com/imgs/zombie-photos/crossovers2-bw-answers.webp" alt="How did you do? Now can you identify the model names?"></p><p>The crossover is not the mastery of product design, but rather a breakthrough in market research. Car companies did not stumble into this vanilla landscape by accident. You can be sure that every manufacturer is profiting more with this copycat approach than by differentiating and innovating. As competitive forces reach equilibrium, car companies don’t present an assortment of products equally spaced across the spectrum. Instead, they set up shop right next-door to the most lucrative location. Brand experts insist that success comes from promoting your unique attributes, but in practice differentiation is less profitable than consolidation. In game theory, this is called the Nash equilibrium and it can be seen at every intersection where a Burger King opens across the street from McDonald’s, or a Costco opens next door to a Sam’s Club. Competition doesn’t produce variety, it results in commoditization until we are left with 23 identical variations of the same vehicle.</p><p>Branding campaigns spend millions to cover up this dirty little secret. As a result we are so brainwashed by brand messages that we no longer see the inherent meaning in the products we buy. Industry analyst, Horace Dediu, describes the categorization of the car landscape like this,</p><blockquote><p>“They have the same bunch of cars, the same sizes, same cookie cutter as everyone else and they are all built using the same process... It’s the same process, it’s the same cost structure, it’s the same <em>quality</em>. So you can’t differentiate anymore.”</p></blockquote><p>Branding is a shortcut, remember? When we get addicted to brand shortcuts, actual product differentiation gets in the way of decision making. We don’t look for the car with the best built engine, we look for the logo that has been linked in the collective cultural conscious with build quality. Imagine if all the crossovers pictured looked dramatically different. All of a sudden the purchasing decision gets hard. If I consider myself a Toyota person, but I like the body style of the Kia, I won’t be able to decide. If I am looking for luxury but the Ford looks more luxurious, I again get stuck. By homogenizing the style across all brands, every brand sells more because the decision is easier. All you have to do is pick your brand and tell them which of 5 colors you prefer. You can’t blame the car companies for cashing in on the mindless masses.</p><p>We like to think of brands as a more or less accurate characterization of the products they make. What ends up happening is that a brand becomes less about the product and more of a description of the people who buy the products. Toyota built its reputation on creating reliable vehicles, but today it is rare to find a car from any brand that doesn’t last 150,000 miles. The brand is no longer a representation of reliability, but a representation of a group of people who value reliability. Mercedes isn’t the manifestation of luxury, but a symbol that appeals to people who can afford to pay extra to be associated with the idea of luxury. All cars contain foreign components, but purchasing a Ford or Chevy lets you apply an “American-made” sticker to your personality.</p><p>Car brands no longer reflect differentiation, but rather fashion. This isn’t entirely unprecedented as the famous Braun designer Dieter Rams observed years ago,</p><blockquote><p>“I hate everything that is driven by fashion. In the 60’s I hated the American way of styling, especially the cars. They change their styling every two years to sell new ones which has nothing to do with good design.”</p></blockquote><p>The difference is that in the 60’s a stylish flair could increase a brand’s appeal. Today too much flair can hurt sales because the brand-hyptnotized public are afraid to embrace risky deviations from the norm. The pressure on car companies is not for innovation, but for conformity. The result is not branding, but rather <em>blanding</em>.</p><p>A car is more than aesthetics and undoubtedly the driving experience varies from vehicle to vehicle more than their uniform exteriors. Beneath the shiny paint jobs are different components of varying quality. Is this enough to forgive the blanding effect? I don’t think so. The reality is that the cars exterior should have some connection to its underlying form. Without an acknowledgement between form and function the design is just superfluous frosting. Robert Pirsig wrote,</p><blockquote><p>“The result is rather typical of modern technology, an overall dullness of appearance so depressing that it must be overlaid with a veneer of ‘style’ to make it acceptable. And that, to anyone who is sensitive to romantic Quality, just makes it all the worse. Now it’s not just depressingly dull, it’s also phony. Put the two together and you get a pretty accurate basic description of modern American technology.”</p></blockquote><p>In order to give the illusion of differentiation, manufacturers add meaningless character lines to the crossovers rather than risk non-conformity. Even the wheels are brand cues. If the wheels were not whited out in the comparison photos, the brands would be much easier to recognize.</p><p>The company that surprises me the most in the list of brand conformity is Porsche. The design legacy of Porsche is unmistakable. A Porsche is instantly recognizable whether it was built in the 60’s or the 90’s. Porsche’s crossover, the Cayenne, is a complete rejection of its heritage.</p><p>Why would a sports car company make a crossover? The reason is that Porsche nearly went bankrupt in the 90’s. In order to survive, they hired a new CEO named Wendelin Wiedeking. Wiedeking’s philosophy can be summed up in his own words,</p><blockquote><p>“Every product must earn money. Otherwise you are simply pursuing a hobby which is no task for an auto-business.”</p></blockquote><p>In other words, creating cars is not about making art, it is about making money. Through this lens it is not surprising that Porsche was an early adopter of the crossover, if they didn’t create it outright with the Cayenne. Purists were shocked that Porsche would build something other than a sports car, but it makes sense as a financial decision. Wiedeking explains,</p><blockquote><p>“For Porsche to remain independent, it can’t be dependent on the most fickle segment in the market...We have to make sure we’re profitable enough to pay for future development ourselves.”</p></blockquote><p>Wiedeking’s use of the word “fickle” is telling. To translate, “People with taste are picky. The only way to make money is by satisfying those who can’t discern quality.” The waters of quality are polluted by Porsche’s willingness to lend their brand to non-art.</p><p>The decision to make the Cayenne wasn’t a rejection of the heritage of creating great sports cars but rather a compromise that allowed them to survive so that they could still make their true objects of passion. In order to keep producing art, Porsche is funded by zombie-satisfying, conformity-driven products. The only reason you can still purchase something as brilliant as the Cayman is because Porsche’s best-selling model is the Cayenne crossover. There is no alternative. Porsche either goes out of business, or it makes a concession to the zombies.</p><p>Another powerful brand that has succumbed to the crossover craze is BMW. They have a great slogan,</p><blockquote><p>“We only make one thing, the ultimate driving machine.”</p></blockquote><p>Wow, one thing. That is the essence of branding, to associate one thing with your company. Would it surprise you to learn that BMW actually offers 71 models? That doesn’t include their motorcycle division, either. With a dozen BMW crossovers to choose from it is surprising the fickle consumer can decide which “one thing” to buy.</p><p><img src="https://adrian3.com/imgs/aotld/bmw-lineup.webp" alt="Although they claim to only make one thing, their product lineup contains over 70 products, and that doesn’t count motorcycles. "></p><p><img src="https://adrian3.com/imgs/aotld/concept-cars.webp"></p><p>Have you ever wondered why concept cars are so innovative, but the production models end up so bland? Many cars start out with bold ideas, only to become watered-down later. A great concept car is amazing because it represents a new idea. A concept car can capture people’s imagination because people have never seen anything like it before. By the time the car that wowed fans at car shows hits the showroom floors the art seems to have been squeezed out of it.</p><p>The hype and excitement surrounding a concept car can be enough to launch the car from concept to reality. That leap is usually when things fall apart. The project gets handed from the dreamers to the crew that built last year’s top-selling model. Before you know it, the “next big thing” gets diluted by budgets, committees, focus groups, and the scrutiny of timid engineers. The art that breathed life into the car can’t survive the wind tunnel of the zombies.</p><p>In both the literal and metaphorical wind tunnel every unique angle and differentiating shape gets questioned. One by one, every original idea gets put under air pressure until it finally folds. Instead of innovation we get slightly rounder versions of our dream cars. Too often the only thing that comes out the other end of the wind tunnel is conformity.</p><p>The pressure for conformity isn’t limited to car design, it affects <em>everything</em>. Even in 1966, Bruno Munari observed,</p><blockquote><p>“Thus in the recent past we have had the aerodynamic style, which has been applied not only to airplanes and cars but to electric irons, perambulators and armchairs. On one occasion I even saw an aerodynamic hearse, which is about as far as aerodynamic style can go (speeding the departing guest?).”</p></blockquote><p>In the hands of the Wright brothers (who we will study in depth later) the wind tunnel changed the world. In the hands of mindless zombies, it has become a crutch. It is no longer a tool, but a twisted procedural substitute for innovation. That is not to say that aerodynamics is not a worthy field. The danger is that instead of using the wind tunnel as a tool for improvement, it becomes a process above scrutiny. The wind tunnel’s usefulness has been perverted to legitimize the destruction of progress.</p><p>If you consider yourself an artist, you probably feel that life is much like a wind tunnel. The wind is always blowing directly in your face. You can’t tell if you are actually moving or if it is an illusion caused by the air moving around you. The wind exposes your uniqueness which promptly get flagged for painful scrutiny. Corners get rounded, edges are sanded down, and if you give in to the resistance you will be transformed into a vanilla downgrade of your ideal self. The wind tunnel wants to turn you into a Ford Taurus.</p><p>Society doesn’t appreciate your uniqueness. Your value to the zombie community is your ability to conform. If you aren’t in the mold of a crossover they don’t know what to do with you. How do you maintain your independence when the headwinds are so powerful? Why are we surprised that our art encounters wind resistance?</p><p>There are only two directions that you can go in the wind tunnel; you either get blown away, or move towards the wind. Take comfort in the feeling of resistance, it means you are heading in the right direction. Seth Godin puts it well,</p><blockquote><p>“The desire that we have to do something that’s <em>never</em> been done before means that the people who are around you generally will not encourage you to do it ... if they <em>were</em> encouraging you to do it, then other people would be doing it already and it wouldn’t be unique.”</p></blockquote><p>If you <em>aren’t</em> feeling wind resistance then you might be going the wrong direction in the wind tunnel. Savor the feeling of the wind on your skin. Your heroes faced the same winds and overcame similar objections. Eventually, the headwinds produced lift and launched their work skyward.</p><p><a href="chapter17.html">Chapter 17. Inside or Out</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

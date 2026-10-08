@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Art of the Living Dead Chapter 3 — The website of Adrian Hanft, III</title><script src="../../js/nav.js" defer></script><script src="../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<article class="chapter">
+	<h1>The Birth of a Zombie</h1><blockquote><p><em>”Every child is an artist. The problem is how to remain an artist once he grows up.”</em> — Pablo Picasso</p></blockquote><hr><p><img src="https://adrian3.com/imgs/aotld/chapter3.webp"></p><p>Contrary to popular belief, life doesn’t start at conception or the instant of birth. Life begins at the moment when you discover your ability to create. This is not a philosophical, political, or religious statement, it is just an observation that helps us to differentiate between the living and the living dead. The living create. Zombies destroy life.</p><p>At the moment when a child first holds a crayon in her fist and realizes that she has the ability to make marks on her environment she awakens. Her life has begun. She sees her surroundings not as static limitations, but as movable, changeable opportunities. Something in her mind comes to life. Empowered by this realization, she can’t help but test the powers of her new ability. Is an 8.5 x 11 sheet of paper enough to contain her enthusiasm? No. Everything in the world is now a blank canvas where she can apply her artistic vision. Thrilled, she runs down the hall, crayons in both hands, arms stretched as far as they can, leaving rainbows of color behind her.</p><p>We know this story doesn’t have a happy ending. The walls are covered with scribbles and at some point a zombie will appear. He will see her creation as a horrible mistake. He will punish her, perhaps even taking her crayons away. Her eyes will fill with tears as her very first creative act gets erased. Her rainbow-colored walls once again become beige boundaries. The zombie has won. His scolding rips her creative spirit limb from limb. The lesson she learned today was not that the world is a limitless canvas for her to fill with beauty. The lesson is that creativity will be punished. She internalizes this message and conforms. <em>A new young zombie is born.</em></p><p>How can a child possibly understand our zombie world? She has seen how her hand can change the world and yet she is expected to be content to use her crayons to fill in the holes between thick black outlines of coloring books. She knows it doesn’t have to be this way, but adults enforce these rules ruthlessly. How can she fight them? Adults are monsters.</p><p>Parents do this every day of course, without considering the implications. We correct our children’s grammar. We dress them in “appropriate” clothing. We make their beds for them when they don’t do it right. We send them to schools where they learn to follow more rules, recite memorized answers, and most of all respect authority. If they are lucky the authority figures will grant them recess and maybe 30 minutes once a week for creative arts. This begs the question, are we creating mini-zombies?</p><p>Don’t get me wrong, I am not endorsing a style of parenting or teaching that allows kids to draw on walls, disrespect grownups, and indulge their every whim. That would cause certain anarchy and a scenario that would rival our zombie apocalypse. My point is that our innate ability to create encounters resistance at a very young age. Whether or not we are defeated by this opposition dictates whether we end up being humans or zombies.</p><p>Now let’s imagine a scenario where our crayon-wielding hero doesn’t end up as a meal for her zombie parent. We pick up at the moment where she is in tears after being scolded by her monstrous father.</p><p>The pain of the scolding she received is slightly less intense than the thrill of discovering her ability to create color. The lesson she learned was not that her creative abilities are bad. She learned that her creativity is powerful. It is so powerful in fact, that adults fear it and may punish her for using it. She understands that she will have to wield her power more carefully in the future.</p><p>She dries her eyes. Despite her father’s efforts to erase her art, a hint of the crayon is still visible as a faint halo still clinging to the walls. Her art has endured. For the rest of her life she will get better and better at avoiding zombies as her art blossoms and flourishes. <em>A new young artist warrior is born.</em></p><p>Although our young artist has survived her first zombie encounter, that doesn’t mean it will be any easier for her to protect her art. Fast forward and she is drawing now, not on walls, but in a sketchbook. Like all children her age the drawings are crude by adult standards. There is no understanding of proportion, perspective, or accuracy. It has none of the elements that make a piece of art “right” by traditional measurements.</p><p>This doesn’t deter our hero because she is oblivious to the constraints that will soon stifle her spontaneous creativity. Her perceptions have not yet been infected by formal, literary, or visual prejudices. Unaware of any right or wrong way to draw, she just creates. Her eyes savor everything they see and she is learning to explain this on paper with ever-improving skills.</p><p>She draws things from all sides. Front, back, and inside-out. Proportion is something felt rather than measured. Her father is the biggest influence in her life, so she makes him big. He is not a tall man, but on paper he is the biggest part of the picture, bigger than trees, cars, or houses.</p><p>She draws the things she knows and loves. Her bike, mom, dolls, and her kitty. Love is expressed not by the accuracy of her lines but by the feelings inside her as she drags her markers across the paper. Literal perspective doesn’t interest her because she draws what something feels, not how it appears. Her marks are a tribute to the most important things she knows. For a while these masterpieces get posted on the refrigerator like treasured artifacts, held up by loose magnets.</p><p>Then something terrible happens. Another zombie. But this zombie encounter is different. This time there isn’t a monster insulting her work or threatening to stop her creative aspirations. This zombie appears in her mind. Her own brain threatens to destroy her art.</p><p>It is unclear from where this zombie came, but self-criticism crept it. Things no longer look right. She has become unsatisfied with the result of her artistic efforts. Did she come to this harsh realization on her own? Had she observed the difference between her output and that of older kids? Did a trip to a museum expose a talent gap?</p><p>Perfection has become the new goal and her inner zombie tells her that if her art is going to be good, it needs to look realistic. From this day forward she holds her drawing up and compares it against a more photographic representation of the world. The discovery of realism is a critical moment in her development because it presents her with a choice. Should she try to perfect her drawings or learn to accept the criticisms that accompany the imperfections? The threat of negative feedback convinces her to choose realism and she accepts the challenge of making her drawings look more and more real.</p><p>She puts away her crayons. She learns to use both sides of the pencil, lead and eraser. She learns to shade. She burns through erasers as correction after correction are made. She takes measurements. She asks her mom to buy her tracing paper. Eventually her drawings start to look more like photographs.</p><p>This new art is hard. Where is the fun in reproducing photos? She can impress her critics with her technical abilities, but she feels her drawings are missing something. She wonders if changing her art would allow her to recapture the fulfillment that her old pictures gave her. Her drawings used to be expressions of what was inside her, now they were just reflections. She doesn’t know whether to satisfy her inner zombie or nurture her inner artist. This is the battle that she will fight for the rest of her life.</p><p>Our young hero is fighting the same battle as all of us. Our inner zombie tells us that our work isn’t good enough. It begs us to create safer art that won’t be criticized. Our zombie brain praises us for work that is embraced by other zombies and ridicules us when we attempt to innovate.</p><p>The zombie apocalypse is a war fought on two fronts. The first is the countless mindless creatures that oppose our best work. Like a parent erasing crayon marks where they don’t belong, the external zombies will never support our artistic vision. The second front is a battle against our own inner zombie, the voice in our head that sabotages our best intentions and frightens our creative ambition. Victory requires winning on both fronts. Before we can fight, however, first we need to have a better definition of art.</p><p><a href="chapter4.html">Chapter 4. Learning the Unteachable</a></p>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>

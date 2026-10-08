@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../../css/styles.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" href="/favicons/favicon.ico"><link rel="manifest" href="/favicons/site.webmanifest"><title>Five Things I Learned After I Left the Marketing Agency World — The website of Adrian Hanft, III</title><script src="../../../js/nav.js" defer></script><script src="../../../js/gallery.js" defer></script>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/index.html" aria-label="Home">
+    <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70" xml:space="preserve" aria-hidden="true">
+      <g id="logo2">
+        <path class="d"        fill="#ffffff" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="a"        fill="#ffffff" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="e"        fill="#ffffff" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="outlineD" d="M56.51,6.43h14.38c13.31,0,21.03,7.67,21.03,18.42v0.1c0,10.76-7.83,18.74-21.24,18.74H56.51V6.43z M71.04,34.54c6.18,0,10.27-3.41,10.27-9.42v-0.1c0-5.96-4.1-9.42-10.27-9.42h-4.21v18.95L71.04,34.54L71.04,34.54z"/>
+        <path class="outlineA" d="M52.77,11.14h7.47l11.91,28.17h-8.31l-2.03-4.99H51.02l-2,4.99h-8.16L52.77,11.14z M59.57,28.28l-3.12-7.95l-3.16,7.95C53.29,28.28,59.57,28.28,59.57,28.28z"/>
+        <path class="outlineE" d="M77.03,29.58h-7.34v-2.15h4.84v-1.38h-4.38v-1.99h4.38v-1.45h-4.9v-2.15h7.41L77.03,29.58L77.03,29.58z"/>
+        <path class="d2"       fill="#7a7a7a" d="M56.34,19.14h4.57c4.23,0,6.68,2.44,6.68,5.85v0.03c0,3.42-2.49,5.95-6.75,5.95h-4.5V19.14z M60.96,28.08c1.96,0,3.26-1.08,3.26-2.99v-0.03c0-1.9-1.3-3-3.26-3h-1.34v6.02H60.96L60.96,28.08z"/>
+        <path class="a2"       fill="#7a7a7a" d="M47.9,19.47h3.06l4.87,11.52h-3.4l-0.83-2.04h-4.41l-0.82,2.04h-3.34L47.9,19.47z M50.68,26.46l-1.27-3.25l-1.29,3.25H50.68z"/>
+        <path class="e2"       fill="#7a7a7a" d="M68.56,19.14H78v2.77h-6.22v1.78h5.64v2.57h-5.64v1.86h6.3v2.77h-9.53V19.14H68.56z"/>
+      </g>
+    </svg>
+  </a>
+  <div class="nav-menu">
+    <a class="nav-home" href="/index.html">Made by Ade</a>
+    <nav><a href="/art/index.html">Art</a><br><a href="/code/">Code</a><br><a href="/design/">Design</a><br><a href="/writing/">Writing</a><br><a href="/video/">Video</a></nav>
+  </div>
+</div>
+<script>
+(function () {
+  var svg = document.getElementById('logo');
+  if (!svg) return;
+  var s = {
+    a: svg.querySelector('.a'), d: svg.querySelector('.d'), e: svg.querySelector('.e'),
+    a2: svg.querySelector('.a2'), d2: svg.querySelector('.d2'), e2: svg.querySelector('.e2'),
+    outA: svg.querySelector('.outlineA'), outD: svg.querySelector('.outlineD'), outE: svg.querySelector('.outlineE')
+  };
+
+
+  var count = 0;
+  var neutralFill = '#ffffff';
+  // e2 rotation is cumulative — SVG.js rotate() adds to current angle.
+  // init: 180° (upside down), scramble: +180 = 360° (right-side up, ADE visible),
+  // restore: +180 = 540° (upside down again), and so on.
+  var e2Rot = 0;
+
+  function rHex()   { return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); }
+  function rAlpha() { return (Math.floor(Math.random() * 100) + 1) / 100; }
+  function rScale() { return (Math.random() * 2 + 1).toFixed(2); }
+  function rRot()   { return [0, 90, 180, 270][Math.floor(Math.random() * 4)]; }
+
+  function init() {
+    // Disable transitions so the initial state snaps in without a white flash
+    Object.values(s).forEach(function (el) { el.style.transition = 'none'; });
+
+    s.a.style.opacity = 1; s.a.style.fill = neutralFill; s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = neutralFill; s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = neutralFill; s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2)';
+    // Start e2 upside-down and hidden
+    e2Rot = 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    s.outA.style.opacity = 1; s.outD.style.opacity = 1; s.outE.style.opacity = 1;
+    
+    requestAnimationFrame(function () {
+      Object.values(s).forEach(function (el) { el.style.transition = ''; });
+    });
+  }
+
+  function scramble() {
+    count++;
+    s.a.style.opacity = rAlpha(); s.a.style.fill = rHex();
+    s.a.style.transform = 'scale(' + rScale() + ') rotate(-90deg)';
+    s.d.style.opacity = rAlpha(); s.d.style.fill = rHex();
+    s.d.style.transform = 'scale(' + rScale() + ') rotate(' + rRot() + 'deg)';
+    s.e.style.opacity = rAlpha(); s.e.style.fill = '#43b3ae';
+    s.e.style.transform = 'scale(' + (rScale() * 3) + ') rotate(' + rRot() + 'deg)';
+    s.a2.style.opacity = 1; s.a2.style.transform = 'scale(1)';
+    s.d2.style.opacity = 1; s.d2.style.transform = 'scale(1)';
+    // Rotate e2 another 180° — it lands right-side up (ADE visible)
+    e2Rot += 180;
+    s.e2.style.opacity = 1; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+    if (count === 1) {
+      s.outA.style.opacity = 0; s.outD.style.opacity = 0; s.outE.style.opacity = 0;
+    }
+  }
+
+  function restore() {
+    var r = rRot();
+    s.a.style.opacity = 1; s.a.style.fill = rHex(); s.a.style.transform = 'scale(1) rotate(0deg)';
+    s.d.style.opacity = 1; s.d.style.fill = rHex(); s.d.style.transform = 'scale(1) rotate(0deg)';
+    s.e.style.opacity = 1; s.e.style.fill = rHex(); s.e.style.transform = 'scale(1) rotate(0deg)';
+    s.a2.style.opacity = 0; s.a2.style.transform = 'scale(2) rotate(-90deg)';
+    s.d2.style.opacity = 0; s.d2.style.transform = 'scale(2) rotate(' + r + 'deg)';
+    // Rotate e2 another 180° — back to upside-down and hidden
+    e2Rot += 180;
+    s.e2.style.opacity = 0; s.e2.style.transform = 'rotate(' + e2Rot + 'deg)';
+  }
+
+  init();
+  svg.addEventListener('mouseenter', scramble);
+  svg.addEventListener('mouseleave', restore);
+}());
+</script></div>
+<div class="subnav"></div>
+<article class="post">
+	<header class="post-header reading-column">
+		<p class="eyebrow">Design Thinking</p>
+		<h1>Five Things I Learned After I Left the Marketing Agency World</h1>
+		<small>November 3, 2013</small>
+	</header>
+	<div class="post-body reading-column">
+		<img src="https://adrian3.com/imgs/images/five-things-i-learned-after-i-left-the-marketing-agency-world.webp" class="caption full-width" alt="Zila Corporate Identity by Adrian Hanft"><h1>Five Things I Learned After I Left the Marketing Agency World</h1><h2>Feeling Stuck? Maybe it’s time to be an in-house designer.</h2><ul><li><em> </em></li></ul><p>After about 8 years of working at advertising/marketing/design companies I hit a wall. I was disappointed in the work I was doing. I was churning out work that lacked substance. My interactions with clients were minimal and superficial. Something was missing. I was given the opportunity to lead the creative “in-house” at a dental company called Zila. Having nothing to lose, I jumped at the opportunity.</p><p>I know being an in-house designer isn’t for everyone, but for me it has been a great learning experience. If I ever decide to go back to the agency world I will bring the lessons I learned from my time at Zila. Here are 5 concepts that stand out in my mind:</p><h3>1\. More knowledge means better design and it is always worth the additional effort to understand as much information as possible.</h3><p>It is really hard to be an expert on your client’s products when you are working on the agency side of the table. This puts you in a tough position because expertise is essential to creating great design. Good designers know this and invest the time to understand as much as they can about their client’s world. Often your time is so tightly budgeted that you can’t afford to take the time required to know the products inside and out. Knowing that once your six week project expires you will move on to something else, it is easy to become lazy.</p><blockquote><p>It is tempting to believe that if a product detail isn’t worthy of a bullet point on the creative brief it isn’t important enough to affect your design.</p></blockquote><p>As an in-house designer you are more connected to your companies products and it is easier to work with an attitude that “there is no detail too small.” As a result your knowledge increases and your designs gain meaning.</p><p>My best designs have been produced in situations where I knew the products inside out. When I worked for Jayco my understanding of their RV’s rivaled that of the salesman on the lots. At Zila I know details of our dental products at a level that would impress even the geekiest dentists. Is this exciting stuff? No. But it is worth it.</p><h3>2\. Design is the easy part.</h3><p>Design is relatively easy in comparison to the intangible skills that are required to make your design a reality. Articulating your ideas to non-designers is hard. Fighting for high standards is a battle that never ends. Sticking to your guns in the face of opposition is hard. Educating co-workers about the value of good design can be difficult. Working within budgets and justifying the additional cost of high quality is tough. Working with departments with conflicting priorities is not easy.</p><blockquote><p>This is the stuff that they don’t teach you in school. These are also the skills that are hard to learn at an agency because most designers are separated from the clients and the decision makers (either by choice or by design).</p></blockquote><p>Often the efficiency of the agency trumps the time-consuming process of digging deeper into a problem. Some designers use this as an excuse to limit their roles to strictly visual problem solving. They take the easy way out.</p><p>As a designer/developer at Burns Marketing I was extremely efficient. The system at Burns is tightly scheduled for minimal wasted time and maximum billable hours. If I had to put a number on it I would say that maybe 80% of my time was at a computer actually designing or developing. At Zila it is a different story. Perhaps 25% of my time is doing the “fun” stuff of designing. The rest of my time is spent championing the work I create. If I don’t defend my designs they would get watered down by all the timid feedback. This hard work is worth the effort and loss in efficiency. If you don’t invest this extra effort, your ideas may never see the light of day. Which leads me to number 3.</p><h3>3\. The only way to do good work is to champion the big ideas yourself.</h3><p>I used to think that there is a magic place where people always recognize brilliant ideas and no beautiful design ever goes unused. Yes, I was naive and my work suffered as a result. I should have known that in the real world you are going to have to fight for your work to see the light of day. Nobody is going to swoop in and champion your work for you. I have been much more successful when I take on the role of evangelist, promoter, and cheerleader. Once I decided that I was willing to risk my own reputation in support of an idea, it was much easier to make progress. People want to do big things, but it easier when they know they can point at you when things get tough. That is okay.</p><blockquote><p>Blame me. But don’t worry because I will not let the project fail. I will do whatever it takes to get it done, whether you support me or not.</p></blockquote><p>This is the attitude you have to take if you expect to achieve anything meaningful.</p><p>The best example of this was when I started working at Zila and I recommended a rebrand to the management. The Zila brand was damaged, the identity was dated and fragmented, and we lacked a visual identity. I championed the idea of a company-wide rebrand, essentially scrapping everything and starting from scratch. As you might expect, not everyone was as excited about this as I was.</p><img src="https://adrian3.com/imgs/images/five-things-i-learned-after-i-left-the-marketing-agency-world2.webp" class="caption full-width" alt="Zila brand standards guide"><p>For about six months I preached the value of branding to anyone who would listen. I built consensus, I made presentations, and I fought vigorously for consistently high standards. I laid such a solid groundwork that when it came to actually execute the new identity it was practically a formality. I had won over the naysayers. This is very different from other logos I have designed where you design in isolation, present, fail, restart, rinse and repeat. Don’t expect your designs to be embraced. Fight for them.</p><h3>4\. If you think clients are stupid, you haven’t worked hard enough to understand them.</h3><p>Before I went in-house I would sit at my toy-covered desk behind my big dual monitors trying to decipher cryptic emails. I will admit I accused a client or two of being less than intelligent. Usually I was wrong, although I may not have realized it at the time.</p><blockquote><p>The client may not know the first thing about marketing, but that doesn’t make them dumb. They are the best people in the world to give you the information you need to solve their problem.</p></blockquote><p>They probably just don’t know what information you need or how to give it to you. Often a designer feels handcuffed because they see the problem clearer than anyone else but they can’t do anything but execute a flawed idea. The answer is communication. You need to dig if you are going to solve the problem. Solutions require careful articulation, frank conversations, and deliberate execution. If conversations aren’t happening (email doesn’t count) it is the designer’s responsibility to force the issue. Yes, it is much easier to pass the blame to the client, but if you don’t own up to your inabilities you will always be blaming “dumb” clients.</p><p>Working in-house puts you face-to-face with the “dumb client.” Heck, now <em>I am</em> the dumb client. The tables turn when you know the full story and you realize that the shallow solutions presented by marketing companies aren’t going to meet your objectives. Hopefully I haven’t been a nightmare client, but it has been a pleasure working with many area marketing companies like Sage Marketing, Moxie Sozo, and Definite Productions.</p><h3>5\. Systems are really just people, don’t believe that they can’t be changed.</h3><p>Dead ends are often the result of systems that have been put in place that appear unalterable. There are systems for everything. Barcodes. E-commerce mandates. Copyright laws. Standard operating procedures. They never end. As a designer on the agency side you have very little leverage when your ideas come up against an established system. Want to move that ugly label to a less conspicuous location? Tough luck. That’s the way it has always been done and that’s the way it’s going to be. False. When you work in-house there is a good chance that you know the person applying the labels by name. And when systems have a first name and familiar face your chances of minimizing the awfulness of that label are much better.</p><p>In order to change a system you need to understand it. If you want to modify a specification from the regulatory department regarding where to put a label you need to understand the established rules for labeling. If you want to change how products get packaged you need to understand the resistance you will encounter from the assembly line. To improve your e-commerce system you need to understand the systems selected by your IT department as deeply as possible.</p><blockquote><p>Nobody wants an uninformed outsider telling them how to do their jobs. But when they see the effort you put towards understanding their systems they realize that you aren’t out to make their life more difficult.</p></blockquote><p>Usually they sympathize with your desire to produce the highest product possible. Sometimes you are the first person to show interest in their system and they are glad to have someone to educate as well as vent frustrations to. If you can get to this point, previously unchangeable systems begin to soften. Truth be told, I have failed at changing systems more than I have succeeded. But, I have seen the cracks in the foundations and won’t simply take “no” for an answer without doing my homework first.</p><p>How many good ideas have been killed by the phrase, “we can’t do that”? Contrary to popular belief, systems can change. It certainly isn’t easy, but if you realize that the humans involved in the system are capable of being persuaded then you leave the door open to changing the system.</p><h3>6\. You rarely need permission to deliver more than you promised.</h3><p>If you ask permission to over-deliver you will get shot down the majority of the time. Here are some real conversations that might sound familiar to you.</p><p><strong>Question</strong>: “Can I rewrite this copy so it makes more sense?”<br><strong>Answer:</strong> “No. That is the content the client provided and copywriting wasn’t included in the proposal.”</p><p><strong>Question:</strong> “Can we customize the CMS so it is more user friendly?”<br><strong>Answer:</strong> “No, we can’t afford to build a custom CMS for every client, we’d go broke.”</p><p><strong>Question:</strong> “May I please make the website responsive?<br><strong>Answer:</strong> “Even if it takes the same amount of time to make, this is typically something we charge extra for. No.”</p><p><strong>Question:</strong> “Can I mockup the logo options on a website, business card, and other items so they can see it in a real-world context?”<br><strong>Answer:</strong> “No, they are paying us for a logo, not a website or stationary.</p><p><strong>Question:</strong> “What if we made a…”<br><strong>Answer:</strong> “No, that’s out of scope.”</p><p>These conversations never end the way you want them to. The time involved in executing most above-and-beyond tasks is equal to or less than the time required to secure buy-in from people who don’t care as much as you do in the first place. So stop having these conversations. This isn’t a license to go completely rogue, but when you see a better way of doing something just do it. Most people won’t notice. The one’s who do will be delighted. In the unlikely situation where creating a better product results in you getting punished, you can usually downgrade and apologize your way back to a more suitably mediocre endpoint.</p><p>This goes hand in hand with doing the right thing. If I can make something better it isn’t a matter of asking permission. I have a moral obligation to make things as good as I possibly can. If after the fact I have to beg for forgiveness, so be it. It is amazing how rarely you get in trouble for over-delivering.</p><p>Some of you might be upset that my “top five list” has six items. Others of you might not have noticed. Most of you (I hope) appreciate the bonus content.</p><p>So there you have it. If you are considering leaving the comfort of your agency job for the uncertain waters of in-house designerdom I think you should take the plunge. It is definitely a mixed bag, but you will almost certainly learn enough for it to be worthwhile. If you have had similar or differing results, I would love to hear about them.<br>are glad to have someone to educate as well as vent frustrations to. If you can get to this point, previously unchangeable systems begin to soften. Truth be told, I have failed at changing systems more than I have succeeded. But, I have seen the cracks in the foundations and won’t simply take “no” for an answer without doing my homework first.</p><p>How many good ideas have been killed by the phrase, “we can’t do that”? Contrary to popular belief, systems can change. It certainly isn’t easy, but if you realize that the humans involved in the system are capable of being persuaded then you leave the door open to changing the system.</p><h3>6\. You rarely need permission to deliver more than you promised.</h3><p>If you ask permission to over-deliver you will get shot down the majority of the time. Here are some real conversations that might sound familiar to you.</p><p><strong>Question</strong>: “Can I rewrite this copy so it makes more sense?”<br><strong>Answer:</strong> “No. That is the content the client provided and copywriting wasn’t included in the proposal.”</p><p><strong>Question:</strong> “Can we customize the CMS so it is more user friendly?”<br><strong>Answer:</strong> “No, we can’t afford to build a custom CMS for every client, we’d go broke.”</p><p><strong>Question:</strong> “May I please make the website responsive?<br><strong>Answer:</strong> “Even if it takes the same amount of time to make, this is typically something we charge extra for. No.”</p><p><strong>Question:</strong> “Can I mockup the logo options on a website, business card, and other items so they can see it in a real-world context?”<br><strong>Answer:</strong> “No, they are paying us for a logo, not a website or stationary.</p><p><strong>Question:</strong> “What if we made a…”<br><strong>Answer:</strong> “No, that’s out of scope.”</p><p>These conversations never end the way you want them to. The time involved in executing most above-and-beyond tasks is equal to or less than the time required to secure buy-in from people who don’t care as much as you do in the first place. So stop having these conversations. This isn’t a license to go completely rogue, but when you see a better way of doing something just do it. Most people won’t notice. The one’s who do will be delighted. In the unlikely situation where creating a better product results in you getting punished, you can usually downgrade and apologize your way back to a more suitably mediocre endpoint.</p><p>This goes hand in hand with doing the right thing. If I can make something better it isn’t a matter of asking permission. I have a moral obligation to make things as good as I possibly can. If after the fact I have to beg for forgiveness, so be it. It is amazing how rarely you get in trouble for over-delivering.</p><p>Some of you might be upset that my “top five list” has six items. Others of you might not have noticed. Most of you (I hope) appreciate the bonus content.</p><p>So there you have it. If you are considering leaving the comfort of your agency job for the uncertain waters of in-house designerdom I think you should take the plunge. It is definitely a mixed bag, but you will almost certainly learn enough for it to be worthwhile. If you have had similar or differing results, I would love to hear about them.</p>
+	</div>
+	<div class="byline reading-column"><p>Written by <a href="/">Ade Hanft</a></p></div>
+	<div class="post-nav reading-column"><nav class="post-nav-inner" id="post-nav-inner">
+  <a href="/writing.html" class="post-nav-all">All writing</a>
+</nav>
+<script>
+(function () {
+  fetch('/posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var current = window.location.pathname.replace(/\/$/, '');
+
+      var posts = (data.posts || [])
+        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
+
+      var idx = posts.findIndex(function (p) {
+        return p.url === current || p.url.replace(/\.html$/, '') === current;
+      });
+
+      if (idx === -1) return; // not a blog post — keep default All writing link
+
+      var prev = idx > 0             ? posts[idx - 1] : null;
+      var next = idx < posts.length - 1 ? posts[idx + 1] : null;
+
+      var nav = document.getElementById('post-nav-inner');
+      nav.innerHTML =
+        (prev
+          ? '<a href="' + prev.url + '" class="post-nav-prev">← ' + prev.title + '</a>'
+          : '<span class="post-nav-placeholder"></span>')
+        + '<a href="/writing.html" class="post-nav-all">All writing</a>'
+        + (next
+          ? '<a href="' + next.url + '" class="post-nav-next">' + next.title + ' →</a>'
+          : '<span class="post-nav-placeholder"></span>');
+    })
+    .catch(function () { /* keep default link on error */ });
+}());
+</script></div>
+</article>
+<footer class="footer">© Adrian Hanft  <a href="/ai-transparency.html">AI Transparency</a> <a href="https://adrian3.github.io/Ade-s-design-system/">Design.md</a> <a href="sitemap.xml">Sitemap.xml</a></footer>
+<!-- LIVE_RELOAD -->
+<script>
+(() => {
+  const previewPort = Number(window.location.port || "3003");
+  const adminPort = previewPort > 0 ? previewPort - 1 : previewPort;
+  const reloadUrl = `${window.location.protocol}//${window.location.hostname}:${adminPort}/__reload`;
+  const source = new EventSource(reloadUrl);
+  source.onmessage = (event) => {
+    if (event.data === "reload") {
+      window.location.reload();
+    }
+  };
+  source.onerror = () => {
+    // EventSource handles reconnection on its own. Avoid reload loops.
+  };
+})();
+</script>
+<!-- /LIVE_RELOAD -->
+</body>
+</html>
