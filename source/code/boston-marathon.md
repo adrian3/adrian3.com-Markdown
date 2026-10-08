@@ -1,6 +1,6 @@
 <!---
 title: Boston Marathon
-show-in-nav: true
+show-in-nav: false
 --->
 
 # Boston Marathon Data Project
