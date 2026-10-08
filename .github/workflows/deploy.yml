@@ -74,7 +74,10 @@ jobs:
             "
 
       - name: Build site
-        run: node admin/generator.js && echo "Build output:" && ls website/ | head -10 && echo "Total files:" && find website/ -type f | wc -l
+        run: |
+          node scripts/build.mjs
+          test -s website/index.html
+          test -s website/code/apps.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
