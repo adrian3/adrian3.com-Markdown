@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Learning the Unteachable  
-> _”We know that only the technical means of artistic achievement can be taught, not art itself.”_ — Walter Gropius, founder of the Bauhaus
+> _“We know that only the technical means of artistic achievement can be taught, not art itself.”_ — Walter Gropius, founder of the Bauhaus
 
 ---
 

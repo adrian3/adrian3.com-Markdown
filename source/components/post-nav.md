@@ -15,7 +15,7 @@ class: post-nav reading-column
       var current = window.location.pathname.replace(/\/$/, '');
 
       var posts = (data.posts || [])
-        .filter(function (p) { return p.url.indexOf('/blog/') === 0 && p.title && p.date && !p.unlisted; })
+        .filter(function (p) { return p.url.indexOf('/writing/blog/') === 0 && p.title && p.date && !p.unlisted; })
         .sort(function (a, b) { return new Date(a.date) - new Date(b.date); });
 
       var idx = posts.findIndex(function (p) {

@@ -7,7 +7,7 @@ membersonly: true
 --->
 
 # The Taste of Zombies  
-> _”For the flesh desires what is contrary to the Spirit, and the Spirit what is contrary to the flesh.”_ — Galatians 5:17
+> _“For the flesh desires what is contrary to the Spirit, and the Spirit what is contrary to the flesh.”_ — Galatians 5:17
 
 ---
 
@@ -81,7 +81,7 @@ If you work for a marketing or branding company you might feel like I am unfairl
 
 If you answer “no” to any of these questions then you should reevaluate your employment. You can’t create meaningful work in your current role. You are not an artist, you are a stylist. In the words of Robert Pirsig,  
 
-> “It’s the style that gets you; technological ugliness syruped over with romantic phoniness in an effort to produce beauty and profit by people who, though stylish, don’t know where to start because no one has ever told them there’s such a thing as Quality in this world and it’s real, not style."  
+> “It’s the style that gets you; technological ugliness syruped over with romantic phoniness in an effort to produce beauty and profit by people who, though stylish, don’t know where to start because no one has ever told them there’s such a thing as Quality in this world and it’s real, not style.”
 
 Forget about style. If you are legitimately focused on the future you are by definition not in style. This is a tough pill to swallow because most of us find ourselves putting positive spins on less than stellar situations. We want to create meaningful work. We recognize good work and desperately want to make the world a better place, but we feel stuck. Our jobs don’t give us the opportunity to clarify the value of the brands and instead we muddy the tastes of the public, the one thing that could save us from the brand apocalypse.  
 

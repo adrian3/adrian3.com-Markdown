@@ -5,6 +5,7 @@ categories:
 tags: 
 layout: 
 show-in-nav: true
+template: design-page
 --->
 
 # Awards and Recognition
@@ -128,7 +129,7 @@ October 2005
 </media-row>
 
 <media-row>
-**”Design Blogs: The Good, the Bad and the Nasty,”**  
+**“Design Blogs: The Good, the Bad and the Nasty,”**
 Design Matters with Debbie Millman  
 July 2005
 </media-row>

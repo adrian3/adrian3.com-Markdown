@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Ingredients of Creativity  
-> _”For a charm of powerful trouble, like a hell-broth boil and bubble. Double, double toil and trouble; fire burn, and caldron bubble.”_ — William Shakespeare
+> _“For a charm of powerful trouble, like a hell-broth boil and bubble. Double, double toil and trouble; fire burn, and caldron bubble.”_ — William Shakespeare
 
 ---
 

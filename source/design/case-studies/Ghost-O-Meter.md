@@ -6,10 +6,10 @@ published: true
 unlisted: true
 categories: mobile-first and app design, marketing and brand strategy
 thumbnail: https://adrian3.com/imgs/case-studies/images/Ghost-O-Meter/ghost-o-meter_thumb.jpg
-thumbnail-alt: Ghost-O-Meter: The Joke App That Turned an Agency Into an App Studio thumbnail
+thumbnail-alt: Ghost-O-Meter: The Spooky App That Turned an Agency Into an App Studio thumbnail
 --->
 
-# Ghost-O-Meter: The Joke App That Turned an Agency Into an App Studio
+# Ghost-O-Meter: The Spooky App That Turned an Agency Into an App Studio
 
 **Role:** Concept, design & development  
 **Company:** Burns Marketing Communications  
@@ -36,15 +36,15 @@ The Ghost-O-Meter is exactly what it sounds like: open the app and a vintage, st
 
 The app found an audience we never could have planned for. People made earnest “field test” videos — wandering cemeteries and old buildings, app in hand, narrating their hunts for the camera. And the App Store reviews became a genre of their own:
 
-> _”It really works. I went in my room, turned off the lights, and the spike went up — I found 11 ghosts in 1 minute. It saved my life.”_
+> _“It really works. I went in my room, turned off the lights, and the spike went up — I found 11 ghosts in 1 minute. It saved my life.”_
 
-> _”Me and my dad put two fingers on each side of our iPad. I told it, ‘if anyone is out there, move the pillow.’ We sat there for five minutes. Then it suddenly moved! SO FREAKY!!!!! GET IT!!!”_
+> _“Me and my dad put two fingers on each side of our iPad. I told it, ‘if anyone is out there, move the pillow.’ We sat there for five minutes. Then it suddenly moved! SO FREAKY!!!!! GET IT!!!”_
 
 The app delivered genuine delight (and spookiness) that people couldn’t help but talk about. The app gave people a prop for a story they wanted to tell.
 
 ![A still from a user-made “Cemetery Field Test” video posted to YouTube — a reviewer earnestly demonstrating the Ghost-O-Meter app.](https://adrian3.com/imgs/case-studies/images/Ghost-O-Meter/03-field-test.png)
 
-By the time the popularity of Ghost-O-Meter peaked it had reached the #1 spot in the entertainment category in 6 countries and the top 10 overall in 5 countries.
+By the time the popularity of Ghost-O-Meter peaked it had reached the #1 spot in the entertainment category in 6 countries and the top 10 overall in 5 countries. Over its life on the App Store it was downloaded more than 550,000 times, with 71% of those downloads coming from the US and Canada. The biggest month was October 2012, when downloads across my apps passed 100,000, more than double the month before. Halloween will do that for a ghost detector.
 
 ![App Store ranking chart showing Ghost-O-Meter reaching #1 in the Entertainment category in six countries and the top 10 overall in five.](https://adrian3.com/imgs/case-studies/images/Ghost-O-Meter/ghost-o-meter-ranking.jpg)
 
@@ -62,6 +62,12 @@ The Ghost-O-Meter wasn’t just a viral curiosity — it earned Burns a **2012 A
 
 The lasting result wasn’t the downloads or even the award. It was that Burns could now credibly say it built apps — because one was live on the App Store and the Android Market, it worked, people loved it, and it had won recognition. The Ghost-O-Meter established mobile app development as a real competency at an agency that hadn’t sold a single app before it. The client app work that followed — tradeshow apps for the likes of Baxa and Cognizant — stood on the foundation that my ghost detector laid.
 
+## 5. A Second Life
+
+### Rebuilt for the web
+
+In 2026 I rebuilt Ghost-O-Meter as a web app so it can keep running without an app store. It uses the original artwork, the original sounds, and the same detection logic, with the old plugins swapped for the motion and orientation sensors that browsers now provide. [Open it on your phone](https://adrian3.github.io/ghost-o-meter/), tap the gauge to power it on, and see how many ghosts you can find.
+
 ## Conclusion
 
-Ghost-O-Meter is a reminder that the best way to prove you can do something is to do it — visibly, and with enough craft and attention to detail that people want to share it. A simple well-executed concept turned into an award, a small viral moment, and a new line of business. Not bad for a ghost detector.
+Ghost-O-Meter is a reminder that the best way to prove you can do something is to do it — visibly, and with enough craft and attention to detail that people want to share it. A simple well-executed concept turned into an award, more than half a million downloads, and a new line of business. Not bad for a ghost detector.

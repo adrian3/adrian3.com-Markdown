@@ -1,6 +1,7 @@
 <!---
 title: Timeline
 show-in-nav: false
+template: design-page
 --->
 
 # Adrian Hanft’s Professional Timeline

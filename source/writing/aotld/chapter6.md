@@ -7,7 +7,7 @@ membersonly: true
 --->
 
 # Artifacts of Thought  
-> _”An inventor’s path is chorused with groans, riddled with fist-banging and punctuated by head scratches.”_ — James Dyson
+> _“An inventor’s path is chorused with groans, riddled with fist-banging and punctuated by head scratches.”_ — James Dyson
 
 ---
 

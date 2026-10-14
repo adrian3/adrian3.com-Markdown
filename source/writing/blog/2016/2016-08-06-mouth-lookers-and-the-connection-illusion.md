@@ -41,7 +41,7 @@ Molly discovered my flaw when she asked me, “What are you looking at? Is there
 
 “Really? That’s seems weird.”
 
-“No, Adrian. **_You_** are weird.
+“No, Adrian. **_You_** are weird.”
 
 * * *
 
@@ -72,4 +72,3 @@ Or perhaps you have the humility to accept that you are weird, that you are faki
 * * *
 
 Thanks for reading. I talk about weird stuff like this every weekend. If you see eye-to-eye with my mouth, consider following me. _Stay creative._
-

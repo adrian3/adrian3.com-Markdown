@@ -46,4 +46,4 @@ The same treatment carried into marketing imagery across sports, so the brand fe
 
 ## Conclusion
 
-OnForm’s brand has evolved in the years since I proposed this initial art direction, and the identity I designed is no longer the one the app wears today. I’ve made my peace with that. The job of an early-stage brand is to give a young product a face confident enough to take it to market — and a company outgrowing its first logo usually means it earned the traction to need a new one. I’m still proud of the thinking underneath this one: a wordmark that *was* the product — points, connected — and a record dot that built the user’s very first action into the mark itself. It did exactly what good early brand work should: it helped a promising idea look ready for the world.
+OnForm’s brand has evolved in the years since I proposed this initial art direction, and the identity I designed is no longer the one the app wears today. The job of an early-stage brand is to give a young product a face confident enough to take it to the next phase. It did that and helped a promising idea look ready for the world.

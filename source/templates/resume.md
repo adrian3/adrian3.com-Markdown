@@ -9,7 +9,7 @@ template-name: resume
 </head>
 <body>
 <header />
-<subnav />
+<design-nav />
 <main class="resume-page">
 	<content />
 </main>

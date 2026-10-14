@@ -15,11 +15,11 @@ thumbnail-alt: Designing for Endurance: A Decade of Fitness-Tech Product Design 
 **Brands:** TrainingPeaks, Athlinks, Runcoach, Stryd, Run The Edge
 **Role:** Lead Product Designer
 
-Before I designed software for agriculture, I spent the better part of a decade shaping the look and feel of products for endurance athletes and the coaches who train them. Across five companies I worked on brand identities, marketing sites, and the apps themselves — and the same design problem kept reappearing: how do you take cold, dense performance data and turn it into something an athlete actually trusts, understands, and comes back to? This is a visual tour of that work.
+Before I designed software for agriculture or IT, I spent the better part of a decade shaping the look and feel of products for endurance athletes and the coaches who train them. Across five fitness companies I worked on brand identities, marketing sites, and the apps themselves — and the same design problem kept reappearing: how do you take cold, dense performance data and turn it into something an athlete actually trusts, understands, and comes back to? This is a user-centered tour of that work.
 
 ## Stryd
 
-Stryd makes a running power meter, and the design challenge was to make watts, leg stiffness, and ground-contact time feel inspiring rather than intimidating. I built a visual language that pairs heroic athlete photography with a clean data overlay — a single, legible number doing the emotional work, the complexity kept one layer back.
+Stryd makes a running power meter. The design challenge was to make watts, leg stiffness, and ground-contact time feel inspiring rather than intimidating. I built a visual language that pairs heroic athlete photography with a clean data overlay — a single, legible number doing the emotional work, the complexity kept one layer back.
 
 ![A black-and-white trail runner cresting a ridge, overlaid with a clean “Stress Score 165 / Injury Risk: Low” data graphic.](https://adrian3.com/imgs/case-studies/images/Fitness-Design-Showcase/stryd-1.jpg)
 
@@ -41,7 +41,7 @@ Athlinks is the world’s largest archive of race results. The brand had to feel
 
 ## Runcoach
 
-At Runcoach I led a full brand identity built on a simple promise — *”know our runners better than they know themselves.”* The system spanned the logo, app icon, color, and type, and carried through the product as we surfaced the human coach behind the algorithm.
+At Runcoach I led a full brand identity built on a simple promise — *“know our runners better than they know themselves.”* The design system spanned the logo, app icon, color, and type, and carried through the product as we surfaced the human coach behind the algorithm.
 
 ![A printed Runcoach brand-guidelines booklet showing the logo, app icon, color palette, and typography against the line “The Runcoach brand strives to know our runners better than they know themselves.”](https://adrian3.com/imgs/case-studies/images/Fitness-Design-Showcase/runcoach-1.png)
 
@@ -55,4 +55,4 @@ Run The Edge turns running into a community challenge — run 2,018 miles in a y
 
 ## The Through-Line
 
-Five companies, one recurring brief: make performance data feel human. Whether it was a power number on a mountain, a coach’s voice inside an app, or a race result waiting to be claimed, the job was always to turn data into trust and motivation. It’s the same instinct I later carried into agriculture — and it’s why I think of myself less as a designer of any one industry than as a designer of *trust in data-rich products.*
+Five companies, one recurring brief: make performance data feel human. Whether it was a runner’s power output number, a coach’s voice inside an app, or a race result waiting to be claimed, the job was always to turn data into trust and motivation. It’s the same instinct I later carried into the agriculture industry and beyond — and it’s why I think of myself less as a designer of any one industry than as a designer of *trust in data-rich products.*

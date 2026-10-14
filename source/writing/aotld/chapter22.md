@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # The Moon Rocket Man
-> _”Every vision is a joke until the first man accomplishes it; once realized, it becomes commonplace.”_ — Robert Goddard
+> _“Every vision is a joke until the first man accomplishes it; once realized, it becomes commonplace.”_ — Robert Goddard
 
 ---
 

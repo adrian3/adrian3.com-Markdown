@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Inside or Out   
-> _”Nobody’s madder than me about the fact that the website isn’t working as well as it should.”_ — President Barack Obama
+> _“Nobody’s madder than me about the fact that the website isn’t working as well as it should.”_ — President Barack Obama
 
 ---
 

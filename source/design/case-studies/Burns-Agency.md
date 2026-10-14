@@ -25,7 +25,7 @@ Burns Marketing Communications was a full-service marketing agency with a broad 
 
 ### Client websites, hand-built
 
-The day-to-day of the role was designing and developing websites for clients — in HTML, CSS, JavaScript, WordPress, and Bootstrap. The work spanned industries, from medical and enterprise tech to consumer products. A representative example was Plugless Power, a wireless EV-charging company, where the site had to make a futuristic technology feel simple and trustworthy: *”No plugs. No cords. No hassle.”*
+The day-to-day of the role was designing and developing websites for clients — in HTML, CSS, JavaScript, WordPress, and Bootstrap. The work spanned industries, from medical and enterprise tech to consumer products. A representative example was Plugless Power, a wireless EV-charging company, where the site had to make a futuristic technology feel simple and trustworthy: *“No plugs. No cords. No hassle.”*
 
 ![Two Plugless Power website screens — a bright marketing landing page and a “Fleet Pilot Program” page for an electric-vehicle wireless-charging company.](https://adrian3.com/imgs/case-studies/images/Burns-Agency/02-plugless-power.png)
 
@@ -33,7 +33,7 @@ The day-to-day of the role was designing and developing websites for clients —
 
 ### A new core competency
 
-Smartphones were still new enough that most marketing agencies didn’t build apps. I helped change that at Burns, designing and developing apps for iOS and Android using Phonegap/Cordova. The most complete example was Baxa, a medical-device maker, where the app was one piece of an integrated tradeshow campaign: the “Simply Safe” iPad and iPhone experience (above), the booth, and the signage all designed as a single launch.
+Smartphones were still new enough that most marketing agencies didn’t build apps. I helped change that at Burns, designing and developing apps for iOS and Android using Phonegap/Cordova. The most complete example was Baxa, a medical-device maker, where the app was one piece of an integrated tradeshow campaign: the “Simply Safe” iPad and iPhone experience, the booth, and the signage all designed as a single launch.
 
 ![A 3-D layout of the Baxa tradeshow booth — “Simple Has Arrived” signage, product displays, and screens — designed to integrate with the app.](https://adrian3.com/imgs/case-studies/images/Burns-Agency/04-baxa-booth.png)
 
@@ -53,7 +53,7 @@ The surest way to prove an agency can build apps is to ship one to the public ap
 
 ### Breadth was the point
 
-An agency role is, by nature, a tour through many industries at once. Alongside the projects above, I contributed logo design, web, mobile, and tradeshow work for clients including HP, Lenovo, Waterpik, Inspirato, Life Technologies, SolidFire, PCS Wireless, and more.
+An agency role is, by nature, a tour through many industries at once. Alongside the projects above, I contributed logo design, web, mobile, and tradeshow work for clients including HP, Lenovo, Waterpik, Inspirato, Zila, SolidFire, PCS Wireless, and more.
 
 ![An HP learning app on an iPad, used by a student in a library — one of many client projects across the agency’s roster.](https://adrian3.com/imgs/case-studies/images/Burns-Agency/06-hp-app.png)
 

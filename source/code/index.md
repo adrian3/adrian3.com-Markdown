@@ -15,18 +15,20 @@ Github: [@adrian3](https://github.com/adrian3)
 ## Featured Projects
 
 <project-list>
+<code-project title="Palm Pilot Animator" desc="A native animation player for Palm OS, with a local web interface for preparing GIFs, previewing black-and-white frames, and syncing animations to a Palm Pilot." url="https://github.com/adrian3/palm-pilot-animator" thumb="https://raw.githubusercontent.com/adrian3/palm-pilot-animator/main/images/icon.gif" />
 <code-project title="Price Tag Image Uploader" desc="A software toolkit for sending images and text to e-ink displays of recovered electronic shelf-label price tags using a Raspberry Pi." url="https://github.com/adrian3/eink-esl-pricetag-image-uploader" thumb="https://adrian3.com/imgs/code-thumbnails/buster-keaton-eink-display.webp" />
 <code-project title="ScopeMotion" desc="Turn animated GIFs into audio signals for live playback on vintage analog oscilloscopes. Works with SVGs, too." url="https://adrian3.github.io/ScopeMotion/" thumb="https://adrian3.com/imgs/code-thumbnails/oscilloscope-moth.gif" />
 <code-project title="Boston Marathon Data Project" desc="I collected, cleaned, and explored more than a century of Boston Marathon results, then turned the data into an interactive research project. It combines open data, analysis, and storytelling for runners who want to understand how the race has changed over time." url="https://adrian3.github.io/Boston-Marathon-Data-Project/#/" thumb="/imgs/code-thumbnails/boston-marathon-data-project.jpg" />
 <code-project title="Tread1st" desc="Tread1st is my long-running training side project. It’s part workout log, part personal data archive, and part excuse to keep building tools around years of running and cycling history." url="https://tread1st.com/" thumb="/imgs/code-thumbnails/tread1st.jpg" />
-<code-project title="Ghost-O-Meter" desc="One of my earliest breakout app projects, Ghost-O-Meter reached roughly a million downloads in the early App Store era. It’s a reminder that playful ideas, weird concepts, and strong presentation can travel surprisingly far." url="/code/ghost-o-meter.html" thumb="https://adrian3.com/imgs/code-thumbnails/ghost-o-meter.webp" />
-<code-project title="iOS Apps" desc="Over the years I designed and developed a whole family of apps, from chess tools to artistic experiments. Many are no longer in the App Store, but they still represent an important chapter in how I learned to make software." url="/code/apps.html" thumb="/imgs/code-thumbnails/ios-apps.jpg" />
+<code-project title="Ghost-O-Meter" desc="One of my earliest breakout app projects, Ghost-O-Meter was downloaded more than half a million times on the App Store. It’s a reminder that playful ideas, weird concepts, and strong presentation can travel surprisingly far." url="/code/ghost-o-meter.html" thumb="https://adrian3.com/imgs/code-thumbnails/ghost-o-meter.webp" />
 </project-list>
 
 ---
 
 ## GitHub Repos
 <project-list>
+<code-project title="Chess Puzzles" desc="Find the winning move in 367 chess puzzles, from mate-in-one to longer combinations, with hints and progress tracking." url="https://github.com/adrian3/chess-puzzles" thumb="https://adrian3.com/imgs/app-icons/puzzles-144x144.webp" />
+<code-project title="Eugene Chess" desc="Play against a computer opponent with three difficulty settings, take back moves, and ask for suggestions in this free web app." url="https://github.com/adrian3/eugene-chess" thumb="https://adrian3.com/imgs/app-icons/eugene-splash.webp" />
 <code-project title="Chess Server" desc="A browser-based chess client for playing live games on FICS with nothing to download." url="https://github.com/adrian3/chess-server" thumb="/imgs/code-thumbnails/chess-server.png" />
 <code-project title="GIFd" desc="A tool for converting Apple Spatial HEIC photos into 3D GIFs." url="https://github.com/adrian3/GIFd" thumb="/imgs/code-thumbnails/gifd.png" />
 <code-project title="Midi Web Controller" desc="Browser-first helpers for binding Web MIDI controllers like the MidiMix and nanoKONTROL2 to on-screen controls." url="https://github.com/adrian3/midi-web-controller" thumb="/imgs/code-thumbnails/midi-web-controller.png" />

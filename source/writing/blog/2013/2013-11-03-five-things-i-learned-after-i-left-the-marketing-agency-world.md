@@ -88,11 +88,11 @@ If you ask permission to over-deliver you will get shot down the majority of the
 **Question:** “Can we customize the CMS so it is more user friendly?”  
 **Answer:** “No, we can’t afford to build a custom CMS for every client, we’d go broke.”
 
-**Question:** “May I please make the website responsive?  
+**Question:** “May I please make the website responsive?”  
 **Answer:** “Even if it takes the same amount of time to make, this is typically something we charge extra for. No.”
 
 **Question:** “Can I mockup the logo options on a website, business card, and other items so they can see it in a real-world context?”  
-**Answer:** “No, they are paying us for a logo, not a website or stationary.
+**Answer:** “No, they are paying us for a logo, not a website or stationary.”
 
 **Question:** “What if we made a…”  
 **Answer:** “No, that’s out of scope.”
@@ -118,11 +118,11 @@ If you ask permission to over-deliver you will get shot down the majority of the
 **Question:** “Can we customize the CMS so it is more user friendly?”  
 **Answer:** “No, we can’t afford to build a custom CMS for every client, we’d go broke.”
 
-**Question:** “May I please make the website responsive?  
+**Question:** “May I please make the website responsive?”  
 **Answer:** “Even if it takes the same amount of time to make, this is typically something we charge extra for. No.”
 
 **Question:** “Can I mockup the logo options on a website, business card, and other items so they can see it in a real-world context?”  
-**Answer:** “No, they are paying us for a logo, not a website or stationary.
+**Answer:** “No, they are paying us for a logo, not a website or stationary.”
 
 **Question:** “What if we made a…”  
 **Answer:** “No, that’s out of scope.”

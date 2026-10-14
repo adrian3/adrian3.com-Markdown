@@ -120,9 +120,25 @@
     font-size: 0.95rem;
   }
 
+  /* Fit the five links on one line on phones (360px and up). The logo's box is wider than
+     the artwork, so the menu can use that empty space; the line breaks between links are
+     hidden so they don't add an extra gap each; a slightly tighter gap and letter spacing
+     do the rest. Narrower screens still wrap to two lines. */
+  .nav-logo {
+    margin-right: -56px;
+  }
+
+  .nav-menu nav br {
+    display: none;
+  }
+
   .nav-menu nav {
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 0.35rem var(--ade-space-3);
+    gap: 0.35rem 0.625rem;
+  }
+
+  .nav-menu nav a {
+    letter-spacing: 0.05em;
   }
 }

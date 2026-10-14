@@ -1,0 +1,361 @@
+/* Portfolio pages for /design (overview and the four section pages). Loaded by the
+   design-overview and design-section templates, after css/styles.css. Uses the site's
+   tokens (--ade-*). Classes are prefixed pf- so nothing else on the site changes.
+   The sub-nav styles live in components/design-nav.css. */
+
+.pf-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pf-main { padding: 0; }
+.pf-index .footer { margin-top: 0; }
+
+
+/* ── Shared hero text ── */
+.pf-eyebrow {
+  font-family: var(--ade-font-ui);
+  font-size: clamp(0.75rem, 1.1vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: inherit;
+  margin: 0;
+}
+.pf-title {
+  font-family: var(--ade-font-display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 6vw, 5.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: inherit;
+  margin: 0.35rem 0 0;
+}
+.pf-sub {
+  font-family: var(--ade-font-body);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.4;
+  color: inherit;
+  margin: 1rem 0 0;
+  max-width: 34rem;
+}
+.pf-cta.button {
+  margin-top: 1.75rem;
+  min-height: 56px;
+  padding: 0 1.35rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  gap: 0.75rem;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+.pf-cta.button:hover,
+.pf-cta.button:focus-visible { background: var(--ade-primary-focus); border-color: var(--ade-primary-focus); }
+.pf-arrow { flex: none; transition: transform 220ms ease; }
+.pf-cta:hover .pf-arrow, .pf-next:hover .pf-arrow { transform: translateX(5px); }
+
+.pf-tone-light { color: #2c2a2a; }
+.pf-tone-dark { color: #ffffff; }
+.pf-tone-dark .pf-title, .pf-tone-dark .pf-sub, .pf-tone-dark .pf-eyebrow { text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35); }
+
+/* Scrims behind text, by tone and side */
+.pf-band::before, .pf-layer::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.pf-tone-dark.pf-align-left::before { background: linear-gradient(90deg, rgba(12, 16, 18, 0.62) 0%, rgba(12, 16, 18, 0.34) 42%, rgba(12, 16, 18, 0) 72%); }
+.pf-tone-dark.pf-align-right::before { background: linear-gradient(270deg, rgba(12, 16, 18, 0.62) 0%, rgba(12, 16, 18, 0.3) 42%, rgba(12, 16, 18, 0) 70%); }
+.pf-tone-light::before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0) 55%); }
+
+/* ── Section hero ── */
+.pf-band {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%; /* without this, min-height + aspect-ratio widens the band past the screen below ~1090px */
+  aspect-ratio: 3.2 / 1;
+  min-height: 340px;
+  background: #1e2426;
+}
+.pf-media { position: absolute; inset: 0; z-index: -2; overflow: hidden; display: block; }
+.pf-media img {
+  position: absolute;
+  left: -3%;
+  top: -7%;
+  width: 106%;
+  height: 114%;
+  max-width: none;
+  object-fit: cover;
+  will-change: transform;
+}
+.pf-band-inner {
+  width: 100%;
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  padding: 3.5rem var(--ade-space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pf-align-right .pf-band-inner { align-items: flex-end; text-align: right; }
+.pf-align-right .pf-sub { margin-left: auto; }
+.pf-band-inner .pf-sub { margin-top: 0; }
+
+/* Scroll reveal (only when JS is running) */
+.pf-js .pf-reveal > * { opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.2, .7, .2, 1); }
+.pf-js .pf-reveal.is-in > * { opacity: 1; transform: none; }
+.pf-js .pf-reveal.is-in > *:nth-child(2) { transition-delay: 90ms; }
+.pf-js .pf-reveal.is-in > *:nth-child(3) { transition-delay: 180ms; }
+.pf-js .pf-reveal.is-in > *:nth-child(4) { transition-delay: 270ms; }
+
+/* ── Overview ──
+   Default (no JavaScript, or reduced motion): the four heroes stack and everything is visible.
+   The sticky scroll story turns on only when JavaScript is running (html.pf-js, which the
+   template sets and removes again if portfolio.js never starts) and motion is allowed. */
+.pf-scrolly { position: relative; }
+.pf-stage { position: relative; background: #1e2426; }
+.pf-layer {
+  position: relative;
+  isolation: isolate;
+  display: flex; align-items: center;
+  min-height: clamp(440px, 72vh, 720px);
+}
+.pf-layer-media { position: absolute; inset: 0; z-index: -2; }
+.pf-layer-media img { width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.pf-layer-inner {
+  width: 100%; max-width: var(--ade-wide-width); margin-inline: auto;
+  padding: 3rem var(--ade-space-5);
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.pf-layer.pf-align-right .pf-layer-inner { align-items: flex-end; text-align: right; }
+.pf-scroll-hint { display: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .pf-js .pf-scrolly { height: calc(var(--steps, 4) * (100vh - var(--sn-h, 0px))); height: calc(var(--steps, 4) * (100svh - var(--sn-h, 0px))); }
+  .pf-js .pf-stage {
+    position: sticky; top: var(--sn-h, 0px);
+    height: calc(100vh - var(--sn-h, 0px)); height: calc(100svh - var(--sn-h, 0px));
+    overflow: hidden;
+  }
+  .pf-js .pf-layer {
+    position: absolute; inset: 0; min-height: 0;
+    clip-path: inset(calc((1 - var(--t, 0)) * 100%) 0 0 0);
+  }
+  .pf-js .pf-stage > .pf-layer:first-of-type { --t: 1; }
+  .pf-js .pf-layer-media img { scale: calc(1.12 - 0.12 * var(--t, 0)); }
+  .pf-js .pf-layer-inner > * { opacity: 0; transform: translateY(22px); transition: opacity 500ms ease, transform 600ms cubic-bezier(.2, .7, .2, 1); }
+  .pf-js .pf-layer.is-current .pf-layer-inner > * { opacity: 1; transform: none; }
+  .pf-js .pf-layer.is-current .pf-layer-inner > *:nth-child(2) { transition-delay: 80ms; }
+  .pf-js .pf-layer.is-current .pf-layer-inner > *:nth-child(3) { transition-delay: 160ms; }
+  .pf-js .pf-layer.is-current .pf-layer-inner > *:nth-child(4) { transition-delay: 240ms; }
+  .pf-js .pf-scroll-hint {
+    display: block;
+    position: absolute; left: 50%; bottom: 1.4rem; transform: translateX(-50%);
+    font-family: var(--ade-font-ui); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: #ffffff; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 5; transition: opacity 300ms ease;
+  }
+  .pf-js .pf-scroll-hint::after { content: ""; display: block; width: 1px; height: 28px; margin: 0.5rem auto 0; background: currentColor; animation: pf-hint 1.6s ease-in-out infinite; transform-origin: top; }
+  .pf-scrolled .pf-scroll-hint { opacity: 0; }
+}
+@keyframes pf-hint { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+/* ── Section pages ── */
+.pf-content { padding-top: var(--ade-space-7); }
+.pf-description > p:first-child { font-size: 1.25rem; line-height: 1.5; color: var(--ade-ink); }
+.pf-description h3 { margin-top: var(--ade-space-6); font-size: 1.375rem; }
+.pf-description h3 + p { margin-top: var(--ade-space-2); }
+.pf-description > h2 { margin-bottom: var(--ade-space-5); }
+.pf-description > :not(hr) + h2 { margin-top: var(--ade-space-7); } /* section headings in the page text */
+
+/* Case study cards: image-led, same thumbnails */
+.pf-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense;
+  gap: var(--ade-space-5);
+}
+.pf-card.is-featured { grid-column: span 2; }
+.pf-card-link {
+  position: relative; isolation: isolate;
+  display: block; height: 100%;
+  border-radius: var(--ade-radius);
+  overflow: hidden;
+  background: #1e2426;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+.pf-card-link:hover, .pf-card-link:focus-visible { color: #ffffff; text-decoration: none; box-shadow: var(--ade-shadow); transform: translateY(-3px); }
+.pf-card-link:focus-visible { outline: 3px solid var(--ade-primary-focus); outline-offset: 3px; }
+.pf-card-media { position: absolute; inset: 0; z-index: -2; }
+.pf-card-media img {
+  width: 100%; height: 100%; max-width: none;
+  object-fit: cover;
+  transition: scale 700ms cubic-bezier(.2, .7, .2, 1);
+}
+.pf-card-link:hover .pf-card-media img, .pf-card-link:focus-visible .pf-card-media img { scale: 1.07; }
+.pf-card-link::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to top, rgba(14, 18, 20, 0.9) 0%, rgba(14, 18, 20, 0.5) 34%, rgba(14, 18, 20, 0) 62%);
+}
+.pf-card-body {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 1.25rem 1.4rem 1.3rem;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.pf-card-tag {
+  font-family: var(--ade-font-ui); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #8fdcd7; margin-bottom: 0.35rem;
+}
+.pf-card-title { font-family: var(--ade-font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.12; text-wrap: balance; }
+.pf-card.is-featured .pf-card-title { font-size: clamp(1.6rem, 2.4vw, 2.1rem); }
+.pf-card-sub, .pf-card-more {
+  font-family: var(--ade-font-ui);
+  max-height: 0; opacity: 0; overflow: hidden;
+  transition: max-height 450ms cubic-bezier(.2, .7, .2, 1), opacity 300ms ease, margin 450ms ease;
+}
+.pf-card-sub { font-size: 0.82rem; line-height: 1.4; color: rgba(255, 255, 255, 0.86); }
+.pf-card-more { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; font-weight: 600; color: #8fdcd7; }
+.pf-card-more .pf-arrow { width: 16px; height: 16px; }
+.pf-card-link:hover .pf-card-sub, .pf-card-link:focus-visible .pf-card-sub { max-height: 4.5em; opacity: 1; margin-top: 0.4rem; }
+.pf-card-link:hover .pf-card-more, .pf-card-link:focus-visible .pf-card-more { max-height: 2em; opacity: 1; margin-top: 0.6rem; }
+@media (hover: none) {
+  .pf-card-sub, .pf-card-more { max-height: none; opacity: 1; margin-top: 0.4rem; }
+}
+
+/* Next section band */
+.pf-next {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: block; height: 240px;
+  margin-top: var(--ade-space-8);
+  color: #ffffff; text-decoration: none;
+  background: #1e2426;
+}
+.pf-next:hover, .pf-next:focus-visible { color: #ffffff; text-decoration: none; }
+.pf-next::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(12, 16, 18, 0.45); transition: background-color 400ms ease; }
+.pf-next:hover::before { background: rgba(12, 16, 18, 0.32); }
+.pf-next-inner {
+  height: 100%;
+  max-width: var(--ade-wide-width); margin-inline: auto;
+  padding: 0 var(--ade-space-5);
+  display: grid; grid-template-columns: 1fr auto; align-content: center; column-gap: 1.5rem;
+}
+.pf-next .pf-eyebrow { grid-column: 1 / -1; }
+.pf-next .pf-title { font-size: clamp(2rem, 4.5vw, 3.75rem); }
+.pf-next .pf-arrow { width: 44px; height: 44px; align-self: center; }
+.pf-next + .footer { margin-top: 0; }
+
+/* ── Responsive ── */
+@media (max-width: 64rem) {
+  .pf-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 280px; }
+}
+
+@media (max-width: 40rem) {
+  .pf-band { align-items: flex-end; aspect-ratio: auto; min-height: clamp(300px, 52svh, 440px); }
+  .pf-band-inner, .pf-layer-inner { padding: 2rem 1rem 2.25rem; }
+  .pf-align-right .pf-band-inner, .pf-layer.pf-align-right .pf-layer-inner { align-items: flex-start; text-align: left; }
+  .pf-align-right .pf-sub { margin-left: 0; }
+  .pf-tone-dark.pf-align-left::before, .pf-tone-dark.pf-align-right::before { background: linear-gradient(to top, rgba(12, 16, 18, 0.72) 0%, rgba(12, 16, 18, 0.3) 50%, rgba(12, 16, 18, 0.05) 100%); }
+  .pf-tone-light.pf-band { align-items: flex-start; }
+  .pf-tone-light::before { background: linear-gradient(to bottom, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 55%); }
+  .pf-layer { align-items: flex-end; }
+  .pf-layer.pf-tone-light { align-items: flex-start; }
+  .pf-card-grid { grid-template-columns: 1fr; grid-auto-rows: 260px; }
+  .pf-card.is-featured { grid-column: auto; }
+  .pf-next { height: 180px; }
+  .pf-next-inner { padding-inline: 1rem; }
+}
+
+/* ── Reduced motion: no parallax, no wipes, everything visible ── */
+.pf-reduce .pf-media img { left: 0; top: 0; width: 100%; height: 100%; transform: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .pf-card-media img, .pf-arrow, .pf-card-link { transition: none !important; }
+}
+
+/* ── Hero images: <picture> swaps in the 9:16 version on portrait phones ── */
+.pf-pic { display: contents; }
+@media (orientation: portrait) and (max-width: 56rem) {
+  .pf-layer-media img, .pf-hero .pf-media img { object-position: var(--pos-portrait, 50% 50%) !important; }
+}
+@media (max-width: 40rem) { .pf-js .pf-scroll-hint { display: none; } }
+
+/* Lists in the page text (bulleted and numbered). The site defaults give lists a 1.5rem
+   indent, 0.35rem between items and no space above or below; these pages want more air. */
+.pf-description ul, .pf-description ol { margin: var(--ade-space-5) 0 var(--ade-space-6); padding-left: 2.5rem; }
+.pf-description li + li { margin-top: 0.5rem; }
+.pf-description li::marker { color: var(--ade-muted); }
+
+/* Case study links before portfolio.js turns them into cards (or without JavaScript) */
+.pf-cards > ul { list-style: none; padding: 0; columns: 2 16rem; }
+.pf-cards > ul li { break-inside: avoid; }
+
+/* "All case studies" link next to the Case studies heading: body-size text link */
+.pf-description > h2 { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.25rem; row-gap: 0.25rem; }
+.pf-description > h2 a { font-family: var(--ade-font-body); font-size: 1.0625rem; font-weight: 400; letter-spacing: normal; line-height: 1.45; }
+
+/* ── Supporting images: <design-image type="…"> in the page markdown ──
+   type: inline | wide | right-float | left-float | trio. portfolio.js wraps each image (and the
+   caption line under it) in a figure; the layout below also works before that runs. */
+.pf-figs { margin: var(--ade-space-5) 0; font-family: var(--ade-font-ui); font-size: 0.75rem; line-height: 1.4; color: var(--ade-muted); }
+.pf-figs br { display: none; }
+.pf-figs p { margin: 0; font: inherit; color: inherit; }
+.pf-figs img { display: block; width: 100%; height: auto; max-width: none; object-fit: cover; border-radius: var(--ade-radius); background: #e6eaea; }
+.pf-fig { margin: 0; }
+.pf-fig-frame { display: block; overflow: hidden; border-radius: var(--ade-radius); }
+.pf-fig-frame img { border-radius: 0; transition: scale 700ms cubic-bezier(.2, .7, .2, 1); }
+.pf-fig-frame:hover img, a.pf-fig-frame:focus-visible img { scale: 1.04; }
+.pf-fig figcaption { margin-top: 0.6rem; }
+.pf-fig figcaption a { color: inherit; text-decoration: none; }
+.pf-fig figcaption a:hover, .pf-fig figcaption a:focus-visible { color: var(--ade-primary); }
+.pf-fig figcaption .pf-arrow { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; margin-left: 0.25rem; }
+.pf-fig figcaption a:hover .pf-arrow, .pf-fig figcaption a:focus-visible .pf-arrow { transform: translateX(3px); }
+.pf-description h2, .pf-description h3, .pf-description hr, .pf-figs-inline, .pf-figs-wide, .pf-figs-trio { clear: both; }
+html:has(> body.pf-section) { overflow-x: clip; } /* no sideways scroll if an edge-to-edge image overshoots before portfolio.js measures the window */
+
+/* Inline: in the reading column, 16:9 */
+.pf-figs-inline img { aspect-ratio: 16 / 9; }
+
+/* Wide: edge to edge across the window (--pf-vw = window width without the scrollbar), 21:9 */
+.pf-figs-wide { width: var(--pf-vw, 100vw); margin: var(--ade-space-6) 0 var(--ade-space-5) calc(50% - var(--pf-vw, 100vw) / 2); }
+.pf-figs-wide img, .pf-figs-wide .pf-fig-frame { border-radius: 0; }
+.pf-figs-wide img { aspect-ratio: 21 / 9; max-height: 75vh; }
+.pf-figs-wide figcaption, .pf-figs-wide > :not(img):not(.pf-fig):not(br) { max-width: var(--ade-content-width); margin-inline: auto; padding-inline: var(--ade-space-5); box-sizing: content-box; }
+
+/* Right and left floats: beside the text, hanging part way into the margin on wide screens, 4:3 */
+.pf-figs-right-float, .pf-figs-left-float { width: 360px; margin-top: 0.4rem; margin-bottom: 1rem; }
+.pf-figs-right-float { float: right; margin-right: -140px; margin-left: 2rem; }
+.pf-figs-left-float { float: left; margin-left: -140px; margin-right: 2rem; }
+.pf-figs-right-float img, .pf-figs-left-float img { aspect-ratio: 4 / 3; }
+
+/* Trio: three in a row in the wide column, 4:3 */
+.pf-figs-trio {
+  width: var(--ade-wide-width);
+  max-width: calc(var(--pf-vw, 100vw) - (var(--ade-space-5) * 2));
+  margin-left: calc(50% - min(var(--ade-wide-width), var(--pf-vw, 100vw) - (var(--ade-space-5) * 2)) / 2);
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--ade-space-4);
+}
+.pf-figs-trio img { aspect-ratio: 4 / 3; }
+/* A trio with only two images shows them as a pair */
+.pf-figs-trio:has(> .pf-fig:nth-child(2):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (max-width: 68rem) {
+  .pf-figs-right-float, .pf-figs-left-float { width: 46%; }
+  .pf-figs-right-float { margin-right: 0; }
+  .pf-figs-left-float { margin-left: 0; }
+}
+@media (max-width: 40rem) {
+  .pf-figs-wide img { aspect-ratio: 16 / 9; }
+  .pf-figs-wide figcaption { padding-inline: 1rem; }
+  .pf-figs-right-float, .pf-figs-left-float { float: none; width: auto; margin: var(--ade-space-4) 0; }
+  .pf-figs-trio {
+    max-width: calc(var(--pf-vw, 100vw) - 2rem);
+    margin-left: calc(50% - (var(--pf-vw, 100vw) - 2rem) / 2);
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 78%;
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; gap: 0.75rem;
+  }
+  .pf-figs-trio .pf-fig { scroll-snap-align: start; }
+}
+
+/* Images that don't match their slot's shape (portfolio.js adds .is-natural): show the whole
+   image instead of cropping it. Inline, wide and floats take the image's own shape; trios keep
+   their 4:3 cells so the row lines up, and the image sits inside the cell. */
+.pf-figs .pf-fig.is-natural img { aspect-ratio: auto; }
+.pf-figs-wide .pf-fig.is-natural img { object-fit: contain; }
+.pf-figs-trio .pf-fig.is-natural img { aspect-ratio: 4 / 3; object-fit: contain; background: #f2f4f4; }
+@media (prefers-reduced-motion: reduce) { .pf-fig-frame img { transition: none; } .pf-fig-frame:hover img { scale: 1; } }

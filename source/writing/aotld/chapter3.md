@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # The Birth of a Zombie  
-> _”Every child is an artist. The problem is how to remain an artist once he grows up.”_ — Pablo Picasso
+> _“Every child is an artist. The problem is how to remain an artist once he grows up.”_ — Pablo Picasso
 
 ---
 

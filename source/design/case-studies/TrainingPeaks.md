@@ -5,7 +5,7 @@ template: case-study
 published: true
 unlisted: true
 categories: featured, ux design, fitness technology, user research
-thumbnail: https://adrian3.com/imgs/case-studies/images/TrainingPeaks/trainingpeaks_thumb.jpg
+thumbnail: https://adrian3.com/imgs/case-studies/trainingpeaks.webp
 thumbnail-alt: TrainingPeaks Coach Marketplace Case Study thumbnail
 --->
 

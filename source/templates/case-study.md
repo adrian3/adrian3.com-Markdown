@@ -6,10 +6,11 @@ template-name: case-study
 <html lang="en">
 <head>
 <page-head />
+<meta name="robots" content="noindex,follow">
 </head>
 <body>
 <header />
-<design-subnav />
+<design-nav />
 <article class="case-study-shell">
   <div class="case-study-inner">
     <content />

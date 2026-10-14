@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Bullet Holes of Honor  
-> _”The eye sees only what the mind is prepared to comprehend.”_ — Robertson Davies
+> _“The eye sees only what the mind is prepared to comprehend.”_ — Robertson Davies
 
 ---
 

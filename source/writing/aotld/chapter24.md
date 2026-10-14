@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Success, Turbulence and Implosion   
-> _”I am afraid, my friend, that your usually sound judgment has been warped by the desire for great wealth.”_ — Octave Chanute (to Wilbur Wright)
+> _“I am afraid, my friend, that your usually sound judgment has been warped by the desire for great wealth.”_ — Octave Chanute (to Wilbur Wright)
 
 ---
 

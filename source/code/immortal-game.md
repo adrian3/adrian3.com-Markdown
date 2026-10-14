@@ -1,6 +1,6 @@
 <!---
 title: Immortal Game
-show-in-nav: true
+show-in-nav: false
 --->
 # Immortal Game: The Greatest Chess Ever Played
 

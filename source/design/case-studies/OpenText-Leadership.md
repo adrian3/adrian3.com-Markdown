@@ -2,7 +2,7 @@
 title: Designing Observability
 sub-title: UX Leadership at OpenText
 template: case-study
-published: true
+published: false
 unlisted: true
 categories: ux design, it and tech industries, ai and emerging technologies, user research, journey maps and personas
 thumbnail: https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/opentext-leadership_thumb.jpg
@@ -87,15 +87,15 @@ To turn all of this — strategy, persona, research — into shippable product, 
 
 ![An OpScope observability dashboard concept — Application, Infrastructure, and Network views with health gauges, trend charts, and event summaries.](https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/06-dashboard.png)
 
-## 6. A Design Language for the Product: OpenSpace
+## 6. Implementing a New Design Language at OpenText
 
 ### Giving the work a consistent, modern skin
 
-Blueprints define *what* to build; a design language defines how it should *feel*. So I developed a visual system — internally codenamed **JATO** and presented as **”OpenSpace”** — to unify OpScope (and OpenText products beyond it) under one modern, confident look. The principles were deliberately restrained: **vibrant color used sparingly, motion and animation as a brand element, clear and beautiful data visualization, and elegant typography in service of intentional simplicity.** I gave it an aviation-inspired signature — a recurring **10° angle** and “Aviator” interaction patterns — so the brand showed up in the details, not just the logo.
+Blueprints define *what* to build; a design language defines how it should *feel*. When OpenText began overhauling its design system, our 100+ member design team was invited to submit ideas for the new visual language. My submission, which I called **“OpenSpace”** to tell it apart from the others, aimed to unify OpScope (and OpenText products beyond it) under one modern, confident look. The principles were deliberately restrained: **vibrant color used sparingly, motion and animation as a brand element, clear and beautiful data visualization, and elegant typography in service of intentional simplicity.** I gave it an aviation-inspired signature — a recurring **10° angle** and “Aviator” interaction patterns — so the brand showed up in the details, not just the logo. OpenSpace was one of the influences on **JATO**, the design system OpenText went on to build, but JATO was a team effort, not purely my creation.
 
 ![OpenSpace data screens — polished product dashboards in the new design language: a “Core DevOps Management” view with status metrics and charts beside a “Core Content Services” home screen with a colorful health gauge and recent activity.](https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/10-openspace-data-screens.jpg)
 
-Crucially, the system shipped in both **light and dark mode** — I championed dark mode into the corporate design system, which matters for SREs who live in these tools during late-night incidents — and it carried a forward-looking **”Aviator Insights” AI assistant** for surfacing answers in context. It was the layer that made the strategy, persona, and research feel like one coherent, shippable product rather than a stack of documents.
+My submission was designed in both **light and dark mode** and carried a forward-looking **“Aviator Insights” AI assistant** for surfacing answers in context. Dark mode, which matters for SREs who live in these tools during late-night incidents, was already something my team was working on before it became a JATO initiative. Once JATO was defined, I applied it to every screen in our observability product, and new patterns I uncovered were componentized with the design system team so other designers could use them. It was the layer that made the strategy, persona, and research feel like one coherent, shippable product rather than a stack of documents.
 
 ![The OpenSpace design language shown across multiple product screens in light and dark mode, including an “Aviator Insights” AI assistant panel.](https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/11-openspace-dark-mode.jpg)
 
@@ -105,7 +105,7 @@ Crucially, the system shipped in both **light and dark mode** — I championed d
 
 OpenText runs an annual innovation hackathon called **Innofest**, and my team carried a single idea through two of them. The question was simple and ambitious: what if the invisible health of a complex system became a *place* you could see and move through?
 
-In **2022** we built a **VR proof of concept** — a virtual “ops war room” where a distributed team could gather during a 2 AM outage and troubleshoot system health together in a shared space. The following year we refined the concept and grounded it in real systems: the headset-first vision gave way to an interactive **3D force-graph** of service dependencies — health you could read at a glance and fly through — paired with a **”Network Aviator” AI assistant** for asking questions in plain language. The work earned recognition at Innofest two years running.
+In **2022** we built a **VR proof of concept** — a virtual “ops war room” where a distributed team could gather during a 2 AM outage and troubleshoot system health together in a shared space. The following year we refined the concept and grounded it in real systems: the headset-first vision gave way to an interactive **3D force-graph** of service dependencies — health you could read at a glance and fly through — paired with a **“Network Aviator” AI assistant** for asking questions in plain language. The work earned recognition at Innofest two years running.
 
 ![A concept board showing the project’s maturity progression — from a 2D service-dependency graph (MVP) to dark mode, to a 3D motion graph, to a “Network Aviator” ChatGPT assistant, to a virtual-reality experience — labeled Basic Implementation → Additional Complexity → Emerging New Patterns.](https://adrian3.com/imgs/case-studies/images/OpenText-Leadership/12-innofest-evolution.jpg)
 

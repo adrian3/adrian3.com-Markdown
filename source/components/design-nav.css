@@ -1,0 +1,56 @@
+/* design-nav: the /design sub-nav. Progress segments on a dark bar (option 3, approved
+   2026-10-09). On the overview the segments fill as you scroll; on a section page, that
+   section's segment is full. Used on every page in /design. */
+.pf-subnav { position: sticky; top: 0; z-index: 40; font-family: var(--ade-font-ui); background: #1e2426; color: #ffffff; }
+.pf-sn-inner {
+  max-width: var(--ade-wide-width);
+  margin-inline: auto;
+  padding: 0 var(--ade-space-5);
+  height: 58px;
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+.pf-sn-home, .pf-sn-extra a {
+  display: flex; align-items: center;
+  font-size: 0.75rem; text-decoration: none; white-space: nowrap;
+  color: rgba(255, 255, 255, 0.72);
+}
+.pf-sn-home { font-weight: 600; }
+.pf-sn-home[aria-current] { color: #8fdcd7; }
+.pf-sn-home:hover, .pf-sn-extra a:hover { color: #ffffff; text-decoration: none; }
+.pf-sn-list { list-style: none; margin: 0; padding: 0; display: flex; flex: 1; gap: 0.75rem; }
+.pf-sn-list li, .pf-sn-extra li { margin: 0; padding: 0; border: 0; display: flex; }
+.pf-sn-list li { flex: 1 1 0; min-width: 0; }
+.pf-sn-item {
+  position: relative; flex: 1; min-width: 0;
+  display: flex; align-items: center; gap: 0.45rem;
+  padding-top: 14px;
+  color: rgba(255, 255, 255, 0.62);
+  text-decoration: none; white-space: nowrap;
+}
+.pf-sn-item:hover, .pf-sn-item:focus-visible, .pf-sn-item[aria-current], .pf-sn-item.is-current { color: #ffffff; text-decoration: none; }
+.pf-sn-num { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.06em; }
+.pf-sn-item[aria-current] .pf-sn-num, .pf-sn-item.is-current .pf-sn-num { color: #8fdcd7; }
+.pf-sn-label { font-size: 0.78rem; overflow: hidden; text-overflow: ellipsis; }
+.pf-sn-bar { position: absolute; left: 0; right: 0; top: 12px; height: 3px; border-radius: 3px; overflow: hidden; background: rgba(255, 255, 255, 0.18); }
+.pf-sn-bar i { display: block; height: 100%; width: calc(var(--p, 0) * 100%); background: var(--ade-primary); }
+.pf-sn-extra { list-style: none; margin: 0 0 0 auto; padding: 0; display: flex; gap: 1.1rem; }
+
+@media (max-width: 64rem) {
+  .pf-sn-list, .pf-sn-inner { gap: 1.1rem; }
+}
+
+@media (max-width: 52rem) {
+  .pf-sn-inner { overflow-x: auto; scrollbar-width: none; }
+  .pf-sn-inner::-webkit-scrollbar { display: none; }
+  /* Numbers only on screen; the section names stay for screen readers */
+  .pf-sn-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+}
+
+@media (max-width: 40rem) {
+  .pf-sn-inner { padding-inline: 1rem; gap: 0.9rem; }
+  .pf-sn-list { gap: 0.4rem; }
+  .pf-sn-extra { gap: 0.75rem; }
+  .pf-sn-home { display: none; }
+}

@@ -6,7 +6,7 @@ slot.sidebar-content: art-sidebar
 --->
 
 #### My philosophy on art...
-Beauty is hiding in plain sight waiting to be discovered. That’s what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my [http://instagram.com/ade3](Ade3 Instagram account).
+Beauty is hiding in plain sight waiting to be discovered. That’s what I believe and it is why I embrace lo-fi techniques and non-traditional methods. Whether it is shipping labels, Legos, coffee stirrers, pinhole cameras, or black and white tvs, I am always looking for ways to remix old ideas in new ways. High tech gear has a tendency to remove the beautiful imperfections that makes art feel like it was created by a human. Expensive gear makes you cautious because you are worried about breaking it. So I try to build my own tools or hack existing tools to suit my needs. I always have experimental projects that I am working on and the best way to see what is happening in my studio is following my [@Ade3 Instagram account](http://instagram.com/ade3).
 
 <image-grid>
 
@@ -159,7 +159,7 @@ Beauty is hiding in plain sight waiting to be discovered. That’s what I believ
 
 <h2 id="illustrations">Illustrations</h2>
 <a href="../gallery-pages/illustrations.html"><img class="case-study-image" src="https://adrian3.com/imgs/galleries/illustrations/illustration12.webp"></a>
-<p>I draw all the illustrations in <a href="../writing/writing.html">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="../gallery-pages/illustrations.html">this gallery.</a></p>
+<p>I draw all the illustrations in <a href="/writing/">my books</a>. The technique I use is a combinatino of ink and watercolor. You can view some of my illustrations in <a href="../gallery-pages/illustrations.html">this gallery.</a></p>
 <hr />
 
 <h2 id="pottery">Pottery</h2>

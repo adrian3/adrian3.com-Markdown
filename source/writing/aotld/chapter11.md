@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # The Threat of Creativity  
-> _”I can’t understand why people are frightened of new ideas. I’m frightened of the old ones.”_ — John Cage
+> _“I can’t understand why people are frightened of new ideas. I’m frightened of the old ones.”_ — John Cage
 
 ---
 

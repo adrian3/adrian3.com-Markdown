@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Zugzwang and Kintsugi  
-> _”Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.”_ — Scott Adams
+> _“Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.”_ — Scott Adams
 
 ---
 

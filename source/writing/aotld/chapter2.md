@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Armageddon  
-> _”Honestly, if you’re given the choice between Armageddon or tea, you don’t say ‘what kind of tea?’”_ — Neil Gaiman
+> _“Honestly, if you’re given the choice between Armageddon or tea, you don’t say ‘what kind of tea?’”_ — Neil Gaiman
 
 ---
 

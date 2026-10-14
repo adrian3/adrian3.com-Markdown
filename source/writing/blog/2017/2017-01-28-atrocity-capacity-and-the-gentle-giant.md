@@ -49,7 +49,7 @@ My classmates, silent as lambs, let out a gasp.
 
 There was no denying it, I stabbed her in clear view. I confessed, apologized, regretted the terrible thing I had done.
 
-My punishment was much less than I deserved. I expected the paddle but I was spared the "board of education” in favor of a more unusual penalty. Instead of a beating, we said a prayer. 
+My punishment was much less than I deserved. I expected the paddle but I was spared the “board of education” in favor of a more unusual penalty. Instead of a beating, we said a prayer. 
 
 Our teacher said words and I repeated them in front of the class. Through tears I prayed for forgiveness, for God to soften my heart, for Him to transform our class into loving beings. I asked God to re-sensitize us to guilt so we could feel the weight of our words and the consequences of our cruelty.
 

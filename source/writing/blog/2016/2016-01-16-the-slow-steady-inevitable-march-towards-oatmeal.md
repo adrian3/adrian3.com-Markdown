@@ -49,7 +49,7 @@ So I can show you [a photo of 25 identical cars made by 25 different car compani
 
 Or you wake up and realize:
 
-> “Holy cow, he’s right. And it’s not just cars, it’s happening in my industry, too. What can I do to prevent us from continuing towards a future of oatmeal?
+> “Holy cow, he’s right. And it’s not just cars, it’s happening in my industry, too. What can I do to prevent us from continuing towards a future of oatmeal?”
 
 If you truly believe your creativity has finally hit the limits of science, that the laws of the universe themselves are what is preventing you from innovating, I feel sorry for you. For the rest of us, let’s keep fighting for our craft. Because if buying a car (or whatever _you_ are selling) becomes the same as buying a gallon of milk, humanity has lost. Commoditization isn’t evolution, it’s an innovation-deprived death march towards a dystopia where the future is exactly like today, just with slightly rounder corners. That’s not the future I want. Please tell me you don’t either.
 
@@ -64,4 +64,3 @@ Thanks for reading. If this is the first time you have come across my crazy idea
 3\. Then ask yourself if [Art of the Living Dead](http://www.amazon.com/Art-Living-Dead-Adrian-Hanft-ebook/dp/B00Q2ACW2G) is worth $7.99 and your full attention.
 
 Stay tuned for [my next story where I confess how I contributed to the commoditization dystopia and **why I am going to hell for it.**](2016-01-23-a-special-hell-for-designers-like-me.html)  _Stay creative._
-

@@ -19,7 +19,7 @@ thumbnail-alt: Rotadent Contour: A "Do the Math" Product Launch thumbnail
 
 ## Introduction
 
-Rotadent isn’t a drugstore toothbrush. It’s a professional, dentist-sold electric brush with a 25-year history and a genuine cult following among the hygienists and patients who swear by it. In 2013, Zila completely redesigned it and relaunched it as **Rotadent Contour** — and as Creative Director I led the launch design across every touchpoint. The whole campaign hung on a single, simple idea: **”Do the Math.”**
+Rotadent isn’t a drugstore toothbrush. It’s a professional, dentist-sold electric brush with a 25-year history and a genuine cult following among the hygienists and patients who swear by it. In 2013, Zila completely redesigned it and relaunched it as **Rotadent Contour** — and as Creative Director I led the launch design across every touchpoint. The whole campaign hung on a single, simple idea: **“Do the Math.”**
 
 ## 1. A Cult Brand, Reborn
 
@@ -43,11 +43,11 @@ Most toothbrush marketing is interchangeable. Rotadent’s advantage, though, wa
 
 A product relaunch lives or dies on consistency, so Zila’s in-house marketing team produced the entire campaign as one coherent system — and I led the design across it, working with launch partners including Moxie Sozo, Definite Productions, Cambon Studios, and Syncroness.
 
-The **website** made “the numbers add up” literally, leading with *”92% of plaque gone in the first minute”* and a clean path to purchase.
+The **website** made “the numbers add up” literally, leading with *“92% of plaque gone in the first minute”* and a clean path to purchase.
 
 ![The Rotadent.com website — “92% of plaque gone in the first minute / The numbers just add up,” with product pages and a numbers-pattern background.](https://adrian3.com/imgs/case-studies/images/Rotadent-Launch/04-website.jpg)
 
-**Advertising** ran in dental trade press, reframing the brush as more than a toothbrush — *”Think this is just another toothbrush? Think again.”*
+**Advertising** ran in dental trade press, reframing the brush as more than a toothbrush — *“Think this is just another toothbrush? Think again.”*
 
 ![A Rotadent Contour magazine ad — “Think this is just another toothbrush? Think again.” — with a dramatic close-up of the brush filaments.](https://adrian3.com/imgs/case-studies/images/Rotadent-Launch/05-ad.jpg)
 

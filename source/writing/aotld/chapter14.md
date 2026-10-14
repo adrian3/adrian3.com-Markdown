@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Magic and the Illusion of Talent 
-> _”Any sufficiently advanced technology is indistinguishable from magic.”_ — Arthur C. Clarke
+> _“Any sufficiently advanced technology is indistinguishable from magic.”_ — Arthur C. Clarke
 
 ---
 
@@ -60,7 +60,7 @@ Thomas Edison said,
 
 This is the same principle that makes the iPad feel so magical. Apple’s Jony Ive admits that, 
 
-> ”When something exceeds your ability to understand how it works, it sort of becomes magical."  
+> “When something exceeds your ability to understand how it works, it sort of becomes magical.”
 
 Elon Musk’s entrepreneurial skill feels like magic, but he too is an advocate for hard work,  
 

@@ -196,6 +196,24 @@ p + p {
   margin-top: 1rem;
 }
 
+main > p + h2,
+main > ul + h2,
+main > ol + h2 {
+  margin-top: var(--ade-space-7);
+}
+
+main > p + h3,
+main > ul + h3,
+main > ol + h3 {
+  margin-top: var(--ade-space-5);
+}
+
+main > h2 + p,
+main > h3 + p,
+main > h4 + p {
+  margin-top: var(--ade-space-2);
+}
+
 small {
   font-size: 0.75rem;
   color: var(--ade-muted-soft);

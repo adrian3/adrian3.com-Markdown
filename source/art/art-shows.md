@@ -10,11 +10,40 @@ show-in-nav: true
 # Solo Exhibitions/Group Shows
 
 <media-row>
-**Layers: Recent Work by the Hanft Family**  
+**Collusion**  
+Punch Gallery  
+Thorp, Washington  
+February 7-28, 2026  
+[Website](https://punchprojects.org/portfolio/collusion/)
+
+![Collusion](/imgs/art-shows/punch-gallery.gif)
+</media-row>
+
+<media-row>
+**Bunker K101**  
+Cologne, Germany  
+September 25-28, 2025  
+[Details](https://ade3.substack.com/p/a-bunker-in-germany)
+
+![](/imgs/art-shows/bunker-k101.gif)
+</media-row>
+
+<media-row>
+**Terminal 1**  
+Glastonbury Festival  
+June 25-26, 2025
+
+![](/imgs/art-shows/glastonbury.gif)
+</media-row>
+
+<media-row>
+**Layers**  
 Norfolk Art Center  
 Norfolk, Nebraska  
 September 1 – October 27, 2016  
 [Artist Statement](art-shows/2016-layers-recent-work-by-the-hanft-family.html)
+
+![Layers: Recent Work by the Hanft Family](https://adrian3.com/imgs/art-section/spider-flower.webp)
 </media-row>
 
 <media-row>

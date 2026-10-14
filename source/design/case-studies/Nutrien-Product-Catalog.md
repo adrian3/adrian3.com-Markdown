@@ -13,7 +13,6 @@ thumbnail-alt: The Product Catalog: Helping Experts Choose the Right Product thu
 
 **Role:** Senior UX Designer, Nutrien Ag Solutions
 **When:** 2020
-**Team:** A UX team of 12 designers and researchers
 **Focus:** The Employee Experience Hub (EXH)
 
 ![Rows of fertilizer tanks and product stock at a Nutrien facility — a glimpse of the enormous catalog a crop consultant has to navigate.](https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/01-product-scale.png)
@@ -28,27 +27,27 @@ A crop consultant doesn’t just take orders — they prescribe. Choosing the ri
 
 Before EXH, the information a consultant needed to choose a product lived everywhere except one place. Active ingredients, resistance information, labels, application timing, and comparisons were spread across manufacturer websites, PDFs, and binders of regional university field guides. Consultants did a lot of this work by hand, or from memory, often with a grower sitting across the desk waiting for an answer.
 
-The design challenge was to bring that scattered knowledge into a single catalog — one organized around how a consultant searches (by crop, by pest, by active ingredient) rather than how the database happens to be structured.
+The design challenge was to bring that scattered knowledge into a single catalog — one organized around how a consultant searches (by crop, by pest, by active ingredient) rather than how the database is structured by default.
 
 ## 2. The Design Process
 
 ### From partner design sprints to testable wireframes
 
-I didn’t want to design this in a vacuum, so the work started with collaborative design sprints that included major manufacturing partners like **Syngenta and BASF** — the people who know these products best. Those sprints turned into testable wireframes: **31 distinct components spread across three pages** — a catalog home, a product detail page, and a comparison view. Building it as a set of discrete, testable components meant we could put concrete concepts in front of users and learn which ones actually earned their place.
+The work started with collaborative design sprints that included major manufacturing partners like **Syngenta and BASF** — the people who know these products best. Those sprints turned into testable wireframes: **31 distinct components spread across three pages** — a catalog home, a product detail page, and a comparison view. Building it as a set of discrete, testable components meant we could put concrete concepts in front of users and learn which ones matched user’s expectations and needs.
 
 ## 3. Research
 
 ### User testing during a pandemic
 
-We tested the wireframes in the middle of the pandemic, which meant moving the research remote rather than letting it stall. I ran **one-hour interviews with seven crop consultants** from across the country — from Clinton, Oklahoma to Edmonton, Canada to the Southern High Plains of Kansas — walking each of them through the concepts and asking what they’d actually use.
+We tested the wireframes in the middle of the pandemic, which meant moving the research remotely. I ran **one-hour interviews with seven crop consultants** from across the country — from Clinton, Oklahoma to Edmonton, Canada to the Southern High Plains of Kansas — walking each of them through the concepts and asking what they’d actually use.
 
 The response was encouraging, and specific:
 
-> _”I would use it daily as a research tool. A lot of things I do right now, it would eliminate. Especially if this was in an app, I would religiously use this a lot.”_ — Jared Yost, Crop Consultant
+> _“I would use it daily as a research tool. A lot of things I do right now, it would eliminate. Especially if this was in an app, I would religiously use this a lot.”_ — J. Yost, Crop Consultant
 
-> _”Any of the work that I normally do by hand is nicely placed here. If I were sitting with a grower in front of me, those are a lot of the questions they would ask.”_ — Abbey Halwa, Crop Consultant
+> _“Any of the work that I normally do by hand is nicely placed here. If I were sitting with a grower in front of me, those are a lot of the questions they would ask.”_ — A. Halwa, Crop Consultant
 
-That second quote was the one that mattered most: the catalog wasn’t just a place to look something up, it was a tool a consultant could use *with a grower in the room.*
+Insights gained from these interviews were shared and validated by our design partners who helped us fill in gaps when the research showed we were missing information on the pages. For example, product labels are the best source for understanding restrictions and nuanced differences between competing products but the information in labels is often missing from product catalogs or hidden in pdfs. Unlocking this information was a key to improving the value of our catalog’s product detail pages.
 
 ## 4. What We Designed
 
@@ -68,8 +67,8 @@ The **comparison chart** drew the strongest reaction of anything we showed — e
 
 ### Design the catalog around the expert’s mental model
 
-The throughline of the research was that crop consultants are experts who already have a process — they search by crop, they think in pests, they compare by rate per acre, they reach for label data and active ingredients. The job of the catalog wasn’t to teach them a new way to shop. It was to take the work they were already doing by hand, across a dozen sources, and put it in one place that respected how they think.
+Crop consultants are experts who already have a process — they search by crop, they think in pests, they compare by rate per acre, they reach for label data and active ingredients. The job of the catalog wasn’t to teach them a new way to shop. It was to take the work they were already doing by hand, across a dozen sources, and put it in one place that respected how they think.
 
 ## Conclusion
 
-A good catalog for a layperson helps them discover. A good catalog for an expert helps them decide faster and with more confidence. By starting with partner design sprints and grounding every component in interviews with working crop consultants, we built a catalog that earned a place in the consultant’s day — and, in the words of one of them, in the conversation happening with a grower sitting right across the desk.
+A good catalog for an expert is not just about discovery, it needs to help them decide faster and with more confidence. By starting with partner design sprints and grounding every component in interviews with working crop consultants, we built a catalog that earned a place in the consultant’s day — and, in the words of one of them, in the “conversation happening with a grower sitting right across the desk.”

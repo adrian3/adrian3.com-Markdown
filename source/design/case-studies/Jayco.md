@@ -11,7 +11,7 @@ thumbnail-alt: Jayco: A Decade of Campaigns for "America's Most Liveable RVs" th
 
 # Jayco: A Decade of Campaigns for “America’s Most Liveable RVs”
 
-**Role:** Interactive Art Director, HuebnerPetersen (agency)
+**Role:** Art Director, HuebnerPetersen (agency)
 **Client:** Jayco, an RV manufacturer 
 **When:** 2003–2009
 
@@ -19,7 +19,7 @@ thumbnail-alt: Jayco: A Decade of Campaigns for "America's Most Liveable RVs" th
 
 ## Introduction
 
-Jayco — “America’s Most Liveable RVs” — was a flagship client during my five-plus years as Interactive Art Director at the agency HuebnerPetersen. For the better part of a decade I helped shape how Jayco looked to the world: the yearly campaigns, the product photography, the websites, and the behind-the-scenes tools that kept an entire national dealer network on-brand. It was the kind of long, deep client relationship where you stop being a vendor and become a steward of the brand.
+Jayco — “America’s Most Liveable RVs” — was a flagship client during my five-plus years as Art Director at the agency HuebnerPetersen. For the better part of a decade I helped shape how Jayco looked to the world: the yearly campaigns, the product photography, the websites, and the behind-the-scenes tools that kept an entire national dealer network on-brand. It was the kind of long, deep client relationship where you stop being a vendor and become a steward of the brand.
 
 ## 1. Yearly Campaigns
 

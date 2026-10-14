@@ -1,7 +1,7 @@
 <!---
 title: Nutrien: Designing the Information Architecture of a Sprawling Platform
 template: case-study
-published: true
+published: false
 unlisted: true
 categories: ux design, agriculture, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-Information-Architecture/nutrien-information-architecture_thumb.jpg
@@ -12,14 +12,13 @@ thumbnail-alt: Nutrien: Designing the Information Architecture of a Sprawling Pl
 
 **Role:** Senior UX Designer, Nutrien Ag Solutions
 **When:** 2019
-**Team:** A UX team of 12 designers and researchers
 **Focus:** The Employee Experience Hub (EXH) — navigation & information architecture
 
 ![A crop consultant crouched in a field, working on a tablet — the person every navigation decision had to serve.](https://adrian3.com/imgs/case-studies/images/Nutrien-Information-Architecture/01-field-hero.jpg)
 
 ## Introduction
 
-As the Employee Experience Hub (EXH) grew, it accumulated everything a crop consultant might need — agronomy tools, sales reporting, customer accounts, a product catalog, weather, and more. The risk with a platform that big is that its navigation quietly becomes a junk drawer: technically complete, practically unusable. Before that happened, I ran a research study to answer a deceptively hard question — *where does everything go?* — and to make sure the answer reflected how crop consultants actually think, not how our org chart or database happened to be structured.
+As the Employee Experience Hub (EXH) grew, it accumulated everything a crop consultant might need — agronomy tools, sales reporting, customer accounts, a product catalog, weather, and more. The risk with a platform that big is that its navigation quietly becomes a junk drawer: technically complete, practically unusable. Before that happened, I ran a research study to answer a deceptively hard question — *where does everything go?* — and to make sure the answer reflected how crop consultants actually think.
 
 ## 1. The Problem
 
@@ -51,7 +50,7 @@ The real work was the handful of items that had no clear home. Card-sort percent
 - **Purchase History** (83%) and **Edit Farms** (67%) both moved out of Accounts — to **Sales** and **Agronomy** respectively.
 - **Application Services** and the **Grower’s Shopping Cart** genuinely split between two categories. Rather than force a single home, the honest answer was to **cross-list** them — Application Services under both Agronomy and Products; the cart under both Sales and Accounts.
 - **Documents** was a true black sheep: 100% of participants dumped it in “Other.” The tree test and survey showed people would hunt for quotes and contracts under *both* Sales and Accounts — so that’s where it lives, keeping the label “Documents.”
-- **Input Programs** confused nearly everyone; the survey revealed people expected the words *”crop planning,”* so I renamed it to match their language.
+- **Input Programs** confused nearly everyone; the survey revealed people expected the words *“crop planning,”* so I renamed it to match their language.
 
 ![A tree-test result for “Application Services” — the paths participants actually took to find it, revealing it needed to live in more than one place.](https://adrian3.com/imgs/case-studies/images/Nutrien-Information-Architecture/03-tree-test.png)
 

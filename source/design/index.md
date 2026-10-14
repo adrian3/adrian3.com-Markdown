@@ -1,22 +1,14 @@
 <!---
-title: Case Studies
-published: true
-show-in-nav: true
+title: Design
+template: design-overview
+description: Product design portfolio of Adrian Hanft: design principles, human performance, agriculture, and emerging tech.
 --->
 
-# Design
-Over the course of my career I’ve worn many different hats. From Production Designer to UX Manager to Creative Director, I’m comfortable contributing deep in the weeds, mentoring emerging talent, and giving high-level strategic guidance.
+<design-slide page="principles.html" hero="creative-practice" eyebrow="Systems, Craft, and Creativity" title="Design Principles" line="The values behind my work, and how I put them into practice" button="Read my principles" tone="dark" align="right" position="50% 40%" portrait-position="50% 50%" />
 
-Across several industries (IT, Fitness Technology, Agriculture, Healthcare) and multiple disciplines one thing is consistent: I bring ideas to every project with a low-ego, “anything’s possible” mentality. I care deeply about the people I serve and the problems I’m helping solve. I balance meticulous attention to detail with the ability to move fast and iterate. I’m intentional in my approach and committed to design principles and best practices. And I’ve built relationships with people that cross corporate hierarchies, different industries, and a wide range of personalities and professions. 
+<design-slide page="fitness.html" hero="fitness" eyebrow="Reaching Goals Through Practice" title="Human Performance" line="TrainingPeaks, Athlinks, Stryd, Runcoach, and Run the Edge" button="See the fitness work" tone="light" align="left" position="50% 50%" portrait-position="50% 82%" />
 
-Below are a collection of case studies that represent my design practice. I appreciate you taking the time to review my work and see what I have accomplished across my design career.
+<design-slide page="agriculture.html" hero="agriculture" eyebrow="Field Tested" title="Ag Tech" line="Nutrien Ag Solutions, 2019–2022" button="See the agriculture work" tone="dark" align="left" position="50% 50%" portrait-position="50% 50%" />
 
----
 
-<case-study-filters />
-
-<case-study-grid />
-
----
-
-For additional samples of my designs you can also find me on <a href="https://www.behance.net/Adrian3">Behance</a> and <a href="http://dribbble.com/adrian3">Dribbble</a>.
+<design-slide page="emerging-tech.html" hero="emerging-tech2" eyebrow="Humanized Data" title="Emerging Tech" line="OpenText, Oracle, Apps, and AI" button="See the IT work" tone="dark" align="left" position="50% 50%" portrait-position="50% 50%" />

@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Origins of Inspiration  
-> _”We don’t do anything without an idea. So they’re beautiful gifts... And if you catch an idea that you love, that’s a beautiful, beautiful day.”_ — David Lynch  
+> _“We don’t do anything without an idea. So they’re beautiful gifts... And if you catch an idea that you love, that’s a beautiful, beautiful day.”_ — David Lynch
 
 ---
 

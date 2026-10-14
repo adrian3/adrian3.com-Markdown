@@ -23,7 +23,7 @@ For Nutrien’s annual hackathon, a small cross-functional team and I built a to
 
 ## 1. The problem worth solving
 
-Out in the field, identifying an unfamiliar weed is a real, recurring task — and crop consultants already had a low-tech answer for it. As one put it, *”Every crop consultant we’ve been with has a physical copy of this in their car and a downloaded copy on their tablet.”* They carry weed-identification books because correctly naming a weed is the first step to recommending the right product. That stickiness was the signal: if people are hauling around a paper reference, there’s room for something better.
+Out in the field, identifying an unfamiliar weed is a real, recurring task — and crop consultants already had a low-tech answer for it. As one put it, *“Every crop consultant we’ve been with has a physical copy of this in their car and a downloaded copy on their tablet.”* They carry weed-identification books because correctly naming a weed is the first step to recommending the right product. That stickiness was the signal: if people are hauling around a paper reference, there’s room for something better.
 
 ## 2. A goldmine hiding inside the company
 
@@ -47,7 +47,7 @@ The obvious modern instinct is “just take a photo and let AI identify it.” S
 
 Weed recognition is genuinely hard for image recognition. The distinguishing features are often tiny and nearly invisible in a photo, and entire categories — grasses especially — look nearly identical to a camera even when an expert can tell them apart instantly. A model that confidently spits out the wrong species isn’t just useless; it’s dangerous, because the wrong ID leads to the wrong recommendation.
 
-That’s what pointed us to a **human-in-the-loop** design. The expert’s observations do the heavy lifting; the data and the model assist and accelerate. And crucially, we designed the mobile app to **admit its limits**. When the algorithm couldn’t be confident, it said so plainly — *”Our algorithm is not able to provide reliable result”* — rather than guessing. Telling a skeptical expert the truth earns far more trust than false confidence.
+That’s what pointed us to a **human-in-the-loop** design. The expert’s observations do the heavy lifting; the data and the model assist and accelerate. And crucially, we designed the mobile app to **admit its limits**. When the algorithm couldn’t be confident, it said so plainly — *“Our algorithm is not able to provide reliable result”* — rather than guessing. Telling a skeptical expert the truth earns far more trust than false confidence.
 
 ![An iOS screen showing a successful attribute-based match — “Weed Matches (1): Shepherd’s Purse” with a photo and characteristic icons — demonstrating how a consultant narrows to an answer on a phone using broadleaf/grass and leaf filters.](https://adrian3.com/imgs/case-studies/images/Weed-Eaters/04-app-match.jpg)
 

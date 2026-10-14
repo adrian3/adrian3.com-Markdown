@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Post Apocalypse  
-> _”It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow.”_ — Robert Goddard
+> _“It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow.”_ — Robert Goddard
 
 ---
 

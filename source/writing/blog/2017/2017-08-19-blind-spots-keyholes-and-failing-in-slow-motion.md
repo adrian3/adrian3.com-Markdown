@@ -12,11 +12,11 @@ layout:
 --->
 
 # Blind Spots, Keyholes, and Failing in Slow Motion
-*”Just stop doing it wrong.”*
+*“Just stop doing it wrong.”*
 
 One of the principles I live by is a belief that the more you look, the more you see. It’s a simple mantra but it contains the meaning of life. Or at least I think it does. _I am probably wrong._
 
-This week I was studying the user experience of an athlete performance app called [Technique][1]. The app asks you to create videos of yourself attempting something that you want to improve. You can crop the clip, slow down the speed, and zoom in on the exact moment when the weaknesses in your game are in focus. Then you submit it to the community to solicit feedback. _”What am I doing wrong?”_
+This week I was studying the user experience of an athlete performance app called [Technique][1]. The app asks you to create videos of yourself attempting something that you want to improve. You can crop the clip, slow down the speed, and zoom in on the exact moment when the weaknesses in your game are in focus. Then you submit it to the community to solicit feedback. _“What am I doing wrong?”_
 
 Does that strike you as odd? Does the mob really need any more sources of fail videos? Who volunteers to let strangers watch them fail in slow motion? 
 
@@ -24,7 +24,7 @@ Moreover, If you know the exact moment when your game fell apart, if you can see
 
 Similarly, I can put a video of myself shooting a 3-pointer next to a video of Steph Curry. I can match it up frame by frame to analyze the differences. Sure, I am going to notice differences but what does that tell me? I _already_ know I am not the greatest shooter of all time. The path to improvement is obvious, _just do it the way Steph does._
 
-But as I watched more of the amateur videos in the app I realized that asking _”what am I doing wrong”_ isn’t as odd as it sounds. I saw a golfer who was clearly doing something wrong. And yet, if this guy asked me how to fix his problem, there was nothing I could tell him that would improve his game. I could watch that video fifty times and not see the cause of his failure. I can see the _flaws_ but the _solution_ is invisible to me. It takes a coach, someone who has mastered this skill to reveal the path to success hidden in plain sight.
+But as I watched more of the amateur videos in the app I realized that asking _“what am I doing wrong”_ isn’t as odd as it sounds. I saw a golfer who was clearly doing something wrong. And yet, if this guy asked me how to fix his problem, there was nothing I could tell him that would improve his game. I could watch that video fifty times and not see the cause of his failure. I can see the _flaws_ but the _solution_ is invisible to me. It takes a coach, someone who has mastered this skill to reveal the path to success hidden in plain sight.
 
 And this gets to the heart of improvement. Blind spots are inevitable. You will hit this wall if you stick with anything long enough. You _will_ get promoted to your level of incompetence. You will reach a moment when...
 

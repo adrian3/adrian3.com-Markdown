@@ -13,14 +13,13 @@ thumbnail-alt: The Employee Dashboard: The Right Message, in the Right Place, at
 
 **Role:** Senior UX Designer, Nutrien Ag Solutions
 **When:** 2019–2020
-**Team:** A UX team of 12 designers and researchers
 **Focus:** The Employee Experience Hub (EXH)
 
-![The shipped Employee Experience Hub dashboard: “Welcome back, Ryan,” with a Sales Activity table, a Targeted Planning Opportunities widget, opportunity alerts, a grower list, financials, and a long-range weather forecast.](https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/04-dashboard-shipped.png)
+![The shipped Employee Experience Hub dashboard: Sales Activity table, a Targeted Planning Opportunities widget, opportunity alerts, a grower list, financials, and a long-range weather forecast.](https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/04-dashboard-shipped.png)
 
 ## Introduction
 
-When we set out to build the Employee Experience Hub — “EXH” — for Nutrien’s sales force of more than 20,000 crop consultants, the very first screen was the hardest one to design. A home screen makes a promise: *this is what matters most.* Get it wrong and the tool feels like one more thing to log into. This is the story of how we figured out what belonged on that screen, by handing the design over to the people who’d use it.
+When we set out to build the Employee Experience Hub — “EXH” — for Nutrien’s sales force of more than 20,000 crop consultants, the goal was that the first screen every user saw held important, actionable information. This dashboard was critical to get right and it required us to identify what actually mattered to our users. This is the story of how we figured out what belonged on that screen.
 
 ## 1. The Problem
 
@@ -30,15 +29,15 @@ A crop consultant’s day is full. They’re managing dozens of growers, jugglin
 
 ![A field research session: crop consultants gathered around a conference table reviewing the platform on screen.](https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/01-field-research.png)
 
-We could have guessed. Plenty of dashboards are designed by deciding internally what looks impressive and arranging widgets to fill the space. But the people in the room knew their own jobs far better than we did. The real design problem was figuring out how to get that knowledge out of their heads and onto the screen.
+We could have guessed. Plenty of dashboards are designed by deciding internally what looks impressive and arranging widgets to fill the space. But the people in the field knew their needs far better than we did. The real design problem was figuring out how to get that knowledge out of their heads and onto the screen.
 
 ## 2. Research
 
 ### Build your own dashboard
 
-So I ran a study where I let crop consultants build the dashboard themselves. Each participant started with an empty page and a stack of 19 cards — one for every widget or piece of information we could imagine offering: accounts, sales reports, weather, alerts, crop plans, the product catalog, nutrient advisor, and more. I also handed them blank cards and asked them to invent widgets we hadn’t thought of. As their page filled up, I watched what they reached for first, what they ignored, and asked why.
+I ran a study where I let crop consultants build the dashboard themselves. Each participant started with an empty page and a stack of 19 cards — one for every widget or piece of information we could imagine offering: accounts, sales reports, weather, alerts, crop plans, the product catalog, nutrient advisor, and more. I also handed them blank cards and asked them to invent widgets we hadn’t thought of. As their page filled up, I watched what they reached for first, what they ignored, and asked why.
 
-To make sure the findings weren’t an artifact of one method or one room, I paired that hands-on, moderated **card sort** (five crop consultants, in person) with a larger remote **click test** (nineteen more, run on UserZoom) — twenty-four participants in all, asking the same question: what belongs on the first screen?
+To make sure the findings weren’t an artifact of one method or one room, I paired that hands-on, moderated **card sort** with a larger remote **click test** asking the same question: what belongs on the first screen?
 
 ![The “Build Your Own Dashboard” exercise: a wall of paper widget cards (Feed, Accounts, Weather, Alerts, Crop Plans, Nutrient Advisor, and more) next to a participant’s assembled dashboard built from sticky notes — Active Orders, Reminders, Contracts, Quotes, Growers, and Notes.](https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/02-build-your-own-dashboard.jpg)
 
@@ -48,19 +47,19 @@ Letting users assemble their own priorities turned a matter of opinion into a ma
 
 ### A message, not a menu
 
-The exercise reframed the dashboard for me. Crop consultants didn’t want a control panel of every feature we’d built. They wanted to be told the few things that needed their attention today. So the organizing idea became *the right message, in the right place, at the right time* — a screen that surfaced timely, specific prompts rather than a static grid of tools.
+The exercise reframed the dashboard for our team. Crop consultants didn’t want a control panel of every feature we’d built. They wanted to see the few things that needed their attention today. So the organizing idea became *the right message, in the right place, at the right time* — a screen that surfaced timely, specific data rather than a static grid of tools.
 
 ![A concept board titled “The right message, in the right place, at the right time,” surrounding a dashboard mockup with example prompts: “Mildew Warning: Are you prepared for fungicide orders?”, “Your fertilizer sales numbers are down this month,” “You have an inactive account,” “Harvest is in 15 days, don’t miss your last opportunity to schedule an application,” and “You have moved from #5 to #3 in your branch sales this quarter.”](https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/03-right-message.png)
 
-Each prompt was tied to a trigger — a weather event, a sales trend, an inactive account, an upcoming harvest window, a financing threshold a grower was about to cross. The dashboard’s job was to watch for those moments and speak up, so a consultant could glance at the screen and immediately know what was worth doing.
+The dashboard’s job was to tell a crop consultant at a glance what was worth doing.
 
 ## 4. The Outcome
 
-### A dashboard built around the user, not the org chart
+### A dashboard built around the user
 
-The shipped dashboard (at the top of this case study) put that thinking into practice. “Welcome back, Ryan” opens onto the consultant’s actual work: sales activity, the growers they manage, financial standing, a long-range weather story — and the Targeted Planning Opportunities the data team’s engine surfaced. The widgets that earned their place in research earned their place on the screen.
+The shipped dashboard showed the crop consultant’s actual work: sales activity, the growers they manage, financial standing, a long-range weather story — and their Targeted Planning Opportunities. The widgets that earned their place in research earned their place on the screen.
 
-What I valued most about this project wasn’t the visual design of the dashboard. It was that every decision on that first screen could be traced back to a crop consultant who told us, in one way or another, that it mattered.
+What I valued most about this project was that every decision on that dashboard could be traced back to a crop consultant who told us, in one way or another, that it mattered.
 
 ## Conclusion
 

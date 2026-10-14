@@ -4,7 +4,7 @@ show-in-nav: true
 --->
 
 # iOS Apps by Ade
-Over the years I developed a dozen or so iOS apps. The originals are no longer available in Apple’s App Store, but several now have a second life as progressive web apps. Chess Puzzles, Eugene Chess, Chess Server, Grandmaster Archive, and Ghost-O-Meter are available now, and Grungy also has a web version. Click an icon below to open an app in your browser.
+Over the years I developed a dozen or so iOS apps. The originals are no longer available in Apple’s App Store, but several now have a second life as progressive web apps. Chess Puzzles, Eugene Chess, Chess Server, Grandmaster Archive, Ghost-O-Meter, and Grungy are all available now as progressive web apps. Click an icon below to open an app in your browser.
 
 <app-icon-grid>
 

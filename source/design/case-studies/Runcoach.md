@@ -6,7 +6,7 @@ date: February 24, 2019
 published: true
 unlisted: true
 categories: featured, ux design, fitness technology, user research, mobile-first and app design, journey maps and personas
-thumbnail: https://adrian3.com/imgs/case-studies/images/Runcoach/runcoach_thumb.jpg
+thumbnail: https://adrian3.com/imgs/case-studies/runcoach.webp
 thumbnail-alt: Runcoach Case Study thumbnail
 --->
 

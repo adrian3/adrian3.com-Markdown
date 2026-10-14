@@ -7,7 +7,7 @@ membersonly: true
 --->
 
 # Shortcut Addiction  
-> _”I conceive that the great part of the miseries of mankind are brought upon them by false estimates they have made of the value of things.”_ — Benjamin Franklin
+> _“I conceive that the great part of the miseries of mankind are brought upon them by false estimates they have made of the value of things.”_ — Benjamin Franklin
 
 ---
 

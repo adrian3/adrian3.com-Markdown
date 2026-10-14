@@ -17,7 +17,7 @@ layout:
 
 * * *
 
-> Logos are strictly a vanity industry, and all who enter the field should be merciless cynics if they wish to guarantee satisfaction.” — Tom Wolfe
+> “Logos are strictly a vanity industry, and all who enter the field should be merciless cynics if they wish to guarantee satisfaction.” — Tom Wolfe
 
 * * *
 
@@ -58,4 +58,3 @@ You and I may have earned the luxury of being able to say no to golden combover 
 * * *
 
 Thanks for reading. If you sport a combover you should follow me. I write makeover tips like this every week. _Stay creative._
-

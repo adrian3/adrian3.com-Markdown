@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Zombie Airlines  
-> _”American Airlines’ fleet is old. Passenger seats shake loose and unbolt in mid-flight. Their employees are completely disgruntled... Their boarding process is painfully byzantine... The food sucks... and they’re bankrupt. Sounds like a perfect branding opportunity.”_ — Mark Kingsley
+> _“American Airlines’ fleet is old. Passenger seats shake loose and unbolt in mid-flight. Their employees are completely disgruntled... Their boarding process is painfully byzantine... The food sucks... and they’re bankrupt. Sounds like a perfect branding opportunity.”_ — Mark Kingsley
 
 ---
 

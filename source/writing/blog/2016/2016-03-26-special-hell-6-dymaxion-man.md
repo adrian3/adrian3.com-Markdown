@@ -107,7 +107,7 @@ There it is. Design has become the job of specialists. _Everything_ has become t
 
 Bucky would be appalled to see how the design profession has evolved into an assortment of design specialists. How many different job titles have you had in your career? Today we quibble over the differences between the disciplines of UI and UX, but if Bucky were still alive he would be preaching to us the virtues of being curious generalists. He said,
 
-> “Specialization has bred feelings of isolation, futility, and confusion in individuals… It has also resulted in the individual’s leaving responsibility for thinking and social action to others… Specialization breeds biases that ultimately aggregate as international and ideological discord, which in turn leads to war…
+> “Specialization has bred feelings of isolation, futility, and confusion in individuals… It has also resulted in the individual’s leaving responsibility for thinking and social action to others… Specialization breeds biases that ultimately aggregate as international and ideological discord, which in turn leads to war…”
 
 The antidote to specialization is curiosity. As a generalist you are free from the dogma, politics, and static knowledge that handcuffs progress. Last week I wrote about the [talent stack](2016-03-19-whats-your-talent-stack.html). This is the same thing. You don’t have to be the best in the world at one thing. By creating a system of complimentary skills you can become more than the sum of your parts. You can be the tiny rudder that turns the Earth. Put down the lipstick and take control of the ship.
 

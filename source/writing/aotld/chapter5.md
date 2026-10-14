@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # The Historical Conquest of Art  
-> _”Art is anything you can get away with.”_ — Andy Warhol
+> _“Art is anything you can get away with.”_ — Andy Warhol
 
 ---
 

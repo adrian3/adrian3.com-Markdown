@@ -30,7 +30,7 @@ The page ends with:
 
 > “As you can see, there is such a place after all,” says Arkam, “though very few from Earth’s universe ever reach it.”
 
->”No one can _choose_ to visit _Ultima,_” says Elinka. “Nor can you get here by following directions. It was a miracle you got here, but that is perfectly logical, because _Ultima_ is a miracle itself.”
+>“No one can _choose_ to visit _Ultima,_” says Elinka. “Nor can you get here by following directions. It was a miracle you got here, but that is perfectly logical, because _Ultima_ is a miracle itself.”
 
 This is surely the most profound message in the history of junk literature. 
 

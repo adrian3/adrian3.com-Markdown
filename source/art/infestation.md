@@ -8,7 +8,7 @@ show-in-nav: true
 <!-- Prayer to the Muse -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EzNTHEB5YF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-This is the story of my successfully funded [my Kickstarter project](https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects). Prints are available for sale on <a href=“https://etsy.com/shop/byAdrian3">my Etsy store</a>.
+This is the story of my successfully funded [my Kickstarter project](https://www.kickstarter.com/projects/ade3/infestation-artwork-created-from-real-insects). Prints are available for sale on <a href="https://etsy.com/shop/byAdrian3">my Etsy store</a>.
 
 In 2023, three great plagues infested the earth. The cicadas appeared first, crawling out of the ground and covering the landscape. Next were the butterflies, emerging from their cocoons to flaunt their brittle wings. Dragonflies completed the cycle, hovering above the devastation in all their elegant glory.
 

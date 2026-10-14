@@ -21,7 +21,7 @@ He’ll look you square in the eye, absorbing the heat until it all goes black.
 
 _Sorry, Kermit._
 
-I latched onto the frog parable when I read it in _[Run The Edge][1]_. Good book. Who can’t relate to that frog’s fate? To feel stuck in hopeless situations we can’t escape. To think, "yeah, my life isn’t a disaster, but that doesn’t mean I am not slowly dying.” _Boo hoo._
+I latched onto the frog parable when I read it in _[Run The Edge][1]_. Good book. Who can’t relate to that frog’s fate? To feel stuck in hopeless situations we can’t escape. To think, “yeah, my life isn’t a disaster, but that doesn’t mean I am not slowly dying.” _Boo hoo._
 
 I kept replaying it in my mind, watching a frog version of myself die again and again. My career, relationships, projects, politics, faith, everything. 
 

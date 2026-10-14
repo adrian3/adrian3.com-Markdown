@@ -6,7 +6,7 @@ layout: chapter
 membersonly: true
 --->
 # Impostor Syndrome  
-> _”I do not understand my own actions. For I do not do what I want, but I do the very thing I hate... For I do not do the good I want to do, but the evil I do not want to do, this I keep on doing.”_ — Romans 7:15, 19
+> _“I do not understand my own actions. For I do not do what I want, but I do the very thing I hate... For I do not do the good I want to do, but the evil I do not want to do, this I keep on doing.”_ — Romans 7:15, 19
 
 ---
 
@@ -74,7 +74,7 @@ If you have the courage and stamina to withstand the first two waves of attack o
 
 > “Really Adrian? A non-fiction book about zombies? People don’t read books anymore, so why would they read one as crazy as this? We are thousands of hours short of the experience necessary to produce a quality book, we should stop wasting our time. Nobody succeeds with their first book.”
 
-Mixed into this attack is an unknowable amount of truth. If Hank’s critique doesn’t sink us he is already planting the seeds for a future attack. If we complete this art but it fails, Hank will never let you forget it. He loves to say "I told you so.”  
+Mixed into this attack is an unknowable amount of truth. If Hank’s critique doesn’t sink us he is already planting the seeds for a future attack. If we complete this art but it fails, Hank will never let you forget it. He loves to say “I told you so.”  
 
 Fortunately, we have a new weapon against Hank. We know he exists. In the past, he has defeated us because we thought his voice was our own. Now we realize that he doesn’t represent the living part of our mind, but the rotten dead parts. Letting him win means that we forfeit the living part of ourselves, the creative parts. If Hank wins, the infection will spread until eventually we become a zombie. Hank has conquered us more than once, and he will probably defeat us again in the future, but we can’t let him win the war.  
 
