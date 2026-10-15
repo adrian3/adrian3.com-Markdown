@@ -55,7 +55,7 @@ When you are an established brand with a visual language that extends across hun
 
 <design-image type="wide">
 ![OpenText product screens in the new brand style, with a gradient stripe and the ot logo](/imgs/design/emerging-tech-opentext-rebrand-2880x1234.webp)
-[Designing observability case study](case-studies/OpenText-Leadership.html)
+[OpenText case study](case-studies/OpenText.html)
 </design-image>
 
 After the main elements of the OpenText rebrand were defined, the building of the Figma library began. My product area was an observability product and it was my job to apply the new design system, named “JATO,” to all the screens in our applications. As I uncovered new patterns, I worked with the design system team to componentize my designs so that they could be used by other designers who could benefit from the new patterns.

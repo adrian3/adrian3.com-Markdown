@@ -72,11 +72,11 @@ Observability throws a flood of telemetry at the user, and the hardest part of t
 
 OpScope’s primary persona was the Site Reliability Engineer (SRE), a role that was new to OpenText. To build it, I talked to a dozen SREs. The results are part of my [Taking OpScope from whiteboards to launch](case-studies/OpenText.html) case study. 
 
-Usability testing and research were an important part of my role at OpenText. OpenText World is the company’s biggest annual event, and the UX team runs an Innovation Lab there: hour-long, one-on-one sessions with existing and prospective customers, testing features headed for upcoming releases. I was one of about ten designers picked from a UX team of more than 100, and ran 20 sessions over three years in Las Vegas and Nashville. [Designing Observability](case-studies/OpenText-Leadership.html) covers the strategy and research behind OpScope.
+Usability testing and research were an important part of my role at OpenText. OpenText World is the company’s biggest annual event, and the UX team runs an Innovation Lab there: hour-long, one-on-one sessions with existing and prospective customers, testing features headed for upcoming releases. I was one of about ten designers picked from a UX team of more than 100, and ran 20 sessions over three years in Las Vegas and Nashville.
 
 <design-image type="inline">
 ![Innovation Lab booths and testing stations at a conference](/imgs/design/emerging-tech-opentext-innovation-lab-2880x1234.webp)
-[The Innovation Lab at OpenText World](case-studies/OpenText-Leadership.html)
+The Innovation Lab at OpenText World
 </design-image>
 
 ### Oracle
