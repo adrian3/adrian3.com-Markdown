@@ -52,7 +52,7 @@ The reason these anecdotes are important is that innovation within corporations 
 ![OpenText product screens in the new brand style, with a gradient stripe and the ot logo](/imgs/design/emerging-tech-opentext-rebrand-2880x1234.webp)
 </design-image>
 
-I joined OpenText in November 2022 as the lead UX designer for OpScope, a new product that helps IT professionals monitor the health and performance of their applications and infrastructure. My goal for the UX was that users should be able to understand their system’s health within two clicks. OpScope was built on an emerging technology called OpenTelemetry. 
+I joined OpenText in November 2022 as the lead UX designer for a new application observability product that helps IT professionals monitor the health and performance of their applications and infrastructure. My goal for the UX was that users should be able to understand their system’s health within two clicks. Our observability tool was built on an emerging technology called OpenTelemetry.
 
 <design-image type="trio">
 ![OpenText Application Observability screens with throughput charts and a service dependency map](/imgs/design/emerging-tech-opentext-observability-800x600.webp)
@@ -70,7 +70,7 @@ Observability throws a flood of telemetry at the user, and the hardest part of t
 [Research for the Site Reliability Engineer persona](case-studies/OpenText.html)
 </design-image>
 
-OpScope’s primary persona was the Site Reliability Engineer (SRE), a role that was new to OpenText. To build it, I talked to a dozen SREs. The results are part of my [Taking OpScope from whiteboards to launch](case-studies/OpenText.html) case study. 
+OpScope’s primary persona was the Site Reliability Engineer (SRE), a role that was new to OpenText. To build it, I talked to a dozen SREs. The results are part of my [OpenText case study](case-studies/OpenText.html).
 
 Usability testing and research were an important part of my role at OpenText. OpenText World is the company’s biggest annual event, and the UX team runs an Innovation Lab there: hour-long, one-on-one sessions with existing and prospective customers, testing features headed for upcoming releases. I was one of about ten designers picked from a UX team of more than 100, and ran 20 sessions over three years in Las Vegas and Nashville.
 

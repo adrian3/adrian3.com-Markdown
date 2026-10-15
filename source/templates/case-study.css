@@ -1,5 +1,13 @@
 .case-study-shell {
-  padding: 0 0 var(--ade-space-8);
+  padding: 0 var(--ade-space-5) var(--ade-space-8);
+}
+
+/* Phones: keep text off the screen edges. Full-width images and rules still reach the
+   edges because they break out with calc(50% - 50vw). */
+@media (max-width: 40rem) {
+  .case-study-shell {
+    padding-inline: 1rem;
+  }
 }
 
 .case-study-inner {

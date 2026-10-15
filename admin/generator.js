@@ -77,6 +77,19 @@ function walkSync(dir) {
   return files;
 }
 
+function isProductionBuild() {
+  return process.env.ADRIAN3_BUILD_TARGET === "production";
+}
+
+function isDeployExcludedRel(rel) {
+  const normalized = String(rel || "").replace(/\\/g, "/");
+  // source/imgs is a temporary local preview overlay. Images are uploaded to
+  // the live server separately and must never enter generated output.
+  if (normalized === "imgs" || normalized.startsWith("imgs/")) return true;
+  if (!isProductionBuild()) return false;
+  return normalized === "kitchen-sink" || normalized.startsWith("kitchen-sink/");
+}
+
 function registerAliases(map, entry, ...aliases) {
   for (const alias of aliases) {
     if (!alias) continue;
@@ -592,6 +605,7 @@ function normalizeFrontmatterData(data) {
 
 function isPublishedContent(data) {
   if (data.unpublished === true || data.unpublished === "true") return false;
+  if (data.published === false || data.published === "false") return false;
   return true;
 }
 
@@ -626,7 +640,7 @@ function inlineMarkdown(text) {
 
     // Images before links so ![alt](url) isn't partially matched as a link
     result = result.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, url) => {
-      return `<img src="${escapeHtml(url)}"${alt ? ` alt="${escapeHtml(alt)}"` : ""}>`;
+      return `<img src="${escapeHtml(url)}"${alt ? ` alt="${escapeHtml(alt)}"` : ""} loading="lazy" decoding="async">`;
     });
     result = result.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
       return `<a href="${escapeHtml(url)}">${label}</a>`;
@@ -928,6 +942,8 @@ function withLiveReload(html) {
   html = html.replace(/\s*<!-- LIVE_RELOAD -->([\s\S]*?)<!-- \/LIVE_RELOAD -->\s*/i, "\n");
   html = html.replace(/\s*<script>\s*\(\(\)\s*=>\s*\{[\s\S]*?EventSource\(reloadUrl\)[\s\S]*?<\/script>\s*/i, "\n");
 
+  if (isProductionBuild()) return html;
+
   if (/<\/body>/i.test(html)) {
     return html.replace(/<\/body>/i, `${liveReloadScript}\n</body>`);
   }
@@ -961,7 +977,7 @@ export function buildStylesheet(outputDir) {
 
 export function buildBlogFeed(outputDir, posts, siteUrl = "", siteTitle = "Blog") {
   const blogPosts = posts
-    .filter(p => p.url.startsWith("/blog/") && p.title && !p.unlisted)
+    .filter(p => p.url.startsWith("/writing/blog/") && p.title && !p.unlisted)
     .sort((a, b) => {
       const da = a.date ? new Date(a.date) : new Date(0);
       const db = b.date ? new Date(b.date) : new Date(0);
@@ -995,17 +1011,17 @@ export function buildBlogFeed(outputDir, posts, siteUrl = "", siteTitle = "Blog"
     '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
     "  <channel>",
     `    <title>${x(siteTitle)}</title>`,
-    `    <link>${siteUrl}/blog/</link>`,
+    `    <link>${siteUrl}/writing/blog/</link>`,
     `    <description>Writing by ${x(siteTitle)}</description>`,
     "    <language>en-us</language>",
-    `    <atom:link href="${siteUrl}/blog/feed.xml" rel="self" type="application/rss+xml"/>`,
+    `    <atom:link href="${siteUrl}/writing/blog/feed.xml" rel="self" type="application/rss+xml"/>`,
     `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
     items,
     "  </channel>",
     "</rss>",
   ].join("\n");
 
-  const feedDir = path.join(outputDir, "blog");
+  const feedDir = path.join(outputDir, "writing", "blog");
   fs.mkdirSync(feedDir, { recursive: true });
   const feedPath = path.join(feedDir, "feed.xml");
   fs.writeFileSync(feedPath, xml, "utf8");
@@ -1017,7 +1033,7 @@ export function buildSitemap(outputDir, pages, siteUrl = "") {
   if (!baseUrl) return null;
 
   const sitemapPages = pages
-    .filter(page => page.url && !page.unlisted)
+    .filter(page => page.url && !page.unlisted && page.template !== "case-study")
     .sort((a, b) => a.url.localeCompare(b.url));
 
   if (!sitemapPages.length) return null;
@@ -1064,6 +1080,7 @@ function remapOutputPath(rel, outputDir) {
 function copyTree(sourceDir, outputDir, generatedFiles) {
   for (const file of walkSync(sourceDir)) {
     const rel = path.relative(sourceDir, file);
+    if (isDeployExcludedRel(rel)) continue;
     const ext = path.extname(file).toLowerCase();
     if (ext === ".md" || ext === ".yml" || ext === ".yaml") continue;
     const target = remapOutputPath(rel, outputDir);
@@ -1110,7 +1127,11 @@ function writeState(generatedFiles) {
 }
 
 function buildGraph(sourceDir) {
-  const files = walkSync(sourceDir).filter(file => [".md", ".yml", ".yaml"].includes(path.extname(file).toLowerCase()));
+  const files = walkSync(sourceDir).filter(file => {
+    const rel = path.relative(sourceDir, file);
+    if (isDeployExcludedRel(rel)) return false;
+    return [".md", ".yml", ".yaml"].includes(path.extname(file).toLowerCase());
+  });
   const templatesByName = new Map();
   const componentsByName = new Map();
   const templatesByRel = new Map();
@@ -1370,6 +1391,9 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
   // Final pass: expand built-in shortcodes that may have survived inside
   // pre-rendered component HTML (e.g. <page-list /> inside a component body).
   html = expandBuiltinShortcodes(html, context);
+  if (!isPublishedContent(entry.data)) {
+    html = html.replace(/<\/head>/i, '<meta name="robots" content="noindex,nofollow">\n</head>');
+  }
   html = withLiveReload(html);
 
   const outputPath = toHtmlOutputPath(outputDir, entry.rel);
@@ -1389,18 +1413,25 @@ function rebuildPageEntry(entry, templateEntry, componentsByName, site, outputDi
 
 export async function build(options = {}) {
   const { changedPath = null, eventType = null } = options;
+  // The local server can render drafts without adding them to discovery feeds.
+  // Production builds always exclude them, even if preview was requested.
+  const preview = options.preview === true && !isProductionBuild();
   const settings = readSettings();
   const sourceDir = resolveRoot(settings.paths?.markdown || "./website");
   const outputDir = resolveRoot(settings.paths?.output || "./website");
   const cleanOutput = Boolean(settings.build?.cleanOutput);
   const copyNonMarkdown = settings.build?.copyNonMarkdown !== false;
   const sameTree = path.resolve(sourceDir) === path.resolve(outputDir);
+  const buildAll = !changedPath;
   const graph = buildGraph(sourceDir);
+  const renderEntries = preview
+    ? [...graph.contentEntries, ...graph.unpublishedEntries]
+    : graph.contentEntries;
   const previousState = readPreviousState();
   const previousGenerated = new Set(previousState.generated || []);
 
-  if (!sameTree && cleanOutput) {
-    fs.rmSync(outputDir, { recursive: true, force: true });
+  if (!sameTree && (cleanOutput || (buildAll && isProductionBuild()))) {
+    removeDirContents(outputDir);
   }
 
   ensureDir(outputDir);
@@ -1416,11 +1447,10 @@ export async function build(options = {}) {
     graph.unpublishedEntries.map(entry => toHtmlOutputPath(outputDir, entry.rel))
   );
 
-  const buildAll = !changedPath;
   let mode = buildAll ? "full" : "incremental";
   const changedAbs = changedPath ? path.resolve(changedPath) : null;
   const changedRel = changedAbs ? path.relative(sourceDir, changedAbs).replace(/\\/g, "/") : null;
-  const publishedContentRelSet = new Set(graph.contentEntries.map(entry => entry.rel));
+  const renderRelSet = new Set(renderEntries.map(entry => entry.rel));
 
   if (!buildAll && changedRel.startsWith("..")) {
     mode = "full";
@@ -1428,28 +1458,28 @@ export async function build(options = {}) {
 
   let targets = new Set();
   if (mode === "full") {
-    for (const entry of graph.contentEntries) targets.add(entry.rel);
+    for (const entry of renderEntries) targets.add(entry.rel);
   } else if (changedRel) {
     const changedKind = guessMarkdownKind(changedAbs, fs.existsSync(changedAbs) ? parseFrontmatter(readText(changedAbs)).data : {});
 
     if (eventType === "unlink") {
       mode = "full";
-      for (const entry of graph.contentEntries) targets.add(entry.rel);
+      for (const entry of renderEntries) targets.add(entry.rel);
     } else if (graph.entriesByRel.has(changedRel) && (changedKind === "content" || changedKind === "template" || changedKind === "component")) {
-      const impacted = collectReverseDependentPages(changedRel, graph.reverseDepsByRel, publishedContentRelSet);
+      const impacted = collectReverseDependentPages(changedRel, graph.reverseDepsByRel, renderRelSet);
       for (const rel of impacted) targets.add(rel);
-      if (publishedContentRelSet.has(changedRel)) targets.add(changedRel);
+      if (renderRelSet.has(changedRel)) targets.add(changedRel);
     } else if (changedKind === "content") {
       mode = "full";
-      for (const entry of graph.contentEntries) targets.add(entry.rel);
+      for (const entry of renderEntries) targets.add(entry.rel);
     } else {
       mode = "full";
-      for (const entry of graph.contentEntries) targets.add(entry.rel);
+      for (const entry of renderEntries) targets.add(entry.rel);
     }
   }
 
   for (const rel of targets) {
-    const entry = graph.contentEntries.find(item => item.rel === rel);
+    const entry = renderEntries.find(item => item.rel === rel);
     if (!entry) continue;
     const templateEntry = graph.templatesByName.get(entry.templateName);
     const pageRecord = rebuildPageEntry(
@@ -1467,6 +1497,7 @@ export async function build(options = {}) {
 
   if (mode === "full") {
     for (const unpublishedOutputPath of unpublishedOutputPaths) {
+      if (preview) continue;
       if (fs.existsSync(unpublishedOutputPath)) {
         fs.rmSync(unpublishedOutputPath, { force: true });
       }

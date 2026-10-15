@@ -7,7 +7,7 @@ show-in-nav: true
 # Adrian (Ade) Hanft
 ## Senior Product Designer
 
-Product designer for technical, data-dense products. Led UX for OpenText's OpScope observability product (OpenTelemetry, ML anomaly detection, AI), designed ML-assisted tools at Nutrien, and now lead design-system and AI-tooling work on Oracle's NetSuite.com. I prototype in code and design AI features around trust and correction.
+Product designer for technical, data-dense products. Led UX for OpenText's application observability product (OpenTelemetry, ML anomaly detection, AI), designed ML-assisted tools at Nutrien, and now lead design-system and AI-tooling work on Oracle's NetSuite.com. I prototype in code and design AI features around trust and correction.
 
 ---
 
@@ -29,11 +29,11 @@ Leading the redesign of NetSuite.com, Oracle's 1,600+ page cloud ERP site.
 
 ### Senior UX Designer, Observability
 
-Lead UX designer for OpScope, a new OpenTelemetry observability product, from whiteboards to launch.
+Lead UX designer for a new application observability product built on OpenTelemetry, from whiteboards to launch.
 
 - Set the product's north-star goal (anyone can understand system health within two clicks) and built a new SRE persona from interviews with about a dozen site reliability engineers.
 - Iterated Figma prototypes with customer design partners and produced the high-fidelity blueprints product and engineering built from, including service and dependency views the team built in D3.
-- Ran a competitive analysis of Datadog, New Relic and Dynatrace navigation and created a navigation taxonomy for OpScope's sprawling feature set.
+- Ran a competitive analysis of Datadog, New Relic and Dynatrace navigation and created a navigation taxonomy for the product's sprawling feature set.
 - Ran 20 hour-long, one-on-one usability sessions with customers and prospects at OpenText World's Innovation Lab (2023–2025); one study showed every participant failed to find a critical screen.
 
 ---

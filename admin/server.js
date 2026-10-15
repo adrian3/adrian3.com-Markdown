@@ -58,7 +58,7 @@ async function buildInitialPreview() {
   try {
     invalidateLinkReportCache();
     const { build } = await loadGenerator();
-    const result = await build();
+    const result = await build({ preview: true });
     logBuildWarnings(result);
     console.log(`Initial preview build (${result.mode}): ${result.pagesBuilt} pages, ${result.postsBuilt} posts`);
   } catch (err) {
@@ -242,7 +242,7 @@ async function handleRequest(req, res) {
     res.writeHead(200, { "Content-Type": "application/json" });
     try {
       const { build } = await loadGenerator();
-      const result = await build();
+      const result = await build({ preview: true });
       logBuildWarnings(result);
       broadcastReload();
       res.end(JSON.stringify({ ok: true, ...result }));
@@ -413,7 +413,7 @@ async function handleRequest(req, res) {
         const result = applyLinkFix(getSourceRoot(), getOutputRoot(), payload);
         const changedPath = path.join(getSourceRoot(), String(payload.source || ""));
         const { build } = await loadGenerator();
-        const buildResult = await build({ changedPath, eventType: "change" });
+        const buildResult = await build({ changedPath, eventType: "change", preview: true });
         logBuildWarnings(buildResult);
         broadcastReload();
         res.writeHead(200, { "Content-Type": "application/json" });
@@ -523,7 +523,7 @@ async function startServer() {
         try {
           invalidateLinkReportCache();
           const { build } = await loadGenerator();
-          const result = await build({ changedPath: filePath, eventType: event });
+          const result = await build({ changedPath: filePath, eventType: event, preview: true });
           logBuildWarnings(result);
           console.log(`Rebuilt (${result.mode}): ${result.pagesBuilt} pages, ${result.postsBuilt} posts`);
           broadcastReload();
@@ -540,7 +540,7 @@ async function startServer() {
           const filePath = path.join(mdDir, filename);
           const event = eventType === "rename" && !fs.existsSync(filePath) ? "unlink" : "change";
           queueBuild(event, filePath);
-        } else if (/\.(css|js|json|png|jpg|jpeg|gif|svg|ico|webp|woff2?|ttf)$/i.test(filename)) {
+        } else if (/\.(html|css|js|json|png|jpg|jpeg|gif|svg|ico|webp|woff2?|ttf)$/i.test(filename)) {
           // Asset changed — copy it to output and reload without a full rebuild.
           // Root-level CSS files get remapped to css/ in the output (mirrors copyTree logic).
           clearTimeout(buildTimer);

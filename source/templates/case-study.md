@@ -7,6 +7,8 @@ template-name: case-study
 <head>
 <page-head />
 <meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="{{base}}design/portfolio.css">
+<script src="{{base}}design/portfolio.js" defer></script>
 </head>
 <body>
 <header />

@@ -87,7 +87,11 @@ Pages are published by default. If you want to keep a page out of the build, add
 unpublished: true
 ```
 
-This means the page will be skipped by the build pipeline. It will not generate HTML, appear in `posts.json`, show up in blog feeds, or be included in `<page-list />`.
+This excludes the page from normal builds and deployment. The local admin server
+still renders it at its usual URL so you can preview drafts. Drafts never appear
+in `posts.json`, blog feeds, the sitemap, or `<page-list />`. Preview builds add a
+`noindex` directive to draft pages; production builds always omit them.
+The equivalent `published: false` flag is also supported.
 
 If you want a page to stay live but be excluded from discovery features, add:
 
@@ -193,6 +197,43 @@ If you want to reuse the body of another page without turning it into a componen
 ```
 
 That pulls in only the page body. The target page's template is ignored. Includes resolve relative to the current file first, then the source root. Nested includes are supported, and the build protects against cycles.
+
+### Animation Heroes
+
+Keep each living screenshot in its own folder under `source/animations/`, and
+embed it in a Markdown page with the existing component shortcode system:
+
+```html
+<animation name="opentext-dashboard" title="Layered observability dashboard on a gently rotating laptop" />
+```
+
+The `name` is the folder name; `title` is the accessible description of the
+embedded animation. The wide, responsive hero uses an iframe to keep the scene's
+styles and scripts separate from the page. The generator copies these files as
+ordinary assets; no new build step or runtime package installation is needed.
+
+`opentext-dashboard/` contains its standalone `index.html`, `demo.json`, four SVG
+layers, and a `poster.webp` still image. The laptop, rendering code, and Three.js
+are in `animations/shared/` so future animations can reuse them. For another
+laptop scene, copy the dashboard folder and replace the SVGs, settings, poster,
+and descriptions. `demo.json` uses the original generator's version 1 format;
+this small player supports its **laptop** scenes, without the editor UI. For a
+different kind of animation, give its folder its own standalone HTML player;
+the same shortcode works.
+
+The player starts automatically when visible, runs at 30 fps, and pauses when
+offscreen or in a hidden tab. Drag to rotate the scene; the gentle motion resumes
+from that angle when you release. Mouse-wheel scrolling stays available for the
+page. High resolution is enabled in `demo.json` (`canvas.highQuality: true`),
+matching the demo's pixel-density cap of 2. A keyboard-accessible pause/play
+button lets visitors stop the motion.
+Reduced-motion visitors see the poster without downloading the 3D renderer.
+The poster also works without JavaScript or WebGL.
+
+The scene and laptop code were extracted from
+[dynamic-screenshot-generator](https://adrian3.github.io/dynamic-screenshot-generator/)
+(Dashboard demo). Vendored Three.js retains its MIT license in
+`source/animations/shared/vendor/three/LICENSE`.
 
 ### Component Attributes
 
