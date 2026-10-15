@@ -2,7 +2,6 @@
 title: Meet Max
 sub-title: Designing Trust into AI
 template: case-study
-published: true
 unlisted: true
 categories: ux design, agriculture, ai and emerging technologies, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-Max-Case-Study/nutrien-max-case-study_thumb.jpg

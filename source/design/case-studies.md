@@ -1,6 +1,5 @@
 <!---
 title: Case Studies
-published: true
 show-in-nav: true
 template: design-page
 --->

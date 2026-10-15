@@ -2,7 +2,6 @@
 title: Red Rocket
 sub-title: Selected Client Work
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, marketing and brand strategy, ux design
 thumbnail: https://adrian3.com/imgs/case-studies/images/Red-Rocket-Client-Work/red-rocket-client-work_thumb.jpg

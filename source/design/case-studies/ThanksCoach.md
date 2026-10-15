@@ -2,7 +2,6 @@
 title: #ThanksCoach
 sub-title: A Viral Tool for Celebrating Coaches
 template: case-study
-published: true
 unlisted: true
 categories: ux design, fitness technology, marketing and brand strategy, identity and branding
 thumbnail: https://adrian3.com/imgs/case-studies/images/ThanksCoach/thankscoach_thumb.jpg

@@ -2,7 +2,6 @@
 title: TrainingPeaks
 sub-title: Creating a Searchable Coach Marketplace for 1,500+ Coaches
 template: case-study
-published: true
 unlisted: true
 categories: featured, ux design, fitness technology, user research
 thumbnail: https://adrian3.com/imgs/case-studies/trainingpeaks.webp

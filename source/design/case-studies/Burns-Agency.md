@@ -2,7 +2,6 @@
 title: Burns Marketing
 sub-title: Bringing App Development to an Agency
 template: case-study
-published: true
 unlisted: true
 categories: mobile-first and app design, marketing and brand strategy, it and tech industries
 thumbnail: https://adrian3.com/imgs/case-studies/images/Burns-Agency/burns-agency_thumb.jpg

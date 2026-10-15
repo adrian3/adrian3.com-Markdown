@@ -2,7 +2,6 @@
 title: The Employee Dashboard
 sub-title: The Right Message, in the Right Place, at the Right Time
 template: case-study
-published: true
 unlisted: true
 categories: ux design, agriculture, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-Employee-Dashboard/nutrien-employee-dashboard_thumb.jpg

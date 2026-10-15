@@ -2,7 +2,6 @@
 title: Weed Eaters
 sub-title: A Human-in-the-Loop Weed ID Tool
 template: case-study
-published: true
 unlisted: true
 categories: ux design, agriculture, ai and emerging technologies, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Weed-Eaters/weed-eaters_thumb.jpg

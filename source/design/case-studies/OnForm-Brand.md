@@ -2,7 +2,6 @@
 title: OnForm
 sub-title: Branding a Video Coaching App
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, fitness technology, mobile-first and app design, ai and emerging technologies
 thumbnail: https://adrian3.com/imgs/case-studies/images/OnForm-Brand/onform-brand_thumb.jpg

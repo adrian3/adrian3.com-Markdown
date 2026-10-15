@@ -2,7 +2,6 @@
 title: Boston
 sub-title: The Marathon Data Project
 template: case-study
-published: true
 unlisted: true
 categories: ux design, fitness technology, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Boston/boston_thumb.jpg

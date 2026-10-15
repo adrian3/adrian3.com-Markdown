@@ -1,7 +1,7 @@
 <!---
 title: Nutrien: Designing the Information Architecture of a Sprawling Platform
 template: case-study
-published: false
+unpublished: true
 unlisted: true
 categories: ux design, agriculture, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-Information-Architecture/nutrien-information-architecture_thumb.jpg

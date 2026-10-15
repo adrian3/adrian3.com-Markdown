@@ -2,7 +2,6 @@
 title: Stryd
 sub-title: Turning Complex Running Data Into Clear Product Experiences
 template: case-study
-published: true
 unlisted: true
 categories: featured, ux design, fitness technology, identity and branding, mobile-first and app design
 thumbnail: https://adrian3.com/imgs/case-studies/images/Stryd/stryd_thumb.jpg

@@ -37,7 +37,7 @@ The challenge I faced at Nutrien was how to modernize the tools used by [Nutrien
 
 Crop consultants often know more about agronomy than the farmers they sell to, and a recommendation from one is more like a prescription from a doctor than a sales pitch. To understand that relationship I traveled into the field to see facilities in action, sat in offices listening to sales calls, and rode along with crop consultants to see how they got their job done from their trucks.
 
-The hub is the platform crop consultants open each morning, so its first screen had to deliver something they could act on. I gave consultants paper prototypes and asked them to build their own dashboard, and [the shipped dashboard](case-studies/Nutrien-Employee-Dashboard.html) used the widgets that earned their place. As the hub grew, card sorts, tree tests, and a survey with 12 crop consultants decided [where everything goes](case-studies/Nutrien-Information-Architecture.html).
+The hub is the platform crop consultants open each morning, so its first screen had to deliver something they could act on. I gave consultants paper prototypes and asked them to build their own dashboard, and [the shipped dashboard](case-studies/Nutrien-Employee-Dashboard.html) used the widgets that earned their place. As the hub grew, card sorts, tree tests, and a survey with 12 crop consultants decided where everything goes.
 
 <design-image type="trio">
 ![A crop consultant at a desk arranging paper widget cards into his own dashboard](/imgs/design/ag-dashboard1-800x600.webp)
@@ -123,7 +123,6 @@ This work was done in the years right before the AI explosion and set me up nice
 - [Decoupling Order Capture](case-studies/Nutrien-Order-Capture.html)
 - [The Employee Dashboard](case-studies/Nutrien-Employee-Dashboard.html)
 - [A Product Catalog for Farming](case-studies/Nutrien-Product-Catalog.html)
-- [Information Architecture](case-studies/Nutrien-Information-Architecture.html)
 - [Building a UX Practice](case-studies/Nutrien-UX-Leadership.html)
 - [Meet Max](case-studies/Nutrien-Max-Case-Study.html)
 - [Weed Eaters](case-studies/Weed-Eaters.html)

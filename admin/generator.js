@@ -605,7 +605,6 @@ function normalizeFrontmatterData(data) {
 
 function isPublishedContent(data) {
   if (data.unpublished === true || data.unpublished === "true") return false;
-  if (data.published === false || data.published === "false") return false;
   return true;
 }
 

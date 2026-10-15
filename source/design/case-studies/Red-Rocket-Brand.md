@@ -2,7 +2,6 @@
 title: Red Rocket Rebrand
 sub-title: Building the Brand of a Web Agency
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, marketing and brand strategy
 thumbnail: https://adrian3.com/imgs/case-studies/images/Red-Rocket-Brand/red-rocket-brand_thumb.jpg

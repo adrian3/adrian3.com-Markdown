@@ -2,7 +2,6 @@
 title: Decoupling Order Capture
 sub-title: Designing a Tool That Competes With a Phone Call
 template: case-study
-published: true
 unlisted: true
 categories: ux design, agriculture, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-Order-Capture/nutrien-order-capture_thumb.jpg

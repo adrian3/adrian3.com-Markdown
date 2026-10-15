@@ -2,7 +2,6 @@
 title: From Runners to Farmers
 sub-title: Universal UX Problems
 template: case-study
-published: true
 unlisted: true
 categories: ux design, fitness technology, agriculture
 thumbnail: https://adrian3.com/imgs/case-studies/images/From-Runners-to-Farmers/from-runners-to-farmers_thumb.jpg

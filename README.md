@@ -91,7 +91,6 @@ This excludes the page from normal builds and deployment. The local admin server
 still renders it at its usual URL so you can preview drafts. Drafts never appear
 in `posts.json`, blog feeds, the sitemap, or `<page-list />`. Preview builds add a
 `noindex` directive to draft pages; production builds always omit them.
-The equivalent `published: false` flag is also supported.
 
 If you want a page to stay live but be excluded from discovery features, add:
 

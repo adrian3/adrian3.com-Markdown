@@ -2,7 +2,6 @@
 title: UX Research Methods
 sub-title: Lightweight Customer Journeys
 template: case-study
-published: true
 unlisted: true
 categories: user research, journey maps and personas, ux design, fitness technology
 thumbnail: https://adrian3.com/imgs/case-studies/images/Lightweight-Customer-Journeys/lightweight-customer-journeys_thumb.jpg

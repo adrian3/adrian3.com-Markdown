@@ -3,7 +3,6 @@ title: Runcoach
 sub-title: Reimagining a Training App Around Real Runner Needs
 template: case-study
 date: February 24, 2019
-published: true
 unlisted: true
 categories: featured, ux design, fitness technology, user research, mobile-first and app design, journey maps and personas
 thumbnail: https://adrian3.com/imgs/case-studies/runcoach.webp

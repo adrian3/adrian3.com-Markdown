@@ -2,7 +2,6 @@
 title: Rotadent Contour
 sub-title: A "Do the Math" Product Launch
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, marketing and brand strategy
 thumbnail: https://adrian3.com/imgs/case-studies/images/Rotadent-Launch/rotadent-launch_thumb.jpg

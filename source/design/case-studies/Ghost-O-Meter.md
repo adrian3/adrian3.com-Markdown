@@ -2,7 +2,6 @@
 title: Ghost-O-Meter
 sub-title: The App That Turned a Marketing Agency Into an App Studio
 template: case-study
-published: true
 unlisted: true
 categories: mobile-first and app design, marketing and brand strategy
 thumbnail: https://adrian3.com/imgs/case-studies/images/Ghost-O-Meter/ghost-o-meter_thumb.jpg

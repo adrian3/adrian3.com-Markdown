@@ -2,7 +2,6 @@
 title: A Product Catalog for Farming
 sub-title: Helping Experts Choose the Right Product
 template: case-study
-published: true
 unlisted: true
 categories: ux design, agriculture, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-Product-Catalog/nutrien-product-catalog_thumb.jpg

@@ -2,7 +2,6 @@
 title: Nutrien
 sub-title: Modernizing Digital Tools for 20,000 Crop Consultants
 template: case-study
-published: true
 unlisted: true
 categories: featured, ux design, agriculture, user research, journey maps and personas
 thumbnail: https://adrian3.com/imgs/case-studies/nutrien.webp

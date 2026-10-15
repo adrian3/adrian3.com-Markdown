@@ -2,7 +2,6 @@
 title: Rebranding Zila
 sub-title: One Identity Across 16 Medical Products
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, marketing and brand strategy
 thumbnail: https://adrian3.com/imgs/case-studies/images/Zila-Rebrand/zila-rebrand_thumb.jpg

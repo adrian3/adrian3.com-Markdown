@@ -2,7 +2,6 @@
 title: Jayco
 sub-title: A Decade of Campaigns for "America's Most Liveable RVs"
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, marketing and brand strategy, rv industry (jayco)
 thumbnail: https://adrian3.com/imgs/case-studies/images/Jayco/jayco_thumb.jpg

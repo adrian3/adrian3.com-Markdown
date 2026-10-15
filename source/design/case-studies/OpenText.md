@@ -3,7 +3,6 @@ title: OpenText
 sub-title: Introducing Application Observability
 template: case-study
 date: October 15, 2026
-published: true
 unlisted: true
 categories: featured, ux design, it and tech industries, ai and emerging technologies, user research
 thumbnail: https://adrian3.com/imgs/case-studies/images/OpenText/opentext_thumb.jpg

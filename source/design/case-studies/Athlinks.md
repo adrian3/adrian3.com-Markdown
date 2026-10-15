@@ -2,7 +2,6 @@
 title: Athlinks
 sub-title: Defining the Athlinks User Experience
 template: case-study
-published: true
 unlisted: true
 categories: featured, ux design, fitness technology, user research, identity and branding
 thumbnail: https://adrian3.com/imgs/case-studies/images/athlinks/athlinks_thumb.jpg

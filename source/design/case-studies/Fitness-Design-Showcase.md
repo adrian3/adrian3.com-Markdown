@@ -2,7 +2,6 @@
 title: Designing for Endurance
 sub-title: A Decade of Fitness-Tech Product Design
 template: case-study
-published: true
 unlisted: true
 categories: identity and branding, fitness technology, ux design, mobile-first and app design
 thumbnail: https://adrian3.com/imgs/case-studies/images/Fitness-Design-Showcase/fitness-design-showcase_thumb.jpg

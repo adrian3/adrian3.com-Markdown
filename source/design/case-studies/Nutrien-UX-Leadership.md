@@ -2,7 +2,6 @@
 title: Building a UX Practice
 sub-title: Insights from the World's Largest Ag Company
 template: case-study
-published: true
 unlisted: true
 categories: ux design, agriculture, user research, journey maps and personas
 thumbnail: https://adrian3.com/imgs/case-studies/images/Nutrien-UX-Leadership/nutrien-ux-leadership_thumb.jpg
